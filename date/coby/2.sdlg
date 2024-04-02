@@ -169,7 +169,7 @@ do increment("cd2_possible")
 
 :: StickyNotes
 You look at the wall of colorful notes. They have all sorts of notes on them that don't seem to make any sense.
-- **Ask About “Eat Lunch-Potato Day”** [if not(visited("coby_lunch_potato"))]
+- **Ask about “Eat Lunch-Potato Day”** [if not(visited("coby_lunch_potato"))]
     do visit("coby_lunch_potato")
     `name`: What does “Eat Lunch-Potato Day” even mean?
     Coby: Oh, Helmeppo just left that one to let me know they were serving buttered potatoes. That was from a while ago, though.
@@ -186,7 +186,7 @@ You look at the wall of colorful notes. They have all sorts of notes on them tha
     do visit("coby_cat_butt")
     `name`: So uh. A cat butt, huh?
     Coby: I actually drew that one. Thought it was funny, so I kept it.
-- **Ask About “Wolf Island????????”** [if not(visited("coby_wolf_island"))]
+- **Ask about “Wolf Island????????”** [if not(visited("coby_wolf_island"))]
     do visit("coby_wolf_island")
     `name`: Looks like someone's curious about Wolf Island.
     Coby: Oh, yeah. Helmeppo keeps trying to convince me to let him get another wolf. I'm not sure that's a good idea.
@@ -200,7 +200,7 @@ You look at the wall of colorful notes. They have all sorts of notes on them tha
         Coby: I may not think it's a good idea, but I can believe it.
     - (If they talked about Meppo's wolf in Meppo's date) I don't know, maybe you should humor him. I think he really misses his pet. (+2)
         Coby: Ah, you're right… I don't know about keeping one, but maybe I can at least arrange a visit…
-- **Ask About “Stealing M for training sry”** [if not(visited("coby_stealing_m"))]
+- **Ask about “Stealing M for training sry”** [if not(visited("coby_stealing_m"))]
     do visit("coby_stealing_m")
     `name`: What's ‘M?’ And who's stealing it?
     Coby: Oh, Tashigi was just letting me know Helmeppo would be training with her that day.
