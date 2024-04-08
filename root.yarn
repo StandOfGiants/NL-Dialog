@@ -1,0 +1,133 @@
+title: main
+position: -741,-399
+---
+<<set_background characterlayout show>>
+<<hide_characters hide>>
+
+Which route do you want?
+-> Legendary
+    <<jump Legendary>>
+-> Admirals
+    <<jump Admirals>>
+-> Smokers & Friend
+    <<jump SmokersAndFriend>>
+-> Coby Crew
+    <<jump CobyCrew>>
+-> DEBUG
+    <<jump DEBUG>>
+===
+
+title: Legendary
+position: -293,-105
+---
+<<jump workday_legendary_1_start>>
+===
+
+title: LegendaryDatesOne
+position: -272,469
+---
+Who do you want to date?
+-> Tsuru
+    <<jump date_tsuru_1_start>>
+-> Rosinante
+    <<jump date_rosinante_1_start>>
+-> Garp
+    <<jump date_garp_1_start>>
+-> Sengoku
+    <<jump date_sengoku_1_start>>
+===
+
+title: Admirals
+position: -835,38
+---
+<<jump workday_admirals_1_start>>
+===
+
+title: AdmiralsDatesOne
+position: -47,429
+---
+Who do you want to date?
+-> Fleet Admiral Sakazuki
+    <<jump date_sakazuki_1_start>>
+-> `kuzan`
+    <<jump date_kuzan_1_start>>
+-> `borsalino`
+    <<jump date_borsalino_1_start>>
+-> Issho
+    <<jump date_issho_1_start>>
+===
+
+title: SmokersAndFriend
+position: -254,-397
+---
+<<jump workday_smokers_and_friend_1_start>>
+===
+
+title: SmokersAndFriendDatesOne
+position: 227,-108
+---
+-> Smoker
+    <<jump date_smoker_1_start>>
+-> bellemere
+    <<jump date_bellemere_1_start>>
+-> Tashigi
+    <<jump date_tashigi_1_start>>
+-> hina
+    <<jump date_hina_1_start>>
+===
+
+title: CobyCrew
+position: -286,-246
+---
+<<jump workday_coby_crew_1_start>>
+===
+
+title: CobyCrewDatesOne
+position: 276,107
+---
+Who do you want to date?
+-> Drake
+    <<jump date_drake_1_start>>
+-> Helmeppo
+    <<jump date_helmeppo_1_start>>
+-> Coby
+    <<jump date_coby_1_start>>
+===
+
+title: DEBUG
+position: -602,38
+---
+<<jump Other>>
+===
+
+title: routine
+position: -515,473
+---
+Hi!
+===
+
+title: Other
+position: -363,38
+---
+<<show_character garp center show>>
+center
+<<show_character rosinante left fade>>
+left
+<<show_character coby right show>>
+right
+<<hide_characters hide>>
+<<show_character helmeppo a show>>
+left left
+<<show_character kuzan b fade>>
+left
+<<show_character sakazuki c show>>
+right
+<<show_character smoker d show>>
+right right
+<<highlight kuzan>>
+Kuzan: highlight four_left
+<<highlight smoker>>
+Smoker: I AM A BIG BURRITO.
+Smoker: LOVE ME
+<<jump main>>
+===
