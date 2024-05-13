@@ -57,9 +57,9 @@ position: -47,429
 Who do you want to date?
 -> Fleet Admiral Sakazuki
     <<jump date_sakazuki_1_start>>
--> `kuzan`
+-> {$kuzan}
     <<jump date_kuzan_1_start>>
--> `borsalino`
+-> {$borsalino}
     <<jump date_borsalino_1_start>>
 -> Issho
     <<jump date_issho_1_start>>

@@ -116,7 +116,7 @@ You go back to sorting the papers. The stale air is filled with nothing but the 
   Coby: Oh, haha, yeah… Honestly it probably wouldn't have happened if people didn't know me from the Marineford incident…
 -> Lieutenant Commander, aren't you warm in all those layers? It's pretty stuffy in here…
   Helmeppo: No.
-  `name`: … Just no?
+  {$name}: … Just no?
   Coby: I don't know how he does it either…
 -> There are so many incident reports… Is the Grand Line really that dangerous?
   Coby: Yeah. Between the pirates, sea kings and unpredictable weather, there's a lot of different things that can kill.
@@ -183,7 +183,7 @@ You dig into your box; there are a few wrinkled papers that were obviously cramm
   -> Long time, huh? You like doing it?
     Drake: I suppose. The work needs to be done, and most people don't like doing it.
     -> That's kind of a non-answer.
-      Coby: Yeah, `name` is right. You don't hate it, though?
+      Coby: Yeah, {$name} is right. You don't hate it, though?
       Drake: No. I like organization.
     -> Big sacrifice from you, there. (-1 Drake)
       Drake: …
@@ -217,7 +217,7 @@ You think back to what you've seen and heard about the goat. How could this have
 Drake: I think we should split up. There's a lot of area to cover.
 Coby: Oh, two and two? Good thinking!
 Helmeppo: If we go alone we can cover more ground.
-Coby: What about you, `name`? You don't know the filing room that well—do you want to tag along with one of us?
+Coby: What about you, {$name}? You don't know the filing room that well—do you want to tag along with one of us?
 -> I think I can handle it by myself.
     <<jump workday_coby_crew_1_Solo_start>>
 -> I'll go with Lieutenant Commander Helmeppo.
@@ -368,7 +368,7 @@ You wait for someone to show up. It ought not to take too long, right? At least 
 title: workday_coby_crew_1_Solo_regroup_Drake
 ---
 <<show_character drake, center, show>>
-Drake: I thought I heard you, `name`. Looks like you've found the goat. Good work.
+Drake: I thought I heard you, {$name}. Looks like you've found the goat. Good work.
 -> Thanks, but, well…
 -> Just lucky, I guess.
 -> I'm so happy you showed up; I don't know what to do…
@@ -454,7 +454,7 @@ He starts walking, grabbing an empty file folder as he goes. The goat follows be
   Helmeppo: Don't mention it.
 -> If it was that easy, why didn't we just let you find the goat?
   Helmeppo: You say as if you weren't the one to find it in the first place.
-  `name`: Ah. Right.
+  {$name}: Ah. Right.
 
 ===
 
@@ -559,7 +559,7 @@ Goat: Maaaaa?
 title: workday_coby_crew_1_Helmeppo_goat_visit
 ---
 The goat hops up onto the table while you and Helmeppo move the paperwork out of the way. It looks between you two and tries to sniff at some of the files, only to be shooed away.
-Helmeppo: `name`, grab that blue box behind you. That's the stuff we need to shred anyways, give it something from there so it leaves all this alone.
+Helmeppo: {$name}, grab that blue box behind you. That's the stuff we need to shred anyways, give it something from there so it leaves all this alone.
 -> Alright. Here, goatie, are you hungry?
   Goat: &&Maaaaaaaa!&& (+1 Helmeppo, +1 Goat)
   <<jump workday_coby_crew_1_Helmeppo_goat_recruitment>>
@@ -585,7 +585,7 @@ Helmeppo: Just… Keep an eye on the files we still need… (+1 Helmeppo, +2 Goa
 title: workday_coby_crew_1_Helmeppo_goat_capture
 ---
 Helmeppo stands, scooping the goat up like it's a baby. It looks at you with sad eyes but doesn't struggle.
-Helmeppo: Don't look at `name` like that, you know you're not allowed in here.
+Helmeppo: Don't look at {$name} like that, you know you're not allowed in here.
 Goat: Maaaaaaa!
 Helmeppo: Come on, let's get this one out of here. I'll show you how to make sure the door's closed while we're there. We don't need a rogue paper shredder wandering in again.
 ===
@@ -725,7 +725,7 @@ You follow Drake down the aisle, in the opposite direction from Helmeppo and Cob
 -> Could we smell it if we sniffed?
   Drake: …Let's head for the door.
 -> Why don't we head for the door? We can try to pick up the trail from there.
-  Drake: Good thinking, `name`. (+1 point)
+  Drake: Good thinking, {$name}. (+1 point)
 
 He seems to have a good idea of the layout of the room, and you're at the door sooner than you expected. On the floor, a trail of torn-up paper leads down a new aisle. Drake picks up the pace and so do you; every time you think you might be losing the trail, you see something promising—a dent shaped like a horn, another scrap of paper, the contents of a file strewn on the floor. Then you hear the faint sound of bleating.
 Drake: That must be it.
@@ -855,7 +855,7 @@ title: workday_coby_crew_1_Drake_goat_secure
 Drake crouches down, whispering to the goat in a soothing tone. It holds still and, very patiently, you reach for the drawer and pull it out. The goat takes a few seconds before realizing it can pull out its leg, and then it does.
 Goat: Maaa!
 It wriggles in Drake's arms, but Drake holds it securely.
-Drake: Good job, `name`. Looks like we've got it out of trouble for now… We'll have to inform Coby and Helmeppo. (+1 Drake)
+Drake: Good job, {$name}. Looks like we've got it out of trouble for now… We'll have to inform Coby and Helmeppo. (+1 Drake)
 <<jump workday_coby_crew_1_Pre_regroup_with_goat>>
 ===
 

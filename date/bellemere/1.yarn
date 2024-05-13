@@ -8,7 +8,7 @@ position: -1030,-771
 
 You're mopping the deck of the large battleship parked at the island when you smell the sweet-sharp scent of cigarette smoke. You follow it, and it leads you straight to an unassuming supply closet.
 <<show_character bellmere center fade>>
-`name`: Do... do you always do this?
+{$name}: Do... do you always do this?
 Bellemere: Do what? Oh, avoid menial labor? Damn right I do!
 Bellemere: Hey, don't look at me like that! You think I'm lazy?
 -> Yes...
@@ -71,13 +71,13 @@ You don't understand what she could mean by that. Shouldn't it just be a hate/ha
     Secrets?
 -> Wait... you were imprisoned by pirates!? For how long!?
     Bellemere: Oh, you know... about ten years.
-    `name`: T- ten years!?
+    {$name}: T- ten years!?
     Bellemere: Once upon a time there was a price I wasn't willing to pay... literally and figuratively.
     Bellemere: Sometimes you have to stand up for what you know is right, even if it isn't the safest option, you know?
     Bellemere sounds like a very brave woman, despite her derelict attitude regarding her work. Maybe there's a thing or two you can learn here.
 -> You were captured by pirates!? Which ones?
     Bellemere: Ever hear of the Arlong pirates? Caused quite a bit of trouble in my neck of the woods in East Blue. My kid and her friends beat him up.
-    `name`: Y-your kid did!?
+    {$name}: Y-your kid did!?
     Bellemere: Well, I say kid, but she's all grown now.
     You wonder what kind of children the blunt Marine raised. In your mind, you envision a mini-body-builder version of Bellemere fighting pirates with big beefy muscled arms.
 <<jump questions>>
@@ -90,12 +90,12 @@ position: -608,-551
 Bellemere checks her watch, hissing as she stubs her cigarette out on a nearby shelf loaded with various cleaning supplies.
 Bellemere: Let's walk and talk newbie! Smoker does his rounds around this time, and he doesn't give a shit if I'm not where I should be, but Tashigi's always with him and always on my case...
 She sighs.
-`name`: Do you two not get along?
+{$name}: Do you two not get along?
 // question: standardize nickname for Tashigi ... tash or tashi?
 Bellemere: Huh? Me and Tash? I don't know if I'd say that... she's one strict swordsman. Stands so damn straight I sometimes wonder if she keeps that sword up her- er, that is, yeah, maybe there's a bit of tension there?
 You both walk out onto the deck warship, Bellemere with a box under her arm from the supply closet. You soon find it's a set of cleaning supplies, and she sets up next to a shiny black cannon.
 Bellemere: This damn thing's never seen any real action. It's my biggest problem with a lot of the rules around here: these are all games. I know what training I need to be battle-ready. I've been there. Done that. Bought the T-shirt and brought home the souvenir adopted children.
-`name`: Er... been where?
+{$name}: Er... been where?
 Bellemere gets quiet for a minute as she assembles what looks like a giant brass wire swab to clean the cannon.
 Bellemere: War.
 -> You fought and adopted war orphans!? You're not lazy at all, are you?
@@ -153,7 +153,7 @@ Bellemere: Maybe.
 title: Alternate
 position: 530,-133
 ---
-Bellemere: Oh, I am a bad influence on you! Alright, `name`, whatcha have in mind?
+Bellemere: Oh, I am a bad influence on you! Alright, {$name}, whatcha have in mind?
 -> Jogging in the park
     <<jump Jog>>
 -> Practice at the firing range
@@ -170,7 +170,7 @@ Bellemere: Hey! Not a bad idea- I'm pretty restless from pretending to work all 
 <<set_background "garden", show>>
 The two of you spend an afternoon jogging through the park, chatting about inconsequential things and laughing at dumb jokes.
 <<show_character bellemere, center, show>>
-Bellemere: Nice stamina there, `name`. Fighting skills are great, but those who spend time on cardio are the survivors in a conflict, am I right?
+Bellemere: Nice stamina there, {$name}. Fighting skills are great, but those who spend time on cardio are the survivors in a conflict, am I right?
 <<hide_character bellemere, fade>>
 Eventually, you're both forced to return to the ship, time passing by much too quickly.
 <<jump Time>>
@@ -200,7 +200,7 @@ position: -378,207
 ---
 You run to get a second cleaning set from the closet that still smells of Bellemere's cigarettes, and rush back to the grinning woman.
 Bellemere: Alright- I'll take this half, you take those over there. We'll meet in the middle.
-`name`: How do you do this?
+{$name}: How do you do this?
 Bellemere: Easy! Wipe the barrel with turpentine, scrub with the wire brush, wipe it dry and get out all the powder, and then finish by oiling all the joints here, see?
 She points out each step.
 Bellemere: If you win, I'll give you a treat, okay?
@@ -236,9 +236,9 @@ What can you do to catch up?!
 -> Bribe her to slow down!
     <<set $bm1_points += 1>>
     <<set $bm1_points += 1>>
-`name`: Bellemere! Give me a fighting chance, here! A five minute head start-
+{$name}: Bellemere! Give me a fighting chance, here! A five minute head start-
 Bellemere: Ha! And why would I do THAT!?
-`name`: Because... because if you do I'll buy you dinner! Not the mess hall... somewhere nice!
+{$name}: Because... because if you do I'll buy you dinner! Not the mess hall... somewhere nice!
 Bellemere: Oh? Is that a bribe, or are you asking me out?
 You have no answer to that.
 Bellemere: ...Well, I'll take it- but wait until you see how expensive my tastes can run.
@@ -246,12 +246,12 @@ You sweat a little at the idea. The prize for winning better be worth it.
 // could add a line about Bellemere's actions right after this, which would double the clarity: she's stopped work, and is giving PC a five minute head start
 Sure enough, the head start is enough for you to come through in the end- barely. Bellemere is fast, and looks mildly annoyed at losing.
 Bellemere: Damn! I wanted to win *and* get a free meal!
-`name`: Uh... sorry?
+{$name}: Uh... sorry?
 She laughs, clapping you on the back.
 Bellemere: You're crafty and a fast-learner; I like that! Now look out there to get your prize.
 <<set $bm1_points += 1>>
 She points to the ocean beyond the railing and you turn to look, shocked as something presses softly to your face. It's just a quick peck- barely qualifying as a kiss to your cheek- but it leaves your head spinning as you turn back to look at the gorgeous marine with wide eyes.
-Bellemere: Next time we have a free day- a real one, not a slack-off one- you've gotta take me someplace nice. Trust me, I know the *most expensive* restaurants in town. Keep your calendar free, `name`. For now... you'd better go take care of your own work, yeah? I'll just try to keep looking busy over here.
+Bellemere: Next time we have a free day- a real one, not a slack-off one- you've gotta take me someplace nice. Trust me, I know the *most expensive* restaurants in town. Keep your calendar free, {$name}. For now... you'd better go take care of your own work, yeah? I'll just try to keep looking busy over here.
 You rush off to find your long-forgotten mop, not wanting to make a bad impression if other high-ranking marines come by, but you find your mind drifting back to that warm press of lips to your skin...
 END DATE
 
@@ -270,7 +270,7 @@ title: Bad
 position: -75,320
 ---
 Well, you messed up. You manage to get the hang of things after some more redirection from the Bellemere, but it still puts you pretty far behind her. She ends up having to pick up your slack.
-Bellemere: Too bad, `name`! You'll just have to try harder to win my affections in the future, huh?
+Bellemere: Too bad, {$name}! You'll just have to try harder to win my affections in the future, huh?
 ....affections?
 <<jump Time>>
 
