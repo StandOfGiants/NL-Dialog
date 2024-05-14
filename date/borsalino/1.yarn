@@ -252,7 +252,7 @@ title: date_borsalino_1_route2_place_romantic
     {$borsalino}: ...
     {$borsalino}: Well, well, {$name}... That depends on your definition of trouble...
     {$borsalino}: And if we did, would it matter...?
-    {$borsalino}: What a thing to say... 
+    {$borsalino}: What a thing to say...
     <<jump date_borsalino_1_route2_best>>
 -> N-no, it's not romantic at all!
     {$borsalino}: If [wave][i]yooou say so[/i]...[/wave]
@@ -404,11 +404,11 @@ Like that, he just vanishes.
 
 title: date_borsalino_1_DateEnds
 ---
-<<jump root_main>>
+<<jump main>>
 ===
 
 title: date_borsalino_1_DateEndsEarly
 ---
 The date ends early
-<<jump root_main>>
+<<jump main>>
 ===

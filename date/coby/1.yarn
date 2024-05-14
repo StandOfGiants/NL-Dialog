@@ -183,7 +183,7 @@ Coby: It's hard work, but I really enjoy it. My crew has been amazing, and it's 
     <<jump date_coby_1_Coby_food4>>
 -> Don't you have better things to do than complain about paperwork?
     <<decrement "cd1_points">>
-    Coby: Yes. But I've learned that venting can be a bit therapeutic. 
+    Coby: Yes. But I've learned that venting can be a bit therapeutic.
     <<jump date_coby_1_Coby_food4>>
 ===
 
@@ -278,7 +278,7 @@ if check_ratio("cd1_points","cd1_possible",0.5)
     Coby: Well, {$name}, thanks for letting me take a bit of a break with you. It was a lot of fun talking with you. And, well, if you ever want a break buddy again, you know where to find me.
 else
     Coby: Thanks for letting me join you for lunch. I really appreciate it. I'll see you around.
-<<jump root_main>>
+<<jump main>>
 ===
 
 title: date_coby_1_Coby_training1
@@ -422,7 +422,7 @@ title: date_coby_1_Coby_training4
 title: date_coby_1_End_Date
 ---
 The date ends early (0 points)
-<<jump root_main>>
+<<jump main>>
 ===
 
 title: date_coby_1_Coby_training_end
@@ -434,5 +434,5 @@ else
     Coby: Sure. You have a lot of potential and I'd love to see you improve.
     Coby: Besides, it's nice to train with someone different once in a while.
     <<romance_points coby 0>>
-<<jump root_main>>
+<<jump main>>
 ===
