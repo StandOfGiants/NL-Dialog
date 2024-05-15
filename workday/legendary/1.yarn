@@ -1,14 +1,14 @@
 title: workday_legendary_1_start
 ---
-do context("legendary_1")
+<<context "legendary_1">>
 
-do set_background("office", show)
-do show_character(tsuru, a, show)
-do show_character(garp, b, show)
-do show_character(sengoku, c, show)
-do show_character(rosinante, d, show)
+<<set_background "office" show>>
+<<show_character tsuru a show>>
+<<show_character garp b show>>
+<<show_character sengoku c show>>
+<<show_character rosinante d show>>
 Coming up to Tsuru's office, the door seems to be closed.
-{$name}: *This is the right place...*
+{$name}: [i]This is the right place...[/i]
 -> Knock
     Tsuru: Come in!
 -> Just go right in
@@ -36,7 +36,7 @@ Tsuru: That's because you accidentally went to the officer's hall instead of the
 Rosinante: That sounds better than my first ceremony... I accidentally set the cannons off.
 Tsuru: Oh, I remember that! Let's hope that doesn't happen this time around.
 Tsuru: But back to business.
-Tsuru: {$name}, we are all writing a speech that myself, Garp, and Sengoku will be presenting at the ceremony. Something about *Marine Legends* inspiring the youth... as if I'm old enough to be a legend!
+Tsuru: {$name}, we are all writing a speech that myself, Garp, and Sengoku will be presenting at the ceremony. Something about [i]Marine Legends[/i] inspiring the youth... as if I'm old enough to be a legend!
 Tsuru: We could use your help with the final touches. There are a lot of... conflicting ideas here.
 -> I'd be happy to help!
     Tsuru: Fantastic!
@@ -53,24 +53,24 @@ Tsuru: We could use your help with the final touches. There are a lot of... conf
     Tsuru: Let's focus on this speech first, gentlemen.
 Tsuru: Now, our first decision is about how we should address the recent rise in piracy...
 -> How about ‘Piracy is nothing in the face of a united Navy?'
-    do like(rosinante)
-    do like(tsuru)
+    <<like rosinante>>
+    <<like tsuru>>
     Rosinante: It does enforce the value of working together...
     Tsuru: And draws attention to how the Navy is one force, while the pirates are divided... Perfect! I'll add it in.
     Garp: Being united didn't help us at Marineford...
 -> You should write ‘Only with new recruits and new ideas can we overcome this adversary.'
-    do like(rosinante)
-    do like(tsuru)
+    <<like rosinante>>
+    <<like tsuru>>
     Sengoku: Captain Coby and his team of recruits are doing far better work than any old legend...
     Garp: It's good that new blood is changing the way we fight.
     Tsuru: New recruits are nothing without us veterans training them... but I'll add it in.
 -> Pirates sail free across the sea?
-    do like(garp)
-    do hate(tsuru)
+    <<like garp>>
+    <<hate tsuru>>
     Garp: Ha! Perfect - Tsuru, add that in!
     Tsuru: Absolutely not! That's the opposite message we want to send! Let's try something more about defeating pirates, shall we?
 -> Just say it: piracy is rising faster than the Navy can fight it.
-    do like(sengoku)
+    <<like sengoku>>
     Tsuru: A bit critical...
     Sengoku: But it is the truth.
     Rosinante: All recruits should know the truth of what they will be fighting. Add it in.
@@ -124,8 +124,8 @@ Tsuru: I have some papers that need to be sent to Sengoku... or you can stay and
 
 title: workday_legendary_1_GarpTsuruRoute
 ---
-do hide_characters(fade)
-do set_background("office", fade)
+<<hide_characters fade>>
+<<set_background "office" fade>>
 You decide to stay in Tsuru's office.
 Tsuru:  Thank you for staying, {$name}.
 Tsuru:  Let's try to get ahead of this workload before-
@@ -134,22 +134,22 @@ Tsuru:  ...
 Garp: Hey, Tsuru, back to paperwork already?
 Garp: No rest for the wicked, huh?
 -> That's easy to say when you're retired!
-    do like(tsuru)
+    <<like tsuru>>
     Tsuru:  Good point, {$name}! I don't even know what "retired" means in the Navy anymore.
 -> Hey, are you here to help or to get on our nerves?
-    do like(garp)
+    <<like garp>>
     Garp: Ha! You have a spine, kid!
     Tsuru:  What do you expect, Garp?
     Tsuru:  You reap what you sow!
 -> Not much else to do around here!
-    do hate(garp)
-    do hate(tsuru)
+    <<hate garp>>
+    <<hate tsuru>>
     Tsuru:  In fact, you just chose to come help.
     Tsuru:  Don't try and get on Garp's better side by pretending otherwise!
     Garp: If you're so bored, I could run you through some drills instead!
 -> At least share some of those rice cakes.
-    do like(garp)
-    do hate(tsuru)
+    <<like garp>>
+    <<hate tsuru>>
     Garp: You've got good taste, but you oughta get your own!
     Tsuru: It's no time for banter.
 Tsuru:  You were always a hothead.
@@ -157,10 +157,10 @@ Tsuru:  It doesn't matter what we say; he'll stick around. Just try to be quiet.
 -> Have you known each other for a long time?
     <<jump workday_legendary_1_GarpTsuruconvo1>>
 -> Would you tell me some stories about chasing Gold Roger?
-    do like(garp)
+    <<like garp>>
     <<jump workday_legendary_1_GarpTsuruconvo2>>
 -> Let's work and focus on the present.
-    do like(tsuru)
+    <<like tsuru>>
     Tsuru: That's a true hard-working disposition.
     <<jump workday_legendary_1_GarpTsuruWrapUp>>
 ===
@@ -171,13 +171,13 @@ Tsuru:  Indeed, {$name}. We have been comrades throughout our whole career.
 Garp: Ever since we were kids!
 Tsuru: That's one way to put it.
 -> You sure do have some patience, Vice-Admiral Tsuru!
-    do like(tsuru)
-    do hate(garp)
+    <<like tsuru>>
+    <<hate garp>>
     Garp: People keep sayin' that!
     Tsuru:  And they aren't wrong.
 -> I'm sure you made a great team together!
-    do like(garp)
-    do hate(tsuru)
+    <<like garp>>
+    <<hate tsuru>>
     Garp: We used to chase pirates to the last corners of the blues!
     Garp: And don't forget about Sengoku... We had many adventures.
     Tsuru:  Perhaps we should reminisce some other time!
@@ -187,13 +187,13 @@ Tsuru: That's one way to put it.
     Garp scoffs. It seems like this is a conversation they have had often.
     You notice the tension between the two of them.
     -> I hope that we can maintain peace together!
-        do like(tsuru)
-        do hate(garp)
+        <<like tsuru>>
+        <<hate garp>>
         Tsuru:  That's a good starting point, {$name}.
         Garp: Damn, kid, do you always only parrot what you hear?
     -> I hope to be part of the change!
-        do like(garp)
-        do hate(tsuru)
+        <<like garp>>
+        <<hate tsuru>>
         Garp: Bwahaha! That's the spirit!
 <<jump workday_legendary_1_GarpTsuruWrapUp>>
 ===
@@ -207,13 +207,13 @@ Tsuru:  As much as I disagree with giving a pirate the status of a legend, it's 
     Tsuru:  Sengoku, too. So did everyone we mentored. But I think, by the end, only Garp could keep up with him.
     Garp: Heh, those were the days... too bad that in the end, he got hung out to dry.
     -> At least he died and that was the end of it.
-        do hate(garp)
-        do hate(tsuru)
+        <<hate garp>>
+        <<hate tsuru>>
         Garp: Hm.
         Tsuru:  Roger might've died, but the trouble he caused is still very much alive.
-    -> I think Tsuru should hang *you* out to dry!
-        do like(tsuru)
-        do like(garp)
+    -> I think Tsuru should hang [i]you[/i] out to dry!
+        <<like tsuru>>
+        <<like garp>>
         Garp erupts in laughter. Tsuru chuckles.
         Tsuru:  It won't work to discipline him.
         Tsuru:  Believe it or not, Garp's heart is in the right place.
@@ -223,19 +223,19 @@ Tsuru:  As much as I disagree with giving a pirate the status of a legend, it's 
     Tsuru:  Not everybody knows this, {$name}.
     Tsuru:  It's one of the difficult decisions that had to be made from the top.
     -> I understand why.
-        do like(tsuru)
-        do hate(garp)
+        <<like tsuru>>
+        <<hate garp>>
         Garp: What?! Really?!
         Garp: I wouldn't be happy, kid!
         Tsuru: The new generation has to stay pragmatic, too.
     -> I think the world should know the truth.
-        do like(garp)
-        do hate(tsuru)
+        <<like garp>>
+        <<hate tsuru>>
         Tsuru:  …Well.
         Tsuru:  Let's focus on the task at hand.
 -> I thought stories about Roger would be a little more... exciting.
-    do hate(tsuru)
-    do hate(garp)
+    <<hate tsuru>>
+    <<hate garp>>
     Garp: What a thing to say to two old-timers like us!
     Tsuru:  Old-timers?! Speak for yourself
     Tsuru:  But as you wish, {$name}. Just don't forget that knowledge is power.
@@ -245,7 +245,7 @@ Tsuru:  As much as I disagree with giving a pirate the status of a legend, it's 
 title: workday_legendary_1_GarpTsuruWrapUp
 ---
 Tsuru sighs.
-Tsuru:  Still, I'm glad that we are working together after all this time... at least, in *some* capacity.
+Tsuru:  Still, I'm glad that we are working together after all this time... at least, in [i]some[/i] capacity.
 Garp: Yeah! You're not getting rid of me that easily!
 Garp: You want to catch up with the workload so we can all enjoy Rosinante's promotion in peace too, huh?
 Tsuru:  ...Yes.
@@ -265,7 +265,7 @@ Unexpectedly, Rosinante is also in the office. You couldn't hear what they were 
 Sengoku: {$name}, Tsuru sent you?
 {$name}: Yes.
 -> Give Sengoku the papers.
-    do like(sengoku)
+    <<like sengoku>>
     Sengoku: Hmm? What are these for?
     {$name}: I'm not sure. Tsuru-san just gave them to me.
     {$name}: I assumed you would know.
@@ -273,24 +273,24 @@ Sengoku: {$name}, Tsuru sent you?
     Sengoku: Rosinante, it's about your promotion.
     Rosinante: We didn't get to talk about that even though we meant to, right?
     -> Congratulations on your promotion!
-        do like(rosinante)
-        do like(sengoku)
+        <<like rosinante>>
+        <<like sengoku>>
         Rosinante: Ah, thank you, thank you. It's nothing, really.
     -> It would be ideal if you figured out the details as soon as possible, then.
-        do like(sengoku)
+        <<like sengoku>>
         Sengoku: {$name} is right. We can't just sit around. We need to plan the ceremony.
-        Sengoku: We got caught talking about *other issues.*
+        Sengoku: We got caught talking about [i]other issues.[/i]
         Rosinante: How is this an issue?
         Sengoku: Of course it's an issue! We were just talking about it.
-    -> How could *you* possibly get promoted?
-        do hate(rosinante)
-        do hate(sengoku)
+    -> How could [i]you[/i] possibly get promoted?
+        <<hate rosinante>>
+        <<hate sengoku>>
         Sengoku: {$name}... Rosinante may be younger than me and Tsuru-san but he's still a superior, so be respectful.
         Sengoku: Tsuru-san would disapprove of such an attitude and you know it.
         {$name}: You're right, Inspector. I apologize.
     <<jump workday_legendary_1_CS1A>>
 -> Ask him about the wanted poster.
-    do like(rosinante)
+    <<like rosinante>>
     <<jump workday_legendary_1_CS1A>>
 ===
 
@@ -303,14 +303,14 @@ Sengoku: Pfft, trouble is too light of a word.
 Sengoku: I'm sure you heard that Straw Hat Luffy and Trafalgar Law formed an alliance. After Doflamingo's fall, they plan to take down Kaidou!
 Rosinante: And how is that an issue?
 -> Rosinante-san is right. Isn't there a chance that they could defeat Kaidou?
-    do like(rosinante)
+    <<like rosinante>>
     Sengoku: Don't be foolish. They don't stand a chance.
     Rosinante: Pfft, don't be so sure of that.
     Sengoku: Rosinante, whose side are you on?!
     <<jump workday_legendary_1_CS1B>>
 -> I don't see the issue. Let them take each other out. Less paperwork for us, right?
-    do like(sengoku)
-    do hate(rosinante)
+    <<like sengoku>>
+    <<hate rosinante>>
     Rosinante: That's easy for you to say.
     Sengoku: {$name} isn't wrong, you know.
     Sengoku: Are you a Marine, Rosinante? Or did working undercover among pirates for so long make you think like them?
@@ -322,8 +322,8 @@ Rosinante: And how is that an issue?
     Sengoku: Let Sakazuki figure it out; I'm done with all that!
     Rosinante: Yeah... we're just talking for the sake of conversation. I doubt the Fleet Admiral will deploy any of us at this base to deal with this.
     -> You're right. I don't even know what I would do if I found myself face to face with any of those pirates. They're way too strong.
-        do like(rosinante)
-        do hate(sengoku)
+        <<like rosinante>>
+        <<hate sengoku>>
         Sengoku: Don't give them so much credit!
         Rosinante: It's fine, Sengoku-san! Haha.
         Rosinante: {$name} isn't wrong. Out of us three, you're the only one who could stand a chance.
@@ -334,8 +334,8 @@ Rosinante: And how is that an issue?
         Sengoku: What will I do with you...
         <<jump workday_legendary_1_CS1B>>
     -> It's still a nice thought.
-        do like(sengoku)
-        do hate(rosinante)
+        <<like sengoku>>
+        <<hate rosinante>>
         Rosinante: Let other people deal with it.
         Sengoku: You want to do good things, and I appreciate it, but you're still just a recruit.
         Sengoku: You'll have to get a lot stronger.
@@ -344,7 +344,7 @@ Rosinante: And how is that an issue?
         Sengoku: Maybe one day, after you stop fraternizing with the enemy…
         Rosinante: ...
         Rosinante: Sengoku-san, you wound me.
-        Sengoku: As if *you* don't wound me! Hahahaha!
+        Sengoku: As if [i]you[/i] don't wound me! Hahahaha!
         <<jump workday_legendary_1_CS1B>>
 ===
 
@@ -352,8 +352,8 @@ title: workday_legendary_1_CS1B
 ---
 The way Rosinante is talking about the pirates is odd, but you also can't help but notice how close he and Sengoku seem to be. Almost like a father and son.
 -> You two seem so close!
-    do like(sengoku)
-    do like(rosinante)
+    <<like sengoku>>
+    <<like rosinante>>
     Sengoku: We've known each other for a long time. I suppose it's easy to tell.
     {$name}: Really? How did you meet?
     Rosinante: Sengoku-san took me in when I was a child.
@@ -366,8 +366,8 @@ The way Rosinante is talking about the pirates is odd, but you also can't help b
     Rosinante: But it feels great knowing that someone will always have your back.
     <<jump workday_legendary_1_CS1C>>
 -> You two remind me of the way my brother and father often used to bicker.
-    do like(sengoku)
-    do like(rosinante)
+    <<like sengoku>>
+    <<like rosinante>>
     Rosinante: That makes sense! Sengoku-san is like a father to me.
     Sengoku: Yes, and sometimes I can't help but think that it's unfortunate...
     Rosinante: Don't listen to him. No one was happier than him when I came back from my mission.
@@ -376,8 +376,8 @@ The way Rosinante is talking about the pirates is odd, but you also can't help b
     Rosinante: Don't mind him, don't mind him.
     <<jump workday_legendary_1_CS1C>>
 -> Why are you defending the pirates so much, Commander?
-    do hate(sengoku)
-    do hate(rosinante)
+    <<hate sengoku>>
+    <<hate rosinante>>
     Sengoku: Ah... don't take it so seriously.
     Rosinante: We are just joking around.
     {$name}: I'm sorry! I didn't realize.

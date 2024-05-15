@@ -5,7 +5,13 @@ position: -741,-399
 <<declare $kuzan = "Admiral Aokiji">>
 <<declare $issho = "Admiral Fujitora">>
 <<declare $borsalino = "Admiral Kizaru">>
+
 <<declare $name = "Player-chan">>
+<<declare $pronoun_they = "they">>
+<<declare $pronoun_them = "them">>
+<<declare $pronoun_theirs = "theirs">>
+
+<<set $name = "bungo bango">>
 
 Testing: Not Wave [wave]WAVE!!![/wave] NOT WAVE
 

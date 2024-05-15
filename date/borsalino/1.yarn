@@ -17,7 +17,7 @@ On your way home, you decide to walk through the park. It isn't long before you 
 -> No, Sir. (-)
     {$borsalino}: Oh... how formal.
     {$borsalino}: You can call me Borsalino...
-    <<get "CallMeBorsalino">>
+    <<set $borsalino = "Borsalino">>
 -> At least you're there to keep it interesting...  (+)
     {$borsalino}: [wave]Ooh...[/wave]
     {$borsalino}: That is very kind of you...
