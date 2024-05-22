@@ -1,4 +1,4 @@
-title: date_helmeppo_1_start
+title: date_helmeppo_1_main
 ---
 <<set_background "training-grounds" show>>
 The training grounds are quiet. Everyone was likely busy getting food, given the time of day. However, you do see one person there.
@@ -39,11 +39,11 @@ title: date_helmeppo_1_Helmeppo_petshop
 ---
 <<get "KnowsAboutWolf">>
 Helmeppo: Yeah. Can't say I've been in that one. I've sort of avoided them since my wolf… died.
-<<increment "hd1.points_possible">>
+<<set $hd1_points_possible += 1>>
 -> I'm so sorry. That must have been tough.
     Helmeppo: Oh, uh, thanks.
     Helmeppo: He was a menace, but for a while he was my only friend.
-    <<increment "hd1.points">>
+    <<set $hd1_points += 1>>
     <<jump date_helmeppo_1_Helmeppo_bath_store1>>
 -> What happened to it?
     Helmeppo: Roronoa Zoro happened.
@@ -51,7 +51,7 @@ Helmeppo: Yeah. Can't say I've been in that one. I've sort of avoided them since
     Helmeppo: It's a [i]long[/i] story…
     <<jump date_helmeppo_1_Helmeppo_bath_store1>>
 -> What kind of freak has a pet wolf…
-    <<decrement "hd1.points">>
+    <<set $hd1_points = $hd1_points - 1>>
     Helmeppo: [i]This[/i] kind.
     <<jump date_helmeppo_1_Helmeppo_bath_store1>>
 ===
@@ -73,15 +73,15 @@ Helmeppo: Yeah. Been meaning to for a while, but it was closed last time I was d
 title: date_helmeppo_1_Helmeppo_bath_store2
 ---
 The store is small, but surprisingly full. Everywhere you turn you see some kind of soap, sugar scrub, bath bomb, or other bath product. The air smells of perfume.
-<<increment "hd1.points_possible">>
+<<set $hd1_points_possible += 1>>
 -> This place smells so nice.
-    <<increment "hd1.points">>
+    <<set $hd1_points += 1>>
     Helmeppo: Doesn't it? It's like lavender and citrus.
     <<jump date_helmeppo_1_Helmeppo_bath_store3>>
 -> Is there something specific you're looking for?
     <<jump date_helmeppo_1_Helmeppo_bath_store3>>
 -> Ugh. This place is making my head hurt.
-    <<decrement "hd1.points">>
+    <<set $hd1_points = $hd1_points - 1>>
     <<jump date_helmeppo_1_Helmeppo_bathstore_choice>>
 ===
 
@@ -97,9 +97,9 @@ Helmeppo: Hey, you didn't have to come in.
 title: date_helmeppo_1_Helmeppo_bath_store3
 ---
 Helmeppo: I'm just looking at the bar soaps. Local places make their own stuff, so it's always unique. And it changes pretty regularly, so I stop in when I can.
-<<increment "hd1.points_possible">>
+<<set $hd1_points_possible += 1>>
 -> Huh. In that case, I should get some myself.
-    <<increment "hd1.points">>
+    <<set $hd1_points += 1>>
     <<jump date_helmeppo_1_Helmeppo_bath_store5>>
 -> Oh, that's cool.
     <<jump date_helmeppo_1_Helmeppo_bath_store4>>
@@ -117,14 +117,14 @@ Helmeppo: I'm just going to grab a few, then we can go.
 title: date_helmeppo_1_Helmeppo_bath_store5
 ---
 Helmeppo: You should! Hell, I'll buy it for you if you want.
-<<increment "hd1.points_possible">>
+<<set $hd1_points_possible += 1>>
 -> Really? That would be great!
-    <<increment "hd1.points">>
+    <<set $hd1_points += 1>>
     Helmeppo: What are you waiting for? Go on and pick some things out.
 -> That's alright, I'll buy it myself.
     Helmeppo: No worries. Let's go.
 -> What, do I really look that broke to you?
-    <<decrement "hd1.points">>
+    <<set $hd1_points = $hd1_points - 1>>
     Helmeppo: Fine, forget I asked.
 You both wander the store for a while, each picking out a few items before checking out. After you're both finished, you step back outside.
 <<jump date_helmeppo_1_Helmeppo_travel2>>
@@ -134,15 +134,15 @@ title: date_helmeppo_1_Helmeppo_wait1
 ---
 You wait outside the store, enjoying the fresh air. Helmeppo is gone for a while but eventually steps out of the store with a bag in his hand.
 Helmeppo: I'm back. Sorry it took so long.
-<<increment "hd1.points_possible">>
+<<set $hd1_points_possible += 1>>
 -> There you are! I was about to send in a search party.
-    <<increment "hd1.points">>
+    <<set $hd1_points += 1>>
     Helmeppo: I wasn't gone that long, was I?
     <<jump date_helmeppo_1_Helmeppo_travel2>>
 -> It's alright, I didn't mind the wait.
     <<jump date_helmeppo_1_Helmeppo_travel2>>
 -> You should be. I was close to leaving.
-    <<decrement "hd1.points">>
+    <<set $hd1_points = $hd1_points - 1>>
     Helmeppo: …
     <<jump date_helmeppo_1_Helmeppo_travel2>>
 ===
@@ -151,15 +151,15 @@ title: date_helmeppo_1_Helmeppo_travel2
 ---
 {$name}: So where are we going next?
 Helmeppo: I need to stop by the weaponsmith, if you still want to tag along.
-<<increment "hd1.points_possible">>
+<<set $hd1_points_possible += 1>>
 -> Of course I'll come. I'm having fun walking with you.
-    <<increment "hd1.points">>
+    <<set $hd1_points += 1>>
     Helmeppo: Yeah, uh. Me too.
     <<jump date_helmeppo_1_Helmeppo_travel3>>
 -> Sure. It's been nice to stretch my legs.
     <<jump date_helmeppo_1_Helmeppo_travel3>>
 -> It's not like I have anything better to do.
-    <<decrement "hd1.points">>
+    <<set $hd1_points = $hd1_points - 1>>
     <<jump date_helmeppo_1_Helmeppo_travel3>>
 -> Actually, I'm going to head back to the base.
     Helmeppo: Alright. See you some other time, then.
@@ -188,8 +188,8 @@ title: date_helmeppo_1_Helmeppo_Morgan
 ---
 Helmeppo: Yes. I'm very sure.
 -> Come on, nothing? It's not like I don't know the story, I just want to hear it from you.
-    <<decrement "hd1.points">>
-    <<decrement "hd1.points">>
+    <<set $hd1_points = $hd1_points - 1>>
+    <<set $hd1_points = $hd1_points - 1>>
     Helmeppo: Well you're not getting it.
     Helmeppo: You know what? I can run my errand tomorrow. I'm going back to the base.
     <<jump date_helmeppo_1_End_date>>
@@ -271,18 +271,18 @@ Helmeppo: Alright. Ready to head back? We can get something to eat on the way.
 title: date_helmeppo_1_Helmeppo_parting
 ---
 Helmeppo: Right. Well, I guess I'll see you later then?
-<<increment "hd1.points_possible">>
-<<increment "hd1.points_possible">>
+<<set $hd1_points_possible += 1>>
+<<set $hd1_points_possible += 1>>
 -> Not if I see you first.
-    <<increment "hd1.points">>
-    <<increment "hd1.points">>
+    <<set $hd1_points += 1>>
+    <<set $hd1_points += 1>>
     Helmeppo: Ha! Good one.
     <<jump date_helmeppo_1_End_date>>
 -> Yeah. See you around.
     <<jump date_helmeppo_1_End_date>>
 -> Only if I have no choice in the matter.
-    <<decrement "hd1.points">>
-    <<decrement "hd1.points">>
+    <<set $hd1_points = $hd1_points - 1>>
+    <<set $hd1_points = $hd1_points - 1>>
     Helmeppo: …
     <<jump date_helmeppo_1_End_date>>
 ===
@@ -324,15 +324,15 @@ Helmeppo: No. I mean, that [i]did[/i] happen, but I started using kukri because 
 title: date_helmeppo_1_Helmeppo_Coby
 ---
 Helmeppo: We actually only met about two years ago. It's funny. We didn't get along at all when we first met, but now I can't imagine [i]not[/i] having him as a friend.
-<<increment "hd1.points_possible">>
+<<set $hd1_points_possible += 1>>
 -> It must be nice to have a friend like that.
-    <<increment "hd1.points">>
+    <<set $hd1_points += 1>>
     Helmeppo: It is. Coby's a great guy to get to know better, if you get the chance.
 -> You two didn't get along? That sounds like a story I need to hear.
     Helmeppo: With your position, I'm surprised you haven't.
     Helmeppo: It seems like all the Shells Town transfers try to ‘warn' people about my past… But I'll tell you the story some other time.
 -> I can see how you didn't get along at first.
-    <<decrement "hd1.points">>
+    <<set $hd1_points = $hd1_points - 1>>
     Helmeppo: At least I used to [i]actually[/i] deserve it.
 <<jump date_helmeppo_1_Helmeppo_food_choice>>
 ===
@@ -340,9 +340,9 @@ Helmeppo: We actually only met about two years ago. It's funny. We didn't get al
 title: date_helmeppo_1_Helmeppo_food_choice
 ---
 Helmeppo: There are a few places, but the one I know best is this sandwich place closer to the base. They've got a good selection, and it's easy to eat on the go.
-<<increment "hd1.points_possible">>
+<<set $hd1_points_possible += 1>>
 -> Sure. If you enjoy it, it must be good.
-    <<increment "hd1.points">>
+    <<set $hd1_points += 1>>
     Helmeppo: I think you're the only one who's ever taken my taste in things as a good thing.
     <<jump date_helmeppo_1_Helmeppo_sandwiches>>
 -> Yeah, I could go for a sandwich.

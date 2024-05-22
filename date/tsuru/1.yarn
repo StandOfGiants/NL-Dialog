@@ -1,4 +1,4 @@
-title: date_tsuru_1_start
+title: date_tsuru_1_main
 ---
 <<set_background "park" show>>
 It is the start of another workday. You decide to get to HQ early.
@@ -16,6 +16,8 @@ Tsuru: I apologize for the chaos yesterday. It must've been stressful for a firs
     <<jump date_tsuru_1_route1_alt>>
 -> It was a little bit confusing…
     <<jump date_tsuru_1_route2>>
+-> route 3 access??? // Assuming route 3 is started here, but I don't have a trigger for it
+    <<jump date_tsuru_1_route3>>
 ===
 
 title: date_tsuru_1_route1

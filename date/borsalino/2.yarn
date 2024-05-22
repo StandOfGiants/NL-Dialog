@@ -1,5 +1,6 @@
-title: date_borsalino_2_start
+title: date_borsalino_2_main
 ---
+<<declare $bd2_points = 0>>
 if has_romance_points(borsalino, 2)
     Didn't {$borsalino} say you could do something else together soon?
     Speaking of the devil...
@@ -8,17 +9,17 @@ else
 {$borsalino}: Oh, [wave][i]hellooo[/i][/wave], {$name}…
 {$borsalino}: What a fun day today, wasn't it…?
 -> {$name}: Have you forgotten about me?! [comment]if has_romance_points(borsalino, 2)[/comment]
-    <<increment "bd2.points">>
-    <<increment "bd2.points">>
+    <<set $bd2_points += 1>>
+    <<set $bd2_points += 1>>
     {$borsalino}: Oh, my…
     {$borsalino}: You're cute when you're angry…
     {$borsalino}: Of [wave]cooourse[/wave] not, {$name}.
 // I dunno about this one. What gave the player the idea they'd been forgotten? Has it been a long time since the last date? Without any context, it just makes them sound creepily clingy. I do like his reaction, though
 -> Are you free today?
-    <<increment "bd2.points">>
+    <<set $bd2_points += 1>>
     {$borsalino}: Ah… I wish I was, [wave]belieeeve[/wave] me…
 -> I thought it was stressful… (-)
-    <<decrement "bd2.points">>
+    <<set $bd2_points = $bd2_points - 1>>
     {$borsalino}: Oh, you [i]poor thing…[/i]
     {$borsalino}: I'd love to help you decompress, I really [wave][i]wooould…[/i][/wave]
 // The indicator for point gain/loss here is different from date 1? There wasn't any mention of increment or decrement before. Not sure if this is an error or if you need to add this a lot more to this date/the last one
@@ -82,7 +83,7 @@ Borsalino lays back on his chair, arms comfortably crossed behind his head…
     {$borsalino}: [wave]Okaay…[/wave]
     <<jump date_borsalino_2_work>>
 -> Well? When are you getting started?
-    <<increment "bd2.points">>
+    <<set $bd2_points += 1>>
     <<jump date_borsalino_2_route3>>
 ===
 
@@ -220,7 +221,7 @@ title: date_borsalino_2_route2_pirates
     {$borsalino}: Oh… the most dangerous out of the new generation…
     {$borsalino}: It almost took me ten minutes to beat them…
     -So much for dangerous… (+)
-        {$borsalino}: They're [wave]nooothing[/wave]… 
+        {$borsalino}: They're [wave]nooothing[/wave]…
         <<jump date_borsalino_2_route2_cute>>
     -Why didn't you arrest them? (-)
         {$borsalino}: [wave]Heeey[/wave], I had things to do, mmm?
@@ -230,7 +231,7 @@ title: date_borsalino_2_route2_pirates
     -> 'name': I'll do that.
         {$borsalino}: Thank you, 'name'.
         <<jump date_borsalino_2_route2_cute>>
-    -> 'name': Don't you think it's strange to be allied with pirates? (+) 
+    -> 'name': Don't you think it's strange to be allied with pirates? (+)
         <<jump date_borsalino_2_route2_vega>>
 -Pick a Yonko. (+)
     {$borsalino}: Oh, thinking big, hmm…?
@@ -246,7 +247,7 @@ title: date_borsalino_2_route2_pirates1
     {$borsalino}: Oh… The most dangerous out of the new generation…
     {$borsalino}: It almost took me ten minutes to beat them…
     -So much for strong… (+)
-        {$borsalino}: They're [wave]nooothing[/wave]… 
+        {$borsalino}: They're [wave]nooothing[/wave]…
         <<jump date_borsalino_2_route2_cute>>
     -Why didn't you arrest them? (-)
         {$borsalino}: [wave]Heeey[/wave], I had things to do, mmm?
@@ -258,7 +259,7 @@ title: date_borsalino_2_route2_pirates1
         <<jump date_borsalino_2_route1_more_work>>
     -> Can I have a closer look?
         <<jump date_borsalino_2_route2_cute>>
-    -> Don't you think it's strange to be allied with pirates? (+) 
+    -> Don't you think it's strange to be allied with pirates? (+)
         <<jump date_borsalino_2_route2_vega>>
 ===
 
@@ -308,7 +309,7 @@ title: date_borsalino_2_route2_vega
     {$borsalino}: Mm-hm… that is the theory…
     <<jump date_borsalino_2_route2_vega1>>
 -> Because the World Government is lazy and doesn't care about corruption. (-)
-    {$borsalino}: Valiant point… but be careful who you say that to… 
+    {$borsalino}: Valiant point… but be careful who you say that to…
     <<jump date_borsalino_2_route2_vega1>>
 -> Because the Navy is not strong enough to face the Four Emperors by itself. (+)
     {$borsalino}: Oh… that is sad…
@@ -345,7 +346,7 @@ title: date_borsalino_2_route2_vega2
     {$borsalino}: Maybe… you need more imagination…
     <<jump date_borsalino_2_route2_end_work>>
 -> That's interesting.
-    {$borsalino}: Hmm… I hear that often… 
+    {$borsalino}: Hmm… I hear that often…
     <<jump date_borsalino_2_route2_vega_end>>
 ===
 

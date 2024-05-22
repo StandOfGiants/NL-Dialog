@@ -1,4 +1,4 @@
-title: date_issho_2_Part_1
+title: date_issho_2_main
 ---
 <<set_background "office" show>>
 {$name}: Another day of work ahead of me… I can't wait for the weekend!
@@ -81,13 +81,14 @@ Sneaking out of the base is easier than you expected. {$issho} has an amazing se
 
 title: date_issho_2_Next_Route
 ---
-if and(visited("Town"),and(visited("Dock"),visited("Park")))
+<<if visited("date_issho_2_Town") && visited("date_issho_2_Dock") && visited("date_issho_2_Park") >>
     <<jump date_issho_2_Ending_Route1>>
--> ... Head toward the town now! [comment]if not(visited("Town"))[/comment]
+<<endif>>
+-> ... Head toward the town now! <<if !visited("date_issho_2_Town")>>
     <<jump date_issho_2_Town>>
--> ... Leave for the dock! [comment]if not(visited("Dock"))[/comment]
+-> ... Leave for the dock! <<if !visited("date_issho_2_Dock")>>
     <<jump date_issho_2_Dock>>
--> ... Go to the park next. [comment]if not(visited("Park"))[/comment]
+-> ... Go to the park next. <<if !visited("date_issho_2_Park")>>
     <<jump date_issho_2_Park>>
 ===
 

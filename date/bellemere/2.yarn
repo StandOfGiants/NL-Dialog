@@ -1,5 +1,8 @@
-title: date_bellemere_2_start
+title: date_bellemere_2_main
 ---
+<<declare $bd2_date_outfit = 0>>
+<<declare $bd2_date_restaurant = 0>>
+
 <<set_background "office" show>>
 <<show_character bellemere center show>>
 <<context "bellemere_2">>
@@ -407,30 +410,31 @@ You hope it's a date, but you don't exactly mind treating your superior either w
 Well, how do you dress for this maybe-date?
 Outfit choices:
 -> Go flashy. Wear formal clothes.
-    <<get_local "outfit 1">>
+    <<set $bd2_date_outfit to 1>>
 -> Be casual. Nice T-shirts are for every situation.
-    <<get_local "outfit 2">>
+    <<set $bd2_date_outfit to 2>>
 -> Go in full uniform.
-    <<get_local "outfit 3">>
+    <<set $bd2_date_outfit to 3>>
 Good. Now, where will you go?
 -> Fleur de Cafe: a cheap little coffee shop
-    <<get_local "food 1">>
+    <<set $bd2_date_restaurant to 1>>
 -> Ristorante Italiano: a pretentious and expensive restaurant
-    <<get_local "food 2">>
+    <<set $bd2_date_restaurant to 2>>
 -> Midori Kaitenzushi: a fun and casual sushi conveyor belt place
-    <<get_local "food 3">>
+    <<set $bd2_date_restaurant to 3>>
 You leave your apartment and meet up with the redhead, already waiting outside the housing complex.
 Belle-mére: Took you long enough! Why are you so sweaty?
 You decide not to answer, and instead laugh off her comment, pulling out a handkerchief to wipe at your face. Pull it together, {$name}!
 Belle-mére: So, where are we going?
 {$name}: Well, I'll lead the way and you'll see.
 You hope that sounded suave, and offer your arm to the tastefully-dressed woman in civilian clothes. She takes it, and your heart beats faster.
-if has_item("outfit 1")
+<<if $bd2_date_outfit is 1 >>
     <<jump date_bellemere_2_reaction_1>>
-elif has_item("outfit 2")
+<<elseif $bd2_date_outfit is 2>>
     <<jump date_bellemere_2_reaction_2>>
-else
+<<else>>
     <<jump date_bellemere_2_reaction_3>>
+<<endif>>
 ===
 
 title: date_bellemere_2_reaction_1
@@ -483,12 +487,13 @@ Ah. Apparently going into detail on this topic was off-limits. Maybe one day she
 She laughs. Good. Point for you!
 Belle-mére: Well, you got me there! In any case… when someone says money isn't important, they've clearly never had to struggle for it. So I appreciate it. Treating me, I mean. And also… training on this island isn't quite [i]that[/i] bad of a torture if I have such a good friend keeping me company.
 The waiter brings your drinks and takes your order. You can't help but feel like Belle-mére is taking care to do a lot of math in her head as she takes in the prices on the menu.
-if has_item("outfit 1")
+<<if $bd2_date_outfit is 1>>
     <<jump date_bellemere_2_money_1>>
-elif has_item("outfit 2")
+<<elseif $bd2_date_outfit is 2>>
     <<jump date_bellemere_2_money_2>>
-else
+<<else>>
     <<jump date_bellemere_2_money_3>>
+<<endif>>
 ===
 
 title: date_bellemere_2_money_1
@@ -502,34 +507,37 @@ You're not sure if that last bit was a compliment or not.
 You say it as a joke, referencing her earlier words, and she grins in amusement.
 Belle-mére: Spoken like a real “mark.” Lend me 10,000 berries, then?
 You both laugh after you realize she wasn't [i]completely[/i] serious.
-if has_item("food 1")
+<<if $bd2_date_restaurant is 1>>
     <<jump date_bellemere_2_fav_1>>
-elif has_item("food 2")
+<<elseif $bd2_date_restaurant is 2>>
     <<jump date_bellemere_2_fav_2>>
-else
+<<else>>
     <<jump date_bellemere_2_fav_3>>
+<<endif>>
 ===
 
 title: date_bellemere_2_money_2
 ---
 Belle-mére: Glad you didn't try to impress me with your clothes. I might have tried to rob ya, which would be awkward because I like hanging out with you.
-if has_item("food 1")
+<<if $bd2_date_restaurant is 1>>
     <<jump date_bellemere_2_fav_4>>
-elif has_item("food 2")
+<<elseif $bd2_date_restaurant is 2>>
     <<jump date_bellemere_2_fav_5>>
-else
+<<else>>
     <<jump date_bellemere_2_fav_6>>
+<<endif>>
 ===
 
 title: date_bellemere_2_money_3
 ---
 Belle-mére: You… wore your uniform on a dinner date? What did you think this was, a work meeting? Want to share some thoughts on payroll?
-if has_item("food 1")
+<<if $bd2_date_restaurant is 1>>
     <<jump date_bellemere_2_fav_7>>
-elif has_item("food 2")
+<<elseif $bd2_date_restaurant is 2>>
     <<jump date_bellemere_2_fav_8>>
-else
+<<else>>
     <<jump date_bellemere_2_fav_9>>
+<<endif>>
 ===
 
 title: date_bellemere_2_fav_1

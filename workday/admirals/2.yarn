@@ -1,4 +1,4 @@
-title: workday_admirals_2_start
+title: workday_admirals_2_main
 ---
 //  Work Day 2: Gardening Edition  Thoughts from a few weeks prior:
 //  The group does Saka's activity. They go to a semi-public garden.  Location: Garden!
@@ -98,7 +98,7 @@ title: workday_admirals_2_procrastinate
 {$kuzan}: You mean he acts like he has a stick–
 {$issho}: Kuzan.
 {$kuzan}: –You know what I meant.
-{$borsalino}: He sure is a [i]sca[wave]ary[/i] man… You made a good choice by staying with us, {$name}...
+{$borsalino}: He sure is a [i]sca~ary[/i] man… You made a good choice by staying with us, {$name}...
 {$issho}: Shall we depart? Saka-san won't be happy if we get there too late.
 {$kuzan}: Let's go, I guess… Don't get there too early though… He'll make us move things around.
 You and the three Admirals start walking toward the garden at a sedated pace, talking among yourselves. They are all very kind to you.
@@ -188,9 +188,9 @@ title: workday_admirals_2_activity
 ---
 {$sakazuki}: <pause>... <pause>... Gardening.
 {$kuzan}: Ignore that grump, {$name}. Ararara… Well, that's an easy one. I love biking. There's nothing quite like going on a ride in the middle of the sea, just you and the waves…
-{$borsalino}: Aw, but riding on a cannonball is… [i]o[wave]oh[/i] a lot more exciting.
+{$borsalino}: Aw, but riding on a cannonball is… [i]o~oh[/i] a lot more exciting.
 {$kuzan}: But only you can do that, Borsalino.
-{$borsalino}: [i]Ma[/wave]aybe[/i] you should give it a try sometimes. You can [i]pro[wave]obably[/i] do it too.
+{$borsalino}: [i]Ma~aybe[/i] you should give it a try sometimes. You can [i]pro~obably[/i] do it too.
 {$kuzan}: So {$name}, what do you think, riding a cannonball or riding a bike, what's better?
 {$name}: That's so difficult! Both are interesting options. But I guess if I must pick one then…
 -> …Riding  a cannonball is clearly the winner! It's so cool! (B+1)
@@ -208,7 +208,7 @@ title: workday_admirals_2_activity
 title: workday_admirals_2_bootcamp
 ---
 {$sakazuki}: [comment]Judging[/comment] Hmph. Nowadays boot camp is far too lenient for the time we're living in.
-{$borsalino}: Mm? Is that a [i]ve[wave]ery[/i] long way of saying that… We had it harder?
+{$borsalino}: Mm? Is that a [i]ve~ery[/i] long way of saying that… We had it harder?
 {$sakazuki}: No. I'm saying the standards need to be much higher. These pirates are getting resourceful.
 {$sakazuki}: The Navy can't afford equal footing with pirates. We have to come out on top. That's the only way to win.
 {$kuzan}: Oi, don't scare the rookie…
@@ -742,50 +742,65 @@ title: workday_admirals_2_stack_time
 
 title: workday_admirals_2_rock_hunt
 ---
--> Check the West side of the garden [comment]if not(visited("rock_hunt_west"))[/comment]
-    <<visit "rock_hunt_west">>
-    You head West, grabbing flat rocks as you go, shoving them in your pockets!
-    {$borsalino}: “[/wave]Oooh[wave] {$name}, I see you've found a few rocks.”
-    [i]He has one really nice flat rock in his hand.[/i]
-    -> Yes, and I'm going to destroy you with them. (B-)
-        {$borsalino}: Oh, guess you won't be needing this one then. Or this one. [/wave]Or this one[wave] He keeps disappearing and reappearing, taking rocks! Ugh, better check elsewhere.
-    -> I guess so, I need to find more though. How about you?
-        {$borsalino}: “I think I've found enough. Here, you can take this nice long one.”
-        [i]He hands you the smooth rock in his hand. It's flat and seems perfect for stacking on top of a precarious tower! He winks and leaves. Time to continue the hunt.[/i]
--> Check the East side of the Garden [comment]if not(visited("rock_hunt_east"))[/comment]
-    <<visit "rock_hunt_east">>
-    You go east, finding a few rocks, but this area seems a bit more sandy.
-    {$sakazuki}: You spot the Fleet Admiral looking a little…silly in his suit as he dusts off a chunky looking rock. “{$name}.” He nods at you.
-    -> Having much luck finding rocks?
-        {$sakazuki}: …Some.
-    -> Are you really going to build a tower on Admiral Aokiji's forehead?
-        {$sakazuki}: Yes.
-        -> Awesome. (S+)
-            [i]He ignores you and continues choosing rocks until suddenly a rock is tossed your way.[/i]
-            {$sakazuki}: “I don't need this one.”
-            [i]Great, it looks nice and solid for the base of your tower! Time to keep looking.[/i]
-        -> Are…are you worried he'll retaliate?
-            {$sakazuki}: “He can try, and lose like he always does, the Fool.”
-            [i]It suddenly gets very warm and the Fleet Admiral might be smoking a little. Maybe… maybe you should look elsewhere.[/i]
--> Check the South Side of the Garden [comment]if not(visited("rock_hunt_south"))[/comment]
-    <<visit "rock_hunt_south">>
-    You go south, nudging a few pebbles with your foot, but there seem to be more plants than rocks here.
-    {$issho}: “Be careful {$name}!” Suddenly a small rock comes flying down from the sky and makes a small crater near your feet!
-    -> HOLY CRAP?
-        {$issho}: I apologize. Please, take this, I'll get another.
-    -> Hey, that's cheating!
-        {$issho}: Is it? I cannot search for rocks as easily as you, you know.
-        Oh. Right. Uh.
-        {$issho}: “Perhaps you should look elsewhere so I don't injure you in my search.” Yeah that's a good idea.
-        Yes
-        {$issho}: “Hm.” All the rocks in the area begin floating up and out of your reach. “Good luck, {$name}.”
-    //  [comment]ZIP[/comment] This needs to be reachable from both branches above, but it dosn't quite make sense for the second one
-    He hands you the rock that nearly killed you. It's flat on two opposing sides. That would make it sturdy for the middle of your tower. You should leave before you get hit by another rock.
-
-if and(visited("rock_hunt_east"),and(visited("rock_hunt_west"),visited("rock_hunt_south")))
+<<if visited("wa2_rock_hunt_east") && visited("wa2_rock_hunt_west") && visited("wa2_rock_hunt_south")>>
     <<jump workday_admirals_2_competition_time>>
-else
-    <<jump workday_admirals_2_rock_hunt>>
+<<endif>>
+
+-> Check the West side of the garden <<if !visited("wa2_rock_hunt_west")>>
+    <<jump wa2_rock_hunt_west>>
+-> Check the East side of the Garden <<if !visited("wa2_rock_hunt_east")>>
+    <<jump wa2_rock_hunt_east>>
+-> Check the South Side of the Garden <<if !visited("wa2_rock_hunt_south")>>
+    <<jump wa2_rock_hunt_south>>
+
+===
+
+title: wa2_rock_hunt_west
+---
+You head West, grabbing flat rocks as you go, shoving them in your pockets!
+{$borsalino}: “[/wave]Oooh[wave] {$name}, I see you've found a few rocks.”
+[i]He has one really nice flat rock in his hand.[/i]
+-> Yes, and I'm going to destroy you with them. (B-)
+    {$borsalino}: Oh, guess you won't be needing this one then. Or this one. [/wave]Or this one[wave] He keeps disappearing and reappearing, taking rocks! Ugh, better check elsewhere.
+-> I guess so, I need to find more though. How about you?
+    {$borsalino}: “I think I've found enough. Here, you can take this nice long one.”
+    [i]He hands you the smooth rock in his hand. It's flat and seems perfect for stacking on top of a precarious tower! He winks and leaves. Time to continue the hunt.[/i]
+<<jump workday_admirals_2_rock_hunt>>
+===
+
+title: wa2_rock_hunt_east
+---
+You go east, finding a few rocks, but this area seems a bit more sandy.
+{$sakazuki}: You spot the Fleet Admiral looking a little…silly in his suit as he dusts off a chunky looking rock. “{$name}.” He nods at you.
+-> Having much luck finding rocks?
+    {$sakazuki}: …Some.
+-> Are you really going to build a tower on Admiral Aokiji's forehead?
+    {$sakazuki}: Yes.
+    -> Awesome. (S+)
+        [i]He ignores you and continues choosing rocks until suddenly a rock is tossed your way.[/i]
+        {$sakazuki}: “I don't need this one.”
+        [i]Great, it looks nice and solid for the base of your tower! Time to keep looking.[/i]
+    -> Are…are you worried he'll retaliate?
+        {$sakazuki}: “He can try, and lose like he always does, the Fool.”
+        [i]It suddenly gets very warm and the Fleet Admiral might be smoking a little. Maybe… maybe you should look elsewhere.[/i]
+<<jump workday_admirals_2_rock_hunt>>
+===
+
+title: wa2_rock_hunt_south
+---
+You go south, nudging a few pebbles with your foot, but there seem to be more plants than rocks here.
+{$issho}: “Be careful {$name}!” Suddenly a small rock comes flying down from the sky and makes a small crater near your feet!
+-> HOLY CRAP?
+    {$issho}: I apologize. Please, take this, I'll get another.
+-> Hey, that's cheating!
+    {$issho}: Is it? I cannot search for rocks as easily as you, you know.
+    Oh. Right. Uh.
+    {$issho}: “Perhaps you should look elsewhere so I don't injure you in my search.” Yeah that's a good idea.
+    Yes
+    {$issho}: “Hm.” All the rocks in the area begin floating up and out of your reach. “Good luck, {$name}.”
+//  [comment]ZIP[/comment] This needs to be reachable from both branches above, but it dosn't quite make sense for the second one
+He hands you the rock that nearly killed you. It's flat on two opposing sides. That would make it sturdy for the middle of your tower. You should leave before you get hit by another rock.
+<<jump workday_admirals_2_rock_hunt>>
 ===
 
 title: workday_admirals_2_competition_time

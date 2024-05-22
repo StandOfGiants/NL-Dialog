@@ -1,4 +1,4 @@
-title: date_smoker_2_start
+title: date_smoker_2_main
 ---
 <<set_background "training-grounds" show>>
 <<show_character smoker center show>>
@@ -139,7 +139,7 @@ Smoker: My win again.
   -> Because you're getting well-acquainted with my body? (+1)
     Smoker: I'm taking some more educated guesses.
     <<jump date_smoker_2_Jitte_2_flirty>>
-  -> Glad to know I'm in your good hands. 
+  -> Glad to know I'm in your good hands.
       <<jump date_smoker_2_Jitte_2_flirty>>
 ===
 

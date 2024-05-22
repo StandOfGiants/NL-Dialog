@@ -34,7 +34,7 @@ Which route do you want?
 title: Legendary
 position: -293,-105
 ---
-<<jump workday_legendary_1_start>>
+<<jump workday_legendary_1_main>>
 ===
 
 title: LegendaryDatesOne
@@ -42,58 +42,31 @@ position: -272,469
 ---
 Who do you want to date?
 -> Tsuru
-    <<jump date_tsuru_1_start>>
+    <<jump date_tsuru_1_main>>
 -> Rosinante
-    <<jump date_rosinante_1_start>>
+    <<jump date_rosinante_1_main>>
 -> Garp
-    <<jump date_garp_1_start>>
+    <<jump date_garp_1_main>>
 -> Sengoku
-    <<jump date_sengoku_1_start>>
+    <<jump date_sengoku_1_main>>
 ===
 
 title: Admirals
 position: -835,38
 ---
-<<jump workday_admirals_1_start>>
-===
-
-title: AdmiralsDatesOne
-position: -47,429
----
-Who do you want to date?
--> Fleet Admiral Sakazuki
-    <<jump date_sakazuki_1_start>>
--> {$kuzan}
-    <<jump date_kuzan_1_start>>
--> {$borsalino}
-    <<jump date_borsalino_1_start>>
--> Issho
-    <<jump date_issho_1_start>>
+<<jump workday_admirals_1_main>>
 ===
 
 title: SmokersAndFriend
 position: -254,-397
 ---
-<<jump workday_smokers_and_friend_1_start>>
-===
-
-title: SmokersAndFriendDatesOne
-position: 227,-108
----
--> Smoker
-    <<jump date_smoker_1_start>>
--> bellemere
-    <<jump date_bellemere_1_start>>
--> Tashigi
-    <<jump date_tashigi_1_start>>
--> hina
-    <<jump date_hina_1_start>>
+<<jump workday_smokers_and_friend_1_main>>
 ===
 
 title: CobyCrew
 position: -286,-246
 ---
-<<jump workday_coby_crew_1_start>>
+<<jump workday_coby_crew_1_main>>
 ===
 
 title: CobyCrewDatesOne
@@ -101,23 +74,17 @@ position: 276,107
 ---
 Who do you want to date?
 -> Drake
-    <<jump date_drake_1_start>>
+    <<jump date_drake_1_main>>
 -> Helmeppo
-    <<jump date_helmeppo_1_start>>
+    <<jump date_helmeppo_1_main>>
 -> Coby
-    <<jump date_coby_1_start>>
+    <<jump date_coby_1_main>>
 ===
 
 title: DEBUG
 position: -602,38
 ---
 <<jump Other>>
-===
-
-title: routine
-position: -515,473
----
-Hi!
 ===
 
 title: Other

@@ -1,4 +1,4 @@
-title: workday_coby_crew_1_start
+title: workday_coby_crew_1_main
 ---
 <<set_background "office", show>>
 <<show_character coby, left, show>>
@@ -92,12 +92,14 @@ You all get back to work, quietly sifting through papers. Occasionally, Helmeppo
 -> You really know these forms, huh.
   Helmeppo: Yeah. I've gotten to know them pretty well.
   Coby: He helps me finish mine when he's done with his.
+  <<jump workday_coby_crew_1_Helmeppo_gets_drinks>>
 -> Thanks. I really don't know how you guys do it.
   Coby: It's not easy, but it's not like we can get out of it.
   Helmeppo: Not when Garp volunteered us for the job…
+  <<jump workday_coby_crew_1_Helmeppo_gets_drinks>>
 -> I can do this myself, you know. (-1 Helmeppo)
   Drake: Doesn't mean you have to.
-<<jump workday_coby_crew_1_Drake_gets_drinks>>
+  <<jump workday_coby_crew_1_Drake_gets_drinks>>
 ===
 
 title: workday_coby_crew_1_Drake_gets_drinks

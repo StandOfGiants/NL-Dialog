@@ -1,5 +1,6 @@
-title: date_tashigi_2_start
+title: date_tashigi_2_main
 ---
+<<declare $ta2_points = 0>>
 if has_romance_points(tashigi, 2)
     <<jump date_tashigi_2_perfect_date_start>>
 else
@@ -11,12 +12,12 @@ title: date_tashigi_2_perfect_date_start
 It's early morning. You have woken up and have finished your coffee, when you notice Tashigi looking flustered and frazzled off to the side of the mess hall. She looks at you and bites her lip, as if debating something. Determination sets in her face, her fist clenched at her side as she approaches you.
 Tashigi: Hello. I know it's early in the morning, and that it's the weekend and you can spend it how you please, but I was wondering if you would like to spend it together? I do have some errands to run in town for the sports day, though, so I'm not sure if that's something you'd be interested in doing.
 -> Yes, I'd love to spend the day with you, and sports day is so important for morale. I'd love to assist you in your task. Let me know what I can do to help out!
-    <<increment "ta2.points">>
+    <<set $ta2_points += 1>>
 -> Ah, so you're ran ragged and looking for a helper, huh. Sure, I'll help.
 [i]Tashigi is flustered by your response, but you're polite enough not to point it out.[/i]
 Tashigi: Would you like to accompany me into town? Be warned, I like to take the long way because I like to watch the ducks by the pond.
 -> Of course! It would be a refreshing way to spend the morning. Fresh air and great company—the ducks, I mean, not that you're not lov—I'd love to accompany you into town. Couldn't imagine a nicer start to the day.
-    <<increment "ta2.points">>
+    <<set $ta2_points += 1>>
 -> I actually have some things I need to do first this morning, but I'll meet you in town later.
 <<jump date_tashigi_2_date_start>>
 ===
@@ -30,7 +31,7 @@ You swear she'd get the gold for being a klutz, but it's endearing and those are
 -> [i]She's probably embarrassed anyone witnessed that. I should leave her be. Besides, I don't want to be roped into anything on my first weekend off in a while.[/i]
     <<jump date_tashigi_2_end_date>>
 -> Captain Tashigi! That's a very decorated and award-winning pavement. You're carrying so many prizes for the sports day: let me help get those back in their bags for you.
-    <<increment "ta2.points">>
+    <<set $ta2_points += 1>>
 Tashigi smiles up at you awkwardly as you retrieve all the prizes, finishing with lifting up her glasses and slide them onto her face.
 Tashigi: Oh, you saw that huh. Thank you for helping me, I should be good to go now.  Enjoy your weekend!
 -> Please, let me carry your bags for you. What can I do to help out?
@@ -48,25 +49,25 @@ Tashigi: We've almost got everything. We just have to pick up all the medals tha
 
 title: date_tashigi_2_choose_date_part
 ---
-if and(visited("get_the_medals"), and(visited("show_the_ropes"), visited("get_maid_outfits")))
+<<if visited("date_tashigi_2_get_the_medals") && visited("date_tashigi_2_show_the_ropes") && visited("date_tashigi_2_get_maid_outfits")>>
     <<jump date_tashigi_2_date_part_2>>
+<<endif>>
 Tashigi: Alright. Where do you want to go?
--> Let's get the medals! [comment]if not(visited("get_the_medals"))[/comment]
+-> Let's get the medals! <<if !visited("date_tashigi_2_get_the_medals")>>
     <<jump date_tashigi_2_get_the_medals>>
--> How ‘bout you show me the ropes? [comment]if not(visited("show_the_ropes"))[/comment]
+-> How ‘bout you show me the ropes? <<if !visited("date_tashigi_2_show_the_ropes")>>
     <<jump date_tashigi_2_show_the_ropes>>
--> I think we were maid for this. [comment]if not(visited("get_maid_outfits"))[/comment]
+-> I think we were maid for this. <<if !visited("date_tashigi_2_get_maid_outfits")>>
     <<jump date_tashigi_2_get_maid_outfits>>
 ===
 
 title: date_tashigi_2_show_the_ropes
 ---
-<<visit "show_the_ropes">>
 Tashigi chuckles a bit at your bad pun.
 Tashigi: Sorry to rope you into helping me on your weekend off. I really appreciate it.
 -> Well, my hands were tied when I saw you struggling with your bags. What hero doesn't help a maiden in distress?
 -> Please. I wouldn't skip it for the world. Mostly because skipping makes me faceplant.
-    <<increment "ta2.points">>
+    <<set $ta2_points += 1>>
     Tashigi puts an end to the pun-off.
     Tashigi: So, we're going to the docks to get our rope supply.
 -> The docks and not the sports store in town?
@@ -85,7 +86,7 @@ Sea spray tickles your skin. You have the sudden impulse to put your hands in th
 title: date_tashigi_2_splash_self
 ---
 {$name}: Ah. Sorry, it's just getting warmer, and there's nothing nicer than feeling the sea on your face.
-<<increment "ta2.points">>
+<<set $ta2_points += 1>>
 Tashigi looks at you with a fond smile. She sits beside you, dipping her own hands in the sea.
 Tashigi: I agree. Sometimes I like to just sit by here with my toes in the water, watching the world go by. It's always so beautiful, the sun reflecting on the water, the gentle waves. Don't you agree?
 The light reflects on her glasses and hair. She looks like she's glowing. You agree, you've never seen anything more beautiful.
@@ -105,14 +106,14 @@ You awkwardly clear your throat and avoid eye contact, hoping the deck will give
 Tashigi sighs deeply as she pays for the rope.
 Tashigi: The state of them after last weekend saw them unfit to use. They were ‘tested' before the sports day, to ensure they would hold and we'd get no injuries. But they were found completely shredded and broken. Someone must have gotten a bit overly excited.
 -> It's a kind thing for you to be using your weekend to fetch replacement ropes for the course! It looks like such a fun day for morale, and I'd love to race you on the obstacle course. You might kick my arse, but I'm gonna try my hardest!
-    <<increment "ta2.points">>
+    <<set $ta2_points += 1>>
 -> Did you investigate into the culprits?
     Tashigi: We arrived back after a tea break to find only two in the room: An awkward Vice Admiral Garp, and Fleet Admiral Sengoku's goat. It didn't look like they were chew marks, though.
 -> Well, clearly it was Garp then. The man's a shredded maniac and doesn't seem to know his own strength.
     Tashigi: Need I remind you that that's your superior you're talking about, and the hero of the navy at that. Do better.
 -> Maybe that's just what the goat wants you to think. A stitch up!
-    <<increment "ta2.points">>
-    <<increment "ta2.points">>
+    <<set $ta2_points += 1>>
+    <<set $ta2_points += 1>>
     Tashigi laughs at the absurdity.
 Tashigi: Alright. Where do you want to go next?
 <<jump date_tashigi_2_choose_date_part>>
@@ -120,7 +121,6 @@ Tashigi: Alright. Where do you want to go next?
 
 title: date_tashigi_2_get_the_medals
 ---
-<<visit "get_the_medals">>
 -> Might as well go for gold!
     Tashigi: That's the spirit!
 -> So did you compete in the sports day last year?
@@ -128,10 +128,10 @@ title: date_tashigi_2_get_the_medals
 -> How many medals did you win last year?
     Tashigi: [comment]flustered[/comment] Well, I … I took out silver in the overall fencing competition for the Captain division, qualified for the final of group relay race—we might have came fourth, but I faceplanted near the finish line—and I got the gold in sword kata demonstration for my class!
     -> Wow! That's so cool! I'm not surprised you did so well, your sword technique is just so cool and precise! I know who to go to for pointers.
-        <<increment "ta2.points">>
-        <<increment "ta2.points">>
+        <<set $ta2_points += 1>>
+        <<set $ta2_points += 1>>
     -Oh cool! I'm surprised you didn't win more, your skills are impressive. Maybe this year is your year!
-        <<increment "ta2.points">>
+        <<set $ta2_points += 1>>
     -Did you win the medal for being clumsy, too? Sounds like a very stylish flop.
     Tashigi gets flustered and huffs, embarrassed.
 Tashigi: Well, we better get these medals. I ordered them six weeks ago, so they're ready for pickup.
@@ -142,11 +142,11 @@ Tashigi: Well, we better get these medals. I ordered them six weeks ago, so they
     Tashigi holds the door open for you and you walk inside with a quick thanks. The store is neat and orderly. Commemorative coins dazzle the display counter. A sign covers up a collection of coins, saying reserved for T. Law. The seller behind the counter smiles widely at Tashigi and goes out back to fetch the medals, returning with a bag full of them. They jangle as they're handed to Tashigi.
 Tashigi: Thanks! They're so nice. I hope you make a lot of sales today! So {$name}, are their any prizes you're aiming for on Sports day?
 -> I'd really love a special achievement award.
-    <<increment "ta2.points">>
-    <<increment "ta2.points">>
+    <<set $ta2_points += 1>>
+    <<set $ta2_points += 1>>
     Tashigi: It's always so nice to get singled out to have a skill acknowledged! That recognition is very affirming, and I know it helps encourage me to do better to show their faith in me wasn't misplaced!
 -> Going for gold, of course!
-    <<increment "ta2.points">>
+    <<set $ta2_points += 1>>
     Tashigi: Well, you're on for the race to get it! I won't go easy on you.
 -> Honestly, I'm happy just getting a participation medal.
     Tashigi: [i]frowns[/i] Don't talk about yourself like that. Aim for higher, you'll get there!
@@ -161,11 +161,11 @@ Tashigi: Excellent! I've been very excited to pick these up.
 -> Wait, wouldn't those working in a maid café already have their uniform?
     Tashigi: Yes, the regular workers have their uniforms, but these are custom-made, marine-themed maid uniforms tailored for the day. We had many volunteer to work for short shifts throughout the day to boost morale, work hard, and have some fun. It was very heartening to see so many volunteer their time and services, and in exchange they got their own uniform.
 -> It's gonna be excellent to see so many tough, bear-looking marines showing their soft side! Did any of the admirals volunteer? Will Aramaki have green pleats and Akainu red to match their monikers?
-    <<increment "ta2.points">>
-    <<increment "ta2.points">>
+    <<set $ta2_points += 1>>
+    <<set $ta2_points += 1>>
     Tashigi: [comment]smiles warmly[/comment] Unfortunately all Admirals were too busy competing, but we did get some high ranking names. Truthfully, I think Fleet Admiral Sakazuki put his foot down and thought it would make people lose respect for them. But everyone else below that was allowed to give it a go! Vice Admiral Strawberry for example has strawberries patterned on his uniform and it's incredibly delightful.
 -> Does Sengoku's goat get their own uniform? Four legged for their little hoofs. I'd hate for the little fella to miss out. Even if he just ate at his uniform.
-    <<increment "ta2.points">>
+    <<set $ta2_points += 1>>
     Tashigi: [comment]tearing up[/comment] That would be so adorable. You're so kind to look out for him. Employee of the event hands down!
 -> Will you be wearing a maid uniform? I think you'd look extremely cute. It could have little sword patterns sown into the hemline!
     Tashigi: [comment]haughtily crossing her arms[/comment] I'm not answering that. You'll have to see on the day.
@@ -184,10 +184,10 @@ Tashigi: Cute! Do you want it?
     You go back to the change rooms with the uniform, marching with intent. You get changed.
     -> How do I look?
     -> You come out and do a twirl, posing happily for Tashigi and showing off the outfit.
-        <<increment "ta2.points">>
-        <<increment "ta2.points">>
+        <<set $ta2_points += 1>>
+        <<set $ta2_points += 1>>
     -> You nervously exit the change room and stand there, stiff as a board, trying not to look like you're enjoying yourself.
-        <<increment "ta2.points">>
+        <<set $ta2_points += 1>>
 <<jump date_tashigi_2_choose_date_part>>
 ===
 
@@ -195,10 +195,10 @@ title: date_tashigi_2_date_part_2
 ---
 You stroll side by side back through town, towards the route that will take you back to base. You resist the impulse to brush your shoulder against hers or say anything, knowing you're too nervous to break the silence. You pass by a store front selling swords, and Tashigi's breath hitches as she spots a graded, named blade in the display. She looks toward it longingly until the store is out of sight, sighing wistfully with a look of regret.
 -It's so sad, to see such a beautiful blade stuck behind glass where any common criminal could buy it. I hope it gets liberated by a worthy swordsman.
-    <<increment "ta2.points">>
-    <<increment "ta2.points">>
+    <<set $ta2_points += 1>>
+    <<set $ta2_points += 1>>
 -> That was a cool sword. I'm sure one day it'll be yours alongside Shigure!
-    <<increment "ta2.points">>
+    <<set $ta2_points += 1>>
 -> … [comment]You don't comment. It's not your place to pry.[/comment]
 
 It's become late in the afternoon. Tashigi yawns and wipes sweat from her brow. The bags look heavy, even separated between the two of you.

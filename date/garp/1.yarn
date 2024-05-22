@@ -1,4 +1,4 @@
-title: date_garp_1_start
+title: date_garp_1_main
 ---
 <<set_background "training-grounds" show>>
 PC: Huh, this must be the training grounds! Garp should be here... I hope.
@@ -107,7 +107,7 @@ title: date_garp_1_game_sequence1
 ---
 Garp: Alright, move, rookie!
 -> Left!
-    <<increment "gd1.correct_answers">>
+    <<set $gd1_correct_answers += 1>>
     Garp: Good!
     <<jump date_garp_1_game_sequence2>>
 -> Right!
@@ -120,7 +120,7 @@ title: date_garp_1_game_sequence2
 Garp: Let's see you dodge this one!
 -> Left!
 -> Right!
-    <<increment "gd1.correct_answers">>
+    <<set $gd1_correct_answers += 1>>
     Garp: Nice! One more to go!
     <<jump date_garp_1_game_sequence3>>
 -> Down!
@@ -133,7 +133,7 @@ Garp: Do it!
 -> Left!
 -> Right!
 -> Down!
-    <<increment "gd1.correct_answers">>
+    <<set $gd1_correct_answers += 1>>
     Garp: Perfect!
     <<jump date_garp_1_right_order>>
 ===

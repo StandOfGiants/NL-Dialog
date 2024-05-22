@@ -1,4 +1,4 @@
-title: workday_smokers_and_friend_1_start
+title: workday_smokers_and_friend_1_main
 ---
 <<set_background "mess-hall" show>>
 It's orientation day in your new assignment with Vice Admiral Smoker and his group. You gulp, entering the mess hall- no need to be nervous, right? You should just do your best to get to know them. You can trust your training group to prepare you for your role in the Marines.
@@ -13,12 +13,12 @@ Tashigi: You are a bit late, but the compound can be difficult to navigate at fi
 Hina: Hina will be assessing your obedience and potential.
 Smoker: Hope you're ready for some hard work. Damn, I'm all out of coffee…
 -> I can get you a refill!
-    <<decrement "wd1.bellemere">>
+    <<set $wd1_bellemere = $wd1_bellemere - 1>>
     <<jump workday_smokers_and_friend_1_Part_1A>>
 -> Yes Sir and Ma'ams! I look forward to learning from the best!
     <<jump workday_smokers_and_friend_1_Part_1B>>
 -> Ha ha… yeah, I'll do what I can.
-    <<increment "wd1.bellemere">>
+    <<set $wd1_bellemere += 1>>
     <<jump workday_smokers_and_friend_1_Part_1C>>
 ===
 
@@ -26,9 +26,9 @@ title: workday_smokers_and_friend_1_Part_1A
 ---
 You notice Bellemere make an odd face, something like disapproval, though the others do not seem to react at all beyond the Vice Admiral handing his cup to you dismissively. You get the coffee like the good little gopher you signed up to be when you joined the Marines, eager to please.
 Smoker: Thanks. Just the right amount of sugar, too– you're not bad, kid.
-<<increment "wd1.smoker">>
+<<set $wd1_smoker += 1>>
 -> It was no problem.
-    <<decrement "wd1.bellemere">>
+    <<set $wd1_bellemere = $wd1_bellemere - 1>>
 -> Anything else, Sir?
   Smoker: Easy. That'll do.
 <<jump workday_smokers_and_friend_1_Days_Duty>>
@@ -48,7 +48,7 @@ title: workday_smokers_and_friend_1_Part_1C
 ---
 Bellemere grins, though Tashigi seems less pleased with your blaise attitude.
 Tashigi: That is no way to address your superior officers, Marine.
-<<decrement "wd1.tashigi">>
+<<set $wd1_tashigi = $wd1_tashigi - 1>>
 Bellemere: Well, they have a realistic attitude, at least. Geez, Tashi-chan, you don't have to get on the kid's case on day one.
 Tashigi: There is a difference between realistic and insubordinate. We won't be doing {$pronoun_them} any favors by being so lax.
 Bellemere rolls her eyes behind Captain Tashigi's back, but otherwise does not respond.
@@ -70,14 +70,14 @@ Smoker: Ever hear about too many cooks spoiling the pot? Too many of us giving o
 -> But what if I want to learn from all of you?
     Smoker: You'll get other chances.
 -> Yeah, getting that many orders seems like a drag.
-    <<increment "wd1.bellemere">>
+    <<set $wd1_bellemere += 1>>
 
 Smoker: 'Sides, we've all got different things we teach best.
 -> Great. Could you go over the options again?
     Tashigi: It is quite a bit of information. Ask as much as you need, but be sure to pay attention.
-    <<increment "wd1.tashigi">>
+    <<set $wd1_tashigi += 1>>
 -> Who's the best teacher overall?
-    <<increment "wd1.hina">>
+    <<set $wd1_hina += 1>>
     Smoker: That's for you to make up your mind about. I'll go over the choices again.
 -> So you don't switch up who teaches what?
     Smoker: Every so often, but it's been a while. So, let's see...
@@ -86,7 +86,7 @@ Smoker: We've got the first plan, naval drills with me and Hina. Tashigi and her
 -> I like the original plan- I'd love to try naval drills!
     <<jump workday_smokers_and_friend_1_Part_2A>>
 -> I'm a fan of swords…. Captain Tashigi, would you teach me a few moves?
-    <<increment "wd1.tashigi">>
+    <<set $wd1_tashigi += 1>>
     // should we add points for each option? seems unfair to just add to tashigi
     <<jump workday_smokers_and_friend_1_Part_2B>>
 -> An obstacle course seems interesting!
@@ -107,12 +107,12 @@ Hina: A decoy ship armed with your fellow Marines posing as its attending crew w
 Smoker: I'm sure some of you have done this before, and I think this is in a manual.
 Hina: The plan we're adapting is in the Standard Warship Drills section of your combat manual.
 -> Oh, I know this one!
-    <<increment "wd1.hina">>
-    <<decrement "wd1.smoker">>
+    <<set $wd1_hina += 1>>
+    <<set $wd1_smoker = $wd1_smoker - 1>>
     Hina: Hina appreciates those of you who came prepared.
 -> I knew I should have read that.
 -> Sounds familiar, but I learn better by doing.
-    <<increment "wd1.smoker">>
+    <<set $wd1_smoker += 1>>
 
 Smoker: The winner here is the first team to knock the other team's captain into the water. For the purposes of the drill, I'm your commanding officer. Any questions?
     // requires clarification: win state contradicts what Hina said earlier.
@@ -122,7 +122,7 @@ Smoker: The winner here is the first team to knock the other team's captain into
     Hina: In a real naval battle there will not be time to ask questions, {$name}. Right, everyone in positions!
 -> Wait, are we actually using real weapons or what?
     Hina: What an asinine question. As if you would be opening fire on your fellow Marines.
-    <<decrement "wd1.hina">>
+    <<set $wd1_hina = $wd1_hina - 1>>
     Smoker: Your weapons have been replaced with water guns, standard procedure.
 <<jump workday_smokers_and_friend_1_Drill_Start>>
 ===
@@ -137,10 +137,10 @@ Smoker: Nah, I do it all the time. They're not moving fast. It's better to know 
 Hina: Hina is unimpressed. What would Tashigi-chan think if she saw you conducting drills with such a lackadaisical attitude?
 Smoker: I know her well enough. So, {$name}, what are you thinking?
 -> At the ready and waiting for orders.
-    <<increment "wd1.hina">>
+    <<set $wd1_hina += 1>>
 -> I'll see how they attack when they get closer in range and make adjustments.
 -> I need to be prepared for anything!
-    <<increment "wd1.smoker">>
+    <<set $wd1_smoker += 1>>
     Hina: They will be following the drill.
     Smoker: You don't know that.
 
@@ -161,7 +161,7 @@ Hina: Soldier! Get back in position!
 ---does this command lock PC out of hina's path 100%, or just date1? not questioning the writing choice (it'd be funny and on brand if insubordination makes hina hate you), just asking if lock_out_date is the command for locking out an entire route.
 ---perhaps this could be a larger decrement instead of a hard lock?
 Smoker: Yeah, that's it, {$name}! Way to think on your feet!
-<<increment "wd1.smoker">>
+<<set $wd1_smoker += 1>>
 The other ship's captain topples from his perch at the ship's helm as a water balloon hits him in the face, leaving his crew stunned, which affords your crew the opportunity to open fire. The drill is over!
 <<jump workday_smokers_and_friend_1_Drill_end>>
 ===
@@ -182,10 +182,10 @@ title: workday_smokers_and_friend_1_Drill_end
 Smoker: Not bad for an early drill, recruits. I saw some quick thinking out there.
 Hina: The purpose of a drill, however, is to learn to follow orders.
 if has_date_unlocked(hina)
-    <<jump date_hina_1_start>>
+    <<jump date_hina_1_main>>
 elif is_greater_than("wd1.smoker", 1)
     TRANSITION TO SMOKER DATE // is this text printed?
-    <<jump date_smoker_1_start>>
+    <<jump date_smoker_1_main>>
 else
     You failed to unlock a date.
     <<jump main>>
@@ -232,7 +232,7 @@ title: workday_smokers_and_friend_1_day
 You continue to follow the Captain, unsure of yourself. She technically outranks you… is this some kind of test of patience?
 Bellemere: You like mikan oranges, {$name}?
 -> Sure
-    <<increment "wd1.bellemere">>
+    <<set $wd1_bellemere += 1>>
     <<jump workday_smokers_and_friend_1_Part_3>>
 -> Not really...
     <<jump workday_smokers_and_friend_1_Part_4>>
@@ -248,7 +248,7 @@ title: workday_smokers_and_friend_1_Part_4
 ---
 Bellemere: Well, too bad for you! I brought a couple trees from my family orchard when I found out I'd be shipped to this island for training- I plan on checking on them and hiding out in the shade. Not too late to go find Captain Tashigi if you feel like overworking yourself and getting sweaty.
 -> Yeah, I'll go find her.
-    <<decrement "wd1.bellemere">>
+    <<set $wd1_bellemere = $wd1_bellemere - 1>>
     <<jump workday_smokers_and_friend_1_tash_transition>>
 -> No way! It's like 100 degrees out here!
     <<jump workday_smokers_and_friend_1_Mikan>>
@@ -264,7 +264,7 @@ Tashigi: Petty Officer {$name}, aren't you supposed to be with Commodore Belleme
 Tashigi: Never mind, I can imagine what happened.
 {$name}: Can I join you?
 Tashigi: Sure thing. Grab one of those wooden swords.
-<<increment "wd1.tashigi">>
+<<set $wd1_tashigi += 1>>
 <<jump workday_smokers_and_friend_1_Part_2B>>
 ===
 
@@ -298,7 +298,7 @@ She hands you a fistfull of pebbles and you stare at them a moment before lookin
 Bellemere: Yeah. Knock 'em all down and maybe I'll share some of my mikans with you when they ripen.
 You size up the little cans, not too sure of your chances. She didn't say you had to do it in one go, though, so… with enough persistence, you could probably do it.
 -> Go for it
-    <<increment "wd1.bellemere">>
+    <<set $wd1_bellemere += 1>>
     <<jump workday_smokers_and_friend_1_continue>>
 -> Nah- this is a waste of time.
     <<lock_out_date bellemere>>
@@ -343,7 +343,7 @@ You work the better part of an hour away sweating in the sweltering sun, lifting
     <<jump main>>
 -> Joke: Well, I learned a valuable lesson about priorities, huh?
     <<show_character bellemere center show>>
-    <<increment "wd1.bellemere">>
+    <<set $wd1_bellemere += 1>>
     She laughs, patting your back.
     <<jump workday_smokers_and_friend_1_Walk>>
 ===
@@ -362,7 +362,7 @@ You should probably just answer the riddle.
 -> Mosaic glass?
     Bellemere: Ha! Okay, you're reaching- it's supposed to be an egg!
 -> An egg?
-    <<increment "wd1.bellemere">>
+    <<set $wd1_bellemere += 1>>
     Bellemere: Yes! Have you heard that one before?
 Bellemere: Okay, next-
 {$name}: There's more!?
@@ -383,7 +383,7 @@ Bellemere: You have a complaint?
         {$name}: Got you! If you don't have a beard, then it doesn't matter how much you shave, right? Your beard will remain the same- as in, non-existent.
         Bellemere: Huh. I guess I'll take it!
     -> A barber!
-        <<increment "wd1.bellemere">>
+        <<set $wd1_bellemere += 1>>
         Bellemere: You got it!
         She looks pleased. She must really like riddles… or people who answer them.
     -> A track star!
@@ -444,7 +444,7 @@ Tashigi: If Vice Admiral Smoker finds out I lost another pair, I won't hear the 
     Tashigi: I'm fine. It's just that it's difficult to find my glasses without, well, having my glasses on… Wait, found them!
     Captain Tashigi blows on the lenses, trying to get most of the dirt off them. She accepts your hand when you offer it, and you help her stand up.
     Tashigi: Thanks. Now, er, where were we?
-    <<increment "wd1.tashigi">>
+    <<set $wd1_tashigi += 1>>
 -> [comment]Step forward to help[/comment]
     Tashigi: NO, WAIT!
     But it's too late. There is a the sound of crunching glass coming from under your heel. You wince and step back immediately, but the damage is already done. You look down and see Captain Tashigi's glasses, or what's left of them.
@@ -466,8 +466,8 @@ Tashigi: If Vice Admiral Smoker finds out I lost another pair, I won't hear the 
     Tashigi: Oh, here they are!
     Captain Tashigi picks up her glasses and blows on the lenses, trying to get most of the dirt off them. She accepts your hand when you offer it, and you help her stand up.
     Tashigi: Thanks. Now, where were we?
-    <<increment "wd1.tashigi">>
-    <<increment "wd1.tashigi">>
+    <<set $wd1_tashigi += 1>>
+    <<set $wd1_tashigi += 1>>
     // originally, was a '+2'. unsure how do put that in. is <do increment("wd1.tashigi", 2)> a valid command?
 <<jump workday_smokers_and_friend_1_PostTraining>>
 ===
@@ -477,12 +477,12 @@ title: workday_smokers_and_friend_1_Route2
 You spar for a while. Despite your background training, your breathing becomes erratic.
 -> This is just the workout I needed!
     Tashigi: You're not half as bad as I thought. There is certainly some potential!
-    <<increment "wd1.tashigi">>
-    <<increment "wd1.tashigi">>
+    <<set $wd1_tashigi += 1>>
+    <<set $wd1_tashigi += 1>>
     // originally, was a '+2'. unsure how do put that in. is <do increment("wd1.tashigi", 2)> a valid command?
 -> My hand is about to fall off, can we take a break soon?
     Tashigi: One more round, and we'll move on to perfect your technique. Great job so far!
-    <<increment "wd1.tashigi">>
+    <<set $wd1_tashigi += 1>>
 -> This is too hard! I give up.
     Tashigi: Hmm. At this rate, you won't last a month. Survive this next round, and we'll talk about a break.
 <<jump workday_smokers_and_friend_1_PostTraining>>
@@ -552,9 +552,9 @@ Bellemere: Waste time?! Implying you're going to do more? You're going to pass o
 At the end of the day you go to bed thinking over everything that happened between your two superiors. Hopefully, you've made the right decisions…
 END WORK DAY
 if has_date_unlocked(bellemere)
-    <<jump date_bellemere_1_start>>
+    <<jump date_bellemere_1_main>>
 elif has_date_unlocked(tashigi)
-    <<jump date_tashigi_1_start>>
+    <<jump date_tashigi_1_main>>
 else
     You failed to unlock a date.
     <<jump main>>

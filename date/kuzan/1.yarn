@@ -1,4 +1,4 @@
-title: date_kuzan_1_start
+title: date_kuzan_1_main
 ---
 <<hide_characters hide>>
 You decide to go for a walk in the park on your day off. It's too lovely out to stay cooped up. To your surprise, though, you not only stumble across an admiral there... but they're also outright napping in the open.
@@ -126,61 +126,75 @@ The Admiral takes a position a bit of a ways away from you, waiting for you to h
 
 title: date_kuzan_1_FrisbeeThrow
 ---
-<<increment "frisbees">>
--> Throw with every ounce of strength you possess. (2) [comment]if not(visited("frisbee.strong"))[/comment]
-    <<visit "frisbee.strong">>
-    You throw the frisbee like your life depends on it. It soars, so fast it's hard to see. A speeding disc of death! Hey, you could turn that into an attack! {$kuzan} doesn't catch it. In fact, it goes right through him! OH NO, WHAT HAVE YOU DONE?!
-    The frisbee freezes in midair. {$kuzan} reforms, ice filling in the frisbee gap. Uh oh. You… may have bitten off more than you can chew.
-    {$kuzan}: So that's how it is {$name}...? Catch.
-    The frisbee comes flying at you. It gleams in the sun. It's like a tiny flat meteor,and you are the nearest gravitational body.
-    -> Catch the frisbee. (2)
-        You take a stance, readying yourself to absorb the full force of the moving object. It's coming, hurdling toward you. Is that boom the sound of it breaking the sound barrier or just your heart beat?! All your senses come alive, you can taste the heat of the air as it grows enormous in front of your face! Your neurons fire, fingers flexing!
-        You catch it! Oh. It was actually just a normal throw. That wasn't even hard. The Admiral is laughing at the look on your face.
-    -> Dodge the frisbee. (0)
-        You barely duck in time, diving into the grass as the frisbee soars past you and all the way to the other side of the park. {$kuzan} chuckles at you as you have to go get it.
-    -> Close your eyes and pray. (0)
-        You hear the wind rushing and know the end is nigh. Goodbye sweet world, hello obliv–!
-        A rush of cold races over your face! You open your eyes. {$kuzan} is standing in front of you, holding the frisbee in place, an inch from your face. You stare at each other for a long second.
-    {$kuzan}: You wanna try that again, {$name}?
-    <<jump date_kuzan_1_FrisbeeThrow>>
-
--> Throw it normally. (1) [comment]if not(visited("frisbee.normal"))[/comment]
-    <<visit "frisbee.normal">>
-    The frisbee sails into {$kuzan}'s arms, only wobbling a little. He yawns as he tosses it one handed back towards you.
-    -> PC: Catch it. (0)
-        You catch it! Good job! Someone is proud of you, somewhere.
-    -> PC: Catch it with [i]style[/i]. (1)
-        You leap into the air, spinning like a dancer, hands outstretched! You look awesome! You are putting those bootcamp skills to use, go you! You grab it grinning, then - oops. You fumbled the landing and drop the frisbee. Don't even look at {$kuzan}. The blow to your self esteem may kill you.
-    {$kuzan} holds his hands up, waiting for you to toss it back. So what you gonna do, champ?
-    <<jump date_kuzan_1_FrisbeeThrow>>
-
--> Throw it like a baseball. (0) [comment]if not(visited("frisbee.baseball"))[/comment]
-    <<visit "frisbee.baseball">>
-    You grab the corner(?) of the frisbee, pull your arm back with great might, and swing forward! Smoothly, you release the disc and it crashes right into the ground. Yeah, not sure what your plan was there. {$kuzan} stares at you.
-    -> Stare back. (0)
-        The wind blows, a crow caws. Time elongates. Your eyes strain with the urge to blink. You will not look away! You have to assert your dominance... somehow! It is only after a minute or two has passed that you realize {$kuzan} has fallen asleep! Oi! He wakes up when you look away.
-    -> Strike a pose. (1)
-        It's super effective! At making you look like an idiot. {$kuzan} gives you a sort of concerned thumbs up. AWESOME.
-    {$kuzan}: You gonna throw it for real or…?
-    <<jump date_kuzan_1_FrisbeeThrow>>
-
--> Throw it daintily. A real curve ball. Disc. Whatever.(2) [comment]if and(not(visited("frisbee.dainty")),is_greater_than("frisbees",1))[/comment]
-    <<visit "frisbee.dainty">>
-    You limp wrist it. A gentle flick. It's a leaf upon the wind! It wobbles and sinks toward the earth. {$kuzan} looks surprised but moves forward, diving to catch it, rolling and coming back up with it in his hands. Wow, so smooth! He tosses it back towards you.
-    -> Try to copy his catch.
-        You dive for the frisbee! Except the Admiral did not throw it gently. It hits you right in the forehead. You lay on the grass, dazed.
-        {$kuzan}: You okay, {$name}?
-        You get up and give him a thumbs up, trying to hide your regrets behind a bright smile.
-    -> Catch it regularly.
-        You catch it. Aw yeah, frisbee!
-// Were there supposed to be points here? All the other ones have them.
-    {$kuzan}: Alright, make it a challenge this time.
-    <<jump date_kuzan_1_FrisbeeThrow>>
-
--> Throw it really high! (THIS OPTION ENDS THE FRISBEE STUFF) [comment]if is_greater_than("frisbees", 2)[/comment]
+<<declare $frisbees = 0>>
+<<set $frisbees += 1>>
+-> Throw with every ounce of strength you possess. (2) <<if  !visited("kd1_frisbee_strong")>>
+    <<jump kd1_frisbee_strong>>
+-> Throw it normally. (1) <<if !visited("kd1_frisbee_normal")>>
+    <<jump kd1_frisbee_normal>>
+-> Throw it like a baseball. (0) <<if !visited("kd1_frisbee_baseball")>>
+    <<jump kd1_frisbee_baseball>>
+-> Throw it daintily. A real curve ball. Disc. Whatever.(2) <<if !visited("kd1_frisbee_dainty") && $frisbees > 1>>
+    <<jump kd1_frisbee_dainty>>
+-> Throw it really high! <<if $frisbees > 2>>
     You eject the frisbee skyward! It soars up, up and up! And-! HEY, BIRD, THAT'S NOT YOURS! A crow flies away with your ill gotten frisbee. The two of you watch it disappear into the distance.
     {$kuzan}: Well, that was something. You hungry?
     <<jump date_kuzan_1_GoToLunch>>
+===
+
+title: kd1_frisbee_strong
+---
+You throw the frisbee like your life depends on it. It soars, so fast it's hard to see. A speeding disc of death! Hey, you could turn that into an attack! {$kuzan} doesn't catch it. In fact, it goes right through him! OH NO, WHAT HAVE YOU DONE?!
+The frisbee freezes in midair. {$kuzan} reforms, ice filling in the frisbee gap. Uh oh. You… may have bitten off more than you can chew.
+{$kuzan}: So that's how it is {$name}...? Catch.
+The frisbee comes flying at you. It gleams in the sun. It's like a tiny flat meteor,and you are the nearest gravitational body.
+-> Catch the frisbee. (2)
+    You take a stance, readying yourself to absorb the full force of the moving object. It's coming, hurdling toward you. Is that boom the sound of it breaking the sound barrier or just your heart beat?! All your senses come alive, you can taste the heat of the air as it grows enormous in front of your face! Your neurons fire, fingers flexing!
+    You catch it! Oh. It was actually just a normal throw. That wasn't even hard. The Admiral is laughing at the look on your face.
+-> Dodge the frisbee. (0)
+    You barely duck in time, diving into the grass as the frisbee soars past you and all the way to the other side of the park. {$kuzan} chuckles at you as you have to go get it.
+-> Close your eyes and pray. (0)
+    You hear the wind rushing and know the end is nigh. Goodbye sweet world, hello obliv–!
+    A rush of cold races over your face! You open your eyes. {$kuzan} is standing in front of you, holding the frisbee in place, an inch from your face. You stare at each other for a long second.
+{$kuzan}: You wanna try that again, {$name}?
+<<jump date_kuzan_1_FrisbeeThrow>>
+===
+
+title: kd1_frisbee_normal
+---
+The frisbee sails into {$kuzan}'s arms, only wobbling a little. He yawns as he tosses it one handed back towards you.
+-> PC: Catch it. (0)
+    You catch it! Good job! Someone is proud of you, somewhere.
+-> PC: Catch it with [i]style[/i]. (1)
+    You leap into the air, spinning like a dancer, hands outstretched! You look awesome! You are putting those bootcamp skills to use, go you! You grab it grinning, then - oops. You fumbled the landing and drop the frisbee. Don't even look at {$kuzan}. The blow to your self esteem may kill you.
+{$kuzan} holds his hands up, waiting for you to toss it back. So what you gonna do, champ?
+<<jump date_kuzan_1_FrisbeeThrow>>
+===
+
+title: kd1_frisbee_baseball
+---
+You grab the corner(?) of the frisbee, pull your arm back with great might, and swing forward! Smoothly, you release the disc and it crashes right into the ground. Yeah, not sure what your plan was there. {$kuzan} stares at you.
+-> Stare back. (0)
+    The wind blows, a crow caws. Time elongates. Your eyes strain with the urge to blink. You will not look away! You have to assert your dominance... somehow! It is only after a minute or two has passed that you realize {$kuzan} has fallen asleep! Oi! He wakes up when you look away.
+-> Strike a pose. (1)
+    It's super effective! At making you look like an idiot. {$kuzan} gives you a sort of concerned thumbs up. AWESOME.
+{$kuzan}: You gonna throw it for real or…?
+<<jump date_kuzan_1_FrisbeeThrow>>
+===
+
+
+title: kd1_frisbee_dainty
+---
+You limp wrist it. A gentle flick. It's a leaf upon the wind! It wobbles and sinks toward the earth. {$kuzan} looks surprised but moves forward, diving to catch it, rolling and coming back up with it in his hands. Wow, so smooth! He tosses it back towards you.
+-> Try to copy his catch.
+    You dive for the frisbee! Except the Admiral did not throw it gently. It hits you right in the forehead. You lay on the grass, dazed.
+    {$kuzan}: You okay, {$name}?
+    You get up and give him a thumbs up, trying to hide your regrets behind a bright smile.
+-> Catch it regularly.
+    You catch it. Aw yeah, frisbee!
+// Were there supposed to be points here? All the other ones have them.
+{$kuzan}: Alright, make it a challenge this time.
+<<jump date_kuzan_1_FrisbeeThrow>>
 ===
 
 title: date_kuzan_1_HuntKids

@@ -1,4 +1,4 @@
-title: workday_smokers_and_friend_2_start
+title: workday_smokers_and_friend_2_main
 ---
 [i]All characters discussing who would carry boxes of evidence marked “Impel Down” up from the creepy basement evidence locker room up to Hina's office, and who will go through the boxes looking for “a very important envelope labeled, “indispensable.” (Must include SOMETHING of Tashigi and Bellemere getting along better. Some concession. Bellemere will be freaked out by basements… maybe Tashigi offers her a flashlight or something?)[/i]
 [i]Your division has been given a task to complete together, and while the orders have been marked “urgent,” you can't imagine what could be so pressing about going through a bunch of mundane brown boxes.[/i]
@@ -123,7 +123,7 @@ Belle-mère: (name), you got a death wish!?
 PC:
 -> I, uh… guess I should be more careful with the contents.
     <<jump workday_smokers_and_friend_2_A>>
--> Hey! How was I supposed to know someone stored such dangerous items down here!? 
+-> Hey! How was I supposed to know someone stored such dangerous items down here!?
     <<jump workday_smokers_and_friend_2_B>>
 ===
 

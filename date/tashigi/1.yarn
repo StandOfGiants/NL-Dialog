@@ -1,4 +1,4 @@
-title: date_tashigi_1_start
+title: date_tashigi_1_main
 ---
 <<set_background "mess-hall" show>>
 It's late in the afternoon, and even if dinner is already being served at the Mess Hall, you decide to stop by the Office and file the last of the paperwork.
@@ -11,19 +11,19 @@ She is surrounded by mountains and mountains of paper, a deeply concentrated loo
 Tashigi: Oh, hello there.
 Tashigi: How is it going? Are you done for the day?
 -> Yes, all done! I was about to go grab a bite after filling these papers.
-    <<increment "ta1.points">>
-    <<increment "ta1.points">>
+    <<set $ta1_points += 1>>
+    <<set $ta1_points += 1>>
 -> I'm good, Captain. How about you?
-    <<increment "ta1.points">>
+    <<set $ta1_points += 1>>
 -> Yeah, finally done.
 Captain Tashigi opens her mouth, but before she can say a word, there is a low, menacing growl that gives you goose bumps.
 You look around trying to ascertain the source of such sound. Then, it hits you: it was Captain Tashigi's stomach. She blushes violently as she tries to hide behind a pile of papers.
 -> It's getting late. Why don't you take a little break?
-    <<increment "ta1.points">>
-    <<increment "ta1.points">>
+    <<set $ta1_points += 1>>
+    <<set $ta1_points += 1>>
     <<jump date_tashigi_1_TSD1P1_1>>
 -> Paperwork can wait for a while, go get something to eat.
-    <<increment "ta1.points">>
+    <<set $ta1_points += 1>>
     <<jump date_tashigi_1_TSD1P1_1>>
 -> (Say nothing)
     <<jump date_tashigi_1_TSD1P1_2>>
@@ -37,17 +37,17 @@ Tashigi: I have no time to get down to the Mess Hall, I'm already behind as is.
 -> Then, why don't I bring you some food? You'll need the extra energy.
     <<set_background "mess-hall" show>>
     You rush to the Mess Hall, thinking about the Captain's beaming smile when she agreed to your proposal.
-    <<increment "ta1.points">>
-    <<increment "ta1.points">>
+    <<set $ta1_points += 1>>
+    <<set $ta1_points += 1>>
     <<jump date_tashigi_1_TSD1SB>>
 -> I'll help you out! This way we'll finish faster.
-    <<increment "ta1.points">>
+    <<set $ta1_points += 1>>
     <<jump date_tashigi_1_TSD1P1_3>>
 -> Aw, that sucks!
     Tashigi: Actually, I could use the help, if you're free.
     It has been a long day. New recruits don't exactly have it easy, and you are so tired.
 -> Sure thing, I'll stay and help.
-    <<increment "ta1.points">>
+    <<set $ta1_points += 1>>
     <<jump date_tashigi_1_TSD1P2>>
 -> I just remembered I have this other thing. Sorry.
     Tashigi: Oh, I understand. Go on, then.
@@ -61,7 +61,7 @@ There's an awkward silence, you don't really know what to do. She is obviously h
 Tashigi: [comment]Pause[/comment]
 Tashigi: You should head to the mess hall. It's dinner time already.
 -> I'm not all that hungry. Would you like some help?
-    <<increment "ta1.points">>
+    <<set $ta1_points += 1>>
     <<jump date_tashigi_1_TSD1P1_3>>
 -> Hope you finish soon.
     <<jump date_tashigi_1_TSD1E>>
@@ -95,7 +95,7 @@ Tashigi: This just what I needed, thank you. You're my hero!
 Tashigi: Be careful not to get sauce on the papers, or we'll have to start over.
 -> Not to worry, I brought napkins too.
     Tashigi: Good thinking!
-    <<increment "ta1.points">>
+    <<set $ta1_points += 1>>
 -> Oh. It may be a little too late for that.
     Captain Tashigi takes the piece of paper from your hands, and her fingers brush yours for an instant.
     Tashigi: It's just a copy of a memo, so all good.
@@ -105,7 +105,7 @@ Tashigi: Be careful not to get sauce on the papers, or we'll have to start over.
 -> Hot coffee.
     Tashigi: Hmm. This smells delicious.
     She takes a sip of the steaming cup, and her cheeks flush a pretty pink.
-    <<increment "ta1.points">>
+    <<set $ta1_points += 1>>
 -> Hot tea.
     Tashigi takes the cup, a shy smile on her mouth as she thanks you.
 Once dinner ends, you put away the plates and get back to work.
@@ -121,12 +121,12 @@ Tashigi: Everyone here has varying backgrounds and dreams, yet we all chose to j
 Tashigi: So, what is [i]your[/i] motivation for being here?
 -> I want the opportunity to help protect the innocent. Perhaps I won't always see eye to eye with fellow Marines, but I'll do my best to act as my heart tells me to.
     Tashigi: That is a fine answer, recruit! I have the feeling we'll get along better than I thought.
-    <<increment "ta1.points">>
-    <<increment "ta1.points">>
+    <<set $ta1_points += 1>>
+    <<set $ta1_points += 1>>
 -> Training as a Marine will grant me power and influence. That way, I could make sure that the world turns into a better place for everyone.
     Tashigi: Seeking power is all good, especially since it's for the reasons you mention.
     Tashigi: However, be sure not to get corrupted—falling into temptation is easier than you think.
-    <<increment "ta1.points">>
+    <<set $ta1_points += 1>>
 -> Respect and esteem go hand in hand with being a Marine, plus it pays better than most jobs and I get to travel.
     Tashigi lifts her eyebrows, but doesn't say anything. She simply nods politely.
     Tashigi: I see. You'll find many of our Marines with similar lines of thought.
@@ -140,20 +140,20 @@ Tashigi: I have a brother that still lives there, and I miss dearly, but there's
     PC: I understand the feeling, I have a brother, too, and a sister. They both live with my parents, even though my brother is getting a little old for that.
     PC: I suspect he stays because of my mom's cooking, she is a terrific baker!
     PC: We haven't been corresponding much, though, there's barely enough hours in the day to get the work done as it is.
-    <<increment "ta1.points">>
-    <<increment "ta1.points">>
+    <<set $ta1_points += 1>>
+    <<set $ta1_points += 1>>
     Tashigi: Time does fly by.
     It is getting late. You're having a very nice time with Captain Tashigi, but perhaps it is time to call it a night.
     -> [comment]Offer another fact[/comment]
         PC: Tell me about it, last time I stayed up so late was when my sister had a nightmare and refused to go to sleep until I read her favorite story.
-        <<increment "ta1.points">>
-        <<increment "ta1.points">>
+        <<set $ta1_points += 1>>
+        <<set $ta1_points += 1>>
         Tashigi: Children can be difficult, but they are also the most resilient. Remind me to tell you some other time about this group of children that stole both pirates and marines hearts.
         A few hours go by, and when Captain Tashigi finally puts down her pen, she lets's out a relieved sigh.
         Tashigi: Thank you for all the help. It's been a while since I had such a delightful time while doing paperwork.
         PC: Me too!
         -> [comment]Smile[/comment]
-            <<increment "ta1.points">>
+            <<set $ta1_points += 1>>
         -> [comment]Wink[/comment]
         <<jump date_tashigi_1_TSD1E>>
     -> [comment]Keep working[/comment]
@@ -168,13 +168,13 @@ Tashigi: I have a brother that still lives there, and I miss dearly, but there's
     PC: My brother and sister were so jealous when I told them I would be going to all four seas soon.
     PC: They made me promise to bring them souvenirs next time I visit.
     Tashigi: Then you better go into town one of these days. There are many places where you can find perfect gifts.
-    <<increment "ta1.points">>
+    <<set $ta1_points += 1>>
     You keep working for a while longer, the ticking of the clock getting louder the more times passes and the base grows silent. Almost everyone must be asleep by now.
     Tashigi: Almost done. I can finish up in here if you are too tired. You've already helped me out a great deal.
     -> [comment]Stay until the end[/comment]
         PC: I like to finish what I start.
         When you finally finish, you feel so tired you practically drag yourself to your room. You climb onto bed, knowing that in a couple of hours another day will start anew.
-        <<increment "ta1.points">>
+        <<set $ta1_points += 1>>
     -> [comment]Go to bed[/comment]
         PC: I think I'll go catch some sleep. Hope you finish soon!
         You go, and the moment you put my head on your pillow, all lights go out.
@@ -183,9 +183,9 @@ Tashigi: I have a brother that still lives there, and I miss dearly, but there's
 
 title: date_tashigi_1_TSD1E
 ---
-if is_greater_than("ta1.points", 11)
+if is_greater_than("ta1_points", 11)
     <<romance_points tashigi 2>>
-elif is_greater_than("ta1.points", 5)
+elif is_greater_than("ta1_points", 5)
     <<romance_points tashigi 1>>
 else
     <<romance_points tashigi 0>>

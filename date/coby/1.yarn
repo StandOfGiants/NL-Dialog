@@ -1,16 +1,19 @@
-title: date_coby_1_start
+title: date_coby_1_main
 ---
+<<declare $cd1_points = 0>>
+<<declare $cd1_possible = 0>>
+
 You decide you should see what Captain Coby is up to. You haven't seen him around the base in the past few hours, so you decide to check his office.
 <<set_background "office" show>>
 <<show_character coby center show>>
 Sure enough, he's there and looking rather... frazzled, to say the least.
-<<increment "cd1_possible">>
+<<set $cd1_possible += 1>>
 -> Captain? Is everything OK?
     <<jump date_coby_1_Coby_notice1>>
 -> Excuse me, sir, is now a good time?
     <<jump date_coby_1_Coby_notice1>>
 -> What's got you in a twist?
-    <<increment "cd1_points">>
+    <<set $cd1_points += 1>>
     <<jump date_coby_1_Coby_casual1>>
 ===
 
@@ -24,7 +27,7 @@ Coby: Oh! {$name}! I didn't see you there. Yes, I'm just trying to get a handle 
     Coby: Of course! Probably. I can always have Helmeppo help me later.
     <<jump date_coby_1_Coby_choice>>
 -> Hey, I'm not letting you use me as an excuse.
-    <<decrement "cd1_points">>
+    <<set $cd1_points = $cd1_points - 1>>
     Coby: Ah, sorry, you're right. I should get back to work...
     <<jump date_coby_1_End_Date>>
 ===
@@ -74,15 +77,15 @@ title: date_coby_1_Coby_food2
 <<set_background "mess-hall" fade>>
 You both enter the mess hall and are met with a delightful smell.
 Coby: Oh! Buttered potatoes! I would've come down earlier if I'd known this is what they had today!
-<<increment "cd1_possible">>
+<<set $cd1_possible += 1>>
 -> Oh man, now I'm hungry too!
-    <<increment "cd1_points">>
+    <<set $cd1_points += 1>>
     <<jump date_coby_1_Coby_foodchoice>>
 -> I didn't know you liked buttered potatoes.
     Coby: They're my favorite!
     <<jump date_coby_1_Coby_foodchoice>>
 -> Ew. I hope they have something else.
-    <<decrement "cd1_points">>
+    <<set $cd1_points = $cd1_points - 1>>
     Coby: Yeah, they usually have options.
     <<jump date_coby_1_Coby_foodchoice>>
 ===
@@ -90,9 +93,9 @@ Coby: Oh! Buttered potatoes! I would've come down earlier if I'd known this is w
 title: date_coby_1_Coby_foodchoice
 ---
 He leads the way up to the counter and grabs two trays, handing one back to you as he looks over the choices. You look as well, weighing your food options from what is available.
-<<increment "cd1_possible">>
+<<set $cd1_possible += 1>>
 -> Get the buttered potato meal.
-    <<increment "cd1_points">>
+    <<set $cd1_points += 1>>
     <<jump date_coby_1_Coby_Potatoes>>
 -> Get the pasta.
     <<jump date_coby_1_Coby_Pasta>>
@@ -104,16 +107,16 @@ title: date_coby_1_Coby_Potatoes
 ---
 You both sit down at one of the empty tables after getting your food.
 Coby: Oh! Good choice! The buttered potatoes are always amazing. You'll have to tell me what you think.
-<<increment "cd1_possible">>
+<<set $cd1_possible += 1>>
 -> Wow, they are really good!
-    <<increment "cd1_points">>
+    <<set $cd1_points += 1>>
     Coby: I'm glad you like them!
     <<jump date_coby_1_Coby_food3>>
 -> They're OK. Not my favorite, but I'm glad I tried them.
     Coby: Fair enough. I know it's not everyone's thing.
     <<jump date_coby_1_Coby_food3>>
 -> Eugh. I really should've gotten something else...
-    <<decrement "cd1_points">>
+    <<set $cd1_points = $cd1_points - 1>>
     Coby: Ah...
     <<jump date_coby_1_Coby_food3>>
 ===
@@ -122,10 +125,10 @@ title: date_coby_1_Coby_Pasta
 ---
 You both sit down at one of the empty tables after getting your food.
 Coby: Wow, that looks really good too! I've always wanted to try it, but it always seems to be here on buttered potatoes day.
-<<increment "cd1_possible">>
+<<set $cd1_possible += 1>>
 -> It's great! Want to try some?
-    <<increment "cd1_points">>
-    <<increment "cd1_points">>
+    <<set $cd1_points += 1>>
+    <<set $cd1_points += 1>>
     Coby: Really? Sure!
     Coby: ...
     Coby: Wow! That is good!
@@ -134,7 +137,7 @@ Coby: Wow, that looks really good too! I've always wanted to try it, but it alwa
     Coby: Yeah? Well, good to know.
     <<jump date_coby_1_Coby_food3>>
 -> It's way better than what you got.
-    <<decrement "cd1_points">>
+    <<set $cd1_points = $cd1_points - 1>>
     Coby: Hah, you sound like Helmeppo.
     Coby: He doesn't like them either...
     <<jump date_coby_1_Coby_food3>>
@@ -144,15 +147,15 @@ title: date_coby_1_Coby_Cake
 ---
 You both sit down at one of the empty tables after getting your food.
 Coby: Went straight for dessert, huh? I don't blame you, the cake is always delicious.
-<<increment "cd1_possible">>
+<<set $cd1_possible += 1>>
 -> It really is. They always make it so moist.
-    <<increment "cd1_points">>
+    <<set $cd1_points += 1>>
     Coby: [i]Right[/i]?
     <<jump date_coby_1_Coby_food3>>
 -> I'm not a huge cake fan, but it is pretty nice.
     <<jump date_coby_1_Coby_food3>>
 -> I just wish they had a different flavor. This kind is kinda gross.
-    <<decrement "cd1_points">>
+    <<set $cd1_points = $cd1_points - 1>>
     Coby: Well, tomorrow they'll have something different.
     <<jump date_coby_1_Coby_food3>>
 ===
@@ -173,16 +176,16 @@ Both of you eat in silence for a little while. The captain seems content to stay
 title: date_coby_1_Coby_Captain
 ---
 Coby: It's hard work, but I really enjoy it. My crew has been amazing, and it's nice to be able to trust them to have my back. I don't think I'll ever get used to the paperwork, though...
-<<increment "cd1_possible">>
+<<set $cd1_possible += 1>>
 -> It may be a pain, but it does have its uses. Things would be a mess without any.
-    <<increment "cd1_points">>
+    <<set $cd1_points += 1>>
     Coby: Of course. But sometimes it feels like I'm filling out the same information over and over...
     <<jump date_coby_1_Coby_food4>>
 -> Yeah, the paperwork sucks. Most of the time it just feels redundant.
     Coby: It does. I don't see why departments can't just use one form so we can fill it out once and copy it...
     <<jump date_coby_1_Coby_food4>>
 -> Don't you have better things to do than complain about paperwork?
-    <<decrement "cd1_points">>
+    <<set $cd1_points = $cd1_points - 1>>
     Coby: Yes. But I've learned that venting can be a bit therapeutic.
     <<jump date_coby_1_Coby_food4>>
 ===
@@ -206,16 +209,16 @@ title: date_coby_1_Coby_Helmeppo
 Coby: Oh he's [i]such[/i] a bitch.
 Coby: All jokes aside, he's actually pretty cool once you get to know him. He's just...
 Coby: An acquired taste...
-<<increment "cd1_possible">>
+<<set $cd1_possible += 1>>
 -> Oh. I guess maybe I judged him too soon.
-    <<increment "cd1_points">>
+    <<set $cd1_points += 1>>
     Coby: Fair warning though, he's still pretty abrasive even when you know him.
     <<jump date_coby_1_Coby_food4>>
 -> I'll take your word for it...
     Coby: That's all I can ask.
     <<jump date_coby_1_Coby_food4>>
 -> And that's a taste I'd rather not acquire.
-    <<decrement "cd1_points">>
+    <<set $cd1_points = $cd1_points - 1>>
     Coby: Well, you don't need to be rude about it.
     <<jump date_coby_1_Coby_food4>>
 ===
@@ -223,21 +226,21 @@ Coby: An acquired taste...
 title: date_coby_1_Coby_food4
 ---
 Coby: What about you? How are you liking working here so far?
-<<increment "cd1_possible">>
+<<set $cd1_possible += 1>>
 -> I'm really enjoying it. Everyone's been so nice so far, and those that aren't are at least polite.
-    <<increment "cd1_points">>
+    <<set $cd1_points += 1>>
     Coby: That's so good to hear!
     <<jump date_coby_1_Coby_food5>>
 -> It's alright. Getting used to things has been hard, but I'm sure things will get better.
-    <<increment "cd1_points">>
-    <<increment "cd1_points">>
+    <<set $cd1_points += 1>>
+    <<set $cd1_points += 1>>
     Coby: I know how you feel. I know I felt like I'd been thrown in with the sharks when I first arrived. But it does get easier.
     <<jump date_coby_1_Coby_food5>>
 -> Honestly, I wish I'd stayed where I was. Less going on.
     Coby: Understandable, it can be pretty hectic here and I know that's not for everyone.
     <<jump date_coby_1_Coby_food5>>
 -> I hate it here. I transferred for my career but I wish I'd been placed somewhere better.
-    <<decrement "cd1_points">>
+    <<set $cd1_points = $cd1_points - 1>>
     Coby: Ah, I see...
     <<jump date_coby_1_Coby_food5>>
 ===
@@ -262,9 +265,9 @@ You walk with Coby back towards his office. On the way, he tells you a story fro
 Coby: Helmeppo and I are still paying off that building, since we were the ones to destroy it... But we're getting close!
 <<set_background "office" fade>>
 Coby: Oh, it looks like we're already here...
-<<increment "cd1_possible">>
+<<set $cd1_possible += 1>>
 -> Well, at least I got to hear the end of your story first.
-    <<increment "cd1_points">>
+    <<set $cd1_points += 1>>
     Coby: True! I'm glad you enjoyed it. It's one of the funnier things that happened to us back then.
     <<jump date_coby_1_Coby_food_ending>>
 -> Thank the seas. I was getting tired of your storytelling.
@@ -287,15 +290,15 @@ title: date_coby_1_Coby_training1
 He leads the way to the training grounds. They are almost empty when you arrive, with only the occasional sparring pair scattered around the open area.
 <<set_background "training-grounds" fade>>
 Coby: Right. I'll be sure to go easy on you. No need for anyone to get hurt during a friendly sparring match.
-<<increment "cd1_possible">>
+<<set $cd1_possible += 1>>
 -> Sounds good to me!
-    <<increment "cd1_points">>
+    <<set $cd1_points += 1>>
     Coby: Great!
     <<jump date_coby_1_Coby_training2>>
 -> If you insist.
     <<jump date_coby_1_Coby_training2>>
 -> Hey, I'm not that fragile.
-    <<decrement "cd1_points">>
+    <<set $cd1_points = $cd1_points - 1>>
     Coby: I'm sure you aren't. But it would make [i]me[/i] feel better.
     <<jump date_coby_1_Coby_training2>>
 ===
@@ -308,45 +311,44 @@ You both stand facing each other and get into fighting stances. He seems to be h
 
 title: date_coby_1_ThePunch
 ---
+<<declare $coby_attacks = 0>>
 Coby: Well, go on. Attack me.
-<<increment "coby.attacks">>
--> (Punch him in the face) [comment]if not(visited("Coby_Punch"))[/comment]
+<<set $coby_attacks += 1>>
+-> (Punch him in the face) <<if !visited("date_coby_1_Coby_Punch")>>
     <<jump date_coby_1_Coby_Punch>>
--> (Aim for the knees) [comment]if not(visited("Coby_Knees"))[/comment]
+-> (Aim for the knees) <<if !visited("date_coby_1_Coby_Knees")>>
     <<jump date_coby_1_Coby_Knees>>
--> (Kick him in the side) [comment]if not(visited("Coby_Kick"))[/comment]
+-> (Kick him in the side) <<if !visited("date_coby_1_Coby_Kick")>>
     <<jump date_coby_1_Coby_Kick>>
--> (Fight dirty, aim for the crotch) [comment]if not(visited("Coby_Crotch"))[/comment]
+-> (Fight dirty, aim for the crotch) <<if !visited("date_coby_1_Coby_Crotch")>>
     <<jump date_coby_1_Coby_Crotch>>
 ===
 
 title: date_coby_1_Coby_Punch
 ---
-<<visit "Coby_Punch">>
 You take a swing at his face, and he leans to the side, reaching up to quickly grab your arm and flip you on your back. As soon as he does, Coby cringes.
 Coby: I'm so sorry! Are you alright?
 He pulls you back onto your feet.
-<<increment "cd1_possible">>
+<<set $cd1_possible += 1>>
 -> You [i]have[/i] to teach me how to do that.
-    <<increment "cd1_points">>
+    <<set $cd1_points += 1>>
     Coby: I mean. I can certainly try, if you'd like me to.
     <<jump date_coby_1_Coby_training3>>
 -> I'm fine. That was certainly something.
     <<jump date_coby_1_Coby_training3>>
 -> Ugh, what was that? Are you trying to kill me?
-    <<decrement "cd1_Points">>
+    <<set $cd1_points = $cd1_points - 1>>
     Coby: N-no! Of course not!
     <<jump date_coby_1_Coby_training3>>
 ===
 
 title: date_coby_1_Coby_Knees
 ---
-<<visit "Coby_Knees">>
 You rush him, kicking out at his knees. Your leg connects with his, but he doesn't move.
 Coby: That was pretty good! You've got a lot of leg strength.
-<<increment "cd1_possible">>
+<<set $cd1_possible += 1>>
 -> I could use some help learning to put it to better use.
-    <<increment "cd1_points">>
+    <<set $cd1_points += 1>>
     Coby: W-well, I mean, I suppose I could, if you wanted...
     <<jump date_coby_1_Coby_training3>>
 -> Not as good as yours, that was like kicking a wall...
@@ -359,12 +361,11 @@ Coby: That was pretty good! You've got a lot of leg strength.
 
 title: date_coby_1_Coby_Kick
 ---
-<<visit "Coby_Kick">>
 You spin, your heel lashing out at his side. Before it can connect, he catches it.
 Coby: That was great! If you'd been a little faster, you probably would've hit me.
-<<increment "cd1_possible">>
+<<set $cd1_possible += 1>>
 -> Thanks! My brother taught me that move forever ago. I need to practice it more, though...
-    <<increment "cd1_points">>
+    <<set $cd1_points += 1>>
     Coby: Of course. Being great at something doesn't happen overnight.
     <<jump date_coby_1_Coby_training3>>
 -> I'm not sure I'll ever be as fast as you, though.
@@ -377,12 +378,11 @@ Coby: That was great! If you'd been a little faster, you probably would've hit m
 
 title: date_coby_1_Coby_Crotch
 ---
-<<visit "Coby_Crotch">>
 You rush him and bring your leg up in an attempt to knee him in the groin. Before you are able to connect, Coby sidesteps and elbows you in the side, knocking you off-balance.
 Coby: Hey now. Don't think I know those kinds of tricks. Helmeppo tries them on me enough.
-<<increment "cd1_possible">>
+<<set $cd1_possible += 1>>
 -> And here I was thinking I was doing something special.
-    <<increment "cd1_points">>
+    <<set $cd1_points += 1>>
     Coby: Aw, don't worry. I'm sure you'll find a new way to fight dirty.
     <<jump date_coby_1_Coby_training3>>
 -> Wait—your friend tries that move on you?
@@ -390,7 +390,7 @@ Coby: Hey now. Don't think I know those kinds of tricks. Helmeppo tries them on 
     Coby: But the point is, he's not above cheap shots.
     <<jump date_coby_1_Coby_training3>>
 -> One officer taking cheap shots at another... I thought the Marines were better than that.
-    <<decrement "cd1_points">>
+    <<set $cd1_points = $cd1_points - 1>>
     Coby: You [i]just[/i] tried to do the same thing...
     <<jump date_coby_1_Coby_training3>>
 ===
@@ -427,12 +427,13 @@ The date ends early (0 points)
 
 title: date_coby_1_Coby_training_end
 ---
-if check_ratio("cd1_points", "cd1_possible", 0.5)
+<<if $cd1_points / $cd1_possible > 0.5 >>
     Coby: Of course! It was fun getting to spend some time with you. And if you ever want to do something other than training, just let me know. There's a lot to see around here if you know where to look.
     <<romance_points coby 2>>
-else
+<<else>>
     Coby: Sure. You have a lot of potential and I'd love to see you improve.
     Coby: Besides, it's nice to train with someone different once in a while.
     <<romance_points coby 0>>
+<<endif>>
 <<jump main>>
 ===
