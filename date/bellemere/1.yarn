@@ -1,10 +1,9 @@
 title: date_bellemere_1_main
 position: -1030,-771
+location: ship
 ---
 /// The points earned during the date
 <<declare $bm1_points = 0>>
-
-<<set_background ship show>>
 
 You're mopping the deck of the large battleship parked at the island when you smell the sweet-sharp scent of cigarette smoke. You follow it, and it leads you straight to an unassuming supply closet.
 <<show_character bellmere center fade>>
@@ -21,7 +20,7 @@ Bellemere: Just kidding, don't answer that. You should see me in a fight, though
 -> I actually like keeping busy with small tasks
   Bellemere: Yeah? I guess some people are just wired differently, huh? // i made this a -1 instead, to balance out the options
 -> Hey- at least this is safe!
-  <<set $bm1_points = $bm1_points - 1>>
+  <<set $bm1_points -= 1>>
   Bellemere: ...huh. You joined a military installation.... to stay.... Safe?
 Feeling a bit sheepish, you figure it's a good idea to change the subject. If you want to impress this hot fiery woman, it would probably be a good idea to ask some questions about her, right?
 <<jump questions>>
@@ -165,9 +164,14 @@ title: Jog
 position: 758,62
 ---
 Bellemere: Hey! Not a bad idea- I'm pretty restless from pretending to work all afternoon. Cleaning duty can wait- let's go!
+<<jump bd1_jog_start>>
+===
+
+title: bd1_jog_start
+location: garden
+---
 // location switch
 <<hide_character bellemere, hide>>
-<<set_background "garden", show>>
 The two of you spend an afternoon jogging through the park, chatting about inconsequential things and laughing at dumb jokes.
 <<show_character bellemere, center, show>>
 Bellemere: Nice stamina there, {$name}. Fighting skills are great, but those who spend time on cardio are the survivors in a conflict, am I right?
@@ -181,13 +185,17 @@ title: Guns
 position: 522,52
 ---
 Bellemere: Oh, hell yeah! Let me get my musket and I'll meet you there!
-LOCATION: Training Grounds // location switch
-<<hide_character bellemere, hide>>
-<<set_background "garden", show>>
+<<jump bd1_guns_start>>
+===
+
+title: bd1_guns_start
+location: training_grounds
+---
+<<hide_character bellemere hide>>
 You meet Bellemere at the training grounds, musket in hand. Personally, you don't have a lot of experience with guns - especially muskets - but the brightly colored targets set up about 200 yards away look a little like a carnival game you once enjoyed as a kid. You were pretty good at that, back in the day!
-<<show_character bellemere, center, show>>
+<<show_character bellemere center show>>
 Bellemere: Alright, here's what you do...
-<<hide_character bellemere, fade>>
+<<hide_character bellemere fade>>
 You listen to her instructions and do very well in your first round of shooting. The two of you make a game of it, eventually putting up old cans and bottles to add variety to the 'contest'.
 In fact, Bellemere is a really good shot, but you're fine with second place.
 Time passes quickly, and soon you realize you need to get back to the ship.

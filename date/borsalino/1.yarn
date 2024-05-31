@@ -1,6 +1,6 @@
 title: date_borsalino_1_main
+location: park
 ---
-<<set_background "park" show>>
 On your way home, you decide to walk through the park. It isn't long before you spot a familiar face.
 {$name}: Wait... isn't that Admiral Kizaru?
 <<show_character borsalino center fade>>
@@ -163,7 +163,12 @@ title: date_borsalino_1_route2
 ---
 {$name}: Let's grab something to eat from that bistro over there.
 {$borsalino}: [wave][i]Ooooh[/i][/wave], such a good idea...
-<<set_background "restaurant" fade>>
+<<jump date_borsalino_1_route2_at_restaurant>>
+===
+
+title: date_borsalino_1_route2_at_restaurant
+location: restaurant
+---
 {$borsalino}: Take your pick...
 -> I'd like to have dinner already. Noodles? (+)
     {$borsalino}: Oh. Dinner to go?

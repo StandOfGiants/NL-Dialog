@@ -1,12 +1,7 @@
 title: workday_legendary_1_main
+location: office
+characters: [tsuru, garp, sengoku, rosinante]
 ---
-<<context "legendary_1">>
-
-<<set_background "office" show>>
-<<show_character tsuru a show>>
-<<show_character garp b show>>
-<<show_character sengoku c show>>
-<<show_character rosinante d show>>
 Coming up to Tsuru's office, the door seems to be closed.
 {$name}: [i]This is the right place...[/i]
 -> Knock
@@ -123,9 +118,9 @@ Tsuru: I have some papers that need to be sent to Sengoku... or you can stay and
 ===
 
 title: workday_legendary_1_GarpTsuruRoute
+characters: [garp, tsuru]
+location: office
 ---
-<<hide_characters fade>>
-<<set_background "office" fade>>
 You decide to stay in Tsuru's office.
 Tsuru:  Thank you for staying, {$name}.
 Tsuru:  Let's try to get ahead of this workload before-

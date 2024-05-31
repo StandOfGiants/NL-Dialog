@@ -1,9 +1,10 @@
 title: workday_coby_crew_1_main
+location: office
+characters: [coby, drake, helmeppo]
 ---
-<<set_background "office", show>>
-<<show_character coby, left, show>>
-<<show_character drake, center, show>>
-<<show_character helmeppo, right, show>>
+// <<show_character coby left show>>
+// <<show_character drake center show>>
+// <<show_character helmeppo right show>>
 Your assignment is to work with Captain Coby and his group. Coby has seemed enthusiastic, but you can't get much of a read on Lieutenant Commander Helmeppo or Rear Admiral Drake.
 You remind yourself that they'll probably be glad of the help, and there's a lot of time to do that as you head through the maze of the filing room toward the back, in what you hope is the right direction.
 When you hear the sound of voices, you speed up, and there they are.

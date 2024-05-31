@@ -1,5 +1,6 @@
 title: main
 position: -741,-399
+location: mess_hall
 ---
 <<declare $sakazuki = "Fleet Admiral Sakazuki">>
 <<declare $kuzan = "Admiral Aokiji">>
@@ -12,11 +13,6 @@ position: -741,-399
 <<declare $pronoun_theirs = "theirs">>
 
 <<set $name = "bungo bango">>
-
-Testing: Not Wave [wave]WAVE!!![/wave] NOT WAVE
-
-<<set_background characterlayout show>>
-<<hide_characters hide>>
 
 Which route do you want?
 -> Legendary
@@ -105,9 +101,6 @@ left
 right
 <<show_character smoker d show>>
 right right
-<<highlight kuzan>>
-Kuzan: highlight four_left
-<<highlight smoker>>
 Smoker: I AM A BIG BURRITO.
 Smoker: LOVE ME
 <<jump main>>

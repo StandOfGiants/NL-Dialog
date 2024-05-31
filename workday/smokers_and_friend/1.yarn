@@ -1,6 +1,11 @@
 title: workday_smokers_and_friend_1_main
+location: mess_hall
 ---
-<<set_background "mess-hall" show>>
+<<declare $wd1_bellemere = 0>>
+<<declare $wd1_tashigi = 0>>
+<<declare $wd1_hina = 0>>
+<<declare $wd1_smoker = 0>>
+
 It's orientation day in your new assignment with Vice Admiral Smoker and his group. You gulp, entering the mess hall- no need to be nervous, right? You should just do your best to get to know them. You can trust your training group to prepare you for your role in the Marines.
 <<show_character bellemere a show>>
 <<show_character tashigi b show>>
@@ -13,7 +18,7 @@ Tashigi: You are a bit late, but the compound can be difficult to navigate at fi
 Hina: Hina will be assessing your obedience and potential.
 Smoker: Hope you're ready for some hard work. Damn, I'm all out of coffee…
 -> I can get you a refill!
-    <<set $wd1_bellemere = $wd1_bellemere - 1>>
+    <<set $wd1_bellemere -= 1>>
     <<jump workday_smokers_and_friend_1_Part_1A>>
 -> Yes Sir and Ma'ams! I look forward to learning from the best!
     <<jump workday_smokers_and_friend_1_Part_1B>>
@@ -28,7 +33,7 @@ You notice Bellemere make an odd face, something like disapproval, though the ot
 Smoker: Thanks. Just the right amount of sugar, too– you're not bad, kid.
 <<set $wd1_smoker += 1>>
 -> It was no problem.
-    <<set $wd1_bellemere = $wd1_bellemere - 1>>
+    <<set $wd1_bellemere -= 1>>
 -> Anything else, Sir?
   Smoker: Easy. That'll do.
 <<jump workday_smokers_and_friend_1_Days_Duty>>
@@ -48,7 +53,7 @@ title: workday_smokers_and_friend_1_Part_1C
 ---
 Bellemere grins, though Tashigi seems less pleased with your blaise attitude.
 Tashigi: That is no way to address your superior officers, Marine.
-<<set $wd1_tashigi = $wd1_tashigi - 1>>
+<<set $wd1_tashigi -= 1>>
 Bellemere: Well, they have a realistic attitude, at least. Geez, Tashi-chan, you don't have to get on the kid's case on day one.
 Tashigi: There is a difference between realistic and insubordinate. We won't be doing {$pronoun_them} any favors by being so lax.
 Bellemere rolls her eyes behind Captain Tashigi's back, but otherwise does not respond.
@@ -94,12 +99,12 @@ Smoker: We've got the first plan, naval drills with me and Hina. Tashigi and her
 ===
 
 title: workday_smokers_and_friend_1_Part_2A
+location: ship
 ---
 <<hide_characters hide>>
-<<set_background "ship" show>>
 <<show_character hina left fade>>
 <<show_character smoker right fade>>
----going with smoker and hina doesn't give PC an item - unlike with bellemere. oversight?
+// going with smoker and hina doesn't give PC an item - unlike with bellemere. oversight?
 Smoker and Hina lead the way to the docks, keeping a quick pace with each other. The three of you arrive at a large warship. Several unfamiliar people who look to be trainees look as if they're expecting Smoker and Hina. Once you board the deck, they motion for everyone to gather around.
     // description a little confusing
 Smoker: You'll be fighting a mock battle together. Hina and I are in command, so listen up.
@@ -107,9 +112,9 @@ Hina: A decoy ship armed with your fellow Marines posing as its attending crew w
 Smoker: I'm sure some of you have done this before, and I think this is in a manual.
 Hina: The plan we're adapting is in the Standard Warship Drills section of your combat manual.
 -> Oh, I know this one!
-    <<set $wd1_hina += 1>>
-    <<set $wd1_smoker = $wd1_smoker - 1>>
     Hina: Hina appreciates those of you who came prepared.
+    <<set $wd1_hina += 1>>
+    <<set $wd1_smoker -= 1>>
 -> I knew I should have read that.
 -> Sounds familiar, but I learn better by doing.
     <<set $wd1_smoker += 1>>
@@ -122,7 +127,7 @@ Smoker: The winner here is the first team to knock the other team's captain into
     Hina: In a real naval battle there will not be time to ask questions, {$name}. Right, everyone in positions!
 -> Wait, are we actually using real weapons or what?
     Hina: What an asinine question. As if you would be opening fire on your fellow Marines.
-    <<set $wd1_hina = $wd1_hina - 1>>
+    <<set $wd1_hina -= 1>>
     Smoker: Your weapons have been replaced with water guns, standard procedure.
 <<jump workday_smokers_and_friend_1_Drill_Start>>
 ===
@@ -158,8 +163,8 @@ title: workday_smokers_and_friend_1_A
 You rush from your position at the cannon, aiming your watergun at the ship's captain!
 Hina: Soldier! Get back in position!
 <<lock_out_date hina>>
----does this command lock PC out of hina's path 100%, or just date1? not questioning the writing choice (it'd be funny and on brand if insubordination makes hina hate you), just asking if lock_out_date is the command for locking out an entire route.
----perhaps this could be a larger decrement instead of a hard lock?
+// does this command lock PC out of hina's path 100%, or just date1? not questioning the writing choice (it'd be funny and on brand if insubordination makes hina hate you), just asking if lock_out_date is the command for locking out an entire route.
+// perhaps this could be a larger decrement instead of a hard lock?
 Smoker: Yeah, that's it, {$name}! Way to think on your feet!
 <<set $wd1_smoker += 1>>
 The other ship's captain topples from his perch at the ship's helm as a water balloon hits him in the face, leaving his crew stunned, which affords your crew the opportunity to open fire. The drill is over!
@@ -169,7 +174,7 @@ The other ship's captain topples from his perch at the ship's helm as a water ba
 title: workday_smokers_and_friend_1_B
 ---
 <<unlock_date hina>>
----it seems a bit unfair for hina's date to be a binary, seeing as other characters' unlock_date are point-dependent
+// it seems a bit unfair for hina's date to be a binary, seeing as other characters' unlock_date are point-dependent
 You hold your ground at the ship's cannon, waiting for the right moment.
 Hina: That's right crew, hold her steady! Ready, fire!
 Smoker: Well, I can't fault you for going that way when you know their battle plan…
@@ -193,10 +198,11 @@ else
 ===
 
 title: workday_smokers_and_friend_1_Part_2C
+location: garden
 ---
-<<get "WentWithBellemere">>
+<<declare $went_with_bellemere = false>>
+<<set $went_with_bellemere to true>>
 <<hide_characters hide>>
-<<set_background "garden" show>>
 <<show_character bellemere center show>>
 You follow the red-haired woman out of the mess hall and down a nearby path. She moves with purpose, and you wonder what she has in mind for your first day of training.
 -> Where are we going?
@@ -248,7 +254,7 @@ title: workday_smokers_and_friend_1_Part_4
 ---
 Bellemere: Well, too bad for you! I brought a couple trees from my family orchard when I found out I'd be shipped to this island for training- I plan on checking on them and hiding out in the shade. Not too late to go find Captain Tashigi if you feel like overworking yourself and getting sweaty.
 -> Yeah, I'll go find her.
-    <<set $wd1_bellemere = $wd1_bellemere - 1>>
+    <<set $wd1_bellemere -= 1>>
     <<jump workday_smokers_and_friend_1_tash_transition>>
 -> No way! It's like 100 degrees out here!
     <<jump workday_smokers_and_friend_1_Mikan>>
@@ -416,18 +422,19 @@ Bellemere nods, standing up and giving you a hand to follow suit (again) just as
 ===
 
 title: workday_smokers_and_friend_1_Part_2B
+location: garden
 ---
----connecting from Tash_transition to here is smooth, but connecting from Days_Duty isn't.
-<<set_background "garden" show>>
+// connecting from Tash_transition to here is smooth, but connecting from Days_Duty isn't.
 Tashigi leads you to an empty space in the gardens. She signs out two practice swords from the armory on your way out, but even if they are made of wood, you have the feeling that you might end up in the infirmary if you're not careful.
 The Captain takes up her position at one end of the grounds.
 Tashigi: Let's see what you've got.
 Before you can even assume a defensive stance, Captain Tashigi advances, quicker than any other adversary you've ever faced.
 Tashigi: Don't drop your guard, Marine!
-if has_item("WentWithBellemere")
+<<if $went_with_bellemere>>
     <<jump workday_smokers_and_friend_1_Route2>>
-else
+<<else>>
     <<jump workday_smokers_and_friend_1_Route1>>
+<<endif>>
 ===
 
 title: workday_smokers_and_friend_1_Route1

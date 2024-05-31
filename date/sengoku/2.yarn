@@ -64,10 +64,10 @@ title: date_sengoku_2_GIFT_HUNT_OPTIONS
 -> Bookstore <<if true && !$found_book>>
     {$name}: Let's check the bookstore. The two of you enter the shop. It smells like ink and paper and a little bit of coffee. The store is a little chaotic, aisles of book shelves somewhat like a forest.
     <<jump date_sengoku_2_BOOKSTORE_CHOICES>>
--> Clothing Store <<if !$found_jacket>>
+-> Clothing Store <<if true && !$found_jacket>>
     {$name}: Let's check out that clothing shop! The shop smells like leather and textiles. Mannequins show off the latest outfits and suits. An attendant stares at the two of you, rubbing their hands together.
     <<jump date_sengoku_2_CLOTHING_OPTIONS>>
--> General Store <<if !$found_lighter>>
+-> General Store <<if true && !$found_lighter>>
     {$name}: When in doubt, check out a place with a lot of different things! The general store apparently named Wapol Emporium, is cluttered with tchokies, shoes, kitchen appliances, fabric, and many other things. And people. A LOT of people.
     <<jump date_sengoku_2_GEN_STORE_OPTIONS>>
 ===
@@ -76,7 +76,7 @@ title: date_sengoku_2_BOOKSTORE_CHOICES
 ---
 <<declare $found_book = false>>
 Sengoku: Where would you like to start?
--> The left side <<if !$found_book>>
+-> The left side <<if true && !$found_book>>
     You wander down the aisles on the left side of the store. A lot of books on nature, adventure stories, and history.
     {$name}: Do you think Rosinante would like any of these?
     Sengoku: Hmm… he used to enjoy those Sora Warrior of the Sea stories when he was younger.
@@ -116,7 +116,7 @@ Sengoku: He did mention that he was looking for a new hobby.
 title: date_sengoku_2_BOOKSTORE_RIGHT_CHOICES
 ---
 {$name}: Hm, okay well they've got uh…
--> Make-up for Morons <<if true && !visited("ds2_makeup_for_morons")>>
+-> Make-up for Morons <<if !visited("ds2_makeup_for_morons")>>
     <<jump ds2_makeup_for_morons>>
 -> Learn How to Juggle Your Life Away <<if !visited("ds2_juggle_away")>>
     <<jump ds2_juggle_away>>
@@ -155,7 +155,7 @@ title: date_sengoku_2_CLOTHING_OPTIONS
 ---
 <<declare $found_jacket = false>>
 Sengoku: Thoughts?
--> The shirts and jackets <<if !$found_jacket>>
+-> The shirts and jackets <<if true && !$found_jacket>>
     Jackets of all shapes and colors hang from hangers. Shirts sit nicely folded on shelves. It smells like opportunities and detergent.
     {$name}: Okay, see anything?
     Sengoku: Rosinante goes through clothing faster than anyone I have ever known, save Garp. Though Garp's mishaps involve less fire.
@@ -206,7 +206,7 @@ Sengoku: If I never see another pink boa, it will be too soon.
 title: date_sengoku_2_HAT_CHOICES
 ---
 {$name}: Alright, hats. They've got a bunch of those!
--> Look at a Fish Fear My Fashion Sense hat <<if true && !visited("sd2_fish_fashion")>>
+-> Look at a Fish Fear My Fashion Sense hat <<if !visited("sd2_fish_fashion")>>
     <<jump sd2_fish_fashion>>
 -> Look at a fluffy black and white polka dot hat <<if !visited("sd2_polka_dot")>>
     <<jump sd2_polka_dot>>

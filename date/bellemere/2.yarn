@@ -1,11 +1,9 @@
 title: date_bellemere_2_main
+location: office
+characters: [bellemere]
 ---
 <<declare $bd2_date_outfit = 0>>
 <<declare $bd2_date_restaurant = 0>>
-
-<<set_background "office" show>>
-<<show_character bellemere center show>>
-<<context "bellemere_2">>
 It isn't often that your free days fall in line with Belle-mére's, but you find that that often doesn't matter much. After you pick up your bi-weekly allowance from the correct office, you pass by the woman's desk, and sure enough find her sitting around looking annoyed. She's the only one in the room just then, smoking and staring at a memo clutched too-tight.
 {$name}: Uh… Belle-mére? Doing alright?
 Belle-mére: Just the other day I had to carry god-knows how many boxes all for the sake of that fucking goat…

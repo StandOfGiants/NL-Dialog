@@ -19,7 +19,7 @@ else
     <<set $bd2_points += 1>>
     {$borsalino}: Ah… I wish I was, [wave]belieeeve[/wave] me…
 -> I thought it was stressful… (-)
-    <<set $bd2_points = $bd2_points - 1>>
+    <<set $bd2_points -= 1>>
     {$borsalino}: Oh, you [i]poor thing…[/i]
     {$borsalino}: I'd love to help you decompress, I really [wave][i]wooould…[/i][/wave]
 // The indicator for point gain/loss here is different from date 1? There wasn't any mention of increment or decrement before. Not sure if this is an error or if you need to add this a lot more to this date/the last one

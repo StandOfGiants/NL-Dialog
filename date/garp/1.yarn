@@ -1,6 +1,8 @@
 title: date_garp_1_main
+location: training_grounds
 ---
-<<set_background "training-grounds" show>>
+<<declare $gd1_correct_answers = 0>>
+
 PC: Huh, this must be the training grounds! Garp should be here... I hope.
 PC: Hey... what's that?!
 <<show_character garp d show>>

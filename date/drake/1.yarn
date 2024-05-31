@@ -1,6 +1,6 @@
 title: date_drake_1_main
+location: office
 ---
-<<set_background "office" show>>
 <<show_character drake center show>>
 Drake: Thank you for agreeing to help me organize my files, {$name}.
 -> No problem! I'm sorry the goat ate some of your paperwork.
@@ -97,10 +97,9 @@ Drake: Excuse me? I'd prefer to keep things professional, {$name}.
 ===
 
 title: date_drake_1_Part_3A
+location: office
+characters: [drake]
 ---
-<<hide_characters fade>>
-<<set_background "office" fade>>
-<<show_character drake center fade>>
 Drake: OK, it's been an hour and we've gotten through all of the drawers. I think we can take a break now. Good effort, Petty Officer.
 -> It's all thanks to you and your work ethic. I couldn't let up at the rate you were going.
   Drake: I know this isn't exactly fun, but the more focused we are, the quicker we can get things done.
@@ -143,10 +142,9 @@ Drake: Would you like some water? I know it can be a bit stuffy in here.
 ===
 
 title: date_drake_1_Part_3B
+location: office
+characters: [drake]
 ---
-<<hide_characters fade>>
-<<set_background "office" fade>>
-<<show_character drake center fade>>
 You've been combing through the files for a while now. Towards the back of the third drawer from the top, you find a folder and several papers (they look like writeups for misbehaving sailors from a quick glance) with a chunk bitten out of all of them and tilt them toward Drake.
 Drake: I think someone else should have copies of those on file. You can leave them on my desk.
 You turn to do as he asks. The desk is neat and clear, indistinct from any other but for a large paperweight shaped like a lizard.

@@ -1,6 +1,6 @@
 title: date_smoker_2_main
+location: training_grounds
 ---
-<<set_background "training-grounds" show>>
 <<show_character smoker center show>>
 Smoker: Oh, you showed up. Good, I was just stretching.
 -> That's always important!

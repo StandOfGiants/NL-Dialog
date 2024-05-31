@@ -1,10 +1,10 @@
 title: date_kuzan_1_main
+location: park
+characters: []
 ---
-<<hide_characters hide>>
 You decide to go for a walk in the park on your day off. It's too lovely out to stay cooped up. To your surprise, though, you not only stumble across an admiral there... but they're also outright napping in the open.
 // Feels like a rather jarring and telly introduction. Alternative suggestion provided.
-<<set_background "park" show>>
-PC: "Is that Admiral Aokiji?”
+{$name}: "Is that Admiral Aokiji?”
 // Adjusted to fit alternate intro suggestion
 <<show_character kuzan center fade>>
 The Admiral lifts his sleeping mask to eye the PC.
@@ -163,9 +163,9 @@ The frisbee comes flying at you. It gleams in the sun. It's like a tiny flat met
 title: kd1_frisbee_normal
 ---
 The frisbee sails into {$kuzan}'s arms, only wobbling a little. He yawns as he tosses it one handed back towards you.
--> PC: Catch it. (0)
+-> {$name}: Catch it. (0)
     You catch it! Good job! Someone is proud of you, somewhere.
--> PC: Catch it with [i]style[/i]. (1)
+-> {$name}: Catch it with [i]style[/i]. (1)
     You leap into the air, spinning like a dancer, hands outstretched! You look awesome! You are putting those bootcamp skills to use, go you! You grab it grinning, then - oops. You fumbled the landing and drop the frisbee. Don't even look at {$kuzan}. The blow to your self esteem may kill you.
 {$kuzan} holds his hands up, waiting for you to toss it back. So what you gonna do, champ?
 <<jump date_kuzan_1_FrisbeeThrow>>

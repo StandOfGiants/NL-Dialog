@@ -1,10 +1,10 @@
 title: date_coby_1_main
+location: office
 ---
 <<declare $cd1_points = 0>>
 <<declare $cd1_possible = 0>>
 
 You decide you should see what Captain Coby is up to. You haven't seen him around the base in the past few hours, so you decide to check his office.
-<<set_background "office" show>>
 <<show_character coby center show>>
 Sure enough, he's there and looking rather... frazzled, to say the least.
 <<set $cd1_possible += 1>>
@@ -27,7 +27,7 @@ Coby: Oh! {$name}! I didn't see you there. Yes, I'm just trying to get a handle 
     Coby: Of course! Probably. I can always have Helmeppo help me later.
     <<jump date_coby_1_Coby_choice>>
 -> Hey, I'm not letting you use me as an excuse.
-    <<set $cd1_points = $cd1_points - 1>>
+    <<set $cd1_points -= 1>>
     Coby: Ah, sorry, you're right. I should get back to work...
     <<jump date_coby_1_End_Date>>
 ===
@@ -55,8 +55,8 @@ Coby: It's funny. Even though I need a break, I have no idea what we should do..
 ===
 
 title: date_coby_1_Coby_food1
+location: park
 ---
-<<set_background "park" fade>>
 You walk with him down to the mess hall, listening to Coby's stomach growl. He said he hadn't eaten in a while, but you can't help but wonder how long ‘a while' actually was... No wonder he wasn't getting any work done.
 -> Do you know what they're serving today?
     Coby: No idea... Something good, I hope.
@@ -73,8 +73,8 @@ You walk with him down to the mess hall, listening to Coby's stomach growl. He s
 ===
 
 title: date_coby_1_Coby_food2
+location: mess_hall
 ---
-<<set_background "mess-hall" fade>>
 You both enter the mess hall and are met with a delightful smell.
 Coby: Oh! Buttered potatoes! I would've come down earlier if I'd known this is what they had today!
 <<set $cd1_possible += 1>>
@@ -85,7 +85,7 @@ Coby: Oh! Buttered potatoes! I would've come down earlier if I'd known this is w
     Coby: They're my favorite!
     <<jump date_coby_1_Coby_foodchoice>>
 -> Ew. I hope they have something else.
-    <<set $cd1_points = $cd1_points - 1>>
+    <<set $cd1_points -= 1>>
     Coby: Yeah, they usually have options.
     <<jump date_coby_1_Coby_foodchoice>>
 ===
@@ -116,7 +116,7 @@ Coby: Oh! Good choice! The buttered potatoes are always amazing. You'll have to 
     Coby: Fair enough. I know it's not everyone's thing.
     <<jump date_coby_1_Coby_food3>>
 -> Eugh. I really should've gotten something else...
-    <<set $cd1_points = $cd1_points - 1>>
+    <<set $cd1_points -= 1>>
     Coby: Ah...
     <<jump date_coby_1_Coby_food3>>
 ===
@@ -137,7 +137,7 @@ Coby: Wow, that looks really good too! I've always wanted to try it, but it alwa
     Coby: Yeah? Well, good to know.
     <<jump date_coby_1_Coby_food3>>
 -> It's way better than what you got.
-    <<set $cd1_points = $cd1_points - 1>>
+    <<set $cd1_points -= 1>>
     Coby: Hah, you sound like Helmeppo.
     Coby: He doesn't like them either...
     <<jump date_coby_1_Coby_food3>>
@@ -155,7 +155,7 @@ Coby: Went straight for dessert, huh? I don't blame you, the cake is always deli
 -> I'm not a huge cake fan, but it is pretty nice.
     <<jump date_coby_1_Coby_food3>>
 -> I just wish they had a different flavor. This kind is kinda gross.
-    <<set $cd1_points = $cd1_points - 1>>
+    <<set $cd1_points -= 1>>
     Coby: Well, tomorrow they'll have something different.
     <<jump date_coby_1_Coby_food3>>
 ===
@@ -185,7 +185,7 @@ Coby: It's hard work, but I really enjoy it. My crew has been amazing, and it's 
     Coby: It does. I don't see why departments can't just use one form so we can fill it out once and copy it...
     <<jump date_coby_1_Coby_food4>>
 -> Don't you have better things to do than complain about paperwork?
-    <<set $cd1_points = $cd1_points - 1>>
+    <<set $cd1_points -= 1>>
     Coby: Yes. But I've learned that venting can be a bit therapeutic.
     <<jump date_coby_1_Coby_food4>>
 ===
@@ -211,14 +211,14 @@ Coby: All jokes aside, he's actually pretty cool once you get to know him. He's 
 Coby: An acquired taste...
 <<set $cd1_possible += 1>>
 -> Oh. I guess maybe I judged him too soon.
-    <<set $cd1_points += 1>>
     Coby: Fair warning though, he's still pretty abrasive even when you know him.
+    <<set $cd1_points += 1>>
     <<jump date_coby_1_Coby_food4>>
 -> I'll take your word for it...
     Coby: That's all I can ask.
     <<jump date_coby_1_Coby_food4>>
 -> And that's a taste I'd rather not acquire.
-    <<set $cd1_points = $cd1_points - 1>>
+    <<set $cd1_points -= 1>>
     Coby: Well, you don't need to be rude about it.
     <<jump date_coby_1_Coby_food4>>
 ===
@@ -240,7 +240,7 @@ Coby: What about you? How are you liking working here so far?
     Coby: Understandable, it can be pretty hectic here and I know that's not for everyone.
     <<jump date_coby_1_Coby_food5>>
 -> I hate it here. I transferred for my career but I wish I'd been placed somewhere better.
-    <<set $cd1_points = $cd1_points - 1>>
+    <<set $cd1_points -= 1>>
     Coby: Ah, I see...
     <<jump date_coby_1_Coby_food5>>
 ===
@@ -259,11 +259,16 @@ Coby: I guess I should get back to work now, though, shouldn't I?
 ===
 
 title: date_coby_1_Coby_food6
+location: park
 ---
-<<set_background "park" fade>>
 You walk with Coby back towards his office. On the way, he tells you a story from his early days as a Marine.
 Coby: Helmeppo and I are still paying off that building, since we were the ones to destroy it... But we're getting close!
-<<set_background "office" fade>>
+<<jump date_coby_1_Coby_food6_back_at_office>>
+===
+
+title: date_coby_1_Coby_food6_back_at_office
+location: office
+---
 Coby: Oh, it looks like we're already here...
 <<set $cd1_possible += 1>>
 -> Well, at least I got to hear the end of your story first.
@@ -285,10 +290,15 @@ else
 ===
 
 title: date_coby_1_Coby_training1
+location: park
 ---
-<<set_background "park" fade>>
 He leads the way to the training grounds. They are almost empty when you arrive, with only the occasional sparring pair scattered around the open area.
-<<set_background "training-grounds" fade>>
+<<jump date_coby_1_Coby_training1_grounds>>
+===
+
+title: date_coby_1_Coby_training1_grounds
+location: training_grounds
+---
 Coby: Right. I'll be sure to go easy on you. No need for anyone to get hurt during a friendly sparring match.
 <<set $cd1_possible += 1>>
 -> Sounds good to me!
@@ -298,7 +308,7 @@ Coby: Right. I'll be sure to go easy on you. No need for anyone to get hurt duri
 -> If you insist.
     <<jump date_coby_1_Coby_training2>>
 -> Hey, I'm not that fragile.
-    <<set $cd1_points = $cd1_points - 1>>
+    <<set $cd1_points -= 1>>
     Coby: I'm sure you aren't. But it would make [i]me[/i] feel better.
     <<jump date_coby_1_Coby_training2>>
 ===
@@ -337,7 +347,7 @@ He pulls you back onto your feet.
 -> I'm fine. That was certainly something.
     <<jump date_coby_1_Coby_training3>>
 -> Ugh, what was that? Are you trying to kill me?
-    <<set $cd1_points = $cd1_points - 1>>
+    <<set $cd1_points -= 1>>
     Coby: N-no! Of course not!
     <<jump date_coby_1_Coby_training3>>
 ===
@@ -390,7 +400,7 @@ Coby: Hey now. Don't think I know those kinds of tricks. Helmeppo tries them on 
     Coby: But the point is, he's not above cheap shots.
     <<jump date_coby_1_Coby_training3>>
 -> One officer taking cheap shots at another... I thought the Marines were better than that.
-    <<set $cd1_points = $cd1_points - 1>>
+    <<set $cd1_points -= 1>>
     Coby: You [i]just[/i] tried to do the same thing...
     <<jump date_coby_1_Coby_training3>>
 ===

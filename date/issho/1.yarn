@@ -1,8 +1,14 @@
 title: date_issho_1_main
+location: bedroom
 ---
-<<set_background "bedroom" show>>
+<<declare $isd1_points = 0>>
 Laying in your room, you stare at the transponder snail in complete boredom. You should feel grateful for the break you get, but after such exciting days, you just feel restless. Maybe grabbing a bite of food will alleviate some of that restlessness.
-<<set_background "town" show>>
+<<jump date_issho_1_in_town>>
+===
+
+title: date_issho_1_in_town
+location: town
+---
 Walking around aimlessly, you come across a noodle stand, surprisingly cozy. It smells really good too… but while you're approaching it, you spot someone familiar in line.
 <<show_character issho center show>>
 {$name}: {$issho}?!
@@ -33,9 +39,9 @@ You feel relaxed after finishing your meal. {$issho} is amicable, and he smiles 
 ===
 
 title: date_issho_1_Part_2A
+location: park
 ---
-<<set_background "park" show>>
-{$issho}: [comment]smile[/comment] I do have some time to spare. Lead the way, {$name}.
+{$issho}: I do have some time to spare. Lead the way, {$name}. #smile
 Today is a beautiful day and the park is full of people enjoying a dose of fresh air. You notice…
 -> ... How beautiful the sky is
     <<jump date_issho_1_Part_2A1>>
@@ -54,7 +60,7 @@ title: date_issho_1_Part_2A1
     <<set $isd1_points += 1>>
     <<jump date_issho_1_Part_2A1_Joke>>
 -> You think to yourself... describing things to a blind person is kinda pointless, isn't it?
-    <<set $isd1_points = $isd1_points - 1>>
+    <<set $isd1_points -= 1>>
     <<jump date_issho_1_Part_2A1_Dick>>
 ===
 
@@ -92,8 +98,8 @@ Oh! He likes your joke! You know what joke to say next then!
     Oh no, you hope you haven't overstepped your boundaries…
     <<jump date_issho_1_Part_2A3>>
 -> [wave]Do you have a sunburn or are you always this hot, Admiral?[/wave]
-    <<set $isd1_points = $isd1_points - 1>>
-    <<set $isd1_points = $isd1_points - 1>>
+    <<set $isd1_points -= 1>>
+    <<set $isd1_points -= 1>>
     There's an awkward silence as you stare at each other. That joke didn't land as well as the first one…
     <<jump date_issho_1_Part_2A3>>
 ===
@@ -106,12 +112,12 @@ title: date_issho_1_Part_2A1_Dick
     {$issho}: ... <pause> Words have power, {$name}. Saying without thinking can have devastating effects.
     <<jump date_issho_1_Part_2A3>>
 -> Relax, Admiral! It's just a joke!
-    <<set $isd1_points = $isd1_points - 1>>
+    <<set $isd1_points -= 1>>
     {$issho} doesn't seem to find your joke as funny as you do. Perhaps you should apologize…
     <<jump date_issho_1_Part_2A3>>
 -> Tch. I'm just being honest.
-    <<set $isd1_points = $isd1_points - 1>>
-    <<set $isd1_points = $isd1_points - 1>>
+    <<set $isd1_points -= 1>>
+    <<set $isd1_points -= 1>>
     {$issho}: <pause> [comment]frown[/comment] You are not a very kind soul, are you?
     <<jump date_issho_1_Part_2A3>>
 ===
@@ -142,7 +148,7 @@ title: date_issho_1_Part_2A2_Observe
     {$issho}: I see, I'm glad to hear that
     <<jump date_issho_1_Part_2A3>>
 -> They are yelling and running around. It's so annoying!
-    <<set $isd1_points = $isd1_points - 1>>
+    <<set $isd1_points -= 1>>
     {$issho}: Ah ah, leave them be, {$name}. Childhood is a precious time with no worries. Let them enjoy it for a little longer.
     <<jump date_issho_1_Part_2A3>>
 ===
@@ -162,7 +168,7 @@ A kite's line snaps, causing it to snag on a tree. Uh oh. What should you do now
     {$issho}: [comment]smile[/comment] Be careful, {$name}.
     <<jump date_issho_1_Part_2A3>>
 -> Why should you do anything when you can just ask {$issho} for help?
-    <<set $isd1_points = $isd1_points - 1>>
+    <<set $isd1_points -= 1>>
     You tell the kids to wait for you while you go back to the Admiral.
     {$name}: Sir, can you help us with a stuck kite? The line snaps and I really don't like climbing trees. It's such a hassle! You have a really useful power to help us out!
     {$issho}: [comment]surprised[/comment] Alright.
@@ -170,8 +176,8 @@ A kite's line snaps, causing it to snag on a tree. Uh oh. What should you do now
     You beam. A good deed without having to expend energy! {$issho}'s brow furrows, though. Perhaps he'd thought you were more... resourceful.
     <<jump date_issho_1_Part_2A3>>
 -> You probably should leave it. The kid's parents are going to get them a new kite anyway.
-    <<set $isd1_points = $isd1_points - 1>>
-    <<set $isd1_points = $isd1_points - 1>>
+    <<set $isd1_points -= 1>>
+    <<set $isd1_points -= 1>>
     Ignoring the kids' cry, you return to {$issho}'s side.
     {$issho}: Did you have fun?
     {$name}: It went okay, but then the kids started crying. I'm a Marine, not a babysitter.
@@ -191,15 +197,15 @@ You laugh at the harmless fun. Watching them untangle themselves from you, you d
     You go back to Issho, grinning widely.
     <<jump date_issho_1_Part_2A3>>
 -> Yell at them for running into you
-    <<set $isd1_points = $isd1_points - 1>>
-    <<set $isd1_points = $isd1_points - 1>>
+    <<set $isd1_points -= 1>>
+    <<set $isd1_points -= 1>>
     {$name}: Watch where you're going, brats! Want me to tell your parents?!
     The kids scramble away in fear. You return to Issho's side, but he doesn't look very happy.
     {$issho}: [comment]frown[/comment] That wasn't very nice.
     <<jump date_issho_1_Part_2A3>>
 -> Bully them to take their kites. You want to fly kites but you don't want annoying kids!
-    <<set $isd1_points = $isd1_points - 1>>
-    <<set $isd1_points = $isd1_points - 1>>
+    <<set $isd1_points -= 1>>
+    <<set $isd1_points -= 1>>
     {$name}: Give me your kites or I'm going to arrest you. Look at me, I'm a Marine. If you aren't nice to me you will go to jail.
     The kids sob but give their kites to you. Ha! You know scaring people with your rank works every time. You run back to Issho with the kites, hoping he might want to join you now. He is frowning, though.
     Did you... do something wrong?
@@ -226,8 +232,8 @@ You look at the two sides. It's clear to you what the right decision is:
 -> Get help from Issho
     <<jump date_issho_1_Part_2A3_Neutral>>
 -> Side with Marines
-    <<set $isd1_points = $isd1_points - 1>>
-    <<set $isd1_points = $isd1_points - 1>>
+    <<set $isd1_points -= 1>>
+    <<set $isd1_points -= 1>>
     <<jump date_issho_1_Part_2A3_Dick>>
 ===
 
@@ -275,8 +281,8 @@ But {$issho} doesn't look at you at all. You have the feeling you have disappoin
 ===
 
 title: date_issho_1_Part_2B
+location: town
 ---
-<<set_background "town" show>>
 {$issho}: [comment]smile sprite[/comment] How has Marineford treated you so far? You did a wonderful job handling the others. I know they can be a handful.
 {$name}: They're a bit intimidating, but I'm up to the challenge! I'm here for a reason.
 {$issho}: That's good to hear. Is there anything you're curious about?
@@ -304,8 +310,8 @@ title: date_issho_1_Part_2B1a
     {$issho}: [comment]Smile[/comment] There was a particular pirate that I met on my journey that left quite the impression. Perhaps I'll tell you about him one day.
     <<jump date_issho_1_Part_2B2>>
 -> Is there any dangerous water? I'll note it down so I won't be stationed there ever.
-    <<set $isd1_points = $isd1_points - 1>>
-    <<set $isd1_points = $isd1_points - 1>>
+    <<set $isd1_points -= 1>>
+    <<set $isd1_points -= 1>>
     {$issho}: With the era we're in, I think nowhere's safe, {$name}. From Paradise to New World, to the four Blues, everything's changing.
     <<jump date_issho_1_Part_2B2>>
 ===
@@ -341,7 +347,7 @@ You take a moment to think…
     {$issho}: For many reasons, {$name}. I suppose, mainly, I was hoping my presence would make a difference.
     <<jump date_issho_1_Part_2B2>>
 -> [shake]So you are just lazy! Your poor secretary![/shake]
-    <<set $isd1_points = $isd1_points - 1>>
+    <<set $isd1_points -= 1>>
     {$issho}: [comment]smile[/comment] I do try. It's not laziness. I just don't do more than I have to. Not all of us can work year round.
     <<jump date_issho_1_Part_2B2>>
 ===
@@ -373,8 +379,8 @@ title: date_issho_1_Part_2B2a
     {$issho}: [comment]sad[/comment] He does hold himself and others to very high standards.
     <<jump date_issho_1_Part_2B3>>
 -> Why do you fight him? I think he's right!
-    <<set $isd1_points = $isd1_points - 1>>
-    <<set $isd1_points = $isd1_points - 1>>
+    <<set $isd1_points -= 1>>
+    <<set $isd1_points -= 1>>
     {$issho}: <pause> I simply believe civilian deaths are not acceptable collateral damage in his one track mind crusade.
     <<jump date_issho_1_Part_2B3>>
 ===
@@ -392,7 +398,7 @@ title: date_issho_1_Part_2B2b
     {$issho}: Is that so? I suppose I should make an effort to talk with him more.
     <<jump date_issho_1_Part_2B3>>
 -> Well... I guess he [i]is[/i] pretty cool…
-    <<set $isd1_points = $isd1_points - 1>>
+    <<set $isd1_points -= 1>>
     {$issho}: [comment]smile[/comment] Indeed, and I'm just one boring Admiral.
     <<jump date_issho_1_Part_2B3>>
 ===
@@ -406,14 +412,14 @@ title: date_issho_1_Part_2B2c
     {$issho}: Me, too, {$name}. Me, too.
     <<jump date_issho_1_Part_2B3>>
 -> Oh, you mean he's a sore loser?
-    <<set $isd1_points = $isd1_points - 1>>
-    <<set $isd1_points = $isd1_points - 1>>
+    <<set $isd1_points -= 1>>
+    <<set $isd1_points -= 1>>
     {$issho}: <pause>... No.
     {$issho}: I mean there are fights that can shatter relationships.
     <<jump date_issho_1_Part_2B3>>
 -> I heard some people say Akainu had an advantage on land, that's why he lost.
-    <<set $isd1_points = $isd1_points - 1>>
-    <<set $isd1_points = $isd1_points - 1>>
+    <<set $isd1_points -= 1>>
+    <<set $isd1_points -= 1>>
     {$issho}: <pause>... I don't take part in that kind of discussion.
     <<jump date_issho_1_Part_2B3>>
 ===
@@ -443,7 +449,7 @@ title: date_issho_1_Part_2B3a
 -> I don't think I can make an accurate assessment yet. Perhaps if we spend more time together...?
     {$issho}: <pause> [comment]Smile[/comment] Perhaps if we run into each other again in the future.
 -> I'm sure you're really strong! But you don't have a Logia…
-    <<set $isd1_points = $isd1_points - 1>>
+    <<set $isd1_points -= 1>>
     {$issho}: [comment]frown[/comment] Having a Logia — or eyesight, for that matter — doesn't grant strength. Sometimes, it's the arrogant Logia that gets defeated first.
 <<jump date_issho_1_DateEnding>>
 ===
@@ -461,7 +467,7 @@ title: date_issho_1_Part_2B3b
 -> Maybe another time, sir. I'm still a bit overwhelmed by everything right now.
     {$issho}: Fair enough. In that case, focusing on yourself first is good.
 -> Learning a whole new language just to [i]read[/i]? I'll pass. Thank you for your offer, Admiral.
-    <<set $isd1_points = $isd1_points - 1>>
+    <<set $isd1_points -= 1>>
     {$issho}: What a pity. I suppose learning a new language is quite intimidating.
 <<jump date_issho_1_DateEnding>>
 ===
@@ -473,18 +479,18 @@ title: date_issho_1_Part_2B3c
 -> M-My apologies... that was out of line…
     {$issho}: It was. The world is full of people who are powerful but don't look like it.
 -> I'm not worried. I'm a desk jockey! I'll be fine!
-    <<set $isd1_points = $isd1_points - 1>>
+    <<set $isd1_points -= 1>>
     {$issho}: Just because you don't think you'll be on the front line doesn't mean that a fight won't come to you eventually.
 -> I guess, if you say so.
-    <<set $isd1_points = $isd1_points - 1>>
-    <<set $isd1_points = $isd1_points - 1>>
+    <<set $isd1_points -= 1>>
+    <<set $isd1_points -= 1>>
     {$issho}: [comment]frown[/comment] …
 <<jump date_issho_1_DateEnding>>
 ===
 
 title: date_issho_1_Part_2C
+location: town
 ---
-<<set_background "town" show>>
 {$name}: I don't really have any plans. I was just really bored sitting at home.
 {$issho}: Life at Marineford is very exciting, isn't it? I understand how a day off feels so jarring in comparison.
 {$issho}: [comment]smile[/comment] In that case, would you like to take a stroll with me?
