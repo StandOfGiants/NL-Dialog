@@ -1,12 +1,12 @@
 :: start
 do context("coby date 2")
-You look at the pile of paperwork in front of you. It's not nearly as large as it was before, but still daunting. At this point your eyes were starting to slide off the words. Just as you were about ready to call it quits, there was a knock at your office door.
+You look at the pile of paperwork in front of you. It's not nearly as large as it was before, but still daunting. At this point, your eyes are starting to slide off the words. Just as you are about ready to call it quits, there is a knock at your office door.
 `name`: Come in.
 Coby: Hello!
 Coby: …
 Coby: Is… everything alright? You seem stressed.
 - Oh, you know. All this paperwork is our own boulder to push up the mountain endlessly.
-    Coby: Haha, I know how you feel. It really is neverending
+    Coby: Haha, I know how you feel. It really is neverending.
 - Everything's fine. Mostly. Kinda.
     Coby: And maybe?
     `name`: And maybe.
@@ -40,27 +40,27 @@ do increment("cd2_possible")
         Coby: Oh. Alright then… => Date_ending
 
 :: Flower_garden
-For a while you both admire the flowers, but eventually Coby breaks the silence.
+For a while, you both admire the flowers, but eventually Coby breaks the silence.
 Coby: So… What do you want to talk about…
 - Nothing in particular. I'm enjoying the quiet.
     Coby: Oh. Alright. Let's keep walking, then. => Walk2
 - How did you and Helmeppo even meet? You haven't told me that one yet. => Helmeppo1
 - What happened to your forehead? That's quite the scar. => Scar1
-- What made you want to join the marines? => Backstory1
+- What made you want to join the Marines? => Backstory1
 
 :: Backstory1
 do visit("Backstory1")
 Coby: I've always wanted to be a Marine, actually. I thought it was a noble thing to do as a child, and a number of years ago I had a… bit of a personal encounter with pirates that solidified that for me.
 - A personal encounter?
-    Coby: Yeah… It's a bit of an embarrassing story though. I don't particularly like talking about it.
+    Coby: Yeah… It's a bit of an embarrassing story, though. I don't particularly like talking about it.
     do increment("cd2_possible")
-    - I can't say I'm not curious, but if you don't want to share I won't ask.
+    - I can't say I'm not curious, but if you don't want to share, I won't ask.
         Coby: Thanks…
         do increment("cd2_points")
         => Walk2
     - Understandable. => Walk2
     - That's kinda dumb. There's worse things than being embarrassed.
-        Coby: Look I'd rather not get into it ok?
+        Coby: Look, I'd rather not get into it, OK?
         do decrement("cd2_points")
         => Walk2
 - Do you still think it's a noble thing to do?
@@ -88,32 +88,32 @@ Coby: I think I might have been sparring with Garp and Helmeppo…
 Coby: All I know for sure is that I woke up in the hospital and Helmeppo was crying.
 do increment("cd2_possible")
 - Ouch… Must have been one hell of a crack on the head.
-    Coby: Oh for sure. The scar makes that more than clear. => Walk2
+    Coby: Oh, for sure. The scar makes that more than clear. => Walk2
 - From the stories I've heard, I'm going to go ahead and blame Garp.
     Coby: Haha, yeah… I kinda came to the same conclusion.
     do increment("cd2_points")
     => Walk2
-- Well hopefully you're not that pathetic still.
+- Well, hopefully you're not that pathetic still.
     Coby: Hey.
     do decrement("cd2_points")
     => Walk2
 
 :: Helmeppo1
 do visit("Helmeppo1")
-Coby: Oh. Uh. Well… I first met him in Shells Town when Morgan was still in charge. He had Zoro tied up outside as punishment, and was harassing a little girl who was giving Zoro something to eat.
+Coby: Oh. Uh. Well… I first met him in Shells Town when Morgan was still in charge. He had Zoro tied up outside as punishment and was harassing a little girl who was giving Zoro something to eat.
 - Wait, punishment for what?
     Coby: He killed Helmeppo's pet wolf after it went after the little girl. => Helmeppo2
 - Harassing a little girl? How awful!
     Coby: Yeah. Had her thrown over the wall… Thankfully someone was on the other side with me to catch her. => Helmeppo2
-- Oh right. He is Axe-Hand Morgan's son, isn't he?
+- Oh, right. He is Axe-Hand Morgan's son, isn't he?
     Coby: They're related, yeah. Though I wouldn't recommend bringing him up if you talk to Helmeppo.
     Coby: How things left off was pretty… traumatic for him, to say the least. => Helmeppo2
 
 :: Helmeppo2
-Coby: Anyways, there was a pretty big scuffle and Helmeppo ended up holding a gun to my head for a bit before Luffy punched him in the face… I'll be honest I was fully expecting to die for a minute there.
-Coby: But it all worked out. Once Morgan was beaten he was arrested for his abuse of power, and Helmeppo and I joined the Marines!
+Coby: Anyways, there was a pretty big scuffle and Helmeppo ended up holding a gun to my head for a bit before Luffy punched him in the face… I'll be honest, I was fully expecting to die for a minute there.
+Coby: But it all worked out. Once Morgan was beaten, he was arrested for his abuse of power, and Helmeppo and I joined the Marines!
 - Wait, *LUFFY* saved you?
-    Coby: Ah, yeah I should've mentioned that earlier… He wasn't officially considered a pirate when I first met him. But defeating Morgan sure got him noticed! => Helmeppo3
+    Coby: Ah, yeah, I should've mentioned that earlier… He wasn't officially considered a pirate when I first met him. But defeating Morgan sure got him noticed! => Helmeppo3
 - Helmeppo held a *gun* to your head? Really?
     Coby: Well, yeah. What else would he have held, some silly hammer contraption?
     `name`: I guess not… => Helmeppo3
@@ -121,15 +121,15 @@ Coby: But it all worked out. Once Morgan was beaten he was arrested for his abus
     Coby: Oh he, uh, wasn't exactly given much of a choice. I joined willingly, though. => Helmeppo3
 
 :: Helmeppo3
-Coby: But yeah. That's the short version of how we met. I'd say we've been friends ever since but that kinda took a while… Still, he's my best friend now and that's what matters most to me.
+Coby: But yeah. That's the short version of how we met. I'd say we've been friends ever since, but that kinda took a while… Still, he's my best friend now and that's what matters most to me.
 do increment("cd2_possible")
 - I'm glad you're able to look back at that so casually. Not many could let that go.
     do increment("cd2_points")
-    Coby: Honestly it wasn't that hard when I got to know him.
-    Coby: Sure he's abrasive, but he's a really loyal friend. => Walk2
+    Coby: Honestly, it wasn't that hard when I got to know him.
+    Coby: Sure, he's abrasive, but he's a really loyal friend. => Walk2
 - That's absolutely wild.
     Coby: Isn't it? I love that story.
-    Coby: Helmeppo doesn't like it as much because he has to admit he's the reason Zoro joined the Straw Hat crew in the first place. => Walk2
+    Coby: Helmeppo doesn't like it as much, because he has to admit he's the reason Zoro joined the Straw Hat crew in the first place. => Walk2
 - I can't believe you'd befriend that kind of monster.
     do decrement("cd2_points")
     do decrement("cd2_points")
@@ -137,24 +137,24 @@ do increment("cd2_possible")
     Coby: And I don't tolerate anyone treating him like one. Got it? => Walk2
 
 :: Walk2
-You both continue onwards, passing by the hallway leading to the Captain offices.
+You both continue onwards, passing by the hallway leading to the Captains' offices.
 Coby: Since we're passing by, do you want to see my office?
 - Sure, why not?
     Coby: Alright! Let's go. => Office1
-- No thanks.
+- No, thanks.
     Coby: Fair enough. => Walk3
 
 :: Office1
-Coby turns down the hallways and leads you to a door about halfway down. On it is a small plaque that has his name on it. He opens the door and steps aside to let you enter first.
+Coby turns down the hallways and leads you to a door about halfway down. On it is a small plaque on which his name is written. He opens the door and steps aside to let you enter first.
 
-The office is a mess. There was barely an inch of desk that wasn't covered in paperwork. It was also piled on most other surfaces. On one wall was a mass of what looked like sticky note reminders in what you recognize as Helmeppo's handwriting, along with a few you don't recognize.
+The office is a mess. There is barely an inch of desk that isn't covered in paperwork. Papers are also piled on most other surfaces. On one wall is a mass of what looks like sticky note reminders in what you recognize as Helmeppo's handwriting, along with a few you don't recognize.
 
 do increment("cd2_possible")
 - Wow. Did a bomb go off in here?
     do increment("cd2_points")
     Coby: No bomb, unfortunately. Just me.
 - Oh boy.
-    Coby: Yeah I probably should've cleaned up before offering…
+    Coby: Yeah, I probably should've cleaned up before offering…
 - Yikes, I expected Captains to have higher standards.
     do decrement("cd2_points")
     Coby: It's not like staying organized is *easy*.
@@ -168,10 +168,10 @@ do increment("cd2_possible")
 - **Talk to Coby** => Office_Chat1
 
 :: StickyNotes
-You look at the wall of colorful notes. They had all sorts of notes on them that didn't seem to make any sense.
-- **Ask About “Eat Lunch-Potato Day”** [if not(visited("coby_lunch_potato"))]
+You look at the wall of colorful notes. They have all sorts of notes on them that don't seem to make any sense.
+- **Ask about “Eat Lunch-Potato Day”** [if not(visited("coby_lunch_potato"))]
     do visit("coby_lunch_potato")
-    `name`: What does “Eat Lunch-Potato Day even mean?
+    `name`: What does “Eat Lunch-Potato Day” even mean?
     Coby: Oh, Helmeppo just left that one to let me know they were serving buttered potatoes. That was from a while ago, though.
     do increment("cd2_possible")
     - It's kind of sweet that you keep all of these.
@@ -182,11 +182,11 @@ You look at the wall of colorful notes. They had all sorts of notes on them that
     - What is he, your parent?
         do decrement("cd2_points")
         Coby: No? He's a friend who cares that I remember to eat.
-- **Ask About the drawing of a cat butt** [if not(visited("coby_cat_butt"))]
+- **Ask about the drawing of a cat butt** [if not(visited("coby_cat_butt"))]
     do visit("coby_cat_butt")
     `name`: So uh. A cat butt, huh?
     Coby: I actually drew that one. Thought it was funny, so I kept it.
-- **Ask About “Wolf Island????????”** [if not(visited("coby_wolf_island"))]
+- **Ask about “Wolf Island????????”** [if not(visited("coby_wolf_island"))]
     do visit("coby_wolf_island")
     `name`: Looks like someone's curious about Wolf Island.
     Coby: Oh, yeah. Helmeppo keeps trying to convince me to let him get another wolf. I'm not sure that's a good idea.
@@ -200,21 +200,21 @@ You look at the wall of colorful notes. They had all sorts of notes on them that
         Coby: I may not think it's a good idea, but I can believe it.
     - (If they talked about Meppo's wolf in Meppo's date) I don't know, maybe you should humor him. I think he really misses his pet. (+2)
         Coby: Ah, you're right… I don't know about keeping one, but maybe I can at least arrange a visit…
-- **Ask About “Stealing M for training sry”** [if not(visited("coby_stealing_m"))]
+- **Ask about “Stealing M for training sry”** [if not(visited("coby_stealing_m"))]
     do visit("coby_stealing_m")
-    `name`: What's ‘M'? And who's stealing it?
+    `name`: What's ‘M?’ And who's stealing it?
     Coby: Oh, Tashigi was just letting me know Helmeppo would be training with her that day.
     do increment("cd2_possible")
     - That's nice of her to let you know.
         do increment("cd2_points")
-        Coby: It is! We train together a lot so knowing he's busy is nice.
+        Coby: It is! We train together a lot, so knowing he's busy is nice.
     - Wait, so Helmeppo's M?
-        Coby: Yeah. It's a bit of a nickname. Well, not ‘M', but Meppo.
+        Coby: Yeah. It's a bit of a nickname. Well, not ‘M,’ but Meppo.
     - Why do you care who he trains with?
         do decrement("cd2_points")
-        Coby: I don't. We just have a standing daily sparring session so she was letting me know he'd be missing it.
+        Coby: I don't. We just have a standing daily sparring session, so she was letting me know he'd be missing it.
 - Alright, I think I'm ready to move on.
-    Coby: Ok, let's go. => Walk3
+    Coby: OK, let's go. => Walk3
 => StickyNotes
 
 :: Desk1
@@ -225,17 +225,17 @@ You look over his desk. There seems to be even less order now that you're seeing
     do increment("cd2_possible")
     - If you ever need help, I'd be happy to give you some.
         do increment("cd2_points")
-        Coby: Honestly that would be great. Helmeppo and Tashigi have tried, but I think I need a different perspective… => Regroup
+        Coby: Honestly, that would be great. Helmeppo and Tashigi have tried, but I think I need a different perspective… => Regroup
     - Good luck…
         Coby: Thank you. => Regroup
     - Damn right you do. This desk makes you seem like a slob.
         do decrement("cd2_points")
-        Coby: Hey. I may be disorganized but I keep things very clean. => Regroup
+        Coby: Hey. I may be disorganized, but I keep things very clean. => Regroup
 - I'm surprised they even let you into the filing room…
-    Coby: Honestly that was mostly because you, Drake and Helmeppo were there too… If it were just me things would have been…
+    Coby: Honestly, that was mostly because you, Drake and Helmeppo were there too… If it were just me, things would have been…
     Coby: Very different…
     do increment("cd2_possible")
-    - Aw, I'm sure you would've been ok.
+    - Aw, I'm sure you would've been OK.
         do increment("cd2_points")
         Coby: I appreciate the vote of confidence! => Regroup
     - Yeah, I can see that.
@@ -253,14 +253,14 @@ You pull two wanted posters from under a pile of paperwork. The pictures are com
     - Sorry! Here.
         do increment("cd2_points")
         Coby: Thanks. => Regroup
-    - Are you ok? They're just wanted posters.
+    - Are you OK? They're just wanted posters.
         Coby: Fine! I'm fine. It's fine. Don't worry about it. => Regroup
     - Ooooh, looks like the Captain's hiding something.
         do decrement("cd2_points")
-        Coby: Look I'd really rather not talk about it, ok? => Regroup
+        Coby: Look, I'd really rather not talk about it, OK? => Regroup
 - Do you know this pirate?
     Coby: O-oh, um, well you see… It's a really long story…
-    Coby: And- and complicated too! You wouldn't want to hear about all that…
+    Coby: And— and complicated too! You wouldn't want to hear about all that…
     do increment("cd2_possible")
     - I think I would.
         do decrement("cd2_points")
@@ -270,10 +270,10 @@ You pull two wanted posters from under a pile of paperwork. The pictures are com
         Coby: I really don't. => Regroup
 - Are these… really the same person?
     Coby: Oh, uh. Yeah. She ate a devil fruit and it changed her appearance.
-    Coby: I mean that was a while ago but I'm… no good with faces?
+    Coby: I mean that was a while ago, but I'm… no good with faces?
     do increment("cd2_possible")
     - You don't sound too sure of that.
-        Coby: Oh no I am, I swear. Anyways, we should keep going. => Walk3
+        Coby: Oh no, I am, I swear. Anyways, we should keep going. => Walk3
     - Riiiight…
         do increment("cd2_points")
         Coby: …
@@ -283,8 +283,8 @@ You pull two wanted posters from under a pile of paperwork. The pictures are com
         Coby: Yes please. => Walk3
     - That's bullshit and you know it.
         do decrement("cd2_points")
-        Coby: Well I don't see why you care so much.
-        Coby: Look I'm really not interested in talking about this. => Regroup
+        Coby: Well, I don't see why you care so much.
+        Coby: Look, I'm really not interested in talking about this. => Regroup
 
 :: Office_Chat1
 You take a look around the messy office but decide not to investigate anything. This would be the perfect opportunity to get to know him a bit better.
@@ -318,37 +318,37 @@ You take a look around the messy office but decide not to investigate anything. 
         Coby: Oh, that's unfortunate… => Regroup
     - Why do you care?
         do decrement("cd2_points")
-        Coby: Well I was interested in learning more about you. Is that so wrong? => Regroup
+        Coby: Well, I was interested in learning more about you. Is that so wrong? => Regroup
 - You've only been a Marine for a few years, right? What did you do before? [if visited("Backstory1")]
-    Coby: Oh. Well. Um. This and that. Cabin Boy stuff. Just on a… different ship…
+    Coby: Oh. Well. Um. This and that. Cabin boy stuff. Just on a… different ship…
     do increment("cd2_possible")
     - Sounds like a sore subject, sorry I asked…
         do increment("cd2_points")
-        Coby: It's ok. I understand the curiosity, I just… Don't like talking about it. => Regroup
+        Coby: It's OK. I understand the curiosity, I just… Don't like talking about it. => Regroup
     - Sure. I guess I'll believe that.
         Coby: Thanks. => Regroup
     - Just cabin boy stuff? I don't know… Sounds like you're hiding something.
         do decrement("cd2_points")
         Coby: Well, see, it's… Complicated. => Regroup
 - Does your scar ever hurt at all? [if visited("Scar1")]
-    Coby: No, not at all. Actually I can't really feel anything in that spot…
+    Coby: No, not at all. Actually, I can't really feel anything in that spot…
     do increment("cd2_possible")
     - Well, better that than it hurting, right?
         do increment("cd2_points")
         Coby: I like to think so. => Regroup
-    - Oh neat.
-        Coby: Yeah! It's such a weird sensation but I got use to it. => Regroup
+    - Oh, neat.
+        Coby: Yeah! It's such a weird sensation, but I got used to it. => Regroup
     - That's wild. Can I touch it?
         do decrement("cd2_points")
         Coby: I'd prefer if you didn't. => Regroup
 - Alright. You told me how you met, but how'd you manage to befriend someone like Helmeppo? [if visited("Helmeppo1")]
     Coby: Oh! Well. That started when we were cabin boys on the ship being used to transfer Morgan to Garp.
-    Coby: Morgan made an escape attempt and took Helmeppo as a hostage. I stopped the others from, uh, firing a canon at them. Once Meppo got back to the ship things were kinda different.
+    Coby: Morgan made an escape attempt and took Helmeppo as a hostage. I stopped the others from, uh, firing a canon at them. Once Meppo got back to the ship, things were kinda different.
     Coby: We've been friends ever since.
     do increment("cd2_possible")
     - Wow… I can't believe the Marines would do that…
         do increment("cd2_points")
-        Coby: Unfortunately it's become… Easier to believe, with everything that's happened since. => Regroup
+        Coby: Unfortunately it's become… easier to believe, with everything that's happened since. => Regroup
     - I guess the rest of it's history, right?
         Coby: Pretty much! => Regroup
     - Maybe they should've. It would be better than letting a criminal get away.
@@ -361,7 +361,7 @@ Coby: Well, we should probably keep going. => Walk3
 
 
 :: Walk3
-You both continue onwards, strolling through the halls of Marineford. Before long you find yourselves in the training grounds. It's a sunny, cool day. There are a few people sparring around the yard.
+You both continue onwards, strolling through the halls of Marineford. Before long, you find yourselves in the training grounds. It's a sunny, cool day. There are a few people sparring around the yard.
 Coby: It's so nice to get some fresh air. Especially on a nice day like this.
 - It really is beautiful out.
     Coby: It would be so nice if it were like this all the time.
@@ -390,7 +390,7 @@ Coby: It's so nice to get some fresh air. Especially on a nice day like this.
     - Yeah, I prefer really cold weather.
         Coby: That does sound better, actually. You can't beat a nice cold day. => Training_grounds1
     - Yeah, I prefer super hot weather.
-        Coby: Oh nice. I overheat easily so I try to avoid that kind of weather myself. => Training_grounds1
+        Coby: Oh nice. I overheat easily, so I try to avoid that kind of weather myself. => Training_grounds1
     - I'm not big on being outside in general.
         Coby: You're actually not the first person to tell me that… => Training_grounds1
 
@@ -404,11 +404,11 @@ Coby: So, what brought you to the Marines?
     - The… *incident* at the old Marineford has certainly made things difficult.
         do increment("cd2_points")
         Coby: Yeah. So many lives wasted… => Training_grounds2
-    - It's been rough at times but I like to think we're making a difference.
-        Coby: Me too. It may not be perfect, but if we can protect people from pirates it's at least somewhat worth it. => Training_grounds2
+    - It's been rough at times, but I like to think we're making a difference.
+        Coby: Me too. It may not be perfect, but if we can protect people from pirates, it's at least somewhat worth it. => Training_grounds2
     - I can't say I don't regret it at all. The Marines seem rotten to the core.
         do decrement("cd2_points")
-        Coby: I can't say I agree, but I suppose I understand where you're coming from.. => Training_grounds2
+        Coby: I can't say I agree, but I suppose I understand where you're coming from. => Training_grounds2
 - Wanted to travel. The South Blue is nice, but I just… Craved something more.
     Coby: That makes sense. I know the East Blue feels so small after everything I've seen.
     do increment("cd2_possible")
@@ -418,7 +418,7 @@ Coby: So, what brought you to the Marines?
     - I know that feeling.
         Coby: Yeah… => Training_grounds2
     - I bet. I mean, the East Blue probably feels small compared to anywhere. => Training_grounds2
-- Needed the money. We were getting by ok, but with the money my brother and I send back our parents can be a lot more comfortable.
+- Needed the money. We were getting by OK, but with the money my brother and I send back, our parents can be a lot more comfortable.
     Coby: It sounds like your parents are really lucky to have you both.
     do increment("cd2_possible")
     - I just hope my dad doesn't use it to make another shed.
@@ -426,8 +426,8 @@ Coby: So, what brought you to the Marines?
         Coby: Is that something that happens often?
         `name`: More often now that he's already renovated the entire house. Twice. => Training_grounds2
     - Yeah, they say the same thing.
-        Coby: Well then you know it's true. => Training_grounds2
-    - It's annoying, but they are my parents so I can't really say no.
+        Coby: Well then, you know it's true. => Training_grounds2
+    - It's annoying, but they are my parents, so I can't really say no.
         do decrement("cd2_points")
         Coby: I see… => Training_grounds2
 
@@ -448,5 +448,5 @@ if check_ratio("cd2_points", "cd2_possible", 0.5)
     Coby: I know we should probably get back to work, but… It's been really fun spending time with you. I hope we get to do this again sometime soon. Y-you know, if you want to…
     do romance_points(coby, 2)
 else
-    Coby: Well, we should probably get back to work. I'll see you later, ok?
+    Coby: Well, we should probably get back to work. I'll see you later, OK?
     do romance_points(coby, 0)
