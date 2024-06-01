@@ -42,7 +42,7 @@ You ease into what you hope is a natural stance, grasping the jitte around the s
 Smoker: Your hands are loose, that's good. Don't want to grip it too tight; you need a little give.
 -> What about the positioning?
   Smoker: Let's see.
-  He wraps his left hand over yours. You breathe in the scent of smoke mixed with burnt coffee grounds. His skin is warm. He twists your hand slightly, so that aligns with your right hand more. The grip feels a little awkward.
+  He wraps his left hand over yours. You breathe in the scent of smoke mixed with burnt coffee grounds. His skin is warm. He twists your hand slightly, so that it aligns with your right hand more. The grip feels a little awkward.
   Smoker: How's that?
   -> Do you get used to it?
     Smoker: Yeah, it takes a while, like any weapon.
@@ -88,7 +88,8 @@ Smoker: So raise your jitte, do what I'm doing. Good. Your stance looks loose. N
 title: date_smoker_2_Jitte_1_flirty_medical
 ---
 Smoker: Wrist okay?
-You hold it out. It doesn't feel that bad, but if Smoker wants to fuss over you, you're not complaining. He takes a hold of your wrist and turns it over.
+You hold it out. It doesn't feel that bad, but if Smoker wants to fuss over you, you're not complaining.
+He takes a hold of your wrist and turns it over.
 
 Smoker: Looks fine to me.
 His hand lingers, thumb pressed right up against the heel of your hand.
@@ -122,7 +123,8 @@ title: date_smoker_2_Jitte_1_flirty_counterattack
 ---
 You raise your jitte to stab, but Smoker blocks it easily.
 Smoker: Good recovery.
-Again, the two of you clash weapon against weapon, and you see a smile on Smoker's face. Maybe he doesn't get to fight with other jitte users that often, even a novice like you. And then he brings the jitte down against your knuckles; your hand opens; your jitte falls to the ground.
+Again, the two of you clash weapon against weapon, and you catch a smile on Smoker's face. Maybe he doesn't get to fight with other jitte-users that often, even a novice like you.
+And then he brings the jitte down against your knuckles in a hard smack; your hand opens; your weapon falls to the ground.
 
 Smoker: My win again.
 -> Damn. Let's try again?
@@ -165,8 +167,9 @@ Smoker: What's up?
 title: date_smoker_2_Jitte_1_flirty_stance
 ---
 Smoker: Let me take a look at your hips.
-He walks around you, and it's hard not to twist your head to follow his gaze. Surely, this can't all be for the purposes of improving your posture.
+He walks around you, and it's hard not to twist your head to follow his gaze. Surely, this can't all be for the purposes of improving your posture. He *must*--
 Smoker: This is pretty basic, but I still rely on it. Now you try.
+--- bodies in space + talking heads syndrom in this scene. where is pc & smoker positioned? needs clarifying.
 Smoker raises his own jitte up and swings it down, the motion a bit like chopping with an axe. You try to mimic the motion, but you sure don't feel like you were doing what Smoker was.
 -> Is there something wrong with my grip?
   Smoker: Looks good to me, but you need to work on the motion.
@@ -228,8 +231,9 @@ Smoker: You have to avoid it.
   You jab, anticipating Smoker's block. It arrives, but he moves with you, as if he's been tracking your mind. Maybe your jitte is just moving too slow, but when your weapon knocks harmlessly off of his, you see he's smiling, and not in a mocking way.
 
 Smoker: Not bad. Here, let me show you something else. You see this?
-He points to the shorter shaft on the jitte. You nod.
-Smoker: This is the kagi. It's good for hooking into things. Like this.
+He points to the shorter shaft on the jitte.
+You nod.
+Smoker: This is the kagi. It's good for hooking onto things. Like this.
 
 He pushes forward with the shaft, as if sweeping through the air, and you try to duck—but he's slid the kagi into the sleeve of your shirt, dragging you forward.
 -> If you wanted me to come closer, all you had to do was ask. (+1)
@@ -256,7 +260,7 @@ Smoker: You seem a little distracted.
 -> Kinda hard not to be, sometimes.
 -> Maybe you're not distracted enough.
 
-You give Smoker your best come-hither look  and rear back, jitte in hand, attempting to show off your best physical assets. And it works. Smoker's eyes are drawn to you, not the weapon—not that it gives you much of an advantage in the fighting. You go hard, but you're still no match for even a distracted Smoker. (And you're still a little distracted yourself.)
+You give Smoker your best come-hither look and rear back, jitte in hand, attempting to show off your best physical assets. And it works. Smoker's eyes are drawn to you, not the weapon-- not that it gives you much of an advantage in the fighting. You go hard, but you're still no match for even a distracted Smoker. (Not to mention you're still a little distracted yourself.)
 
 Smoker: I'm about ready for a break.
 <<jump date_smoker_2_Jitte_break>>
@@ -276,7 +280,7 @@ Smoker: You're getting good.
 -> You're a lot for me to handle.
   Smoker: Like I said—doing well.
 
-You go another round, and then another, until it's getting pretty hard for you to raise the jitte. You've got a little bit of slowness in your step, and Smoker is going even easier on you.
+You go another round, and then another, until it's getting pretty hard for you to keep your weapon raised. You get a little bit of drag in your step, and Smoker is going even easier on you.
 
 Smoker: How about a little break?
 You nod, too exhausted to continue.
