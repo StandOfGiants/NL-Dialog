@@ -223,5 +223,5 @@ Hina: You are embarrassing yourself in front of Hina's birds. Please leave.
 title: date_hina_2_end
 ---
 //  this section doesn't tally up date points to separate into good/neutral/bad endings. the tally is missing.
-<<jump root_main>>
+<<jump main>>
 ===
