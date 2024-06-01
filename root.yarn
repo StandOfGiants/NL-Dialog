@@ -1,0 +1,107 @@
+title: main
+position: -741,-399
+location: mess_hall
+---
+<<declare $sakazuki = "Fleet Admiral Sakazuki">>
+<<declare $kuzan = "Admiral Aokiji">>
+<<declare $issho = "Admiral Fujitora">>
+<<declare $borsalino = "Admiral Kizaru">>
+
+<<declare $name = "Player-chan">>
+<<declare $pronoun_they = "they">>
+<<declare $pronoun_them = "them">>
+<<declare $pronoun_theirs = "theirs">>
+
+<<set $name = "bungo bango">>
+
+Which route do you want?
+-> Legendary
+    <<jump Legendary>>
+-> Admirals
+    <<jump Admirals>>
+-> Smokers & Friend
+    <<jump SmokersAndFriend>>
+-> Coby Crew
+    <<jump CobyCrew>>
+-> DEBUG
+    <<jump DEBUG>>
+===
+
+title: Legendary
+position: -293,-105
+---
+<<jump workday_legendary_1_main>>
+===
+
+title: LegendaryDatesOne
+position: -272,469
+---
+Who do you want to date?
+-> Tsuru
+    <<jump date_tsuru_1_main>>
+-> Rosinante
+    <<jump date_rosinante_1_main>>
+-> Garp
+    <<jump date_garp_1_main>>
+-> Sengoku
+    <<jump date_sengoku_1_main>>
+===
+
+title: Admirals
+position: -835,38
+---
+<<jump workday_admirals_1_main>>
+===
+
+title: SmokersAndFriend
+position: -254,-397
+---
+<<jump workday_smokers_and_friend_1_main>>
+===
+
+title: CobyCrew
+position: -286,-246
+---
+<<jump workday_coby_crew_1_main>>
+===
+
+title: CobyCrewDatesOne
+position: 276,107
+---
+Who do you want to date?
+-> Drake
+    <<jump date_drake_1_main>>
+-> Helmeppo
+    <<jump date_helmeppo_1_main>>
+-> Coby
+    <<jump date_coby_1_main>>
+===
+
+title: DEBUG
+position: -602,38
+---
+<<jump Other>>
+===
+
+title: Other
+position: -363,38
+---
+<<show_character garp center show>>
+center
+<<show_character rosinante left fade>>
+left
+<<show_character coby right show>>
+right
+<<hide_characters hide>>
+<<show_character helmeppo a show>>
+left left
+<<show_character kuzan b fade>>
+left
+<<show_character sakazuki c show>>
+right
+<<show_character smoker d show>>
+right right
+Smoker: I AM A BIG BURRITO.
+Smoker: LOVE ME
+<<jump main>>
+===
