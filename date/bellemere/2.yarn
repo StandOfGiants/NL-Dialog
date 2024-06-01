@@ -143,8 +143,8 @@ title: date_bellemere_2_path_3
 ---
 You slide down the chute (Belle-mére makes it quite clear with a gesture that you should go first).
 It's not a particular fast slide, but the narrowness of the tunnel downward provides its own kind of horror, and you find yourself clutching your flashlight and doubting your life choices.
-You reach the bottom, dumped to a rocky floor in an unceremonious heap, and you can hear Belle-mére's bit-back screeching as she follows behind you.
-It seems as if “Floor BBB” is a straight-up cave, naturally carved into the earth of this island.
+You reach the bottom, dumped to a rocky floor in an unceremonious heap, and you can hear Bellemere's bit-back screeching as she follows behind you.
+It seems as if ***Floor BBB*** is a straight-up cave, naturally carved into the earth of this island.
 Very oddly, there is still a sign on the wall, complete with arrows.
 When Belle-mére arrives, cursing and rubbing her butt as she stands from the hard floor, you indicate the sign with a nod.
 An arrow facing right reads, “100-120.”
@@ -165,15 +165,15 @@ title: date_bellemere_2_path_4
 ---
 You nod to the rubble, and without hesitation Belle-mére leads the way, testing the rocks for support until she finds a safe way over.
 You follow, though somehow you manage to rest your weight on a loose chunk of collapsed rock and it shifts under you. For one brief, comical moment you feel as though you are frozen in the air, arms spinning, on the precipice of saving yourself or planting your face to the base of the little hill.
-Luckily, you're saved in that moment from finding out which way you'll go, Belle-mére reaching up behind her and catching your weight, resetting you on your feet.
+Luckily, you're saved in that moment from finding out which way you'll go, Bellemere reaching up behind her and catching your weight, resetting you on your feet.
 Your heart thumps.
 Her hands seem to stay at your waist just a little longer than necessary as she grins up at you, shaking her head.
 Belle-mére: Watch your step, {$name}. Not that I mind catching ya.
 You feel your face grow hot, and she slowly takes back her hands, her eyes matching yours.
 {$name}: Uh… yeah…
 Why? Because she liked holding you?
-Ah! What a thought! No way…
-Belle-mére: ‘Cause you're so light. Better beef up, newbie.
+Ah! What a thought! No way...
+Bellemere: 'Cause you're so light. Better beef up, newbie.
 You ignore the hypocrisy of this statement from the light-framed woman. After all, you know she packs a lot of hidden strength.
 Your thoughts are interrupted as you hear a concerning growling noise from up ahead.
 Immediately, the mood changes; Belle-mére grabs her shotgun from her back (why did she even think to bring that down here!?), and you reach for your own absent gun.
@@ -203,9 +203,9 @@ Belle-mére: Ooooh, or it could be cursed!
 Belle-mére: Nah, I'm messing with you. You're right. It'd look mighty suspicious if we both left this island and retired as millionaires. We'll report this. But first…
 Belle-mére grabs a fistfull of pearls, coins, and precious gems, stuffing them into her pocket.
 She notices the disapproving look you give her, and grins sheepishly.
-Belle-mére: What?
+Bellemere: What?
 You continue to stare.
-Belle-mére: Well, if you think you can guilt-trip me, tough. They don't pay me enough for this shit. I'm going to consider this an earned bonus.
+Bellemere: Well, if you think you can guilt-trip me, tough shit! They don't pay me enough for this shit. I'm going to consider this an earned bonus.
 Fair enough.
 Next, you both decide to head down the ladder and go to the hole in the floor, since this was (technically) a dead end. No point going back without finishing your job, right? You still have to find room BBB120!
 <<jump date_bellemere_2_path_6>>
@@ -214,18 +214,18 @@ Next, you both decide to head down the ladder and go to the hole in the floor, s
 title: date_bellemere_2_path_6
 ---
 You check the hole one more time, noting the short distance to the cut-stone floor beneath. It's very dark, and you can't see much in the scope of your flashlight until after you jump down.
-You sit on the edge, dangling your legs, when Belle-mére grabs your shoulder.
-Belle-mére: Wait. What was that sound?
-You didn't hear anything, but now you pause and listen. After a moment… you hear it.
+You sit on the edge, dangling your legs, when Bellemere grabs your shoulder.
+Bellemere: Wait. What was that sound?
+You didn't hear anything, but now you pause and listen. After a moment, you hear it.
 A soft scritching noise, coming from below.
 {$name}: What is that?
 Belle-mére shakes her head, frowning, trying to angle her flashlight to see beyond the circle of light below the hole to the floor. It's difficult, but at one pass of her light you swear you see something darting away into the dark, almost too quick to see. Something small and fast.
 Belle-mére: I think we should-
 The edge of the blackness beyond your light shifts, closing in on the light, and you realize it's not just dark.
-It's a mass.
+It's a mass-
 A wiggling, writhing mass constantly in motion like water in a turbulent river.
-Belle-mére: -run!
-You take that advice, pulling back your legs as Belle-mére digs her nails into the fabric of your uniform, helping to forcibly pull you out of the way of the hole just as the mass of creatures breaches the surface. Up in the open, with both of your flashlights trained on them, it becomes apparent what they are.
+Bellemere: *-run!*
+You take that advice, pulling back your legs as Bellemere digs her nails into the fabric of your uniform, helping to forcibly pull you out of the way of the hole just as the mass of creatures breaches the surface. Up in the open, with both of your flashlights trained on them, it becomes apparent what they are.
 Rats.
 Thousands of them.
 Maybe hundreds of thousands.
@@ -292,8 +292,8 @@ You feel their little bodies jumping and skittering all around you, and for a mo
 Belle-mére: Huh… maybe we panicked for nothing?
 {$name}: NOTHING!?
 It was truly a terrifying experience; you will have nightmares for weeks.
-Belle-mére seems to laugh it off.
-Belle-mére: I mean… I'd take the rats in the light over traveling down in the dark any longer, at least.
+Bellemere tries to laugh it off.
+Bellemere: I mean, I'd take the rats in the light over traveling down in the dark any longer, at least.
 Wow. She really does have a problem with underground spaces, huh?
 <<jump date_bellemere_2_final_1>>
 ===
@@ -301,10 +301,10 @@ Wow. She really does have a problem with underground spaces, huh?
 title: date_bellemere_2_final_4
 ---
 You both bolt, back through the rubble, down the hall, and up the stairs so fast you plow head-first into Vice Admiral Smoker and Captain Tashigi.
-Smoker: …
-Tashigi: What exactly is the commotion about! Captain Belle-mére?
-Belle-mére still looks pale, leaning against the heavy metal door to the staircase as she closes it. You're breathing too hard to make a response, too.
-Tashigi takes in your disheveled appearances… and seems to deflate, her indignation at whatever “shenanigans” she imagined vanishing.
+Smoker: ...
+Tashigi: What exactly is the commotion about! Commodore Bellemere?
+Bellemere still looks pale, leaning against the heavy metal door to the staircase as she closes it. You're breathing too hard to make a response, too.
+Tashigi takes in your disheveled appearances... and seems to deflate, her indignation at whatever *shenanigans* she's imagined vanishing.
 Tashigi: Is there really something wrong?
 Belle-mére shakes her head.
 Belle-mére: Thanks for the concern, but-
@@ -312,11 +312,11 @@ Belle-mére: Thanks for the concern, but-
 Smoker: …bear?
 Tashigi touched Belle-mére's shoulder, brushing her carefully aside, and the redhead assents. Adjusting her glasses, the swordman wrenches open the door with one hand on the hilt of her ever-present sword.
 There's nothing there.
-Smoker grins in his grim way, shaking his head and dispersing his namesake cigar smoke in a circle as he scoffs.
+Smoker grins in his grim way, shaking his head and dispersing his cigar smoke in a circle as he scoffs.
 Tashigi sighs.
-Tashigi: I can't believe I'm saying this, but maybe you've been working too hard today, you two.
-Belle-mére: Hey!
-They don't believe you, even as you tell the rest of your story from the catacombs below. In fact, while you can't imagine either of your stoic superiors gossiping, by the next day the story of the “basement bear” seems to spread. Everyone from Rosinante to Kuzan seem to find their way into your office to make a comment (though the latter could possibly be hanging around because your unit has the most ladies he can hit on).
+Tashigi: I can't believe I'm saying this, but maybe you two have been working too hard today.
+Bellemere: Hey!
+They don't believe you, even as you tell the rest of your story from the catacombs below. In fact, while you can't imagine either of your stoic superiors gossiping, by the next day the story of the so-called *basement bear* seems to have spread. Everyone from Rosinante to Kuzan manages to find their way into your office to make a comment- though the latter could possibly be hanging around because your unit has the most ladies he can hit on.
 In any case, the whole adventure could have gone better.
 <<romance_points bellemere 1>>
 <<jump date_bellemere_2_END>>
@@ -382,7 +382,7 @@ Once it's away from you she twirls her rifle around by the strap, aims, and shoo
 Belle-mére: You trying to get yourself killed!? Stay out of my damned shot, {$name}!
 Ah. She's not too happy with you.
 She rolls the body back behind the door with her boot, shutting it tight.
-Belle-mére: We saw nothing. You were attacked by a stray dog, got it?
+Bellemere: We saw nothing. You were attacked by a stray dog, got it?
 You're too hurt and embarrassed to argue. You just nod.
 Belle-mére helps you to your feet and leads you up the stairs and to an office medical kit, your task abandoned. She bandages your wound carefully, the two of you sitting in near-dark as the sunlight outside the window fades. Neither of you bother to get up to turn on the light.
 Belle-mére: Okay, that'll help the bleeding for now. How is it?
@@ -401,10 +401,10 @@ title: date_bellemere_2_B
 NOTE: I am working on the understanding that this Belle-mére was informed of all that happened while she was “captured.” She knows about how exploitive some marines can be, and how good some pirates can be.
 (This path will focus more on lighter conversation. How people who say money isn't important are the people who never had to worry about it)
 
-As you get ready for your dinner with Belle-mére, you can't help but overthink things, getting more nervous as you try to make decisions.
+As you get ready for your dinner with Bellemere, you can't help but overthink things, getting more nervous as you try to make decisions.
 Is this a date?
 Or is she just using you for a free meal?
-You hope it's a date, but you don't exactly mind treating your superior either way. Belle-mére is a fun person to be around in general.
+You hope it's a date, but you don't exactly mind treating your superior to dinner either way. Bellemere is a fun person to be around in general.
 Well, how do you dress for this maybe-date?
 Outfit choices:
 -> Go flashy. Wear formal clothes.
@@ -469,8 +469,8 @@ title: date_bellemere_2_sitting
 ---
 When you get to the restaurant, you can't read Belle-mére's reaction on her face. Is she impressed? Disgusted?
 Maybe she's waiting to judge until after you've both had a chance to taste the food: fair.
-You open the door for her, and she seems pretty pleased with the gesture. Belle-mére is an interesting lady- she seems to like being waited on, but only on her own terms. She likes nice things, it seems, on another person's berry… but only if they acknowledged that she doesn't need it.
-You think you're finally starting to figure her out, and you just become more fascinated the more the two of you talk.
+You open the door for her, and she seems pretty pleased with the gesture. Bellemere is an interesting lady- she seems to like being waited on, but only on her own terms. She likes nice things, it seems, on another person's berry... but only if they've acknowledged that she doesn't need it.
+You think you're finally starting to figure her out, and you just become more fascinated the more you talk.
 You're seated at a table near a window, where you can both watch the sun set behind the silhouettes of nearby shops. It's a nice view.
 Belle-mére: You know, it is nice of you to take me out. I mean, I'm worth it, but still… I don't think I said “thank you,” but it's merited.
 {$name}: Ah, well… you know, it's worth it to spend more time with you…
@@ -613,7 +613,7 @@ Belle-mére: Man, you really had me going! I thought I had overdressed, seeing y
 Belle-mére: Hey, I'm a fancy lady; I love expensive shit! I also love when someone doesn't care what anyone thinks- color me impressed with that attitude of yours, {$name}.
 The two of you have a pretty good time, though the snooty waiter does not seem to appreciate your simple outfit. The moment the man's back is turned, Belle-mére sticks out her tongue at him childishly, and you both laugh.
 The night extends as the two of you laugh and eat. You leave after eating, getting drinks from a cheap little vending machine and sitting on a bench under the moonlight to talk.
-When you part at the end of the night, Belle-mére gathers you up in her arms to give you a hug.
+When you part at the end of the night, Bellemere gathers you up in her arms to give you a hug.
 You're not sure about the vibe; is it a romantic hug? A friendly one?
 In any case, you're sure you've made a good impression.
 <<romance_points bellemere 2>>
@@ -668,8 +668,8 @@ You're not sure if it's a joke, at first, but when her stormy blue eyes shift fr
 You look to the waiter, poised with his pen over fancy notepad and back straight like a broom pole, and the man gives you nothing.
 {$name}: Uh… do I? Get a discount? ‘Cause, you know… military?
 The barest movement from the too-serious man; a shake of the head. No.
-Belle-mére scoffs, putting down the menu.
-Belle-mére: Whatever- give me something with a fancy name I probably can't pronounce right from your bougie menu. I'm sure it's all good at these prices, right?
+Bellemere scoffs, and puts down the menu.
+Bellemere: Whatever. Give me something with a fancy name I probably can't pronounce right from your bougie menu. I'm sure it's all good at these prices, right?
 Now, the tiniest of nods.
 The waiter writes down both of your orders and leaves, the two of you making small whispered comments about the stuck-up menu, interior, and staff that have you giggling stupidly.
 This was probably not the best way to dress for this location, but at least the two of you seem to be having some fun (at the expense of both the establishment itself and your wallet).
