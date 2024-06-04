@@ -1,5 +1,5 @@
 title: date_borsalino_1_main
-location: park
+location: day(park)
 ---
 On your way home, you decide to walk through the park. It isn't long before you spot a familiar face.
 {$name}: Wait... isn't that Admiral Kizaru?
@@ -167,7 +167,7 @@ title: date_borsalino_1_route2
 ===
 
 title: date_borsalino_1_route2_at_restaurant
-location: restaurant
+location: day(restaurant)
 ---
 {$borsalino}: Take your pick...
 -> I'd like to have dinner already. Noodles? (+)

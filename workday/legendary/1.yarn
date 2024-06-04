@@ -1,5 +1,5 @@
 title: workday_legendary_1_main
-location: office
+location: day(office)
 characters: [tsuru, garp, sengoku, rosinante]
 ---
 Coming up to Tsuru's office, the door seems to be closed.
@@ -8,11 +8,11 @@ Coming up to Tsuru's office, the door seems to be closed.
     Tsuru: Come in!
 -> Just go right in
     Tsuru: Oh, there you are! We were just looking for you!
-Garp: Eh? Who is this?
+Garp: Eh? Who is this? #pose:chin #expression:questioning
 {$name}: Pleased to meet you, Inspector General Sengoku, Instructor Garp, Vice-Admiral Tsuru—
-Garp: Ah, you can just drop the titles when we're alone in here. Nobody really cares. Anyway, who are you?
-Sengoku: This is Tsuru's new assistant. We were just talking about this!
-Garp: We were?
+Garp: Ah, you can just drop the titles when we're alone in here. Nobody really cares. Anyway, who are you? #pose:hips
+Sengoku: This is Tsuru's new assistant. We were just talking about this! #pose:pocket
+Garp: We were? #expression:smile
 Tsuru: Ugh. Please ignore them. We're happy to have you here.
 -> Is this... normal?
     Rosinante: Pretty much, though everyone is a bit rowdier because of the event later today.
@@ -25,7 +25,7 @@ title: workday_legendary_1_ConversationContinues
 ---
 {$name}: Event? What kind of event?
 {$name}: I think I heard something about that…
-Sengoku: It's a welcoming ceremony for the new recruits we have coming in. Something to show them what the Navy's made of, and what to expect!
+Sengoku: It's a welcoming ceremony for the new recruits we have coming in. Something to show them what the Navy's made of, and what to expect! #expression:smile
 Garp: Ah... I remember my first day as a rookie... the food was amazing.
 Tsuru: That's because you accidentally went to the officer's hall instead of the recruitment ceremony.
 Rosinante: That sounds better than my first ceremony... I accidentally set the cannons off.
@@ -35,14 +35,14 @@ Tsuru: {$name}, we are all writing a speech that myself, Garp, and Sengoku will 
 Tsuru: We could use your help with the final touches. There are a lot of... conflicting ideas here.
 -> I'd be happy to help!
     Tsuru: Fantastic!
-    Sengoku: Finally - someone who wants to help.
+    Sengoku: Finally - someone who wants to help. #expression:joy
     Garp: I don't see why we can't just skip the speech…
     Tsuru: Our recruits need to understand our ideals - not just our strength, Garp!
 -> I'd rather just listen; I don't think I have enough speech writing experience for that.
     Garp: See! Someone else who thinks writing this speech is ridiculous!
     Tsuru: We already have a demonstration, Garp - not everything can be accomplished by throwing punches!
 -> You said you, Garp, and Sengoku will be performing the speech - what about Rosinante?
-    Sengoku: Inspiration! Rosi here is a shining example of what a Marine can be.
+    Sengoku: Inspiration! Rosi here is a shining example of what a Marine can be. #expression:smile
     Rosi: I completed a mission a short while ago, something extremely dangerous. The higher ups decided I should get promoted for that... and get some recognition.
     Sengoku: As you deserve. We need to put the finishing touches on your promotion speech as well...
     Tsuru: Let's focus on this speech first, gentlemen.
@@ -119,7 +119,7 @@ Tsuru: I have some papers that need to be sent to Sengoku... or you can stay and
 
 title: workday_legendary_1_GarpTsuruRoute
 characters: [garp, tsuru]
-location: office
+location: day(office)
 ---
 You decide to stay in Tsuru's office.
 Tsuru:  Thank you for staying, {$name}.

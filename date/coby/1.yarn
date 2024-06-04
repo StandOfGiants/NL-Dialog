@@ -1,5 +1,5 @@
 title: date_coby_1_main
-location: office
+location: day(office)
 ---
 <<declare $cd1_points = 0>>
 <<declare $cd1_possible = 0>>
@@ -55,7 +55,7 @@ Coby: It's funny. Even though I need a break, I have no idea what we should do..
 ===
 
 title: date_coby_1_Coby_food1
-location: park
+location: day(park)
 ---
 You walk with him down to the mess hall, listening to Coby's stomach growl. He said he hadn't eaten in a while, but you can't help but wonder how long ‘a while' actually was... No wonder he wasn't getting any work done.
 -> Do you know what they're serving today?
@@ -73,7 +73,7 @@ You walk with him down to the mess hall, listening to Coby's stomach growl. He s
 ===
 
 title: date_coby_1_Coby_food2
-location: mess_hall
+location: day(mess_hall)
 ---
 You both enter the mess hall and are met with a delightful smell.
 Coby: Oh! Buttered potatoes! I would've come down earlier if I'd known this is what they had today!
@@ -259,7 +259,7 @@ Coby: I guess I should get back to work now, though, shouldn't I?
 ===
 
 title: date_coby_1_Coby_food6
-location: park
+location: day(park)
 ---
 You walk with Coby back towards his office. On the way, he tells you a story from his early days as a Marine.
 Coby: Helmeppo and I are still paying off that building, since we were the ones to destroy it... But we're getting close!
@@ -267,7 +267,7 @@ Coby: Helmeppo and I are still paying off that building, since we were the ones 
 ===
 
 title: date_coby_1_Coby_food6_back_at_office
-location: office
+location: day(office)
 ---
 Coby: Oh, it looks like we're already here...
 <<set $cd1_possible += 1>>
@@ -290,14 +290,14 @@ else
 ===
 
 title: date_coby_1_Coby_training1
-location: park
+location: day(park)
 ---
 He leads the way to the training grounds. They are almost empty when you arrive, with only the occasional sparring pair scattered around the open area.
 <<jump date_coby_1_Coby_training1_grounds>>
 ===
 
 title: date_coby_1_Coby_training1_grounds
-location: training_grounds
+location: day(training_grounds)
 ---
 Coby: Right. I'll be sure to go easy on you. No need for anyone to get hurt during a friendly sparring match.
 <<set $cd1_possible += 1>>

@@ -1,5 +1,5 @@
 title: date_issho_2_main
-location: office
+location: day(office)
 ---
 {$name}: Another day of work ahead of me… I can't wait for the weekend!
 [i]You get to work, and are immediately tasked with moving boxes full of documents from the office to the archive by a very cranky Fleet Admiral.[/i]
@@ -94,7 +94,7 @@ title: date_issho_2_Next_Route
 
 title: date_issho_2_Park
 ---
-//  Date location: Park
+//  Date location: day(Park)
 
 [i]You both head toward the park, as fast as your legs can carry you. Ha! So this is a good use of the training you have undergone![/i]
 [i]It's only morning so the park is quite barren. You can spot a few elderly people hanging out from afar but other than that, it's quiet. You look around, spotting an empty bench.[/i]
@@ -168,7 +168,7 @@ But before {$issho} can elaborate on his answers, you hear loud stomping.
 
 title: date_issho_2_Town
 ---
-//  Date location: Town
+//  Date location: day(Town)
 [i]Running as fast as your legs can carry you, you spot the town ahead, full of people. Perfect! This way you can blend in![/i]
 [i]Despite the time of the day, the town is crowded. There are quite a number of Marines with their family enjoying their off day.[/i]
 {$name}: I don't think this will do. We need to try harder.
@@ -255,7 +255,7 @@ title: date_issho_2_Town
 
 title: date_issho_2_Dock
 ---
-//  Date location: Dock/ship
+//  Date location: day(Dock/ship)
 [i]By the time you reach the Dock, your legs feel like jelly. You sit down on the ground, breathing heavily.[/i]
 {$name}: Ahhhh, I can't run anymore. I'm going to [shake]die[/shake] if I have to walk one more step…
 {$issho}: Are you okay? I didn't realize it was such a big distance for you.

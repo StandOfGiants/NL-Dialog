@@ -1,5 +1,5 @@
 title: date_garp_1_main
-location: training_grounds
+location: day(training_grounds)
 ---
 <<declare $gd1_correct_answers = 0>>
 

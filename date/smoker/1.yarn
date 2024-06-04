@@ -1,5 +1,5 @@
 title: date_smoker_1_main
-location: garden
+location: day(garden)
 ---
 <<show_character smoker center show>>
 //  comment for posterity: the romance point system in this date is the most coherent i've come across so far (27/3/2024)

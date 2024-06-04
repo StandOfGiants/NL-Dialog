@@ -1,5 +1,5 @@
 title: date_drake_2_main
-location: town
+location: day(town)
 characters: [drake]
 ---
 <<declare $dd2_points = 0>>

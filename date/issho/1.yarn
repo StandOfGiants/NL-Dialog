@@ -1,5 +1,5 @@
 title: date_issho_1_main
-location: bedroom
+location: day(bedroom)
 ---
 <<declare $isd1_points = 0>>
 Laying in your room, you stare at the transponder snail in complete boredom. You should feel grateful for the break you get, but after such exciting days, you just feel restless. Maybe grabbing a bite of food will alleviate some of that restlessness.
@@ -7,7 +7,7 @@ Laying in your room, you stare at the transponder snail in complete boredom. You
 ===
 
 title: date_issho_1_in_town
-location: town
+location: day(town)
 ---
 Walking around aimlessly, you come across a noodle stand, surprisingly cozy. It smells really good too… but while you're approaching it, you spot someone familiar in line.
 <<show_character issho center show>>
@@ -39,7 +39,7 @@ You feel relaxed after finishing your meal. {$issho} is amicable, and he smiles 
 ===
 
 title: date_issho_1_Part_2A
-location: park
+location: day(park)
 ---
 {$issho}: I do have some time to spare. Lead the way, {$name}. #smile
 Today is a beautiful day and the park is full of people enjoying a dose of fresh air. You notice…
@@ -281,7 +281,7 @@ But {$issho} doesn't look at you at all. You have the feeling you have disappoin
 ===
 
 title: date_issho_1_Part_2B
-location: town
+location: day(town)
 ---
 {$issho}: [comment]smile sprite[/comment] How has Marineford treated you so far? You did a wonderful job handling the others. I know they can be a handful.
 {$name}: They're a bit intimidating, but I'm up to the challenge! I'm here for a reason.
@@ -489,7 +489,7 @@ title: date_issho_1_Part_2B3c
 ===
 
 title: date_issho_1_Part_2C
-location: town
+location: day(town)
 ---
 {$name}: I don't really have any plans. I was just really bored sitting at home.
 {$issho}: Life at Marineford is very exciting, isn't it? I understand how a day off feels so jarring in comparison.

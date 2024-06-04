@@ -1,5 +1,5 @@
 title: date_rosinante_1_main
-location: training_grounds
+location: day(training_grounds)
 characters: []
 ---
 You walk over to the training grounds and look around to find a suitable spot to start stretching. It's been a while since you've managed to catch a moment alone to train, and you want to make every moment count.
@@ -195,7 +195,7 @@ Rosinante: After a while, you get used to it, you know? It's just a bit more com
 ===
 
 title: date_rosinante_1_Part_4A
-location: ship
+location: day(ship)
 ---
 You and Rosinante climb onto the enemy ship hidden away in an unused area of the port. Before you begin the mission, Rosinante uses his power to envelop you both in a silent bubble.
 <<show_character rosinante center show>>
@@ -438,7 +438,7 @@ Rosinante: I don't know, but I think we'd better get out of here before we get c
 ===
 
 title: date_rosinante_1_Part_8D
-location: office
+location: day(office)
 ---
 You wake up tired. You're not sure where you are and your head hurts really badly.
 Rosinante: {$name}, you're awake!
@@ -454,7 +454,7 @@ Rosinante: Alright, I've got a report to write. Rest well! Hope to see you soon.
 ===
 
 title: date_rosinante_1_Part_8E
-location: training_grounds
+location: day(training_grounds)
 ---
 Rosinante: {$name}, you did well!
 Rosinante looks over the notebook and smiles. You feel accomplished.

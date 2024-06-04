@@ -1,5 +1,5 @@
 title: date_bellemere_2_main
-location: office
+location: day(office)
 characters: [bellemere]
 ---
 <<declare $bd2_date_outfit = 0>>
@@ -272,7 +272,7 @@ The room is… organized. Incredibly so, with shelves labeled clearly. The floor
 Apparently, important things were kept here.
 Belle-mére places her tasked-envelope on a shelf with today's date on it, looking mildly disconcerted.
 Belle-mére: Let's get the hell out of here and get a drink.
-Location: Mess Hall
+location: day(Mess Hall)
 The two of you get something stronger than a soda at the mess hall, clinking glasses as you cheer a job well done.
 Belle-mére: Hey, thank {$name}! No one's calling me lazy on this one. Every once in a while you have to do your job, you know?
 {$name}: Glad I could help.

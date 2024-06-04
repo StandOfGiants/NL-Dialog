@@ -1,6 +1,6 @@
 title: date_bellemere_1_main
 position: -1030,-771
-location: ship
+location: day(ship)
 ---
 /// The points earned during the date
 <<declare $bm1_points = 0>>
@@ -168,7 +168,7 @@ Bellemere: Hey! Not a bad idea- I'm pretty restless from pretending to work all 
 ===
 
 title: bd1_jog_start
-location: garden
+location: day(garden)
 ---
 // location switch
 <<hide_character bellemere, hide>>
@@ -189,7 +189,7 @@ Bellemere: Oh, hell yeah! Let me get my musket and I'll meet you there!
 ===
 
 title: bd1_guns_start
-location: training_grounds
+location: day(training_grounds)
 ---
 <<hide_character bellemere hide>>
 You meet Bellemere at the training grounds, musket in hand. Personally, you don't have a lot of experience with guns - especially muskets - but the brightly colored targets set up about 200 yards away look a little like a carnival game you once enjoyed as a kid. You were pretty good at that, back in the day!

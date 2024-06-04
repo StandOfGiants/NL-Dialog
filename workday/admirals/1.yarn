@@ -1,9 +1,10 @@
 title: workday_admirals_1_main
-location: bar
+location: night(restaurant)
+characters: [sakazuki, kuzan, issho, borsalino]
+music: bar
 ---
 You arrive at the mostly vacant bar. Following behind you are four intimidating figures, their heights and statures dwarfing everyone else around them.
-// Sakazuki frown sprite
-{$sakazuki}: I told you it's too early to get a drink.
+{$sakazuki}: I told you it's too early to get a drink. #expression:frown
 {$kuzan}: …It's never too early when we have to deal with you.
 {$sakazuki}: What did you just say?
 {$issho}: Gentlemen, let's give this bonding exercise a try first. We don't have to do it for long, but it's worth the gamble.
@@ -11,8 +12,7 @@ You arrive at the mostly vacant bar. Following behind you are four intimidating 
 {$sakazuki}: I don't drink on the job.
 {$borsalino}: One for me, please.
 {$kuzan}: Hit me, two.
-// Issho smiles
-{$issho}: I'll pass this time. Perhaps another day.
+{$issho}: I'll pass this time. Perhaps another day. #expression:smile
 {$borsalino}: What about [wave]you[/wave], {$name}?
 -> If I go to a bar, I'm obliged to get a drink! (K & B +1, S -1)
     {$kuzan}: That's the spirit, {$name}!
@@ -35,9 +35,9 @@ title: workday_admirals_1_Talk_route
 <I don't know how to write the code so that once an option is picked, it can't be picked again. Someone with coding knowledge, send help>
 {$kuzan}: So… what do you want to talk about? Don't be shy.
 -> How did you guys meet?
-    It might have been the right thing to ask. {$issho} smiles.
-    // Issho smiles
-    {$issho}: I have known Saka-san for a while. We go far back. He was stationed at a base and… [fade to black]
+    [i]It might have been the right thing to ask.[/i]
+    {$issho}: I have known Saka-san for a while. We go far back. He was stationed at a base and… #expression:smile
+    // [fade to black]
     {$borsalino}: … *[wave]Soo[/wave]* when he found out I could teleport into the pantry, we became the best of friends…
     {$sakazuki}: Ignore them, they are fools. Do you have any further questions?
     <<jump workday_admirals_1_Talk_route>>

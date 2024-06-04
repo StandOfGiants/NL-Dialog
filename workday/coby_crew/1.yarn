@@ -1,5 +1,5 @@
 title: workday_coby_crew_1_main
-location: office
+location: day(office)
 characters: [coby, drake, helmeppo]
 ---
 // <<show_character coby left show>>
@@ -264,7 +264,7 @@ There's no answer. Your eye catches something shiny on a shelf. It's definitely 
 title: workday_coby_crew_1_Solo_left
 ---
 You turn to the left and start down the next aisle. No sign of the goat or its trail of destruction. Have you been down this row before? You're suddenly not sure, so you check the shelves. The boxes all look the same, but no, there's a bright pink paper sticking out that you would have noticed if you'd already passed it.
-You lean in; it's a comic book. The title reads, **Sora, Warrior of the Sea \#300: Special Poison Pink Variant Edition**. A collector's item?
+You lean in; it's a comic book. The title reads, **Sora, Warrior of the Sea No. 300 Special Poison Pink Variant Edition**. A collector's item?
 <<jump workday_coby_crew_1_Solo_find_goat>>
 ===
 

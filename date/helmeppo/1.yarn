@@ -1,5 +1,5 @@
 title: date_helmeppo_1_main
-location: training_grounds
+location: day(training_grounds)
 ---
 <<declare $hd1_knows_about_morgan = false>>
 <<declare $hd1_knows_about_wolf = false>>
@@ -22,7 +22,7 @@ Helmeppo: I just need to run some errands in town before it gets too late. Figur
 ===
 
 title: date_helmeppo_1_Helmeppo_travel1
-location: town
+location: day(town)
 ---
 The weather is beautiful for your walk into town. Helmeppo is very quiet. It seems like if you want to talk, you'll have to start.
 -> [b]Stay Silent[/b]
@@ -366,7 +366,7 @@ You let him lead you to the sandwich shop. It's a cute little place, tucked away
 ===
 
 title: date_helmeppo_1_Helmeppo_sandwiches_enter
-location: restaurant
+location: day(restaurant)
 ---
 Inside is very quiet. You are able to get your food quickly and start walking back to the base once more. The sun is starting to set.
 <<jump date_helmeppo_1_Date_Ending>>
@@ -379,7 +379,7 @@ title: date_helmeppo_1_End_date
 ===
 
 title: date_helmeppo_1_Date_Ending
-location: town
+location: day(town)
 ---
 Helmeppo: Geez, I didn't even notice it was getting so late…
 It isn't long before you both make it back to the base, walking into the training grounds where you had first run into him. For several seconds, you both just stand there.

@@ -1,5 +1,5 @@
 title: date_tashigi_1_main
-location: mess_hall
+location: day(mess_hall)
 ---
 It's late in the afternoon, and even if dinner is already being served at the Mess Hall, you decide to stop by the Office and file the last of the paperwork.
 <<set_background "office" show>>
@@ -87,7 +87,7 @@ Tashigi: Oh! You don't have to do that. You should go to the Mess Hall, or they'
 ===
 
 title: date_tashigi_1_TSD1SB
-location: office
+location: day(office)
 ---
 When you get back, Captain Tashigi has already cleared up enough space on the desk.
 As you eat dinner, the Captain clearly regains some of her energy. She talks with you more openly, and even makes a joke or two. The jokes aren't very good, but you can appreciate the spirit behind them.

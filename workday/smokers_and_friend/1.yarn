@@ -1,5 +1,5 @@
 title: workday_smokers_and_friend_1_main
-location: mess_hall
+location: day(mess_hall)
 ---
 <<declare $wd1_bellemere = 0>>
 <<declare $wd1_tashigi = 0>>
@@ -99,7 +99,7 @@ Smoker: We've got the first plan, naval drills with me and Hina. Tashigi and her
 ===
 
 title: workday_smokers_and_friend_1_Part_2A
-location: ship
+location: day(ship)
 ---
 <<hide_characters hide>>
 <<show_character hina left fade>>
@@ -198,7 +198,7 @@ else
 ===
 
 title: workday_smokers_and_friend_1_Part_2C
-location: garden
+location: day(garden)
 ---
 <<declare $went_with_bellemere = false>>
 <<set $went_with_bellemere to true>>
@@ -422,7 +422,7 @@ Bellemere nods, standing up and giving you a hand to follow suit (again) just as
 ===
 
 title: workday_smokers_and_friend_1_Part_2B
-location: garden
+location: day(garden)
 ---
 // connecting from Tash_transition to here is smooth, but connecting from Days_Duty isn't.
 Tashigi leads you to an empty space in the gardens. She signs out two practice swords from the armory on your way out, but even if they are made of wood, you have the feeling that you might end up in the infirmary if you're not careful.

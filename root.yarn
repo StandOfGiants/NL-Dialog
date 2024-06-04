@@ -1,6 +1,7 @@
 title: main
 position: -741,-399
-location: mess_hall
+location: day(mess_hall)
+music: main_theme
 ---
 <<declare $sakazuki = "Fleet Admiral Sakazuki">>
 <<declare $kuzan = "Admiral Aokiji">>
