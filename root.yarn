@@ -80,12 +80,15 @@ Who do you want to date?
 
 title: DEBUG
 position: -602,38
+characters: [sengoku, garp, tsuru]
 ---
+Wau!
 <<jump Other>>
 ===
 
 title: Other
 position: -363,38
+characters: [tsuru, sengoku]
 ---
 <<show_character garp center show>>
 center

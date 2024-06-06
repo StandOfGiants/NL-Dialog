@@ -118,7 +118,7 @@ Tsuru: I have some papers that need to be sent to Sengoku... or you can stay and
 ===
 
 title: workday_legendary_1_GarpTsuruRoute
-characters: [garp, tsuru]
+characters: [tsuru, garp]
 location: day(office)
 ---
 You decide to stay in Tsuru's office.
@@ -251,8 +251,8 @@ Garp seems to be content with sticking around, even helping a little, as you two
 ===
 
 title: workday_legendary_1_CoraSengokuroute
+characters: [sengoku, rosinante]
 ---
-
 You walk quietly until you reach Sengoku's office. You knock on the door.
 Sengoku: Come in!
 {$name}: Good afternoon, Inspector General. Commander.
