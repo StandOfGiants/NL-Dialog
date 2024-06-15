@@ -13,8 +13,6 @@ music: main_theme
 <<declare $pronoun_them = "them">>
 <<declare $pronoun_theirs = "theirs">>
 
-<<set $name = "bungo bango">>
-
 Which route do you want?
 -> Legendary
     <<jump Legendary>>
@@ -24,8 +22,8 @@ Which route do you want?
     <<jump SmokersAndFriend>>
 -> Coby Crew
     <<jump CobyCrew>>
--> DEBUG
-    <<jump DEBUG>>
+-> Welcome Event
+    <<jump welcome_event_main>>
 ===
 
 title: Legendary

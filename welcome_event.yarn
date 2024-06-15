@@ -1,0 +1,46 @@
+title: welcome_event_main
+location: day(ship)
+---
+[i]It was truly a beautiful day, a lovely little island in view from your spot on the deck. It was hard not to feel hopeful at such a sight, especially when boot camp had been on a literal rock in the middle of nowhere.[/i]
+:[i]You joined the marines not long ago, hoping to find the usual: a purpose, adventure, and security for the family you left back home. Your younger siblings may even one day follow in your footsteps– it feels good, being such a source of pride to your family.[/i]
+:[i]Of course, you have another goal in your secret, romantic heart, as well: love. Well, at least a kiss. Hand holding? Something! You’ll be here for a year, you were told, and in that time you hope to find yourself an epic romance![/i]
+[i]But now is not the time to think about such things; you have to try and control your imagination![/i]
+[i]In boot camp you were noticed by the higher ups, and recommended for a special training on military troop cohesion; perhaps one day you’ll be in a leadership position, should you perform well among other marines on Marineford. The one side of the island was quite gray and militaristic, but from the traveling ship you had seen glimpses of lush green and a colorful town.[/i]
+[i]Now, you’re mere minutes away from docking. This is a common location for intensive training missions and ship restocking, and so it was easy for the higher ups to arrange a ride for you in time for the current training season.[/i]
+<<jump we_captain_yells>>
+===
+
+title: we_captain_yells
+characters: [placeholder("Ship Captain")]
+---
+Ship Captain: Hey there, recruit!
+The captain of the ship was a burly man
+Ship Captain: if you have time to daydream you have time to secure a line! Yes, you!
+Ship Captain: What’s your name again?
+<<jump we_get_named>>
+===
+
+title: we_get_named
+---
+<<text_input "Enter your name" "$name">>
+<<jump we_at_the_docks>>
+===
+
+title: we_at_the_docks
+characters: []
+location: day(park)
+---
+At the dock, marines begin to swarm in groups to their designated duties, until it seems only you are left without a clue as to where you’re meant to be. You assumed your current captain would give you some order, but he seems quite busy with delegating resupplying efforts.
+<<jump we_sengoku_appears>>
+===
+
+title: we_sengoku_appears
+characters: [sengoku, goat]
+---
+Sengoku: {$name}?
+You turn, and see an old man standing much closer to you then you would have guessed– you never heard him approach. Even the “clip-clomp” of his goat’s hooves had gone unnoticed. You consider the goat “his,” only because it is wearing a little marine hat and stands close, the old man pulling some golden grass from his pocket to feed the creature.
+-> Yes?
+Sengoku: You look like a lost puppy! Let’s get you settled in… now…
+He pulls out an entire clipboard from somewhere in his jacket, peering down with his glasses angled.
+Sengoku: The manifest lists you, but I don’t have an assignment yet. What’s the point of bureaucracy if we let things like this slip through the cracks? Well, I suppose I’ll show you around, and we can find a place for you afterwards.
+===
