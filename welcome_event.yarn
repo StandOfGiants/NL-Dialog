@@ -37,10 +37,11 @@ At the dock, marines begin to swarm in groups to their designated duties, until 
 title: we_sengoku_appears
 characters: [sengoku, goat]
 ---
-Sengoku: {$name}?
+Sengoku: {$name}? #expression:smile
 You turn, and see an old man standing much closer to you then you would have guessed– you never heard him approach. Even the “clip-clomp” of his goat’s hooves had gone unnoticed. You consider the goat “his,” only because it is wearing a little marine hat and stands close, the old man pulling some golden grass from his pocket to feed the creature.
 -> Yes?
-Sengoku: You look like a lost puppy! Let’s get you settled in… now…
-He pulls out an entire clipboard from somewhere in his jacket, peering down with his glasses angled.
-Sengoku: The manifest lists you, but I don’t have an assignment yet. What’s the point of bureaucracy if we let things like this slip through the cracks? Well, I suppose I’ll show you around, and we can find a place for you afterwards.
+-> Uhh...
+Sengoku: You look like a lost puppy! Let’s get you settled in… now… #pose:crossed
+He pulls out an entire clipboard from somewhere in his jacket, peering down with his glasses angled. #expression:confused
+Sengoku: The manifest lists you, but I don’t have an assignment yet. What’s the point of bureaucracy if we let things like this slip through the cracks? Well, I suppose I’ll show you around, and we can find a place for you afterwards. #expression:sad #pose:pocket
 ===

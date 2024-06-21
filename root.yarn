@@ -22,6 +22,8 @@ Which route do you want?
     <<jump SmokersAndFriend>>
 -> Coby Crew
     <<jump CobyCrew>>
+-> debug
+    <<jump DEBUG>>
 -> Welcome Event
     <<jump welcome_event_main>>
 ===
@@ -86,24 +88,16 @@ Wau!
 
 title: Other
 position: -363,38
-characters: [tsuru, sengoku]
 ---
-<<show_character garp center show>>
-center
-<<show_character rosinante left fade>>
-left
-<<show_character coby right show>>
-right
-<<hide_characters hide>>
-<<show_character helmeppo a show>>
-left left
-<<show_character kuzan b fade>>
-left
-<<show_character sakazuki c show>>
-right
-<<show_character smoker d show>>
-right right
-Smoker: I AM A BIG BURRITO.
-Smoker: LOVE ME
+It's just two characters right now.
+<<show_characters tsuru>>
+Tsuru: I am alone!
+<<show_characters rosinante tsuru>>
+Rosinante: But now I am here :D
+<<show_characters sengoku tsuru rosinante>>
+Sengoku: don't forget about me!
+<<show_characters sengoku tsuru rosinante garp>>
+Garp: GRAHAHAHAHAHAHAH!
+<<show_characters a b c d e>>
 <<jump main>>
 ===
