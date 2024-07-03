@@ -23,6 +23,7 @@ Ship Captain: What’s your name again?
 title: we_get_named
 ---
 <<text_input "Enter your name" "$name">>
+<<pick_pronouns "$pronoun_they" "$pronoun_them" "$pronoun_theirs">>
 <<jump we_at_the_docks>>
 ===
 
