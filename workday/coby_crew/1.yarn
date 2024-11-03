@@ -509,10 +509,10 @@ title: workday_coby_crew_1_Helmeppo_search
 You let him lead the way through the aisles, keeping an eye out for the goat. There doesn't seem to be any sign of it even after almost ten minutes of searching.
 Helmeppo: This is going nowhere. Let's head back.
 -> Yeah. Maybe this wasn't the best idea.
-    <<jump workday_coby_crew_1_Helmeppo_search_return>>
+  <<jump workday_coby_crew_1_Helmeppo_search_return>>
 -> Are you sure we shouldn't look around a bit more?
   Helmeppo: You're welcome to, but I'm going to head back.
-  =>Helmeppo_choice
+  <<jump workday_coby_crew_1_Helmeppo_choice>>
 -> Fine. We'll do it your way for a bit.
   Helmeppo: The hell's your problem? Actually, I don't want to know.
   <<jump workday_coby_crew_1_Helmeppo_choice>>
