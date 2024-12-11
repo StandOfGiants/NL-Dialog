@@ -6,9 +6,9 @@ location: day(training_grounds)
 <<declare $hd1_points = 0>>
 <<declare $hd1_points_possible = 0>>
 
-The training grounds are quiet. Everyone was likely busy getting food, given the time of day. However, you do see one person there.
-<<show_character helmeppo center show>>
-Helmeppo is walking across the grounds, looking more like he is just passing through rather than planning to do any training. He spots you and gives a small wave, changing directions enough to pass where you are standing.
+No sounds emanate from the training grounds. Everyone is likely busy getting food, given the time of day. However, you do see one person there.
+<<show_characters helmeppo>>
+Helmeppo is walking across the grounds, looking like he is just passing through rather than planning to do any training. He spots you and gives a small wave, changing directions enough to pass where you are standing.
 Helmeppo: {$name}, what are you doing out here? I figured you'd be in the mess hall with everyone else.
 {$name}: I could ask you the same thing.
 Helmeppo: I just need to run some errands in town before it gets too late. Figured I'd just get something to eat while I'm there.
@@ -43,7 +43,7 @@ The weather is beautiful for your walk into town. Helmeppo is very quiet. It see
 title: date_helmeppo_1_Helmeppo_petshop
 ---
 <<set $hd1_knows_about_wolf to true>>
-Helmeppo: Yeah. Can't say I've been in that one. I've sort of avoided them since my wolf… died.
+Helmeppo: Yeah. Can't say I've been in that one. I've sort of avoided them since my wolf Soro… died.
 <<set $hd1_points_possible += 1>>
 -> I'm so sorry. That must have been tough.
     Helmeppo: Oh, uh, thanks.
@@ -101,12 +101,12 @@ Helmeppo: Hey, you didn't have to come in.
 
 title: date_helmeppo_1_Helmeppo_bath_store3
 ---
-Helmeppo: I'm just looking at the bar soaps. Local places make their own stuff, so it's always unique. And it changes pretty regularly, so I stop in when I can.
+Helmeppo: I'm just looking at the bar soaps. Artisans make their own stuff, so it's always unique. And it changes pretty regularly, so I stop in when I can.
 <<set $hd1_points_possible += 1>>
 -> Huh. In that case, I should get some myself.
     <<set $hd1_points += 1>>
     <<jump date_helmeppo_1_Helmeppo_bath_store5>>
--> Oh, that's cool.
+-> Oh, that's interesting.
     <<jump date_helmeppo_1_Helmeppo_bath_store4>>
 -> I can't believe you're into something so girly.
     Helmeppo: I'd rather be considered ‘girly' than smell like [i]some[/i] of the people I know.
@@ -121,7 +121,7 @@ Helmeppo: I'm just going to grab a few, then we can go.
 
 title: date_helmeppo_1_Helmeppo_bath_store5
 ---
-Helmeppo: You should! Hell, I'll buy it for you if you want.
+Helmeppo: You should. HI can cover it if you want.
 <<set $hd1_points_possible += 1>>
 -> Really? That would be great!
     <<set $hd1_points += 1>>
@@ -140,7 +140,7 @@ title: date_helmeppo_1_Helmeppo_wait1
 You wait outside the store, enjoying the fresh air. Helmeppo is gone for a while but eventually steps out of the store with a bag in his hand.
 Helmeppo: I'm back. Sorry it took so long.
 <<set $hd1_points_possible += 1>>
--> There you are! I was about to send in a search party.
+-> There you are. I was about to send in a search party.
     <<set $hd1_points += 1>>
     Helmeppo: I wasn't gone that long, was I?
     <<jump date_helmeppo_1_Helmeppo_travel2>>
@@ -179,7 +179,7 @@ You both set off again in silence. Your companion is looking around the town, se
 -> What do you need at the weaponsmith?
     <<jump date_helmeppo_1_Helmeppo_kukri1>>
 -> You don't talk much, do you.
-    Helmeppo: Yeah… Coby generally talks enough for us both, so people don't usually notice…
+    Helmeppo: Yeah. Coby generally talks enough for us both, so people don't usually notice…
     <<jump date_helmeppo_1_Helmeppo_weaponsmith1>>
 -> So… What was it like training under Garp?
     <<jump date_helmeppo_1_Helmeppo_Garp>>
@@ -193,8 +193,7 @@ title: date_helmeppo_1_Helmeppo_Morgan
 ---
 Helmeppo: Yes. I'm very sure.
 -> Come on, nothing? It's not like I don't know the story, I just want to hear it from you.
-    <<set $hd1_points -= 1>>
-    <<set $hd1_points -= 1>>
+    <<set $hd1_points -= 2>>
     Helmeppo: Well you're not getting it.
     Helmeppo: You know what? I can run my errand tomorrow. I'm going back to the base.
     <<jump date_helmeppo_1_End_date>>
@@ -241,7 +240,7 @@ title: date_helmeppo_1_Helmeppo_kukri1
 ---
 Helmeppo: I'm picking up my kukri. The grips cracked during my last sparring session with Coby, so I needed to get them replaced.
 -> You were sparring with real blades?!
-    Helmeppo: No! No, I had them off to the side. Honestly, I'm glad it was just the grips.
+    Helmeppo: The further you get up the ranks, the more than happens. Honestly, I'm glad it was just the grips.
     Helmeppo: For a second, I'd thought it was my back…
     <<jump date_helmeppo_1_Helmeppo_weaponsmith1>>
 -> Why not get the Marines' in-house weaponsmith to fix them?
@@ -262,7 +261,7 @@ Helmeppo: I'm just going to go in real quick. Wait here.
 
 title: date_helmeppo_1_Helmeppo_weaponsmith2
 ---
-You don't have to wait long before he's back, his kukri blades back in his belt.
+You don't have to wait long before he's back, his kukri back in his belt.
 Helmeppo: Alright. Ready to head back? We can get something to eat on the way.
 -> No, I'm going to look around a bit more.
     <<jump date_helmeppo_1_Helmeppo_parting>>
@@ -276,18 +275,15 @@ Helmeppo: Alright. Ready to head back? We can get something to eat on the way.
 title: date_helmeppo_1_Helmeppo_parting
 ---
 Helmeppo: Right. Well, I guess I'll see you later then?
-<<set $hd1_points_possible += 1>>
-<<set $hd1_points_possible += 1>>
+<<set $hd1_points_possible += 2>>
 -> Not if I see you first.
-    <<set $hd1_points += 1>>
-    <<set $hd1_points += 1>>
-    Helmeppo: Ha! Good one.
+    <<set $hd1_points += 2>>
+    Helmeppo cracks a smile.
     <<jump date_helmeppo_1_End_date>>
 -> Yeah. See you around.
     <<jump date_helmeppo_1_End_date>>
 -> Only if I have no choice in the matter.
-    <<set $hd1_points -= 1>>
-    <<set $hd1_points -= 1>>
+    <<set $hd1_points -= 2>>
     Helmeppo: …
     <<jump date_helmeppo_1_End_date>>
 ===
@@ -384,16 +380,18 @@ location: day(town)
 Helmeppo: Geez, I didn't even notice it was getting so late…
 It isn't long before you both make it back to the base, walking into the training grounds where you had first run into him. For several seconds, you both just stand there.
 
-if check_ratio("hd1.points","hd1.points_possible",0.5)
+<<if $hd1_points / $hd1_points_possible > 0.5>>
     Helmeppo: Look, I know I was dismissive when you asked, but… Thanks for coming with me today. It was nice.
     Helmeppo: We should do something like this again sometime. You know. If you want to.
-    -> Yeah. I'd like that. (+1)
+    -> Yeah. I'd like that.
+        <<set $hd1_points += 1>>
         Helmeppo: Cool. Uh. I'll see you later, then.
     -> Maybe. We'll see.
     Helmeppo: Well, I guess just let me know.
     <<romance_points helmeppo 2>>
-else
+<<else>>
     Helmeppo: Well. Hope you weren't bored to death following me on my errands today. I'll see you around.
     <<romance_points helmeppo 1>>
-<<jump main>>
+<<endif>>
+<<jump date_helmeppo_2_main>>
 ===

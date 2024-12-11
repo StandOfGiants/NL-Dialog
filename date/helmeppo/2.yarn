@@ -1,0 +1,565 @@
+title: date_helmeppo_2_main
+location: day(office)
+---
+<<declare $hd2_points = 0>>
+
+You wander the halls, a small package in your hands. You were asked to deliver it to Helmeppo’s office but… well, you aren’t entirely sure where it is. It wasn’t with the other offices, so you’re left wondering where else you should look.
+Thankfully, you don’t need to wander too far before you spot Helmeppo walking down the hall.
+<<show_characters helmeppo>>
+-> Oh! I was looking for you!
+    Helmeppo: No way, I was looking for you too!
+    -> Really?
+        Helmeppo: Ah, no…
+        Helmeppo: See, this is why I don’t make jokes…
+        Helmeppo: Anyways. What do you need?
+        <<jump date_helmeppo_2_Delivery1>>
+    -> Ha, good one!
+        <<set $hd2_points += 1>>
+        Helmeppo: You got me. What do you need?
+        <<jump date_helmeppo_2_Delivery1>>
+    -> Yeah, right.
+        <<set $hd2_points -= 1>>
+        Helmeppo: Yeah, that wasn’t my best joke. What can I help you with?
+        <<jump date_helmeppo_2_Delivery1>>
+-> There you are. You’re a hard man to find.
+    Helmeppo: I try. Do you need me for something?
+    <<jump date_helmeppo_2_Delivery1>>
+-> Sir! I have something for you.
+    Helmeppo: No need to be formal, even if we’re working.
+    Helmeppo: Anyways. What is it?
+    <<jump date_helmeppo_2_Delivery1>>
+===
+
+title: date_helmeppo_2_Delivery1
+---
+{$name}: I’m on delivery duty and have a package for you from Wapol Emporium.
+Helmeppo: Finally. I’ve been waiting for that…
+You hand him the package and watch as he pulls out a small hunting knife.
+-> How many knives do you have on you?
+    <<set $hd2_points += 1>>
+    Helmeppo: Don’t worry about it.
+    <<jump date_helmeppo_2_Delivery2>>
+-> I have a box cutter if you need it.
+    Helmeppo: No, no. I got it.
+    <<jump date_helmeppo_2_Delivery2>>
+-> Don’t damage whatever’s in there…
+    <<set $hd2_points -= 1>>
+    Helmeppo: I know what I’m doing.
+    <<jump date_helmeppo_2_Delivery2>>
+===
+
+title: date_helmeppo_2_Delivery2
+---
+You watch as he pulls out what looks like a… label maker?
+-> What do you need that for?
+Helmeppo: Oh, you know. Labeling activities.
+    {$name}: L-labeling activities?
+    <<jump date_helmeppo_2_ThatsWeird1>>
+-> Oh. It’s… office supplies.
+    Helmeppo: It sure is!
+    <<jump date_helmeppo_2_WhatFor1>>
+-> That’s not what I thought it would be.
+    Helmeppo: What did you think it was going to be?
+    -> Honestly? Another knife.
+        <<set $hd2_points += 1>>
+        Helmeppo: … OK, you have a point with that one.
+        <<jump date_helmeppo_2_WhatFor1>>
+    -> I don’t know. But not a label maker.
+        Helmeppo: Maybe next time it’ll be something more traditional.
+        <<jump date_helmeppo_2_WhatFor1>>
+    -> Something a bit more… fun.
+        <<set $hd2_points -= 1>>
+        Helmeppo: Label makers can be fun. You just need to know how to use them.
+        <<jump date_helmeppo_2_ThatsWeird1>>
+===
+
+title: date_helmeppo_2_WhatFor1
+---
+A label maker. That’s not typical Marine-issue office supplies, as far as you’re aware, so he must have ordered it custom.
+-> So… why a label maker anyway?
+    Helmeppo: To make labels. There’s an office I’d like to test it on nearby. You interested?
+    -> Honestly? Yes, that sounds like fun.
+        Helmeppo: Come on then, it’s right over here.
+        <<jump date_helmeppo_2_OfficeOpen1>>
+    -> That feels a little intrusive. I think I’d rather not.
+        Helmeppo: All right. Thanks for bringing it to me.
+        <<jump date_helmeppo_2_EndDate>>
+-> A label maker? I’ve always wanted to try one of those.
+    Helmeppo: Luckily for you, I’m willing to share. You want to help me label someone’s office?
+    -> That sounds like fun!
+        <<jump date_helmeppo_2_OfficeOpen1>>
+    -> Um… no thank you, I need to get going.
+        <<jump date_helmeppo_2_EndDate>>
+-> I need to get back to my work, sir.
+    Helmeppo: Yeah? Well, thanks for bringing this all the way out here.
+    <<jump date_helmeppo_2_EndDate>>
+===
+
+title: date_helmeppo_2_ThatsWeird1
+---
+{$name}: I’m a little worried about what you mean by that.
+Helmeppo: You know. Labeling things. It’s fun.
+-> Is that really your idea of fun?
+    Helmeppo: It sure is! Want me to show you?
+    -> Sure, I’d like to see what you consider “fun” about office supplies.
+        <<set $hd2_points += 1>>
+        Helmeppo: Should I be the one worried about what you mean by that now?
+        {$name}: Oh, ha ha.
+        Helmeppo: See, I know when it’s a joke. Come on, this way.
+        <<jump date_helmeppo_2_OfficeOpen1>>
+    -> I guess. I don’t have much else going on at the moment.
+        Helmeppo: We’ll label that unenthusiastic. Come on, this way.
+        <<jump date_helmeppo_2_OfficeOpen1>>
+    -> No thank you. I, uh, have something else I need to do.
+        Helmeppo: Alright. See you.
+        <<jump date_helmeppo_2_EndDate>>
+-> Oh. Uh. OK.
+    Helmeppo: Yeah.
+    {$name}: . . .
+    Helmeppo: . . .
+    Helmeppo: Want to join me in labeling things?
+    -> You know what? Sure. Why not.
+        Helmeppo: Great. Right this way.
+        <<jump date_helmeppo_2_OfficeOpen1>>
+    -> Uh, I think I’m OK.
+        Helmeppo: Oh, OK. See you later then.
+        <<jump date_helmeppo_2_EndDate>>
+-> That’s so stupid.
+    <<set $hd2_points -= 1>>
+    Helmeppo: I’m sure I can change your mind. If you’ve got time.
+    -> You know what? Sure. Why not.
+        Helmeppo:  Great. Right this way.
+        <<jump date_helmeppo_2_OfficeOpen1>>
+    -> Uh, I think I’m OK.
+        Helmeppo: Oh, OK. See you later then.
+        <<jump date_helmeppo_2_EndDate>>
+===
+
+title: date_helmeppo_2_OfficeOpen1
+---
+You follow him down a few halls to a solitary, heavy wooden door. There is no name on the door, but sure enough, it opens to reveal a small but well-kept office. There are a few framed landscapes on the wall, along with a fancy knife on brass hooks and a small mirror. A wooden bookshelf matches a desk near the window.
+-> This is a cute little space.
+    <<set $hd2_points += 1>>
+    Helmeppo: You think?
+    -> Yeah. It’s cozy. Whoever has this office is in for a surprise when they get back.
+    Helmeppo: Hm.
+    Helmeppo: No point in waiting around, let’s get started.
+    -> ‘Name’: Right!
+-> Is this an unused office? It seems pretty sparse.
+    Helmeppo: It’s definitely someone’s office. What do you think a working Marine’s office should look like?
+    -> More full of paperwork.
+        Helmeppo: Well, they actually do their work when they get it instead of letting it pile up like some people.
+        -> You mean like Garp?
+            Helmeppo: I think it’s in my best interest to not answer that, actually.
+            Helmeppo: So, where do you want to start?
+        -> You mean like Drake?
+            Helmeppo: No, surprisingly he actually stays on top of his when he’s around.
+            Helmeppo: So, where do you want to start?
+        -> Wait, that’s why some desks look like that?
+            Helmeppo: Yup. A paper-covered desk is not actually Marine-issue.
+            Helmeppo: So, where do you want to start?
+    -> More pictures of people.
+        Helmeppo: Yeah, I can see that. But no one really spends too much time in these if they can help it.
+        ‘Name’: Oh, yeah. I guess that’s true.
+        Helmeppo: So, let’s liven things up for when they return. Where do you want to start?
+    -> Actually, nevermind. I like the clean look.
+        Helmeppo: Me too. Now, where do you want to start?
+-> Are you sure we should be in here messing with someone’s stuff?
+    Helmeppo: Will it help if I say they definitely won’t mind?
+    -> If you’re sure, count me in!
+    -> I don’t feel comfortable. Sorry.
+        Helmeppo: Well, if you’re sure I won’t force you. See you later.
+        <<jump date_helmeppo_2_EndDate>>
+<<jump date_helmeppo_2_OfficeSelect>>
+===
+
+title: date_helmeppo_2_OfficeSelect
+---
+To your surprise, instead of doing anything himself, Helmeppo hands the label maker to you.
+Helmeppo: I’ll have plenty of chances to use this thing. You go ahead. If we get in trouble, I swear on my honor I’ll take full responsibility.
+You look around the room, wondering what your first target will be…
+-> Check out the desk
+    <<jump date_helmeppo_2_DeskSelect>>
+-> Check out the bookshelf
+    <<jump date_helmeppo_2_BookshelfSelect>>
+-> Actually, this still feels a little too awkward.
+    Helmeppo’s face barely changes, but you can sense he’s a little disappointed.
+    Helmeppo: OK. Well, thanks for humoring me. Have a good day.
+    <<jump date_helmeppo_2_EndDate>>
+===
+
+title: date_helmeppo_2_DeskSelect
+---
+The desk is of simple design, with plenty of leg room and a single shallow drawer running almost the entire width of the sitting area.
+-> Check the top of the desk
+    <<jump date_helmeppo_2_DesktopSelect>>
+-> Look in the drawer
+    <<jump date_helmeppo_2_DrawerSelect>>
+-> Check somewhere else
+    <<jump date_helmeppo_2_OfficeSelect>>
+-> You’re done with the label maker
+    <<jump date_helmeppo_2_MissionComplete>>
+===
+
+title: date_helmeppo_2_DesktopSelect
+---
+<<declare $hd2_notepad_labeled = false>>
+<<declare $hd2_paperweight_labeled = false>>
+<<declare $hd2_pencil_labeled = false>>
+The top of this desk has been laid out very precisely. There is a pad of novelty paper with pictures of cats all over it in the center, and a small pewter statue of a wolf that looks like it was intended to be a paperweight off to the left. On the right front corner you find a small box holding a number of pens and a couple pencils that have been sharpened to a truly startling point.
+What do you want to label?
+-> Label the notepad <<if !$hd2_notepad_labeled>>
+    <<set $hd2_notepad_labeled to true>>
+    -> Label the notepad “Admiral Level missive”
+        You type “Admiral Level missive” into the label maker and put it across the top of the notepad, careful to avoid the cats. Helmeppo reads the word from the other side of the desk.
+        Helmeppo: Admiral, huh? Guess we better be careful what we write, then.
+        You look over, trying to gauge if he’s joking or serious. You… [i]think[/i] he’s joking?
+        -> Very funny.
+            <<set $hd2_points += 1>>
+            He cracks a smile.
+            Helmeppo: I guess you can definitely spot a joke, then.
+            <<jump date_helmeppo_2_DesktopSelect>>
+        -> Don’t joke about things like that!
+            <<set $hd2_points -= 1>>
+            He arches an eyebrow at you.
+            Helmeppo: All right. Noted.
+            <<jump date_helmeppo_2_DesktopSelect>>
+    -> Label the notepad “Adorable”
+        Helmeppo nods, apparently in agreement that the cats on the notepad are, in fact, adorable.
+        <<jump date_helmeppo_2_DesktopSelect>>
+    -> Label the notepad “Notepad”
+        Somehow, “notepad” seems like the perfect label. You place it on the top sheet and look around for the next item that needs a label.
+        <<jump date_helmeppo_2_DesktopSelect>>
+    -> On second thought, you don’t want to label the notepad.
+        <<set $hd2_notepad_labeled to false>>
+        <<jump date_helmeppo_2_DesktopSelect>>
+-> Label the paperweight <<if !$hd2_paperweight_labeled>>
+    <<set $hd2_paperweight_labeled to true>>
+    -> Label the paperweight “Soro”
+        <<set $hd2_points += 1>>
+        <<if $hd1_knows_about_wolf>>
+            Helmeppo: You remembered that, huh?
+            You swear the ghost of a smile crosses his face.
+            <<jump date_helmeppo_2_DesktopSelect>>
+        <<else>>
+            As you carefully place the label on the base of the paperweight, Helmeppo looks surprised.
+            Helmeppo: Soro, huh? What made you label it that?
+            {$name}: I don’t know. It just seemed like a good name. And he seems like a good boy who needs a good name.
+            Helmeppo: I agree. I think something like that every time I come in here.
+            You swear the ghost of a smile crosses his face.
+            <<jump date_helmeppo_2_DesktopSelect>>
+        <<endif>>
+    -> Label the paperweight “Monster”
+        <<set $hd2_points -= 1>>
+        As you bestow a label on the creature, Helmeppo looks from it to you.
+        Helmeppo: Interesting. Why “Monster”?
+        {$name}: It looks a bit like a dangerous monster, doesn’t it? So I wanted to name it something fierce.
+        He crosses his arms, but doesn’t say anything else.
+        <<jump date_helmeppo_2_DesktopSelect>>
+    -> Label the paperweight “Wolfy”
+        It’s a wolf, so you decide to go with “Wolfy.” Once the label is in place, you look around to find your next target.
+        <<jump date_helmeppo_2_DesktopSelect>>
+    -> On second thought, you don’t want to label the paperweight.
+        <<set $hd2_paperweight_labeled to false>>
+        <<jump date_helmeppo_2_DesktopSelect>>
+-> Label a pencil <<if !$hd2_pencil_labeled>>
+    <<set $hd2_pencil_labeled to true>>
+    -> Label the pencil “Pencil”
+        You feel like the obvious might also be the most funny option, so the pencil gets a “pencil” label. The lieutenant commander glances over at it.
+        Helmeppo: Interesting choice. Do you also name your pets Kitty and Rover?
+        -> Hey now, Kitty and Rover are [i]fine[/i] names.
+            Helmeppo: Heh. You sound just like Coby.
+            {$name}: Does he actually name pets that?
+            Helmeppo: Oh, I’m sure he would. But he’d probably also get on my case for making fun of their names. So… sorry. Just in case you [i]do[/i] name your pets Kitty and Rover. Anyway, what’s next?
+            <<jump date_helmeppo_2_DesktopSelect>>
+        -> No, I just thought it would be funny.
+            Helmeppo: Ah. A joke, then.
+            {$name}: …
+            Helmeppo: …
+            {$name}: Are you [i]sure[/i] you can spot jokes?
+            Helmeppo: See, [i]that[/i] one I liked.
+            You both laugh, and you look for another vict… er, target.
+            <<jump date_helmeppo_2_DesktopSelect>>
+    -> Label the pencil “Emergency weapon”
+        <<set $hd2_points += 1>>
+        You could definitely put someone’s eye out with this thing. It wouldn’t even take too much effort, you think as you touch the tip and nearly draw blood. There’s only one possible name.
+        As the newly christened pencil is returned, Helmeppo nods approvingly.
+        Helmeppo: I like the way you think.
+        {$name}: Whoever’s office this is, they really went to town on this. Whose office [i]is[/i] it anyway?
+        Helmeppo: That would ruin the fun.
+        He doesn’t seem like he’s going to clarify further, so you look around once more.
+        <<jump date_helmeppo_2_DesktopSelect>>
+    -> Label the pencil “Bob”
+        <<set $hd2_points += 1>>
+        Bob seems like a good, strong name. You grant it to the pencil.
+        Helmeppo: Bob?
+        {$name}: Good, right?
+        Helmeppo: No, I agree. Good name. Strong.
+        <<jump date_helmeppo_2_DesktopSelect>>
+    -> On second thought, you don’t want to label the pencil.
+        <<set $hd2_pencil_labeled to false>>
+        <<jump date_helmeppo_2_DesktopSelect>>
+-> Check out the drawer instead
+    <<jump date_helmeppo_2_DrawerSelect>>
+-> Check somewhere else
+    <<jump date_helmeppo_2_DeskSelect>>
+-> You’re done with the label maker
+    <<jump date_helmeppo_2_MissionComplete>>
+===
+
+title: date_helmeppo_2_DrawerSelect
+---
+<<declare $hd2_knife_labeled = false>>
+<<declare $hd2_cigarettes_labeled = false>>
+The interior of the drawer is only about an inch deep, and whoever’s office this is, they’re not using all the available space. Most of it doesn’t look that label-worthy — a few notes written in careful, flowing handwriting and a couple empty envelopes with the Marines insignia on them. However, there’s a knife off to one side, and something you can’t quite see clearly shoved into the back corner.
+-> Label the knife <<if !$hd2_knife_labeled>>
+    <<set $hd2_knife_labeled to true>>
+    -> Label the knife “Stabby thing”
+        May as well be straightforward. Who could complain about this label?
+        Helmeppo: To be fair, it could also be a slicing thing.
+        -> No, this one is a stabbing thing. I’m certain of it.
+            Helmeppo shrugs.
+            Helmeppo: Well, you have the label maker, so I guess you make the rules.
+            <<jump date_helmeppo_2_DrawerSelect>>
+        -> Oh, you’re right.
+            Helmeppo: Well, we all make mistakes.
+            {$name}: Another joke?
+            Helmeppo: You caught me.
+            <<jump date_helmeppo_2_DrawerSelect>>
+    -> Label the knife “Jeff”
+        <<set $hd2_points += 1>>
+        You type out the name “Jeff” and place it on the smooth blade, where it will be easy to remove and clear off the adhesive.
+        Helmeppo: I’ve been told it’s not good to anthropomorphize your weapons.
+        {$name}: Has that been a problem for you?
+        Helmeppo: Not at all. I’m excellent at anthropomorphizing weapons. Heck, I can assign humanity to a desk chair if it supports me enough.
+        {$name}: OK, I think that joke was a bit better.
+        Helmeppo: Your approval is noted.
+        Shaking your head, you look for something else to label.
+        <<jump date_helmeppo_2_DrawerSelect>>
+    -> Label the knife “Sword for babies”
+        <<set $hd2_points -= 1>>
+        As you type the words “sword for babies” out and smooth them onto the blade, you hear a snort from the room’s other occupant.
+        Helmeppo: For babies? Really?
+        {$name}: Look at it! It’s so little and cute. You could arm a pint-sized warrior with it.
+        Helmeppo: Just send them toddling out onto the battlefield, huh?
+        {$name}: Dual wielding their sword and cuteness.
+        As Helmeppo chuckles, you look around for something else to test the label maker on.
+        <<jump date_helmeppo_2_DrawerSelect>>
+    -> Label the knife “Best friend”
+        Given the knife on the wall, you decide to put “Best friend” on this one.
+        Helmeppo: Your best friend or the office owner’s?
+        {$name}: Right now, theirs.
+        Helmeppo: Right now? Are you interested in learning about fighting with knives?
+        -> That would be great.
+            <<set $hd2_points += 1>>
+            Helmeppo: Huh. Well, maybe we can train together sometime, if you want.
+            As you consider that offer, you look around the office once more.
+            <<jump date_helmeppo_2_DrawerSelect>>
+        -> I’m not sure knives are for me.
+            <<set $hd2_points += 1>>
+            Helmeppo: Well, it’s best to find the right weapon for you. You might be betting your friends’ lives on them out here.
+            {$name}: Or my own?
+            Helmeppo: Oh, yeah. I mean, that goes without saying.
+            You set the knife back in place and look around.
+            <<jump date_helmeppo_2_DrawerSelect>>
+    -> On second thought, you don’t want to label the knife.
+        <<set $hd2_knife_labeled to false>>
+        <<jump date_helmeppo_2_DrawerSelect>>
+-> Label the thing in the corner <<if !$hd2_cigarettes_labeled>>
+    <<set $hd2_cigarettes_labeled to true>>
+    You slide your hand into the back corner of the desk drawer and snag whatever was hidden away back there. It turns out to be a pack of cigarettes. So the owner of this office is a smoker, huh?
+    -> Label the cigarettes “Unhealthy”
+        As you finish affixing “Unhealthy” to the pack of cigarettes, Helmeppo sighs.
+        Helmeppo: Are they really that bad?
+        -> I guess not.
+            Helmeppo: Given how much people in the Marines tend to smoke, I guess we officially don’t think so here at HQ.
+            Shaking your head, you look for something else to label.
+            <<jump date_helmeppo_2_DrawerSelect>>
+        -> Yes!
+            Helmeppo: I guess you’re probably right. But you’d never know it, the way half the officers smoke like chimneys.
+            {$name}: Maybe it helps with the stress.
+            Helmeppo: That’s why [i]I[/i] used to smoke.
+            {$name}: You smoked?
+            Helmeppo: For a while. But all the exercise that the marines insist on put an end to that.
+            You return the pack to its previous spot and look around.
+            <<jump date_helmeppo_2_DrawerSelect>>
+    -> Label the cigarettes “Hidden treasure”
+        Helmeppo: Treasure, huh? Do you smoke?
+        -> Sometimes.
+            He nods.
+            Helmeppo: Me too. I guess it’s a good thing no one around here really cares as long as you don’t do it while you’re on active duty.
+            You nod in agreement as you put the pack back.
+            <<jump date_helmeppo_2_DrawerSelect>>
+        -> No, I don’t.
+            Helmeppo: Probably for the best. It can be an expensive habit at HQ.
+            Yeah, you guess there wouldn’t be many places to get them here. Do most of the officers that smoked get theirs on other islands? By mail?
+            Pondering this, you return the carton to its resting place.
+            <<jump date_helmeppo_2_DrawerSelect>>
+    -> Label the cigarettes “Abandoned”
+        Helmeppo cranes his neck to look at what you’re labeling.
+        Helmeppo: Wow, I guess they really were abandoned. I wonder how long they’ve been in there.
+        After smoothing the label down, you replace the cigarettes back in the far corner again and look around.
+        <<jump date_helmeppo_2_DrawerSelect>>
+    -> On second thought, you don’t want to label the cigarettes
+        <<set $hd2_cigarettes_labeled to false>>
+        <<jump date_helmeppo_2_DrawerSelect>>
+-> Check out the top of the desk instead
+    <<jump date_helmeppo_2_DesktopSelect>>
+-> Check somewhere else
+    <<jump date_helmeppo_2_DeskSelect>>
+-> You’re done with the label maker
+    <<jump date_helmeppo_2_MissionComplete>>
+===
+
+title: date_helmeppo_2_BookshelfSelect
+---
+The bookshelf is not overly burdened with books. It looks less like it’s here because someone needed it and more like it’s here because offices have bookshelves. But there are a few books and other knick-knacks on its shelves. A handful of papers lay in a pile on the bottom shelf.
+-> Look at the books
+    It doesn’t feel right to put labels on books, but you let your eyes wander over the titles. Most of them are either reference material or the sort of Marine-issue books that are in any office. But a few volumes look a little more unique.
+    -> Check out the slim book
+        The little volume is a book of advanced stamina-building exercises. As you flip through the pages, they include notes about form, what to do if you get an injury and more.
+        {$name}: I guess this person is into fitness?
+        Helmeppo: Probably more like they’re trying to keep up with someone.
+        {$name}: Would someone do that? Just to keep up with one person?
+        Helmeppo: You’d be surprised.
+        You slide the book back into place.
+        <<jump date_helmeppo_2_BookshelfSelect>>
+    -> Check out the leather-bound book
+        Opening this to the title page, you find this one is called “Child of the Pack.” It appears to be a novel about a boy who is cast out from his home town and joins a wolf pack, only to return years later and take out everyone who had helped exile him as a child.
+        Helmeppo: Do you like reading?
+        -> I enjoy novels from time to time.
+            <<set $hd2_points += 1>>
+            Helmeppo: Me too. They’re a nice escape.
+            You slide the book back onto the shelf.
+            <<jump date_helmeppo_2_BookshelfSelect>>
+        -> Poetry is nice.
+            <<set $hd2_points += 1>>
+            Helmeppo: Oh, really? I’ve never been able to get into it myself, but it seems interesting if you find the right poet.
+            You slide the book back onto the shelf.
+            <<jump date_helmeppo_2_BookshelfSelect>>
+        -> Do reports count?
+            <<set $hd2_points -= 1>>
+            Helmeppo doesn’t even answer, he just stares flatly at you until you slide the novel back on the shelf.
+            <<jump date_helmeppo_2_BookshelfSelect>>
+        -> I’m not much of a reader.
+            Helmeppo: That’s fair.
+            You slide the book back onto the shelf.
+            <<jump date_helmeppo_2_BookshelfSelect>>
+    -> Check out the worn blue book
+        The book turns out to be a volume about hair care routines. There are sections for multiple different hair types and styles, but the section for long, straight hair is definitely the most well-used. A couple of the pages have their corners bent as impromptu bookmarks.
+        Helmeppo: Ha… what is that doing there?
+        {$name}: Being used a lot, it looks like.
+        You put the book away again.
+        <<jump date_helmeppo_2_BookshelfSelect>>
+    -> Look somewhere else
+        <<jump date_helmeppo_2_BookshelfSelect>>
+-> Look at the trinkets
+    There are a couple little tchotchkes spaced out among the shelves. Several look like the sorts of things given to members as they ascend the ranks — pins with the Marines’ insignia and things of that sort. But there is also a small statue and what looks like a partly melted piece of rock.
+    -> Look at the statue
+        It’s a small sculpture of a quaint Marine town on a small island. The base takes up much of the middle of the little reproduction.
+        {$name}: Where’s Shell’s Town?
+        Helmeppo: Back in East Blue.
+        {$name}: Interesting. I guess whoever’s office this is has fond memories of that place.
+        Helmeppo: I think that’s fair to say.
+        You set the little item back in pace. It already has a label. You decide not to give it another.
+        <<jump date_helmeppo_2_BookshelfSelect>>
+    -> Look at the rock
+        The rock is small enough to hold in your palm easily. It’s hard to tell what it’s from, but there’s no mistaking the heat that turned one side of this thing to glass. It doesn’t look like it was carefully done, either. Maybe it’s from an errant explosion? Are those hot enough to do this?
+        {$name}: Do you know what this is from?
+        Helmeppo’s eyes narrow for just a moment, then he shrugs. His voice sounds a good deal more formal when he speaks next.
+        Helmeppo: It’s from the old Marineford. They were just going to level it after what happened with Whitebeard, so some Marines took small pieces of the rubble as reminders. Some to remember people they lost. Others, to remember what happened there.
+        {$name}: Which one is this one?
+        Helmeppo: The latter, I think.
+        You look at the rock a few seconds more, then carefully return it to its place and look for something that feels more appropriate to label.
+        <<jump date_helmeppo_2_BookshelfSelect>>
+    -> Neither really catches your eye.
+        <<jump date_helmeppo_2_BookshelfSelect>>
+-> Look at the papers
+    Most of them are blank requisition documents or old shopping lists, but two stand out — a hand-written letter and a wanted poster.
+    -> Look at the wanted poster
+        The flier turns out to be a wanted poster for someone called Axe-Hand Morgan. His blond hair is shorn short, he has a metal lower jaw and the namesake weapon is just barely peeking into the picture. His bounty is very low compared to the sorts seen on the Grand Line. There are some slices in the paper. Maybe it’s old?
+        Helmeppo: Oh. That shouldn’t be in here.
+        {$name}: Why not?
+        Helmeppo: Oh, uh… he’s from one of the weaker seas. Not really someone we’re likely to run across.
+        {$name}: Are these knife marks?
+        Helmeppo: … I thought we were labeling things?
+        <<jump date_helmeppo_2_BookshelfSelect>>
+    -> Look at the handwritten sheet
+        It’s a letter, written in shaky handwriting. The blocky letters make it look like a small child must have written it. It’s addressed to “Mr. Marine.”
+        Helmeppo: What do you have there?
+        {$name}: A letter. I think it’s personal though. I shouldn’t–
+        Helmeppo: Let me see.
+        He takes the letter, eyes scanning over the text quite quickly despite the shaky handwriting. He chuckles a little and hands it back.
+        Helmeppo: Go ahead. The office’s owner won’t mind. I guarantee it. It’s just an update from a kid they helped.
+        -> Read the letter
+            It’s from someone named Rika, who’s talking about her first few weeks working on a Marine base in the East Blue.
+            {$name}: How did they help her? Did they get her a job there?
+            Helmeppo: Honestly, they were a real jerk to her at first. But they apologized about it later and served as one of her references when she started working as a cook in the base. She’s not really a Marine, but she’s a good kid.
+            {$name}: Sounds like you know her?
+            Helmeppo: Oh… kind of.
+            You carefully put the letter back.
+            <<jump date_helmeppo_2_BookshelfSelect>>
+        -> Put the letter back
+            It would probably be cute to read, but it still feels too personal. You carefully put the letter back where you found it.
+            <<jump date_helmeppo_2_BookshelfSelect>>
+-> Check somewhere else
+    <<jump date_helmeppo_2_OfficeSelect>>
+-> You’re done with the label maker
+    <<jump date_helmeppo_2_MissionComplete>>
+===
+
+title: date_helmeppo_2_MissionComplete
+---
+Feeling like you’ve done enough damage with the label maker, you hand it back to Helmeppo. He takes it, then lays it on the desk.
+{$name}: You’re not going to label anything?
+Helmeppo: It’s my label maker. I can label things until the end of time. So, what did you think? See why I bought this now?
+-> I do. That was pretty fun. Thanks.
+    <<set $hd2_points += 1>>
+    Helmeppo: Glad to hear it. Tashigi keeps saying I enjoy weird things. Next time, I can just tell her you agree with me.
+    {$name}: Well, about this at least.
+    Helmeppo: Fair. So, any guesses whose office this is?
+-> Actually, I really wish I hadn’t done that.
+    <<set $hd2_points -= 1>>
+    Helmeppo: Oh, I’m sorry to hear that. Didn’t mean to make you uncomfortable.
+    {$name}: I’m the one who said yes. Whose office is this, anyway?
+    Helmeppo: Whose office do [i]you[/i] think it is?
+<<jump date_helmeppo_2_Guess>>
+===
+
+title: date_helmeppo_2_Guess
+---
+You consider the question. What would the things you saw in this office suggest?
+-> Hina’s?
+    Helmeppo scoffs.
+    Helmeppo: I don’t know about you, but I definitely don’t have enough of a death wish to do this to Hina’s office.
+    <<jump date_helmeppo_2_Guess>>
+-> Coby’s?
+    Helmeppo raises an eyebrow.
+    Helmeppo: I suppose he actually did buy a couple of the things in here. But no, not his.
+    <<jump date_helmeppo_2_Guess>>
+-> Yours?
+    Helmeppo chuckles.
+    Helmeppo: What gave it away? Was it the knife on the wall?
+    {$name}: Well, that didn’t hurt exactly. But there were a few other hints too.
+    <<jump date_helmeppo_2_EndDate>>
+-> Drake’s?
+    Helmeppo looks around the office in a long, slow motion.
+    Helmeppo: Not nearly enough dinosaurs.
+    <<jump date_helmeppo_2_Guess>>
+===
+
+title: date_helmeppo_2_EndDate
+---
+You realize you probably need to get going. You were in the middle of your shift, after all.
+<<if $hd2_points < 0>>
+    <<romance_points helmeppo 0>>
+    Helmeppo: Well, thanks for humoring me. Good luck with the rest of your deliveries.
+<<elseif $hd2_points <= 3>>
+    <<romance_points helmeppo 1>>
+    Helmeppo: Thanks for humoring me. It was nice to take a little break in the middle of the day. See you around. (+1 point)
+<<else>>
+    <<romance_points helmeppo 2>>
+    Helmeppo: Thanks, this was enjoyable. We should do this again sometime. Well, maybe not labeling office supplies, actually. But hanging out has been fun. (+2 points)
+<<endif>>
+<<jump date_helmeppo_3_main>>
+===

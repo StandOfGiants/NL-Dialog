@@ -1,9 +1,10 @@
+
 title: welcome_event_main
 location: day(ship)
 ---
 [i]It was truly a beautiful day, a lovely little island in view from your spot on the deck. It was hard not to feel hopeful at such a sight, especially when boot camp had been on a literal rock in the middle of nowhere.[/i]
-:[i]You joined the marines not long ago, hoping to find the usual: a purpose, adventure, and security for the family you left back home. Your younger siblings may even one day follow in your footsteps– it feels good, being such a source of pride to your family.[/i]
-:[i]Of course, you have another goal in your secret, romantic heart, as well: love. Well, at least a kiss. Hand holding? Something! You’ll be here for a year, you were told, and in that time you hope to find yourself an epic romance![/i]
+[i]You joined the marines not long ago, hoping to find the usual: a purpose, adventure, and security for the family you left back home. Your younger siblings may even one day follow in your footsteps– it feels good, being such a source of pride to your family.[/i]
+[i]Of course, you have another goal in your secret, romantic heart, as well: love. Well, at least a kiss. Hand holding? Something! You’ll be here for a year, you were told, and in that time you hope to find yourself an epic romance![/i]
 [i]But now is not the time to think about such things; you have to try and control your imagination![/i]
 [i]In boot camp you were noticed by the higher ups, and recommended for a special training on military troop cohesion; perhaps one day you’ll be in a leadership position, should you perform well among other marines on Marineford. The one side of the island was quite gray and militaristic, but from the traveling ship you had seen glimpses of lush green and a colorful town.[/i]
 [i]Now, you’re mere minutes away from docking. This is a common location for intensive training missions and ship restocking, and so it was easy for the higher ups to arrange a ride for you in time for the current training season.[/i]
@@ -45,4 +46,219 @@ You turn, and see an old man standing much closer to you then you would have gue
 Sengoku: You look like a lost puppy! Let’s get you settled in… now… #pose:crossed
 He pulls out an entire clipboard from somewhere in his jacket, peering down with his glasses angled. #expression:confused
 Sengoku: The manifest lists you, but I don’t have an assignment yet. What’s the point of bureaucracy if we let things like this slip through the cracks? Well, I suppose I’ll show you around, and we can find a place for you afterwards. #expression:sad #pose:pocket
+<<jump we_legendary_1>>
+===
+
+title: we_legendary_1
+location: day(office)
+characters: [sengoku]
+---
+Sengoku: Come with me, your sheet says “Team Management Specialist”, whatever they define that as these days…
+He leads you to the massive building that is Marineford, construction teams going nonstop to fix damage from the Paramount War, just a scant year or so prior.
+Up far to many stairs and he leads you to an office, the door labeled with Inspector General.
+Hold on a sec, you recognize that title!
+He opens the door and there are other people inside.
+<<show_characters sengoku tsuru rosinante garp>>
+Sengoku: Tsuru, I have something of yours I believe.
+Tsuru: Hm?
+A stern but lovely looking woman takes the clipboard from your guide and looks it over.
+Tsuru: Ah, the teamwork specialist. Or, in our case, an extra hand, if this is where you choose to be assigned.
+-CRASH-
+Sengoku, Tsuru: …
+Rosinante: Ouch…
+A lanky man has tripped and fallen on the floor, papers from the table next to him scattering everywhere.
+Sengoku: Are you alright, Rosinante?
+Rosinante: I’m fine, don’t worry! Oh, hello! I don’t think we’ve met?
+Tsuru: This recruit might be joining our te–!
+-CRASH-
+The wall on the other side of the office has burst inward! A tall man steps through!
+Sengoku: USE THE DOOR GARP!
+Garp: Huh? What door?
+Tsuru, Sengoku, Rosinante: …*sigh*
+Garp: ? Hey who’s that?
+Sengoku: New recruit, might be joining us.
+Garp: Huh? You really wanna join us old farts?
+Rosinante: I’m not–
+It’s then that you realize that you are in the presence of LEGENDS! Garp can only be the one and only Hero of the Navy, Garp the Fist! And Inspector General… well that can only be the former Fleet Admiral, himself, Sengoku! And whoa, Tsuru?! That’s the first female Vice Admiral ever! You are unsure of who this Rosinante is, but he must be something special to work among such big names.
+{$name}: Uh, hello.
+Garp: Neat, what’s for lunch?
+Sengoku: *sigh* Well, that’s this department. Come, I’ll take you on to the stations that have put in a request for a Team Management Specialist.
+You bow quickly, muttering that it’s been an honor to meet them before, rushing after the departing Inspector General.
+
+<<jump we_admirals_1>>
+===
+
+title: we_admirals_1
+location: day(office)
+characters: [sengoku]
+---
+Sengoku: Now, listen, if you decide to join the next department, you’ll be stationed at New Marineford, well, when it's done with construction that is. It looks just like here, but with these large absurd arches. “Modern architecture for the times” I’ve been told.
+Sengoku: But for the moment, they are still working out of here.
+Sengoku: Oh, and don’t get nervous.
+Nervous? About wh–
+As you reach a new level of stairs, you come face to face with a very imposing door that is labeled Fleet Admiral.
+Hold on a sec–!
+You are led through the door into an office that has not just the Fleet Admiral, but other faces you definitely recognize!
+// NOTE: We don't currently support showing 5 characters. Would be super cramped... think about this.
+<<show_characters sengoku sakazuki kuzan borsalino>>
+{$sakazuki}: Not now, we’re in a meeting.
+Sengoku: It can wait.
+{$sakazuki}: No it–
+{$kuzan}: Who’s following you around, Sengoku?
+Sengoku: New recruit, “Team Management Specialist”, part of th–
+{$borsalino}: Oooh, part of that new program hmmm?
+{$kuzan}: Huh? What new program?
+{$sakazuki}: If you weren’t always napping during meetings you would kn–
+<<show_characters sengoku sakazuki borsalino issho>>
+{$issho}: The one created to strengthen the bonds between us, no?
+Sengoku: That one.
+{$borsalino}: Quuuuuite the assignment if you join us~
+{$issho}: We Admirals are a bit of a handful, that is true.
+<<show_characters sengoku sakazuki issho kuzan>>
+{$kuzan}: Arara, speak for yourself. The only difficult one here is this bastard.
+He points directly at the Fleet Admiral.
+{$sakazuki}: Tch, you’re the only one with a problem.
+He turns to you.
+{$sakazuki}: We don’t need slackers, or anyone without a commitment to the cause. If you choose to be stationed with us, then be prepared to give it your all.
+That appears to be something they all agree with.
+Sengoku: Well, we’ll let you get back to your meeting, come, recruit.
+<<show_characters sengoku>>
+Wow, you didn’t even get the chance to introduce yourself! That’s the top brass for you, you suppose. It would be quite something to be around them all day…
+You follow the Inspector General out of the office and back down the endless stairs.
+
+<<jump we_smokers_1>>
+===
+
+title: we_smokers_1
+location: day(office)
+characters: [sengoku]
+---
+Sengoku: Moving right on to the Marine Vice Admiral’s group. These four play well with others usually, though there’s been some tension in the group lately… maybe you can help with that?
+<<show_characters sengoku smoker>>
+Smoker: Ah. Admiral.
+Sengoku: Former! No need for such titles now, Vice Admiral Smoker. I have the new recruit for the special training program, here.
+Smoker: Eh? This one? I don’t care either way; if you need to assign them here, I’ll be responsible for getting them up to snuff.
+<<show_characters sengoku smoker tashigi>>
+Tashigi: Smoker! I have the paperwork for– oh! Hello there!
+Smoker: This is the new marine here for training. Captain Tashigi works under me– she’s capable of handling your training.
+{$name}: I, uh, I’m still not sure where I’m stationed yet…
+<<show_characters sengoku smoker tashigi bellemere>>
+Bellemere: Eh? So indecisive for someone fresh out of boot camp! They teach you to assert yourself at all, over there?
+{$name}: Uh…
+<<show_characters smoker tashigi bellemere hina>>
+Hina: Don’t scare them off, Belle-Mere. It’s rare to find anyone Hina deems acceptable. This new recruit seems… almost passable. With training, they may actually be mediocre.
+You’re not sure if “mediocre” is what you’re going for, but something tells you that’s a high compliment from the strict-faced woman.
+Vice Admiral Smoker, Captain Tashigi, and now…
+{$name}: You’re Black Cage Hina!
+Hina doesn’t grace you with a response, but her scowl seems oddly complimented.
+You’ve never heard of Belle-Mere, but you’ve seen the others all in the papers at some time or another. Black Cage was known on the Grand Line, but you’re pretty sure Smoker and Tashigi were big shots in East Blue.
+You nod politely as Sengoku leads you out, and you get a little wave from Tashigi and Belle-Mere on the way. Smoker and Hina seem more dire, and just stare after you.
+<<jump we_coby_1>>
+===
+
+title: we_coby_1
+location: day(office)
+characters: [sengoku]
+---
+Sengoku: These are two of the newest officers and one of our more outstanding members.
+<<show_characters sengoku coby>>
+Coby: Pleasure to meet you, {$name}! I’m Captain Coby from the East Blue. I’m very happy to have you join us!
+Coby gives a very enthusiastic salute even if his friend doesn’t seem to be interested in doing the same. The eldest of the trio restrains himself from joining in. Coby looks between the two and drops out of the salute to a more at-ease stance.
+Coby: Was that too much?
+<<show_characters sengoku coby helmeppo>>
+Helmeppo: I don’t know about too much, but you are *awfully* quick on the trigger with those salutes...
+<<show_characters sengoku coby helmeppo drake>>
+Drake: There’s nothing wrong with trying to make a newcomer feel at ease.
+Helmeppo: Right, sorry. Anyway, I’m Lieutenant Commander Helmeppo. I sure hope you know what you’ve gotten yourself into {$name}. With him. With the Marines.
+Coby: Meppo-san, be nice and don't scare them! It's not that bad.
+Turning to you, Drake offers a nod, a gesture far more subtle than the previous introductions.
+Drake: Rear-Admiral Diez Drake. Welcome to Marineford.
+You’re pretty sure you’ve seen his face on wanted posters before. Maybe he’s got a twin brother who’s into leather?
+Still, he fixes you with a dissecting stare, otherwise out of pleasantries. Whatever he’s mulling over, he keeps it to himself as he lets his subordinates take the lead.
+Coby: Right! Welcome to Marineford! Like I said, I'm really excited to have someone new here. I'm sure the four of us will become fast friends, or at least be able to tolerate working with each other.
+Coby rubs the back of his neck nervously. He’s a little over-enthusiastic for a Marine, but seems nice enough. Though you're not sure if the overly chipper personality is going to get on your nerves in the long term. Behind him, the goat eyes the shirt of his uniform before going to sink its vicious goaty teeth in.
+Coby: Hey don't do that! Drake-san, he’s still following you!
+<<show_characters coby helmeppo drake goat>>
+Goat: MEEEHHH!
+Helmeppo hides a chuckle. Drake sighs heavily and scoops the goat up one-armed, supporting it under the belly.
+Drake: No, he’s following his father. He knows where his bread is buttered.
+—as if Drake isn’t spoiling it with attention. He doesn’t even flinch when it twists in his hold, goaty lips grasping at fabric, gingerly gnawing at his dress coat.
+Drake: Also, we shouldn’t assume we have a new colleague based solely on an introduction.
+Coby: Right! Sorry, I got ahead of myself. What I meant to say is, I hope you enjoy your time with us, wherever that may take you.
+This group is certainly a bit more…introverted than some of the others. Between Drake’s rather severe expression and Helmeppo’s disinterest in being stuck at an orientation, it feels like Coby was elected the spokesman of the group. You look over the trio and nod, not quite ready to muster up the energy for the over enthusiastic salutes from before.
+{$name}: It's nice meeting all of you.
+Coby: The pleasure is all ours.
+You give Coby a half-hearted wave and a nod to Helmeppo and Drake. Coby waves back, smiling while the other two still wear more sour expressions. When Sengoku gives a gesture to move along, Drake releases the goat back into his custody.
+<<show_characters sengoku>>
+That looks like the final group of Marines. It feels like one of the weirder ones too. You don't recognize any of them, not like the rest of the big names you recognized from the tour. With that in mind, maybe you could integrate better with them, even if it’s just you, three guys and a goat.
+<<jump we_finale>>
+===
+
+title: we_finale
+characters: [sengoku]
+location: day(office)
+---
+The Inspector general leads you back out to the docks.
+Sengoku: So… what do you think, {$name}?
+{$name}: I-it’s very impressive, sir! Everyone seems very, er, impressive!
+Sengoku: And what about you?
+{$name}: Me?
+Sengoku stops to pat his goat’s head, looking thoughtful.
+Sengoku: You’re here, yeah? You must have a reason. A justice you aspire to. How will you make yourself “impressive?”
+You think about it. You’re not 100% sure what the retired admiral is asking, exactly, but you feel like you can venture a guess. What kind of person are you?
+<<jump we_choose_route>>
+===
+
+title: we_choose_route
+---
+Who do you want to become?
+-> Legendary Justice. I want to be someone that will be written about in the history books, helping the government protect the people on a grand scale!
+    <<jump we_choose_Legendary>>
+-> Powerful Justice. How can you protect people if you’re not in a position of power to do so? Working with the top brass would give you the leg up on the totem pole you need!
+    <<jump we_choose_Admirals>>
+-> Protective Justice. I want to gain skills to protect my island and the people I care about. I want to stop the bad pirates taking advantage of the people!
+    <<jump we_choose_Smokers>>
+-> Compassionate Justice. What is the point of getting strong without building strong bonds along the way? I want to make friends and fight together to make the world a better place!
+    <<jump we_choose_Coby>>
+===
+
+title: we_choose_Legendary
+---
+Sengoku: Hmm… think you’d better be with me, then. Yes. Yes, I think Tsuru and Rosinante would agree to that. Garp will whip you into shape, too, if you’re worthy. Do you think you’re worthy, (name)?
+-> Yes! That sounds like the perfect group for me! Let the work begin!
+    <<jump workday_legendary_1_main>>
+    => Legendary Work Day 1
+-> No, I need to rethink my goals…
+    <<jump we_choose_route>>
+===
+
+title: we_choose_Admirals
+---
+Sengoku: Ha! Ambitious! Well, if you want to become a big shot, I suppose it’s best to put you with them. As long as you don’t pick up any lazy habits from Borsalino or Kuzan… yes, yes. Sakazuki will be harsh, but if that’s your goal… Fujitora will keep you sane enough. Hmm… yes, I think you’ll do fine with our Admirals here on the island.
+-> Yes! That sounds like the perfect group for me! Let the work begin!
+    <<jump workday_admirals_1_main>>
+-> No, I need to rethink my goals…
+    <<jump we_choose_route>>
+===
+
+title: we_choose_Smokers
+---
+Sengoku: Oh, ho? Very idealistic! There may be some people in Smoker’s group who you’ll get along with well, then. They all probably have some stories for you. Belle-mere, Hina, Tashigi… a group with a lot of beautiful women, too, if that’s your thing.
+-> Yes! That sounds like the perfect group for me! Let the work begin!
+    => Smoker Work Day 1
+    <<jump workday_smokers_and_friend_1_main>>
+-> No, I need to rethink my goals…
+    <<jump we_choose_route>>
+===
+
+title: we_choose_Coby
+---
+Sengoku: So young. You’ll fit right in with the dreamers in Coby’s camp. You seemed to get along alright with Helmeppo, Drake, and even my friend here.
+He proceeds to pat his goat, again.
+Sengoku: So… what do you think?
+-> Yes! That sounds like the perfect group for me! Let the work begin!
+    => Coby Work Day 1
+    <<jump workday_coby_crew_1_main>>
+-> No, I need to rethink my goals…
+    <<jump we_choose_route>>
 ===
