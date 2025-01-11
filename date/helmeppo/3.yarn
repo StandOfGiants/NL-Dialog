@@ -474,7 +474,7 @@ title: date_helmeppo_3_Answer1
             Helmeppo: Like… Working in the dirt?
             He looks momentarily unsettled.
             Helmeppo: Er… I mean, if that’s something that would make your life happy, then… Yes. That’s… nice.
-            <<jump date_helmeppo_3_convo3>>
+            <<jump date_helmeppo_3_Convo3>>
         -> Yeah, a craftsperson.
             He takes another sip of his water before speaking again.
             Helmeppo: The world can always use more of those. But if you can do that, then why-

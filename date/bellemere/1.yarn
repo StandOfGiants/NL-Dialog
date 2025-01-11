@@ -6,7 +6,7 @@ location: day(ship)
 <<declare $bm1_points = 0>>
 
 You're mopping the deck of the large battleship parked at the island when you smell the sweet-sharp scent of cigarette smoke. You follow it, and it leads you straight to an unassuming supply closet.
-<<show_character bellmere center fade>>
+<<show_characters  bellemere>>
 {$name}: Do... do you always do this?
 Bellemere: Do what? Oh, avoid menial labor? Damn right I do!
 Bellemere: Hey, don't look at me like that! You think I'm lazy?
@@ -169,13 +169,12 @@ Bellemere: Hey! Not a bad idea- I'm pretty restless from pretending to work all 
 
 title: bd1_jog_start
 location: day(garden)
+characters: []
 ---
-// location switch
-<<hide_character bellemere, hide>>
 The two of you spend an afternoon jogging through the park, chatting about inconsequential things and laughing at dumb jokes.
-<<show_character bellemere, center, show>>
+<<show_characters bellemere>>
 Bellemere: Nice stamina there, {$name}. Fighting skills are great, but those who spend time on cardio are the survivors in a conflict, am I right?
-<<hide_character bellemere, fade>>
+<<show_characters>>
 Eventually, you're both forced to return to the ship, time passing by much too quickly.
 <<jump Time>>
 
@@ -190,12 +189,12 @@ Bellemere: Oh, hell yeah! Let me get my musket and I'll meet you there!
 
 title: bd1_guns_start
 location: day(training_grounds)
+characters: []
 ---
-<<hide_character bellemere hide>>
 You meet Bellemere at the training grounds, musket in hand. Personally, you don't have a lot of experience with guns - especially muskets - but the brightly colored targets set up about 200 yards away look a little like a carnival game you once enjoyed as a kid. You were pretty good at that, back in the day!
-<<show_character bellemere center show>>
+<<show_characters bellemere>>
 Bellemere: Alright, here's what you do...
-<<hide_character bellemere fade>>
+<<show_characters>>
 You listen to her instructions and do very well in your first round of shooting. The two of you make a game of it, eventually putting up old cans and bottles to add variety to the 'contest'.
 In fact, Bellemere is a really good shot, but you're fine with second place.
 Time passes quickly, and soon you realize you need to get back to the ship.

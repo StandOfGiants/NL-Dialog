@@ -1,5 +1,6 @@
 title: workday_smokers_and_friend_1_main
 location: day(mess_hall)
+characters: [bellemere, tashigi, hina, smoker]
 ---
 <<declare $wd1_bellemere = 0>>
 <<declare $wd1_tashigi = 0>>

@@ -71,7 +71,6 @@ Coby: So… What do you want to talk about…
 
 title: date_coby_2_Backstory1
 ---
-<<visit "Backstory1">>
 Coby: I've always wanted to be a Marine, actually. I thought it was a noble thing to do as a child, and a number of years ago I had a… bit of a personal encounter with pirates that solidified that for me.
 -> A personal encounter?
     Coby: Yeah… It's a bit of an embarrassing story, though. I don't particularly like talking about it.
@@ -109,7 +108,6 @@ Coby: I've always wanted to be a Marine, actually. I thought it was a noble thin
 
 title: date_coby_2_Scar1
 ---
-<<visit "Scar1">>
 Coby: I actually don't remember exactly how I got it…
 Coby: I think I might have been sparring with Garp and Helmeppo…
 Coby: All I know for sure is that I woke up in the hospital and Helmeppo was crying.
@@ -425,7 +423,7 @@ You take a look around the messy office but decide not to investigate anything. 
         <<set $cd2_points-= 1>>
         Coby: Well, I was interested in learning more about you. Is that so wrong?
         <<jump date_coby_2_Regroup>>
--> You've only been a Marine for a few years, right? What did you do before? [comment]if visited("Backstory1")[/comment]
+-> You've only been a Marine for a few years, right? What did you do before? <<if visited("date_coby_2_Backstory1")>>
     Coby: Oh. Well. Um. This and that. Cabin boy stuff. Just on a… different ship…
     <<set $cd2_possible += 1>>
     -> Sounds like a sore subject, sorry I asked…
@@ -439,7 +437,7 @@ You take a look around the messy office but decide not to investigate anything. 
         <<set $cd2_points-= 1>>
         Coby: Well, see, it's… Complicated.
         <<jump date_coby_2_Regroup>>
--> Does your scar ever hurt at all? [comment]if visited("Scar1")[/comment]
+-> Does your scar ever hurt at all? <<if visited("date_coby_2_Scar1")>>
     Coby: No, not at all. Actually, I can't really feel anything in that spot…
     <<set $cd2_possible += 1>>
     -> Well, better that than it hurting, right?

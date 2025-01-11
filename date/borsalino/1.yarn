@@ -3,7 +3,7 @@ location: day(park)
 ---
 On your way home, you decide to walk through the park. It isn't long before you spot a familiar face.
 {$name}: Wait... isn't that Admiral Kizaru?
-<<show_character borsalino center fade>>
+<<show_characters borsalino>>
 {$borsalino}: {$name}... [wave]helloo...[/wave]
 {$borsalino}: Fancy meeting you here, isn't it...? Are you going that way...?
 {$borsalino}: Oh, me too... [wave][i]whaat[/i][/wave] a coincidence...

@@ -393,5 +393,6 @@ It isn't long before you both make it back to the base, walking into the trainin
     Helmeppo: Well. Hope you weren't bored to death following me on my errands today. I'll see you around.
     <<romance_points helmeppo 1>>
 <<endif>>
+
 <<jump date_helmeppo_2_main>>
 ===

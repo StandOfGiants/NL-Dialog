@@ -1,194 +1,294 @@
 title: date_tashigi_1_main
-location: day(mess_hall)
 ---
-It's late in the afternoon, and even if dinner is already being served at the Mess Hall, you decide to stop by the Office and file the last of the paperwork.
-<<set_background "office" show>>
-There's so much paperwork, it's a wonder Marines get anything else done.
-You open the door, only to find Captain Tashigi bent over a desk on the far end of the room.
-<<show_character tashigi center show>>
-She is surrounded by mountains and mountains of paper, a deeply concentrated look on her face. Yet, the moment you step into the room, she looks up and smiles as she nods your way.
+<<declare $td1_points = 0>>
+It’s late in the afternoon, and even if dinner is already being served at the mess hall, you decide to stop by the main office first and file the last of your assigned paperwork.
+There’s so much paperwork that it’s a wonder the Marines get anything else done.
+You open the door, and you immediately see Captain Tashigi bent over a desk at the far end of the room. You’ve seen her around, but you don’t know her that well, and from the looks of it, she’s quite busy.
+She’s surrounded by mountains of paper, most of it looking like forms. There’s a look of deep concentration on her face. The moment you step into the room, however, she looks up and smiles, sending a nod your way as her eyes dart down to your name tag.
+<<jump date_tashigi_1_TSD1P1>>
+===
 
-Tashigi: Oh, hello there.
+title: date_tashigi_1_TSD1P1
+---
+Tashigi: Oh, hello there. Erm… {$name}, is it?
+{$name}: Yes, that’s me!
 Tashigi: How is it going? Are you done for the day?
--> Yes, all done! I was about to go grab a bite after filling these papers.
-    <<set $ta1_points += 1>>
-    <<set $ta1_points += 1>>
--> I'm good, Captain. How about you?
-    <<set $ta1_points += 1>>
+-> Yes, all done! I’m going to file these, then go grab a bite to eat.
+    <<set $td1_points += 2>>
+-> Going well, Captain. How about you?
+    <<set $td1_points += 1>>
 -> Yeah, finally done.
-Captain Tashigi opens her mouth, but before she can say a word, there is a low, menacing growl that gives you goose bumps.
-You look around trying to ascertain the source of such sound. Then, it hits you: it was Captain Tashigi's stomach. She blushes violently as she tries to hide behind a pile of papers.
--> It's getting late. Why don't you take a little break?
-    <<set $ta1_points += 1>>
-    <<set $ta1_points += 1>>
+    <<set $td1_points += 0>>
+Captain Tashigi opens her mouth, but before she can say a word, you hear a low, menacing growl that gives you goosebumps.
+You look around, trying to ascertain the source of such a sound. Then, it hits you: it was Captain Tashigi’s stomach. She blushes violently as she tries to hide her face behind a pile of papers.
+-> It’s getting late. Why don’t you take a little break?
+    <<set $td1_points += 2>>
     <<jump date_tashigi_1_TSD1P1_1>>
--> Paperwork can wait for a while, go get something to eat.
-    <<set $ta1_points += 1>>
+-> Paperwork can wait for a while. Go get something to eat.
+    <<set $td1_points += 1>>
     <<jump date_tashigi_1_TSD1P1_1>>
--> (Say nothing)
+-> (I don’t want to embarrass her. I shouldn’t say anything.)
+    <<set $td1_points += 0>>
     <<jump date_tashigi_1_TSD1P1_2>>
 ===
 
 title: date_tashigi_1_TSD1P1_1
 ---
-Captain Tashigi looks around her before shaking her head.
+Captain Tashigi looks at the stacks of papers around her before shaking her head.
 Tashigi: No, no. This paperwork needs to be done tonight.
-Tashigi: I have no time to get down to the Mess Hall, I'm already behind as is.
--> Then, why don't I bring you some food? You'll need the extra energy.
-    <<set_background "mess-hall" show>>
-    You rush to the Mess Hall, thinking about the Captain's beaming smile when she agreed to your proposal.
-    <<set $ta1_points += 1>>
-    <<set $ta1_points += 1>>
-    <<jump date_tashigi_1_TSD1SB>>
--> I'll help you out! This way we'll finish faster.
-    <<set $ta1_points += 1>>
-    <<jump date_tashigi_1_TSD1P1_3>>
+Tashigi: I have no time to get down to the mess hall; I’m already behind as-is.
+{$name}: - Then, why don’t I file these real quick and bring you some food? You’ll need the extra energy.
+Tashigi: Oh, would you? That would be wonderful!
+<<set $td1_points += 2>>
+<<jump date_tashigi_1_TSD1SB>>
+-> I’ll help you out! This way we’ll finish faster.
+Tashigi: Oh, thank you! I really appreciate it.
+<<set $td1_points += 1>>
+<<jump date_tashigi_1_TSD1P1_3>>
 -> Aw, that sucks!
-    Tashigi: Actually, I could use the help, if you're free.
-    It has been a long day. New recruits don't exactly have it easy, and you are so tired.
--> Sure thing, I'll stay and help.
-    <<set $ta1_points += 1>>
-    <<jump date_tashigi_1_TSD1P2>>
--> I just remembered I have this other thing. Sorry.
-    Tashigi: Oh, I understand. Go on, then.
-    You bid Captain Tashigi goodbye and leave the Office. After all, the Mess Hall won't be open all night, and you've more than earned a big slice of apple pie today.
-    <<jump date_tashigi_1_TSD1E>>
+<<set $td1_points += 0>>
+You see Captain Tashigi hesitate for a moment, then bite her lip as she looks at you with pleading eyes.
+Tashigi: Truthfully, if you’re free, I could use the help.
+It’s been a long day. New recruits don't exactly have it easy, and you’re so tired. Then again, she really does look like she’s drowning in the sea of white covering her desk.
+-> Sure thing. I can stay and help.
+Captain Tashigi’s expression brightens, and she looks incredibly relieved, like you’ve tossed her a life preserver.
+Tashigi: Oh, thank you so much!
+<<set $td1_points += 1>>
+<<jump date_tashigi_1_TSD1P2>>
+-> I’m sorry, but I have other things to do.
+    Captain Tashigi gives a quiet sigh of disappointment.
+Tashigi: I understand. I’m sorry for keeping you, then.
+You file your papers quickly, then bid Captain Tashigi goodbye and leave the main office. After all, the mess hall won’t be open all night, and you’ve more than earned a big slice of apple pie today.
+<<set $td1_points += 0>>
+		<<jump date_tashigi_1_TSD1E>>
 ===
 
 title: date_tashigi_1_TSD1P1_2
 ---
-There's an awkward silence, you don't really know what to do. She is obviously hungry, but there isn't really much you can do about that.
-Tashigi: [comment]Pause[/comment]
-Tashigi: You should head to the mess hall. It's dinner time already.
--> I'm not all that hungry. Would you like some help?
-    <<set $ta1_points += 1>>
-    <<jump date_tashigi_1_TSD1P1_3>>
--> Hope you finish soon.
-    <<jump date_tashigi_1_TSD1E>>
+There’s an awkward silence, and you don’t really know what to do. She’s obviously hungry, but there isn’t really much you can do about that.
+Tashigi: …
+Tashigi: You should file those forms and head to the mess hall. It’s already dinner time.
+{$name}: - I’m not all that hungry. Would you like some help?
+<<set $td1_points += 1>>
+	<<jump date_tashigi_1_TSD1P1_3>>
+-> Thanks. Hope you finish soon.
+<<set $td1_points += 0>>
+	<<jump date_tashigi_1_TSD1E>>
 ===
 
 title: date_tashigi_1_TSD1P1_3
 ---
-Captain Tashigi seems surprised. Perhaps it's not that often that new recruits volunteer to work even more.
-Tashigi: Oh! You don't have to do that. You should go to the Mess Hall, or they'll run out of dessert.
--> No problem, we'll finish faster together, and then we'll both get dessert.
-    Tashigi: Okay, then. I appreciate the help.
-    She waves for you to join her.
-    <<jump date_tashigi_1_TSD1P2>>
--> Can't have my superior officer working harder than me!
-    You work in a professional manner the rest of the evening.
-    Even if you want to get to know more of Captain Tashigi, there's just not a single opportunity to get personal, or at least none that you can see.
-    You finish all the paperwork fairly quick, and each go on your separate ways.
-    <<jump date_tashigi_1_TSD1E>>
--> If you say so. Good luck.
-    Captain Tashigi probably doesn't like you, anyway.
-    You go down to the Mess Hall for dinner. Perhaps you can try again some other time.
-    <<jump date_tashigi_1_TSD1E>>
+Captain Tashigi seems surprised. Perhaps it’s not often that new recruits volunteer to put in the extra work like this.
+
+Tashigi: Oh! You don’t have to do that. You should go to the mess hall, or else they’ll run out of dessert.
+
+{$name}: - It’s not a big deal. If I help, we’ll finish faster, and then we’ll both get dessert.
+
+Captain Tashigi smiles gratefully.
+
+Tashigi: Okay, then. I appreciate the help.
+
+She waves for you to join her, and once you file your own paperwork, you pull up a chair and grab a pen, settling in to help.
+
+<<jump date_tashigi_1_TSD1P2>>
+
+-> Can’t have my superior officer working harder than me!
+
+You file your papers and work in a professional manner for the rest of the evening.
+
+Even if you want to get to know Captain Tashigi better, there’s just not a single opportunity to get personal, or at least not one that you can see.
+
+You finish all of the paperwork surprisingly quickly, and with a smile and a wave, you both go your separate ways.
+
+<<jump date_tashigi_1_TSD1E>>
+
+-> …If you say so. Good luck.
+
+Captain Tashigi probably doesn’t like you, anyway.
+
+You quickly file your paperwork and go down to the mess hall for dinner. Perhaps you’ll see her around some other time.
+
+	<<set $td1_points += 0>>
+	<<jump date_tashigi_1_TSD1E>>
 ===
 
 title: date_tashigi_1_TSD1SB
-location: day(office)
 ---
-When you get back, Captain Tashigi has already cleared up enough space on the desk.
-As you eat dinner, the Captain clearly regains some of her energy. She talks with you more openly, and even makes a joke or two. The jokes aren't very good, but you can appreciate the spirit behind them.
-Tashigi: This just what I needed, thank you. You're my hero!
-Tashigi: Be careful not to get sauce on the papers, or we'll have to start over.
--> Not to worry, I brought napkins too.
-    Tashigi: Good thinking!
-    <<set $ta1_points += 1>>
--> Oh. It may be a little too late for that.
-    Captain Tashigi takes the piece of paper from your hands, and her fingers brush yours for an instant.
-    Tashigi: It's just a copy of a memo, so all good.
-    Captain Tashigi is great company. As you eat dinner, you get a little closer together, and you could swear she is leaning forward in her seat, even if just slightly.
-    She seems more interested in you than before.
-    PC:  Oh, before I forget. I also brought you this.
--> Hot coffee.
-    Tashigi: Hmm. This smells delicious.
-    She takes a sip of the steaming cup, and her cheeks flush a pretty pink.
-    <<set $ta1_points += 1>>
--> Hot tea.
-    Tashigi takes the cup, a shy smile on her mouth as she thanks you.
-Once dinner ends, you put away the plates and get back to work.
+
+You file your paperwork and head for the mess hall. You grab a tray and fill up two plates of food, trying your best to pick things you think the Captain might like. By the time you get back, Captain Tashigi has already cleared up enough space on the desk for you to set down the tray and unload the two plates.
+
+As you eat dinner, the Captain regains some of her energy. She talks with you more openly, and even makes a joke or two. The jokes aren’t very good, but you can appreciate the spirit behind them.
+
+Tashigi: This is just what I needed, {$name}. Thank you! You’re my hero!
+
+Tashigi: Be careful not to get sauce on the papers, though, or we’ll have to start over.
+
+-> Not to worry—I brought napkins, too.
+
+Tashigi: Good thinking!
+<<set $td1_points += 1>>
+
+-> Oh. It may be a little late for that...
+
+Captain Tashigi takes the piece of paper from your hands, and her fingers brush against yours for an instant.
+
+Tashigi: It’s just a copy of a memo, so it’s alright.
+<<set $td1_points += 0>>
+
+Captain Tashigi is great company. She’s so easy to talk to, and her stories of her time at sea are absolutely fantastic, particularly when she speaks about chasing the Strawhat Pirates.
+
+She also seems more interested in you than before—or at least, you hope she is, given that you’re also more than a little interested in her.
+
+{$name}: Oh, before I forget, I also brought you this.
+
+-> It’s hot coffee.
+
+Tashigi: Mmm. This smells delicious.
+
+She takes a sip of the steaming brew, and her cheeks flush a pretty pink.
+
+<<set $td1_points += 1>>
+
+-> It’s hot tea.
+
+Tashigi carefully takes the cup, a shy smile on her lips.
+
+Tashigi: Thank you very much.
+
+<<set $td1_points += 0>>
+
+Once dinner ends, you put the plates and tray aside and get to work.
+
 <<jump date_tashigi_1_TSD1P2>>
 ===
 
 title: date_tashigi_1_TSD1P2
 ---
-You sit right in front of Captain Tashigi, and grab a big bunch of papers from the pile closest to you. You work in silence for a while, but you can feel her gaze on you from time to time.
-Tashigi: I'm curious, why did you become a Marine?
-Tashigi: [comment]Pause[/comment]
-Tashigi: Everyone here has varying backgrounds and dreams, yet we all chose to join the Marines. Opinions clash all the time, and if you climb through the ranks you'll probably be asked to make some tough decisions.
-Tashigi: So, what is [i]your[/i] motivation for being here?
--> I want the opportunity to help protect the innocent. Perhaps I won't always see eye to eye with fellow Marines, but I'll do my best to act as my heart tells me to.
-    Tashigi: That is a fine answer, recruit! I have the feeling we'll get along better than I thought.
-    <<set $ta1_points += 1>>
-    <<set $ta1_points += 1>>
--> Training as a Marine will grant me power and influence. That way, I could make sure that the world turns into a better place for everyone.
-    Tashigi: Seeking power is all good, especially since it's for the reasons you mention.
-    Tashigi: However, be sure not to get corrupted—falling into temptation is easier than you think.
-    <<set $ta1_points += 1>>
--> Respect and esteem go hand in hand with being a Marine, plus it pays better than most jobs and I get to travel.
-    Tashigi lifts her eyebrows, but doesn't say anything. She simply nods politely.
-    Tashigi: I see. You'll find many of our Marines with similar lines of thought.
-    She doesn't seem too pleased by that fact.
-    You go back to working in silence after that.
-    <<jump date_tashigi_1_TSD1E>>
-Tashigi: I myself am from the East Blue, you know, and I've seen first thing how catastrophic pirate activity can be. Ever since I got promoted to the G-5 I haven't been able to go home and visit, but I've always kept my hometown in my thoughts.
-Tashigi: I have a brother that still lives there, and I miss dearly, but there's so much work to do here. We send each other letters from time to time, but it's not the same. It is worth it, though, if I can help keep him safe.
 
--> [comment]Offer details about your family.[/comment]
-    PC: I understand the feeling, I have a brother, too, and a sister. They both live with my parents, even though my brother is getting a little old for that.
-    PC: I suspect he stays because of my mom's cooking, she is a terrific baker!
-    PC: We haven't been corresponding much, though, there's barely enough hours in the day to get the work done as it is.
-    <<set $ta1_points += 1>>
-    <<set $ta1_points += 1>>
-    Tashigi: Time does fly by.
-    It is getting late. You're having a very nice time with Captain Tashigi, but perhaps it is time to call it a night.
-    -> [comment]Offer another fact[/comment]
-        PC: Tell me about it, last time I stayed up so late was when my sister had a nightmare and refused to go to sleep until I read her favorite story.
-        <<set $ta1_points += 1>>
-        <<set $ta1_points += 1>>
-        Tashigi: Children can be difficult, but they are also the most resilient. Remind me to tell you some other time about this group of children that stole both pirates and marines hearts.
-        A few hours go by, and when Captain Tashigi finally puts down her pen, she lets's out a relieved sigh.
-        Tashigi: Thank you for all the help. It's been a while since I had such a delightful time while doing paperwork.
-        PC: Me too!
-        -> [comment]Smile[/comment]
-            <<set $ta1_points += 1>>
-        -> [comment]Wink[/comment]
-        <<jump date_tashigi_1_TSD1E>>
-    -> [comment]Keep working[/comment]
-        Not long after, you finish with all the paperwork. Once Captain Tashigi puts down her pen, she reclines back on her seat, visibly exhausted.
-        Tashigi: I think that might be some sort of record.
-        Tashigi: Thank you for staying. Now go to bed, it's going to be a long day tomorrow too.
-        <<jump date_tashigi_1_TSD1E>>
+You sit right across from Captain Tashigi, and grab a couple of papers from the pile closest to you. You work in silence for a while, but you can feel her gaze settle on you from time to time.
 
--> [comment]Offer details about your hometown.[/comment]
-    PC: I grew up on the South Blue, and it was always one of my dreams to travel around the world. My little village always felt a little too small for me.
-    PC: Don't get me wrong, I love my home, but I've gotten to know so many great people and places since I became a Marine.
-    PC: My brother and sister were so jealous when I told them I would be going to all four seas soon.
-    PC: They made me promise to bring them souvenirs next time I visit.
-    Tashigi: Then you better go into town one of these days. There are many places where you can find perfect gifts.
-    <<set $ta1_points += 1>>
-    You keep working for a while longer, the ticking of the clock getting louder the more times passes and the base grows silent. Almost everyone must be asleep by now.
-    Tashigi: Almost done. I can finish up in here if you are too tired. You've already helped me out a great deal.
-    -> [comment]Stay until the end[/comment]
-        PC: I like to finish what I start.
-        When you finally finish, you feel so tired you practically drag yourself to your room. You climb onto bed, knowing that in a couple of hours another day will start anew.
-        <<set $ta1_points += 1>>
-    -> [comment]Go to bed[/comment]
-        PC: I think I'll go catch some sleep. Hope you finish soon!
-        You go, and the moment you put my head on your pillow, all lights go out.
-    <<jump date_tashigi_1_TSD1E>>
+Tashigi: I’m curious, {$name}. Why did you become a Marine?
+
+Tashigi: …
+
+Tashigi: Everyone here has various backgrounds and dreams, yet we all chose to join the Marines. Opinions clash all the time, and if you climb through the ranks, you’ll probably be asked to make some tough decisions.
+
+Tashigi: So, what is your motivation for being here?
+
+{$name}: - I want the opportunity to help protect the innocent. Perhaps I won’t always see eye to eye with my fellow Marines, but I’ll do my best to act as my heart tells me to.
+
+There’s a pause, and you look up to see Captain Tashigi fixing you with a warm, genuine smile.
+
+Tashigi: Now that’s a fine answer, {$name}. I have a feeling that we’ll get along better than I’d thought.
+
+<<set $td1_points += 2>>
+
+-> Being a Marine will give me power and influence. That way, I can make sure that the world becomes a better place for everyone.
+
+There’s a pause, and you look up to see Captain Tashigi giving you a long, measured look.
+
+Tashigi: Seeking power is all well and good, especially if it’s for the reasons you’ve said.
+
+Tashigi: However, be sure not to be corrupted—giving in to temptation is easier than you might think.
+
+<<set $td1_points += 1>>
+
+-> Respect and esteem go hand in hand with being a Marine. Plus it pays better than most jobs, and I get to travel.
+
+There’s a long pause, and you look up to see Captain Tashigi lifting her eyebrows, but she doesn’t say anything. She simply nods politely.
+
+Tashigi: I see. You’ll find that many Marines have similar lines of thought.
+
+Her tone is neutral, but you get the sense that she doesn’t seem to be too pleased by that fact.
+
+You go back to working in silence after that, and as soon as you’re done, you make your escape with only a quick goodbye.
+
+<<set $td1_points += 0>>
+	<<jump date_tashigi_1_TSD1E>>
+
+Tashigi: I’m from East Blue, you know, and I’ve seen firsthand how catastrophic pirate activity can be. Ever since I got promoted to G-5, I haven’t been able to go home and visit, but I’ve always kept my hometown in my thoughts.
+
+Tashigi: I have a brother who still lives there, and I miss him dearly, but there’s so much work to do here. We send each other letters from time to time, but it’s not the same. It is worth it, though, if I can help keep him safe.
+
+-> (Hm, maybe I should tell her about my family.)
+
+{$name}: I know the feeling. I also have a brother, and a sister, too. They both live with my parents, even though my brother is getting a little old for that.
+
+{$name}: I suspect he stays because of my mom’s cooking; she’s a terrific baker!
+
+{$name}: We haven’t been writing to each other much, though; there’s barely enough hours in the day as it is.
+
+<<set $td1_points += 2>>
+
+Tashigi: Time sure does fly by…
+
+It’s getting late. You’re having a very nice time with Captain Tashigi, but perhaps it’s time to call it a night.
+
+(Maybe she’d like to hear a little bit more…)
+
+{$name}: Tell me about it. The last time I stayed up this late, my sister’d had a nightmare and refused to go to sleep until I read her favorite story.
+
+<<set $td1_points += 2>>
+
+Tashigi: Children can be difficult, but they are also incredibly resilient. Remind me to tell you about this group of children that stole both pirates’ and Marines’ hearts.
+
+A few hours go by, and when Captain Tashigi finally puts down her pen, she lets out a relieved sigh.
+
+Tashigi: Thank you for all the help, {$name}. It’s been a while since I’ve had such a delightful time doing paperwork.
+
+{$name}: Me too!
+<<jump date_tashigi_1_TSD1E>>
+
+-> (It’s already so late. Let’s just hurry up and finish.)
+
+The two of you stop chatting and get back to work. A few hours later, you finish all of the paperwork. Once Captain Tashigi puts down her pen, she reclines in her seat, visibly exhausted.
+
+Tashigi: I think that might be some sort of record.
+
+Tashigi: Thank you for sticking around, {$name}. We should get to bed; it’s going to be a long day tomorrow, too.
+
+<<set $td1_points += 0>>
+<<jump date_tashigi_1_TSD1E>>
+
+-> (Hm, maybe I should tell her about my home island.)
+
+{$name}: I grew up in South Blue, and it was always a dream of mine to travel around the world. My little village always felt too small for me.
+
+{$name}: Don’t get me wrong; I love my home, but I’ve gotten to know so many great people and see so many places since I became a Marine.
+
+{$name}: My brother and sister were so jealous when I told them I would be sailing the four blues.
+
+{$name}: They made me promise to bring them souvenirs next time I visit.
+
+Tashigi: Then you’d better go into town one of these days. There are many places where you can find the perfect gift.
+
+	<<set $td1_points += 1>>
+
+You keep working for a while longer, the ticking of the clock getting louder as more time passes and the base grows silent. Almost everyone else must be asleep by now.
+
+Tashigi: Phew! We’re almost done. I can finish up here if you’re too tired. You’ve already helped me out a lot.
+
+{$name}: - No, I’ll stay. I like to finish what I start.
+
+Captain Tashigi gives you a grateful look, and you grab another form from the stack.
+
+When you finally finish, you stand from the desk, mumble a weary “good night” to Captain Tashigi, and practically drag yourself to your room.
+
+You drowsily climb into bed, knowing that in a couple of hours another day will start anew, and your head barely hits the pillow before you’re out cold.
+
+<<set $td1_points += 1>>
+	<<jump date_tashigi_1_TSD1E>>
+
+-> Well, if you don’t mind, then I think I’ll go catch some sleep. Hope you finish soon!
+
+You stand from the desk and stumble your way back to your room. The moment your head hits the pillow, you’re sound asleep.
+
+<<set $td1_points += 0>>
+<<jump date_tashigi_1_TSD1E>>
 ===
 
 title: date_tashigi_1_TSD1E
 ---
-if is_greater_than("ta1_points", 11)
-    <<romance_points tashigi 2>>
-elif is_greater_than("ta1_points", 5)
-    <<romance_points tashigi 1>>
-else
-    <<romance_points tashigi 0>>
+
 Date 1 ends.
-<<jump main>>
 ===

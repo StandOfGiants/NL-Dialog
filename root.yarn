@@ -26,6 +26,8 @@ Which route do you want?
     <<jump DEBUG>>
 -> Welcome Event
     <<jump welcome_event_main>>
+-> A legenedary date
+    <<jump LegendaryDatesOne>>
 ===
 
 title: Legendary

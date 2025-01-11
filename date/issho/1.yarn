@@ -10,7 +10,7 @@ title: date_issho_1_in_town
 location: day(town)
 ---
 Walking around aimlessly, you come across a noodle stand, surprisingly cozy. It smells really good too… but while you're approaching it, you spot someone familiar in line.
-<<show_character issho center show>>
+<<show_characters issho>>
 {$name}: {$issho}?!
 {$issho}: Ah, {$name}! Have you come to eat as well? The food is excellent here.
 -> Is there anything you recommend?
@@ -41,7 +41,7 @@ You feel relaxed after finishing your meal. {$issho} is amicable, and he smiles 
 title: date_issho_1_Part_2A
 location: day(park)
 ---
-{$issho}: I do have some time to spare. Lead the way, {$name}. #smile
+{$issho}: I do have some time to spare. Lead the way, {$name}. #expression:smile
 Today is a beautiful day and the park is full of people enjoying a dose of fresh air. You notice…
 -> ... How beautiful the sky is
     <<jump date_issho_1_Part_2A1>>

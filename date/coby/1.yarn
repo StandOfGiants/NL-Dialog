@@ -5,7 +5,7 @@ location: day(office)
 <<declare $cd1_possible = 0>>
 
 You decide you should see what Captain Coby is up to. You haven't seen him around the base in the past few hours, so you decide to check his office.
-<<show_character coby center show>>
+<<show_characters coby>>
 Sure enough, he's there and looking rather... frazzled, to say the least.
 <<set $cd1_possible += 1>>
 -> Captain? Is everything OK?

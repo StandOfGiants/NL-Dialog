@@ -1,7 +1,7 @@
 title: date_drake_1_main
 location: day(office)
+characters: [drake]
 ---
-<<show_character drake center show>>
 Drake: Thank you for agreeing to help me organize my files, {$name}.
 -> No problem! I'm sorry the goat ate some of your paperwork.
   Drake: It's replaceable; I just need to know what it is.
@@ -326,9 +326,7 @@ title: date_drake_1_Part_4D
 The door handle rattles.
 Drake: Excuse me? Who's there?
 The door handle rattles again, and then the door bursts open.
-<<hide_characters hide>>
-<<show_character goat left show>>
-<<show_character drake right show>>
+<<show_characters goat drake>>
 Goat: [shake]Maaaaa![/shake]
 -> No, bad goat! Go away!
 -> Oh no... The papers, just when we were making progress.
@@ -354,9 +352,8 @@ Drake: Oh, dear...
 ===
 
 title: date_drake_1_Part_4DPart3
+characters: [drake]
 ---
-<<hide_characters hide>>
-<<show_character drake center show>>
 Drake: Here. I have a goat treat.
 Goat: Maaaa.
 It nuzzles Drake and looks expectantly at you. You reach out and scratch it under the chin.
