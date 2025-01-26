@@ -1,12 +1,15 @@
 title: date_sengoku_2_main
 ---
+<<declare $sd2_points = 0>>
 //  Sengoku date
 //  Shoppig for cora
 A beautiful day at Headquarters. The streets are bustling, vendors hawking their wares, the bright flag of the Navy flying overhead. A great day to wander! You pass a few clothing shops, a pet store, a jewelry store, and a bookstore. Wait a second. Is that…?
 Sengoku: Oh, hello {$name}.
--> Whoa the Fleet Admiral is out of the office! (-)
+-> Whoa the Fleet Admiral is out of the office!
+    <<set $sd2_points -= 1>>
     Sengoku: -grimaces- Retired Fleet Admiral. And I do have a life outside work, {$name}.
-    -> Could have fooled me. (-)
+    -> Could have fooled me.
+        <<set $sd2_points -= 1>>
         Sengoku: …
         Sengoku: I can order you to go into the office right now.
     -> Ah, yeah, sorry.
@@ -61,13 +64,13 @@ title: date_sengoku_2_GIFT_HUNT_OPTIONS
     <<jump date_sengoku_2_GIFT_CHOICE>>
 <<endif>>
 {$name}: Alright, let's see what our options are…
--> Bookstore <<if true && !$found_book>>
+-> Bookstore <<if !$found_book>>
     {$name}: Let's check the bookstore. The two of you enter the shop. It smells like ink and paper and a little bit of coffee. The store is a little chaotic, aisles of book shelves somewhat like a forest.
     <<jump date_sengoku_2_BOOKSTORE_CHOICES>>
--> Clothing Store <<if true && !$found_jacket>>
+-> Clothing Store <<if !$found_jacket>>
     {$name}: Let's check out that clothing shop! The shop smells like leather and textiles. Mannequins show off the latest outfits and suits. An attendant stares at the two of you, rubbing their hands together.
     <<jump date_sengoku_2_CLOTHING_OPTIONS>>
--> General Store <<if true && !$found_lighter>>
+-> General Store <<if !$found_lighter>>
     {$name}: When in doubt, check out a place with a lot of different things! The general store apparently named Wapol Emporium, is cluttered with tchokies, shoes, kitchen appliances, fabric, and many other things. And people. A LOT of people.
     <<jump date_sengoku_2_GEN_STORE_OPTIONS>>
 ===
@@ -76,7 +79,7 @@ title: date_sengoku_2_BOOKSTORE_CHOICES
 ---
 <<declare $found_book = false>>
 Sengoku: Where would you like to start?
--> The left side <<if true && !$found_book>>
+-> The left side <<if !$found_book>>
     You wander down the aisles on the left side of the store. A lot of books on nature, adventure stories, and history.
     {$name}: Do you think Rosinante would like any of these?
     Sengoku: Hmm… he used to enjoy those Sora Warrior of the Sea stories when he was younger.
@@ -97,12 +100,13 @@ title: date_sengoku_2_BOOKSTORE_END
 ---
 {$name}: Alright, so do you think this book is the right gift?
 Sengoku: Hm. If it's not too much trouble, I would like to keep looking. I will leave this at the front desk however.
-PC:
-This is the right gift, I'm sure. (-)
-Sengoku: Hm…perhaps you are right. I will get this for Rosinante. Thank you for your input, {$name}.
-He gives you a wave and heads off, leaving you to the rest of your day.
-{$name}: Okay, where to next?
-<<jump date_sengoku_2_GIFT_HUNT_OPTIONS>>
+-> {$name}: This is the right gift, I'm sure.
+    <<set $sd2_points -= 1>>
+    Sengoku: Hm…perhaps you are right. I will get this for Rosinante. Thank you for your input, {$name}.
+    He gives you a wave and heads off, leaving you to the rest of your day.
+    <<jump date_sengoku_2_DATE_END>>
+-> {$name}: Okay, where to next?
+    <<jump date_sengoku_2_GIFT_HUNT_OPTIONS>>
 ===
 
 title: date_sengoku_2_BOOKSTORE_RIGHT
@@ -155,7 +159,7 @@ title: date_sengoku_2_CLOTHING_OPTIONS
 ---
 <<declare $found_jacket = false>>
 Sengoku: Thoughts?
--> The shirts and jackets <<if true && !$found_jacket>>
+-> The shirts and jackets <<if !$found_jacket>>
     Jackets of all shapes and colors hang from hangers. Shirts sit nicely folded on shelves. It smells like opportunities and detergent.
     {$name}: Okay, see anything?
     Sengoku: Rosinante goes through clothing faster than anyone I have ever known, save Garp. Though Garp's mishaps involve less fire.
@@ -175,7 +179,8 @@ Sengoku: Thoughts?
     {$name}: Okay, do you think this jacket is the right gift?
     Sengoku: Perhaps. If it's not too much trouble, I would like to keep looking. I will leave this at the front desk however.
     PC:
-    This is the right gift, I'm sure. (-)
+    This is the right gift, I'm sure.
+    <<set $sd2_points -= 1>>
     Sengoku: Hm…perhaps you are right. I will get this for Rosinante. Thank you for your input, {$name}.
     He gives you a wave and heads off, leaving you to the rest of your day.
     Okay, where to next?
@@ -246,7 +251,7 @@ title: date_sengoku_2_GEN_STORE_OPTIONS
 ---
 <<declare $found_lighter = false>>
 Sengoku: This is a lot to tackle. Ideas?
--> The quiet and emptier back of the store <<if true && !$found_lighter>>
+-> The quiet and emptier back of the store <<if !$found_lighter>>
     Blankets, paper goods, and oddly enough, lighters grace the back shelves. Seems like a fire hazard but okay.
     {$name}: Anything sparking the imagination back here?
     Sengoku: You know, I gave him a lighter when he graduated from the academy, but unfortunately, he lost it on his last assignment. Perhaps I could replace it.
@@ -307,7 +312,8 @@ title: date_sengoku_2_GEN_STORE_END
 {$name}: So, do you think this lighter is the right gift?
 Sengoku: A solid contender. If it's not too much trouble, I would like to keep looking. I will leave this at the front desk however.
 PC:
-This is the right gift, I'm sure. (-)
+This is the right gift, I'm sure.
+<<set $sd2_points -= 1>>
 Sengoku: Hm…perhaps you are right. I will get this for Rosinante. Thank you for your input, {$name}.
 He gives you a wave and heads off, leaving you to the rest of your day.
 Okay, where to next?
@@ -351,7 +357,8 @@ Sengoku: This is a tough decision.
         Sengoku: Well, I must be on my way to buy that gift. Have a good afternoon! He gives you a small wave and leaves you about your day.
     -> Shopping is never a waste of time.
         Sengoku: I may disagree with you, but in this case, you have a point. -smile- I had a good time, thank you for accompanying me, {$name}. I will see you later. He gives you a small wave and leaves you about your day.
-    -> Helping my boss is always the right decision. (-)
+    -> Helping my boss is always the right decision.
+        <<set $sd2_points -= 1>>
         Sengoku: Ah, I apologize for taking up your free time. I will get out of your hair. See you at the office. He looks a little sad as he leaves you to go about your day.
 -> Just choose the one your heart says is right, but he'll love a new lighter. (+)
     Sengoku: You're right, {$name}. Thank you for your help. I hope I did not take up too much of your time.
@@ -362,7 +369,8 @@ Sengoku: This is a tough decision.
         Sengoku: Well, I must be on my way to buy that gift. Have a good afternoon! He gives you a small wave and leaves you about your day.
     -> Shopping is never a waste of time.
         Sengoku: I may disagree with you, but in this case, you have a point. -smile- I had a good time, thank you for accompanying me, {$name}. I will see you later. He gives you a small wave and leaves you about your day.
-    -> Helping my boss is always the right decision. (-)
+    -> Helping my boss is always the right decision.
+        <<set $sd2_points -= 1>>
         Sengoku: Ah, I apologize for taking up your free time. I will get out of your hair. See you at the office. He looks a little sad as he leaves you to go about your day.
 -> Choose the practical one, he'll appreciate that you care so much about his comfort and safety. (++)
     Sengoku: You're right, {$name}. Thank you for your help. As a parent, it is always my duty to care about the well being of my child. I hope I did not take up too much of your time.
@@ -373,11 +381,15 @@ Sengoku: This is a tough decision.
         Sengoku: Well, I must be on my way to buy that gift. Have a good afternoon! He gives you a small wave and leaves you about your day.
     -> Shopping is never a waste of time.
         Sengoku: I may disagree with you, but in this case, you have a point. -smile- I had a good time, thank you for accompanying me, {$name}. I will see you later. He gives you a small wave and leaves you about your day.
-        Helping my boss is always the right decision. (-)
+        Helping my boss is always the right decision.
+        <<set $sd2_points -= 1>>
         Sengoku: Ah, I apologize for taking up your free hours. I will get out of your hair. See you at the office. He looks a little sad as he leaves you to go about your day.
     -> Call on me any time for help. I think it's sweet that you care so much! SPECIAL OPTION if all gift decisions are right
         Sengoku: -blush- Well, uh… thank you. Perhaps I will call on you again. I don't…recall the last time I had such a good time shopping. He looks bashful! How sweet!
         Sengoku: Anyway, I shall be going. I must purchase that gift. I look forward to seeing you later. Have a good afternoon, {$name}! He gives you a small wave and leaves you about your day.
+
+
+// TODO: Needs scoring/romance points
 ===
 
 title: date_sengoku_2_DATE_ENDS_EARLY

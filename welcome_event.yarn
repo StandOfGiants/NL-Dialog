@@ -2,8 +2,8 @@ title: welcome_event_main
 location: day(ship)
 ---
 [i]It was truly a beautiful day, a lovely little island in view from your spot on the deck. It was hard not to feel hopeful at such a sight, especially when boot camp had been on a literal rock in the middle of nowhere.[/i]
-[i]You joined the marines not long ago, hoping to find the usual: a purpose, adventure, and security for the family you left back home. Your younger siblings may even one day follow in your footsteps– it feels good, being such a source of pride to your family.[/i]
-[i]Of course, you have another goal in your secret, romantic heart, as well: love. Well, at least a kiss. Hand holding? Something! You’ll be here for a year, you were told, and in that time you hope to find yourself an epic romance![/i]
+:[i]You joined the marines not long ago, hoping to find the usual: a purpose, adventure, and security for the family you left back home. Your younger siblings may even one day follow in your footsteps– it feels good, being such a source of pride to your family.[/i]
+:[i]Of course, you have another goal in your secret, romantic heart, as well: love. Well, at least a kiss. Hand holding? Something! You’ll be here for a year, you were told, and in that time you hope to find yourself an epic romance![/i]
 [i]But now is not the time to think about such things; you have to try and control your imagination![/i]
 [i]In boot camp you were noticed by the higher ups, and recommended for a special training on military troop cohesion; perhaps one day you’ll be in a leadership position, should you perform well among other marines on Marineford. The one side of the island was quite gray and militaristic, but from the traveling ship you had seen glimpses of lush green and a colorful town.[/i]
 [i]Now, you’re mere minutes away from docking. This is a common location for intensive training missions and ship restocking, and so it was easy for the higher ups to arrange a ride for you in time for the current training season.[/i]
@@ -29,7 +29,7 @@ title: we_get_named
 
 title: we_at_the_docks
 characters: []
-location: day(park)
+location: day(ship)
 ---
 At the dock, marines begin to swarm in groups to their designated duties, until it seems only you are left without a clue as to where you’re meant to be. You assumed your current captain would give you some order, but he seems quite busy with delegating resupplying efforts.
 <<jump we_sengoku_appears>>
@@ -57,12 +57,13 @@ He leads you to the massive building that is Marineford, construction teams goin
 Up far to many stairs and he leads you to an office, the door labeled with Inspector General.
 Hold on a sec, you recognize that title!
 He opens the door and there are other people inside.
-<<show_characters sengoku tsuru rosinante garp>>
+<<show_characters sengoku tsuru>>
 Sengoku: Tsuru, I have something of yours I believe.
 Tsuru: Hm?
 A stern but lovely looking woman takes the clipboard from your guide and looks it over.
 Tsuru: Ah, the teamwork specialist. Or, in our case, an extra hand, if this is where you choose to be assigned.
 -CRASH-
+<<show_characters sengoku tsuru rosinante>>
 Sengoku, Tsuru: …
 Rosinante: Ouch…
 A lanky man has tripped and fallen on the floor, papers from the table next to him scattering everywhere.
@@ -71,6 +72,7 @@ Rosinante: I’m fine, don’t worry! Oh, hello! I don’t think we’ve met?
 Tsuru: This recruit might be joining our te–!
 -CRASH-
 The wall on the other side of the office has burst inward! A tall man steps through!
+<<show_characters sengoku tsuru rosinante garp>>
 Sengoku: USE THE DOOR GARP!
 Garp: Huh? What door?
 Tsuru, Sengoku, Rosinante: …*sigh*

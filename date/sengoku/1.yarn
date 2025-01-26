@@ -13,7 +13,8 @@ Sengoku: Goat! Stop that! PC, I apologize for my companion’s rudeness. #expres
         Sengoku: Far before then, (RANK PC). They’ve seen more than most marines captains by now. We both deserve a retirement!
     -> They looks spritely for a Old Goat…(+)
         Sengoku: They’ve always been young at heart... And who's to say they’re old? (wink)
-    -> A goat? A companion? (-)
+    -> A goat? A companion?
+        <<set $sd1_points -= 1>>
         Sengoku: They’re better than some people on this base.
     Sengoku: Now, furry companions aside— #expression:neutral
         <<jump date_sengoku_1_route_e>>
@@ -27,7 +28,8 @@ Sengoku: Goat! Stop that! PC, I apologize for my companion’s rudeness. #expres
         <<jump date_sengoku_1_route_d>>
     Sengoku: Now, furry companions aside— #expression:neutral
         <<jump date_sengoku_1_route_e>>
--> Please have better control over your goat! My uniform has goat spit all over it! (-)
+-> Please have better control over your goat! My uniform has goat spit all over it!
+    <<set $sd1_points -= 1>>
     Sengoku: Perhaps you should have better awareness of your surroundings. #expression:grumpy
     -> I suppose so, sir.
         <<jump date_sengoku_1_route_d>>
@@ -42,7 +44,7 @@ Sengoku: Goat! Stop that! PC, I apologize for my companion’s rudeness. #expres
         -> With all due respect, sir, it's an animal!
             Sengoku: (PC Rank,) I may no longer be fleet admiral, and we may be working as a team, but you have overstepped. Leave. #pose:crossed
             2. Date ends super early.
-               // 1. Note: Lock out the goat route after this, since the pc hates the goat.
+            // 1. Note: Lock out the goat route after this, since the pc hates the goat.
 ===
 
 title: date_sengoku_1_route_d
