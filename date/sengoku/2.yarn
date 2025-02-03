@@ -38,7 +38,9 @@ title: date_sengoku_2_sengoku_is_concern
     -> {$name}: Is something on your mind Sir?
         Sengoku: Call me Sengoku when we are off duty if you please. And no, nothing is wrong per say, but…
         {$name}: But? //  test
-        Sengoku: I am having a bit of trouble with something. I need a gift for Rosinante, his birthday is coming up. -sigh- But I have no clue what to get him.
+        Sengoku: I am having a bit of trouble with something. I need a gift for Rosinante, his birthday is coming up.
+        Sengoku: sigh
+        Sengoku: But I have no clue what to get him.
         -> Offer to help him (++)
             <<jump date_sengoku_2_GIFT_HUNT>>
         -> Leave him to it. He's sure to find something, he knows his son best after all!
