@@ -6,8 +6,8 @@ title: date_coby_2_main
 You look at the pile of paperwork in front of you. It's not nearly as large as it was before, but still daunting. At this point your eyes were starting to slide off the words. Just as you were about ready to call it quits, there was a knock at your office door.
 {$name}: Come in.
 Coby: Hello!
-Coby: …
-Coby: Is… everything alright? You seem stressed.
+Coby: ...
+Coby: Is... everything alright? You seem stressed.
 -> Oh, you know. All this paperwork is our own boulder to push up the mountain endlessly.
     Coby: Haha, I know how you feel. It really is neverending.
 -> Everything's fine. Mostly. Kinda.
@@ -22,7 +22,7 @@ title: date_coby_2_Break_Offer
 ---
 Coby: Anyways, I figured I'd come to see if I could return the favor of a break.
 Coby: We could take a walk around the base, it's pretty quiet at the moment.
--> That sounds great! I could use a walk…
+-> That sounds great! I could use a walk...
     <<jump date_coby_2_Walk1>>
 -> Sure, why not?
     <<jump date_coby_2_Walk1>>
@@ -40,24 +40,24 @@ You follow him out of the office. He leads the way through the base to a lovely 
     <<set $cd2_points += 1>>
     Coby: Isn't it? It doesn't get much traffic, but I love it here.
     <<jump date_coby_2_Flower_garden>>
--> Huh. I had no idea this was here…
+-> Huh. I had no idea this was here...
     Coby: It's pretty easy to miss if you're not looking for it.
     <<jump date_coby_2_Flower_garden>>
 -> A flower garden? Really?
     <<set $cd2_points-= 1>>
-    Coby: Do you… not like flowers?
+    Coby: Do you... not like flowers?
     -> They're fine, I guess.
         Coby: Well, we don't need to stay too long.
         <<jump date_coby_2_Flower_garden>>
     -> Not at all. This was a stupid idea, I'm going back to work.
-        Coby: Oh. Alright then…
+        Coby: Oh. Alright then...
         <<jump date_coby_2_Date_ending>>
 ===
 
 title: date_coby_2_Flower_garden
 ---
 For a while, you both admire the flowers, but eventually Coby breaks the silence.
-Coby: So… What do you want to talk about…
+Coby: So... What do you want to talk about...
 -> Nothing in particular. I'm enjoying the quiet.
     Coby: Oh. Alright. Let's keep walking, then.
     <<jump date_coby_2_Walk2>>
@@ -71,12 +71,12 @@ Coby: So… What do you want to talk about…
 
 title: date_coby_2_Backstory1
 ---
-Coby: I've always wanted to be a Marine, actually. I thought it was a noble thing to do as a child, and a number of years ago I had a… bit of a personal encounter with pirates that solidified that for me.
+Coby: I've always wanted to be a Marine, actually. I thought it was a noble thing to do as a child, and a number of years ago I had a... bit of a personal encounter with pirates that solidified that for me.
 -> A personal encounter?
-    Coby: Yeah… It's a bit of an embarrassing story, though. I don't particularly like talking about it.
+    Coby: Yeah... It's a bit of an embarrassing story, though. I don't particularly like talking about it.
     <<set $cd2_possible += 1>>
     -> I can't say I'm not curious, but if you don't want to share, I won't ask.
-        Coby: Thanks…
+        Coby: Thanks...
         <<set $cd2_points += 1>>
         <<jump date_coby_2_Walk2>>
     -> Understandable.
@@ -86,10 +86,10 @@ Coby: I've always wanted to be a Marine, actually. I thought it was a noble thin
         <<set $cd2_points-= 1>>
         <<jump date_coby_2_Walk2>>
 -> Do you still think it's a noble thing to do?
-    Coby: I don't know. I want to protect people from pirates, but… Well…
+    Coby: I don't know. I want to protect people from pirates, but... Well...
     Coby: Sometimes it feels like I'm working harder trying to protect people from other Marines.
     <<set $cd2_possible += 1>>
-    -> Yeah… It's nice to know you're aware of it. I respect that.
+    -> Yeah... It's nice to know you're aware of it. I respect that.
         Coby: Y-yeah?
         <<set $cd2_points += 1>>
         <<jump date_coby_2_Walk2>>
@@ -97,7 +97,7 @@ Coby: I've always wanted to be a Marine, actually. I thought it was a noble thin
         Coby: Haha, I do try.
         <<jump date_coby_2_Walk2>>
     -> Good to know you're the kind to rat out a fellow Marine for things.
-        Coby: Hey, it's not like I nitpick…
+        Coby: Hey, it's not like I nitpick...
         Coby: But the abuse of power is a real problem.
         <<set $cd2_points-= 1>>
         <<jump date_coby_2_Walk2>>
@@ -108,15 +108,15 @@ Coby: I've always wanted to be a Marine, actually. I thought it was a noble thin
 
 title: date_coby_2_Scar1
 ---
-Coby: I actually don't remember exactly how I got it…
-Coby: I think I might have been sparring with Garp and Helmeppo…
+Coby: I actually don't remember exactly how I got it...
+Coby: I think I might have been sparring with Garp and Helmeppo...
 Coby: All I know for sure is that I woke up in the hospital and Helmeppo was crying.
 <<set $cd2_possible += 1>>
--> Ouch… Must have been one hell of a crack on the head.
+-> Ouch... Must have been one hell of a crack on the head.
     Coby: Oh, for sure. The scar makes that more than clear.
     <<jump date_coby_2_Walk2>>
 -> From the stories I've heard, I'm going to go ahead and blame Garp.
-    Coby: Haha, yeah… I kinda came to the same conclusion.
+    Coby: Haha, yeah... I kinda came to the same conclusion.
     <<set $cd2_points += 1>>
     <<jump date_coby_2_Walk2>>
 -> Well, hopefully you're not that pathetic still.
@@ -128,29 +128,29 @@ Coby: All I know for sure is that I woke up in the hospital and Helmeppo was cry
 title: date_coby_2_Helmeppo1
 ---
 <<visit "Helmeppo1">>
-Coby: Oh. Uh. Well… I first met him in Shells Town when Morgan was still in charge. He had Zoro tied up outside as punishment and was harassing a little girl who was giving Zoro something to eat.
+Coby: Oh. Uh. Well... I first met him in Shells Town when Morgan was still in charge. He had Zoro tied up outside as punishment and was harassing a little girl who was giving Zoro something to eat.
 -> Wait, punishment for what?
     Coby: He killed Helmeppo's pet wolf after it went after the little girl.
     <<jump date_coby_2_Helmeppo2>>
 -> Harassing a little girl? How awful!
-    Coby: Yeah. Had her thrown over the wall… Thankfully someone was on the other side with me to catch her.
+    Coby: Yeah. Had her thrown over the wall... Thankfully someone was on the other side with me to catch her.
     <<jump date_coby_2_Helmeppo2>>
 -> Oh, right. He is Axe-Hand Morgan's son, isn't he?
     Coby: They're related, yeah. Though I wouldn't recommend bringing him up if you talk to Helmeppo.
-    Coby: How things left off was pretty… traumatic for him, to say the least.
+    Coby: How things left off was pretty... traumatic for him, to say the least.
     <<jump date_coby_2_Helmeppo2>>
 ===
 
 title: date_coby_2_Helmeppo2
 ---
-Coby: Anyways, there was a pretty big scuffle and Helmeppo ended up holding a gun to my head for a bit before Luffy punched him in the face… I'll be honest, I was fully expecting to die for a minute there.
+Coby: Anyways, there was a pretty big scuffle and Helmeppo ended up holding a gun to my head for a bit before Luffy punched him in the face... I'll be honest, I was fully expecting to die for a minute there.
 Coby: But it all worked out. Once Morgan was beaten, he was arrested for his abuse of power, and Helmeppo and I joined the Marines!
 -> Wait, [i]LUFFY[/i] saved you?
-    Coby: Ah, yeah, I should've mentioned that earlier… He wasn't officially considered a pirate when I first met him. But defeating Morgan sure got him noticed!
+    Coby: Ah, yeah, I should've mentioned that earlier... He wasn't officially considered a pirate when I first met him. But defeating Morgan sure got him noticed!
     <<jump date_coby_2_Helmeppo3>>
 -> Helmeppo held a [i]gun[/i] to your head? Really?
     Coby: Well, yeah. What else would he have held, some silly hammer contraption?
-    {$name}: I guess not…
+    {$name}: I guess not...
     <<jump date_coby_2_Helmeppo3>>
 -> I'm surprised he wanted to join after that.
     Coby: Oh he, uh, wasn't exactly given much of a choice. I joined willingly, though.
@@ -159,7 +159,7 @@ Coby: But it all worked out. Once Morgan was beaten, he was arrested for his abu
 
 title: date_coby_2_Helmeppo3
 ---
-Coby: But yeah. That's the short version of how we met. I'd say we've been friends ever since, but that kinda took a while… Still, he's my best friend now and that's what matters most to me.
+Coby: But yeah. That's the short version of how we met. I'd say we've been friends ever since, but that kinda took a while... Still, he's my best friend now and that's what matters most to me.
 <<set $cd2_possible += 1>>
 -> I'm glad you're able to look back at that so casually. Not many could let that go.
     <<set $cd2_points += 1>>
@@ -201,7 +201,7 @@ The office is a mess. There is barely an inch of desk that isn't covered in pape
     <<set $cd2_points += 1>>
     Coby: No bomb, unfortunately. Just me.
 -> Oh boy.
-    Coby: Yeah, I probably should've cleaned up before offering…
+    Coby: Yeah, I probably should've cleaned up before offering...
 -> Yikes, I expected Captains to have higher standards.
     <<set $cd2_points-= 1>>
     Coby: It's not like staying organized is [i]easy[/i].
@@ -246,7 +246,7 @@ Coby: Oh, Helmeppo just left that one to let me know they were serving buttered 
     <<set $cd2_points += 1>>
     Coby: You think?
 -> Do you forget to eat lunch a lot?
-    Coby: Unfortunately… It's easy to get distracted.
+    Coby: Unfortunately... It's easy to get distracted.
 -> What is he, your parent?
     <<set $cd2_points -= 1>>
     Coby: No? He's a friend who cares that I remember to eat.
@@ -265,7 +265,7 @@ title: cd2_wolf_island
 {$name}: Looks like someone's curious about Wolf Island.
 Coby: Oh, yeah. Helmeppo keeps trying to convince me to let him get another wolf. I'm not sure that's a good idea.
 <<set $cd2_possible += 1>>
--> Yeah, they are wild animals…
+-> Yeah, they are wild animals...
     <<set $cd2_points += 1>>
     Coby: I know he likes them, but it's still dangerous.
 -> Fair enough.
@@ -273,7 +273,7 @@ Coby: Oh, yeah. Helmeppo keeps trying to convince me to let him get another wolf
     <<set $cd2_points -= 1>>
     Coby: I may not think it's a good idea, but I can believe it.
 -> (If they talked about Meppo's wolf in Meppo's date) I don't know, maybe you should humor him. I think he really misses his pet. (+2)
-    Coby: Ah, you're right… I don't know about keeping one, but maybe I can at least arrange a visit…
+    Coby: Ah, you're right... I don't know about keeping one, but maybe I can at least arrange a visit...
 <<jump date_coby_2_StickyNotes>>
 ===
 
@@ -299,29 +299,29 @@ You look over his desk. There seems to be even less order now that you're seeing
 -> [b]Investigate Wanted Posters[/b]
     <<jump date_coby_2_Alvida1>>
 -> How do you find anything here?
-    Coby: Usually with a lot of looking… I really need a better system…
+    Coby: Usually with a lot of looking... I really need a better system...
     <<set $cd2_possible += 1>>
     -> If you ever need help, I'd be happy to give you some.
         <<set $cd2_points += 1>>
-        Coby: Honestly, that would be great. Helmeppo and Tashigi have tried, but I think I need a different perspective…
+        Coby: Honestly, that would be great. Helmeppo and Tashigi have tried, but I think I need a different perspective...
         <<jump date_coby_2_Regroup>>
-    -> Good luck…
+    -> Good luck...
         Coby: Thank you.
         <<jump date_coby_2_Regroup>>
     -> Damn right you do. This desk makes you seem like a slob.
         <<set $cd2_points-= 1>>
         Coby: Hey. I may be disorganized, but I keep things very clean.
         <<jump date_coby_2_Regroup>>
--> I'm surprised they even let you into the filing room…
-    Coby: Honestly, that was mostly because you, Drake and Helmeppo were there too… If it were just me, things would have been…
-    Coby: Very different…
+-> I'm surprised they even let you into the filing room...
+    Coby: Honestly, that was mostly because you, Drake and Helmeppo were there too... If it were just me, things would have been...
+    Coby: Very different...
     <<set $cd2_possible += 1>>
     -> Aw, I'm sure you would've been OK.
         <<set $cd2_points += 1>>
         Coby: I appreciate the vote of confidence!
         <<jump date_coby_2_Regroup>>
     -> Yeah, I can see that.
-        Coby: Yeah…
+        Coby: Yeah...
         <<jump date_coby_2_Regroup>>
     -> I've never heard of someone needing their hand held that much for paperwork.
         <<set $cd2_points-= 1>>
@@ -333,7 +333,7 @@ title: date_coby_2_Alvida1
 ---
 You pull two wanted posters from under a pile of paperwork. The pictures are completely different, one showing a heavier woman with a wild smile and a plaid shirt while the other shows a slender woman in a striped bikini top, but the names are the same. Iron-Mace Alvida.
 
--> I think you left some wanted posters on your desk…
+-> I think you left some wanted posters on your desk...
     Coby: W-what? Don't look at those!
     <<set $cd2_possible += 1>>
     -> Sorry! Here.
@@ -348,8 +348,8 @@ You pull two wanted posters from under a pile of paperwork. The pictures are com
         Coby: Look, I'd really rather not talk about it, OK?
         <<jump date_coby_2_Regroup>>
 -> Do you know this pirate?
-    Coby: O-oh, um, well you see… It's a really long story…
-    Coby: And— and complicated too! You wouldn't want to hear about all that…
+    Coby: O-oh, um, well you see... It's a really long story...
+    Coby: And— and complicated too! You wouldn't want to hear about all that...
     <<set $cd2_possible += 1>>
     -> I think I would.
         <<set $cd2_points-= 1>>
@@ -359,18 +359,18 @@ You pull two wanted posters from under a pile of paperwork. The pictures are com
         <<set $cd2_points += 1>>
         Coby: I really don't.
         <<jump date_coby_2_Regroup>>
--> Are these… really the same person?
+-> Are these... really the same person?
     Coby: Oh, uh. Yeah. She ate a devil fruit and it changed her appearance.
-    Coby: I mean that was a while ago, but I'm… no good with faces?
+    Coby: I mean that was a while ago, but I'm... no good with faces?
     <<set $cd2_possible += 1>>
     -> You don't sound too sure of that.
         Coby: Oh no, I am, I swear. Anyways, we should keep going.
         <<jump date_coby_2_Walk3>>
-    -> Riiiight…
+    -> Riiiight...
         <<set $cd2_points += 1>>
-        Coby: …
-        {$name}: …
-        Coby: …
+        Coby: ...
+        {$name}: ...
+        Coby: ...
         {$name}: Want to keep walking?
         Coby: Yes please.
         <<jump date_coby_2_Walk3>>
@@ -385,20 +385,20 @@ title: date_coby_2_Office_Chat1
 ---
 You take a look around the messy office but decide not to investigate anything. This would be the perfect opportunity to get to know him a bit better.
 -> How do you manage to find anything in here?
-    Coby: Mostly with a lot of looking. It's a miracle I get everything in on time some days…
+    Coby: Mostly with a lot of looking. It's a miracle I get everything in on time some days...
     <<set $cd2_possible += 1>>
     -> You know, I could always help you organize.
         <<set $cd2_points += 1>>
         Coby: Yeah? I may have to take you up on that.
         <<jump date_coby_2_Regroup>>
     -> I'm sure you'll come up with something to help!
-        Coby: Thanks… I'm glad someone believes in me.
+        Coby: Thanks... I'm glad someone believes in me.
         <<jump date_coby_2_Regroup>>
     -> I'll say. Being a mess isn't a good look for a Captain.
         <<set $cd2_points-= 1>>
         Coby: I [i]know[/i] that. I just have a hard time with some things.
         <<jump date_coby_2_Regroup>>
--> So… What do you do when you're not working?
+-> So... What do you do when you're not working?
     Coby: This and that. I like reading, and baking. I also really enjoy watching Tashigi and Helmeppo spar.
     Coby: What about you?
     <<set $cd2_possible += 1>>
@@ -409,7 +409,7 @@ You take a look around the messy office but decide not to investigate anything. 
     -> I enjoy taking care of plants in my spare time.
         <<set $cd2_points += 1>>
         Coby: Oh wow, I'm so jealous.
-        Coby: I can't keep any plants alive, even when I try really hard…
+        Coby: I can't keep any plants alive, even when I try really hard...
         <<jump date_coby_2_Regroup>>
     -> I like doing different handcrafts.
         <<set $cd2_points += 1>>
@@ -417,28 +417,28 @@ You take a look around the messy office but decide not to investigate anything. 
         <<jump date_coby_2_Regroup>>
     -> I don't really have any hobbies.
         <<set $cd2_points-= 1>>
-        Coby: Oh, that's unfortunate…
+        Coby: Oh, that's unfortunate...
         <<jump date_coby_2_Regroup>>
     -> Why do you care?
         <<set $cd2_points-= 1>>
         Coby: Well, I was interested in learning more about you. Is that so wrong?
         <<jump date_coby_2_Regroup>>
 -> You've only been a Marine for a few years, right? What did you do before? <<if visited("date_coby_2_Backstory1")>>
-    Coby: Oh. Well. Um. This and that. Cabin boy stuff. Just on a… different ship…
+    Coby: Oh. Well. Um. This and that. Cabin boy stuff. Just on a... different ship...
     <<set $cd2_possible += 1>>
-    -> Sounds like a sore subject, sorry I asked…
+    -> Sounds like a sore subject, sorry I asked...
         <<set $cd2_points += 1>>
-        Coby: It's OK. I understand the curiosity, I just… Don't like talking about it.
+        Coby: It's OK. I understand the curiosity, I just... Don't like talking about it.
         <<jump date_coby_2_Regroup>>
     -> Sure. I guess I'll believe that.
         Coby: Thanks.
         <<jump date_coby_2_Regroup>>
-    -> Just cabin boy stuff? I don't know… Sounds like you're hiding something.
+    -> Just cabin boy stuff? I don't know... Sounds like you're hiding something.
         <<set $cd2_points-= 1>>
-        Coby: Well, see, it's… Complicated.
+        Coby: Well, see, it's... Complicated.
         <<jump date_coby_2_Regroup>>
 -> Does your scar ever hurt at all? <<if visited("date_coby_2_Scar1")>>
-    Coby: No, not at all. Actually, I can't really feel anything in that spot…
+    Coby: No, not at all. Actually, I can't really feel anything in that spot...
     <<set $cd2_possible += 1>>
     -> Well, better that than it hurting, right?
         <<set $cd2_points += 1>>
@@ -456,9 +456,9 @@ You take a look around the messy office but decide not to investigate anything. 
     Coby: Morgan made an escape attempt and took Helmeppo as a hostage. I stopped the others from, uh, firing a canon at them. Once Meppo got back to the ship, things were kinda different.
     Coby: We've been friends ever since.
     <<set $cd2_possible += 1>>
-    -> Wow… I can't believe the Marines would do that…
+    -> Wow... I can't believe the Marines would do that...
         <<set $cd2_points += 1>>
-        Coby: Unfortunately it's become… easier to believe, with everything that's happened since.
+        Coby: Unfortunately it's become... easier to believe, with everything that's happened since.
         <<jump date_coby_2_Regroup>>
     -> I guess the rest of it's history, right?
         Coby: Pretty much!
@@ -467,7 +467,7 @@ You take a look around the messy office but decide not to investigate anything. 
         <<set $cd2_points-= 1>>
         (If previous date went poorly) Coby: Somehow I'm really not surprised you'd say something like that.
         <<jump date_coby_2_Regroup>>
-        (If previous date went well) Coby: I… I can't believe you'd say something like that.
+        (If previous date went well) Coby: I... I can't believe you'd say something like that.
         <<jump date_coby_2_Regroup>>
 ===
 
@@ -488,19 +488,19 @@ Coby: It's so nice to get some fresh air. Especially on a nice day like this.
         <<set $cd2_points += 1>>
         Coby: Wouldn't that be the dream?
         <<jump date_coby_2_Training_grounds1>>
-    -> Yeah. I'd miss the other seasons, though…
+    -> Yeah. I'd miss the other seasons, though...
         Coby: Oh, true. Variety keeps things interesting.
         <<jump date_coby_2_Training_grounds1>>
     -> [i]That[/i] sounds like a nightmare.
         <<set $cd2_points-= 1>>
-        Coby: To each their own, I guess…
+        Coby: To each their own, I guess...
         <<jump date_coby_2_Training_grounds1>>
 -> Man, I really needed this.
     Coby: Breaks really can make a difference, huh.
     <<set $cd2_possible += 1>>
-    -> Yeah! Sitting doing paperwork can really make you stiff…
+    -> Yeah! Sitting doing paperwork can really make you stiff...
         <<set $cd2_points += 1>>
-        Coby: You can say that again…
+        Coby: You can say that again...
         <<jump date_coby_2_Training_grounds1>>
     -> It does. Even if they're short.
         Coby: Exactly! Even little things are so worth it.
@@ -518,7 +518,7 @@ Coby: It's so nice to get some fresh air. Especially on a nice day like this.
         Coby: Oh nice. I overheat easily, so I try to avoid that kind of weather myself.
         <<jump date_coby_2_Training_grounds1>>
     -> I'm not big on being outside in general.
-        Coby: You're actually not the first person to tell me that…
+        Coby: You're actually not the first person to tell me that...
         <<jump date_coby_2_Training_grounds1>>
 ===
 
@@ -526,13 +526,13 @@ title: date_coby_2_Training_grounds1
 ---
 You both fall quiet for a little while, simply listening to the birds singing. Coby is the first to break the silence.
 Coby: So, what brought you to the Marines?
-{$name}: Well, there were a lot of reasons, but mostly I…
+{$name}: Well, there were a lot of reasons, but mostly I...
 -> Really want to make a difference. I've seen what pirates can do, and I just can't stand it.
     Coby: I guess that makes two of us, then.
     <<set $cd2_possible += 1>>
-    -> The… [i]incident[/i] at the old Marineford has certainly made things difficult.
+    -> The... [i]incident[/i] at the old Marineford has certainly made things difficult.
         <<set $cd2_points += 1>>
-        Coby: Yeah. So many lives wasted…
+        Coby: Yeah. So many lives wasted...
         <<jump date_coby_2_Training_grounds2>>
     -> It's been rough at times, but I like to think we're making a difference.
         Coby: Me too. It may not be perfect, but if we can protect people from pirates, it's at least somewhat worth it.
@@ -541,7 +541,7 @@ Coby: So, what brought you to the Marines?
         <<set $cd2_points-= 1>>
         Coby: I can't say I agree, but I suppose I understand where you're coming from.
         <<jump date_coby_2_Training_grounds2>>
--> Wanted to travel. The South Blue is nice, but I just… Craved something more.
+-> Wanted to travel. The South Blue is nice, but I just... Craved something more.
     Coby: That makes sense. I know the East Blue feels so small after everything I've seen.
     <<set $cd2_possible += 1>>
     -> The Grand Line sure is something else compared to the Blues.
@@ -549,7 +549,7 @@ Coby: So, what brought you to the Marines?
         Coby: It really is! I wasn't prepared for it at all when I first arrived.
         <<jump date_coby_2_Training_grounds2>>
     -> I know that feeling.
-        Coby: Yeah…
+        Coby: Yeah...
         <<jump date_coby_2_Training_grounds2>>
     -> I bet. I mean, the East Blue probably feels small compared to anywhere.
         <<jump date_coby_2_Training_grounds2>>
@@ -566,7 +566,7 @@ Coby: So, what brought you to the Marines?
         <<jump date_coby_2_Training_grounds2>>
     -> It's annoying, but they are my parents, so I can't really say no.
         <<set $cd2_points-= 1>>
-        Coby: I see…
+        Coby: I see...
         <<jump date_coby_2_Training_grounds2>>
 ===
 
@@ -579,7 +579,7 @@ Coby: Ah, look at the time! I didn't even realize we'd been gone so long!
     Coby: Good point! I do feel a lot more refreshed and ready to work again.
     <<jump date_coby_2_Date_ending>>
 -> Oh no!
-    Coby: I guess that's what we get for not watching the clock…
+    Coby: I guess that's what we get for not watching the clock...
     <<jump date_coby_2_Date_ending>>
 -> Ugh! If I don't get everything finished, I'm blaming [i]you[/i].
     <<set $cd2_points-= 1>>
@@ -590,7 +590,7 @@ Coby: Ah, look at the time! I didn't even realize we'd been gone so long!
 title: date_coby_2_Date_ending
 ---
 if check_ratio("cd2_points", "cd2_possible", 0.5)
-    Coby: I know we should probably get back to work, but… It's been really fun spending time with you. I hope we get to do this again sometime soon. Y-you know, if you want to…
+    Coby: I know we should probably get back to work, but... It's been really fun spending time with you. I hope we get to do this again sometime soon. Y-you know, if you want to...
     <<romance_points coby 2>>
 else
     Coby: Well, we should probably get back to work. I'll see you later, OK?

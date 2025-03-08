@@ -4,9 +4,9 @@ location: day(bedroom)
 <<hide_characters hide>>
 // I'd just like to note before I start that the writing is supposed to be in second person, not first person. I'll point out as many things that need changing due to this as I can, but you might want to look it over again yourself to double check
 // There also doesn't seem to be any point modifiers here. I do like how varied the endings are and the myriad of paths to reach them, but there still needs to be points along the way. I feel absolute justice responses are big pluses, moral are average pluses, and no justice is negatives
-It's been a long day at work. You sit in your room, looking out the window at a beautiful sky. After a moment's pause, you search your bag for your favorite pen in order to write a few more lines in the letter you're going to send to your family…
+It's been a long day at work. You sit in your room, looking out the window at a beautiful sky. After a moment's pause, you search your bag for your favorite pen in order to write a few more lines in the letter you're going to send to your family...
 <<start_effect shake>>
-But the pen is missing. [shake]My lucky pen![/shake] Your brother gave it to you before you came to New Marineford! Oh no… did you forget it at the office? There was a meeting earlier… you need to go back. The HQ might close at any moment now! You can't lose that pen!
+But the pen is missing. [shake]My lucky pen![/shake] Your brother gave it to you before you came to New Marineford! Oh no... did you forget it at the office? There was a meeting earlier... you need to go back. The HQ might close at any moment now! You can't lose that pen!
 // I don't think I've seen a direct contradiction yet, but giving the PC a brother is something that could potentially cause an issue with other writers. Make sure to check in with everyone else on how they're handling family!
 You race to the Headquarters in a hurry, heart pounding in your ears. As you fling the door to the meeting room open, you stop short at the threshold, breathing heavily. Fleet Admiral Sakazuki. You didn't expect to find him here at this hour. Shouldn't he already be home by now?
 <<set_background "office" fade>>
@@ -27,8 +27,8 @@ Fleet Admiral Sakazuki looks up from his position at the head of the table, puzz
 title: date_sakazuki_1_Justice_test
 ---
 {$sakazuki}: You are looking for your pen, aren't you? It's on the table, where you left it.
-Indeed, you spot it immediately, laying neatly where you sat earlier. You hurry over to grab it and return it to your backpack, letting out a sigh of relief. You look at the Fleet Admiral, noticing how he's scrutinizing you carefully. You wonder what he's thinking…
-{$sakazuki}: Tell me, Petty Officer {$name}… what does Justice mean to you?
+Indeed, you spot it immediately, laying neatly where you sat earlier. You hurry over to grab it and return it to your backpack, letting out a sigh of relief. You look at the Fleet Admiral, noticing how he's scrutinizing you carefully. You wonder what he's thinking...
+{$sakazuki}: Tell me, Petty Officer {$name}... what does Justice mean to you?
 -> For me, Justice means doing whatever it takes to make a difference.
     <<jump date_sakazuki_1_AJ_path>>
 -> It is protecting the innocent and opposing the corrupt.
@@ -45,7 +45,7 @@ Fleet Admiral Sakazuki's intense look doesn't lessen. He seems to weigh your wor
 {$sakazuki}: That's a bold statement to make. ‘Whatever it takes' is not something you say lightly.
 -> I know, sir. I joined the Navy to be the change I want to see.
     <<jump date_sakazuki_1_AJ_a>>
--> I guess so… but I stand by my words!
+-> I guess so... but I stand by my words!
     <<jump date_sakazuki_1_AJ_b>>
 -> It-it's not? I mean, you say it, right? Isn't it something everyone says?
     <<jump date_sakazuki_1_AJ_c>>
@@ -63,7 +63,7 @@ title: date_sakazuki_1_AJ_a
     <<get "AbsoluteJustice">>
     {$sakazuki}: Easier said than done. Although I suppose it's not impossible to achieve.
     <<jump date_sakazuki_1_Part_2>>
--> That won't happen, will it? People will love me if I do the right things… right? I don't want them to hate me...
+-> That won't happen, will it? People will love me if I do the right things... right? I don't want them to hate me...
     <<get "NoJustice">>
     {$sakazuki}: [comment]Smile sprite[/comment] To be so naïve. [comment]Normal sprite[/comment] You'd better get used to being scorned if you want to follow Absolute Justice. It's the path of the thankless.
     <<jump date_sakazuki_1_Part_2>>
@@ -71,19 +71,19 @@ title: date_sakazuki_1_AJ_a
 
 title: date_sakazuki_1_AJ_b
 ---
-{$sakazuki}: So then, I ask you… how far are you willing to go to stick to your vow?
+{$sakazuki}: So then, I ask you... how far are you willing to go to stick to your vow?
 -> As long as I can still sleep at night with the decisions I made. But no further than that.
     <<get "AbsoluteJustice">>
     {$sakazuki}: A non-answer, but I'll accept it. There'll come a time you'll need to make hard choices. I'll know your limitations then.
     <<jump date_sakazuki_1_Part_2>>
 -> A reasonable amount. I have to weigh the pros and the cons, of course.
-    He doesn't look very impressed with your unclear answer. Another moment stretches out before…
+    He doesn't look very impressed with your unclear answer. Another moment stretches out before...
     {$sakazuki}: Elaborate.
     -> Like how steep the price is in comparison to the good it does in the long run.
         <<get "AbsoluteJustice">>
         {$sakazuki}: You'll be facing very tough choices. Any leaders, be it Sengoku or I, always have to weigh the good and the bad. Remember to follow the correct path no matter how difficult it is.
         <<jump date_sakazuki_1_Part_2>>
-    -> I know the brass doesn't like it when things are messy. It might affect my promotion if I go too far…
+    -> I know the brass doesn't like it when things are messy. It might affect my promotion if I go too far...
         {$sakazuki}: <pause> Your priorities are skewed. If the ‘difference' you want to make is to your status, then you need to think hard about what the Navy stands for.
         <<jump date_sakazuki_1_Part_2>>
 ===
@@ -110,7 +110,7 @@ title: date_sakazuki_1_AJ_c
 
 title: date_sakazuki_1_MJ_path
 ---
-The Fleet Admiral's expression doesn't change. You thought he would be angry, but he doesn't yell. He doesn't break anything. He lets the tension build and build until…
+The Fleet Admiral's expression doesn't change. You thought he would be angry, but he doesn't yell. He doesn't break anything. He lets the tension build and build until...
 {$sakazuki}: What if protecting the people means letting evil escape? Your failure would come back to haunt you.
 -> Sir, you can lose a battle but win the war. But if you lose innocent lives, you are never getting them back.
     <<jump date_sakazuki_1_MJ_a>>
@@ -134,7 +134,7 @@ title: date_sakazuki_1_MJ_a
         <<get "MoralJustice">>
         {$sakazuki}: [comment]smile sprite[/comment] Spoken like that damn Issho and Kuzan. Very well. Justice is Justice. I accept your conviction.
         <<jump date_sakazuki_1_Part_2>>
-    -> Like… the directives of the World Government and stuff… if they'd let you do that…
+    -> Like... the directives of the World Government and stuff... if they'd let you do that...
         <<get "NoJustice">>
         {$sakazuki}: [comment]frown sprite[/comment] I think you have a misunderstanding of how our goals align. If you value the World Government's directives more than your own sense of right and wrong, you should be their agent instead.
         <<jump date_sakazuki_1_Part_2>>
@@ -143,7 +143,7 @@ title: date_sakazuki_1_MJ_a
 title: date_sakazuki_1_MJ_b
 ---
 {$sakazuki}: That's naive thinking. There'll be a time where you have to choose.
--> Maybe… have you ever had to make a choice like that?
+-> Maybe... have you ever had to make a choice like that?
     {$sakazuki}: <pause> Yes. Many times.
     {$sakazuki}: It's easy to think someone at my strength and position would have the power to remove the difficult choices. But I find myself with harder and harder choices more than ever.
     {$sakazuki}: <pause> As the Fleet Admiral of the Marines, the only choice I can make is pushing forward.
@@ -159,9 +159,9 @@ title: date_sakazuki_1_MJ_b
         <<jump date_sakazuki_1_Part_2>>
     -> Ack, I don't know! Why are you asking me these hard questions?!
         <<get "NoJustice">>
-        {$sakazuki}: [comment]Frown sprite[/comment] Hm. Perhaps there's a better question to ask instead… ‘Why can't you answer them?'
+        {$sakazuki}: [comment]Frown sprite[/comment] Hm. Perhaps there's a better question to ask instead... ‘Why can't you answer them?'
         <<jump date_sakazuki_1_Part_2>>
--> That sounds scary… is there a position where I don't have to make that kind of decision…?
+-> That sounds scary... is there a position where I don't have to make that kind of decision...?
     <<get "NoJustice">>
     {$sakazuki}: Frankly, there isn't. Even as a foot soldier, you have to make choices between staying behind to help civilians or pursuing pirates. If you don't want to make hard choices, then this job isn't for you.
     <<jump date_sakazuki_1_Part_2>>
@@ -170,10 +170,10 @@ title: date_sakazuki_1_MJ_b
 title: date_sakazuki_1_Part_2
 ---
 Mind reeling from the sudden questioning about Justice from the Fleet Admiral, you stand there for a moment. You eye the paperwork on the table, knowing you could offer your help. You don't know if you want to.
--> Do you… need help, sir? People say I'm pretty good with paperwork! It doesn't sit right with me not helping you when I know I can do it!
-    {$sakazuki}: <pause> …Alright. Take a seat. It's going to be a long night.
+-> Do you... need help, sir? People say I'm pretty good with paperwork! It doesn't sit right with me not helping you when I know I can do it!
+    {$sakazuki}: <pause> ...Alright. Take a seat. It's going to be a long night.
     <<jump date_sakazuki_1_Dedication_test>>
--> Um... thank you, sir, for pointing out where my pen was and for the… conversation. Actually, I have to leave now. Good luck with your work!
+-> Um... thank you, sir, for pointing out where my pen was and for the... conversation. Actually, I have to leave now. Good luck with your work!
     if or(has_item("MoralJustice"),has_item("AbsoluteJustice"))
         <<give "MoralJustice">>
         <<give "AbsoluteJustice">>
@@ -191,7 +191,7 @@ As soon as you sit down, the Fleet Admiral hands you a stack of papers so full o
 -> Slack off
     <<get "NotDedicated">>
     The work is too boring, so you start making spit balls and flicking them at the Fleet Admiral while he's trying to work. Entertainment!
-Eventually, you fall asleep sometime after midnight has passed. All you can recall is the pen falling from your slackened fingers and being caught by a warm hand. You remember nothing else afterwards…
+Eventually, you fall asleep sometime after midnight has passed. All you can recall is the pen falling from your slackened fingers and being caught by a warm hand. You remember nothing else afterwards...
 if and(or(has_item("MoralJustice"),has_item("AbsoluteJustice")),has_item("VeryDedicated"))
     <<jump date_sakazuki_1_Good_ending>>
 elif and(or(has_item("MoralJustice"),has_item("AbsoluteJustice")),has_item("NotDedicated"))
@@ -217,7 +217,7 @@ It's getting really late and you don't want to work overtime. You salute smartly
 
 title: date_sakazuki_1_Good_ending
 ---
-When you wake up early the next morning, Fleet Admiral Sakazuki is long gone. Someone has taken the time to close the office window for you, though. Covering your body is a large white jacket, the fabric smelling faintly of cigars. There's a note next to you. In blocky letters, it reads…
+When you wake up early the next morning, Fleet Admiral Sakazuki is long gone. Someone has taken the time to close the office window for you, though. Covering your body is a large white jacket, the fabric smelling faintly of cigars. There's a note next to you. In blocky letters, it reads...
 Note: SLEEP DEPRIVATION WILL DULL EVEN THE MINDS OF GOOD MARINES. THANK YOU.
 <<jump main>>
 // Awwwww. Coming from him, this is the sweetest thing he could say
@@ -225,21 +225,21 @@ Note: SLEEP DEPRIVATION WILL DULL EVEN THE MINDS OF GOOD MARINES. THANK YOU.
 
 title: date_sakazuki_1_Neutral_ending_2
 ---
-When you wake up the next morning, you find yourself all alone. Someone has taken the time to close the office window for you, though. There's a note next to you. In blocky letters, it reads…
+When you wake up the next morning, you find yourself all alone. Someone has taken the time to close the office window for you, though. There's a note next to you. In blocky letters, it reads...
 Note: YOUR CONVICTION IS IMPRESSIVE, BUT A MARINE WITH ONLY CONVICTION ALONE ISN'T ENOUGH. YOU NEED SOME SELF-DISCIPLINE.
 <<jump main>>
 ===
 
 title: date_sakazuki_1_Neutral_ending_3
 ---
-When you wake up the next morning, you find yourself all alone. Someone has taken the time to close the office window for you, though. There's a note next to you. In blocky letters, it reads…
+When you wake up the next morning, you find yourself all alone. Someone has taken the time to close the office window for you, though. There's a note next to you. In blocky letters, it reads...
 Note: I HAVE NOTED YOUR DEDICATION FOR THE JOB. BUT RIGHT NOW, YOU LACK A PURPOSE. SEEK YOUR OWN JUSTICE. ASK YOURSELF WHY YOU CHOOSE TO BE A MARINE.
 <<jump main>>
 ===
 
 title: date_sakazuki_1_Bad_ending_2
 ---
-When you wake up the next morning, you find yourself all alone. Someone has taken the time to close the office window for you, though. There's a note next to you. In blocky letters, it reads…
+When you wake up the next morning, you find yourself all alone. Someone has taken the time to close the office window for you, though. There's a note next to you. In blocky letters, it reads...
 Note: YOU NEED TO SHAPE UP, SOLDIER. YOUR SELF DISCIPLINE IS LACKING AND YOU DON'T HAVE A CLEAR PURPOSE. BEING IN THE NAVY IS NOT A SAFE OCCUPATION, SO MAKE SURE YOU KNOW WHY YOU CHOSE THIS PATH IN THE FIRST PLACE.
 <<jump main>>
 ===

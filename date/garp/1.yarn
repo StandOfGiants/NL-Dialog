@@ -50,14 +50,14 @@ Garp: Not to catch criminals or to be a hero?
 
 title: date_garp_1_route_c
 ---
-Garp: Hmm… Are you sure you want to be a Marine, rookie? It's not a career for cowards.
+Garp: Hmm... Are you sure you want to be a Marine, rookie? It's not a career for cowards.
 -> Yes, I'm sure! I just have to get used to all of the cannonballs.... (+)
     Garp: Good! Keep working on that.
     <<jump date_garp_1_route_d>>
 -> Of course I'm sure! I made it here, didn't I? (+)
     Garp: Bwahaha! I suppose you did!
     <<jump date_garp_1_route_d>>
--> Ah, well, I'm more of an office worker, really. Training and all of that really isn't my strong suit…
+-> Ah, well, I'm more of an office worker, really. Training and all of that really isn't my strong suit...
     Garp: I suppose office work is necessary... why are you out here if you don't want to train?
     -> To give you some paperwork, sir. Here! (-)
         Garp: Thanks... you can be on your way now, rookie.
@@ -95,7 +95,7 @@ Garp: So here's a little training exercise I like to do with the rookies. You re
     Garp: That's the spirit!
 -> Um... yes?
     Garp: Good enough for me!
--> N-no, not really… (-)
+-> N-no, not really... (-)
     Garp: Oh, you'll be fine!
 Garp: I'll take it easy on you for now. I'm gonna throw some cannonballs, and you'll want to dodge left, right, then down. And by left, I mean your left. Got it?
 -> Got it!
@@ -145,7 +145,7 @@ title: date_garp_1_right_order
 Garp: Not too bad out there!
 -> You sure you weren't going easy on me? (+)
     Garp: Bwahaha! Is that a challenge? Guess I'll see you back here again for Round 2!
--> Boot camp paid off, I guess…
+-> Boot camp paid off, I guess...
     Garp: That's what it's for, rookie! You did well!
 -> I'm never doing this again. (-)
     Garp: Quitting already? That's too bad. You have some real potential!
@@ -154,7 +154,7 @@ Garp: Not too bad out there!
 
 title: date_garp_1_wrong_order
 ---
-Garp: Well… you almost had it.
+Garp: Well... you almost had it.
 -> “Almost?” Against a Marine legend? I'll take it!
     Garp: Hopefully next time you won't almost get hit in the head, either.
 -> I'll just have to try harder next time! (+)

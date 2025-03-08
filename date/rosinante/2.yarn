@@ -3,7 +3,7 @@ location: day(mess_hall)
 ---
 It's late at night. You are planning on sleeping soon, but the idea of a midnight snack has been keeping you up for a while now. The mess hall is empty at this hour and you walk up to the vending machine to buy a pack of rice crackers.
 You pick up the bag full of snacks just as you hear a powerful crashing sound right outside the door. You tense up. Did enemies infiltrate?
-You don't have any weapons on you but you still decide to investigate. You peek outside the door only to see…
+You don't have any weapons on you but you still decide to investigate. You peek outside the door only to see...
 [i]Rosinante?[/i]
 <<show_character rosinante center show>>
 He's lying on the floor, fallen over, with many cardboard boxes spread out around him. You run to help.
@@ -53,11 +53,11 @@ Rosinante: I started doing it to kill some time in the mornings.
 
 title: date_rosinante_2_Part_1_5A
 ---
-Rosinante: Please… Everyone had their parts, I just did mine.
+Rosinante: Please... Everyone had their parts, I just did mine.
 {$name}: Don't be so humble! You worked hard.
 {$name}: Do you think just anyone would be capable of pulling that off?
 Rosinante: I might have had an advantage, being Doflamingo's brother and all, but other than the infiltration, any good agent could pull it off I'm sure.
-{$name}: …
+{$name}: ...
 -> Wasn't it difficult? Fighting against your brother, I mean. (+1 Point)
     <<jump date_rosinante_2_Part_3A>>
 -> You are shocked hearing the information. You have never seen the former Warlord in person but old wanted posters are still around and easily accessible. The resemblance is there, but you don't want to put the vice-admiral in a bad position by asking difficult questions and instead keep silent.
@@ -69,14 +69,14 @@ Rosinante: I might have had an advantage, being Doflamingo's brother and all, bu
 title: date_rosinante_2_Part_3A
 ---
 For a few moments, it's silent, Rosinante smiling wistfully while avoiding your gaze.
-Rosinante: You're the first person to ask me that…
-{$name}: …
-Rosinante: It wasn't… It wasn't easy.
+Rosinante: You're the first person to ask me that...
+{$name}: ...
+Rosinante: It wasn't... It wasn't easy.
 Rosinante: I never hated him. He did despicable things but I could never truly hate him.
-Rosinante: He was still my brother after all… In the end, the only thing I could do for him was stop him from committing any more wickedness.
+Rosinante: He was still my brother after all... In the end, the only thing I could do for him was stop him from committing any more wickedness.
 {$name}: Did you two see each other, since it all happened?
 Rosinante: I couldn't bring myself to do it. I know he hates me, he thinks I've betrayed him.
-Rosinante: He's not wrong but… it's for the best this way.
+Rosinante: He's not wrong but... it's for the best this way.
 {$name}: Maybe one day, he'll see it that way too.
 Rosinante: Heh, unlikely but let's stop all this melancholic talk.
 {$name}: Of course. If you'd like to take your mind off things we should decide on an activity! The weekend is tomorrow, right? We don't need to sleep any time soon.
@@ -91,7 +91,7 @@ title: date_rosinante_2_Part_3B
 ---
 Rosinante: Is it such a hard thing to believe?
 Rosinante: That he is my brother?
--> You didn't want to say it, but…(-1 Point)
+-> You didn't want to say it, but...(-1 Point)
     <<jump date_rosinante_2_Part_3B2>>
 -> Try to explain. (+1 Point)
     <<jump date_rosinante_2_Part_3B1>>
@@ -99,18 +99,18 @@ Rosinante: That he is my brother?
 
 title: date_rosinante_2_Part_3B2
 ---
-{$name}: The two of you are so different… I could have never guessed.
+{$name}: The two of you are so different... I could have never guessed.
 Rosinante: Maybe you're right.
-{$name}: Being related to someone like him… It is hard to believe, when you're such a kind and careful person…
+{$name}: Being related to someone like him... It is hard to believe, when you're such a kind and careful person...
 Rosinante: Everyone has done things they're not proud of. Even me.
 {$name}: You must have had a reason!
-Rosinante: That's true… Everyone has their reasons. Even my brother, and he was able to make his own choices.
+Rosinante: That's true... Everyone has their reasons. Even my brother, and he was able to make his own choices.
 Rosinante: Each choice has a different consequence. We're all aware of them.
 Rosinante: It's not as simple as black and white justice.
 Rosinante: But you seem like the kind of person who knows that.
 -> It's not something I considered.
     <<jump date_rosinante_2_Part_4A>>
--> Of course, but it's still surprising…
+-> Of course, but it's still surprising...
     <<jump date_rosinante_2_Part_4B>>
 -> What about the other members of the family? What were they like?
     <<jump date_rosinante_2_Part_4C>>
@@ -119,11 +119,11 @@ Rosinante: But you seem like the kind of person who knows that.
 title: date_rosinante_2_Part_3B1
 ---
 {$name}: No! Of course not!
-{$name}: Wait! Not that I mean to say it's believable because you're like him…
+{$name}: Wait! Not that I mean to say it's believable because you're like him...
 {$name}: Because you're not at all like him!
 {$name}: You're completely different!
-You pause… Your words don't make sense at all and you don't want Rosinante to get the wrong idea.
-{$name}: What I meant to say… You can't be responsible for your brother's actions, so being compared to him is not fair. You're an amazing person, but not even the most skilled marines are exempt from the family drama. Look at Vice-Admiral Garp for example!
+You pause... Your words don't make sense at all and you don't want Rosinante to get the wrong idea.
+{$name}: What I meant to say... You can't be responsible for your brother's actions, so being compared to him is not fair. You're an amazing person, but not even the most skilled marines are exempt from the family drama. Look at Vice-Admiral Garp for example!
 Rosinante laughs at that. You're still on edge and you're not sure if you managed to say everything you wanted to.
 Rosinante: You think too highly of me.
 {$name}: That's not true. You're hardworking, kind and honest, you should give yourself more credit.
@@ -135,7 +135,7 @@ Rosinante: It's not as simple as black and white justice.
 Rosinante: But you seem like the kind of person who knows that.
 -> It's not something I considered.
     <<jump date_rosinante_2_Part_4A>>
--> Of course, but it's still surprising…
+-> Of course, but it's still surprising...
     <<jump date_rosinante_2_Part_4B>>
 -> What about the others? What were they like?
     <<jump date_rosinante_2_Part_4C>>
@@ -146,12 +146,12 @@ title: date_rosinante_2_Part_3C
 Rosinante raises an eyebrow. He doesn't seem to like your wording, but you stand by it. There is nothing wrong with what you said.
 {$name}: What? He's an awful person, you can't deny that.
 Rosinante: You're right, maybe.
-Rosinante: He tried to kill me more than once, I should hate him but…
+Rosinante: He tried to kill me more than once, I should hate him but...
 Rosinante: I just don't.
 {$name}: You're defending him?
 Rosinante: No. He made his choices and he got what he deserved for them.
 Rosinante: But it's still difficult to hear strangers speak about this.
-Stranger… Right, because that's all you are to him.
+Stranger... Right, because that's all you are to him.
 -> Apologize, maybe you can fix this.
     <<jump date_rosinante_2_Part_3_1C>>
 -> Speak up more, maybe he will understand your point of view.
@@ -161,10 +161,10 @@ Stranger… Right, because that's all you are to him.
 title: date_rosinante_2_Part_3_1C
 ---
 {$name}: You're right. Forgive me, Vice-Admiral. I didn't mean to put you in a bad position.
-{$name}: I didn't realize…
-{$name}: I mean, if my brother got in trouble with the law I wouldn't want to hear others speak about it either…
+{$name}: I didn't realize...
+{$name}: I mean, if my brother got in trouble with the law I wouldn't want to hear others speak about it either...
 Rosinante: It's alright. Thank you for understanding.
-…
+...
 A silence befalls the mess hall and it seems like neither of you know what to say. Maybe you should try to make conversation again.
 {$name}: So, Vice-Admiral. Your makeup hobby, are you any good at it?
 <<jump date_rosinante_2_Part_1_5B>>
@@ -201,13 +201,13 @@ Rosinante: I'm not that good at traditional make-up. I just learnt how to do fac
     <<jump date_rosinante_2_Part_2>>
 -> Hmm, not quite what I was expecting but it's still a new skill to learn.
     <<jump date_rosinante_2_Part_2>>
--> That's lame… What's even the point? (-1 Point)
+-> That's lame... What's even the point? (-1 Point)
     <<jump date_rosinante_2_Part_2_1>>
 ===
 
 title: date_rosinante_2_Part_2_1
 ---
-Rosinante: I guess there is no point to it…
+Rosinante: I guess there is no point to it...
 His tone is dejected, did you upset him?
 Rosinante: Just a little bit of fun, I suppose.
 -> More like a waste of time.
@@ -241,12 +241,12 @@ title: date_rosinante_2_Part_1C
 ---
 He laughs
 Rosinante: You think so?
-Rosinante: If only you could see me back then… you would take back your words in an instant.
+Rosinante: If only you could see me back then... you would take back your words in an instant.
 {$name}: Back then?
-Rosinante: Ah… well, I mean back on my mission.
+Rosinante: Ah... well, I mean back on my mission.
 -> You mean the Donquixote mission, right? You're legendary for that.
     <<jump date_rosinante_2_Part_1_5A>>
--> So that's how you learned… Are you any good at it?
+-> So that's how you learned... Are you any good at it?
     <<jump date_rosinante_2_Part_1_5B>>
 ===
 
@@ -277,11 +277,11 @@ title: date_rosinante_2_Part_2B
 ---
 Rosinante: Why not?
 His tone isn't offended, just slightly amused.
-{$name}: Well…
+{$name}: Well...
 {$name}: As a marine you are so orderly and Inspector General Sengoku always talks so highly of you! He's always giving you as an example all of the time. From what I've seen the DonQuixote Family isn't like that at all.
 Rosinante: You're right, but there are certain things expected of me, especially now that I'm a vice-admiral.
 Rosinante: While I was undercover there were hardly any restrictions.
-{$name}: Must be nice…
+{$name}: Must be nice...
 {$name}: Did you enjoy your time there? At least a little bit?
 <<jump date_rosinante_2_Part_2C>>
 ===
@@ -290,20 +290,20 @@ title: date_rosinante_2_Part_2D
 ---
 Rosinante: Oh? How come?
 He seems genuinely curious to hear your answer
-{$name}: Maybe at first I couldn't tell, but the more I get to know you… You seem like the type of person that stands out in a crowd.
+{$name}: Maybe at first I couldn't tell, but the more I get to know you... You seem like the type of person that stands out in a crowd.
 Rosinante: You think so?
 {$name}: You're clever and well-trained, you use a devil fruit that others would deem useless in a very efficient way, and you have distinct hobbies!
 You gesture to the boxes in front of you.
 {$name}: It's impressive really!
 He is definitely embarrassed after hearing your praise.
-Rosinante: That's too much…
+Rosinante: That's too much...
 {$name}: It's true though!
-Rosinante: I just do what I can. I appreciate your kind words, though…
+Rosinante: I just do what I can. I appreciate your kind words, though...
 Rosinante: You're very persistent and ambitious.
 Rosinante: Those are good qualities for a marine to have.
 {$name}: Ah, thank you. But I still have a lot to learn!
 Rosinante: We all do.
-{$name}: Speaking of learning… Should we get to it?
+{$name}: Speaking of learning... Should we get to it?
 <<jump date_rosinante_2_Part_6B>>
 ===
 
@@ -311,13 +311,13 @@ title: date_rosinante_2_Part_2C
 ---
 Rosinante breathes deeply, a furrow appearing between his eyebrows. His next words are hesitant.
 Rosinante: Not all the time I spent there was bad.
-Rosinante: Living with someone for so long… It's impossible to not get attached.
+Rosinante: Living with someone for so long... It's impossible to not get attached.
 Rosinante: Even among pirates there are good people.
 Rosinante: The same way there are bad people among the marines.
 Rosinante: But you seem like the kind of person who knows that.
 -> It's not something I considered.
     <<jump date_rosinante_2_Part_4A>>
--> Of course, but it's still surprising…
+-> Of course, but it's still surprising...
     <<jump date_rosinante_2_Part_4B>>
 -> How were they like?
     <<jump date_rosinante_2_Part_4C>>
@@ -330,7 +330,7 @@ Rosinante: Maybe the world would be a different place if pirates were always bad
 Rosinante: Everyone has their reasons.
 -> I still don't understand.
     <<jump date_rosinante_2_Part_5A>>
--> It does make sense…
+-> It does make sense...
     <<jump date_rosinante_2_Part_5B>>
 ===
 
@@ -341,10 +341,10 @@ Rosinante: The same way marines are supposed to protect people and yet so many o
 {$name}: But we're weeding them out! They're not allowed to keep their positions.
 Rosinante: Sometimes it takes months or even years before they're found out. Until then they do what they want with no repercussions.
 Rosinante: The system allows it.
-{$name}: The system…
-{$name}: The system that we're a part of…
-Rosinante: As much as I'd like to say we can cut out the rotten from within, many people have tried before… and failed
-Rosinante: The system is also why good people become pirates. I've seen it happen all too many times…
+{$name}: The system...
+{$name}: The system that we're a part of...
+Rosinante: As much as I'd like to say we can cut out the rotten from within, many people have tried before... and failed
+Rosinante: The system is also why good people become pirates. I've seen it happen all too many times...
 -> You think his words over. It's like he opened your eyes.
     <<jump date_rosinante_2_Part_5_1B>>
 -> You think his words over. You disagree completely.
@@ -359,9 +359,9 @@ title: date_rosinante_2_Part_5_1B
 
 title: date_rosinante_2_Part_5_2B
 ---
-{$name}: That makes no sense… The system exists to punish the wicked. Sure some may still infiltrate the marine ranks, but they're eventually kicked out! Maybe we don't notice them soon enough sometimes, but when we do, it's over for them. We don't tolerate their existence.
+{$name}: That makes no sense... The system exists to punish the wicked. Sure some may still infiltrate the marine ranks, but they're eventually kicked out! Maybe we don't notice them soon enough sometimes, but when we do, it's over for them. We don't tolerate their existence.
 He smiles the same way one would in front of a naive child.
-Rosinante: If only it was that simple…
+Rosinante: If only it was that simple...
 {$name}: It is! Bad people are punished, it doesn't matter their reason, a bad marine will be kicked out and there is no such thing as a good pirate.
 Rosinante: I suppose nothing I say will change your mind.
 You shake your head. You're not that easily swayed.
@@ -379,7 +379,7 @@ Rosinante: But that doesn't mean we don't have our roles to play!
 Rosinante: If we do good things that are within our power then we are on our way to make the world a better place. So don't worry too much about it.
 He gives an encouraging smile.
 {$name}: I understand, sir. Thank you.
-There is still something that has been weighing on your mind…
+There is still something that has been weighing on your mind...
 -> What about the people in the Family? What were they like?
     <<jump date_rosinante_2_Part_4C>>
 -> Can you show me how to do make-up?
@@ -414,7 +414,7 @@ He doesn't respond immediately. It's like he's trying to find the best answer.
 Rosinante: Just like any other pirate group, I guess.
 Rosinante: Just a bunch of different, eccentric people coming together and doing whatever they please, whenever they please.
 That makes you laugh a little
-{$name}: Sounds messy…
+{$name}: Sounds messy...
 Rosinante: It was.
 Rosinante: Some of them were wicked, awful people. I'm not proud of the things I did to earn their trust.
 {$name}: I can't imagine what you went through, but good things probably came out of it.
@@ -427,24 +427,24 @@ Rosinante: That's true! Like Law and this silly hobby of mine.
     Rosinante: Yeah!
     He leans in to whisper the next words, even though no one else was around to hear them.
     Rosinante: I'll tell you but don't tell anyone.
-    {$name}: Alright…
-    Rosinante: Well, he's sort of like… my son! I suppose.
+    {$name}: Alright...
+    Rosinante: Well, he's sort of like... my son! I suppose.
     He laughs, he truly does look like a proud father at that moment. Although you're surprised at the revelation, you don't have the heart to interrupt him.
     Rosinante: We took care of each other many years ago! He saved my life.
     {$name}: How did he do that?
     Rosinante: Well, you know that Ope-Ope fruit he's got? That's driving all the other marines crazy.
-    {$name}: Of course. I heard it's very troublesome and difficult to fight against…
+    {$name}: Of course. I heard it's very troublesome and difficult to fight against...
     Rosinante: I gave it to him! But my brother was really mad about that, he had other plans for it. In the end we came up with a plan, where I pretended to be tricked by him and Doflamingo forgave me. It took a while but I managed to earn his trust again.
     {$name}: And you continued to feed all his information to the marines which led to his downfall.
-    {$name}: To think that Trafalgar Law would aid us like this…
+    {$name}: To think that Trafalgar Law would aid us like this...
     Rosinante: He's not as bad as they say, don't worry,
-    You're not so sure about that… All the stories about him are very morbid to say the least. But you couldn't possibly ruin Rosinante's joy right now.
-    {$name}: Thank you for trusting me with this, sir… I won't tell a soul.
+    You're not so sure about that... All the stories about him are very morbid to say the least. But you couldn't possibly ruin Rosinante's joy right now.
+    {$name}: Thank you for trusting me with this, sir... I won't tell a soul.
     You know it could be bad for him if word of this got out.
     Rosinante: I know that! You're alright.
     The conversation comes to a stand still again. Good thing, you know exactly what's next.
     {$name}: Would you be willing to show me how to do make-up?
-    Rosinante: It's not that big of a deal, but if you're sure…
+    Rosinante: It's not that big of a deal, but if you're sure...
     {$name}: I'm sure!
     <<jump date_rosinante_2_Part_6B>>
 -> Speaking of which, show me how to do it!
@@ -470,7 +470,7 @@ Rosinante: Even if you mess it up, we can just wash it, don't worry too much!
 Feeling more encouraged, you pick up the brush he hands you, your fingers touching slightly. You're way too aware of contact but you try your best to avert your attention from it. You start drawing on his face.
 -> You did great! It looks amazing.
     <<jump date_rosinante_2_Part_7A>>
--> It's not the best you could have done, but it's not half-bad…
+-> It's not the best you could have done, but it's not half-bad...
     <<jump date_rosinante_2_Part_7B>>
 -> You knew you were a beginner but you didn't think it would end up quite so bad.
     <<jump date_rosinante_2_Part_7C>>
@@ -480,11 +480,11 @@ title: date_rosinante_2_Part_7A
 ---
 After you're done he looks in a tiny mirror. The lines are neat and the colors match well to create a beautiful design.
 Rosinante: Wow! This is incredible, {$name}.
-{$name}: Thank you…
+{$name}: Thank you...
 The praise is unexpected, you're not sure what to say.
 Rosinante: I mean it! My first attempt was awful, but this??
 Rosinante: This is great! You have a natural talent for this.
-{$name}: I just did whatever came to my mind…
+{$name}: I just did whatever came to my mind...
 Rosinante: Give yourself more credit, {$name}.
 {$name}: I appreciate your kind words, sir.
 Rosinante: Hey, just call me Rosinante, okay?
@@ -492,7 +492,7 @@ Rosinante: We're way past that sir, recruit stuff, don't you agree?
 That makes you happy.
 {$name}: Of course, Rosinante.
 The name is unfamiliar on your tongue but you could easily get used to it.
-And so, with a new found friendship, the two of you continue to chat long into the night…
+And so, with a new found friendship, the two of you continue to chat long into the night...
 <<jump date_rosinante_2_DATE_IS_OVER>>
 ===
 
@@ -500,7 +500,7 @@ title: date_rosinante_2_Part_7B
 ---
 Once that's done and over with, he picks up a small mirror to check your work. It's not bad at all! There are some small mistakes here and there but unless you look closely they're almost unnoticeable. He nods in approval.
 Rosinante: {$name}, I must say I'm impressed. For your first attempt it looks great!
-{$name}: Thank you…
+{$name}: Thank you...
 Rosinante: With a little bit of practice you could improve a lot!
 {$name}: You think so?
 Rosinante: Of course.  It's clear you have talent. I can give you some tips if you ever decide to try again.
@@ -510,31 +510,31 @@ Rosinante: We're way past that sir, recruit stuff, don't you agree?
 That makes you happy.
 {$name}: Of course, Rosinante.
 The name is unfamiliar on your tongue but you could easily get used to it.
-And so, with a new found friendship, the two of you continue to chat long into the night…
+And so, with a new found friendship, the two of you continue to chat long into the night...
 <<jump date_rosinante_2_DATE_IS_OVER>>
 ===
 
 title: date_rosinante_2_Part_7C
 ---
-He looks in a small mirror, judging the messy colours and twisted lines carefully. He checks every angle for a while before…
+He looks in a small mirror, judging the messy colours and twisted lines carefully. He checks every angle for a while before...
 He promptly bursts into a raucous laughter.
 Rosinante: {$name}! AHAHAHAHAHA
 He clutches his sides and laughs. You're not sure how to feel.
 {$name}: Is this sort of reaction necessary?
 Rosinante: I'm sorry- hahahaha
 He keeps laughing and laughing. You cover your face in shame. That seems to make him calm down a little.
-Rosinante: I'm sorry, {$name}. I didn't mean to laugh… It looks great!
+Rosinante: I'm sorry, {$name}. I didn't mean to laugh... It looks great!
 {$name}: Please don't lie to me, sir, I have more pride than that.
-Rosinante: Sorry, sorry. But I mean it! It's alright! You could practice a bit more, but other than that…
-{$name}: I know the truth…
-Rosinante: Hey… It's fine! For a first attempt, it's not that bad. I'll let you try again and I'll give you some tips this time, alright?
+Rosinante: Sorry, sorry. But I mean it! It's alright! You could practice a bit more, but other than that...
+{$name}: I know the truth...
+Rosinante: Hey... It's fine! For a first attempt, it's not that bad. I'll let you try again and I'll give you some tips this time, alright?
 {$name}: I'm not sure I wanna try again, but if I change my mind I'll ask for your help. Thank you, sir.
 Rosinante: Hey, just call me Rosinante, okay?
 Rosinante: We're way past that sir, recruit stuff, don't you agree?
 That makes you happy.
 {$name}: Of course, Rosinante.
 The name is unfamiliar on your tongue but you could easily get used to it.
-And so, with a new found friendship, the two of you continue to chat long into the night…
+And so, with a new found friendship, the two of you continue to chat long into the night...
 <<jump date_rosinante_2_DATE_IS_OVER>>
 ===
 

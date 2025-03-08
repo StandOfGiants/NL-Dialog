@@ -9,7 +9,7 @@ Helmeppo: Hello {$name}, I was actually looking for you. I’m heading into town
     <<set $hd3_points += 1>>
     The two of you make plans to meet in an hour and part ways.
     <<jump date_helmeppo_3_WalkOver>>
--> I’m not sure…
+-> I’m not sure...
     Helmeppo: It’s at Cangrejo Amarillo, if that matters.
     Cangrejo Amarillo. A super fancy restaurant. Its small footprint means limited seating, and its high prices mean most people at Headquarters hesitate to visit it very often.
     -> You know what? It does. Sign me up for free fancy food.
@@ -59,7 +59,7 @@ The question seems to catch Helmeppo off guard, which means it’s up to you to 
     The greeter brings you to a table in the middle of the restaurant. It’s a little busy with all the servers and bussers, but it gives the place a lively feel.
     As you’re seated and handed your menus, Helmeppo seems distracted by something.
     <<jump date_helmeppo_3_Convo1>>
--> It’s a date, so…
+-> It’s a date, so...
     <<set $hd3_points += 1>>
     Greeter: I see!
     The greeter shows you to an out-of-the-way table near the back, where the lights are a little lower and there are more decorative candles on the tables.
@@ -73,7 +73,7 @@ characters: [helmeppo]
 It’s up to you to get the conversation going.
 -> So why do you use kukri? They’re an unusual weapon.
     That seems to focus him. One of Helmeppo’s hands drifts to where his weapons are sheathed.
-    Helmeppo: Oh! Um… No special reason. But anyone could tell when I started out that swords were [i]not[/i] right for me.
+    Helmeppo: Oh! Um... No special reason. But anyone could tell when I started out that swords were [i]not[/i] right for me.
     -> That bad, huh?
         <<set $hd3_points += 1>>
         Helmeppo lets out a wry laugh.
@@ -105,7 +105,7 @@ It’s up to you to get the conversation going.
                     <<jump date_helmeppo_3_OrderFood>>
             -> Knife
                 Helmeppo nods approvingly.
-                Helmeppo: Quick, versatile… Never a bad choice.
+                Helmeppo: Quick, versatile... Never a bad choice.
                 Helmeppo: Just don’t let them tell you the standard issue ones are fine.
                 Helmeppo: They are not fine. Get your own. Trust me.
                 <<jump date_helmeppo_3_OrderFood>>
@@ -115,7 +115,7 @@ It’s up to you to get the conversation going.
                 Helmeppo: Sadly, no.
                 <<jump date_helmeppo_3_OrderFood>>
         -> I was hoping you would help me.
-            Helmeppo: Oh really? I’m not sure I’m the best…
+            Helmeppo: Oh really? I’m not sure I’m the best...
             He pauses, then hangs his head.
             Helmeppo: I actually offered, didn’t I?
             {$name}: Yeah, but if you don’t want-
@@ -125,7 +125,7 @@ It’s up to you to get the conversation going.
             Helmeppo shakes his head.
             Helmeppo: Pirates aren’t playing around. You’ll want to pick something that... Oh.
             Helmeppo: Sorry. Not my place to be giving lectures.
-            Helmeppo: But that offer still stands. If you want help picking one…
+            Helmeppo: But that offer still stands. If you want help picking one...
             <<jump date_helmeppo_3_WeaponSelect>>
     -> And they didn’t just make you keep trying?
         Helmeppo: I think the military is pretty good at recognizing a lost cause when they see one.
@@ -153,14 +153,14 @@ It’s up to you to get the conversation going.
             {$name}: Oooh, fancy. Teach me?
             Helmeppo: If I must. Though not tonight. Tonight is about eating a rare good meal at Marineford.
             {$name}: You don’t like mess hall food?
-            Helmeppo: It’s not the worst. But this place? This is [i]food[/i]. Speaking of which…
+            Helmeppo: It’s not the worst. But this place? This is [i]food[/i]. Speaking of which...
             <<jump date_helmeppo_3_OrderFood>>
     -> But who even thought to try kukri?
         Helmeppo: Bogard. But he made me try a lot of things.
         {$name}: Oh yeah? What else?
-        Helmeppo: Well, there were the kama. That was… Yeah, terrible. Utterly terrible.
+        Helmeppo: Well, there were the kama. That was... Yeah, terrible. Utterly terrible.
         Helmeppo: And then a naginata. But a two-handed weapon just never felt right.
-        Helmeppo: And then there was the squeaky hammer…
+        Helmeppo: And then there was the squeaky hammer...
         -> I can’t believe that.
             Helmeppo: That’s good, because it was a joke.
             <<jump date_helmeppo_3_OrderFood>>
@@ -178,12 +178,12 @@ It’s up to you to get the conversation going.
             Helmeppo: You know it.
             <<jump date_helmeppo_3_OrderFood>>
 -> Would you get another pet wolf if you had the chance?
-    Helmeppo: Would I… Huh. You know, that’s a good question.
+    Helmeppo: Would I... Huh. You know, that’s a good question.
     {$name}: You haven’t given it any thought before?
     Helmeppo: Honestly? No. So much has happened since then, and frankly, the Marines doesn’t seem like a great place to keep a pet.
-    Helmeppo: … Although maybe…
+    Helmeppo: ... Although maybe...
     -> Thinking you might get one now?
-        Helmeppo: Hmmm… Maybe if I get to vice admiral.
+        Helmeppo: Hmmm... Maybe if I get to vice admiral.
         Helmeppo: At that point, I’ll probably need a therapy pet to keep me from stressing myself into a heart attack.
         -> Do you think you’ll get there?
             <<set $hd3_points += 1>>
@@ -214,7 +214,7 @@ It’s up to you to get the conversation going.
                 <<jump date_helmeppo_3_OrderFood>>
             -> Coby?
                 Helmeppo pales a little.
-                Helmeppo: Not that I haven’t thought about squeezing him when he’s the one stressing me out but…
+                Helmeppo: Not that I haven’t thought about squeezing him when he’s the one stressing me out but...
                 <<jump date_helmeppo_3_OrderFood>>
         -> You? Vice admiral?
             <<set $hd3_points -= 1>>
@@ -229,7 +229,7 @@ It’s up to you to get the conversation going.
         -> I’d want a dog or cat.
             Helmeppo: That would be cute. But if you don’t take them on the ship with you, I imagine they’d get really lonely.
             He frowns a little.
-            Helmeppo: And come to think of it… Very hungry too. I don’t think the base has a pet sitting service.
+            Helmeppo: And come to think of it... Very hungry too. I don’t think the base has a pet sitting service.
             -> Oh, yeah. That’s probably right.
                 Helmeppo looks a little regretful for saying anything.
                 Helmeppo: Well, I feel like if you really want one, you’ll figure something out.
@@ -238,7 +238,7 @@ It’s up to you to get the conversation going.
                 Helmeppo: You’re really gung ho about this.
                 Helmeppo: Well, I hope you get that pet someday.
                 <<jump date_helmeppo_3_OrderFood>>
-            -> On second thought, maybe I don’t want a pet…
+            -> On second thought, maybe I don’t want a pet...
                 He nods regretfully.
                 Helmeppo: Yeah. Hate to say it, but the Marines is probably no place for a pet.
                 <<jump date_helmeppo_3_OrderFood>>
@@ -248,7 +248,7 @@ It’s up to you to get the conversation going.
             Helmeppo: Why a horse though? If it’s not prying too much.
             -> To ride into battle.
                 Helmeppo: Leading the charge? I’d feel bad for the horse, though.
-                {$name}: Oh… That’s a good point.
+                {$name}: Oh... That’s a good point.
                 Helmeppo: At least it would get plenty of exercise, though?
                 <<jump date_helmeppo_3_OrderFood>>
             -> Horses are awesome.
@@ -258,7 +258,7 @@ It’s up to you to get the conversation going.
                 He nods.
                 Helmeppo: Nostalgia, then? Like me and that wolf I guess.
                 <<jump date_helmeppo_3_OrderFood>>
-        -> Something a little more… Unique, I think.
+        -> Something a little more... Unique, I think.
             Helmeppo nods.
             Helmeppo: I can relate to that instinct. What were you thinking?
             -> An insect.
@@ -308,18 +308,18 @@ It’s up to you to get the conversation going.
                 He shrugs.
                 Helmeppo: Ah, well. I guess I’ll take it as a compliment.
                 <<jump date_helmeppo_3_OrderFood>>
-            -> Of course, you’d be trapped with them too…
+            -> Of course, you’d be trapped with them too...
                 <<set $hd3_points += 1>>
                 Helmeppo actually laughs.
                 Helmeppo: A sort of hell for both sides, huh?
-                Helmeppo: Well, not my idea of a good time, but I guess it might be entertaining to watch. At least until the ship went down in flames…
+                Helmeppo: Well, not my idea of a good time, but I guess it might be entertaining to watch. At least until the ship went down in flames...
                 <<jump date_helmeppo_3_OrderFood>>
         -> That wasn’t my intent.
             With a wry smile, he glances out the window before answering.
             Helmeppo: Maybe it should have been. I appreciate the vote of confidence, but I really wouldn’t be very good with my own command. It’s not what I want to do.
             -> Oh, OK.
                 Helmeppo: Sorry. Didn’t make you feel bad.
-                Helmeppo: I guess that’s just the natural me shining through…
+                Helmeppo: I guess that’s just the natural me shining through...
                 <<jump date_helmeppo_3_OrderFood>>
             -> What [i]do[/i] you want to do?
                 He chuckles.
@@ -329,7 +329,7 @@ It’s up to you to get the conversation going.
             <<set $hd3_points += 1>>
             Helmeppo: I’ve used it a time or two in my life.
             He chuckles.
-            Helmeppo: Well… You’re probably right. It would be interesting, in the most sarcastic possible meaning of the word.
+            Helmeppo: Well... You’re probably right. It would be interesting, in the most sarcastic possible meaning of the word.
             Helmeppo: I’d be demoted before a pirate crew had time to put an end to us, I imagine.
             {$name}: Would it really be [i]that[/i] bad?
             Helmeppo: Honestly, probably worse.
@@ -367,9 +367,9 @@ Helmeppo: So, what sort of weapons were you considering?
     -> I generally hit the target.
         Helmeppo: Oh yeah? Well, if you like the idea of going with range, you’re probably going to want to bump that up just a little before committing.
         <<jump date_helmeppo_3_OrderFood>>
-    -> Uhhh…
+    -> Uhhh...
         As you search for a way to describe your aim that doesn’t sound awful, he shakes his head.
-        Helmeppo: No offense, but … Think of something else.
+        Helmeppo: No offense, but ... Think of something else.
         <<jump date_helmeppo_3_WeaponSelect>>
 -> Something more unusual
     He looks impressed.
@@ -385,7 +385,7 @@ Helmeppo: So, what sort of weapons were you considering?
         <<jump date_helmeppo_3_OrderFood>>
     -> Something that explodes
         He looks a little taken aback.
-        Helmeppo: Well, that sounds… Effective. But I’m not sure anyone would want you on your ship if you’re tossing explosives around. Anything else?
+        Helmeppo: Well, that sounds... Effective. But I’m not sure anyone would want you on your ship if you’re tossing explosives around. Anything else?
         <<jump date_helmeppo_3_WeaponSelect>>
 -> Let’s talk about something else.
     Helmeppo: Oh, yeah. Sorry for talking shop while we’re on down time.
@@ -413,32 +413,32 @@ title: date_helmeppo_3_Convo2
 characters: [helmeppo Waiter]
 ---
 The waiter collects your menus and departs with your dinner order. Helmeppo sips his water thoughtfully.
-Helmeppo: Thanks for coming out with me, by the way. Our last mission was kind of intense. I needed to unwind. I’d usually ask Coby, but he’s… Well, you’ve seen him.
+Helmeppo: Thanks for coming out with me, by the way. Our last mission was kind of intense. I needed to unwind. I’d usually ask Coby, but he’s... Well, you’ve seen him.
 Helmeppo sighs.
-Helmeppo: He throws himself into danger for the greater good every. Single. Time. Including this last one. If he were here, I’d just end up lecturing him, and I…
+Helmeppo: He throws himself into danger for the greater good every. Single. Time. Including this last one. If he were here, I’d just end up lecturing him, and I...
 He stops seeming to realize he’s been rambling. He coughs, looking flustered.
-Helmeppo: I am clearly too wound up. So, to entirely change the topic… If you weren’t a Marine, what do you think you’d be doing now?
+Helmeppo: I am clearly too wound up. So, to entirely change the topic... If you weren’t a Marine, what do you think you’d be doing now?
 <<jump date_helmeppo_3_Answer1>>
 ===
 
 title: date_helmeppo_3_Answer1
 ---
 -> I think I’d work with animals.
-    Helmeppo: Oh, interesting. Like training them, or fighting them, or…
+    Helmeppo: Oh, interesting. Like training them, or fighting them, or...
     -> Training, for sure.
-        Helmeppo: Oh, like horses, or dogs, or…
+        Helmeppo: Oh, like horses, or dogs, or...
         -> Horses or other riding animals.
             Helmeppo: I suppose there’s always a need for that.
             His eyes widen abruptly.
-            Helmeppo: I mean… Not to call it boring, or anything. I just meant… Uh…
+            Helmeppo: I mean... Not to call it boring, or anything. I just meant... Uh...
             <<jump date_helmeppo_3_Convo3>>
         -> Dogs.
-            Helmeppo: That sounds nice, but isn’t it better to just let the owner train the dog? Otherwise how would…
+            Helmeppo: That sounds nice, but isn’t it better to just let the owner train the dog? Otherwise how would...
             He pauses, clearly rethinking what he’s saying, then trails off.
             <<jump date_helmeppo_3_Convo3>>
         -> I mean, whatever’s around. I’m not picky.
-            Helmeppo: Really? That sounds less like a plan and more like you’re just…
-            Helmeppo: Wait. [i]Is[/i] this a joke? I honestly can’t…
+            Helmeppo: Really? That sounds less like a plan and more like you’re just...
+            Helmeppo: Wait. [i]Is[/i] this a joke? I honestly can’t...
             He trails off, looking disconcerted.
             <<jump date_helmeppo_3_Convo3>>
     -> Fighting!
@@ -447,11 +447,11 @@ title: date_helmeppo_3_Answer1
         Helmeppo: It honestly took longer than I thought it would.
         Helmeppo: I also was sure it would be Garp.
         -> Yeah, fighting a bear sounds like a pretty good test. Maybe a sea king.
-            Helmeppo: A sea king? Isn’t that a little…
+            Helmeppo: A sea king? Isn’t that a little...
             He pauses, clearly rethinking whatever he was about to say. His face goes red.
             <<jump date_helmeppo_3_Convo3>>
-        -> I meant more like hunting for food, but…
-            Helmeppo: Oh… Yeah, that actually makes [i]way[/i] more sense, doesn’t it.
+        -> I meant more like hunting for food, but...
+            Helmeppo: Oh... Yeah, that actually makes [i]way[/i] more sense, doesn’t it.
             <<jump date_helmeppo_3_Convo3>>
     -> In what world does “working with animals” mean “with my weapons”!?
         He opens his mouth, starts to speak, then closes it again.
@@ -466,14 +466,14 @@ title: date_helmeppo_3_Answer1
             He cuts off, looking angry with himself.
             <<jump date_helmeppo_3_Convo3>>
         -> Peacekeeper.
-            Helmeppo: Honestly, that feels like a better way to impact the world than being here. Though... Uh… Sorry.
+            Helmeppo: Honestly, that feels like a better way to impact the world than being here. Though... Uh... Sorry.
             <<jump date_helmeppo_3_Convo3>>
     -> Building things. I like working with my hands.
         Helmeppo: Like a craftsperson?
         -> Maybe more like a farmer?
-            Helmeppo: Like… Working in the dirt?
+            Helmeppo: Like... Working in the dirt?
             He looks momentarily unsettled.
-            Helmeppo: Er… I mean, if that’s something that would make your life happy, then… Yes. That’s… nice.
+            Helmeppo: Er... I mean, if that’s something that would make your life happy, then... Yes. That’s... nice.
             <<jump date_helmeppo_3_Convo3>>
         -> Yeah, a craftsperson.
             He takes another sip of his water before speaking again.
@@ -484,11 +484,11 @@ title: date_helmeppo_3_Answer1
             Helmeppo: Really? More power to you, but it sounds like a lot of work.
             You don’t think he means anything rude by that. But it kinda [i]sounds[/i] rude.
             <<jump date_helmeppo_3_Convo3>>
-    -> Actually, on second thought…
+    -> Actually, on second thought...
         <<jump date_helmeppo_3_Answer1>>
 -> I don’t think I could imagine doing something else.
     Helmeppo: Really? Nothing at all?
-    -> Actually, on second thought…
+    -> Actually, on second thought...
         <<jump date_helmeppo_3_Answer1>>
     -> No. To reach my dreams, this is the best place for me.
         He smiles briefly.
@@ -499,7 +499,7 @@ title: date_helmeppo_3_Answer1
             You both fall quiet.
             <<jump date_helmeppo_3_Convo3>>
         -> You don’t have anything you want that strongly?
-            Helmeppo: Eh…
+            Helmeppo: Eh...
             He hesitates, then seems to steel himself.
             Helmeppo: Not in the way you mean. I guess my dreams aren’t really that concrete. Maybe someday.
             <<jump date_helmeppo_3_Convo3>>
@@ -509,7 +509,7 @@ title: date_helmeppo_3_Convo3
 ---
 He seems to realize he’s said something awkward and apologizes with a blush, but the damage is done. The atmosphere has gotten a little awkward.
 Luckily, the food arrives almost immediately after. For a couple minutes, the two of you eat mostly in uncomfortable silence while the restaurant hums around you. But after a bit, you can’t stand it anymore. You want to get some sort of conversation going again.
-So, what do people talk about when they’re hanging out outside of work? Um…
+So, what do people talk about when they’re hanging out outside of work? Um...
 -> What kind of music do you like?
     The question seems to catch him off guard.
     Helmeppo: Music? I don’t know. I don’t really listen to too much. There are a couple pop singers I like. And some stuff out of the West Blue.
@@ -534,7 +534,7 @@ So, what do people talk about when they’re hanging out outside of work? Um…
                 <<jump date_helmeppo_3_FriendlyClose>>
         -> Uta.
             Helmeppo visibly pales.
-            Helmeppo: Oh… Yeah? She has quite a voice, that’s for sure.
+            Helmeppo: Oh... Yeah? She has quite a voice, that’s for sure.
             -> You don’t like her music?
                 Helmeppo: It’s good. I just have some bad associations, is all.
                 <<jump date_helmeppo_3_FriendlyClose>>
@@ -570,7 +570,7 @@ So, what do people talk about when they’re hanging out outside of work? Um…
             <<jump date_helmeppo_3_FriendlyClose>>
 -> Where would you want to go on vacation?
     He considers the question between bites of his meal.
-    Helmeppo: Vacation. I haven’t thought about that in ages. A resort might be nice. Or maybe back to the Baratie. I’ve always wanted to try that place…
+    Helmeppo: Vacation. I haven’t thought about that in ages. A resort might be nice. Or maybe back to the Baratie. I’ve always wanted to try that place...
     -> A resort?
         Helmeppo: There are a few of them out there. I went to a couple as a kid, but I barely remember them.
         Helmeppo: It would be nice to see if they live up to my memory. All the weaker seas but East Blue have at least one. Which would you visit, if you could?
@@ -623,7 +623,7 @@ So, what do people talk about when they’re hanging out outside of work? Um…
     -> Hold it in.
         Finally, he swallows, then shakes his head a bit sardonically.
         Helmeppo: Well, I’m glad someone said it.
-        He laughs. You…
+        He laughs. You...
         -> Finally let it out.
             <<set $hd3_points += 1>>
             He seems a little surprised when you start laughing along with him, but then relaxes.
@@ -668,7 +668,7 @@ The two of you finish your meal with inconsequential small talk.
 title: date_helmeppo_3_GoodClose
 ---
 After a short, thoughtful period, Helmeppo speaks.
-Helmeppo: Hey, I know it’s a little late. But I wanted to say… Thanks. I was kind of rude about your dreams earlier. I shouldn’t have said something like that. But you either didn’t hold it against me or are waiting to get revenge until we’re out of my favorite restaurant. Either way, I appreciate it.
+Helmeppo: Hey, I know it’s a little late. But I wanted to say... Thanks. I was kind of rude about your dreams earlier. I shouldn’t have said something like that. But you either didn’t hold it against me or are waiting to get revenge until we’re out of my favorite restaurant. Either way, I appreciate it.
 The two of you continue talking about all manner of things as you finish your meal.
 <<jump date_helmeppo_3_GoHome2>>
 ===
@@ -699,7 +699,7 @@ You wave goodbye, ready to head back to the rest of your day.
 <<else>>
     <<romance_points helmeppo 2>>
     He waves back and smiles a little, but he looks a little uncomfortable as well.
-    Helmeppo: I appreciate… No. I’m glad you agreed to come with me. I had a surprisingly good time. Not that it’s surprising because of you, just… Ah…
+    Helmeppo: I appreciate... No. I’m glad you agreed to come with me. I had a surprisingly good time. Not that it’s surprising because of you, just... Ah...
     He blushes a little and turns abruptly, hurrying off. (+2 points)
 <<endif>>
 

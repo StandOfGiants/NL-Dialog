@@ -49,12 +49,12 @@ Smoker: I don’t know if "fond" is the right word, but I like arranging 'em. He
 
 Smoker: I could show you my rocks sometime if you want.
 -> That would be great! Are they like the rocks here?
-  Smoker: Not really. They're a little different. One might even call them… personal. I’ve chosen them carefully.
+  Smoker: Not really. They're a little different. One might even call them... personal. I’ve chosen them carefully.
   <<jump date_smoker_1_Part_3B>>
 -> Maybe if I'm free...
     <<jump date_smoker_1_Part_3C>>
 -> Ha, that’s what he said!
-  Smoker raises an eyebrow at you but he doesn’t laugh. Ah, that joke [i]really[/i] didn’t stick the landing…
+  Smoker raises an eyebrow at you but he doesn’t laugh. Ah, that joke [i]really[/i] didn’t stick the landing...
   <<jump date_smoker_1_Part_3D>>
 ===
 
@@ -133,7 +133,7 @@ Smoker: Heh, Tashigi says that kind of thing a lot. I'll tell you the same thing
   Smoker: Fuck, I don't know. What works for me isn't necessarily gonna’ work for you.
   <<jump date_smoker_1_Part_4C>>
 -> Well, I need to get some fighting experience first, of course...what kind of weapon would you recommend?
-  Smoker: Depends on what you're comfortable with or what you think is fun. I chose the jitte because I thought it was an interesting challenge, and the seastone helped against fruit users, especially before I learned to use Haki. It also makes for some… interesting teamwork exercises at times.
+  Smoker: Depends on what you're comfortable with or what you think is fun. I chose the jitte because I thought it was an interesting challenge, and the seastone helped against fruit users, especially before I learned to use Haki. It also makes for some... interesting teamwork exercises at times.
   <<jump date_smoker_1_Part_4B>>
 -> What, you think I don't know that?
   Smoker: I dunno. Do you?
@@ -205,7 +205,7 @@ Smoker: What about you? You on the market?
 
 
 
-A frog in the pond catches your eye, and Smoker's, too. The pond is quite lovely, well-kept with a scattering of lily pads on top. You and Smoker walk over in a comfortable silence, your hand close enough to his to feel its warmth. Lost in Smoker’s… everything, you fail to keep track of the frog.
+A frog in the pond catches your eye, and Smoker's, too. The pond is quite lovely, well-kept with a scattering of lily pads on top. You and Smoker walk over in a comfortable silence, your hand close enough to his to feel its warmth. Lost in Smoker’s... everything, you fail to keep track of the frog.
 Smoker: Huh, I wonder where that frog went...
 -> Let me see.
   You crouch over the lip of the pond.
@@ -252,7 +252,7 @@ Smoker: Speaking of teamwork, what kind of weapon do you like the best?
   Smoker: Fair enough, but being a logia doesn’t make me invincible. I have to be corporeal to hit my opponents, but it’s good to be aware of your surroundings. It’s why I use a jitte - I can get pretty good range and avoid taking hits.
   -> Yeah, it's a long weapon.
       <<jump date_smoker_1_Part_4BPart2A>>
-  -> I noticed when I saw you sparring earlier… Can I touch it?
+  -> I noticed when I saw you sparring earlier... Can I touch it?
       <<jump date_smoker_1_Part_4BPart2B>>
 -> Just punches and kicks. It's easier to control myself than an object.
   Smoker: You ever want to mix things up with a weapon?
@@ -295,7 +295,7 @@ title: date_smoker_1_Part_4BPart2B
 ---
 From seemingly nowhere, Smoker produces a jitte. And not just any jitte - it’s clearly Smoker’s own, complete with minor imperfections after countless battles. He leans in close, his breath tickling against your neck.
 Smoker: Here's how you hold it. Best to use two hands first and get your bearings. Line up your knuckles like you'd hold a baseball bat.
-{$name}: But I've never played baseball…
+{$name}: But I've never played baseball...
 Smoker: Okay, okay, I'll guide your hands.
 He makes quick work of positioning your fingers around the handle. Too bad you’re too distracted by Smoker to pay much attention, causing your fingers to slip on the jitte.
 {$name}: Uh, like this?
@@ -380,8 +380,8 @@ Smoker: Damn. It's been a while since I had to do those. Benefits of already bei
   -> They aren't too bad. I should be able to get through them pretty quickly.
     <<jump date_smoker_1_Zero_point_end>>
   -> Do you remember enough to help me out?
-    Smoker: Nah, paperwork's really not my thing. I let Tashigi do too much of it for me, but she's good at it. Just… don’t tell her I said that.
-    {$name}: Then maybe I should ask her for help… Or maybe you could help me out?
+    Smoker: Nah, paperwork's really not my thing. I let Tashigi do too much of it for me, but she's good at it. Just... don’t tell her I said that.
+    {$name}: Then maybe I should ask her for help... Or maybe you could help me out?
     <<jump date_smoker_1_Part_4EPart3>>
 ===
 
@@ -413,7 +413,7 @@ You find a couple of seats close to a window and sit down while Smoker fixes him
 
 title: date_smoker_1_Early_end
 ---
-You part ways shortly after, and Smoker doesn’t even look in your direction as he waves goodbye. This day could have gone better…
+You part ways shortly after, and Smoker doesn’t even look in your direction as he waves goodbye. This day could have gone better...
 <<jump date_smoker_2_main>>
 ===
 

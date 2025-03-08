@@ -10,7 +10,7 @@ She’s surrounded by mountains of paper, most of it looking like forms. There�
 
 title: date_tashigi_1_TSD1P1
 ---
-Tashigi: Oh, hello there. Erm… {$name}, is it?
+Tashigi: Oh, hello there. Erm... {$name}, is it?
 {$name}: Yes, that’s me!
 Tashigi: How is it going? Are you done for the day?
 -> Yes, all done! I’m going to file these, then go grab a bite to eat.
@@ -66,7 +66,7 @@ You file your papers quickly, then bid Captain Tashigi goodbye and leave the mai
 title: date_tashigi_1_TSD1P1_2
 ---
 There’s an awkward silence, and you don’t really know what to do. She’s obviously hungry, but there isn’t really much you can do about that.
-Tashigi: …
+Tashigi: ...
 Tashigi: You should file those forms and head to the mess hall. It’s already dinner time.
 {$name}: - I’m not all that hungry. Would you like some help?
 <<set $td1_points += 1>>
@@ -102,7 +102,7 @@ You finish all of the paperwork surprisingly quickly, and with a smile and a wav
 
 <<jump date_tashigi_1_TSD1E>>
 
--> …If you say so. Good luck.
+-> ...If you say so. Good luck.
 
 Captain Tashigi probably doesn’t like you, anyway.
 
@@ -169,7 +169,7 @@ You sit right across from Captain Tashigi, and grab a couple of papers from the 
 
 Tashigi: I’m curious, {$name}. Why did you become a Marine?
 
-Tashigi: …
+Tashigi: ...
 
 Tashigi: Everyone here has various backgrounds and dreams, yet we all chose to join the Marines. Opinions clash all the time, and if you climb through the ranks, you’ll probably be asked to make some tough decisions.
 
@@ -220,11 +220,11 @@ Tashigi: I have a brother who still lives there, and I miss him dearly, but ther
 
 <<set $td1_points += 2>>
 
-Tashigi: Time sure does fly by…
+Tashigi: Time sure does fly by...
 
 It’s getting late. You’re having a very nice time with Captain Tashigi, but perhaps it’s time to call it a night.
 
-(Maybe she’d like to hear a little bit more…)
+(Maybe she’d like to hear a little bit more...)
 
 {$name}: Tell me about it. The last time I stayed up this late, my sister’d had a nightmare and refused to go to sleep until I read her favorite story.
 

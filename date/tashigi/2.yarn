@@ -126,7 +126,7 @@ title: date_tashigi_2_get_the_medals
 -> So did you compete in the sports day last year?
     Tashigi: Of course! It's mandatory, but I would do it even if it isn't. I like competing.
 -> How many medals did you win last year?
-    Tashigi: [comment]flustered[/comment] Well, I … I took out silver in the overall fencing competition for the Captain division, qualified for the final of group relay race—we might have came fourth, but I faceplanted near the finish line—and I got the gold in sword kata demonstration for my class!
+    Tashigi: [comment]flustered[/comment] Well, I ... I took out silver in the overall fencing competition for the Captain division, qualified for the final of group relay race—we might have came fourth, but I faceplanted near the finish line—and I got the gold in sword kata demonstration for my class!
     -> Wow! That's so cool! I'm not surprised you did so well, your sword technique is just so cool and precise! I know who to go to for pointers.
         <<set $ta2_points += 1>>
         <<set $ta2_points += 1>>
@@ -136,8 +136,8 @@ title: date_tashigi_2_get_the_medals
     Tashigi gets flustered and huffs, embarrassed.
 Tashigi: Well, we better get these medals. I ordered them six weeks ago, so they're ready for pickup.
 -> You already have a lot of ribbons and trophies. Why are we going somewhere else to get medals?
-    Tashigi: Sengoku gave me a budget to work within, and I like to spread it between stall holders so everyone gets a slice … Plus, this store sold medals cheaper, but didn't skimp on the quality.
--> Are they actually like … gold?
+    Tashigi: Sengoku gave me a budget to work within, and I like to spread it between stall holders so everyone gets a slice ... Plus, this store sold medals cheaper, but didn't skimp on the quality.
+-> Are they actually like ... gold?
     Tashigi: Of course not. But they are metal. Sengoku said the Navy couldn't afford to skimp on costs by making them plastic. It's a point of pride, after all!
     Tashigi holds the door open for you and you walk inside with a quick thanks. The store is neat and orderly. Commemorative coins dazzle the display counter. A sign covers up a collection of coins, saying reserved for T. Law. The seller behind the counter smiles widely at Tashigi and goes out back to fetch the medals, returning with a bag full of them. They jangle as they're handed to Tashigi.
 Tashigi: Thanks! They're so nice. I hope you make a lot of sales today! So {$name}, are their any prizes you're aiming for on Sports day?
@@ -199,7 +199,7 @@ You stroll side by side back through town, towards the route that will take you 
     <<set $ta2_points += 1>>
 -> That was a cool sword. I'm sure one day it'll be yours alongside Shigure!
     <<set $ta2_points += 1>>
--> … [comment]You don't comment. It's not your place to pry.[/comment]
+-> ... [comment]You don't comment. It's not your place to pry.[/comment]
 
 It's become late in the afternoon. Tashigi yawns and wipes sweat from her brow. The bags look heavy, even separated between the two of you.
 if is_greater_than("ta2.points", 9)
@@ -223,7 +223,7 @@ She shoves the bags she's holding onto your stack of bags and boxes and is out o
 
 title: date_tashigi_2_middle_ending
 ---
-Tashigi: It's getting a bit late. Today was … pleasant. Thank you so much for your help. I think I'll head back to HQ with the bags now. Please, enjoy the rest of your afternoon.
+Tashigi: It's getting a bit late. Today was ... pleasant. Thank you so much for your help. I think I'll head back to HQ with the bags now. Please, enjoy the rest of your afternoon.
 She takes your bags and boxes from you and resolutely walks off to HQ, throwing a smile back over her shoulder that sees her almost tripping over her bags.
 <<romance_points tashigi 1>>
 <<jump date_tashigi_2_end_date>>

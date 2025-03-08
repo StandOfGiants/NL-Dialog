@@ -9,16 +9,16 @@ Drake: So you've got everything you need to go shopping? Good. Let's go.
 Drake glances at a small piece of paper in his hand (or maybe it just looks small because his hands are so large), then folds it up and places it in his pocket.
 
 You look questioningly at Drake.
-Drake: This is just a couple of ideas I had. I know I want to get something to suit a purpose, I just don't know… what. A gift.
+Drake: This is just a couple of ideas I had. I know I want to get something to suit a purpose, I just don't know... what. A gift.
 -> Ooh, who's it for?
-  Drake: …
+  Drake: ...
 -> For me? Wow, you don't need to.
-  Drake: …
+  Drake: ...
 -> Well, sometimes it's good to keep your options open before you buy something.
   <<set $dd2_points += 1>>
   Drake: Yes, I agree.
 
-Near the edge of the town is your destination: an outdoor bazaar full of good things. Food, merchandise, art, clothing… There are so many choices.
+Near the edge of the town is your destination: an outdoor bazaar full of good things. Food, merchandise, art, clothing... There are so many choices.
 Drake: Where should we head first?
 -> The comic stall. I'm looking to beef up my collection.
     <<jump date_drake_2_Comic_stall>>
@@ -29,11 +29,11 @@ Drake: Where should we head first?
 title: date_drake_2_Comic_stall
 ---
 The comic stall is full of shelves packed into tight aisles. Drake squeezes into one and you push in next to him. Your elbows brush as you leaf through laminated covers.
-[b]Adventure Gnomes \#232[/b], [b]Pirate Rangers Special Edition[/b]… The next book is stuck in place. You tug at it, but it won't come loose. Then, with a great sound like a suction cup, the laminate unsticks and you pull the comic out.
+[b]Adventure Gnomes \#232[/b], [b]Pirate Rangers Special Edition[/b]... The next book is stuck in place. You tug at it, but it won't come loose. Then, with a great sound like a suction cup, the laminate unsticks and you pull the comic out.
 Drake: What's that you have?
 
 The cover reads [b]Sora: Strange Universe \#1[/b] with a picture of a man in a strange Marine outfit, flanked by a man dressed in green and a seagull.
--> Whoa… Now this is a collector's item.
+-> Whoa... Now this is a collector's item.
     <<jump date_drake_2_Comic_stall_a>>
 -> Ugh, all this trouble for a boring superhero comic?
   <<set $dd2_points-= 1>>
@@ -45,16 +45,16 @@ The cover reads [b]Sora: Strange Universe \#1[/b] with a picture of a man in a s
 title: date_drake_2_Comic_stall_a
 ---
 Drake turns to look at the comic in your hand, and his placid expression shatters.
-Drake: [b]Sora: Strange Universe[/b]? I never thought I'd actually get to see it… I missed the publication, and I always found the concept so cool.
--> I know! A parallel universe where Winch Green betrays the Germa and teams up with Sora? It's like a fancomic, but, like… real.
+Drake: [b]Sora: Strange Universe[/b]? I never thought I'd actually get to see it... I missed the publication, and I always found the concept so cool.
+-> I know! A parallel universe where Winch Green betrays the Germa and teams up with Sora? It's like a fancomic, but, like... real.
   <<set $dd2_points += 1>>
-  Drake: Yes, there are so many possibilities. I've managed to avoid spoilers so far, too…
+  Drake: Yes, there are so many possibilities. I've managed to avoid spoilers so far, too...
   -> My lips are sealed! I won't ruin your experience.
     <<set $dd2_points += 1>>
     Drake: Thank you. I'm sure I'll read through it quickly.
     <<jump date_drake_2_Sora_checkout_Drake>>
 -> Well, I thought the execution was disappointing, though the art is gorgeous—totally worth a read, though; you should get it. My favorite of the variant universes was the one where Poison Pink steals Sora's powers.
-  -> Aww, I might have a copy of that somewhere… Want me to lend it to you?
+  -> Aww, I might have a copy of that somewhere... Want me to lend it to you?
     <<set $dd2_points += 1>>
     Drake: If it's not too much of an inconvenience.
     <<jump date_drake_2_Sora_checkout_Drake>>
@@ -62,11 +62,11 @@ Drake: [b]Sora: Strange Universe[/b]? I never thought I'd actually get to see it
     <<set $dd2_points += 1>>
     Drake: Agreed.
     <<jump date_drake_2_Sora_checkout_Drake>>
--> It's been a long time since I read it… I sold my copy a while ago and really regretted it.
+-> It's been a long time since I read it... I sold my copy a while ago and really regretted it.
   Drake leans in to look closer at the title. You thought he was hard to read, but he looks really excited to get his hands on it.
-  Drake: … You should buy it then. It's a good find.
+  Drake: ... You should buy it then. It's a good find.
   -> Okay, great! I will!
-    Drake: …
+    Drake: ...
     -> But I'll lend it to you first.
       <<set $dd2_points += 1>>
       Drake: Thank you. That's quite generous of you.
@@ -97,23 +97,23 @@ Drake: Yes, I'm surprised you haven't heard of it. [b]Sora[/b] is quite popular 
 -> Well, is it historical? Fictional?
   Drake: Sort of both. Some of Sora's feats are based on those of legendary Marines, and the main villains are based on a real organization.
 -> So you're a big fan, huh?
-  Drake: Well, I don't know if I'd say that… I haven't read [b]all[/b] the issues.
+  Drake: Well, I don't know if I'd say that... I haven't read [b]all[/b] the issues.
   -> Aww, don't gatekeep yourself.
     <<set $dd2_points += 1>>
   -> Oh, uh, I see.
     <<set $dd2_points-= 1>>
   -> Well, you've read more than I have!
 -> Well, if this is number one, should I start here?
-  Drake: This is actually the first in a spinoff alternate-universe series. The main comics are called [b]Sora: Warrior of the Sea[/b]. I have a few of the omnibus volumes myself… You might be able to start with this one, but it would probably make more sense if you read the main story first.
+  Drake: This is actually the first in a spinoff alternate-universe series. The main comics are called [b]Sora: Warrior of the Sea[/b]. I have a few of the omnibus volumes myself... You might be able to start with this one, but it would probably make more sense if you read the main story first.
   -> Could you lend me a volume of the omnibus? I'd love to give it a try.
     <<set $dd2_points += 1>>
     Drake: Yes, of course.
-  -> …That sounds really complicated.
+  -> ...That sounds really complicated.
     <<set $dd2_points-= 1>>
     Drake: It's quite simple, actually.
   -> Uh, I'll take a pass.
     <<set $dd2_points-= 1>>
-    Drake: … Well, I'd like to buy that one if you don't mind.
+    Drake: ... Well, I'd like to buy that one if you don't mind.
 
 You hand Drake the volume and he heads to the cashier to pay. You could keep looking at comics here, but you aren't really all that interested.
 The smell of fresh baked goods wafts your way—didn't you pass a cafe at some point? Maybe that should be your destination.
@@ -122,7 +122,7 @@ The smell of fresh baked goods wafts your way—didn't you pass a cafe at some p
 
 title: date_drake_2_Comic_stall_c
 ---
-Drake: … Is that [b]Sora: Strange Universe[/b]?
+Drake: ... Is that [b]Sora: Strange Universe[/b]?
 -> That's what it says. What's the big deal?
   Drake: I've been looking for this for a long time. It was a limited run.
 -> You're a [b]Sora[/b] fan?
@@ -130,14 +130,14 @@ Drake: … Is that [b]Sora: Strange Universe[/b]?
   -> I don't know, I never really [b]got[/b] superheroes. I'd rather read a comic about wizards or ninja or the power of friendship.
     <<set $dd2_points-= 1>>
     Drake: Fair enough.
-  -> Eh, I don't know. It's just a little surprising. You seem so… practical.
+  -> Eh, I don't know. It's just a little surprising. You seem so... practical.
     <<set $dd2_points-= 1>>
     Drake: It's just entertainment.
 
 Drake: Well, I guess I'll buy this and we can move on.
 -> Okay.
   <<set $dd2_points-= 1>>
--> Oh no, you can take your time…
+-> Oh no, you can take your time...
   Drake: There's no point in staying if you're not interested.
 
 You peer around the market, looking for places to go that both of you might enjoy more than you enjoyed this place. Drake returns shortly, a bag with his comic book under his arm.
@@ -146,17 +146,17 @@ You peer around the market, looking for places to go that both of you might enjo
 
 title: date_drake_2_Clothing_stall
 ---
-The clothing stall is huge, less a stall than three or four merged together. They have everything: tops, bottoms, shoes, swimsuits, socks, coats, underwear, accessories… But where to start?
--> So, this person you're buying a gift for… They have to wear clothes. What kind do they like?
+The clothing stall is huge, less a stall than three or four merged together. They have everything: tops, bottoms, shoes, swimsuits, socks, coats, underwear, accessories... But where to start?
+-> So, this person you're buying a gift for... They have to wear clothes. What kind do they like?
   Drake: I'm not sure.
   -> Well, what do they usually wear?
-    Drake: … A Marine coat.
+    Drake: ... A Marine coat.
     <<jump date_drake_2_Clothing_Tsuru>>
   -> What's their favorite color?
     Drake: Blue.
     <<jump date_drake_2_Clothing_Tsuru>>
   -> Can you give me some hints as to who it is? Maybe I don't know them very well, but I might be a good sounding board for whether something looks good on them.
-    Drake: …
+    Drake: ...
     <<jump date_drake_2_Clothing_Tsuru>>
 -> Oh, look, they have cute fuzzy hats. I used to have one of those when I was a kid.
   Drake: You should get one. You look a little underdressed for the weather.
@@ -165,7 +165,7 @@ The clothing stall is huge, less a stall than three or four merged together. The
     <<jump date_drake_2_Pre_hat_argument>>
   -> What, are you planning on warming me up?
     <<set $dd2_points-= 1>>
-    Drake: …
+    Drake: ...
     <<jump date_drake_2_Pre_hat_argument>>
   -> Uh, sorry?
       <<jump date_drake_2_Pre_hat_argument>>
@@ -176,7 +176,7 @@ title: date_drake_2_Clothing_Tsuru
 Drake: Okay. I'm shopping for Vice Admiral Tsuru.
 -> Oh, do you know her well?
   Drake: Yes. She's been a great mentor to me.
--> Wow, she [b]does[/b] seem hard to buy for… Though I guess I don't really know her.
+-> Wow, she [b]does[/b] seem hard to buy for... Though I guess I don't really know her.
 -> I don't think I've ever seen her out of uniform.
   Drake: Her civilian clothes are quite similar.
 
@@ -184,12 +184,12 @@ Drake: I'm not quite sure what she'd like, but I want to show her my appreciatio
 -> I think she'd like something practical. Something for the cold weather. I know she has her coat and gloves, but maybe something she can wear inside?
   <<set $dd2_points += 1>>
   Drake: That's a good idea.
-  -> A nice sweater… Do you knit? You could make her one.
+  -> A nice sweater... Do you knit? You could make her one.
     Drake: That's a bit advanced for my skillset.
   -> Some leg warmers maybe?
     Drake: I'm not sure they're her style.
-  -> Hmm… If I were Vice Admiral Tsuru, what would I want?
--> I bet she gets lots of practical gifts. Teacups, fancy pens, that kind of thing. You should get her something more… ornamental.
+  -> Hmm... If I were Vice Admiral Tsuru, what would I want?
+-> I bet she gets lots of practical gifts. Teacups, fancy pens, that kind of thing. You should get her something more... ornamental.
   Drake: I don't think she'll want something that she never has occasion to wear.
   -> I'm not saying, like, diamond-encrusted combat boots.
     Drake: I didn't know that was something you could buy.
@@ -197,9 +197,9 @@ Drake: I'm not quite sure what she'd like, but I want to show her my appreciatio
     <<set $dd2_points += 1>>
     Drake: Oh, I see what you mean.
   -> She can make an occasion to wear it if it's nice enough.
-    Drake: … I don't know about that.
+    Drake: ... I don't know about that.
 -> Has she ever mentioned something she'd like but hasn't gotten? An expensive tie or something that she doesn't want to shell out the cash for?
-  Drake: Not to me. She's very particular about ties, though… I don't know if I'd be able to choose one that she likes.
+  Drake: Not to me. She's very particular about ties, though... I don't know if I'd be able to choose one that she likes.
   -> What about a duplicate of one she has? In case it gets worn out?
     Drake: She's good at taking care of hers.
   -> She'll appreciate the thought, though, right?
@@ -213,13 +213,13 @@ You watch Drake as he looks around, past a rack of fancy suspenders, animal-prin
   Drake: I want to take a closer look at those shawls.
 -> What about the shawls? I bet they come in a color that would suit her.
   <<set $dd2_points += 1>>
-  Drake: I was thinking that… You don't think it would be too much?
+  Drake: I was thinking that... You don't think it would be too much?
   -> I can't speak to your relationship, but I'd appreciate it if I were her.
   -> People say Vice Admiral Tsuru is a great judge of intentions.
     Drake: That's true.
-  -> Why? Unless they're, like… [b]really[/b] expensive…
+  -> Why? Unless they're, like... [b]really[/b] expensive...
 -> Well, I guess it's true what they say about having too many choices.
-  Drake: There is a lot to choose from. I don't think most of it would interest Vice Admiral Tsuru… but she might like a new shawl.
+  Drake: There is a lot to choose from. I don't think most of it would interest Vice Admiral Tsuru... but she might like a new shawl.
 
 The two of you walk over to the shawls. They look so soft, and all the colors are pleasant.
 Drake: Well, they are expensive, but I can fit one in my budget.
@@ -241,7 +241,7 @@ Drake: Well, you look cold to me. You don't have to act tough.
 -> I'm a Marine. I have to [i]be[/i] tough, not act tough.
   <<set $dd2_points-= 1>>
   <<jump date_drake_2_Hat_argument>>
--> Uh, maybe this stall was a mistake… Let's just drop the subject for now and go somewhere else.
+-> Uh, maybe this stall was a mistake... Let's just drop the subject for now and go somewhere else.
   Drake: Yes, I agree.
   You exit the stall and look around.
   <<jump date_drake_2_Cafe_regular_explain>>
@@ -254,7 +254,7 @@ You walk along congenially in the crisp breeze.
   Drake: I grew up in North Blue, reading the comics in the newspaper.
   -> And that's why you became a Marine?
     <<set $dd2_points-= 1>>
-    Drake: … Not exactly.
+    Drake: ... Not exactly.
   -> Oh...I wish I could have had that experience.
   <<jump date_drake_2_Sora_talk_2>>
 -> OK. I have to ask: who's your favorite character?
@@ -266,9 +266,9 @@ title: date_drake_2_Sora_talk_1A3
 ---
 Drake: Stealth Black.
 -> I'm surprised it's not Sora, given that you're a Marine.
-  Drake: Well, in a lot of ways Sora is the ideal Marine, that's true. But the Germa are obvious avatars of injustice. In that regard—I find comfort in their simplicity, though some writers do give them a more nuanced character. And I always thought Stealth Black looked, well… cool.
+  Drake: Well, in a lot of ways Sora is the ideal Marine, that's true. But the Germa are obvious avatars of injustice. In that regard—I find comfort in their simplicity, though some writers do give them a more nuanced character. And I always thought Stealth Black looked, well... cool.
   -> Hold on, is that why when you went undercover you dressed in all black?
-    Drake: … No.
+    Drake: ... No.
     <<jump date_drake_2_Sora_talk_2>>
   -> Yeah, even when they're simple, villains often get to have a lot of fun the heroes don't. I often find myself drawn to them in fiction.
     <<set $dd2_points += 1>>
@@ -276,7 +276,7 @@ Drake: Stealth Black.
   -> I totally agree! His character design is the best. So of [b]course[/b] they made him the invisible one.
     <<set $dd2_points += 1>>
     <<jump date_drake_2_Sora_talk_2>>
--> Huh, that… tracks.
+-> Huh, that... tracks.
   Drake: Really? Everyone always assumes Sora is my favorite.
   -> Sora's the obvious choice, but I don't know. You seem like a Stealth Black kind of guy.
     <<set $dd2_points += 1>>
@@ -289,7 +289,7 @@ title: date_drake_2_Sora_talk_1A4
 ---
 Drake: Interesting. So Sora isn't your favorite either?
 -> Oh no, he is! But I like the Germa, too.
--> Yeah, I know he's a fictional character, but the thought of living up to that ideal as a Marine… I don't know.
+-> Yeah, I know he's a fictional character, but the thought of living up to that ideal as a Marine... I don't know.
 -> What can I say? I've got a soft spot for comic book villains.
   <<set $dd2_points += 1>>
 <<jump date_drake_2_Sora_talk_2>>
@@ -298,7 +298,7 @@ Drake: Interesting. So Sora isn't your favorite either?
 title: date_drake_2_Sora_talk_2
 ---
 The two of you have reached the edges of the market. To your right is a small cafe with several tables outside and a large display of fancy coffee and tea. To your left is a small stall selling knives.
--> So, about that gift you're buying… Who's it for? I promise I won't tell them.
+-> So, about that gift you're buying... Who's it for? I promise I won't tell them.
     <<jump date_drake_2_Sora_talk_2A>>
 -> I want to sit down for a bit.
     <<jump date_drake_2_Sora_cafe>>
@@ -306,9 +306,9 @@ The two of you have reached the edges of the market. To your right is a small ca
 
 title: date_drake_2_Sora_talk_2A
 ---
-Drake: …
+Drake: ...
 You wait. Drake pauses.
-Drake: It's Vice Admiral Tsuru. I thought it might be nice to get her something… Just because.
+Drake: It's Vice Admiral Tsuru. I thought it might be nice to get her something... Just because.
 -> Well, that's a fine reason. I bet she'd like a knife.
     <<jump date_drake_2_Knife_stall>>
 -> That's a great idea. I don't know what she'd like, but maybe we can stop at that cafe to fuel our minds.
@@ -329,7 +329,7 @@ Drake: Cold is a scientific fact, {$name}. I want you to be safe. I grew up in t
   -> But I'm an adult and I appreciate more that people believe me when I say how I feel.
       <<jump date_drake_2_Hat_argument_2>>
   -> No but. That's it. Can we end the discussion please?
-    Drake: … Okay. Let's go to another stall.
+    Drake: ... Okay. Let's go to another stall.
     <<jump date_drake_2_Cafe_regular_explain>>
   -> But it's really not that cold yet. You're not all bundled up either.
     Drake: But you look—nevermind.
@@ -338,7 +338,7 @@ Drake: Cold is a scientific fact, {$name}. I want you to be safe. I grew up in t
 
 title: date_drake_2_Hat_argument_2
 ---
-Drake: …
+Drake: ...
 -> Look, just forget it. But I'm not wearing a hat. Let's leave.
     <<jump date_drake_2_Cafe_regular_explain>>
 -> Stop acting like you're better than me!
@@ -359,7 +359,7 @@ Drake: I'm not, I'm just concerned.
   <<jump date_drake_2_Cafe_regular_explain>>
 -> And you keep saying that, but not enough to be concerned about my answers.
   <<set $dd2_points-= 1>>
-  Drake: … Maybe I should just leave.
+  Drake: ... Maybe I should just leave.
   <<jump date_drake_2_Early_end>>
 ===
 
@@ -374,13 +374,13 @@ You each purchase a warm drink and sit down at a small table. Underneath, your k
   -> It gave me such a warm feeling! Sora really is the avatar of justice.
     <<set $dd2_points += 1>>
   -> Wow, so you go way back.
-    Drake: I suppose it really was a long time ago. But those ideals…
+    Drake: I suppose it really was a long time ago. But those ideals...
 -> Is it difficult to find seats big enough for you?
   Drake: This isn't so bad. And I don't have as hard of a time as some others.
-  -> Still, it's not fair…
+  -> Still, it's not fair...
   -> Just because others have it worse doesn't mean it doesn't suck for you.
 -> Did they fill your cup the whole way?
-  Drake: It looks like not…
+  Drake: It looks like not...
   -> You should complain! Get your money's worth!
     <<set $dd2_points-= 1>>
     Drake: It's not worth making trouble over.
@@ -389,12 +389,12 @@ You each purchase a warm drink and sit down at a small table. Underneath, your k
     Drake: Perhaps it depends on the drink.
 
 Drake pauses, stirring the milk into his coffee.
-Drake: You know, once you open your eyes to unfairness… It's hard to not see it. Because it's everywhere.
+Drake: You know, once you open your eyes to unfairness... It's hard to not see it. Because it's everywhere.
 -> That's why we became Marines, though, right?
   Drake: Some of us, yes.
 -> Yeah. And you can't fix everything.
   Drake: Sometimes it can be easy to be paralyzed by indecision. Or guilt.
-  -> When you couldn't or didn't do anything…
+  -> When you couldn't or didn't do anything...
     <<set $dd2_points += 1>>
     Drake: Yes, exactly.
   -> Guilt?
@@ -402,22 +402,22 @@ Drake: You know, once you open your eyes to unfairness… It's hard to not see i
     He breaks off, as if he's said too much.
 -> I don't know if that's necessarily true.
   Drake: If not, then which systems are fair?
-  -> Oh, I don't know…
+  -> Oh, I don't know...
     <<set $dd2_points-= 1>>
   -> The Marines are fair, right?
     Drake: in some ways, but we have our blind spots.
 
 The topic is heavy, but its residue does not descend on you like ash from a volcano. Rather, the quiet that remains is pleasant. You continue to sip your drinks.
-Drake: To change the subject… {$name}, can you help me with something?
+Drake: To change the subject... {$name}, can you help me with something?
 Drake: The person I'm shopping for is Vice Admiral Tsuru.
 -> Do you think she'd like something here?
   Drake: Yes, actually—they seem to have a large selection of tea tins.
   -> Oh, that's nice! Do you drink tea together often?
     <<set $dd2_points += 1>>
     Drake: Yes.
-  -> Tea tins… practical, but pretty. Nice.
+  -> Tea tins... practical, but pretty. Nice.
   <<jump date_drake_2_Sora_cafe_gift>>
--> Uh, I don't know if I'd be of much help… I barely know her.
+-> Uh, I don't know if I'd be of much help... I barely know her.
   <<set $dd2_points-= 1>>
   Drake: You're good with people. And I'd like your opinion, regardless.
   <<jump date_drake_2_Sora_cafe_pre_tea>>
@@ -425,7 +425,7 @@ Drake: The person I'm shopping for is Vice Admiral Tsuru.
 
 title: date_drake_2_Sora_cafe_pre_tea
 ---
-Drake: I'd like to buy her something she can use, not just look at. And since we're here, and she likes tea…
+Drake: I'd like to buy her something she can use, not just look at. And since we're here, and she likes tea...
 -> Get her tea?
 -> I may not know the Vice Admiral, but that's as straightforward as it gets.
 <<jump date_drake_2_Sora_cafe_gift>>
@@ -433,7 +433,7 @@ Drake: I'd like to buy her something she can use, not just look at. And since we
 
 title: date_drake_2_Sora_cafe_gift
 ---
-The teas are displayed on a large shelf next to the coffees, and there appear to be many varieties. Bags, loose leaf, tins, boxes, variety packs, black, white, green, herbal…
+The teas are displayed on a large shelf next to the coffees, and there appear to be many varieties. Bags, loose leaf, tins, boxes, variety packs, black, white, green, herbal...
 Drake: Hm.
 
 He picks up a tin of the chamomile.
@@ -443,7 +443,7 @@ He picks up a tin of the chamomile.
 -> Is that a kind she likes?
   Drake: Yes. She often says she needs to stock up on it.
 
-Drake: She's always telling me that chamomile tea will help me relax…
+Drake: She's always telling me that chamomile tea will help me relax...
 -> Aww, that's kind of her to look out for you.
 -> Well then it's definitely a good gift. Some connection there!
   <<set $dd2_points += 1>>
@@ -451,7 +451,7 @@ Drake: She's always telling me that chamomile tea will help me relax…
   <<set $dd2_points-= 1>>
   Drake: I don't think so.
 
-Drake: I'll buy this. And then after that…
+Drake: I'll buy this. And then after that...
 -> Let's go back to base.
     <<jump date_drake_2_Back_to_base_positive>>
 -> Let's sit back down.
@@ -467,7 +467,7 @@ Drake buys the tea and the two of you depart the stall. Satisfied with the purch
 title: date_drake_2_Sora_cafe_post_gift
 ---
 Drake purchases the tea along with both of your drinks, and the two of you walk over to a nearby table.
--> To tell you the truth, I find Vice Admiral Tsuru a bit… intimidating. She's so accomplished.
+-> To tell you the truth, I find Vice Admiral Tsuru a bit... intimidating. She's so accomplished.
   Drake: She is, and she's been a great mentor to me.
   <<jump date_drake_2_Cafe_mentorship>>
 -> So she tells you that you need to relax? You don't seem high-strung to me.
@@ -485,7 +485,7 @@ Drake: I'm used to concealing things.
     Drake: Thank you.
   -> Gee, [b]that's[/b] a shocker.
     Drake gives you a half-smile.
-    Drake: That much I suppose is obvious…
+    Drake: That much I suppose is obvious...
 -> Right, goes along with the job. But your job's changed; you can adapt to that.
   Drake: I find it difficult to adapt when I don't have to.
   -> I can't blame you!
@@ -566,7 +566,7 @@ title: date_drake_2_Knife_holster
 ---
 Drake: Yes, you're right.
 The holsters make up a large section of the far table. Many are cheap-looking, but some are respectable and a few on the pricier side appear to be well-crafted leather.
-Drake: … This one.
+Drake: ... This one.
 He points to a light-brown holster that looks the right size for a pocketknife. You take your standard-issue knife from your pocket—yep, it should fit, based on the eyeball. It's snazzy, but not overstated; you can easily see it on Vice Admiral Tsuru's belt.
 
 Drake: Good idea on the holster.
@@ -600,9 +600,9 @@ title: date_drake_2_Cafe_regular_meeting
 Drake: When I first joined the Marines, actually. She—I suppose you could say she was the one who signed me up.
 -> I “could” say? Sounds like there's a story there.
   Drake: There—well.
-  -> … Yes?
+  -> ... Yes?
     <<set $dd2_points-= 1>>
-    Drake: …
+    Drake: ...
     <<jump date_drake_2_Cafe_end>>
   -> Oh, you don't want to talk about it? I don't want to pry.
     <<set $dd2_points += 1>>
@@ -615,29 +615,29 @@ Drake: When I first joined the Marines, actually. She—I suppose you could say 
   -> Oh, that's pretty cool! She must have set a great example.
     <<set $dd2_points += 1>>
     Drake: She did.
-  -> You make it sound so… unremarkable.
+  -> You make it sound so... unremarkable.
     Drake: The Vice Admiral is a remarkable person. But those years were happily normal.
   <<jump date_drake_2_Cafe_end>>
 -> Wow, that's going pretty far back! Not that I'm calling you old.
-  Drake: Oh, I didn't think you were. But yes, it's been quite a long time…
+  Drake: Oh, I didn't think you were. But yes, it's been quite a long time...
   <<jump date_drake_2_Cafe_end>>
 ===
 
 title: date_drake_2_Cafe_regular_explain
 ---
 The smell of freshly-baked pastries wafts from a nearby stall. It looks like a cafe. That's convenient. Drake's eyes snap to it, as if he's had an epiphany.
-Drake: The person I'm buying a gift for… Well, it's Vice Admiral Tsuru.
+Drake: The person I'm buying a gift for... Well, it's Vice Admiral Tsuru.
 -> And she really likes almond croissants?
 -> Oh, so you want to take her out for coffee?
 -> Whoa, really?
 
-Drake: We drink tea together a lot… They might have a good selection. At least it's worth a try.
+Drake: We drink tea together a lot... They might have a good selection. At least it's worth a try.
 
 Drake: Let's see what they have.
 -> Does she like cinnamon?
   Drake: Hmm, maybe.
 -> What about this gift tin? It has flowers on it.
-  Drake: The design is a bit… overstated.
+  Drake: The design is a bit... overstated.
 -> Why don't you buy something for yourself? You can get something for Vice Admiral Tsuru later.
   <<set $dd2_points-= 1>>
   Drake: No, I'd rather not.
@@ -650,7 +650,7 @@ On the top shelf, beyond your reach, there are several tea tins. You can't quite
   -> Could you take a closer look at the teas on the top shelf?
     <<set $dd2_points += 1>>
     Drake: Sure.
-  -> …
+  -> ...
     <<set $dd2_points-= 1>>
     Drake: OK.
 
@@ -664,13 +664,13 @@ Drake takes all three tins in one very large hard, the leather of his gloves onl
   -> All three?
     Drake: I think just one.
 -> Hmm, does she like any of those kinds of tea?
-  Drake: The bergamot… and that is a nice tin.
+  Drake: The bergamot... and that is a nice tin.
   -> Are you familiar with the brand?
     Drake: I've never had their teas, but I've heard good things.
   -> Am I a genius or what?
     Drake: It [b]was[/b] a good idea.
   -> There you go.
--> Whoa, you can fit a lot in your hand…
+-> Whoa, you can fit a lot in your hand...
   Drake: They have to be good for something.
 
 Drake hands you the tin of bergamot and places the others back on the shelf. His hand brushes your shoulder on the way by—intentional or not? It's difficult to tell.
@@ -719,7 +719,7 @@ else
 title: date_drake_2_Zero_point_end
 ---
 <<romance_points drake 0>>
-Drake: …
+Drake: ...
 ===
 
 title: date_drake_2_One_point_end

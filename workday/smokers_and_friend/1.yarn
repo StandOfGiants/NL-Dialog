@@ -17,13 +17,13 @@ On that note, you sit down next to the group of four, all of them eating in rela
 Bellemere: Hey look! The newbie finally showed! Don't worry kid, I hate getting up at the crack of dawn, too.
 Tashigi: You are a bit late, but the compound can be difficult to navigate at first.
 Hina: Hina will be assessing your obedience and potential.
-Smoker: Hope you're ready for some hard work. Damn, I'm all out of coffee…
+Smoker: Hope you're ready for some hard work. Damn, I'm all out of coffee...
 -> I can get you a refill!
     <<set $wd1_bellemere -= 1>>
     <<jump workday_smokers_and_friend_1_Part_1A>>
 -> Yes Sir and Ma'ams! I look forward to learning from the best!
     <<jump workday_smokers_and_friend_1_Part_1B>>
--> Ha ha… yeah, I'll do what I can.
+-> Ha ha... yeah, I'll do what I can.
     <<set $wd1_bellemere += 1>>
     <<jump workday_smokers_and_friend_1_Part_1C>>
 ===
@@ -63,7 +63,7 @@ Bellemere rolls her eyes behind Captain Tashigi's back, but otherwise does not r
 
 title: workday_smokers_and_friend_1_Days_Duty
 ---
-Smoker: So, we're going to be splitting up into a couple of different groups. {$name}, you can come with me and Hina to do some drills by the docks…
+Smoker: So, we're going to be splitting up into a couple of different groups. {$name}, you can come with me and Hina to do some drills by the docks...
 Hina: (explains Tashigi's option (swordplay) and Bellemere's (training grounds/obstacle course). Maybe hint that they could be good for the new recruit, too?) // unwritten
 Bellemere: Uh, right. Training grounds. That's totally where I plan to spend my time today.
 She winks your way, unseen by the others, and you're not sure what to make of that.
@@ -91,7 +91,7 @@ Smoker: 'Sides, we've all got different things we teach best.
 Smoker: We've got the first plan, naval drills with me and Hina. Tashigi and her sword stuff. Captain Bellemere and her obstacles. What'll it be?
 -> I like the original plan- I'd love to try naval drills!
     <<jump workday_smokers_and_friend_1_Part_2A>>
--> I'm a fan of swords…. Captain Tashigi, would you teach me a few moves?
+-> I'm a fan of swords.... Captain Tashigi, would you teach me a few moves?
     <<set $wd1_tashigi += 1>>
     // should we add points for each option? seems unfair to just add to tashigi
     <<jump workday_smokers_and_friend_1_Part_2B>>
@@ -178,7 +178,7 @@ title: workday_smokers_and_friend_1_B
 // it seems a bit unfair for hina's date to be a binary, seeing as other characters' unlock_date are point-dependent
 You hold your ground at the ship's cannon, waiting for the right moment.
 Hina: That's right crew, hold her steady! Ready, fire!
-Smoker: Well, I can't fault you for going that way when you know their battle plan…
+Smoker: Well, I can't fault you for going that way when you know their battle plan...
 You fire your cannon in a BOOM of the largest water balloon you've ever seen, as the cannon's alongside you do the same. The rival ship is rocked by the onslaught of water and the ship's ‘captain' goes tumbling into the water. The drill is over!
 <<jump workday_smokers_and_friend_1_Drill_end>>
 ===
@@ -216,15 +216,15 @@ You follow the red-haired woman out of the mess hall and down a nearby path. She
 
 title: workday_smokers_and_friend_1_Part_2C1
 ---
-Bellemere: Ah, you know… looking for some nice shade.
-{$name}: To… train under?
+Bellemere: Ah, you know... looking for some nice shade.
+{$name}: To... train under?
 Bellemere: (laughs) Oh, no. I'm going to nap- this place is interrupting my sleep schedule!
 <<jump workday_smokers_and_friend_1_day>>
 ===
 
 title: workday_smokers_and_friend_1_Part_2C2
 ---
-Bellemere: Plan? Well, avoiding the Vice Admiral and Rear Admiral should be easy. Tashi-chan, however… it may take some finesse to stay out of her way.
+Bellemere: Plan? Well, avoiding the Vice Admiral and Rear Admiral should be easy. Tashi-chan, however... it may take some finesse to stay out of her way.
 <<jump workday_smokers_and_friend_1_day>>
 ===
 
@@ -236,7 +236,7 @@ Bellemere: A recruit of few words, huh? Good- I'm not adverse to some peace and 
 
 title: workday_smokers_and_friend_1_day
 ---
-You continue to follow the Captain, unsure of yourself. She technically outranks you… is this some kind of test of patience?
+You continue to follow the Captain, unsure of yourself. She technically outranks you... is this some kind of test of patience?
 Bellemere: You like mikan oranges, {$name}?
 -> Sure
     <<set $wd1_bellemere += 1>>
@@ -267,7 +267,7 @@ title: workday_smokers_and_friend_1_tash_transition
 It's not long before you spot Captain Tashigi in a secluded corner of the garden.
 <<show_character tashigi center show>>
 Tashigi: Petty Officer {$name}, aren't you supposed to be with Commodore Bellemere?
-{$name}: Erm…
+{$name}: Erm...
 Tashigi: Never mind, I can imagine what happened.
 {$name}: Can I join you?
 Tashigi: Sure thing. Grab one of those wooden swords.
@@ -279,10 +279,10 @@ title: workday_smokers_and_friend_1_Mikan
 ---
 There are three trees down the path, deep emerald and dotted with small unripened fruit, and you settle in a bench beneath their shade.
 PC: How long until the mikans ripen?
-Bellemere: Hmm… I'd say a couple more months, at least. On a day as hot as this, it's important to take care of yourself. I like to sit here and think sometimes…
-{$name}: …like meditation?
+Bellemere: Hmm... I'd say a couple more months, at least. On a day as hot as this, it's important to take care of yourself. I like to sit here and think sometimes...
+{$name}: ...like meditation?
 Bellemere: Yeah? Yeah! That sounds more productive, doesn't it? I mean, I train when I need to, but I think some people around here just don't know how to enjoy life.
-{$name}: So… What kind of training do you prefer?
+{$name}: So... What kind of training do you prefer?
 Bellemere: Oh, I'm a flintlock girl. As long as my aim is true, I don't need to be sweating out there running laps or swinging around a sword. What do you think is most important in a real conflict, {$name}?
 -> Good Aim
     <<jump workday_smokers_and_friend_1_Good_Aim>>
@@ -301,9 +301,9 @@ She points.
 You look, and sure enough there's a [i]rather impressive[/i] pile of empty soda and beer cans discarded under the bench. They tell a story of frequent truancy. You grab them one at a time and toss them to the Commodore, who catches them easily and begins to line them up on the ground, a good hundred yards away.
 Bellemere: Okay, here's your ammo.
 She hands you a fistfull of pebbles and you stare at them a moment before looking back up, perplexed.
-{$name}: You want me to… hit the cans with these little rocks?
+{$name}: You want me to... hit the cans with these little rocks?
 Bellemere: Yeah. Knock 'em all down and maybe I'll share some of my mikans with you when they ripen.
-You size up the little cans, not too sure of your chances. She didn't say you had to do it in one go, though, so… with enough persistence, you could probably do it.
+You size up the little cans, not too sure of your chances. She didn't say you had to do it in one go, though, so... with enough persistence, you could probably do it.
 -> Go for it
     <<set $wd1_bellemere += 1>>
     <<jump workday_smokers_and_friend_1_continue>>
@@ -322,7 +322,7 @@ You aim carefully at the cans, selecting the heaviest little stones you have. Yo
 title: workday_smokers_and_friend_1_boo
 ---
 Bellemere looks unimpressed, tossing the pebbles back down and rubbing her hand clean on her pants.
-Bellemere: Sure. How about you head over to the obstacle course on your own, then? Seems like that would be… a [i]better[/i] use of your time.
+Bellemere: Sure. How about you head over to the obstacle course on your own, then? Seems like that would be... a [i]better[/i] use of your time.
 You're pretty sure you've offended her, but there's not much you can do about it now!
 WORK DAY ENDS
 <<jump main>>
@@ -334,13 +334,13 @@ Bellemere: Oh, really? Well then, if muscles are all that you won't mind helping
 You can't help but feel that there is something devious in her tone, but you're left with little options. You nod.
 Bellemere directs you to a plot near the back of her trees.
 Bellemere: There's a bagged sapling by the shed down that way.
-She points down the path and you squint, not seeing anything… it must be very far!
+She points down the path and you squint, not seeing anything... it must be very far!
 Bellemere: Bring it here and plant it. And don't you use a wheelbarrow and risk dumping my last unplanted mikan tree!
 {$name}: W-why should I be responsible for-
 Bellemere: Hey now- do I look like I have big beefy arms? No? Well, I planted all of these. Just [i]one[/i] should be no trouble for a marine that values strength so much.
 She has you there.
 <<hide_character bellemere fade>>
-You work the better part of an hour away sweating in the sweltering sun, lifting and walking and digging until your limbs feel like noodles… How did she get such a huge sapling to this island in the first place!? It's practically a full-grown tree!
+You work the better part of an hour away sweating in the sweltering sun, lifting and walking and digging until your limbs feel like noodles... How did she get such a huge sapling to this island in the first place!? It's practically a full-grown tree!
 -> Complain: You're the commanding officer, here. You could have pulled your weight!
     <<show_character bellemere center show>>
     <<lock_out_date bellemere>>
@@ -365,7 +365,7 @@ Bellemere: Riddles! We're doing riddles now, keep up! You said thinking fast was
 You should probably just answer the riddle.
 -> A horse?
     Bellemere blinks at you.
-    Bellemere: Huh… I mean, technically that makes sense, though it sounds a bit harsh, huh? It was supposed to be an egg…
+    Bellemere: Huh... I mean, technically that makes sense, though it sounds a bit harsh, huh? It was supposed to be an egg...
 -> Mosaic glass?
     Bellemere: Ha! Okay, you're reaching- it's supposed to be an egg!
 -> An egg?
@@ -383,16 +383,16 @@ Bellemere: You have a complaint?
     <<jump main>>
 -> No, ma'am! I will answer as many riddles as you can throw at me!
     Bellemere rubs her hands togther, clearly excited.
-    Bellemere: Okay, let's see… I shave every day, but my beard stays the same. What am I?
+    Bellemere: Okay, let's see... I shave every day, but my beard stays the same. What am I?
     -> Beardless!
-        Bellemere: Well…
+        Bellemere: Well...
         She touches her jaw as she thinks and you grin.
         {$name}: Got you! If you don't have a beard, then it doesn't matter how much you shave, right? Your beard will remain the same- as in, non-existent.
         Bellemere: Huh. I guess I'll take it!
     -> A barber!
         <<set $wd1_bellemere += 1>>
         Bellemere: You got it!
-        She looks pleased. She must really like riddles… or people who answer them.
+        She looks pleased. She must really like riddles... or people who answer them.
     -> A track star!
         Bellemere:... You're going to have to give me an explanation on that one, {$name}.
         {$name}: Well, you can shave time off of your run-
@@ -409,16 +409,16 @@ Bellemere: You have a complaint?
 title: workday_smokers_and_friend_1_Walk
 ---
 The two of you sit on the benches and talk for a while before you start to get thirsty.
-{$name}: I'll go get us some water…
+{$name}: I'll go get us some water...
 With a start, you realize something, freezing just as you start to stand up so you're sort of half-bent and ridiculous. You blink, plopping back down to stare at Bellemere.
-{$name}: Hey! Did you just… train me in something after all!?
+{$name}: Hey! Did you just... train me in something after all!?
 She shrug, grinning and looking unconcerned.
 Bellemere: Maybe. Maybe it was a happy coincidence if you learned a thing or two. In any case-
 She stops, suddenly, looking away.
 Bellemere: Oh, shit. Hear that?
 You do hear it. The sound of footsteps approaching.
-{$name}: Captain Tashigi? She did say she'd be training out here…
-Bellemere nods, standing up and giving you a hand to follow suit (again) just as the Captain rounds the bend of short orange trees and spots the two of you… not at the obstacle course. You tense, suddenly concerned about getting in trouble on your first day.
+{$name}: Captain Tashigi? She did say she'd be training out here...
+Bellemere nods, standing up and giving you a hand to follow suit (again) just as the Captain rounds the bend of short orange trees and spots the two of you... not at the obstacle course. You tense, suddenly concerned about getting in trouble on your first day.
 <<jump workday_smokers_and_friend_1_TB>>
 ===
 
@@ -444,21 +444,21 @@ You take a step back instinctively, but you know you won't make it in time.
 Then, she stumbles, seemingly over her own feet. You are left speechless as you watch the Captain flap her arms around, barely managing to stay upright. A violent blush covers her from head to toe.
 Tashigi: Ah, crap!
 Captain Tashigi squints as she frantically looks around her feet.
-Tashigi: I… I dropped my glasses.
+Tashigi: I... I dropped my glasses.
 It's clearly a futile search. You had noticed her glasses earlier, but it's only now that you realize just how much she needs them. She drops to her knees, and you can hear her whispering.
-Tashigi: If Vice Admiral Smoker finds out I lost another pair, I won't hear the end of it….
+Tashigi: If Vice Admiral Smoker finds out I lost another pair, I won't hear the end of it....
 -> [comment]Ask if she is alright[/comment]
     {$name}: Are you alright?
-    Tashigi: I'm fine. It's just that it's difficult to find my glasses without, well, having my glasses on… Wait, found them!
+    Tashigi: I'm fine. It's just that it's difficult to find my glasses without, well, having my glasses on... Wait, found them!
     Captain Tashigi blows on the lenses, trying to get most of the dirt off them. She accepts your hand when you offer it, and you help her stand up.
     Tashigi: Thanks. Now, er, where were we?
     <<set $wd1_tashigi += 1>>
 -> [comment]Step forward to help[/comment]
     Tashigi: NO, WAIT!
     But it's too late. There is a the sound of crunching glass coming from under your heel. You wince and step back immediately, but the damage is already done. You look down and see Captain Tashigi's glasses, or what's left of them.
-    Tashigi: …
+    Tashigi: ...
     Tashigi: You know, I bet Captain Bellemere could use some help with her obstacle course after all. Why don't you go look for her?
-    After Captain Tashigi dismisses you, you are left to wander around the garden alone. If you remember correctly, Captain Bell-mere should be at the training grounds…
+    After Captain Tashigi dismisses you, you are left to wander around the garden alone. If you remember correctly, Captain Bell-mere should be at the training grounds...
     Bellemere: Hey, [comment]name[/comment]... Woah, why so grim?
     You tell Captain Bell-mere all about your incident with Captain Tashigi, as you walk together.
     Bellemere: Ha! —
@@ -470,7 +470,7 @@ Tashigi: If Vice Admiral Smoker finds out I lost another pair, I won't hear the 
     Captain Tashigi lets out a laugh.
     Tashigi: You would have blocked in time, I'm sure.
     {$name}: Nah, I was definitely done for. Saw my life flash in front of my eyes. It's my lucky day, I guess.
-    Tashigi: Ha! If you say so… the Vice Admiral does hate paperwork, you know, so I'll try to reel it in.
+    Tashigi: Ha! If you say so... the Vice Admiral does hate paperwork, you know, so I'll try to reel it in.
     Tashigi: Oh, here they are!
     Captain Tashigi picks up her glasses and blows on the lenses, trying to get most of the dirt off them. She accepts your hand when you offer it, and you help her stand up.
     Tashigi: Thanks. Now, where were we?
@@ -517,7 +517,7 @@ Tashigi: I'm sure you must have some questions for me, I can tell. Let's hear th
     Tashigi: Come to think of it, I have always liked swords, ever since I was a child.
     {$name}: Why?
     Tashigi: In the past, I've met so many swordsmen unworthy of the blades they carry, ignorant of their past and their true potential.
-    Tashigi: And the first thing you need to know is that each sword is… unique in their making, with a history of their own. Perhaps a will of their own, too. They aren't just [i]tools[/i] for us to use.
+    Tashigi: And the first thing you need to know is that each sword is... unique in their making, with a history of their own. Perhaps a will of their own, too. They aren't just [i]tools[/i] for us to use.
     Captain Tashigi chuckles as she shakes her head.
     Tashigi: I'm rambling, now. Let's get back to work.
 You prepare yourself for the next round, but Captain Tashigi's sword stops mid-swing. She frowns as she looks at something behind you.
@@ -533,22 +533,22 @@ Upon meeting, the two women look grim, eyeing each other up and down.
 Bellemere: Uh, hey, Captain Tashigi.
 Tashigi looks tired and a little sweaty- she's obviously been putting effort into her sword practice. Bellemere, on the other hand, looks fresh as a daisy.
 Bellemere: Working hard?
-Tashigi: Commodore Bellemere. Hardly working, are we? How was the… obstacle course?
-Bellemere: I mean, honestly? I wasn't really feeling it today. Look around! It's so nice and balmy… sometimes you just have to slow down and enjoy life. Take care of the things that are important, you know?
+Tashigi: Commodore Bellemere. Hardly working, are we? How was the... obstacle course?
+Bellemere: I mean, honestly? I wasn't really feeling it today. Look around! It's so nice and balmy... sometimes you just have to slow down and enjoy life. Take care of the things that are important, you know?
 Captain Tashigi sighs.
 Tashigi: Why am I not surprised? Your not [i]feeling it[/i] translates into unprepared marines. And see, Petty Officer {$name}, we in the Marines usually consider the safety of our officers as [i]important[/i].
-Bellemere: Oh, I know all about keeping my priorities in order and protecting others. I was fighting pirates years before you were old enough to lift that sword, you know… plus, I didn't feel like running today.
+Bellemere: Oh, I know all about keeping my priorities in order and protecting others. I was fighting pirates years before you were old enough to lift that sword, you know... plus, I didn't feel like running today.
 She says the last stubbornly, like a petulant child trying to argue and running out of words.
 Tashigi: The obstacle course would be done by now, you're just making excuses at this point, Bellemere. You know what, whatever, it's not worth getting into it with you right now.
 Captain Tashigi turns to look at you.
 Tashigi: Come now, {$name}, let us not waste any more time.
 Bellemere: Waste time?! Implying you're going to do more? You're going to pass out from this heat! Am I right, {$name}?
--> Well, actually… I think Captain Tashigi has a point.
+-> Well, actually... I think Captain Tashigi has a point.
     <<lock_out_date bellemere>>
     if is_greater_than("wd1.tashigi", 3)
         <<unlock_date tashigi>>
     Bellemere looks very displeased - maybe even disgusted - with you right now. You doubt you'll be spending a lot of free time with her in the future.
-    Tashigi: Seriously, to have the new recruit be more responsible than a Commodore….
+    Tashigi: Seriously, to have the new recruit be more responsible than a Commodore....
     Captain Tashigi pats you on the back, an approving smile on her lips.
 -> Yeah! You have to take care of your health, first.
     <<lock_out_date tashigi>>
@@ -557,7 +557,7 @@ Bellemere: Waste time?! Implying you're going to do more? You're going to pass o
     Tashigi looks exasperated, but Bellemere grins.
     Bellemere: See that? I got the newbie on my side here, Tashi-chan.
     Maybe you've give the Captain a bad impression. You doubt, based on the bespectacled woman's expression, that you'll be spending much time with Captain Tashigi one-on-one in the near future.
-At the end of the day you go to bed thinking over everything that happened between your two superiors. Hopefully, you've made the right decisions…
+At the end of the day you go to bed thinking over everything that happened between your two superiors. Hopefully, you've made the right decisions...
 END WORK DAY
 if has_date_unlocked(bellemere)
     <<jump date_bellemere_1_main>>

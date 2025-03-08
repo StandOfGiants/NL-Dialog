@@ -6,7 +6,7 @@ Smoker: Oh, you showed up. Good, I was just stretching.
 -> That's always important!
 -> Ah, yeah, I guess I should get on that.
 -> Were you going to start without me?
-  Smoker: Well, maybe if you took a little longer…though fighting's not as fun when it's just one person.
+  Smoker: Well, maybe if you took a little longer...though fighting's not as fun when it's just one person.
 
 Smoker: So, since we're going to do some one-on-one, how about you grab a jitte?
 -> I don't have much experience fighting with it...but I'll give it a go.
@@ -17,13 +17,13 @@ Smoker: So, since we're going to do some one-on-one, how about you grab a jitte?
 Smoker rummages in the supply closet and returns with a jitte, like his but smaller, and hands it to you.
 Smoker: So, you've never fought with one of these before?
 -> No, but I'm ready to try. Bring it! (+1)
-  Smoker raises his jitte, and you just barely bring your weapon up in time to block. Well, you did give him an invitation…
+  Smoker raises his jitte, and you just barely bring your weapon up in time to block. Well, you did give him an invitation...
   -> Whoa, sneaky! I guess I gotta have my guard up.
 	Smoker: Just seeing if you really meant what you said. Your form's a bit off, though.
 	<<jump date_smoker_2_Jitte_1_competitive>>
 -> Nope. Any tips, or is it something I need to experience in a more physical way?
   Smoker: Just remember that it's not a bladed weapon. But that doesn't mean it's not versatile.
-  -> Well, I bet you can do lots of different things with it… (+1)
+  -> Well, I bet you can do lots of different things with it... (+1)
 	<<jump date_smoker_2_Jitte_1_flirty>>
   -> Hmm. So should I try to do everything, or focus on doing one thing well?
 	Smoker: Let me show you some of the basics. We can go from there.
@@ -68,8 +68,8 @@ Smoker: Remember, you should always be ready.
 title: date_smoker_2_Jitte_1_flirty_block
 ---
 Smoker: So raise your jitte, do what I'm doing. Good. Your stance looks loose. Now when I swing it down, look at the shaft. When it's halfway to sticking straight out, bring yours up.
--> Oh my…
-  Smoker: That came out…uh.
+-> Oh my...
+  Smoker: That came out...uh.
   -> Well, if that's what you're suggesting, either way I don't mind. (+1)
   -> Shall we, then? Try again with our weapons?
 -> Got it.
@@ -81,7 +81,7 @@ Smoker: So raise your jitte, do what I'm doing. Good. Your stance looks loose. N
   -> That's a tall order.
 	Smoker: Well, try it.
   -> And that's it?
-	Smoker: Well, then you've got to go on the counterattack…
+	Smoker: Well, then you've got to go on the counterattack...
 <<jump date_smoker_2_Jitte_1_flirty_2>>
 ===
 
@@ -94,10 +94,10 @@ He takes a hold of your wrist and turns it over.
 Smoker: Looks fine to me.
 His hand lingers, thumb pressed right up against the heel of your hand.
 -> Are you certain about that?
-  Smoker: You can go get it checked out if you want…
+  Smoker: You can go get it checked out if you want...
   -> No, that's fine.
   -> I trust your judgment. Just making sure.
--> … (+1)
+-> ... (+1)
   You try not to break the moment, and it holds. Smoker's hand is warm, his touch gentle, but eventually he lets go.
 -> Okay, good. I don't want to get injured.
   Smoker: I don't want to injure you.
@@ -115,7 +115,7 @@ Smoker: Damn. Good one.
   <<jump date_smoker_2_Jitte_1_flirty_counterattack>>
 -> [b]Wait for him to raise his jitte again[/b]
   <<jump date_smoker_2_Jitte_1_flirty_stare>>
--> Thanks…I learned from the best.
+-> Thanks...I learned from the best.
 	<<jump date_smoker_2_Jitte_1_flirty_talk>>
 ===
 
@@ -136,7 +136,7 @@ Smoker: My win again.
   -> I could tell. You seem happy. (+1)
 	Smoker: It's nice to spar jitte to jitte.
 	<<jump date_smoker_2_Jitte_2_flirty>>
--> That…didn't hurt as much as I expected.
+-> That...didn't hurt as much as I expected.
   Smoker: It's because I know what I'm doing.
   -> Because you're getting well-acquainted with my body? (+1)
 	Smoker: I'm taking some more educated guesses.
@@ -147,7 +147,7 @@ Smoker: My win again.
 
 title: date_smoker_2_Jitte_1_flirty_stare
 ---
-Smoker raises the jitte again, and [b]damn[/b]. You can't help but ogle him. His eyes are blazing like two cigars; the twist of his hips and torso make his muscles stand out. You can imagine twisting your body against his…and oh, crap, he's noticed you staring.
+Smoker raises the jitte again, and [b]damn[/b]. You can't help but ogle him. His eyes are blazing like two cigars; the twist of his hips and torso make his muscles stand out. You can imagine twisting your body against his...and oh, crap, he's noticed you staring.
 
 Smoker: What's up?
 -> I was just noting your posture. You seem to get a lot of power from your hips.
@@ -158,7 +158,7 @@ Smoker: What's up?
 	<<jump date_smoker_2_Jitte_2_flirty>>
   -> Watch my hips and see how I'm doing? (+1)
 	<<jump date_smoker_2_Jitte_1_flirty_stance>>
-  -> I'll keep that in mind…
+  -> I'll keep that in mind...
 	<<jump date_smoker_2_Jitte_2_flirty>>
 -> I was trying to figure out what move you were going to make.
 	<<jump date_smoker_2_Jitte_1_flirty_figure>>
@@ -175,7 +175,7 @@ Smoker raises his own jitte up and swings it down, the motion a bit like choppin
   Smoker: Looks good to me, but you need to work on the motion.
 -> Uhh, how was that?
   Smoker: You're holding your arms too stiffly.
--> …I'll just try that again.
+-> ...I'll just try that again.
 <<jump date_smoker_2_Jitte_2_flirty>>
 ===
 
@@ -183,7 +183,7 @@ title: date_smoker_2_Jitte_1_flirty_figure
 ---
 Smoker: What did you think?
 -> Same as last time?
-  Smoker: Well, I have set that precedent…but yeah, you were right.
+  Smoker: Well, I have set that precedent...but yeah, you were right.
   -> I guess I've been looking pretty closely at you. (+1)
   -> Of course I am.
   -> I just guessed, haha.
@@ -197,10 +197,10 @@ Smoker: What did you think?
 title: date_smoker_2_Jitte_1_flirty_talk
 ---
 Smoker: Laying it on thick, are we?
--> There are lots of things I could lay on…
+-> There are lots of things I could lay on...
 -> I went from useless to competitive in one go, I mean, what other explanation is there?
   Smoker: I don't want to inflate my ego too much here.
-  -> Oh, I don't mind swelling your…head. (+1)
+  -> Oh, I don't mind swelling your...head. (+1)
   -> So you're saying I'm a great student?
 	Smoker: You certainly pay attention.
   -> Take pride in your accomplishments.
@@ -256,7 +256,7 @@ title: date_smoker_2_Jitte_2_flirty
 Your weapons clash. Smoker moves with a grace that would be surprising for his size if you weren't already so familiar with it. It's hard not to get caught up in him, but your survival instinct persists and you manage to avoid getting hit hard.
 
 Smoker: You seem a little distracted.
--> Me? No…I'm paying attention to you. (+1)
+-> Me? No...I'm paying attention to you. (+1)
 -> Kinda hard not to be, sometimes.
 -> Maybe you're not distracted enough.
 
@@ -305,7 +305,7 @@ Smoker: Yeah, it's definitely something.
   Smoker: I tried a lot of different weapons, but the versatility is what drew me to it. And you can't make a lot of weapons out of seastone. It doesn't work for a blade, and for something solid like a club it's not really practical. Too heavy and expensive.
   -> Did you always want a seastone weapon?
 	Smoker: After the first time I fought a fruit user, it seemed like a distinct advantage I should take.
-  -> So that's what you prioritized, huh…
+  -> So that's what you prioritized, huh...
 	Smoker: I used to be stationed at Loguetown. Mouth of the Grand Line from East Blue—you get all sorts of opponents there. The versatility really came in handy.
   -> If a seastone sword were an option, would you get one?
 	Smoker: Nah. Tashigi probably would, though.
@@ -337,7 +337,7 @@ Smoker: You kept pace really well for someone with so little experience.
   Smoker: You can only prepare so much. I'm always telling Tashigi that, but those kinds of habits can be hard to break.
   -> You're telling me.
   	<<jump date_smoker_2_Jitte_break_down_end>>
-  -> This seems like something I should have prepared for better…always overestimate the amount of work something is going to be, right? (+1)
+  -> This seems like something I should have prepared for better...always overestimate the amount of work something is going to be, right? (+1)
 	Smoker: Well, that's all well and good until you get yelled at for overallocating resources.
 	<<jump date_smoker_2_Jitte_break_down_end>>
   -> Good to know someone as experienced as her also struggles with this.
@@ -355,8 +355,8 @@ Smoker: You kept pace really well for someone with so little experience.
   Smoker: It evens out across the match. If you were to continue using a jitte, I wouldn't say you're ill-suited.
   -> You don't have to give me a backhanded compliment. (-1)
   	<<jump date_smoker_2_Jitte_break_backhand>>
-  -> I had been thinking of it as a one-off thing, but now that you mention it…why not? (+1)
-	Smoker: If you want to spar again…
+  -> I had been thinking of it as a one-off thing, but now that you mention it...why not? (+1)
+	Smoker: If you want to spar again...
 	<<jump date_smoker_2_Jitte_break_down_end>>
   -> I'll consider it, then.
 	<<jump date_smoker_2_Jitte_break_down_end>>
@@ -381,12 +381,12 @@ title: date_smoker_2_Jitte_break_distinctive
 ---
 Smoker: Thanks. A lot of people just assume it's only the weapon, because so few people use it.
 -> It's obvious to me, though. Plenty of people use distinctive weapons but wield them like a katana or a bow and arrow.
-  Smoker: Yeah, that's how I started. It…well.
+  Smoker: Yeah, that's how I started. It...well.
   -> How did it change?
   	<<jump date_smoker_2_Jitte_break_distinctive_A>>
   -> Well what?
   	<<jump date_smoker_2_Jitte_break_distinctive_A>>
-  -> You can tell me…
+  -> You can tell me...
   	<<jump date_smoker_2_Jitte_break_distinctive_A>>
 -> They're clearly not paying attention. How did you get to be so good with it, anyway? (+1)
   Smoker: I just tried a lot of different things, I guess. When I was younger, I tried to imitate the styles of people I admired, even when they didn't use a jitte, but I ended up ditching that once I got real combat experience. You learn real quick what works and what doesn't.
@@ -409,7 +409,7 @@ Smoker: Thanks. A lot of people just assume it's only the weapon, because so few
 title: date_smoker_2_Jitte_break_distinctive_A
 ---
 Smoker: Well, don't laugh. I wanted to fight like Admiral Kizaru when I was younger, so I tried to imitate his swordsmanship with my jitte.
--> Well, that's certainly…unexpected. You don't fight like him at all.
+-> Well, that's certainly...unexpected. You don't fight like him at all.
 	<<jump date_smoker_2_Jitte_break_weapon_2>>
 -> Is it because of the logia thing?
   Smoker: Nah, before I even had my devil fruit. It was just about weapon skills.

@@ -23,9 +23,9 @@ As you approach, you can hear the scuffing of feet on the dirt of the training g
     <<jump date_helmeppo_4_TrainingFirst>>
 -> Watch.
     It takes Helmeppo a good few minutes to realize he has an audience. He moves from one set of drills into another, then a third before he turns, catches sight of you and jumps in surprise so hard that he literally falls right over.
-    Helmeppo: {$name}! You were … How long have you been there?
+    Helmeppo: {$name}! You were ... How long have you been there?
     {$name}: Maybe five minutes? You need to extend a little further on your side strike.
-    Helmeppo: I… Huh. Right.
+    Helmeppo: I... Huh. Right.
     He climbs to his feet and walks over to you. As he gets closer, you can see he seems a bit embarrassed at being caught.
     <<jump date_helmeppo_4_FriendlyTalk>>
 -> Leave.
@@ -69,7 +69,7 @@ Helmeppo: So what brings you out so early?
     Helmeppo: You know, that sounds like someone else I know.
     -> Coby?
         Helmeppo: Yeah. I really admire people who have a big dream and go for it though.
-        Helmeppo: Couldn’t be me, of course…
+        Helmeppo: Couldn’t be me, of course...
     -> Garp?
         Helmeppo snorts.
         Helmeppo: I think Garp would probably keel over in disgust if we ever suggested that.
@@ -78,7 +78,7 @@ Helmeppo: So what brings you out so early?
         Helmeppo: I admit, I’d [i]pay[/i] to see that.
 -> You.
     <<set $hd4_points += 1>>
-    Helmeppo: …
+    Helmeppo: ...
     Helmeppo: It is entirely too early in the morning for jokes like that.
     -> Who’s joking?
         Helmeppo opens his mouth to say something. Closes it. Start to talk once more. Then shakes his head.
@@ -138,10 +138,10 @@ Helmeppo: I guess if this is training, then maybe I should try something I’m l
         -> Apologize.
         He shakes his head and grins ruefully.
         Helmeppo: Ah. Right. What I’m saying is, you’re right. This is a good weapon to use.
-        Helmeppo: Anyway! Weapons training…
+        Helmeppo: Anyway! Weapons training...
 -> A knife.
     Helmeppo tosses the knife into the air, letting it flip once before he catches it by the hilt again.
-    Helmeppo: Wow. These seem so tiny now…
+    Helmeppo: Wow. These seem so tiny now...
 -> A polearm.
     He pulls the weapon free, fumbling it a little as the longer end smacks into the ground.
     Helmeppo: Why do we even [i]have[/i] these things?
@@ -187,12 +187,12 @@ Helmeppo: Do you do a lot of early training?
     Helmeppo winces in sympathy.
     Helmeppo: Your commander likes early morning runs?
     {$name}: Isn’t that [i]all[/i] commanders?
-    Helmeppo: … OK, fair.
+    Helmeppo: ... OK, fair.
 -> Oh yeah!
     <<set $hd4_points += 1>>
     Helmeppo: Man, I wish I had that level of enthusiasm.
     Helmeppo: Though I guess it’s better than it was.
-    Helmeppo: I didn’t used to want to do any of this nons… Ahem. Very important training.
+    Helmeppo: I didn’t used to want to do any of this nons... Ahem. Very important training.
     -> So you were lazy?
     -> So you had better things to do?
     Helmeppo: Hm. I guess you could say I hadn’t quite accepted my new reality yet.
@@ -212,9 +212,9 @@ Helmeppo: Do you do a lot of early training?
     Helmeppo: Heck, even being out here this early reminds me of those early days.
     Helmeppo: Though, don’t tell him, but you’re much better company than Bogard was.
     -> My lips are sealed.
-        Helmeppo: Thanks. I owe him a lot, and he’s a better teacher than Garp, but… Yeah.
+        Helmeppo: Thanks. I owe him a lot, and he’s a better teacher than Garp, but... Yeah.
     -> But he seems so nice!
-        Helmeppo: He is! Unless you’re his student, then he’s… Let’s just say strict can’t really cover it.
+        Helmeppo: He is! Unless you’re his student, then he’s... Let’s just say strict can’t really cover it.
     Helmeppo: But the one thing he is good at? He’s really patient with people if they’re trying.
     Helmeppo: He kept me focused long enough to figure out what I was really here for.
     <<jump date_helmeppo_4_GoalSetting>>
@@ -241,7 +241,7 @@ Helmeppo chuckles.
 Helmeppo: Yeah, that’s on me. I mean more metaphysically.
 -> So, my goals?
 -> You mean my dreams?
--> Like how I want to be remembered, or…
+-> Like how I want to be remembered, or...
 Helmeppo: Yeah, like that.
 A bit of a deep question for an early morning sparring session.
 -> I want to make the world safer.
@@ -262,7 +262,7 @@ Helmeppo: There’s always time.
 -> arrest your dad?
 -> retire in luxury?
 -> get another pet wolf?
-Helmeppo: That would be nice. But I think it’s more like…
+Helmeppo: That would be nice. But I think it’s more like...
 He considers, tapping his practice weapon against his shoulder for a few seconds.
 Helmeppo: My real dream?
 Helmeppo: Honestly, I guess it’s just to see my friends reach their dreams.
@@ -272,7 +272,7 @@ Helmeppo: It’s a manageable number.
 -> More than just Coby though?
     Helmeppo gives you a flat look.
     Helmeppo: Yes. It’s more than just Coby.
-    -> Suuuure…
+    -> Suuuure...
         <<set $hd4_points -= 1>>
         For just a second, he looks hurt.
         Helmeppo: Let’s get back to training. It’s almost time for breakfast.
@@ -298,16 +298,16 @@ You feel like the ultimate conclusion of this sparring session is imminent. You 
 -> duck past his attack and slam into his midsection.
     <<set $hd4_points += 1>>
     It seems like he was expecting some sort of high attack. Your sudden charge catches him off guard and you make solid contact.
-    Helmeppo falls back, but your momentum makes it hard for you to stop. You  pitch forward as well, arms windmilling but unable to catch yourself. Somehow when it’s all over, the two of you have ended up… Ahem.
+    Helmeppo falls back, but your momentum makes it hard for you to stop. You  pitch forward as well, arms windmilling but unable to catch yourself. Somehow when it’s all over, the two of you have ended up... Ahem.
     You can’t remember ever ending up straddling your opponent on the battlefield before, but there’s a first time for everything.
     Helmeppo raises his visor and peers at you.
     Helmeppo: Nice move.
-    -> Um… Thanks?
-        You feel your face starting to get warm. Oh gosh, this is so embarrassing. How could you… Just…
+    -> Um... Thanks?
+        You feel your face starting to get warm. Oh gosh, this is so embarrassing. How could you... Just...
         Helmeppo: {$name}?
         Oh! Oh yeah! You scramble to your feet.
     -> Sorry about that.
-        Helmeppo: It was a good plan! No need to apologize. Or did you mean…
+        Helmeppo: It was a good plan! No need to apologize. Or did you mean...
         {$name}: I didn’t mean to knock you over though!
         Helmeppo gives you a long slow look.
         Helmeppo: You sure about that?
@@ -365,9 +365,9 @@ Helmeppo: Yeah? Do you know what it is you’d risk it all for?
 -> Animals.
 Helmeppo: Ah! Makes sense. That’s nice.
 {$name}: How about you?
-Helmeppo: Hm. I guess…
+Helmeppo: Hm. I guess...
 He trails off as the two of you head over to put the weapons back.
-{$name}: You guess…?
+{$name}: You guess...?
 Helmeppo: To beat my father, I think.
 {$name}: Has he even been seen recently?
 Helmeppo: No. But that might be bad. I know better than most people how dangerous he can be.
@@ -384,7 +384,7 @@ Helmeppo: He might be hurting people, just like always.
     <<set $hd4_points += 1>>
     Helmeppo: Whose justice?
     Helmeppo: Feels like half the time, the higher ups think there’s a right answer before they even get to a situation.
-    Helmeppo: But … eh. I guess I’m just contrary.
+    Helmeppo: But ... eh. I guess I’m just contrary.
     Helmeppo: I’d rather know the context. And that’s not justice. It’s just helping.
 -> Loooove?
     <<set $hd4_points += 1>>
@@ -398,13 +398,13 @@ Helmeppo: I mean, it’s not like [i]that[/i].
 Helemppo’s steps falter.
 Helmeppo: Heh. Maybe the exertion was too much this early?
 -> You’re saying I’m wrong?
--> If you say so…
+-> If you say so...
     <<set $hd4_points -= 1>>
     <<jump date_helmeppo_4_EndingTwo>>
-Helmeppo: I’m saying you…
-Helmeppo: …
-{$name}: …
-Helmeppo: …
+Helmeppo: I’m saying you...
+Helmeppo: ...
+{$name}: ...
+Helmeppo: ...
 Helmeppo: Did you know that early morning exercise is actually good for your hair?
 {$name}: You’re changing the subject.
 Helmeppo: No, I’m serious!
@@ -432,7 +432,7 @@ He reaches out like he’s going to touch your hair. You:
 -> Let him.
     <<set $hd4_points += 1>>
     His finger just barely brushes your hair before he catches himself, crossing his arms in front of himself.
-    Helmeppo: Let’s… Let’s get going.
+    Helmeppo: Let’s... Let’s get going.
     <<jump date_helmeppo_4_EndingTwo>>
 ===
 
@@ -451,7 +451,7 @@ The two of you finish up and start heading back toward the base.
     You both get on with the rest of your day.
 <<elseif $hd4_points < 4>>
     <<romance_points helmeppo 1>>
-    Helmeppo: Well…  Have a good day.
+    Helmeppo: Well...  Have a good day.
     He seems genuinely regretful to have to head off to his own work.
 <<else>>
     <<romance_points helmeppo 2>>

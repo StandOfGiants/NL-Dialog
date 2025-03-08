@@ -2,28 +2,32 @@ title: date_sengoku_1_main
 location: day(garden)
 ---
 <<declare $sd1_points = 0>>
-It’s a nice day, the sun is shining, the fog has just blown out. And best of all, you have a bit of free time! The largest garden on base has been calling your name since you arrived, and now you’re finally here! Wow, look at that view…
-Suddenly, you feel a weird tugging near your waist. Startled, you look down A… Goat?
+It’s a nice day, the sun is shining, the fog has just blown out. And best of all, you have a bit of free time! The largest garden on base has been calling your name since you arrived, and now you’re finally here! Wow, look at that view...
+Suddenly, you feel a weird tugging near your waist. Startled, you look down A... Goat?
 <<show_characters goat>>
 A goat looks up at you, the hem of your shirt in its mouth. Uh. Hm. You look back and forth. Where did this goat come from?!
 <<show_characters goat sengoku>>
 Sengoku: Goat! Stop that! PC, I apologize for my companion’s rudeness. #expression:grumpy
--> It's no bother. Your goat is very cute! (+)(+)
-    Sengoku: Thank you… They’ve been my companion for a long time. #expression:joy
-    -> From before you were Inspector General? (+)(+)
+-> It's no bother. Your goat is very cute!
+    <<set $sd1_points += 2>>
+    Sengoku: Thank you... They’ve been my companion for a long time. #expression:joy
+    -> From before you were Inspector General?
+        <<set $sd1_points += 2>>
         Sengoku: Far before then, (RANK PC). They’ve seen more than most marines captains by now. We both deserve a retirement!
-    -> They looks spritely for a Old Goat…(+)
+    -> They look spritely for a Old Goat...
+        <<set $sd1_points += 1>>
         Sengoku: They’ve always been young at heart... And who's to say they’re old? (wink)
     -> A goat? A companion?
         <<set $sd1_points -= 1>>
         Sengoku: They’re better than some people on this base.
     Sengoku: Now, furry companions aside— #expression:neutral
         <<jump date_sengoku_1_route_e>>
--> It's alright—thank you for getting them off of me though.  I don't think the higher-ups would appreciate a goat-drooled uniform. (+)
+-> It's alright—thank you for getting them off of me though.  I don't think the higher-ups would appreciate a goat-drooled uniform.
+    <<set $sd1_points += 1>>
     Sengoku: Ha! No, Tsuru in particular would not appreciate that. #expression:smile
     -> Speaking from experience, sir?
         Sengoku: You don't keep this old goat as a companion for as long as I have without having a few.... Incidents. #expression:joy
-    -> She seems pretty stern…
+    -> She seems pretty stern...
         Sengoku: Tsuru's been my shipmate since my rookie days. She's not quite as stern as she seems, even with goats.
     -> Yeah... I don't think I would win any argument with her!
         <<jump date_sengoku_1_route_d>>
@@ -38,21 +42,21 @@ Sengoku: Goat! Stop that! PC, I apologize for my companion’s rudeness. #expres
         <<jump date_sengoku_1_route_d>>
     -> I came to this garden to relax! Not to get chewed on by a goat!
         Sengoku: This goat has served the marines longer than you have, (Rank) {$name}. You will respect that.
-        -> Understood, sir…
+        -> Understood, sir...
             <<jump date_sengoku_1_route_d>>
         -> I'm sorry sir... And I'm sorry, Goat.
             <<jump date_sengoku_1_route_d>>
         -> With all due respect, sir, it's an animal!
             Sengoku: (PC Rank,) I may no longer be fleet admiral, and we may be working as a team, but you have overstepped. Leave. #pose:crossed
-            2. Date ends super early.
-            // 1. Note: Lock out the goat route after this, since the pc hates the goat.
+            <<romance_points sengoku 0>>
+            <<lock_out goat>>
 ===
 
 title: date_sengoku_1_route_d
 ---
 Sengoku: A good marine knows when to step down... I'm glad you've learned such a lesson already. #expression:neutral
 -> Are... Are there times when you have had to stand down, sir?
-    Sengoku: Ah... Yes. The world doesn't see it that way but—yes. Yes… #pose:crossed
+    Sengoku: Ah... Yes. The world doesn't see it that way but—yes. Yes... #pose:crossed
 -> Bootcamp tends to humble you like that....
     Sengoku: Bootcamp! Ha! It's been a long time since I thought of that. #expression:joy
 Sengoku: But thoughts of those times aside... #expression:neutral #pose:pocket
@@ -68,7 +72,7 @@ Sengoku: What brings you to the garden?
 -> I was just exploring—getting familiar with the base!
     Sengoku: Then you've stumbled upon one of my favorite parts! The garden, where few others tend to disturb a man walking his goat.
     <<jump date_sengoku_1_route_f>>
--> I honestly can't remember... I should be getting back to my duties now…
+-> I honestly can't remember... I should be getting back to my duties now...
     Sengoku: Ah... Of course. The work of a Marine never stops. Remember to rest now and then.
     ->  Would you mind if I took a chance to rest here, then?
         Sengoku: I would welcome the company, {$name}! The garden is a wonderful place to... Escape, in a manner of speaking. #expression:joy
@@ -91,7 +95,7 @@ Sengoku: It's a peaceful place.
         -> I'd hope so!
             Sengoku: I suppose if you can spare a few moments of your day to talk to a man and his goat, that's friends enough.
             <<jump date_sengoku_1_route_g>>
-    -> The rumors do say you've loosened up a bit…
+    -> The rumors do say you've loosened up a bit...
         Sengoku: There's some truth to that. I most likely wouldn't be talking to you if I hadn't.
         <<jump date_sengoku_1_route_g>>
 -> I can agree with that ... Do you ever come here with others?
@@ -100,7 +104,7 @@ Sengoku: It's a peaceful place.
         Sengoku: You know... I think I'd like that. #expression:confused
         <<jump date_sengoku_1_route_g>>
     -> I'm calm!
-        Sengoku: Is that a request? Then… #expression:smile
+        Sengoku: Is that a request? Then... #expression:smile
         <<jump date_sengoku_1_route_g>>
     -> I wish you luck, then. I'm not sure I could rest for long.
         Sengoku: I never seem to find the calm types.
@@ -116,9 +120,12 @@ You and Sengoku take a moment to rest, enjoying the sunshine and the small noise
 
 
 title: date_sengoku_1_route_h
-characters: [goat, sengoku, placeholder("Rando Marine")]
+characters: [goat, sengoku, placeholder("Ensign Geoff")]
 ---
-Rando Marine: Sengoku, sir! I have a message from you from Tsuru…
+// Rename character
+Ensign Geoff: Sengoku, sir! I have a message from you from Tsuru...
 Sengoku: And there goes the peace... I'd best be going. It was nice talking to you, (PC Name). I look forward to working with you.
-DATE ENDS
+
+
+<<jump date_sengoku_2_main>>
 ===

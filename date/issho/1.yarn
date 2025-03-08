@@ -9,7 +9,7 @@ Laying in your room, you stare at the transponder snail in complete boredom. You
 title: date_issho_1_in_town
 location: day(town)
 ---
-Walking around aimlessly, you come across a noodle stand, surprisingly cozy. It smells really good too… but while you're approaching it, you spot someone familiar in line.
+Walking around aimlessly, you come across a noodle stand, surprisingly cozy. It smells really good too... but while you're approaching it, you spot someone familiar in line.
 <<show_characters issho>>
 {$name}: {$issho}?!
 {$issho}: Ah, {$name}! Have you come to eat as well? The food is excellent here.
@@ -42,7 +42,7 @@ title: date_issho_1_Part_2A
 location: day(park)
 ---
 {$issho}: I do have some time to spare. Lead the way, {$name}. #expression:smile
-Today is a beautiful day and the park is full of people enjoying a dose of fresh air. You notice…
+Today is a beautiful day and the park is full of people enjoying a dose of fresh air. You notice...
 -> ... How beautiful the sky is
     <<jump date_issho_1_Part_2A1>>
 -> ... A group of children playing nearby
@@ -51,7 +51,7 @@ Today is a beautiful day and the park is full of people enjoying a dose of fresh
 
 title: date_issho_1_Part_2A1
 ---
-{$name}: The park looks so beautiful. The sky is stunning today…
+{$name}: The park looks so beautiful. The sky is stunning today...
 {$issho}: [comment]smile[/comment] Is it...? Would you mind describing it to me? I find myself missing the simple things in life.
 -> Even though you're nervous, you decide you'll try your best!
     <<set $isd1_points += 1>>
@@ -75,8 +75,8 @@ You take a deep breath.
     <<jump date_issho_1_Part_2A3>>
 -> Err... the sky is, y'know, blue like it normally is... but prettier today! Extra pretty!
     <<set $isd1_points += 1>>
-    {$issho}: [comment]laugh[/comment] Pffff… haha.
-    {$name}: ...That wasn't a very good job... was it…?
+    {$issho}: [comment]laugh[/comment] Pffff... haha.
+    {$name}: ...That wasn't a very good job... was it...?
     {$issho}: [comment]smiles[/comment] But you tried your best, that's what matters. Thank you. It sounds like a lovely day.
     <<jump date_issho_1_Part_2A3>>
 -> The sky is a really deep blue with some moving clouds. I think there's a small breeze. It's really calming.
@@ -91,16 +91,16 @@ You stand all proud after your joke. A second passes before {$issho} chuckles, a
 Oh! He likes your joke! You know what joke to say next then!
 -> Okay, I have a better one for you... the weather today's windy. It sure blows!
     <<set $isd1_points += 1>>
-    {$issho}: <pause> [comment]laugh[/comment] Pfff… haha… thank you, {$name}! I haven't laughed so much in a while. You have a good sense of humor.
+    {$issho}: <pause> [comment]laugh[/comment] Pfff... haha... thank you, {$name}! I haven't laughed so much in a while. You have a good sense of humor.
     <<jump date_issho_1_Part_2A3>>
 -> You know what... the day is nice, but you're nicer.
-    {$issho}: <pause>... That's very flattering…
-    Oh no, you hope you haven't overstepped your boundaries…
+    {$issho}: <pause>... That's very flattering...
+    Oh no, you hope you haven't overstepped your boundaries...
     <<jump date_issho_1_Part_2A3>>
 -> [wave]Do you have a sunburn or are you always this hot, Admiral?[/wave]
     <<set $isd1_points -= 1>>
     <<set $isd1_points -= 1>>
-    There's an awkward silence as you stare at each other. That joke didn't land as well as the first one…
+    There's an awkward silence as you stare at each other. That joke didn't land as well as the first one...
     <<jump date_issho_1_Part_2A3>>
 ===
 
@@ -113,7 +113,7 @@ title: date_issho_1_Part_2A1_Dick
     <<jump date_issho_1_Part_2A3>>
 -> Relax, Admiral! It's just a joke!
     <<set $isd1_points -= 1>>
-    {$issho} doesn't seem to find your joke as funny as you do. Perhaps you should apologize…
+    {$issho} doesn't seem to find your joke as funny as you do. Perhaps you should apologize...
     <<jump date_issho_1_Part_2A3>>
 -> Tch. I'm just being honest.
     <<set $isd1_points -= 1>>
@@ -156,7 +156,7 @@ title: date_issho_1_Part_2A2_Observe
 title: date_issho_1_Part_2A2_Join
 ---
 {$issho}: A boring old man like me? Thank you for your offer. I can just sit at the bench. You go ahead, {$name}.
-You leave Issho at the bench before joining the kids with a cheerful wave. They are indeed looking for an extra playmate. You're playing for a bit, but then…
+You leave Issho at the bench before joining the kids with a cheerful wave. They are indeed looking for an extra playmate. You're playing for a bit, but then...
 <<start_effect shake>>
 [shake]SNAP![/shake]
 A kite's line snaps, causing it to snag on a tree. Uh oh. What should you do now?
@@ -181,7 +181,7 @@ A kite's line snaps, causing it to snag on a tree. Uh oh. What should you do now
     Ignoring the kids' cry, you return to {$issho}'s side.
     {$issho}: Did you have fun?
     {$name}: It went okay, but then the kids started crying. I'm a Marine, not a babysitter.
-    {$issho}: [comment]frown[/comment] …
+    {$issho}: [comment]frown[/comment] ...
     <<jump date_issho_1_Part_2A3>>
 ===
 
@@ -288,12 +288,12 @@ location: day(town)
 {$issho}: That's good to hear. Is there anything you're curious about?
 {$name}: I want to know more about you! What do you do in your free time?
 {$issho}: What do I do in my free time? Hmm, I do enjoy visiting different islands and bases, perhaps gambling. Work has taken a lot of my free time lately though.
-{$name}: Oh, those are some interesting activities, but…
--> … I thought Admirals would need to stay in Marineford all the time.
+{$name}: Oh, those are some interesting activities, but...
+-> ... I thought Admirals would need to stay in Marineford all the time.
     <<jump date_issho_1_Part_2B1a>>
--> … Is gambling legal? Won't you get in trouble?
+-> ... Is gambling legal? Won't you get in trouble?
     <<jump date_issho_1_Part_2B1b>>
--> … How about work?
+-> ... How about work?
     <<jump date_issho_1_Part_2B1c>>
 ===
 
@@ -302,7 +302,7 @@ title: date_issho_1_Part_2B1a
 {$issho}: That's where we spend most of our time but to tell you the truth, we leave all the time — either on missions, or just out of our own volition. Take Kuzan, for example.
 {$issho}: Personally speaking, I suppose I still have wanderlust left.
 -> Why do you like to travel?
-    {$issho}: I want to learn about the impact of the work we do, and also… of the hidden rot lurking beneath the surface.
+    {$issho}: I want to learn about the impact of the work we do, and also... of the hidden rot lurking beneath the surface.
     <<jump date_issho_1_Part_2B2>>
 -> You must have met a lot of interesting people!
     <<set $isd1_points += 1>>
@@ -319,7 +319,7 @@ title: date_issho_1_Part_2B1a
 title: date_issho_1_Part_2B1b
 ---
 {$issho}: It's not illegal, although Saka would beg to differ. He doesn't think an Admiral should gamble. Still, as long as I complete my duty, he has to let it go.
-{$name}: I guess so, but…
+{$name}: I guess so, but...
 -> ...Wouldn't people try to scam you all the time? Why do you still gamble?
     {$issho}: [comment]smile[/comment] You're kind, but there's no need to worry. Observation Haki can also detect feelings. I'm gambling, but in a different way.
     <<jump date_issho_1_Part_2B2>>
@@ -338,7 +338,7 @@ title: date_issho_1_Part_2B1b
 title: date_issho_1_Part_2B1c
 ---
 {$issho}: I take great joy in helping people, but I find paperwork and protocols rather tedious.
-You take a moment to think…
+You take a moment to think...
 -> That makes sense. Paperwork can be a pain!
     <<set $isd1_points += 1>>
     {$issho}: Quite. I've gotten used to it, but there are days the burden still feels heavy.
@@ -368,7 +368,7 @@ You two walk for a while longer before curiosity gets the best of you.
 
 title: date_issho_1_Part_2B2a
 ---
-{$issho}: [comment]laugh[/comment] Haha… You're right, we do disagree a lot.
+{$issho}: [comment]laugh[/comment] Haha... You're right, we do disagree a lot.
 {$issho}: Saka is prideful and strong-willed in ways I cannot accept.
 -> I see what you mean. They do say pride comes before the fall.
     <<set $isd1_points += 1>>
@@ -397,7 +397,7 @@ title: date_issho_1_Part_2B2b
     <<set $isd1_points += 1>>
     {$issho}: Is that so? I suppose I should make an effort to talk with him more.
     <<jump date_issho_1_Part_2B3>>
--> Well... I guess he [i]is[/i] pretty cool…
+-> Well... I guess he [i]is[/i] pretty cool...
     <<set $isd1_points -= 1>>
     {$issho}: [comment]smile[/comment] Indeed, and I'm just one boring Admiral.
     <<jump date_issho_1_Part_2B3>>
@@ -406,7 +406,7 @@ title: date_issho_1_Part_2B2b
 title: date_issho_1_Part_2B2c
 ---
 {$issho}: [comment]smile[/comment] No, I don't. He shows up to work eventually.
-{$issho}: [comment]sad[/comment] The Punk Hazard fight takes its toll on him…
+{$issho}: [comment]sad[/comment] The Punk Hazard fight takes its toll on him...
 -> Oh. I hope he gets better soon.
     <<set $isd1_points += 1>>
     {$issho}: Me, too, {$name}. Me, too.
@@ -426,14 +426,14 @@ title: date_issho_1_Part_2B2c
 
 title: date_issho_1_Part_2B3
 ---
-You watch him walk, feeling the ground in front of him. You can't help but wonder…
+You watch him walk, feeling the ground in front of him. You can't help but wonder...
 {$name}: Is it... hard being a Marine while being visually impaired?
 {$issho}: [comment]smile[/comment] There are methods to see without vision. Observation Haki helps tremendously.
 -> But... how do you deal with people treating you differently?
     <<jump date_issho_1_Part_2B3a>>
 -> Does it make reading reports hard?
     <<jump date_issho_1_Part_2B3b>>
--> Even with Haki, you're still a blind old man though…
+-> Even with Haki, you're still a blind old man though...
     <<jump date_issho_1_Part_2B3c>>
 ===
 
@@ -448,7 +448,7 @@ title: date_issho_1_Part_2B3a
     {$issho}: [comment]smile[/comment] That they can be, yes. There are battles not worth picking though. Protecting my pride by showing off is one of those.
 -> I don't think I can make an accurate assessment yet. Perhaps if we spend more time together...?
     {$issho}: <pause> [comment]Smile[/comment] Perhaps if we run into each other again in the future.
--> I'm sure you're really strong! But you don't have a Logia…
+-> I'm sure you're really strong! But you don't have a Logia...
     <<set $isd1_points -= 1>>
     {$issho}: [comment]frown[/comment] Having a Logia — or eyesight, for that matter — doesn't grant strength. Sometimes, it's the arrogant Logia that gets defeated first.
 <<jump date_issho_1_DateEnding>>
@@ -476,7 +476,7 @@ title: date_issho_1_Part_2B3c
 ---
 {$issho}: I have heard the same thing from the many pirates I've captured over the years.
 {$issho}: [comment]frown[/comment] Underestimating people like that can get you in serious trouble.
--> M-My apologies... that was out of line…
+-> M-My apologies... that was out of line...
     {$issho}: It was. The world is full of people who are powerful but don't look like it.
 -> I'm not worried. I'm a desk jockey! I'll be fine!
     <<set $isd1_points -= 1>>
@@ -484,7 +484,7 @@ title: date_issho_1_Part_2B3c
 -> I guess, if you say so.
     <<set $isd1_points -= 1>>
     <<set $isd1_points -= 1>>
-    {$issho}: [comment]frown[/comment] …
+    {$issho}: [comment]frown[/comment] ...
 <<jump date_issho_1_DateEnding>>
 ===
 
@@ -536,7 +536,7 @@ elif is_greater_than("isd1.points", 0)
     {$issho} nods with a smile. You watch him leave before going home yourself. Tomorrow is going to be a busy day!
     <<romance_points issho 1>>
 else
-    There's now a tense awkwardness between you two. You want to start a conversation, but you don't know how to. {$issho} doesn't treat you badly, but there's no chemistry between you two either. After another fifteen minute of futility…
+    There's now a tense awkwardness between you two. You want to start a conversation, but you don't know how to. {$issho} doesn't treat you badly, but there's no chemistry between you two either. After another fifteen minute of futility...
     {$issho}: I should leave. I have a few more tasks to attend to.
     So soon? Don't you want to hang out some more?
     -> As pleasant as today has been, I will have to cut it short, unfortunately. Maybe another time.

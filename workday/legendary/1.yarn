@@ -24,7 +24,7 @@ Tsuru: Ugh. Please ignore them. We're happy to have you here.
 title: workday_legendary_1_ConversationContinues
 ---
 {$name}: Event? What kind of event?
-{$name}: I think I heard something about that…
+{$name}: I think I heard something about that...
 Sengoku: It's a welcoming ceremony for the new recruits we have coming in. Something to show them what the Navy's made of, and what to expect! #expression:smile
 Garp: Ah... I remember my first day as a rookie... the food was amazing.
 Tsuru: That's because you accidentally went to the officer's hall instead of the recruitment ceremony.
@@ -36,7 +36,7 @@ Tsuru: We could use your help with the final touches. There are a lot of... conf
 -> I'd be happy to help!
     Tsuru: Fantastic!
     Sengoku: Finally - someone who wants to help. #expression:joy
-    Garp: I don't see why we can't just skip the speech…
+    Garp: I don't see why we can't just skip the speech...
     Tsuru: Our recruits need to understand our ideals - not just our strength, Garp!
 -> I'd rather just listen; I don't think I have enough speech writing experience for that.
     Garp: See! Someone else who thinks writing this speech is ridiculous!
@@ -226,7 +226,7 @@ Tsuru:  As much as I disagree with giving a pirate the status of a legend, it's 
     -> I think the world should know the truth.
         <<like garp>>
         <<hate tsuru>>
-        Tsuru:  …Well.
+        Tsuru:  ...Well.
         Tsuru:  Let's focus on the task at hand.
 -> I thought stories about Roger would be a little more... exciting.
     <<hate tsuru>>
@@ -336,7 +336,7 @@ Rosinante: And how is that an issue?
         Sengoku: You'll have to get a lot stronger.
         {$name}: I don't mind! I will get stronger.
         Sengoku: Hahaha! See, Rosinante? This is the sort of attitude I want from you as well.
-        Sengoku: Maybe one day, after you stop fraternizing with the enemy…
+        Sengoku: Maybe one day, after you stop fraternizing with the enemy...
         Rosinante: ...
         Rosinante: Sengoku-san, you wound me.
         Sengoku: As if [i]you[/i] don't wound me! Hahahaha!

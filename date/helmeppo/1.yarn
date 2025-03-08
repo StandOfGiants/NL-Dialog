@@ -33,7 +33,7 @@ The weather is beautiful for your walk into town. Helmeppo is very quiet. It see
     <<jump date_helmeppo_1_Helmeppo_bath_store1>>
 -> Aren't you related to Axe Hand Morgan?
     <<set $hd1_knows_about_morgan to true>>
-    Helmeppo: …
+    Helmeppo: ...
     Helmeppo: I'd rather not talk about [i]him[/i]...
     <<jump date_helmeppo_1_Helmeppo_bath_store1>>
 -> Huh. I didn't know there was a pet store here.
@@ -43,7 +43,7 @@ The weather is beautiful for your walk into town. Helmeppo is very quiet. It see
 title: date_helmeppo_1_Helmeppo_petshop
 ---
 <<set $hd1_knows_about_wolf to true>>
-Helmeppo: Yeah. Can't say I've been in that one. I've sort of avoided them since my wolf Soro… died.
+Helmeppo: Yeah. Can't say I've been in that one. I've sort of avoided them since my wolf Soro... died.
 <<set $hd1_points_possible += 1>>
 -> I'm so sorry. That must have been tough.
     Helmeppo: Oh, uh, thanks.
@@ -53,9 +53,9 @@ Helmeppo: Yeah. Can't say I've been in that one. I've sort of avoided them since
 -> What happened to it?
     Helmeppo: Roronoa Zoro happened.
     Helmeppo:.....
-    Helmeppo: It's a [i]long[/i] story…
+    Helmeppo: It's a [i]long[/i] story...
     <<jump date_helmeppo_1_Helmeppo_bath_store1>>
--> What kind of freak has a pet wolf…
+-> What kind of freak has a pet wolf...
     <<set $hd1_points -= 1>>
     Helmeppo: [i]This[/i] kind.
     <<jump date_helmeppo_1_Helmeppo_bath_store1>>
@@ -148,7 +148,7 @@ Helmeppo: I'm back. Sorry it took so long.
     <<jump date_helmeppo_1_Helmeppo_travel2>>
 -> You should be. I was close to leaving.
     <<set $hd1_points -= 1>>
-    Helmeppo: …
+    Helmeppo: ...
     <<jump date_helmeppo_1_Helmeppo_travel2>>
 ===
 
@@ -179,11 +179,11 @@ You both set off again in silence. Your companion is looking around the town, se
 -> What do you need at the weaponsmith?
     <<jump date_helmeppo_1_Helmeppo_kukri1>>
 -> You don't talk much, do you.
-    Helmeppo: Yeah. Coby generally talks enough for us both, so people don't usually notice…
+    Helmeppo: Yeah. Coby generally talks enough for us both, so people don't usually notice...
     <<jump date_helmeppo_1_Helmeppo_weaponsmith1>>
--> So… What was it like training under Garp?
+-> So... What was it like training under Garp?
     <<jump date_helmeppo_1_Helmeppo_Garp>>
--> So about that pet wolf… [comment]if has_item("KnowsAboutWolf")[/comment]
+-> So about that pet wolf... [comment]if has_item("KnowsAboutWolf")[/comment]
     <<jump date_helmeppo_1_Helmeppo_wolf>>
 -> Are you sure you don't want to talk about your dad? [comment]if has_item("KnowsAboutMorgan")[/comment]
     <<jump date_helmeppo_1_Helmeppo_Morgan>>
@@ -224,8 +224,8 @@ title: date_helmeppo_1_Helmeppo_Garp
 Helmeppo shudders.
 Helmeppo: Painful. More so for me than Coby.
 Helmeppo: Word of advice, don't let him pat you on the back if you value your spine.
--> I guess he really lives up to ‘Garp the Fist' then…
-    Helmeppo: More than you know…
+-> I guess he really lives up to ‘Garp the Fist' then...
+    Helmeppo: More than you know...
     <<jump date_helmeppo_1_Helmeppo_weaponsmith1>>
 -> What do you mean, it was more painful for you?
     Helmeppo: Coby's sturdy and built to take a hit.
@@ -241,7 +241,7 @@ title: date_helmeppo_1_Helmeppo_kukri1
 Helmeppo: I'm picking up my kukri. The grips cracked during my last sparring session with Coby, so I needed to get them replaced.
 -> You were sparring with real blades?!
     Helmeppo: The further you get up the ranks, the more than happens. Honestly, I'm glad it was just the grips.
-    Helmeppo: For a second, I'd thought it was my back…
+    Helmeppo: For a second, I'd thought it was my back...
     <<jump date_helmeppo_1_Helmeppo_weaponsmith1>>
 -> Why not get the Marines' in-house weaponsmith to fix them?
     Helmeppo: I like this one's work better.
@@ -284,26 +284,26 @@ Helmeppo: Right. Well, I guess I'll see you later then?
     <<jump date_helmeppo_1_End_date>>
 -> Only if I have no choice in the matter.
     <<set $hd1_points -= 2>>
-    Helmeppo: …
+    Helmeppo: ...
     <<jump date_helmeppo_1_End_date>>
 ===
 
 title: date_helmeppo_1_Helmeppo_travel4
 ---
 Once again you start walking together. You suppose it's time to—
-Helmeppo: So… You're from the South Blue, right? What was it like?
+Helmeppo: So... You're from the South Blue, right? What was it like?
 -> It was nice. The Grand Line is nice, but I miss my home. And my parents.
-    Helmeppo: Yeah? It must be nice to have something to miss…
+    Helmeppo: Yeah? It must be nice to have something to miss...
 -> It was alright. It's much more interesting here than it was at home.
     Helmeppo: Yeah, the Grand Line has no shortage of bizarre things going on. Even without leaving the base.
 -> Honestly I'm glad to be out of there. With any luck I'll never have to go back.
-    Helmeppo: I know how that feels…
+    Helmeppo: I know how that feels...
 <<jump date_helmeppo_1_Helmeppo_travel5>>
 ===
 
 title: date_helmeppo_1_Helmeppo_travel5
 ---
-He falls quiet again. It's not as peaceful as last time. You notice the almost troubled look on Helmeppo's face. The talk of your home seems to have brought up some less than pleasant thoughts for him…
+He falls quiet again. It's not as peaceful as last time. You notice the almost troubled look on Helmeppo's face. The talk of your home seems to have brought up some less than pleasant thoughts for him...
 -> (Stay Silent)
     <<jump date_helmeppo_1_Date_Ending>>
 -> What is there to eat around here?
@@ -331,7 +331,7 @@ Helmeppo: We actually only met about two years ago. It's funny. We didn't get al
     Helmeppo: It is. Coby's a great guy to get to know better, if you get the chance.
 -> You two didn't get along? That sounds like a story I need to hear.
     Helmeppo: With your position, I'm surprised you haven't.
-    Helmeppo: It seems like all the Shells Town transfers try to ‘warn' people about my past… But I'll tell you the story some other time.
+    Helmeppo: It seems like all the Shells Town transfers try to ‘warn' people about my past... But I'll tell you the story some other time.
 -> I can see how you didn't get along at first.
     <<set $hd1_points -= 1>>
     Helmeppo: At least I used to [i]actually[/i] deserve it.
@@ -377,11 +377,11 @@ title: date_helmeppo_1_End_date
 title: date_helmeppo_1_Date_Ending
 location: day(town)
 ---
-Helmeppo: Geez, I didn't even notice it was getting so late…
+Helmeppo: Geez, I didn't even notice it was getting so late...
 It isn't long before you both make it back to the base, walking into the training grounds where you had first run into him. For several seconds, you both just stand there.
 
 <<if $hd1_points / $hd1_points_possible > 0.5>>
-    Helmeppo: Look, I know I was dismissive when you asked, but… Thanks for coming with me today. It was nice.
+    Helmeppo: Look, I know I was dismissive when you asked, but... Thanks for coming with me today. It was nice.
     Helmeppo: We should do something like this again sometime. You know. If you want to.
     -> Yeah. I'd like that.
         <<set $hd1_points += 1>>

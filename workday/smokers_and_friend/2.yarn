@@ -1,10 +1,10 @@
 title: workday_smokers_and_friend_2_main
 ---
-[i]All characters discussing who would carry boxes of evidence marked “Impel Down” up from the creepy basement evidence locker room up to Hina's office, and who will go through the boxes looking for “a very important envelope labeled, “indispensable.” (Must include SOMETHING of Tashigi and Bellemere getting along better. Some concession. Bellemere will be freaked out by basements… maybe Tashigi offers her a flashlight or something?)[/i]
+[i]All characters discussing who would carry boxes of evidence marked “Impel Down” up from the creepy basement evidence locker room up to Hina's office, and who will go through the boxes looking for “a very important envelope labeled, “indispensable.” (Must include SOMETHING of Tashigi and Bellemere getting along better. Some concession. Bellemere will be freaked out by basements... maybe Tashigi offers her a flashlight or something?)[/i]
 [i]Your division has been given a task to complete together, and while the orders have been marked “urgent,” you can't imagine what could be so pressing about going through a bunch of mundane brown boxes.[/i]
-[i]The Headquarters Building is full of Marine offices at the surface level, along with payroll, a cafeteria, and some community spaces. It's… a very average space, to be sure, and you've come to understand in the past months why most people choose to do as much training outside as possible. Officers avoid paperwork like the plague around here, though there are some tasks that just have to be done inside.[/i]
+[i]The Headquarters Building is full of Marine offices at the surface level, along with payroll, a cafeteria, and some community spaces. It's... a very average space, to be sure, and you've come to understand in the past months why most people choose to do as much training outside as possible. Officers avoid paperwork like the plague around here, though there are some tasks that just have to be done inside.[/i]
 [i]And so you, Vice Admiral Smoker, Rear Admiral Hina, Captain Tashigi, and Captain Bellemere all are forced to follow orders that keep you inside on this nice sunny day.[/i]
-[i]Not only inside… but also deep in the bowels of the ill-lit office building.[/i]
+[i]Not only inside... but also deep in the bowels of the ill-lit office building.[/i]
 [i]You open the door for your superiors as they start down the narrow staircase, shocked by just how deep down it goes.[/i]
 Bellemere: I hate basements. I hate being confined. I hate-
 do show_character(tashigi, left_side1, show)
@@ -35,8 +35,8 @@ Smoker: Sengoku said it was a  blue package, which I assume is related to the re
 -> Ooh, I'd love to read that report. (+1 Tashigi??)
 Hina: It has been determined they were harboring confidential information that was likely left with their belongings. However, someone did not follow protocol when placing said belongings into evidence storage, so we now have to go through every box of evidence to ensure we can fulfill the request.
 Tashigi: Officers at Impel Down realised the mistake during one of their usual rounds of questioning. Or so they say. Who knows how they actually got their information. Impel Down is not big on transparency.
-Smoker: Well, according to Sadi-chan, the confession was given under duress. I don't know if they're in any condition to tell us the rest of it either…well with Sadi-chan, you have to read between the lines, but that's the gist of what she told us.
-Hina: Fufufu, Sadi-chan is as efficient as ever, one must hand it to their particular skillset at Impel Down. Anyway, Hina is not about to compromise her excellent -ah, uhh…Marine Headquarters' excellent standing with Impel Down. We will need to find the box immediately.
+Smoker: Well, according to Sadi-chan, the confession was given under duress. I don't know if they're in any condition to tell us the rest of it either...well with Sadi-chan, you have to read between the lines, but that's the gist of what she told us.
+Hina: Fufufu, Sadi-chan is as efficient as ever, one must hand it to their particular skillset at Impel Down. Anyway, Hina is not about to compromise her excellent -ah, uhh...Marine Headquarters' excellent standing with Impel Down. We will need to find the box immediately.
 -> Go help carry boxes from the basement
     <<jump workday_smokers_and_friend_2_Basement>>
 -> Help sort through the boxes in Hina's office
@@ -60,7 +60,7 @@ The rest of the basement is still flooded in darkness. When you reach the bottom
 -> Damn, no budget for lightbulb replacement?
     Bellemere: We're lucky they found the budget for lights at all, down here. This place looks like where things go to never see the light again..
 -> When was the last time anyone was here?
-    Smoker: Probably a few months ago. Last time they made a big arrest, anyway…
+    Smoker: Probably a few months ago. Last time they made a big arrest, anyway...
 -> Whoa, this place is huge.
 Smoker: So. We're here.
 -> Where should we start?
@@ -69,7 +69,7 @@ Smoker: So. We're here.
     Smoker: Hell no. It's disorganized enough as it is; we don't need to end up doing redundant work.
 -> So we really have no idea what we're looking for?
     Bellemere: Just boxes, I guess. Something to do with “Blue-finger Jenkins.” What a shit pseudonym- did the guy think that made him seem tough?
-The three of you enter a room to the right with a barely-legible, rusted old plaque that reads, “Evidence Room 1.” Moldy boxes are stacked high, some collapsing in on others and creating avalanches of spilled paperwork, seastone cuffs, dice, hats, weapons of all sorts, and… was that a pack of gum?
+The three of you enter a room to the right with a barely-legible, rusted old plaque that reads, “Evidence Room 1.” Moldy boxes are stacked high, some collapsing in on others and creating avalanches of spilled paperwork, seastone cuffs, dice, hats, weapons of all sorts, and... was that a pack of gum?
 PC: Seems like the term “evidence” is pretty, uh, wide-reaching.
 Belle-mère: This is going to take all day.
 You all begin to sort the boxes into piles, though it feels fairly hopeless. There are labels on most of them, though the format of the labeling procedure seemed to change through the years. Older boxes have dates and names on yellowed stickers, but it appears that starting about eight years ago someone lazy decided to just mark the year.
@@ -97,7 +97,7 @@ Who has a toaster on them while arrested!?
 Some boxes are a little more standard, such as one that's just full of old maps, but why are they stored down here? You'd think someone would be analyzing themm likefor example in the map room. You're not sure what Smoker and Bellemere are up to, but maybe one of them has found something- you hear someone approaching from behind.
 do show_character(bellemere, left, show)
 Bellemere: Ooh, maps. Nami would love those!
--> Uh, I don't think we can just [b]take[/b] them… (-1 Bellemere)
+-> Uh, I don't think we can just [b]take[/b] them... (-1 Bellemere)
 -> Take a look! I don't think they're good evidence, though.
 -> No idea if the treasure or whatever's still there though.
 Bellemere: Hey, Smoker! Take a look.
@@ -109,9 +109,9 @@ Smoker: Yeah, for a few years... Oh, wow. Yeah, that's a fake map if I ever saw 
 Bellemere: You mean it wasn't real? I always hoped it was, so I could get some for myself...
 Smoker: Definitely not. I had access to all the records of official searches.
 -> Wow, Loguetown–I've heard of that place! You must have faced off against some interesting people there, Vice Admiral. (+1 Smoker)
-    Smoker: Yeah, a bunch were more trouble than they were worth…I keep meaning to go back, though, see what's become of it and all.
--> It's always a disappointment to find out it was just a tall tale…we had some of those back in my hometown, too.
--> Well, did they find anything at all? Even if it wasn't the Pirate King's treasure…
+    Smoker: Yeah, a bunch were more trouble than they were worth...I keep meaning to go back, though, see what's become of it and all.
+-> It's always a disappointment to find out it was just a tall tale...we had some of those back in my hometown, too.
+-> Well, did they find anything at all? Even if it wasn't the Pirate King's treasure...
     Smoker: Nah, but they did burst a sewage pipe once. Glad I wasn't there for that.
 Bellemere tucks the box of maps under her arm.
 Bellemere: Well, I'll just take this, then...
@@ -135,7 +135,7 @@ The explosive chemicals stored poorly in the basement were either dull with age,
 Smoker: What the [i]hell[/i] was that!?
 Belle-mère: (name), you got a death wish!?
 PC:
--> I, uh… guess I should be more careful with the contents.
+-> I, uh... guess I should be more careful with the contents.
     <<jump workday_smokers_and_friend_2_A>>
 -> Hey! How was I supposed to know someone stored such dangerous items down here!?
     <<jump workday_smokers_and_friend_2_B>>
@@ -144,7 +144,7 @@ PC:
 title: workday_smokers_and_friend_2_A
 ---
 Belle-mère: It's fine- though it looks like a good deal of contraband was destroyed.
-Smoker: Not really fine… but we can worry about the report on this later. Let's just finish looking through what's left and hope nothing important was blown up.
+Smoker: Not really fine... but we can worry about the report on this later. Let's just finish looking through what's left and hope nothing important was blown up.
 Guess you're done with this side!
 -> Go to help on the Left
     <<jump workday_smokers_and_friend_2_Left>>
@@ -157,7 +157,7 @@ title: workday_smokers_and_friend_2_B
 Smoker: Another one with attitude, huh? Making excuses for yourself is a bad look. (-1 Smoker)
 Bellemere: Don't look at me! I'm not helping you with the paperwork on this one, `name`! You'll have to report this one on your own.
 Smoker: Looks like a lot of boxes are destroyed. Damn.
-You feel kind of bad… what if something important was inside? Maybe you could have been more careful… though you're pride doesn't allow you to admit that [i]now[/i]!
+You feel kind of bad... what if something important was inside? Maybe you could have been more careful... though you're pride doesn't allow you to admit that [i]now[/i]!
 Guess you're done with this side!
 -> Go to help on the Left
     <<jump workday_smokers_and_friend_2_Left>>
@@ -172,20 +172,20 @@ You look for the nearest box to grab, and pull it out by the top. The tape holdi
     Belle-mere: Sure, sounds good.
     Smoker: Let's keep it clearly marked in case we have to go through it again.
 -> Gross. I hope not all the boxes are like this.
--> Hmm. Maybe I should open it or take it upstairs…you never know.
+-> Hmm. Maybe I should open it or take it upstairs...you never know.
 You yank the box forward and the tape rips apart; papers spill everywhere–it looks like a bunch of old newspapers. Definitely not relevant. Ugh.
 Smoker: You ok?
--> Ugh, I screwed up…now we have to clean up all these papers.
+-> Ugh, I screwed up...now we have to clean up all these papers.
 -> Yep, just peachy.
 -> Damn, chill, I just spilled some newspapers.
-Bellemere: Ooh, these are from East Blue…makes me nostalgic. Check it out, Smoker.
+Bellemere: Ooh, these are from East Blue...makes me nostalgic. Check it out, Smoker.
 Smoker: Heh, what a blast from the past. Captain Honk and the Goose pirates.
 -> Uh, who?
     Smoker: Goose Pirates. Captain Honk was their leader. They were a huge nuisance in the East Blue.
 -> Yep, I totally know who those people are.
 -> Let me see!
 Bellemere holds up a crumbling newspaper with a picture of a woman in what looks to be an inflatable goose costume, sticking out her tongue. The headline reads [i]GOOSE PIRATES ATTACK GOA[/i].
-Bellemere: Wow, big enough to be in the papers even…this is dated a little after my time, though.
+Bellemere: Wow, big enough to be in the papers even...this is dated a little after my time, though.
 Smoker: Yeah, they were a nuisance for years. Tashigi and I finally caught them in Loguetown a few years ago.
 -> How'd you do that?
     Smoker: Well, I got them cornered, and then Tashigi tripped and stuck out her sword. Not at all what Honk was expecting, and Tashigi popped her inflatable costume. I managed to haul her in, and then we got the rest of the crew–she was the brains behind the operation; they kind of fell apart without their captain calling the shots.
@@ -198,7 +198,7 @@ Smoker: Yeah. You could always hear them coming and they still managed to cause 
 Bellemere: Well, at least they committed to the bit.
 -> Do you think she could have had anything to do with what we're looking for?
     Smoker: I doubt it.
--> So, uh…can we get back to work now? There are so many boxes to go through. (-1 Bellemere)
+-> So, uh...can we get back to work now? There are so many boxes to go through. (-1 Bellemere)
 -> Got any other stories about Captain Honk? (+1 Bellemere)
     Smoker: Hey, hey, we gotta work.
 You stuff the other old newspapers back into the box and kick it over to an empty area of floor you've decided will home the reject pile. You, Smoker, and Bellemere manage to carry over all the boxes that look to be a similar age, but what remains doesn't seem to be that much fewer than before.
@@ -211,7 +211,7 @@ Smoker: Damn. There are still so many.
     Smoker: Somehow I doubt Hina would accept that excuse.
 -> We should just keep sorting.
     Smoker: Nah, let's just take ‘em up. If we see anything obviously useless, we can just leave it at the side.
-Bellemere: Here's a stack with the right year on it…
+Bellemere: Here's a stack with the right year on it...
 Smoker: Great, let's start with that one. Looks like it'll need all of us to carry it.
 <<jump workday_smokers_and_friend_2_Carry>>
 ===
@@ -227,18 +227,18 @@ Bellemere: I heard a rumor that Vice Admiral Garp blew the entire budget for Eas
 Smoker: Wouldn't surprise me.
 The box wobbles, and you grunt as you steady it.
 Smoker: Okay there, {$name}?
--> Uh, yeah…
+-> Uh, yeah...
     Bellemere: Let's wait for a minute, I need to adjust my grip.
 -> Can we stop here for a sec?
     Smoker: Sure, if you need it.
--> Um, maybe not so much…
+-> Um, maybe not so much...
     Bellemere: Yeah, let's set it down for a second.
 Bellemere bends to set it down.
 -> Okay, let's do this all at once.
     <<jump workday_smokers_and_friend_2_Carry_break>>
 -> You know what, maybe it's better if we keep going.
     Bellemere: Ugh, fine. (-1 Bellemere)
-    As she straightens up, the box slips from her fingers…
+    As she straightens up, the box slips from her fingers...
     <<jump workday_smokers_and_friend_2_Carry_injure>>
 -> [b]Drop the box.[/b]
     <<jump workday_smokers_and_friend_2_Carry_injure>>
@@ -248,34 +248,34 @@ title: workday_smokers_and_friend_2_Carry_injure
 ---
 The box drops and lands right on your foot.
 -> Oww! Shit! My foot!
--> Oh my god…I think it's broken…
+-> Oh my god...I think it's broken...
 -> What the hell, you two? What was that for?
-Smoker: Hang on…let's move the box and slide your foot out…
+Smoker: Hang on...let's move the box and slide your foot out...
 Skillfully, he maneuvers it, lifting the whole box with one hand–hey, could he have just done that from the get-go?–and gingerly moving your foot. His skin is warm, but your foot is throbbing in pain. He manages to avoid touching the most hurt parts, somehow.
-Smoker: I've had a lot of practice with Tashigi…this doesn't look too bad, though.
--> Ow…how am I going to get upstairs now?
+Smoker: I've had a lot of practice with Tashigi...this doesn't look too bad, though.
+-> Ow...how am I going to get upstairs now?
     Smoker: We can prop you up. A little help here?
--> Is it…broken?
+-> Is it...broken?
     Smoker: Nah, doesn't look like it. You'll get a bad bruise, for sure. Might be a sprain.
--> Well, there that goes…
+-> Well, there that goes...
 Bellemere grabs you from one side and Smoker from the other. They lift you carefully, leaving the box forgotten on the stairs, and carry you instead.
 -> I feel so stupid.
     Smoker: Don't. I've seen worse.
 -> You could have warned me better.
     Bellemere: You need to be more alert.
--> I'm sorry…now we're even more behind. (+1 Smoker)
+-> I'm sorry...now we're even more behind. (+1 Smoker)
     Smoker: Shit happens.
 You reach the top and Bellemere elbows open the door.
 Bellemere: Do you want to try walking on it?
 You set your foot down and try to put weight on it. Surprisingly, it doesn't hurt any more than it already does. It doesn't collapse from under you, either.
 Bellemere: Well, if I were you, I'd go find a medic anyway. Beats working.
 Smoker: Do you think you need it?
--> Well, it doesn't hurt to get it checked out, but if I can avoid the stairs for now…
+-> Well, it doesn't hurt to get it checked out, but if I can avoid the stairs for now...
 -> No way. I'm tough. It doesn't feel bad at all.
     Smoker: You don't have to exaggerate that much.
--> Yeah, maybe I should…
+-> Yeah, maybe I should...
     Bellemere: On the other hand, that's more work for us.
-    PC: …I'll stay and help.
+    PC: ...I'll stay and help.
 Smoker: Hey! Hina! Tashigi! {$name}'s ankle got a little busted up. Need an extra person for the sorting?
 Tashigi: Some extra help would be great.
 You hustle over to Hina and Tashigi, shooting an embarrassed look behind you at Smoker and Bellemere. They don't look too angry at you, at least.
@@ -285,18 +285,18 @@ You hustle over to Hina and Tashigi, shooting an embarrassed look behind you at 
 title: workday_smokers_and_friend_2_Carry_break
 ---
 You set the box down on the steps, where it remains wedged in place.
-Bellemere: Ugh, I can't believe we have to do all these boxes…this one better have the evidence in it.
+Bellemere: Ugh, I can't believe we have to do all these boxes...this one better have the evidence in it.
 -> Hey, maybe we'll be lucky. We spent a long time searching for it, after all.
 -> Maybe something else cool will be inside?
     Smoker: Doubt it.
 -> Or maybe the rest will be really light. Who knows what this is, anyway, could be something small padded by a ton of old newspaper.
     Bellemere: You really are new here, huh? The Marines' MO is to pack everything in a box that fits.
-    Smoker: Well, a few people break the mold…
+    Smoker: Well, a few people break the mold...
     Bellemere: No one I ever worked with. Those old East blue cargo holds were always stuffed to the brim.
     Smoker: That's because the boats were so damn small.
 You stretch your shoulders, and Bellemere yawns. After what feels like not enough time at all, Smoker speaks up.
 Smoker: Well, shall we? If we take any longer, Hina's gonna be really mad.
-You hoist the box up in your arms, carefully balancing the folder sitting on top, and continue up the stairs, depositing it in Tashigi and Hina's area. Then, the three of you return, ready for the next box on the stack…
+You hoist the box up in your arms, carefully balancing the folder sitting on top, and continue up the stairs, depositing it in Tashigi and Hina's area. Then, the three of you return, ready for the next box on the stack...
 <<jump workday_smokers_and_friend_2_End>>
 ===
 
@@ -307,9 +307,9 @@ Tashigi: It's always eerie, anything to do with Impel Down. The tales used to gi
 Hina: Justice is a harsh mistress, but that does not mean she should not be served. But today is not about that Tashigi. {$name}, pass Hina that box? We will need to do this manually to try and find the evidence we are looking for.
 [i]You aren't sure which of the many boxes to even begin with. You pass Hina a heavy box covered in cobwebs to open. The box has a strange, fishy smell.[/i]
 Hina: Ah, lobsters. Well, not this box. Alright, if we divide and conquer we'll be more successful. If you find something of interest, report to Hina. {$name}, you take the boxes in that corner, Tashigi, you take the other side. Hina will keep a running inventory.
-Tashigi: I hope we can find some swords to document … Imagine if there's a graded or legendary sword in these forgotten boxes!? I feel like an archaeologist, documenting a new site, coming up with forgotten treasures. Gosh, I'm tearing up just thinking about it–and it's not just the dust! This is so exciting!
+Tashigi: I hope we can find some swords to document ... Imagine if there's a graded or legendary sword in these forgotten boxes!? I feel like an archaeologist, documenting a new site, coming up with forgotten treasures. Gosh, I'm tearing up just thinking about it–and it's not just the dust! This is so exciting!
 
-[i]The piles of boxes seem endless. There are boxes in every shape and size: small, medium, large, oblong, tiny. Some of them look recent, while others are so dank and grimy they look like they've been down here for decades. You gingerly approach a stack of boxes. Do you decide to open…[/i]
+[i]The piles of boxes seem endless. There are boxes in every shape and size: small, medium, large, oblong, tiny. Some of them look recent, while others are so dank and grimy they look like they've been down here for decades. You gingerly approach a stack of boxes. Do you decide to open...[/i]
 //  These boxes will be randomized in groups of 3, and will continue until the correct box is selecetd
 //  TODO(zipcodecrone): Implement randomization system
 -> The medium box covered in suspicious red stains
@@ -325,9 +325,9 @@ Tashigi: I hope we can find some swords to document … Imagine if there's a gra
     -> The box was here, so I opened it. What's your problem? (-1 Hina)
         Hina: Speak to Hina like that again and you will be on cleaning duty for the rest of the month. Hina does not particularly enjoy spending her day on mindless drudgery either {$name}, but sometimes we must all make sacrifices for the sake of justice.
     -> Of course Rear-Admiral, I apologize. Unless of course, I would be more valuable to you on cleaning duty? (+1 Hina)
-        Hina: No {$name}, continue looking. Hina apologizes for her irritability, {$name}. Hina is merely frustrated that the day is being spent on such mindless drudgery. Without rules and protocol being followed we are left wasting the day on a…scavenger hunt.
+        Hina: No {$name}, continue looking. Hina apologizes for her irritability, {$name}. Hina is merely frustrated that the day is being spent on such mindless drudgery. Without rules and protocol being followed we are left wasting the day on a...scavenger hunt.
 Tashigi: Well if it's a scavenger hunt, I think I've won it! Hehe, look at this sword. So mighty, so majestic. The sword is not mindless, neither is any activity that results in the pursuit and recovery of swords. I'm having so much fun–look at it, it's gleaming perfection! Mind you, I'll need to give it a little TLC. A cleaning and a sharpening and–but it can wait. There's more boxes to get through.
-Hina: …Like Hina said…wasting the day on mindless drudgery. She opens the box sitting to her left with the air of someone who would like to possibly throw the box at the nearest person. Ah, a collection of preserved organs. How charming.
+Hina: ...Like Hina said...wasting the day on mindless drudgery. She opens the box sitting to her left with the air of someone who would like to possibly throw the box at the nearest person. Ah, a collection of preserved organs. How charming.
 Tashigi: Hey now this isn't mindless! Don't listen to her, you magnificent sword. She knows not what she speaks. God, I love swords. Look at this sword!
 -> We really need to focus so we can find the item (+1 Hina)
 -> Wow! It's absolutely beautiful! (+1 Tashigi / -1 Hina)
@@ -354,18 +354,18 @@ Tashigi: Hey now this isn't mindless! Don't listen to her, you magnificent sword
         Hina: How Hina chooses to spend her vacation is none of your concern, {$name}. Continue with the search.
 [i]You return to the seemingly endless boxes before you. This time you choose:[/i]
 -> The medium sized box that is shaking slightly.
-    You gingerly open the shaking box to find several oblong, cucumber shaped items and what appear to be a strand of shaking beads. Is it jewelry? Oh wait…no…
+    You gingerly open the shaking box to find several oblong, cucumber shaped items and what appear to be a strand of shaking beads. Is it jewelry? Oh wait...no...
     Tashigi: Wow what are these? Vibrating pearls?
     Hina: TASHIGI PUT THOSE DOWN
 
 -> The small, damp box that smells faintly of herbs and salt.
     You open the small box and place your hand inside. You scream and recoil, whipping your hand out as you touch something slimy and thin.
-    Tashigi: [i]looks in the box.[/i] {$name}, it's….spaghetti.
-    Hina: [i]sighs[/i] Heaven help us…the Navy's finest bested by a box of spaghetti. Please continue, {$name}.
+    Tashigi: [i]looks in the box.[/i] {$name}, it's....spaghetti.
+    Hina: [i]sighs[/i] Heaven help us...the Navy's finest bested by a box of spaghetti. Please continue, {$name}.
 
 //  [comment]Is it clear that this is Water Seven, Whiskey Peak and Whole Cake Island? Or does this just sound ridiculous?[/comment]
 -> The large and heavy cobweb covered box.
-    You dust the cobwebs off the heavy box and open it up to reveal a pile of books, wait…not books. Comics!
+    You dust the cobwebs off the heavy box and open it up to reveal a pile of books, wait...not books. Comics!
     Tashigi: WOW! Is that Sora, Warrior of the Sea?
     You lift out several issues and newspaper clippings of the classic adventures of *Sora, Warrior of the Sea*!
     Tashigi: Oh my goodness, I love Sora!
@@ -392,7 +392,7 @@ Tashigi: Hey now this isn't mindless! Don't listen to her, you magnificent sword
         Hina: That's quite enough Tashigi! {$name}, we have lots of work to do, we will have plenty of time to talk about Sora once we've obtained Sengoku's documents.
         Tashigi: Bourbon Plateau is still better.
 
-[i]You cautiously approach another set of boxes, hoping one of these will yield you the item Sengoku is looking for. Do you open…[/i]
+[i]You cautiously approach another set of boxes, hoping one of these will yield you the item Sengoku is looking for. Do you open...[/i]
 -> The medium sized box with “caution” tape wrapped around it
     You carefully unwrap the ‘caution' tape with shaking hands, expecting to find dangerous weapons or deadly fumes. Instead you find several thick volumes of what appear to be old books. You lift one up to the light, dusting off the cover. On it is an image of a pirate with long flowing hair, standing on the deck of a ship. He cradles a woman in Marine uniform to his sculpted, bare chest. The Marine woman is meanwhile draped against him, loosening the blue sash from her neck; her bosom spilling out of her very tightly-fitting uniform. The title in scripted gold reads “Stolen Valor: Book 3 of Corrupted Justice.”
     Hina: {$name}!! That is immoral material that has been confiscated from Marine recruits! It's not fit for young Marines to see! Put it back!
@@ -410,7 +410,7 @@ Tashigi: Hey now this isn't mindless! Don't listen to her, you magnificent sword
     -> You throw the book across the room
         Tashigi: Oh, I wanted to read it.
         Hina: That's enough out of you, Captain! Return to the search.
-    -> Well Rear Admiral, you seem awfully familiar with the contents… (-1 Hina)
+    -> Well Rear Admiral, you seem awfully familiar with the contents... (-1 Hina)
         Hina flushes a shade pink to match her hair, her cigarette ground between her teeth.
         Hina: If Sengoku himself did not require our assistance {$name}, Hina would dismiss you immediately. Instead you will have to settle for galley duty for the rest of the week. Resume your search.
 
@@ -422,7 +422,7 @@ Tashigi: Hey now this isn't mindless! Don't listen to her, you magnificent sword
 -> A box that is tightly sealed with layers of tape
     [i]You think surely this must be the box containing the information from Blue Finger Jenkins. You rip off the tape to reveal another small box inside the large box. You gingerly open the box to find it is full of photographs. To your astonishment, you see a photo of Hina trying to drag Smoker into a bar, her cheeks flushed and red, while Smoker gestures to a taxi camel behind them.[/i]
     [i]Another picture shows a woman with a wild mane of red hair shoving a burger into her mouth, while a blonde woman in sunglasses smiles and daintily cuts her burger with a knife and fork. There are several other photos, some of Smoker and Hina, as well as the other women, who you do not immediately recognize.[/i]
-    Hina: [i]gasp[/i] Is that Sadi-chan, er…Hina means, Sadi and Domino? Oh goodness, how old these photos must be! She quickly takes the photos from you and rifles through them. Goodness, what are these doing here? These are from Smoker and Hina's old days in training.
+    Hina: [i]gasp[/i] Is that Sadi-chan, er...Hina means, Sadi and Domino? Oh goodness, how old these photos must be! She quickly takes the photos from you and rifles through them. Goodness, what are these doing here? These are from Smoker and Hina's old days in training.
     [i]At this point, Smoker emerges from the stairwell behind you carrying several boxes.[/i]
     Smoker: Sorry to make this more difficult on you.
     Tashigi: Oh no, not more boxes!
@@ -438,13 +438,13 @@ Tashigi: Hey now this isn't mindless! Don't listen to her, you magnificent sword
     [i]You open the heavy box to discover an array of bottles - alcohol in all manner of varieties. Whiskeys, rum, wine, beer - clearly a haul from a pirate's galley.[/i]
     Would anyone care to stop for a drink?
     Tashigi: {$name} Are you really making jokes about drinking confiscated evidence?
-    Hina: Tch…Hina may need a drink at this rate…
-    I didn't know we were running a bar down here…
+    Hina: Tch...Hina may need a drink at this rate...
+    I didn't know we were running a bar down here...
     Hina: Tashigi: {$name} Are you really making jokes about drinking confiscated evidence?
-    Hina: Tch…Hina may need a drink at this rate.
+    Hina: Tch...Hina may need a drink at this rate.
 
 -> The damp, slightly moldy box leaning against the wall
-    You take a cautious whiff of the soggy, slightly damp box and open to find…a pile of hay and alfalfa. But amidst the hay there is a small blue envelope that you open to reveal several photos of…Sengoku's goat.
+    You take a cautious whiff of the soggy, slightly damp box and open to find...a pile of hay and alfalfa. But amidst the hay there is a small blue envelope that you open to reveal several photos of...Sengoku's goat.
     Hina: Ahhh, {$name} well done! That's exactly what we're looking for! Tashigi, go get Smoker and Bellemere, tell them {$name} has recovered the necessary evidence.
     Tashigi: Yes ma'am!
     At this point the date populates individual paths to each different character?

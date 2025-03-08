@@ -14,10 +14,10 @@ The Admiral lifts his sleeping mask to eye the PC.
     -> It's my day off! (1)
         {$kuzan}: Good for you. Care to join me?
         <<jump date_kuzan_1_SitOrNo>>
-    -> Taking a walk, but… the grass sure looks comfy. (2)
+    -> Taking a walk, but... the grass sure looks comfy. (2)
         {$kuzan}: Sit down, join me.
         <<jump date_kuzan_1_SitOrNo>>
-    -> Stuff… what are YOU doing here? (0)
+    -> Stuff... what are YOU doing here? (0)
         {$kuzan}: Relaxing, gonna get back to that. See ya around.
         <<jump date_kuzan_1_END>>
 // Seems like a rather quick shut down to the date, I'd advise against that - or at least make it a LOT more obvious
@@ -26,7 +26,7 @@ The Admiral lifts his sleeping mask to eye the PC.
     -> Yeah, sure! (1)
         {$kuzan}: -raises an eyebrow- Alright.
         <<jump date_kuzan_1_SitOrNo>>
-    -> Mmmm… no, I'm okay, thanks. (0)
+    -> Mmmm... no, I'm okay, thanks. (0)
         {$kuzan}: Alright. -Goes back to sleep-
         <<jump date_kuzan_1_END>>
     -> Was that...a proposition? (2)
@@ -86,9 +86,9 @@ You and {$kuzan} settle back down on the grass and nap. The breeze ruffles some 
 title: date_kuzan_1_PlayFrisbee
 ---
 {$name}: Hey, free frisbee. Wanna play?
-{$kuzan}: …Uhh…
+{$kuzan}: ...Uhh...
 -> C'mon when was the last time you played frisbee?
-    {$kuzan}: …Too long ago. Damn, now I feel old.
+    {$kuzan}: ...Too long ago. Damn, now I feel old.
     -> Oof, sorry old man. (0)
         {$kuzan}: Well this old man is going back to sleep. See ya.
         <<jump date_kuzan_1_END>>
@@ -96,7 +96,7 @@ title: date_kuzan_1_PlayFrisbee
         {$kuzan}: On whose authority?
         -> Mine, now c'mon! Let me be able to say I beat an Admiral at something. (2)
             {$kuzan}: Alright, let's play, {$name}
-        -> …If you don't want to play that badly, I can't force you, but it'll be fun, promise! (1)
+        -> ...If you don't want to play that badly, I can't force you, but it'll be fun, promise! (1)
             {$kuzan}: Alright, let's play.
     -> Age is what you make of it? Or something? It's frisbee, c'mon. (2)
         {$kuzan}: Alright alright, let's play.
@@ -106,7 +106,7 @@ title: date_kuzan_1_PlayFrisbee
         {$kuzan}: Alright, let's put that to the test then.
     -> Hey hey, it'll be fun even if I lose! (1)
         {$kuzan}: Huh, guess that's a good attitude.
-    -> Maybe you're right, I don't know if I can handle that kind of blow to my self esteem… (0)
+    -> Maybe you're right, I don't know if I can handle that kind of blow to my self esteem... (0)
         {$kuzan}: Know your limits. I'm gonna get back to napping, now. See ya around.
         <<jump date_kuzan_1_END>>
 -> The nap will feel way better after losing to me in Frisbee!
@@ -116,10 +116,10 @@ title: date_kuzan_1_PlayFrisbee
     -> Well, I won't know until I try! (2)
         {$kuzan}: Alright, let's do this I guess.
     -> Why shouldn't I be? Losing is your thing right?
-        {$kuzan}: …So that's how it is, huh? You know, I've got some place to be. Bye.
+        {$kuzan}: ...So that's how it is, huh? You know, I've got some place to be. Bye.
         <<jump date_kuzan_1_END>>
 
-The Admiral takes a position a bit of a ways away from you, waiting for you to hurl the frisbee with all your might! He is an Admiral after all! Although… that might be a little mean.
+The Admiral takes a position a bit of a ways away from you, waiting for you to hurl the frisbee with all your might! He is an Admiral after all! Although... that might be a little mean.
 <<jump date_kuzan_1_FrisbeeThrow>>
 // Why is it a little mean?
 ===
@@ -145,7 +145,7 @@ title: date_kuzan_1_FrisbeeThrow
 title: kd1_frisbee_strong
 ---
 You throw the frisbee like your life depends on it. It soars, so fast it's hard to see. A speeding disc of death! Hey, you could turn that into an attack! {$kuzan} doesn't catch it. In fact, it goes right through him! OH NO, WHAT HAVE YOU DONE?!
-The frisbee freezes in midair. {$kuzan} reforms, ice filling in the frisbee gap. Uh oh. You… may have bitten off more than you can chew.
+The frisbee freezes in midair. {$kuzan} reforms, ice filling in the frisbee gap. Uh oh. You... may have bitten off more than you can chew.
 {$kuzan}: So that's how it is {$name}...? Catch.
 The frisbee comes flying at you. It gleams in the sun. It's like a tiny flat meteor,and you are the nearest gravitational body.
 -> Catch the frisbee. (2)
@@ -178,7 +178,7 @@ You grab the corner(?) of the frisbee, pull your arm back with great might, and 
     The wind blows, a crow caws. Time elongates. Your eyes strain with the urge to blink. You will not look away! You have to assert your dominance... somehow! It is only after a minute or two has passed that you realize {$kuzan} has fallen asleep! Oi! He wakes up when you look away.
 -> Strike a pose. (1)
     It's super effective! At making you look like an idiot. {$kuzan} gives you a sort of concerned thumbs up. AWESOME.
-{$kuzan}: You gonna throw it for real or…?
+{$kuzan}: You gonna throw it for real or...?
 <<jump date_kuzan_1_FrisbeeThrow>>
 ===
 
@@ -199,13 +199,13 @@ You limp wrist it. A gentle flick. It's a leaf upon the wind! It wobbles and sin
 
 title: date_kuzan_1_HuntKids
 ---
-{$name}: Better go find those kids to give this back…
+{$name}: Better go find those kids to give this back...
 {$kuzan}: Good Luck with that, {$name}.
 -> Want to help me? (0)
-    {$kuzan}: This grass is pretty comfy… oh, c'mon, don't give me that look. You're still doing it. Alright fine, fine.
-    You didn't give him a look…
+    {$kuzan}: This grass is pretty comfy... oh, c'mon, don't give me that look. You're still doing it. Alright fine, fine.
+    You didn't give him a look...
 -> As a marine, you're supposed to help people. Sir. (1)
-    {$kuzan}: Sir? On my day off? Guess you're never really off duty… let's go find those kids.
+    {$kuzan}: Sir? On my day off? Guess you're never really off duty... let's go find those kids.
 // I see what you're going for here - option 1 kinda forces him, and option 2 convinces him. If I was playing blind, though, I'd expect the opposite reaction, with the first letting him choose and the second bringing work into it (which his lax side may clash with). Might just be a personal issue, but worth thinking about
 -> Alright, bye Admiral Aokiji!
     <<jump date_kuzan_1_END>>
@@ -215,7 +215,7 @@ You walk around, checking the garden, the park again, the nearest popular street
 Your stomach rumbles, loud enough to be heard by anyone nearby.
 {$kuzan}: Oh well, their loss. Wanna get something to eat?
 -> Oooh, you buying? With your superior Admiral paycheck and all? (1)
-    {$kuzan}: I'm more than just money… but yeah sure.
+    {$kuzan}: I'm more than just money... but yeah sure.
 -> Yeah, I could eat. (1)
     {$kuzan}: I know a noodle place, c'mon.
 -> No, I'm tired and want to go home.
@@ -229,21 +229,21 @@ title: date_kuzan_1_GoToNoodle
 
 {$kuzan}: You did good or whatever today, by the way.
 -> Did good on what? Failing to return a frisbee? (1)
-    {$kuzan}: You tried to do a good thing, that counts on the… grand scale, or whatever it's called.
-    -> Uh… I guess? (1)
+    {$kuzan}: You tried to do a good thing, that counts on the... grand scale, or whatever it's called.
+    -> Uh... I guess? (1)
     -> You mean like the cosmic scale? Like the concept? (2)
         {$kuzan}: Yeah, that. The little things add up, or I hope they do. I guess we don't really know, huh, {$name} Ah, the noodles are here.
     -> Still failed though. (0)
         {$kuzan}: Yeah, well, that happens.
 -> Thanks. (0)
     {$kuzan}: Yep.
--> I try to do the right thing and fail… (2)
-    {$kuzan}: Yeah… it's rough. Sometimes you give it your all and still don't make it.
+-> I try to do the right thing and fail... (2)
+    {$kuzan}: Yeah... it's rough. Sometimes you give it your all and still don't make it.
     He looks far away and you get the feeling he isn't really talking about the frisbee.
     -> I think you did good today too, Sir. (2)
         {$kuzan}: Thanks, {$name}.
-    -> Um, it's… it's just a frisbee. (0)
-        {$kuzan}: …Hm.
+    -> Um, it's... it's just a frisbee. (0)
+        {$kuzan}: ...Hm.
 {$kuzan}: Well, let's eat!
 
 Your big bowl of noodles arrives, steaming hot and full to the brim. All that walking around really made you hungry! It wasn't how you intended to spend your day, but it wasn't bad. {$kuzan} even pays for lunch! With a wave, you go your separate ways.
@@ -253,7 +253,7 @@ Your big bowl of noodles arrives, steaming hot and full to the brim. All that wa
 title: date_kuzan_1_GoToLunch
 ---
 {$kuzan}: This is more my style.
--> Um… drinking in the afternoon? (1)
+-> Um... drinking in the afternoon? (1)
     {$kuzan}: A drink after a hard day is always good.
     if has_item("TookNapWithKuzan")
         {$name}: But we only just napped???
@@ -274,7 +274,7 @@ title: date_kuzan_1_GoToLunch
 
 You drink and eat some bar food, smooth jazz plays in the background. The bar slowly fills up with people, soldiers and workers. Cigarette smoke fills the air overhead, and the clinking of glasses lulls you into a contemplative state. No one sits near the two of you, leaving you in a peaceful bubble.
 
-{$kuzan}: Listen, {$name}, don't let go of your principles. This place can… change you or something. But if you stick to your guns you'll, uh… you'll… you know what I mean.
+{$kuzan}: Listen, {$name}, don't let go of your principles. This place can... change you or something. But if you stick to your guns you'll, uh... you'll... you know what I mean.
 {$kuzan} taps his gloved fingers against the side of his glass, the amber liquid rippling just a little.
 -> Um, I'll do my best Sir? (0)
     {$kuzan}: Good, keep it up. -Throws some money on the counter and heads out. What a strange guy.-
@@ -284,7 +284,7 @@ You drink and eat some bar food, smooth jazz plays in the background. The bar sl
     {$kuzan}: -He laughs lowly and finishes his drink.- Alright, {$name}, thanks for the day. I'll see you around.
     <<jump date_kuzan_1_END>>
 -> Yeah, okay, no more drinks for you. Let's get you home. (1)
-    {$kuzan}: Home, been a long time since I've been there… -He looks into the bottom of his glass, eyes far away.- You're right {$name}, I'm heading out. See ya later. He tosses some money on the counter and heads out. What a strange guy.-
+    {$kuzan}: Home, been a long time since I've been there... -He looks into the bottom of his glass, eyes far away.- You're right {$name}, I'm heading out. See ya later. He tosses some money on the counter and heads out. What a strange guy.-
     <<jump date_kuzan_1_END>>
 
 <<jump date_kuzan_1_END>>
