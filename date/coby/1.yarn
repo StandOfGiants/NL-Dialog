@@ -6,8 +6,8 @@ location: day(office)
 
 You decide you should see what Captain Coby is up to. You haven't seen him around the base in the past few hours, so you decide to check his office.
 <<show_characters coby>>
-Sure enough, he's there and looking rather... frazzled, to say the least.
 <<set $cd1_possible += 1>>
+Sure enough, he's there and looking rather... frazzled, to say the least.
 -> Captain? Is everything OK?
     <<jump date_coby_1_Coby_notice1>>
 -> Excuse me, sir, is now a good time?
@@ -75,9 +75,9 @@ You walk with him down to the mess hall, listening to Coby's stomach growl. He s
 title: date_coby_1_Coby_food2
 location: day(mess_hall)
 ---
+<<set $cd1_possible += 1>>
 You both enter the mess hall and are met with a delightful smell.
 Coby: Oh! Buttered potatoes! I would've come down earlier if I'd known this is what they had today!
-<<set $cd1_possible += 1>>
 -> Oh man, now I'm hungry too!
     <<set $cd1_points += 1>>
     <<jump date_coby_1_Coby_foodchoice>>
@@ -92,8 +92,8 @@ Coby: Oh! Buttered potatoes! I would've come down earlier if I'd known this is w
 
 title: date_coby_1_Coby_foodchoice
 ---
-He leads the way up to the counter and grabs two trays, handing one back to you as he looks over the choices. You look as well, weighing your food options from what is available.
 <<set $cd1_possible += 1>>
+He leads the way up to the counter and grabs two trays, handing one back to you as he looks over the choices. You look as well, weighing your food options from what is available.
 -> Get the buttered potato meal.
     <<set $cd1_points += 1>>
     <<jump date_coby_1_Coby_Potatoes>>
@@ -105,9 +105,9 @@ He leads the way up to the counter and grabs two trays, handing one back to you 
 
 title: date_coby_1_Coby_Potatoes
 ---
+<<set $cd1_possible += 1>>
 You both sit down at one of the empty tables after getting your food.
 Coby: Oh! Good choice! The buttered potatoes are always amazing. You'll have to tell me what you think.
-<<set $cd1_possible += 1>>
 -> Wow, they are really good!
     <<set $cd1_points += 1>>
     Coby: I'm glad you like them!
@@ -123,9 +123,9 @@ Coby: Oh! Good choice! The buttered potatoes are always amazing. You'll have to 
 
 title: date_coby_1_Coby_Pasta
 ---
+<<set $cd1_possible += 1>>
 You both sit down at one of the empty tables after getting your food.
 Coby: Wow, that looks really good too! I've always wanted to try it, but it always seems to be here on buttered potatoes day.
-<<set $cd1_possible += 1>>
 -> It's great! Want to try some?
     <<set $cd1_points += 2>>
     Coby: Really? Sure!
@@ -144,9 +144,9 @@ Coby: Wow, that looks really good too! I've always wanted to try it, but it alwa
 
 title: date_coby_1_Coby_Cake
 ---
+<<set $cd1_possible += 1>>
 You both sit down at one of the empty tables after getting your food.
 Coby: Went straight for dessert, huh? I don't blame you, the cake is always delicious.
-<<set $cd1_possible += 1>>
 -> It really is. They always make it so moist.
     <<set $cd1_points += 1>>
     Coby: [i]Right[/i]?
@@ -174,8 +174,8 @@ Both of you eat in silence for a little while. The captain seems content to stay
 
 title: date_coby_1_Coby_Captain
 ---
-Coby: It's hard work, but I really enjoy it. My crew has been amazing, and it's nice to be able to trust them to have my back. I don't think I'll ever get used to the paperwork, though...
 <<set $cd1_possible += 1>>
+Coby: It's hard work, but I really enjoy it. My crew has been amazing, and it's nice to be able to trust them to have my back. I don't think I'll ever get used to the paperwork, though...
 -> It may be a pain, but it does have its uses. Things would be a mess without any.
     <<set $cd1_points += 1>>
     Coby: Of course. But sometimes it feels like I'm filling out the same information over and over...
@@ -205,10 +205,10 @@ Coby: Sometimes. Usually, it stays with Sengoku, but it seems to be getting a bi
 
 title: date_coby_1_Coby_Helmeppo
 ---
+<<set $cd1_possible += 1>>
 Coby: Oh, he can be a bit difficult to deal with but
 Coby: He’s not a terrible person just...
 Coby: An acquired taste.
-<<set $cd1_possible += 1>>
 -> Oh. I guess maybe I judged him too soon.
     <<set $cd1_points += 1>>
     Coby: Fair warning though, he's still pretty abrasive even when you know him.
@@ -224,8 +224,8 @@ Coby: An acquired taste.
 
 title: date_coby_1_Coby_food4
 ---
-Coby: What about you? How are you liking working here so far?
 <<set $cd1_possible += 1>>
+Coby: What about you? How are you liking working here so far?
 -> I'm really enjoying it. Everyone's been so nice so far, and those that aren't are at least polite.
     <<set $cd1_points += 1>>
     Coby: That's so good to hear!
@@ -267,8 +267,8 @@ Coby: Helmeppo and I are still paying off that building, since we were the ones 
 title: date_coby_1_Coby_food6_back_at_office
 location: day(office)
 ---
-Coby: Oh, it looks like we're already here...
 <<set $cd1_possible += 1>>
+Coby: Oh, it looks like we're already here...
 -> Well, at least I got to hear the end of your story first.
     <<set $cd1_points += 1>>
     Coby: True! I'm glad you enjoyed it. It's one of the funnier things that happened to us back then.
@@ -300,8 +300,8 @@ He leads the way to the training grounds. They are almost empty when you arrive,
 title: date_coby_1_Coby_training1_grounds
 location: day(training_grounds)
 ---
-Coby: Right. I'll be sure to go easy on you. No need for anyone to get hurt during a friendly sparring match.
 <<set $cd1_possible += 1>>
+Coby: Right. I'll be sure to go easy on you. No need for anyone to get hurt during a friendly sparring match.
 -> Sounds good to me!
     <<set $cd1_points += 1>>
     Coby: Great!
@@ -323,8 +323,8 @@ You both stand facing each other and get into fighting stances. He seems to be h
 
 title: date_coby_1_ThePunch
 ---
-Coby: Well, go on. Attack me.
 <<set $coby_attacks += 1>>
+Coby: Well, go on. Attack me.
 -> (Punch him in the face) <<if !visited("date_coby_1_Coby_Punch")>>
     <<jump date_coby_1_Coby_Punch>>
 -> (Aim for the knees) <<if !visited("date_coby_1_Coby_Knees")>>
@@ -337,10 +337,10 @@ Coby: Well, go on. Attack me.
 
 title: date_coby_1_Coby_Punch
 ---
+<<set $cd1_possible += 1>>
 You take a swing at his face, and he leans to the side, reaching up to quickly grab your arm and flip you on your back. As soon as he does, Coby cringes.
 Coby: I'm so sorry! Are you alright?
 He pulls you back onto your feet.
-<<set $cd1_possible += 1>>
 -> You [i]have[/i] to teach me how to do that.
     <<set $cd1_points += 1>>
     Coby: I mean. I can certainly try, if you'd like me to.
@@ -355,9 +355,9 @@ He pulls you back onto your feet.
 
 title: date_coby_1_Coby_Knees
 ---
+<<set $cd1_possible += 1>>
 You rush him, kicking out at his knees. Your leg connects with his, but he doesn't move.
 Coby: That was pretty good! You've got a lot of leg strength.
-<<set $cd1_possible += 1>>
 -> I could use some help learning to put it to better use.
     <<set $cd1_points += 1>>
     Coby: W-well, I mean, I suppose I could, if you wanted...
@@ -372,9 +372,9 @@ Coby: That was pretty good! You've got a lot of leg strength.
 
 title: date_coby_1_Coby_Kick
 ---
+<<set $cd1_possible += 1>>
 You spin, your heel lashing out at his side. Before it can connect, he catches it.
 Coby: That was great! If you'd been a little faster, you probably would've hit me.
-<<set $cd1_possible += 1>>
 -> Thanks! My brother taught me that move forever ago. I need to practice it more, though...
     <<set $cd1_points += 1>>
     Coby: Of course. Being great at something doesn't happen overnight.
@@ -389,9 +389,9 @@ Coby: That was great! If you'd been a little faster, you probably would've hit m
 
 title: date_coby_1_Coby_Crotch
 ---
+<<set $cd1_possible += 1>>
 You rush him and bring your leg up in an attempt to knee him in the groin. Before you are able to connect, Coby sidesteps and elbows you in the side, knocking you off-balance.
 Coby: Hey now. Don't think you're the first person to try that on me! New recruits do it all the time…
-<<set $cd1_possible += 1>>
 -> And here I was thinking I was doing something special.
     <<set $cd1_points += 1>>
     Coby: Aw, don't worry. I'm sure you'll find a new way to fight dirty.
