@@ -176,7 +176,7 @@ Coby: But yeah. That's the short version of how we met. I'd say we've been frien
     <<set $cd2_points-= 1>>
     <<set $cd2_points-= 1>>
     Coby: He's [i]not[/i] a monster.
-    Coby: I won’t tolerate that kind of talk.
+    Coby: I won't tolerate that kind of talk.
     <<jump date_coby_2_Walk2>>
 ===
 
@@ -264,7 +264,7 @@ title: cd2_wolf_island
 ---
 <<set $cd2_possible += 1>>
 {$name}: Looks like someone's curious about Wolf Island.
-Coby: Oh, yeah. Helmeppo keeps trying to convince me to let him get another wolf. I'm not sure that's a good idea. It...might also be a joke, I’m not really sure.
+Coby: Oh, yeah. Helmeppo keeps trying to convince me to let him get another wolf. I'm not sure that's a good idea. It...might also be a joke, I'm not really sure.
 -> Yeah, they are wild animals...
     <<set $cd2_points += 1>>
     Coby: I know he likes them, but it's still dangerous.
@@ -345,7 +345,7 @@ You pull two wanted posters from under a pile of paperwork. The pictures are com
         <<jump date_coby_2_Regroup>>
     -> Ooooh, looks like the Captain's hiding something.
         <<set $cd2_points-= 1>>
-        Coby: I’d prefer we didn't talk about it, please.
+        Coby: I'd prefer we didn't talk about it, please.
         <<jump date_coby_2_Regroup>>
 -> Do you know this pirate?
     Coby: O-oh, um, well you see... It's a really long story...

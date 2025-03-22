@@ -1,10 +1,12 @@
 title: date_coby_3_main
+location: day(office)
 ---
 <<declare $cd3_points = 0>>
 
 You come to the office to drop off some paperwork. The room is much tidier than it has been in months thanks to the continued group effort in both goat wrangling and keeping the tidal wave of what seems like endless work at bay. The door is open, but still you politely knock.
 -> Anyone in here?
 -> Hello?
+<<show_characters coby>>
 Coby: Hi, I was just wrapping up something I forgot to do.
 -> Need any help?
     Coby: No, it's very brief. Nothing you need to worry about.
@@ -13,7 +15,7 @@ As Coby finishes up what he is doing, you glance around the room. Next to the wa
 Coby: Well, that's done.
 -> Do you have any plans for later? I saw the fishing poles by the door.
 -> OTHER MESSAGE // TODO: Other message?
-Coby: Oh… I was hoping Helmeppo or Drake would go fishing with me after work. Helmeppo usually will, but I think they’re both busy.
+Coby: Oh... I was hoping Helmeppo or Drake would go fishing with me after work. Helmeppo usually will, but I think they're both busy.
 -> I haven't been fishing in ages, let's go!
     <<set $cd3_points += 1>>
     Coby: Great! Let me get everything. I can show you my favorite spot!
@@ -23,10 +25,10 @@ Coby: Oh… I was hoping Helmeppo or Drake would go fishing with me after work. 
     <<jump date_coby_3_Gather_Poles>>
 -> Sounds dumb, but I have nothing better to do.
     <<set $cd3_points -= 1>>
-    Coby: Come on, I’m sure you’ll like it.
+    Coby: Come on, I'm sure you'll like it.
     <<jump date_coby_3_Gather_Poles>>
 -> No wonder they bailed. That sounds boring.
-    Coby: Sorry I brought it up…  Coby looks kind of hurt, but you brush it off. You have better things to do, and the work left behind isn't going to finish itself. He goes to gather his things up before leaving you alone.
+    Coby: Sorry I brought it up...  Coby looks kind of hurt, but you brush it off. You have better things to do, and the work left behind isn't going to finish itself. He goes to gather his things up before leaving you alone.
     <<jump date_coby_3_End_Date>>
 ===
 
@@ -45,6 +47,7 @@ Coby: Well, I was heading off to fish off of one of our ships. The weather is be
 ===
 
 title: date_coby_3_Ship_fishing
+location: day(pork)
 ---
 Coby leads you out to the docks and to the big ships that you often see coming in and out. The salt air brings a smile to your face. You can see gulls reeling and calling. The sun is out, and it warms both the air and your skin. The water laps lazily across both the stone and wood of the docks and the sides of the ship. It's almost idyllic. You can't help but let a little smile cross your face.
 {$name}: This is kind of exciting. It's been a while since I've been on one of these ships.
@@ -52,22 +55,22 @@ Coby: Yeah! It's hard to forget the first time you get to travel on one of them.
 
 The pair of you walk up on the gangplank. The ship is mostly empty, with the exception of a small crew aboard. You find a spot near the back port side, away from the dock but out of the way of the remaining crew. Coby sets the tackle box down and rummages through the lures. Once he finds two to his liking, he attaches one to your line and then one to his own.
 {$name}: Why do you have so many lures?
-Coby: Oh! It depends on where I’m fishing. Some are for fresh water and others for salt. The ones here are for salt water. If we went to the gardens, we’d use freshwater lures. It also depends on what fish we’re looking for!
+Coby: Oh! It depends on where I'm fishing. Some are for fresh water and others for salt. The ones here are for salt water. If we went to the gardens, we'd use freshwater lures. It also depends on what fish we're looking for!
 -> Are we fishing for anything in particular?
     Coby: Not today. It's just to clear my head.
 -> Is there really that big of a difference between lures?
-    Coby: You’d be surprised, honestly.
+    Coby: You'd be surprised, honestly.
 -> Am I good to start?
     Coby: Absolutely!
-You both cast your poles into the water. The lures hit with a light splash, and a brief quiet falls.  You watch the light dance on the water, feel the way the boat rocks under your feet and you can't help but think this is…
+You both cast your poles into the water. The lures hit with a light splash, and a brief quiet falls.  You watch the light dance on the water, feel the way the boat rocks under your feet and you can't help but think this is...
 -> Incredibly relaxing
     {$name}: I forgot how meditative this could be.
     <<set $cd3_points += 1>>
-    Coby: Right? It's so easy to just… Exist. Forget what's going on and enjoy the quiet.
+    Coby: Right? It's so easy to just... Exist. Forget what's going on and enjoy the quiet.
 -> A huge waste of time
-    {$name}: And I thought the Rear Admiral was dull…. (- 1 Coby)
+    {$name}: And I thought the Rear Admiral was dull.... (- 1 Coby)
     Coby: You don't have to be rude if you're not having fun.
-Silence falls again. You watch as your lure bobs. You don’t realize you have a bite until you feel your rod jerk. You yelp in surprise, snapping the rod up and reeling it in, only to be greeted by an empty lure. Coby gives you a sympathetic smile as you cast your line again.
+Silence falls again. You watch as your lure bobs. You don't realize you have a bite until you feel your rod jerk. You yelp in surprise, snapping the rod up and reeling it in, only to be greeted by an empty lure. Coby gives you a sympathetic smile as you cast your line again.
 {$name}: Well, that was disappointing.
 Coby: It happens, unfortunately. Not my biggest failure while fishing, though.
  {$name} : Sounds like you're not just talking about fishing.
@@ -78,28 +81,28 @@ Coby: It happens, unfortunately. Not my biggest failure while fishing, though.
     <<set $cd3_points -= 1>>
     Coby: Yeah, I am.
 Coby looks around nervously, waiting until it is once again just the two of you on the deck. He sighs, shoulders dropping as he speaks.
-Coby: I was forced to be a cabin boy on the pirate Alvida’s ship. I was going to go out fishing on one of the boats and walked onto the wrong ship. I don’t talk about it for obvious reasons. She was a nasty witch of a woman who loved to terrorize her crew.
+Coby: I was forced to be a cabin boy on the pirate Alvida's ship. I was going to go out fishing on one of the boats and walked onto the wrong ship. I don't talk about it for obvious reasons. She was a nasty witch of a woman who loved to terrorize her crew.
 -> She sounds absolutely horrible! (+1Coby)
     Coby: She was. Thankfully though, I got to meet my first friend because of her, so it wasn't all bad.
 -> Is that why you're such a wimp?
     <<set $cd3_points -= 1>>
     Coby: I got better than what I was thanks to my first friend.
-{$name} : You met Helmeppo and became friends with him because of her? Wait, didn’t he try to shoot you?!
-Coby: Ahaha, no. He’s my second friend! My first friend is actually another pirate. He’s the reason I want to get stronger. He’s out there changing the world, I hope for the better. Remember how I said Luffy saved me?
+{$name} : You met Helmeppo and became friends with him because of her? Wait, didn't he try to shoot you?!
+Coby: Ahaha, no. He's my second friend! My first friend is actually another pirate. He's the reason I want to get stronger. He's out there changing the world, I hope for the better. Remember how I said Luffy saved me?
 {$name}: You said he punched Helmeppo.
- Coby: He saved me from Alvida too. The crew fished him out of a barrel, and he just popped out. Apparently, his boat, if you could call it that, sank, and he curled up in a barrel so he wouldn’t drown. Scared me to death. I was so worried Alvida was going to kill us both.
+ Coby: He saved me from Alvida too. The crew fished him out of a barrel, and he just popped out. Apparently, his boat, if you could call it that, sank, and he curled up in a barrel so he wouldn't drown. Scared me to death. I was so worried Alvida was going to kill us both.
 -> He popped out of a barrel?
     Coby: Yeah! It would have been funny if it weren't for the situation we were in.
 -> He could have gotten you both killed!
     Coby: That was my worry too, but it worked out in the end.
 -> Should have just pushed him back into the water.
     Coby: Terrible thing is, I thought about it.
-Coby: But yeah, I owe a lot to him. He saved me multiple times. He’s the reason I’m even here. He…
-Coby falls quiet for a moment. He looks embarrassed, but snaps to attention as his pole begins to bend. He lets out an excited yell as he prepares to reel in whatever it is that has managed to catch on his line. You abandon your own rod to lean over the edge and see what it is that he managed to pull up, only to be greeted by a giant shiny black… Boot.
+Coby: But yeah, I owe a lot to him. He saved me multiple times. He's the reason I'm even here. He...
+Coby falls quiet for a moment. He looks embarrassed, but snaps to attention as his pole begins to bend. He lets out an excited yell as he prepares to reel in whatever it is that has managed to catch on his line. You abandon your own rod to lean over the edge and see what it is that he managed to pull up, only to be greeted by a giant shiny black... Boot.
 {$name}: ARE YOU KIDDING ME?
-Coby: You're not supposed to wear your boots while you swim….
+Coby: You're not supposed to wear your boots while you swim....
 -> Where is your boot sibling, buddy?
-    Coby: Probably in the water still…
+    Coby: Probably in the water still...
 -> Looks like someone is missing their emergency rations.
     Coby: I wouldn't eat the boots they give us here.
 -> I needed a spare.
@@ -107,11 +110,11 @@ Coby: You're not supposed to wear your boots while you swim….
 The boot hits the deck with a disgusting wet sound. You both wince as you exchange glances. Adding insult to injury, a small silvery fish launches out of the boot and jumps back into the water with a soft splash.
 -> Well, at least someone had a use for it.
     <<set $cd3_points += 1>>
-    Coby: Yeah, shame we didn’t have a net.
--> Wow, you really have the worst luck….
+    Coby: Yeah, shame we didn't have a net.
+-> Wow, you really have the worst luck....
     <<set $cd3_points -= 1>>
-    Coby: I am well aware of that…
- As Coby catches his line again, he sighs, shaking his head in disappointment. Picking your pole back up, you…
+    Coby: I am well aware of that...
+ As Coby catches his line again, he sighs, shaking his head in disappointment. Picking your pole back up, you...
 -> Offer him a sympathetic pat on the shoulder.
     <<set $cd3_points += 1>>
    Coby: Thanks, I was hoping it would be something more impressive.
@@ -119,8 +122,8 @@ The boot hits the deck with a disgusting wet sound. You both wince as you exchan
     Coby: ...
 -> So much for your secret spot, huh?
     <<set $cd3_points -= 1>>
-    Coby: Don’t rub it in…
-Both lures are back in the water, and you watch as they bob on the waves. The sun is getting lower. You hadn’t realized how much time you had passed just standing here. You can see fins in the distance, and you watch, uncertain of what it is, until Coby perks up.
+    Coby: Don't rub it in...
+Both lures are back in the water, and you watch as they bob on the waves. The sun is getting lower. You hadn't realized how much time you had passed just standing here. You can see fins in the distance, and you watch, uncertain of what it is, until Coby perks up.
 {$name}: What are those in the distance?
 Coby: Oh! Dolphins! Maybe our luck will be better now. Sailors and islanders both think dolphins are good omens.
 {$name}: Oh?
@@ -138,73 +141,73 @@ Coby: Dolphins herd fish together into tight groups. The fish panic and it makes
 -> I prefer to handle things on my own.
     <<set $cd3_points -= 1>>
     Coby: You can't rely on yourself forever. Eventually, you need to ask someone for help.
-{$name}: You know… You kind of look like a dolphin.
+{$name}: You know... You kind of look like a dolphin.
 Coby: Huh? How?
--> It’s the cow lick in your hair. It looks like a dolphin tail. It's kind of cute!
+-> It's the cow lick in your hair. It looks like a dolphin tail. It's kind of cute!
     <<set $cd3_points += 1>>
     Coby: Oh- h, thanks!
 -> That absolute massive forehead of yours makes me think of them.
     <<set $cd3_points -= 1>>
     Coby: You know, you really don't have to say it like that.
-Quiet settles between you and Coby again. There’s nothing but the slowly setting sun, gulls and dolphins chasing the bait ball. You let your pole lean against the railing, watching as the fins in the distance slowly disperse. The hunt has ended for them. ou glance back over to Coby.
--> Oh he’s really handsome in this light.
+Quiet settles between you and Coby again. There's nothing but the slowly setting sun, gulls and dolphins chasing the bait ball. You let your pole lean against the railing, watching as the fins in the distance slowly disperse. The hunt has ended for them. ou glance back over to Coby.
+-> Oh he's really handsome in this light.
     <<set $cd3_points += 1>>
--> I’m so grateful for that bandana. The glare off his forehead would be so bad….
+-> I'm so grateful for that bandana. The glare off his forehead would be so bad....
     <<set $cd3_points -= 1>>
     Coby sighs, looking out wistfully over the water.
 Coby: You ever think about why you became a Marine?
--> Yes. Doesn’t everyone?
+-> Yes. Doesn't everyone?
     Coby: I wonder sometimes, considering their different views on justice, if other people do, and if they remember why they chose to be a Marine in the first place.
--> No, I don’t.
-    Coby: I do. I think we all should…
+-> No, I don't.
+    Coby: I do. I think we all should...
 
 {$name}: Why do you ask?
-Coby: I joined because I wanted to help people. Unfortunately, it seems that we keep tearing each other down. We’re supposed to be a team and yet… It’s crabs in a bucket!
+Coby: I joined because I wanted to help people. Unfortunately, it seems that we keep tearing each other down. We're supposed to be a team and yet... It's crabs in a bucket!
 {$name}: Crabs in a bucket?
 Coby: There is this social theory, that when you put a bunch of crabs in a bucket, they pull down the ones who are trying to escape. People apparently do that too by pulling people who are trying to improve back down to their level.
 {$name}: What does that have to do with being a Marine?
 Coby: A lot! We try to compete with each other, try to pull each other down when we should be working together to pull each other up with our claws or work together to tip the bucket. Working together is far more effective than trying to go it alone!
-:You take a moment to let what Coby just said sink in. It's bizarre, and for the moment you don’t know how to respond. You open your mouth and close it again before saying:
--> Weird, but I can see what you mean by that. If we want to make any meaningful change, we can’t be antagonistic towards each other.
+:You take a moment to let what Coby just said sink in. It's bizarre, and for the moment you don't know how to respond. You open your mouth and close it again before saying:
+-> Weird, but I can see what you mean by that. If we want to make any meaningful change, we can't be antagonistic towards each other.
     <<set $cd3_points += 1>>
-    Coby: That’s what Meppo- san and Drake-san have said… I’m glad you understand, though.
+    Coby: That's what Meppo- san and Drake-san have said... I'm glad you understand, though.
 -> The hell does that even mean?
     <<set $cd3_points -= 1>>
-    Coby: I… Yeah, it’s kind of stupid and hard to explain.
+    Coby: I... Yeah, it's kind of stupid and hard to explain.
 
 {$name}: Is this why you got the “Hero” epithet? I've heard a lot of people call you that, and I wasn't sure if they were being nice or sarcastic.
-Coby: It's… It’s a combination of the two. I'm not really fond of it, but it's what stuck! So I deal with it.
+Coby: It's... It's a combination of the two. I'm not really fond of it, but it's what stuck! So I deal with it.
 {$name}: How did you get it?
 Coby: Oh, that's a really long story. There was an incident involving a supernova out in the New World. Another pirate crew came in and started causing problems to take over the island. It was chaos.
 {$name}: So why were you called a hero for it?
 Coby: I did what a Marine was supposed to do! I made sure as many civilians as possible were safe, and I fought with everything I had. People think I was glory hunting by doing that.
 {$name}: They're just jealous because they couldn't do the right thing.
-Coby: I don't think it’s that! Even the bravest people have their limits. I know that for a fact. I don't even think being brave is the opposite of being scared!
+Coby: I don't think it's that! Even the bravest people have their limits. I know that for a fact. I don't even think being brave is the opposite of being scared!
 -> [i]Quietly drop the subject.[/i]
     <<jump date_coby_3_day_wrap_up>>
 -> Why do you think being brave and being scared aren't the opposites of each other?
 Coby: Well, do you remember the Paramount War?
-{$name}: Everyone remembers that… It’s hard to forget.
+{$name}: Everyone remembers that... It's hard to forget.
 Coby: I was terrified, but I still stood up to an admiral. I could have been killed or worse if the Red Haired Pirates hadn't stepped in! It stopped a bloodbath from turning into an even worse one. I wanted people to stop hurting, so I did what I thought was right and cried while doing it.
 Coby makes a face, as if he's disappointed in himself for admitting that fact. His shoulders tense as he sighs, looking down at the water as if it might lighten the conversation.
 Coby: Sorry, that was a lot to dump on you. The only person I can talk to about this is Helmeppo. He saw me almost get turned into cream corn, so it's not exactly something he likes to discuss.
 {$name}: I can understand why. You're best friends, and you did something incredibly stupid in the name of the greater good.
 Coby: Yeah. To go back to what we were talking about, I think that's why they call me a hero. It's because I rush into dangerous situations due to these ideals I want to uphold. So it's both an insult and an honor, and I do my best to not let it go to my head.
--> That’s a very level-headed way of looking at it.
+-> That's a very level-headed way of looking at it.
     <<set $cd3_points += 1>>
     Coby: I try! It's difficult, but I won't allow myself to be someone who puts glory ahead of their beliefs.
 -> I mean, shouldn't you, though?
     <<set $cd3_points -= 1>>
-    Coby: No. I want to make sure I follow what I believe is right. To assume I'm better then everyone is just… Arrogant.
+    Coby: No. I want to make sure I follow what I believe is right. To assume I'm better then everyone is just... Arrogant.
 
 {$name}: So you said pirates invaded Rocky Port?
-Coby: Well, invade is not exactly a good way to put it. It's technically a pirate island. Most Marines don't want anything to do with it, because it’s a hornets’ nest. It's dangerous and not worth the risk.
+Coby: Well, invade is not exactly a good way to put it. It's technically a pirate island. Most Marines don't want anything to do with it, because it's a hornets' nest. It's dangerous and not worth the risk.
 {$name}: So why did you go?
 Coby: We got some intelligence of something big about to happen. Like I said, a supernova was going to make a move, and we wanted to make sure it wasn't anything earth- shattering. Instead, we ended up with a new warlord who dropped off a hundred still beating pirate hearts on a base and Blackbeard taking over the island in the chaos.
 {$name}: Still beating hearts????
 Coby goes pale, the memory looking like it turns his stomach more than anything. It's understandable, considering what he was just describing, but you can't help but feel a tiny bit morbidly curious about the whole affair. It might not be the most tasteful thing to do, but you press for more answers.
 {$name}: How did a pirate rip out a still beating heart? Was it done surgically or ya know, in a weird cult, mass sacrifice way?
-Coby: Devil fruit, so I guess not much better than either or those. It wasn't all at once, but in batches? I have pretty solid observation haki, and I could feel the fear and terror as it happened. I didn't have the grasp of it like I do now, so the whole experience was… Overwhelming. Combine that with Marineford only being a handful of months before, and I'm really grateful I managed to save as many people as I did.
+Coby: Devil fruit, so I guess not much better than either or those. It wasn't all at once, but in batches? I have pretty solid observation haki, and I could feel the fear and terror as it happened. I didn't have the grasp of it like I do now, so the whole experience was... Overwhelming. Combine that with Marineford only being a handful of months before, and I'm really grateful I managed to save as many people as I did.
 -> Im glad you did too, hero.
     <<set $cd3_points += 1>>
     Coby: [i]Blushing[/i] Ah, thank you?????
@@ -212,23 +215,29 @@ Coby: Devil fruit, so I guess not much better than either or those. It wasn't al
 -> Still think you should make a bigger deal about it than you do.
     <<set $cd3_points -= 1>>
     Coby: Again, I'm not going to compromise my ideals for glory. When you get that chance, then you do what you want, but I'm not going to.
-    He gathers up his Pole, mouth drawn up into a tight, irritated line. You realize how annoyingly goody goody Coby is. (0- 3 points) Maybe this is why you don't stand out, likely for the better. (4-5) It's annoying, but maybe he’ll grow on you more later? It's not like he’s a bad person, just too nice for his own good.
+    He gathers up his Pole, mouth drawn up into a tight, irritated line. You realize how annoyingly goody goody Coby is. (0- 3 points) Maybe this is why you don't stand out, likely for the better. (4-5) It's annoying, but maybe he'll grow on you more later? It's not like he's a bad person, just too nice for his own good.
 <<jump date_coby_3_day_wrap_up>>
+===
+
+title: date_coby_3_End_Date
+---
+DATE ENDS EARLY
+<<jump main>>
 ===
 
 title: date_coby_3_day_wrap_up
 ---
-You pick up your pole again, the sky now a pretty pink and orange. This wasn’t a terrible way to spend the day, even if neither of you really caught anything. Your thoughts are interrupted by the twin sounds of the reels unspooling. Both of your poles now start to bend. Coby and you look at each other, surprised, as you scramble to pull up whatever it was on your lines.
-Coby’s line eventually goes slack, but yours really starts to bend, the line becoming hard to turn. Coby moves behind you, helping you hold and reel it in. Whatever is on the end is putting up a massive fight!
+You pick up your pole again, the sky now a pretty pink and orange. This wasn't a terrible way to spend the day, even if neither of you really caught anything. Your thoughts are interrupted by the twin sounds of the reels unspooling. Both of your poles now start to bend. Coby and you look at each other, surprised, as you scramble to pull up whatever it was on your lines.
+Coby's line eventually goes slack, but yours really starts to bend, the line becoming hard to turn. Coby moves behind you, helping you hold and reel it in. Whatever is on the end is putting up a massive fight!
 <<if $cd3_points >= 7>>
-    Working together, you pull up a massive red fish, the ruby scales glittering in the setting sun’s light. It's large enough for both of you to share, if you can find someone to cook it.
+    Working together, you pull up a massive red fish, the ruby scales glittering in the setting sun's light. It's large enough for both of you to share, if you can find someone to cook it.
     {$name}: OH WOW! It's beautiful!
     Coby: This absolutely makes up for our lack of luck earlier!
-    You’re both grinning maniacally as you unhook the fish, and Coby takes out a stringer from the tackle box. Carefully, he puts on the stringer so that you can bring it back with you to the base. Maybe someone in the mess can prepare it for you as a nice dinner!
+    You're both grinning maniacally as you unhook the fish, and Coby takes out a stringer from the tackle box. Carefully, he puts on the stringer so that you can bring it back with you to the base. Maybe someone in the mess can prepare it for you as a nice dinner!
 <<elseif $cd3_points >= 4>>
-    Working together you pull up… An unimpressive sardine. You frown in disappointment as you stare at it. It felt a lot bigger on the line. Even Coby seems a bit dejected.
-    {$name}: That's… Really disappointing.
-    Coby: Well… I guess we can throw it back. It's not worth keeping.
+    Working together you pull up... An unimpressive sardine. You frown in disappointment as you stare at it. It felt a lot bigger on the line. Even Coby seems a bit dejected.
+    {$name}: That's... Really disappointing.
+    Coby: Well... I guess we can throw it back. It's not worth keeping.
     The little sardine gets to live out its days with a weird story. Unfortunately, all you get for your effort is a subpar tale and an old boot to take home.
 <<else>>
     Coby does all the work to haul in what felt like an impressive catch, only to pull up another old boot which looks to be an identical twin to the one you hauled in earlier. You frown, dejected. Coby sighs as he unhooks it from the line.
@@ -236,4 +245,5 @@ Coby’s line eventually goes slack, but yours really starts to bend, the line b
     Coby: At least you got something out of it?
     Coby forces a smile, but it fades quickly as he packs everything up. As unfortunate as it is, you have nothing to show but a pair of old boots for your trouble. Your stomach grumbles irritatedly as you head back to the base.
 <<endif>>
+<<jump main>>
 ===

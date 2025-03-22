@@ -2,24 +2,24 @@ title: date_sengoku_1_main
 location: day(garden)
 ---
 <<declare $sd1_points = 0>>
-It’s a nice day, the sun is shining, the fog has just blown out. And best of all, you have a bit of free time! The largest garden on base has been calling your name since you arrived, and now you’re finally here! Wow, look at that view...
+It's a nice day, the sun is shining, the fog has just blown out. And best of all, you have a bit of free time! The largest garden on base has been calling your name since you arrived, and now you're finally here! Wow, look at that view...
 Suddenly, you feel a weird tugging near your waist. Startled, you look down A... Goat?
 <<show_characters goat>>
 A goat looks up at you, the hem of your shirt in its mouth. Uh. Hm. You look back and forth. Where did this goat come from?!
 <<show_characters goat sengoku>>
-Sengoku: Goat! Stop that! PC, I apologize for my companion’s rudeness. #expression:grumpy
+Sengoku: Goat! Stop that! PC, I apologize for my companion's rudeness. #expression:grumpy
 -> It's no bother. Your goat is very cute!
     <<set $sd1_points += 2>>
-    Sengoku: Thank you... They’ve been my companion for a long time. #expression:joy
+    Sengoku: Thank you... They've been my companion for a long time. #expression:joy
     -> From before you were Inspector General?
         <<set $sd1_points += 2>>
-        Sengoku: Far before then, (RANK PC). They’ve seen more than most marines captains by now. We both deserve a retirement!
+        Sengoku: Far before then, (RANK PC). They've seen more than most marines captains by now. We both deserve a retirement!
     -> They look spritely for a Old Goat...
         <<set $sd1_points += 1>>
-        Sengoku: They’ve always been young at heart... And who's to say they’re old? (wink)
+        Sengoku: They've always been young at heart... And who's to say they're old? (wink)
     -> A goat? A companion?
         <<set $sd1_points -= 1>>
-        Sengoku: They’re better than some people on this base.
+        Sengoku: They're better than some people on this base.
     Sengoku: Now, furry companions aside— #expression:neutral
         <<jump date_sengoku_1_route_e>>
 -> It's alright—thank you for getting them off of me though.  I don't think the higher-ups would appreciate a goat-drooled uniform.

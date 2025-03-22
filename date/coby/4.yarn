@@ -1,0 +1,574 @@
+title: date_coby_4_main
+location: day(office)
+---
+<<declare $cd4_points = 0>>
+
+As morning wears on into afternoon today, you find yourself feeling a sense of déjà vu. You started the day with a stack of “just a little bit of” paperwork. Two hours of steady work later, it's smaller but nowhere near gone.
+The déjà vu insists that someone should be walking through that door. You look up.
+Nothing happens.
+-> Go back to what you were doing.
+    You pull the next sheet in front of you and try to read through it. You get halfway through before realizing you're not retaining any of it.
+    Just as you're about to start over, someone raps on your door. Grateful for the reprieve, you hurry over and pull it open.
+    <<show_characters coby>>
+    Captain Coby stands there, smiling hesitantly at you.
+-> Go check the door for a desperately needed distraction.
+    You walk over to the door. Everything is quiet. It wouldn't be weird just to take a peek outside, right? But if someone sees you out there, they might think you're being lazy!
+    Well... just a peek. Real quick. Just for a change of pace. Reaching down, you yank the door open...
+    <<show_characters coby>>
+    ... only to find Captain Coby standing there, one hand raised and about to knock. He looks as startled as you feel.
+
+Hurriedly, you step out of the way and gesture for him to come into the office. He looks at the pile of paperwork, then at you.
+Coby: Sorry, am I interrupting?
+-> Actually, yeah.
+    He winces a little.
+    Coby: Sorry. I can leave for now-
+    Oh, don't worry about that! I really need a break.
+    Yeah, I'm sorry but that would be for the best.
+    Coby: OK. See you later, then.
+    <<jump date_coby_4_DateEnd1>>
+-> Kind of, but [i]please[/i] keep interrupting.
+    <<set $cd4_points += 1>>
+    He smiles.
+    Coby: If you're sure, I'm happy to impose!
+-> Nothing that can't wait.
+    <<set $cd4_points += 1>>
+    Coby smiles, looking pleased at that.
+
+<<if visited("date_coby_1_Coby_training2")>>
+    Coby: Well, I was just doing some workout benchmarks, and I remembered when we sparred before.
+    -> Sparred is one word for it. Getting my butt kicked is another.
+        <<set $cd4_points += 1>>
+        Coby: It wasn't that bad! You did really well, especially considering your experience level.
+        {$name}: My brain knows that. My ego...
+    -> Oh yeah! I learned a lot from that.
+        <<set $cd4_points += 1>>
+    -> We sparred?
+        <<set $cd4_points -= 1>>
+        The captain suddenly looks worried.
+        Coby: Wait, did you hit your head? I didn't notice anything, but-
+        {$name}: Coby, no. I was just joking.
+    Coby: Oh. Well, I was wondering if you would want to try again? See how far you've come?
+    -> Sign me up!
+        <<set $cd4_points += 1>>
+    -> Yeah, I could use some fresh air.
+        <<set $cd4_points += 1>>
+    -> Honestly, I just don't think I'm up for trying to fight a Marine Hero right now.
+        <<jump date_coby_4_DateEnd1>>
+<<else>>
+    Coby: Well, I was just thinking we haven't had a chance to spar yet. Are you interested?
+    -> Sign me up!
+        <<set $cd4_points += 1>>
+    -> Yeah, I could use some fresh air.
+        <<set $cd4_points += 1>>
+    -> Honestly, I just don't think I'm up for trying to fight a Marine Hero right now.
+        <<jump date_coby_4_DateEnd1>>
+<<endif>>
+
+Coby: Fantastic! Let's go.
+
+You leave the pile of paperwork behind and head out to the training grounds under an unseasonably hot sun for this time of year.
+There are a fair number of people taking advantage of the warm, sunny day to practice, but when they see Captain Coby coming, they clear a space.
+You wonder if that's awesome or a sign you should be worried.
+He finally picks a spot and turns to you, smiling.
+Coby: All right. Let's see how your training has gone.
+<<jump date_coby_4_FightStart>>
+===
+
+title: date_coby_4_FightStart
+---
+How do you want to proceed?
+-> Punch him in the face. <<if !visited("date_coby_4_Punch1")>>
+    <<jump date_coby_4_Punch1>>
+-> Aim for the knees. <<if !visited("date_coby_4_Knee1")>>
+    <<jump date_coby_4_Knee1>>
+-> Kick him in the side. <<if !visited("date_coby_4_Kick1")>>
+    <<jump date_coby_4_Kick1>>
+-> Fight dirty; aim for the crotch. <<if !visited("date_coby_4_Cheater1")>>
+    <<jump date_coby_4_Cheater1>>
+-> Just practice more basic forms. <<if !visited("date_coby_4_WrapUp")>>
+    <<jump date_coby_4_WrapUp>>
+===
+
+title: date_coby_4_Punch1
+---
+You square up and start to swing for his left cheek. But as he starts to lean to the side, you pull back the feint and take the [i]real[/i] swing from the other side.
+You see his eyes widen in surprise, and he only barely manages to dodge to one side before you connect.
+Your fist barely grazes his skin and ruffles the ends of his hair where it hands over his bandanna.
+Coby: Woah! That was great! Where did you learn that?
+-> I dunno. Maybe from one of the admirals or something?
+    Coby: Ooh, did one of them give you lessons? I couldn't get any of them to...
+    He trails off, then red runs rampant over his face.
+    Coby: That was a joke, huh?
+    {$name}: Um, yes.
+-> I learned it from watching you, captain.
+    <<set $cd4_points += 1>>
+    He blushes a truly adorable shade of red.
+    Coby: Oh! I'm really glad I've been helpful!
+-> Learn it? That was all instinct.
+    <<set $cd4_points += 1>>
+    He nods, looking impressed.
+Coby: All right! Come on. What else do you have up your sleeve?
+<<jump date_coby_4_FightStart>>
+===
+
+title: date_coby_4_Knee1
+---
+You rush forward, dropping just before you get to him and planting one hand on the ground for stability. One leg, meanwhile, aims straight for the back of his knee.
+It's like kicking a wall. You can feel the impact all the way through your body.
+But Coby's knee buckles a little, too.
+Coby: Woah! You've really gotten stronger.
+-> Aww gee, thanks!
+    Coby: I mean it. You've earned it.
+-> I know you mean that but somehow it still feels patronizing.
+    Coby: Oh! I didn't mean it like that! I'm sorry.
+-> I'll believe that when I can actually knock you down.
+    Coby: Uh... Well, I'll keep rooting for you.
+    {$name}: but not letting me win?
+    Coby: No, that wouldn't help you get stronger!
+    He sounds scandalized.
+Coby: Anyway, it's great to see how far your strength training has come! Show me what else you've got.
+<<jump date_coby_4_FightStart>>
+===
+
+title: date_coby_4_Kick1
+---
+You spin, your heel lashing out at his side. The attack comes in far quicker than he expected. He makes a move like he's going to catch your foot but is only able to deflect it so it can't do any real damage.
+Coby: Wow, that almost got me. You've gotten way faster.
+-> It's from trying to keep up with you.
+    <<set $cd4_points += 1>>
+    Coby:  If that's what it is, I hope you'll keep it up. Maybe even try learning geppo! Maybe I could try teaching you. I could ask.
+    -> That would be great!
+        Coby: Well, I'll see what I can do.
+    -> Sounds like a lot of work...
+        Coby: If you're sure.
+-> It's from trying to run away from Tsuru's assignments.
+    Coby: Oh. Yeah, she can be kind of demanding, can't she?
+-> It's from this new speed-speed devil fruit I got.
+    Coby: Really?
+    {$name}: No.
+    Coby: Oh, good! I would have felt bad if you'd gotten a devil fruit and I hadn't congratulated you.
+Coby: Still, that combo of speed, power and balance will do you well fighting on ship decks! Now, is there anything else you want to test?.
+<<jump date_coby_4_FightStart>>
+===
+
+title: date_coby_4_Cheater1
+---
+You start to approach him, acting as though you're about to ask him a question before the fight begins. But as you get close, you take the last two steps a lot quicker.
+You're sure your attempt to knee him in the groin is going to catch him by surprise.
+Turns out, you're wrong. He dodges out of the way with practiced ease. Then he grins sheepishly.
+Coby: It feels like it's a bad sign that that's the move I'm most used to seeing.
+-> From all the pirates?
+    He looks around evasively.
+    Coby: Yes... the... um... pirates. Yes.
+-> From Garp?
+    Coby: Please, do not give him any ideas.
+-> From Helmeppo?
+    Coby: I wasn't going to name names, but... Yes. Definitely Helmeppo.
+    Coby: I might have mentioned that before. I think his dad taught him some pretty dirty tactics.
+Coby: Hm. I won't say it's not worth you practicing it. Pirates fight dirty, so... Anyway. Anything more traditional you want to try?
+<<jump date_coby_4_FightStart>>
+===
+
+title: date_coby_4_WrapUp
+---
+You both fall into a rhythm, going through practiced moves and familiar routines instead of a more significant fight. You can feel yourself working up a sweat and your muscles starting to burn a bit.
+Want to ask for a break?
+-> Yes, time for some rest.
+    When you ask about taking a break, Coby relaxes his stance.
+    Coby: Sure, that sounds like a good idea.
+    Coby: Let's get some water.
+-> No. You can keep going as long as Coby does.
+    <<set $cd4_points += 1>>
+    You keep going. And keep going. And finally, wiping a bit of sweat from his eyes, Coby holds up a hand.
+    Coby: Hang on. Whew! You have a lot of stamina.
+    Coby: Let's go grab some water before we get back into things.
+
+You both walk over to the “fountains” —a fancy word for a series of pipes with spigots that poke out of the ground. They're rustic, but they allow for Marines to cool off and grab a drink while training.
+Coby goes first, cupping his hands and taking a quick drink before ducking his head under the flowing water. It dampens his hair and darkens the fabric of his bandanna.
+Coby: Brrr. Why is it always so [i]cold[/i]?
+He steps aside to make space for you.
+<<jump date_coby_4_WaterChoice>>
+===
+
+title: date_coby_4_WaterChoice
+---
+You decide to:
+-> grab a drink. <<if !visited("date_coby_4_DrinkWater")>>
+    <<jump date_coby_4_DrinkWater>>
+-> wet your hair. <<if !visited("date_coby_4_WetHair")>>
+    <<jump date_coby_4_WetHair>>
+-> wet more than just your hair. <<if !visited("date_coby_4_NotAShower")>>
+    <<jump date_coby_4_NotAShower>>
+-> turn off the water. <<if !visited("date_coby_4_WaterOff")>>
+    <<jump date_coby_4_WaterOff>>
+===
+
+title: date_coby_4_DrinkWater
+---
+You cup your hands together and grab a drink of water. It feels good going down—you didn't realize how thirsty you were.
+<<jump date_coby_4_WaterChoice>>
+===
+
+title: date_coby_4_WetHair
+---
+Taking a cue from Coby, you duck your head under the running water to cool off from the warm afternoon sun and the exertion.
+Yikes! He wasn't kidding about it being cold! You start to straighten up, startled, and bang your head on the spigot.
+Wincing in pain, you clap a hand to the spot, splashing droplets of water from your sodden hair all around you.
+As the cool liquid runs in rivulets from your hair and down your face and neck, you catch sight of Coby's worried face.
+Coby: That looked painful, {$name}. Are you all right?
+-> Don't worry. This isn't even the biggest wound I got this morning.
+    Coby: Well, now I'm [i]more[/i] worried.
+    <<jump date_coby_4_WaterChoice>>
+-> I mean, it's not [i]great[/i].
+    Coby: Do you need to go to the infirmary?
+    -> Actually, maybe I do. That might be enough training for today. I'll see you later.
+        <<jump date_coby_4_DateEnd2>>
+    -> It's just a bump. I'll be fine.
+        Coby: All right, if you're sure...
+        <<jump date_coby_4_WaterChoice>>
+-> It hurt, but it's more that I wasn't expecting the cold. Even after you warned me!
+    He looks relieved and nods in agreement.
+    Coby: It really is like they run it over ice, right?
+    <<jump date_coby_4_WaterChoice>>
+===
+
+title: date_coby_4_NotAShower
+---
+It's pretty warm, and you are sweaty all over. Plus, you saw this in a pin-up poster once, and it looked really cool!
+Unfortunately, this isn't a waterfall from on high. It's a spigot. You have to get down in the mud to get all the way under, and once you're there' while you're certainly cooling off, you don't feel glamorous.
+Just muddy and wet.
+Coby watches this briefly, confused.
+Coby: Are you... all right?
+{$name}: ...
+Coby: Like, did you fall, or...
+{$name}: This was much better in my head.
+Coby: I'll bet.
+<<jump date_coby_4_WaterChoice>>
+===
+
+title: date_coby_4_WaterOff
+---
+Finished with the water for now, you crank the spigot shut.
+Coby: All right, what next? We could take a little breather or get right back to it.
+-> I am ready for another round!
+    <<jump date_coby_4_FightStart2>>
+-> Let's take a break on the benches over there.
+    <<jump date_coby_4_BenchTalk>>
+-> Actually, I think that's enough for me for now.
+    <<jump date_coby_4_DateEnd2>>
+===
+
+title: date_coby_4_BenchTalk
+---
+The pair of you walk to the simple wooden benches and take a seat.
+You can't help but notice a lot of the folks out practicing seem to be keeping an eye on you. You try to ignore it.
+Coby: So what were you working on when I interrupted you? Looked important.
+-> Just paperwork. You know how it is.
+    Coby: Boy, do I.
+    Coby: Just to let you know, it goes up by at least forty percent per rank.
+    {$name}: That much?
+    Coby: At least. Maybe fifty.
+    -> Maybe I don't want a promotion...
+        Coby: They are a lot of responsibility. More than just the extra paperwork.
+        Coby: But I think you'd be great in leadership, {$name}. Don't let paperwork scare you off.
+    -> You're sure no one else is sneaking their work into your stack?
+        He starts to answer, then closes his mouth and gives that question more consideration.
+        Coby: You know...
+        Coby: I don't [i]think[/i] so. But I also wouldn't put it past some of the folks I know.
+    -> Guess I better brush up on my speed-reading.
+        He laughs.
+        Coby: It certainly does help!
+-> Writing love letters.
+    You could swear Coby turned a little red at the mention of scandalous correspondence.
+    Coby: Oh! I'm really sorry then that I pulled you away from that.
+    {$name}: Sorry, that was a joke. I wouldn't write love notes at work.
+    -> The person I like might find out I like them if I did.
+        Coby: Oh. Yeah, I guess that is a concern.
+        Coby: Although I guess that's ultimately what you want, right? For them to know?
+        -> Yes, but when I'm ready!
+            <<set $cd4_points += 1>>
+            Coby: That's fair. But if you wait too long you might miss your opportunity, right?
+        -> No! Never. I need to keep it a secret forever.
+            Coby: If you say so.
+        -> But not by telling them.
+            Coby: So how do they find out?
+            -> Osmosis.
+                Coby: I don't think that's how osmosis works.
+            -> Psychic connection.
+                Coby: Still feels like telling them would be more effective.
+            -> They just start liking me and ask me out first.
+                Coby: I guess that's a good plan when it works.
+    -> Nothing kills the mood like a booty call on Marines stationary.
+        Coby: A ... booty call?
+        -> [i]Explain.[/i]
+            You explain. Coby listens intently, nodding at appropriate moments. When you're done, he considers what you said for a bit.
+            Coby: OK, I think I get it. But why would you do business in the sheets, instead of just at the office?
+            You consider how to clarify this misunderstanding, then decide it's probably going to be more trouble than it's worth.
+        -> Never mind...
+            From the look on his face, Coby wants to press for details, but decides against it.
+    -> It's really hard to think of dirty pet names when a superior officer could walk in at any time.
+        Coby: Why would they need to be dirty?
+        {$name}: Well, the cute ones are usually easy to come up with. The naughty ones can take a little more forethought.
+        Coby: I'm almost scared to ask...
+        -> I mean something like “Bootytown.”
+            Coby: Bootytown?
+            {$name}: You know. Like the booty is so good that-
+            Coby: You know what? Forget I asked.
+        -> I'm thinking a name like “Hottiepants.”
+            Coby: Because the person is a hottie? Um... in...
+            -> Yes, in pants.
+            -> With or without pants.
+            -> Such that the pants can barely contain the hotness.
+        -> You can't come up with a nickname like “Tiddies McGee” at a moment's notice.
+            Coby: Actually, I'm pretty sure you did just come up with that at a moment's notice.
+            -> OK, fair. Guilty as charged.
+                <<set $cd4_points += 1>>
+            -> Actually, I've been thinking about it since I got a glimpse of those pecs while we trained.
+                <<set $cd4_points += 1>>
+            -> See? Then you get why we have to put [i]thought[/i] into these things.
+                <<set $cd4_points += 1>>
+-> Filling out the list of my enemies.
+    Coby looks troubled.
+    Coby: I'm guessing that's a joke, but you'll probably be better off keeping lists of friends than enemies.
+    Coby: Plus as a Marine, those enemy lists can get kinda long.
+    -> Oh. You're probably right.
+        <<set $cd4_points += 1>>
+        Coby: Yeah. And anyone who'd be an enemy to you isn't worth thinking too much about anyway. Other than how to bring them in.
+    -> But I really want to keep track.
+        <<set $cd4_points -= 1>>
+        He looks doubtful, but nods.
+        Coby: If it's fun for you, please don't let me stop you.
+    -> That's part of the fun. I could share them with you if you want?
+        Coby: Eh, I have enough enemies of my own, I think.
+
+A flustered Coby really is very cute. He's a pretty easy guy to tease, and the slightly embarrassed smile he gets sometimes is pretty attractive.
+As you're thinking about that, he catches you looking.
+Coby: Oh. I might be wrong, but it looked like you had something you wanted to ask me. What is it?
+<<jump date_coby_4_CobyQuestions>>
+===
+
+title: date_coby_4_CobyQuestions
+---
+A chance to ask Coby anything? You decide to go with:
+-> So what's your type? For dating, I mean. <<if !visited("date_coby_4_CobyType")>>
+    <<jump date_coby_4_CobyType>>
+-> What do you want to do after the Marines? <<if !visited("date_coby_4_CobyRetire")>>
+    <<jump date_coby_4_CobyRetire>>
+-> If you weren't in the Marines, what would you want to do? <<if !visited("date_coby_4_CobyPlan")>>
+    <<jump date_coby_4_CobyPlan>>
+-> Actually, I don't have any more questions. <<if !visited("date_coby_4_FightStart2")>>
+    <<jump date_coby_4_FightStart2>>
+===
+
+title: date_coby_4_CobyType
+---
+He looks a little surprised to be asked that.
+{$name}: Sorry, is that a sore subject?
+Coby: Not really. Just apparently a really common one.
+{$name}: Huh?
+Coby: I guess it's on a lot of people's minds. I get asked a lot. Especially when we're out on missions.
+{$name}: On missions?
+-> By other Marines?
+-> By the people on the islands?
+-> By the pirates?
+Coby: Yes, sometimes. A lot of the time, actually.
+-> Mr. Popular!
+    He laughs.
+    Coby: I think it's the newspapers to blame. For some reason, they keep putting pictures of me in the paper.
+    Coby: I guess that's why people talk to me when they see me. They recognize me so I'm more approachable.
+    {$name}: I think it's more than that.
+    Coby: Really?
+    -> You realize you're hot, right?
+        He stares intently at you, apparently waiting for you to tell him it's a joke.
+        -> Say it was a joke.
+            Coby laughs, sounding oddly relieved at that.
+        -> Stare back.
+            After a few seconds, he blushes mightily and turns away. (+1)
+    -> Coby, you are the nicest person I've ever met. It's a little scary, honestly.
+        He smiles bashfully.
+        Coby: That's nice of you to say. But they can't know that, right?
+        You think of all those articles he says the paper has written about him but decide to say nothing more on the topic. (+1)
+    -> ... You know what? No, you're probably right. Nevermind me.
+-> What is [i]wrong[/i] with them?
+    Coby: Right? They shouldn't bother a Marine while they're working, no matter what they want to ask.
+    -> :No, I meant: why you?
+        <<set $cd4_points -= 1>>
+        He frowns.
+        Coby: That's a little rude. But, I guess... Yeah, that's a fair question.
+    -> Actually, I meant they should have been clearer in their intentions.
+        Coby: Clearer?
+        {$name}: Coby, they wanted you to ask them out. They were signaling it about as hard as they could.
+        Coby: Wait, they were?
+        He claps his hands together and presses them to his lips, looking worried.
+        Coby: Oh no. I was so rude.
+        {$name}: Not rude. Just a little oblivious maybe, but I'm sure they forgave you.
+    -> Agreed!
+        <<set $cd4_points += 1>>
+        Coby: I knew you'd get it.
+-> I guess you need to start dating to get them to stop.
+    He sighs.
+    Coby: That seems a little drastic. You shouldn't date people for reasons like that.
+    Coby: But thanks for that advice, {$name}.
+    Coby: I appreciate your advice. I really do.
+Coby: Anyway, I guess I never really gave much thought to a type for, uh... that.
+{$name}: Well, let's start simple. Marine or civilian?
+Coby: Marine, I guess. It feels dangerous to marry a civilian if you make as many enemies as we do.
+{$name}: And what attributes do you like?
+Coby looks shocked.
+Coby: If we're talking about someone to spend your life with, it should be about personality, right? Do looks really matter?
+{$name}: Not always, but it's usually better to find your partner physically appealing.
+-> Do you like a big chest?
+    Coby: Sure! Proper muscle tone signifies a person has been keeping up with their training. That's admirable.
+-> Are you a butt man?
+    Coby, well, I don't like to be contrary without a reason, so I guess not.
+-> Do you find faces to be peoples' best feature?
+    Coby: Yes. The face does more stuff than basically any other part of a body.
+    Coby: Seeing, hearing, eating, smelling, talking...
+{$name}: That's not what I meant. I meant more...
+You trail off as you realize that he's grinning at you.
+Coby: Come on. I might not be the most streetwise person ever, but I'm not [i]that[/i] bad.
+Fair enough. You decide to leave it at that.
+<<jump date_coby_4_CobyQuestions>>
+===
+
+title: date_coby_4_CobyRetire
+---
+He looks slightly troubled at the question.
+Coby: I guess it's good to think ahead, but that's so far away...
+-> How long is your enlistment for?
+    Coby: Honestly? I never really paid attention. I guess however long they want me here.
+    -> Hey, me too!
+        Coby: Glad to know it's not just me!
+    -> Is that ... legal?
+        Coby: What, an indefinite enlistment or just not paying attention to the terms?
+        Coby: Actually, it doesn't matter. I guess anything the Marines do is legal, for better or worse.
+    -> It is the least memorable thing about the first few days in the Marines.
+        Coby: Exactly!
+-> What do you mean a long time? How long are you planning to serve?
+    Coby: Well, I'm eighteen. And Garp's...
+    He trails off for a moment, lips moving but words too quiet to hear as he looks skyward in concentration.
+    Coby: He's... maybe sixty?
+    -> You think he's sixty?!
+        Coby: Is he not?
+        {$name}: I think he's closer to 80.
+        Coby: Really?
+        {$name}: Kizaru is closer to 60.
+        Coby: Wow. Huh.
+    -> You plan to serve as long as Garp?!
+        His eyes widen.
+        Coby: No! I mean, he's been so loyal to the Marines for so long. I can only [i]hope[/i] to serve as honorably as him.
+    -> You... You know what? That's fine.
+        Coby: Are you sure?
+-> You don't want to leave planning until it's too late.
+    Coby: I know. But thinking about [i]after[/i] feels so useless right now.
+    -> Because there's so many other things to focus on?
+    -> Because you want to use your energy elsewhere?
+    -> Because you're living in the moment?
+    Coby: Exactly.
+{$name}: Returning to the topic, you don't really have a plan?
+Coby: I really don't. Bogard keeps saying I'm young so it just... hasn't seemed important yet, I guess.
+<<jump date_coby_4_CobyQuestions>>
+===
+
+title: date_coby_4_CobyPlan
+---
+He considers the question for a few seconds in silence.
+Coby: You know? That's a good question. I'm not sure if anyone's ever asked me that.
+Coby: Maybe a fisherman? Or a teacher. That might be nice.
+-> A fisherman?
+    {$name}: You like fishing enough to do it full time?
+    Coby: Yeah! It's relaxing for a while, then there's the battle with the fish.
+    Coby: And you're feeding people. That's really important.
+    -> Would you want to be based on an island?
+        Coby: That might be nice. Fishing off a pier, heading home whenever I have enough.
+        Coby: I stopped enjoying fishing when I was on Alvida's ship. But you know how much it's come back to me now.
+    -> Would you want to be on a fishing boat?
+        Coby: That might be nice. A lot of camaraderie on fishing boats.
+        Coby: And I could still see new islands too. It's one of my favorite sports of being in the Marines.
+        {$name}: Along with helping people?
+        Coby: Along with helping people.
+-> A teacher?
+    Coby: Yeah. I Think it would be nice to work with kids.
+    {$name}: Helping the next generation?
+    Coby: Exactly. It's really fun to watch the people I train with learning new things. That's why I like doing it.
+    {$name}: Like we're doing here?
+    Coby: Yeah! And I think it would be even more rewarding to do the same for children.
+    -> Would you want to teach history?
+        Coby: That would be fun.
+        Coby: I'd need to learn about more places and events first. But sharing that with kids would be great.
+    -> Something like math or science?
+        Coby: If that was what they needed, but I don't know if I'd be much good at that.
+        Coby: I'd be willing to give it a shot, though!
+    -> You're not planning to teach the children combat, right?
+        Coby: No! Of course not!
+        {$name}: OK, just being sure since...
+        Coby: Ah. Yeah,I can see how combat might be on the brain right now.
+-> Wait, no one ever asked you that?
+    Coby: I don't really remember being asked, no.
+    {$name}: That's surprising.
+    Coby: I guess I went straight from a pirate ship to a Marines one.
+    Coby: Neither one is all that interested in other dreams, now that I think about it.
+Coby: But thank you for asking, {$name}. I appreciate that you're interested!
+<<jump date_coby_4_CobyQuestions>>
+===
+
+title: date_coby_4_FightStart2
+---
+Having rested enough to feel ready for another go on the practice field, the two of you head back over to the part of the field you were using before. The training grounds are busier, but that area remains vacant.
+Coby: Ready to go again?
+You agree and the two of you walk back over to the now-more-crowded training grounds, though folks make space for the two of you.
+The break has done you good—you feel fast and strong. You suspect Coby is going easy on you, but the two of you are engaged in a focused and rigorous back and forth.
+But after a while, you can feel yourself starting to slow down, as your muscles grow tired once more. You're thinking about maybe asking for an end to the training when...
+Whoops! You plant your right foot, trying to aim a kick at Coby's midsection, but you don't realize the dirt there is loose from an earlier attack that missed.
+Your foot turns just as you kick. A zinger of pain spikes up from your ankle, along your leg and up along your spine. Your support leg buckles before you can fully start to topple over.
+You gasp in surprise, and Coby shouts your name. The training grounds turn into a motion blur of color and noise, and then you close your eyes just before-
+Wait. You expect to hit the hard ground, but instead you almost feel like you're floating?
+Opening your eyes, you find Coby's face entirely too close to yours, his face consumed with worry. Glancing around, you realize he's kneeling on the ground, his arms under you.
+Coby: Are you OK?
+He must have thrown himself forward and caught you when you fell.
+-> Thank you.
+    <<set $cd4_points += 1>>
+    His smile is entrancingly bright.
+    Coby: You're welcome.
+-> My hero.
+    He blushes furiously but doesn't  look away.
+-> Hey, hands off!
+    <<set $cd4_points -= 1>>
+    Coby hurries to do as you ask.
+    You land on the training grounds' packed dirt butt-first. Maybe that wasn't the best demand.
+Coby helps you to your feet. As he does, you realize a lot of the Marines on the grounds with you are all staring like you're putting on a show.
+<<jump date_coby_4_DateEnd3>>
+===
+
+title: date_coby_4_DateEnd1
+---
+Coby looks disappointed, but nods and sees himself out. (-1)
+===
+
+title: date_coby_4_DateEnd2
+---
+Coby: All right, if you're sure.
+===
+
+title: date_coby_4_DateEnd3
+---
+Coby: Maybe that's a sign that we need to call it a day.
+{$name}: Yeah. But thanks! This was fun.
+Coby: Same for me. This was exhilarating. (+1)
+
+<<if $cd4_points < 0>>
+    You return to your mountain of paperwork.
+    <<romance_points coby 0>>
+<<elseif $cd4_points <= 3>>
+    Coby: Let me know if you want to train again sometime!
+    You bid him goodbye and head back to your still-sizable stack of paperwork. (+1)
+    <<romance_points coby 1>>
+<<else>>
+    As you head back to the rest of your day, Coby stops you with a hand on your arm.
+    Coby: Hey... Thanks for spending time with me today.
+    Coby: And let me know anytime if you need a sparring partner. (+2)
+    <<romance_points coby 2>>
+<<endif>>
+
+<<jump main>>
+===

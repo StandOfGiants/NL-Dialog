@@ -38,7 +38,7 @@ title: date_smoker_1_Part_2AA
 
 title: date_smoker_1_Part_2B
 ---
-Smoker: I don’t know if "fond" is the right word, but I like arranging 'em. Helps me think things through sometimes. You should try it.
+Smoker: I don't know if "fond" is the right word, but I like arranging 'em. Helps me think things through sometimes. You should try it.
 -> Oh, I see... I like to rearrange my papers if I'm having trouble. It's a bit like trying to solve a puzzle.
   Smoker: Huh, I never thought of it that way, but you're right.
 -> I don't know about that...
@@ -49,12 +49,12 @@ Smoker: I don’t know if "fond" is the right word, but I like arranging 'em. He
 
 Smoker: I could show you my rocks sometime if you want.
 -> That would be great! Are they like the rocks here?
-  Smoker: Not really. They're a little different. One might even call them... personal. I’ve chosen them carefully.
+  Smoker: Not really. They're a little different. One might even call them... personal. I've chosen them carefully.
   <<jump date_smoker_1_Part_3B>>
 -> Maybe if I'm free...
     <<jump date_smoker_1_Part_3C>>
--> Ha, that’s what he said!
-  Smoker raises an eyebrow at you but he doesn’t laugh. Ah, that joke [i]really[/i] didn’t stick the landing...
+-> Ha, that's what he said!
+  Smoker raises an eyebrow at you but he doesn't laugh. Ah, that joke [i]really[/i] didn't stick the landing...
   <<jump date_smoker_1_Part_3D>>
 ===
 
@@ -118,7 +118,7 @@ Smoker: Why are you so interested anyway?
 
 title: date_smoker_1_Part_3B
 ---
-Smoker: Well, I think we’ve done enough small talk, {$name}. You interested in getting a high rank?
+Smoker: Well, I think we've done enough small talk, {$name}. You interested in getting a high rank?
 {$name}: Yes! I mean, uh, yes, someday.
 Smoker: It's not a bad thing to be ambitious, yknow. You need to go after what you want.
 {$name}: I'd like to get good at my current position first.
@@ -130,7 +130,7 @@ Smoker: Heh, Tashigi says that kind of thing a lot. I'll tell you the same thing
   {$name}: Aww, Vice Admiral. I'm going to blush.
   Smoker: Well, leadership ain't just a badge on your uniform.
   {$name}: I know that. I still have a lot of learning to do. Got any advice?
-  Smoker: Fuck, I don't know. What works for me isn't necessarily gonna’ work for you.
+  Smoker: Fuck, I don't know. What works for me isn't necessarily gonna' work for you.
   <<jump date_smoker_1_Part_4C>>
 -> Well, I need to get some fighting experience first, of course...what kind of weapon would you recommend?
   Smoker: Depends on what you're comfortable with or what you think is fun. I chose the jitte because I thought it was an interesting challenge, and the seastone helped against fruit users, especially before I learned to use Haki. It also makes for some... interesting teamwork exercises at times.
@@ -142,9 +142,9 @@ Smoker: Heh, Tashigi says that kind of thing a lot. I'll tell you the same thing
 
 title: date_smoker_1_Part_3C
 ---
-Smoker: You’re a curious one, {$name}... I can’t quite figure you out, but Tashigi says you're a decent fighter, at least. She read your file.
+Smoker: You're a curious one, {$name}... I can't quite figure you out, but Tashigi says you're a decent fighter, at least. She read your file.
 -> But what's [i]your[/i] opinion?
-  Smoker: Don't have one. I haven't seen you in action yet. I don't like reading files; they don't tell me enough - I’d rather form my own opinion through observation, if possible.
+  Smoker: Don't have one. I haven't seen you in action yet. I don't like reading files; they don't tell me enough - I'd rather form my own opinion through observation, if possible.
   {$name}: So...you're saying you didn't read my file at all?
   Smoker: Course not. That's not you. What makes you [i]you[/i] is the person I see in front of me.
 -> She did? Has she seen me fight?
@@ -174,7 +174,7 @@ Smoker: So I was thinking. We're not really doing much here and I got a shit-ton
   <<jump date_smoker_1_Early_end>>
 -> I should catch up on work too. Mind if I come with?
   Smoker: Fine by me.
--> I’ll come with you, I could use a bite to eat while working.
+-> I'll come with you, I could use a bite to eat while working.
 
 
 
@@ -205,7 +205,7 @@ Smoker: What about you? You on the market?
 
 
 
-A frog in the pond catches your eye, and Smoker's, too. The pond is quite lovely, well-kept with a scattering of lily pads on top. You and Smoker walk over in a comfortable silence, your hand close enough to his to feel its warmth. Lost in Smoker’s... everything, you fail to keep track of the frog.
+A frog in the pond catches your eye, and Smoker's, too. The pond is quite lovely, well-kept with a scattering of lily pads on top. You and Smoker walk over in a comfortable silence, your hand close enough to his to feel its warmth. Lost in Smoker's... everything, you fail to keep track of the frog.
 Smoker: Huh, I wonder where that frog went...
 -> Let me see.
   You crouch over the lip of the pond.
@@ -248,8 +248,8 @@ title: date_smoker_1_Part_4B
 Smoker: Speaking of teamwork, what kind of weapon do you like the best?
 -> I love long-range artillery. Nothing like the feeling of firing a cannon!
   Smoker: Cannons are pretty impressive, but I've always favored close combat myself.
-  {$name}: Of course you’d say that! You're a logia user - even if you get up close and personal, there’s only a low chance of you getting hit.
-  Smoker: Fair enough, but being a logia doesn’t make me invincible. I have to be corporeal to hit my opponents, but it’s good to be aware of your surroundings. It’s why I use a jitte - I can get pretty good range and avoid taking hits.
+  {$name}: Of course you'd say that! You're a logia user - even if you get up close and personal, there's only a low chance of you getting hit.
+  Smoker: Fair enough, but being a logia doesn't make me invincible. I have to be corporeal to hit my opponents, but it's good to be aware of your surroundings. It's why I use a jitte - I can get pretty good range and avoid taking hits.
   -> Yeah, it's a long weapon.
       <<jump date_smoker_1_Part_4BPart2A>>
   -> I noticed when I saw you sparring earlier... Can I touch it?
@@ -271,7 +271,7 @@ Smoker: Speaking of teamwork, what kind of weapon do you like the best?
 title: date_smoker_1_Part_4BPart2A
 ---
 Smoker: Well, there are all kinds of weapons. Even if you narrow it down, you've got some variety. One of my midshipmen collects spears. And don't get Tashigi started on swords.
--> As long as it’s not ballistics...the required class I had to take on bullet types was a snoozefest.
+-> As long as it's not ballistics...the required class I had to take on bullet types was a snoozefest.
   Smoker: Must not have changed at all since I had to take it.
   -> I don't know how they stretch out that information into an hour.
   -> The person next to me fell asleep!
@@ -281,7 +281,7 @@ Smoker: Well, there are all kinds of weapons. Even if you narrow it down, you've
 -> There are so many, I don't know how I could ever learn them all.
   Smoker: Eh, you'll learn what you need pretty quickly.
 -> Yeah, one of my friends in my hometown was really into arrow quivers. It made them really easy to buy gifts for.
-  Smoker: Huh, you don’t see a lot of archers these days. That’s a unique weapon for sure.
+  Smoker: Huh, you don't see a lot of archers these days. That's a unique weapon for sure.
 <<jump date_smoker_1_Part_4BPart3A>>
 ===
 
@@ -293,11 +293,11 @@ You lapse into a comfortable silence, punctuated by the sounds of birds chirping
 
 title: date_smoker_1_Part_4BPart2B
 ---
-From seemingly nowhere, Smoker produces a jitte. And not just any jitte - it’s clearly Smoker’s own, complete with minor imperfections after countless battles. He leans in close, his breath tickling against your neck.
+From seemingly nowhere, Smoker produces a jitte. And not just any jitte - it's clearly Smoker's own, complete with minor imperfections after countless battles. He leans in close, his breath tickling against your neck.
 Smoker: Here's how you hold it. Best to use two hands first and get your bearings. Line up your knuckles like you'd hold a baseball bat.
 {$name}: But I've never played baseball...
 Smoker: Okay, okay, I'll guide your hands.
-He makes quick work of positioning your fingers around the handle. Too bad you’re too distracted by Smoker to pay much attention, causing your fingers to slip on the jitte.
+He makes quick work of positioning your fingers around the handle. Too bad you're too distracted by Smoker to pay much attention, causing your fingers to slip on the jitte.
 {$name}: Uh, like this?
 Smoker: Almost. Here, you'll want them close together like that. There you go.
 {$name}: And then I swing!
@@ -306,7 +306,7 @@ Smoker: Don't get ahead of yourself, kid.
 
 
 
-His hands are warm on yours as he positions them correctly on the handle of the jitte. Maybe it’s your imagination, but he lingers for a second or two before stepping back.
+His hands are warm on yours as he positions them correctly on the handle of the jitte. Maybe it's your imagination, but he lingers for a second or two before stepping back.
 Smoker: There you go. Now swing! Yep, that's it.
 -> Wow, you're a really good teacher.
   Smoker: Thanks. You've got a lot more to learn, though.
@@ -319,9 +319,9 @@ Smoker: There you go. Now swing! Yep, that's it.
 
 title: date_smoker_1_Part_4C
 ---
-Smoker is a good leader. He's a Vice Admiral, after all, he's been an officer for several years now, and he clearly cares for his subordinates. You hope you’re included in that.
+Smoker is a good leader. He's a Vice Admiral, after all, he's been an officer for several years now, and he clearly cares for his subordinates. You hope you're included in that.
 -> So, when did you start feeling like a good leader?
-  Smoker: Don’t know. I’m not even sure I’d consider myself a good leader now. I mean, yeah, I can run a battle, get people to listen to me, but I make mistakes. I guess we all do.
+  Smoker: Don't know. I'm not even sure I'd consider myself a good leader now. I mean, yeah, I can run a battle, get people to listen to me, but I make mistakes. I guess we all do.
 -> What makes a good leader, anyway?
   Smoker: People say it's intangible, but I think that's lazy. They're just not willing to unpack their own point of view. You have to be firm and strong; the best leaders I've had, have led by example.
 -> I hope I can be as good of a leader as you someday.
@@ -353,7 +353,7 @@ Silence falls. There are shouts from somewhere across the garden; it sounds like
 -> ... So.
   Smoker: So.
   {$name}: ...
-You remain silent. Smoker doesn't say anything either. Well, that's alright; you've run out of things to talk about at the moment. Maybe you need to get to know him better in a group setting, or maybe he's just shy around you. Wouldn’t that be nice?
+You remain silent. Smoker doesn't say anything either. Well, that's alright; you've run out of things to talk about at the moment. Maybe you need to get to know him better in a group setting, or maybe he's just shy around you. Wouldn't that be nice?
 <<jump date_smoker_1_One_point_end>>
 ===
 
@@ -380,7 +380,7 @@ Smoker: Damn. It's been a while since I had to do those. Benefits of already bei
   -> They aren't too bad. I should be able to get through them pretty quickly.
     <<jump date_smoker_1_Zero_point_end>>
   -> Do you remember enough to help me out?
-    Smoker: Nah, paperwork's really not my thing. I let Tashigi do too much of it for me, but she's good at it. Just... don’t tell her I said that.
+    Smoker: Nah, paperwork's really not my thing. I let Tashigi do too much of it for me, but she's good at it. Just... don't tell her I said that.
     {$name}: Then maybe I should ask her for help... Or maybe you could help me out?
     <<jump date_smoker_1_Part_4EPart3>>
 ===
@@ -413,7 +413,7 @@ You find a couple of seats close to a window and sit down while Smoker fixes him
 
 title: date_smoker_1_Early_end
 ---
-You part ways shortly after, and Smoker doesn’t even look in your direction as he waves goodbye. This day could have gone better...
+You part ways shortly after, and Smoker doesn't even look in your direction as he waves goodbye. This day could have gone better...
 <<jump date_smoker_2_main>>
 ===
 

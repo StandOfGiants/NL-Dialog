@@ -138,7 +138,7 @@ Coby: Wow, that looks really good too! I've always wanted to try it, but it alwa
 -> It's way better than what you got.
     <<set $cd1_points -= 1>>
     Coby: Hah, you sound like Helmeppo.
-    Coby: He’s not fond of then either.
+    Coby: He's not fond of then either.
     <<jump date_coby_1_Coby_food3>>
 ===
 
@@ -207,7 +207,7 @@ title: date_coby_1_Coby_Helmeppo
 ---
 <<set $cd1_possible += 1>>
 Coby: Oh, he can be a bit difficult to deal with but
-Coby: He’s not a terrible person just...
+Coby: He's not a terrible person just...
 Coby: An acquired taste.
 -> Oh. I guess maybe I judged him too soon.
     <<set $cd1_points += 1>>
@@ -391,7 +391,7 @@ title: date_coby_1_Coby_Crotch
 ---
 <<set $cd1_possible += 1>>
 You rush him and bring your leg up in an attempt to knee him in the groin. Before you are able to connect, Coby sidesteps and elbows you in the side, knocking you off-balance.
-Coby: Hey now. Don't think you're the first person to try that on me! New recruits do it all the time…
+Coby: Hey now. Don't think you're the first person to try that on me! New recruits do it all the time...
 -> And here I was thinking I was doing something special.
     <<set $cd1_points += 1>>
     Coby: Aw, don't worry. I'm sure you'll find a new way to fight dirty.

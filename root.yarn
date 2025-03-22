@@ -28,6 +28,8 @@ Which route do you want?
     <<jump welcome_event_main>>
 -> A legenedary date
     <<jump LegendaryDatesOne>>
+-> coby
+    <<jump date_coby_4_main>>
 ===
 
 title: Legendary
