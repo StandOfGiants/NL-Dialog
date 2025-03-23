@@ -13,6 +13,8 @@ music: main_theme
 <<declare $pronoun_them = "them">>
 <<declare $pronoun_theirs = "theirs">>
 
+<<jump playtesting>>
+
 Which route do you want?
 -> Legendary
     <<jump Legendary>>
@@ -30,6 +32,31 @@ Which route do you want?
     <<jump LegendaryDatesOne>>
 -> coby
     <<jump date_coby_4_main>>
+===
+
+title: playtesting
+---
+Which route?
+-> Coby
+    Which Coby date?
+    -> Date 1
+        <<jump date_coby_1_main>>
+    -> Date 2
+        <<jump date_coby_2_main>>
+    -> Date 3
+        <<jump date_coby_3_main>>
+    -> Date 4
+        <<jump date_coby_4_main>>
+-> Helmeppo
+    Which Helmeppo date?
+    -> Date 1
+        <<jump date_helmeppo_1_main>>
+    -> Date 2
+        <<jump date_helmeppo_2_main>>
+    -> Date 3
+        <<jump date_helmeppo_3_main>>
+    -> Date 4
+        <<jump date_helmeppo_4_main>>
 ===
 
 title: Legendary
