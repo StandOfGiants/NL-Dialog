@@ -1,0 +1,478 @@
+title: date_tashigi_3_main
+location: quarters
+---
+
+:: TSD3 Bonus First Scene (If PC has a perfect score from Date 2) // HOW DO??
+
+You can’t help but remember the taste of chocolate-topped ice cream every time you see Tashigi. It’s been months, but the sweetness of the treat she’d bought you still lingers on your tongue. You’ve tried to get her attention and ask to spend time together ever since your—can you call it a date? Your shopping date—but you’ve found that it’s been almost impossible.
+Tashigi has been busy. Every time you’ve gathered the courage to ask her, she’s either had a ton of paperwork to do (you help her where you can, but don’t want to be a distraction), or is out on a mission. 
+You can’t help but notice that she’s been frowning a lot lately. She’s allowed to frown; work has been tough and awful lately, the villainy of the seas never-ending. But you’d like to lighten her load somehow. You’ve thought about trying to make her laugh, but you’re not particularly witty or funny, so maybe being a friend and offering a listening ear is a more achievable goal.
+(Background change: Office) // HOW DO??
+
+It’s late morning. You’re sweaty from morning drills, but decide to head over to Tashigi’s office. She hadn’t been at morning training, so if you had to guess, she’s been pouring over files on the recent pillaging of a nearby village she had promised to protect. Compassion and tunnel vision are her biggest strength and biggest weakness. 
+She’s probably forgotten breakfast, but you don’t want to assume anything and possibly embarrass her. Instead, you have another idea. 
+Once you reach her office, you open the door, and she jolts awake from where she was sprawled out across the desk.
+{$tashigi}: Oh, {$name}. Good… morning? Good morning.
+You see her subtly checking the clock on the wall as she adjusts her glasses and pats down her hair, both askew from sleeping face-first in a pile of paperwork. She’s wearing gloves and a jumper, but her teeth start chattering.
+{$name}: Yes, good morning to you too, Tashigi! I hope you slept okay.
+{$tashigi}: Well enough, I guess. Is there anything I can help you with this morning?
+{$name}: About that…
+-> I actually brought you some coffee—freshly brewed, just how you like it. And a cookie! <<declare $td3_points +=1>>
+    {$tashigi}: Aw, yay! You’re so sweet, {$name}; that’s just what I was craving. And a coffee-flavored cookie, too?! You’ve made my morning. Thank you so much!
+-> I was wondering if you’d like to grab some more ice cream? I think you activated my sweet tooth. <<declare $td3_points -=1>>
+    {$tashigi}: I would, but it’s so cold today. I think I would freeze if I ate ice cream on a day like today.
+-> Could I help you with that mountain of paperwork?
+    {$tashigi}: Mmm… it’s so painful. There’s so many dead ends. But I can’t let those pirates slip through our grasp! 
+    {$tashigi}: That said, you don’t need to do that. It’s my fault for letting all these cases pile up. Justice never sleeps, but I have to, and it sucks.
+You smile kindly at Tashigi and she smiles back, but she’s so tired. The weight of the Justice affixed to her jacket has clearly been wearing her down. Despite that, she’s still so hopeful, and refuses to give up. It’s what you’ve always admired about her. 
+You nod to yourself as you pull up a chair to keep her company. As you chat, though, you can’t help but notice her glasses. They seem to be sliding down her nose a little bit.
+<<jump date_tashigi_3_route_join>>
+===
+
+title: date_tashigi_3_start
+location: office
+---
+::TSD3 Regular Start // HOW DO??
+
+It’s lunchtime at last. Despite the chilly weather, you’d worked up a great sweat this morning from early morning drills and weapons practice, and your body is aching pleasantly. You’ve almost nailed one particular move with your sword that you’re hoping will impress Tashigi, considering your lack of specialization in the area. You’ve really been taking all of her sword and footwork pointers to heart, gleaning what you can from your casual conversations.
+Tashigi has been absent from the training grounds lately, working hard on paperwork and cases, but you’ve caught glimpses of her training at odd hours. You’re pretty sure, based on what you’ve heard, that she’s been pouring over files on the recent pillaging of a nearby village she had promised to protect.
+For your part, you’ve been struggling to sleep. You miss the Blues, and you miss your family. You’ve found friends among the Marines, some even feeling more like family, but you only get that nostalgic sense of warmth, care, and compassion from a few people.
+One of those people is Tashigi, and you’re currently on your way to her desk. You briefly knock on the door before stepping inside and walking over. Even if you didn’t already know which desk was hers, it’s easy to tell thanks to the towering pile of paperwork sitting atop it. She doesn’t see you at first, but as you approach, she looks up, her glasses sliding down her nose a little bit. Come to think of it…
+<<jump date_tashigi_3_route_join>>
+===
+
+title: date_tashigi_3_route_join
+location: office
+---
+
+{$name}: Are those new glasses?
+{$tashigi}: Hm? Oh, yeah! I treated myself with my last paycheck.
+-> They look great on you! The color and shape really bring out your eyes. <<set $td4_points +=1>>
+    {$tashigi}: You think so? Thanks! I thought they sat quite nicely. And they don’t interfere with my peripheral vision, so that’s even better!
+-> Did you break the previous ones? <<set $td3_points -=1>>
+    {$tashigi}: Ugh! Rude!
+    {$name}: Ah… sorry.
+-> How often do you have to replace them?
+    {$tashigi}: Fortunately, not that often. My old ones were just getting too old to fix, so I thought I’d splurge on some new ones.
+{$name}: They’re really nice! That said, I think there’s one thing that would make them even better. 
+{$tashigi}: …Oh?
+{$name}: A glasses chain!
+{$tashigi}: Mmm… it’s a nice thought, but that would be really impractical in battle. It would get all tangled up.
+{$name}: No, I just mean for everyday wear, not for training or fieldwork. In fact, I’ve been meaning to give you this for a while now…
+You can’t help but scratch at the back of your neck, slightly embarrassed and a little flustered. Still, you won’t back down! You reach into your front pocket, pull out a small box, and hold it out to her, waiting for her to accept it. Surprise is written all over her face, but she takes it from you and opens it up.
+Sitting in the box is a handmade glasses chain made of brightly colored beads. It’s a simple design, except for the two sword-like charms woven into either side of the chain. It was a bit of an impulsive purchase, but when you’d seen it at the market, you’d immediately thought of her. 
+{$name}: I just noticed that you’ve been doing a lot of paperwork lately, and thought it would be nice to have something for your glasses so they don’t slip.
+{$tashigi}: That’s so thoughtful! Thank you so much, {$name}. No one’s ever really gotten me anything like this before—there’s even little swords on the side! This is the coolest glasses accessory ever.
+She puts away your gift, grinning from ear to ear.
+{$tashigi}: Oh, but speaking of, I hear you’ve been making amazing progress with your training! I’m so sorry I’ve been so absent lately. All of this work really crept up on me.
+-> That’s okay! You’ve been doing your best. My fondest memory of paperwork is doing it with you. You made it fun. <<set $td3_points +=1>>
+    {$tashigi}: Heh, you can’t possibly mean that. But it’s sweet of you to say.
+-> I’m always happy to help out if you need an extra pair of eyes.
+    {$tashigi}: No, it’s okay. I appreciate it, but you don’t have to feel obligated to help with my brief disorganization.
+-> It catches up to us all. Screw paperwork! <<set $td3_points -=1>>
+    {$tashigi}: It’s absolutely essential for running our organization, {$name}. Besides… it’s because of this paperwork that I might be able to catch those pirates who pillaged the village.
+{$tashigi}: Anyway, what I really mean to say is that lately, it feels like we’ve only gotten to spend time together while I’ve been working. 
+{$tashigi}: So, I think it’s a good time for a break! Would you like to go somewhere and catch up?
+-> I’d love that! It’s lunchtime, so would you like to grab some food at the mess hall?  
+    <<jump date_tashigi_3_lunch_date>>
+-> I’m actually busy with my own work. But maybe we can catch up later! 
+    <<jump date_tashigi_3_end>>
+-> I’d love to show you the sick moves I’ve learned lately. Let’s spar!
+    <<jump date_tashigi_3_training_date>>
+===
+
+title: date_tashigi_3_lunch_date
+location: mess hall
+---
+ 
+Tashigi’s stomach grumbles and she gives you an apologetic smile.
+{$tashigi}: You know me too well. Lunch sounds amazing. Just the thought of food is making my stomach rumble.
+You both leave the office and make your way to the mess hall. As you push open the doors, you notice that the room is absolutely packed; the mess hall is always filled with marines at this time of day. 
+However, there’s no helping it, so you get in line. To add to the growing list of annoyances, someone cuts in front of you and Tashigi.
+{$name}: …Seriously?
+-> Hey, watch it! The two of us need to eat too! <<set $td3_points-=1>>
+    Tashigi looks away, embarrassed.
+-> Well, at least this gives us more time to hang out together. <<set $td3_points +=1>>
+    Tashigi blushes, but smiles in response.
+-> I think that guy would shank someone for a lamb shank. Or perhaps give them a chop.
+    {$tashigi}: Hah, I’m always amazed by how punny you are. Sorry to say that it’s pasta day, though.
+When you’re finally up for food, you get a pile of spaghetti and meatballs slapped onto your plate by the proud lunch lady. Unfortunately, it seems that you’ve gotten the last of the meatballs. By the time it’s Tashigi’s turn, she doesn’t get any, and just stares at her plate, looking rather disappointed.
+-> We can split mine. There’s a few here, so we’ll just share! <<set $td3_points +=1>>
+    {$tashigi}: Oh, if you’re sure. Thank you so much!
+-> You can have my plate. You’ve been working hard.
+    {$tashigi}: Oh, but you’ve been working hard too! I couldn’t take all of it…
+    {$name}: Then let’s split these. There seems to be a few here.
+    {$tashigi}: Well, ok. But only if you really don’t mind!
+-> We’ll wait for more to arrive. You deserve to have some too. <<set $td3_points -=1>>
+    {$tashigi}: It’s fine. I wouldn’t want to hold up the line.
+    {$name}: Then why don’t I just give you a few of mine?
+    {$tashigi}: Um… alright. Thank you.
+Miraculously, you find a secluded table all to yourself. It’s pretty loud in the mess hall, but at least back here, you’re not crammed in with other people. As you place some of your meatballs onto Tashigi’s plate, you can’t help but look around, considering the hustle and bustle.
+-> Is it normally this loud? <<set $td3_points -=1>>
+    {$tashigi}: Does it bother you?
+    {$name}: A little bit. How about you?
+    {$tashigi}: I don’t mind. I like the ambiance.
+-> This is pretty cozy, honestly. Takes some getting used to, though.
+    {$tashigi}: Do you not usually take lunch at this time?
+    {$name}: I actually tend to go a little later. There might be less food to choose from, but I like the quiet. When there’s this many people around, it makes me a bit antsy.
+    {$tashigi}: Should we take our food and go back to the office?
+    {$name}: Nah, it’s fine. It would be a waste to throw the food out or have it go cold.
+-> Well, this is fun! I’m not used to having lunch with a friend. Somehow, it makes the food taste better. <<set $td3_points +=1>>
+    {$tashigi}: I couldn’t agree more! I usually miss the lunch rush, so I end up eating by myself. This is a nice change of pace.
+You dig into your spaghetti, and Tashigi does too. There’s a beat of silence as you both enjoy your meals, satisfied smiles stretching across both of your faces. 
+{$tashigi}: Pasta day is my favorite.
+{$name}: Even if pasta goes terribly with coffee?
+{$tashigi}: Hah! Nothing goes terribly with coffee. People who think that meals can’t be paired with coffee are cowards.
+-> I’ve never tried pairing spaghetti with coffee, but I’ll take your word for it.
+    {$tashigi}: It may be an acquired taste, but you get used to it.
+-> Then I’ll just have to try it for myself! <<set $td3_points +=1>>
+    {$tashigi}: That’s the spirit! It also took a while for me to get used to it, but now it’s a regular part of my day.
+-> I don’t know… coffee’s pretty strong and distinctive. <<set $td3_points -=1>>
+    {$tashigi}: So? You’re just enjoying two delicious things at the same time!
+{$tashigi}: Coffee aside, would you like to share a meatball with me?
+She’s cutting the chunky circle into two neat halves and looking very eager.
+-> You enjoy. Don’t worry about me.
+    {$tashigi}: Well, alright. If you insist.
+-> Oh, no thanks. I’m good. <<set $td3_points -=1>>
+    {$tashigi}: Oh… okay.
+-> The only thing tastier than a whole meatball is sharing one. I’m down. <<set $td3_points +=1>>
+    Tashigi grins and scoops it over onto your plate. She stabs her half, and lightly boops it against your half, as if they’re wine glasses and you’re saying cheers. You can’t help but smile.
+{$tashigi}: Huh, you’ve kept your clothes remarkably clean. What’s your secret? I love spaghetti, but it’s never easy to eat without making a mess.
+-> Oh, it’s a skill. It’s all in the wrist, naturally. <<set $td3_points -=1>>
+    {$tashigi}: I don’t need the condescension, {$name}. I was seriously asking.
+    {$name}: Um, well… it’s hard to explain. Anyway...
+    <<jump date_tashigi_3_noodle_guy>>
+-> I slurp it, but that’s why I tuck a napkin into my top first. Best way to enjoy it is to not worry about the mess. <<set $td3_points +=1>>
+    <<jump date_tashigi_3_strawberry>>
+-> I delicately wrap it up. It’s an art.
+    {$tashigi}: Oh? Care to share?
+    You begin to demonstrate, wrapping the noodles tightly around the fork. You think you’ve gotten it, but as you lift the bite to your lips, it promptly slides off and lands on your front, leaving a huge sauce stain in its wake. This is what you get for your hubris in thinking there was an elegant way to eat spaghetti. 
+    <<jump date_tashigi_3_noodle_guy>>
+===
+
+title: date_tashigi_3_strawberry
+location: mess_hall
+---
+
+{$tashigi}: You know, with that mouthful of spaghetti, it looks like you have a magnificent beard.
+{$name}: A magnificent beard, huh…
+You stroke the strands dangling from your lower lip contemplatively.
+{$name}: Give me a chef’s hat, and I’d be a dead-ringer for Vice Admiral Strawberry.
+Tashigi snorts and coughs out a mouthful of spaghetti.
+{$tashigi}: I really shouldn’t laugh at a superior officer—
+-> Why not? I do it all the time. <<set $td3_points -=1>>
+    {$tashigi}: {$name}! Really, now!
+-> But if we didn’t, we’d really have nothing to laugh about!
+    {$tashigi}: Still…
+-> But you’re laughing at me and my uncanny resemblance. Not a superior officer. <<set $td3_points +=1>>
+    {$tashigi}: …You’re getting spaghetti everywhere. You’re such a mess.
+    {$name}: But a nice, Strawberry-flavored mess, right?
+    {$tashigi}: I imagine that at the moment, you’re more spaghetti-flavored.
+    -> Oh? Do you like the taste of spaghetti?
+        {$tashigi}: …Quite a bit, actually.
+        <<jump date_tashigi_3_noodle_guy>>
+    -> Well, I’d be happy to give you a little taste sometime. <<set $td3_points -=1>>
+        {$tashigi}: {$name}! What are you saying?! And in public, too!
+        <<jump date_tashigi_3_noodle_guy>>
+    -> Heh, do you often think about how I taste? <<set $td3_points +=1>>
+        Tashigi takes a sip of her coffee and looks away. The redness of her cheeks says more than words ever could. 
+        <<jump date_tashigi_3_noodle_guy>>
+===
+
+title: date_tashigi_3_noodle_guy
+location: mess hall
+---
+
+{$name}: Speaking of noodles, did you ever encounter that one weird noodle guy? The one who fought with noodles?
+{$tashigi}: Was he a Devil Fruit user?
+{$name}: No, I don’t think so. I heard he ate a ton of flour, snorted out noodles, molded them with his nose-hairs, and then fought with them. Not exactly the most elegant of fighting styles, but apparently he was formidable.
+{$tashigi}: Oh! Yes. Wanze. He fought in one of the Cipher Pol divisions. He was defeated by one of the Straw Hat Pirates.
+At the mention of the Straw Hats, Tashigi’s expression shifts from being engaged in the conversation to something more thoughtful. Her body may be here, but her mind seems far, far away. After an awkward pause, you finally break the silence.
+{$name}: Sorry for bringing it up. I didn’t mean—
+{$tashigi}: It’s fine. I was the one who mentioned them first, after all.
+{$name}: If you don’t mind me asking, were you at Enies Lobby when the Buster Call happened? I heard the events really sent a shockwave through the forces there.
+{$tashigi}: I wasn’t, but I also heard about it. Enies Lobby… It changed everything.
+-> Damn pirates— <<set $td3_points -=1>>
+    {$tashigi}: Don’t. Just… don’t, {$name}.
+-> To lose a base like that… a home… <<set $td3_points +=1>>
+    {$tashigi}: It’s strange, isn’t it? Part of me wants to blame the pirates, but in the end, it was our side that made the call.
+-> It seems so senseless. A Buster Call on our own—I shouldn’t question the government, but sometimes I can’t help but shake my head at their actions.
+    {$tashigi}: …Yeah. It’s strange; the more I sail the Blues, the more I wonder whether the government really is as benevolent as they would like us to believe.
+{$tashigi}: The Straw Hats protect their friends and loved ones. Please keep this between us, {$name}, but… although they might be pirates, I can’t help but find that part of their conduct admirable. I’ll never like pirates, but I don’t think I can consider the Straw Hats evil.
+-> Their Captain seems a little goofy.
+    {$tashigi}: Perhaps that’s true. They’re all quite strange in their own ways.
+-> What is it about them that makes you say such treasonous things? <<set $td3_points -=1>>
+    {$tashigi}: …Maybe if you met them, you’d understand.
+-> They helped you liberate the children being experimented on by Caesar Clown, right? I guess they can’t be all bad. <<set $td3_points +=1>>
+    {$tashigi}: Not that there’s any good pirates out there, but… I would call them one of the better crews.
+{$tashigi}: Ever since Loguetown, since Alabasta, since Marineford, since Punk Hazard... things have been different than they used to be. Smoker smiles more, although he’d never admit it. Maybe it’s the thrill of the chase. 
+{$tashigi}: But following the Straw Hats has led to a lot of confusion. I’ve had more questions than answers about the state of the world. And that damn Roronoa—I’ll beat him next time. My swordsmanship’s improved a lot. Next time, maybe I’ll be the one who taunts him!
+-> …You speak very highly of them. Do the Straw Hats inspire you?
+    {$tashigi}: No! Of course not! They’re pirates. They might be confusing pirates who sometimes bring good rather than evil and chaos, yes, but they’re still pirates. We can’t forget that.
+-> I guess they really helped you and Smoker against Crocodile and Caesar Clown. It might be disgraceful to get help from pirates, but at least the world’s better for it. <<set $td3_points -=1>>
+    {$tashigi}: Mmm… It was a terrible time. I need to get better and work even harder so that disgrace never happens again. Still, the World Government’s response to the events was even more disgraceful—covering up the truth isn’t justice at all.
+-> It must have been such a thrill to clash with the Wado Ichimonji. That blade must inspire action. One day, you’ll save it from Roronoa! <<set $td3_points +=1>>
+    {$tashigi}: Aahhh… It’s such a beautiful blade. He might be a brute, but I’ll give him this: he treats the sword well, and it sings in return. 
+    {$tashigi}: Did you know that I was there when he got Sandai Kitetsu? I actually suggested it. Imagine that! A pirate listening to a Marine. But we could both appreciate a good sword. I want to clash with those swords again… 
+{$name}: You have a lot of experience with them, huh? What are the Straw Hats like?
+{$tashigi}: A rag-tag crew of misfits if ever there was one. Yet, somehow, they fit together. They’re not so mismatched when they’re together as a group. 
+{$tashigi}: I also think the Straw Hats keep each other in check. They’re outrageous and disrupt order, but they’re not harmful to civilians. At least, that’s what I’ve observed in my dealings with them. 
+{$name}: If they’re outrageous, yet don’t harm civilians, what are they, then?
+{$tashigi}: A force to be reckoned with.
+-> You actually like them. <<set $td3_points -=1>>
+    {$tashigi}: Whaaaaat!? I do not! Outrageous.
+-> The reindeer is pretty darn cute. Pity he’s the Straw Hat’s pet.
+    {$tashigi}: Tony Tony Chopper!? He’s adorable! But also, he’s not a pet. He’s a skilled doctor and he really helped out the kids on Punk Hazard as best he could. 
+    {$tashigi}: It’s frankly insulting and a bit suspicious that his bounty hasn’t been raised. He’s formidable and deserves more respect.
+-> Bellemere’s daughter is one of their crew, right? Are they treating her right? I mean she’s a pirate, but everyone deserves support and friendship if they’re ever going to repent. <<set $td3_points +=1>>
+    {$tashigi}: Marines and pirates aside, they’re family. I think Bellemere is actually very happy for Nami. She was glowing. 
+    {$tashigi}: Nami even trusted me to look after the children from Punk Hazard, despite their negative dealings with the Marines. Maybe there’s still hope for the future, if even pirates can work for the common good.  
+{$name}: They really helped you achieve some sense of justice on Punk Hazard, didn’t they?
+{$tashigi}: Alabasta, too. That was the first time I’d realized that justice wasn’t so black and white, and that things were messier than I’d ever thought possible. A band of pirates saved an entire country. And then they saved some kids in need who had been victimized by institutional indifference towards the experiments of a madman and profiteering off the black market. It makes my head spin. Imagine that—pirates, being heroic.
+{$name}: It’s hard to imagine, but…
+-> You’re a hero, too. Your actions in Alabasta mattered. <<set $td3_points -=1>>
+    {$tashigi}: I doubt it. Smoker and I just provided the higher-ups with a convenient way to hide the truth. Supposed “heroes” serving as fodder for their propaganda machine.
+    {$tashigi}: At least I could help the kids on Punk Hazard.
+-> You’re amazing for doing what you did. It sounds like way too much for one person to take on.
+    {$tashigi}: Maybe. But I had to try. Giving up would have meant letting those kids be killed after they’d endured those horrible experiments. I can’t just look away from things like that…
+-> You were a hero to those kids. How are they doing? <<set $td3_points +=1>>
+    Tashigi’s eyes light up.
+    {$tashigi}: They’re getting there! They’re such great kids and they deserve the world. 
+    {$tashigi}: Vegapunk’s treatments are slow going. But they’re not in pain, and you should have seen how happy they were on Christmas! Santa Smoker made their year, even with his grumbling.
+{$name}: Tashigi, you stayed with those kids and took them to Vegapunk to heal. You helped give them some of the kindness and normalcy that they’d been robbed of. If that’s not heroic, I don’t know what is.
+{$tashigi}: …Thank you, {$name}. That means a lot to me. 
+The conversation then turns to various, more light-hearted topics. You end up discussing the weather, your training, her cases, how the Marines have been treating you, and all kinds of things. You even end up discussing justice and swords and your hopes for the future. 
+You’re beginning to understand each other a little better, and you have to admit that you’re falling hard for the compassionate woman in front of you. You keep chatting until long after everyone else has left the cafeteria, and the cleaners have come in to get things ready for the dinner shift.
+<<jump date_tashigi_3_wrap_up>>
+===
+
+title: date_tashigi_3_training_date
+location: training grounds
+---
+
+The training grounds are pretty barren when you get there, as most Marines on base go get lunch around this time. Those who are here have mostly either paired off or are doing their own thing, but some are observing their colleagues as if hoping to pick up technical skills via observation. 
+The timing is perfect. This way, if you fall flat on your face, you’re not embarrassing yourself in front of too many people, although you also wish more people would be able to observe Tashigi’s expert swordsmanship. They’re really missing out! 
+You feel privileged to have Tashigi all to yourself as a training partner. She leads you over to a quiet corner of the training grounds, away from the others, so you have more space to swing and step. She cracks her neck, stretching out her elegant arms.
+You go through your own stretches, warming up so you don’t strain anything. Carefully, you ease your body into what will no doubt be an intense training session. You’ve watched Tashigi’s swordplay many times before, and you’re excited to see how well you’ll match up to her skills.
+{$tashigi}: Out of curiosity, {$name}, what do you think about the swordswomen in the Navy? We’re trained pretty well and are quite formidable, but I was wondering if perhaps you had an idol among us.
+-> I’m not sure. I’m quite a fan of Ensign Isuka’s ferocity. <<set $td3_points -=1>>
+    {$tashigi}: Isuka!? Really? I mean, she’s amazing, but she doesn’t really care about the craft of swords or swordsmanship. 
+    {$tashigi}: We’ve actually talked about it before. She’s more into precise stabs and immobilization, and she does it well, but she uses a rapier because it suits her strengths. She uses her blade solely to protect others, not out of love for swords themselves. It’s quite maddening, because I respect her point of view and she does have skill, but… ooh!
+-> Based on rank and skill, it’s got to be Vice Admiral Gion.  <<set $td3_points +=1>>
+    {$name}: Her Meito Sword is simply stunning! I saw her in battle once, and it was like watching a dancer. 
+    {$tashigi}: Oh, yes! Her seniority, professionalism, and skill with a blade are second to none! She’s my hero, too. I got to train with her once and it was the happiest day of my life. Her cuts are so clean—and you’ve seen Konpira in action, right? Such a privilege! The blade is beautiful and matches the skill of its wielder so perfectly.
+    She fangirls for a good five minutes and it makes you smile. She’s clearly so happy to be given a chance to talk about someone she admires and her sword.  
+-> You, of course!
+    {$tashigi}: Oh, stop it! You’re making me blush. I’m far from being the best.
+    {$name}: You’re still my hero. Your tenacity inspires me, and you’ve given me so many pointers.
+    {$tashigi}: Well… thanks. But your hero still needs to work on her balance and footwork. Personally, Gion is my idol and I wish I could wield Shigure with a fraction of her grace.
+{$name}: Are there any swords that you’re particularly eager to get your hands on? Too many pirates fashion themselves as swordsmen and use their swords for evil; it must be quite daunting.
+{$tashigi}: There are so many swords out there, all crying to be freed, that I think it would be unjust to pick a favorite and leave the others howling. That said…
+{$name}: Go on!
+{$tashigi}: …Yoru.
+-> Mihawk’s blade? Wow! You aim high. <<set $td3_points +=1>>
+    {$tashigi}: Yes, well… I know that the situation is somewhat precarious, but if I had the choice, it would be that one.
+    {$name}: It’ll be a tough battle against a black blade, but I believe justice will prevail. 
+    <<jump date_tashigi_3_black_blades>>
+-> I know he’s a warlord, but he slew so many Marines. I don’t understand how people can look past that.
+    Tashigi frowns, looking like she has more she wants to say, but doesn’t.
+    <<jump date_tashigi_3_saving_swords>>
+-> That’s… hm. <<set $td3_points -=1>>
+    {$tashigi}: …What? Do you not think I can do it?
+    {$name}: It’s not that, it’s just… Mihawk’s one of the most famous swordsmen on the seas.
+    {$tashigi}: You’re right. And I don’t know if I can win. But that gives me all the more reason to try. 
+    {$name}: Yeah, I… yeah. You’re right. I’m sorry.
+    <<jump date_tashigi_3_saving_swords>>
+=== 
+
+title: date_tashigi_3_black_blades
+location: training grounds
+---
+
+{$name}: There’s something strangely beautiful about black blades. It feels like they radiate power. I mean, I’ve only seen pictures, but it’s…
+{$tashigi}: Intoxicating.
+{$name}: Yeah.
+{$name}: Tashigi, is it true that any sword can become a black blade if the wielder has strong haki?
+{$tashigi}: Yes. The haki from the wielder extends outward, encasing the sword, resonating with one another until their wills are as one. A powerful force, drawing strength from each other. It’s truly beautiful. 
+{$tashigi}: I’ve seen them in action at Marineford, and that was awe-inspiring enough. But to wield a black blade, and to clash against one as well—that would be a dream come true.
+{$name}: Your observation and armament haki are getting better, right? I’m sure that one day, it’ll be possible!
+{$tashigi}: A few weeks ago, I’d thought for a second that I’d managed to spread a fraction of my haki onto Shigure and color it black... but as it turns out, I’d just strained my eye from staring too hard at it and got some black spots.
+-> Ouch! Your eyes are already pretty damaged, right? You wouldn’t want to burst a blood vessel. <<set $td3_points -=1>>
+    {$tashigi}: My vision isn’t that bad!
+-> Whoops! But that’s alright. You can do it!
+    {$tashigi}: Thanks! I’m getting closer every day… or at least, I hope so.
+-> Black blade Shigure … it would be so elegant and fierce. <<set $td3_points +=1>>
+    {$tashigi}: Heh, unfortunately, it would take after its wielder, so it might not be quite so elegant.
+    {$name}: Nah, I think your sword will reflect you in the best of ways. 
+    {$tashigi}: Huh!?
+    {$name}: I said what I said.
+<<jump date_tashigi_3_saving_swords>>
+===
+
+title: date_tashigi_3_saving_swords
+location: training grounds
+---
+
+{$tashigi}: But in the short term, I want to save the legendary Shusui from that arrogant Roronoa and return it to the land of Wano. It’s such a beautiful sword, and should be wielded by a proper samurai. It was one of the most beautiful swords I’ve ever seen up close.
+-> Doesn’t he have three meito-grade blades? That’s a bit greedy, if you ask me.
+    {$tashigi}: I must admit that I got quite envious looking at them up close. They’re all such stunning swords! Lucky pirate…
+-> Isn’t Wano closed off to outsiders? I think there’s some major logistical flaws in this dream of yours. <<set $td3_points -=1>>
+    {$tashigi}: Well… who knows what the future will hold! A lot is changing politically. First of all, I have to rescue Shusui. Then I can think about logistics.
+-> Shusui… Isn’t that one of the 21 Great Grade swords and a Black Blade in itself? Wano’s National Treasure? <<set $td3_points +=1>>
+    {$tashigi}: Yes! Oh my goodness, you know your blades! I’m so happy that someone actually paid attention to my ramblings! Yes, it was wielded by and buried with the legendary samurai Shimotsuki Ryuma. 
+{$tashigi}: I shudder to think of how Roronoa got his hands on Shusui, but I also don’t think, despite his flaws, that he is the kind of man to rob graves.
+{$name}: I believe in the sword. It’ll get back to Ryuma’s grave one day, returning to its master.
+Tashigi has been jogging in place and stretching throughout your conversation. Her eyes are bright, alight with excitement. You don’t know if it’s from the joy of exertion on a pleasant day, your company, or thinking about such amazing swords, but you’re happy that she’s happy.
+{$tashigi}: Are you ready to clash blades?
+{$name}: Heck yes! Let’s show these folks our moves and how much ass we can kick.
+Tashigi looks a little shy and uncertain, laughing awkwardly.
+{$tashigi}: Thankfully, there’s not many people around today.
+{$name}: Yeah. It’s gonna be less embarrassing for me when you kick my ass.
+{$tashigi}: Believe in yourself! 
+{$tashigi}: But also…
+{$tashigi}: Is it really so embarrassing to lose to me?
+-> It’s never embarrassing when it’s a superior officer. 
+    {$name}: I’m just grateful you’re giving me the chance to spar with you.
+    {$tashigi}: Of course! It’s no hassle.
+-> Well… you are known as Captain Klutz to some. <<set $td3_points -=1>>
+    The joke doesn’t land and Tashigi looks hurt.
+    {$tashigi}: …Well, then. Let’s get to it.
+-> To someone of your skills and caliber? Never. <<set $td3_points +=1>>
+    Tashigi glows, and gives you a bright smile, despite her cheeks being flushed with embarrassment.
+You both take a fighting stance and draw your swords. Tashigi’s stance is poised, balanced but ready to move gracefully. You can only hope that one day, you’ll look as commanding and in charge as she does.
+You rush towards each other, your blades clashing. You see Tashigi smile as they sing, but she quickly composes herself. Your own grin is almost blinding as you counter her first few practice swings. You’re doing well, but your feet are beginning to move a little clumsily. Tashigi looks invigorated, her movements increasing in intensity and fluidity, as though she’s just been warming up.
+{$tashigi}: Not bad! But prepare yourself.
+You see that Tashigi has taken up a particular stance that she’s discussed previously, angling her blade and drawing it in a move you’ve seen her practice many times before. However, you still have no appropriate counter.
+{$name}: (Alright, here we go. Let’s see…)
+-> (This might be a good chance to try my new technique!) 
+    <<jump date_tashigi_3_falling_flat>>
+-> (Tashigi taught me this one! I should use her method.) <<set $td3_points +=1>>
+    <<jump date_tashigi_3_deadlock>>
+-> (This is tricky. I’ll wait for another chance.) <<set $td3_points -=1>>
+    <<jump date_tashigi_3_disarming_beauty>>
+===
+
+title: date_tashigi_3_falling_flat
+location: training grounds
+---
+ 
+You’re not completely confident that you can pull off the move you’ve been practicing in a combat situation, especially against such a powerful opponent, but training is for trying new things, right?
+You swing to counter her attack, but overstep. You don’t even consider that she might sweep your feet out from under you; you were simply overeager and clumsy. Now, however, you find yourself sitting in the dirt, looking up at her worried expression and the blue sky behind her. 
+Your butt aches from your less-than-graceful landing. You think that falling flat on your face would somehow be less embarrassing than this, especially when Tashigi’s confusion and worry gives way to a peal of laughter. She tries to hold it back, a hand over her mouth, but her shaking shoulders give her away. Thankfully, she gets herself under control before offering you a hand.
+You’re grateful that none of the other onlookers are laughing at your epic failure.
+{$tashigi}: I’m not quite sure what you were trying to do there, {$name}. It’s not a move that I’ve ever seen, but I respect that you committed yourself to it and went for it. Would you like to practice with me? If you show me what you were trying to do, we can figure it out together.
+You pick yourself up, grab your sword, and nod, a little flustered and embarrassed. She comes over to stand beside you, and you walk her through what you’ve been trying to work on. Tashigi is a quick study, and helps you alter your movements to make your vision more achievable.
+By the end of training, you’re a sweating mess and your butt still hurts, but you think you’ve got the foundation for a great new move. You can’t help but smile.
+<<jump date_tashigi_3_wrap_up>>
+===
+
+title: date_tashigi_3_deadlock
+location: training grounds
+---
+ 
+Your body moves, seemingly of its own accord, remembering the technique that Tashigi had taught you to counter it. Her eyes widen, impressed, but you unfortunately don’t have the necessary strength or technique to disarm her. She smirks and pushes forward, impressed by your counter but still aware that she has the advantage.
+Your legs buckle and you clumsily land on your butt. Tashigi’s sword is still locked with yours, causing her to fall forward with an inelegant squawk. Neither of you are injured or impaled, but it’s slightly awkward. She’s practically laying on top of you, swords crossed between your bodies, your faces almost touching. You can practically feel the warmth radiating off of her as her breath fans across your face. You’re practically breathing the same air. Her cheeks are flushed as she awkwardly giggles and hops off of you, brushing herself off before she sheathes her sword and then offers you a hand.
+Once you’re both back on your feet, Tashigi beams widely at you.
+{$tashigi}: You remembered the move I taught you! I’m so happy you were able to apply it in a combat situation. It really works. We can work on improving your arm strength and follow through. I’m just so impressed and grateful that you’ve been listening to me and taking notes. Sometimes I worry that I just ramble on about moves and sword facts, and that people tune me out—
+{$name}: Never. I learn a lot from you.
+{$name}: You’re an amazing teacher, and I think we make a great team.
+She looks like she’s glowing, her cheeks still cherry red. 
+{$tashigi}: I think so too!
+With that, Tashigi begins adjusting her stance for the next training bout. You wish the afternoon would never end as you practice move after move, with Tashigi giving you smiles and pointers each time you clash. 
+You’ve never had so much fun.
+<<jump date_tashigi_3_wrap_up>>
+===
+
+title: date_tashigi_3_disarming_beauty
+location: training grounds
+---
+ 
+You hesitate. Surely there’ll be another chance or an opening later; you just have to stand your ground for now. You don’t think you can counter the move, although your feet and hands subconsciously shift into the position that she’d taught you previously. But you don’t commit.
+Unfortunately, that’s your undoing.
+She easily disarms you, her sword an extension of her will. Your own sword is sent flying, landing on the ground a little ways off. You hear it hit the dirt, but can’t take your eyes off of Tashigi, who stands strong before you. Her sword stretches toward you, tilting your head up.
+{$tashigi}: And so, you yield.
+There’s hooting and hollering from onlookers. You even hear a few cheers of “Way to go, Captain!” She elegantly sheathes her sword and moves to shake your hand.
+{$tashigi}: You’ve improved a lot since last time, but you must never hesitate. Hesitation in battle could lead to your death, and that would be devastating. I saw your footwork. It’s important to commit and follow through with your moves, especially in a combat situation. Understand?
+You nod, awestruck by her elegance and her patience in teaching you.
+You pick up your sword and get ready for the next clash. There’s so much that you’re eager to learn from her.
+<<jump date_tashigi_3_wrap_up>>
+===
+
+title: date_tashigi_3_wrap_up
+location: office
+---
+
+Before you know it, it’s late afternoon, practically evening. Where did the time go? You accompany her back to the office, but end up watching awkwardly as she runs into a superior who gives her a literal box of paperwork to take back.
+You hold the door open for her as she carefully gets herself and the unwieldy box over to her desk, wincing all the while.
+{$name}: I’m so sorry. That’s rough…
+{$tashigi}: Tell me about it. The reward for hard work is more work. Feels more like a punishment than anything; my back and neck feel like they’re killing me. 
+{$tashigi}: Still, no rest for the weary. Looks like my evening’s been spoken for.
+{$name}: Well… maybe there’s a way to get your mind off of it.
+{$tashigi}: Oh?
+{$name}: Would you like to get dinner with me sometime? Off-base, I mean. There’s a great place in town that I’ve heard about, and I thought it would be nice to spend some time together without worrying about work.
+-> (if player got 13+ points) <<jump date_tashigi_3_good_end>> // HOW DO??
+-> (if player got 7-12 points) <<jump date_tashigi_3_neutral_end>>
+-> (If player got 6 or fewer points) <<jump date_tashigi_3_bad_end>>
+===
+
+title: date_tashigi_3_good_end
+location: office
+---
+
+A beautiful rosy blush blooms across Tashigi’s face at your invitation. 
+{$tashigi}: Oh! Like… a date? 
+{$name}: Only if you want it to be! I just… well, you’re a wonderful person to be around, Tashigi, and… I’d like to get to know you better, whether as a friend or as something more.
+You didn’t think it was possible, but somehow, Tashigi blushes even harder.
+{$tashigi}: Well, I have to say that I’ve been thinking it over myself. I’ve also really been enjoying our time together, {$name}, and I’ve been continuously impressed by your work ethic. 
+{$tashigi}: Besides, you seem to get me when so many other people just see me as some weak-willed klutz who needs protecting. 
+{$name}: Nobody works harder than you do, Tashigi. It’s one of the things I love most about you.
+Tashigi giggles, charmed, and gives you a shy smile.
+{$tashigi}: Well, I accept your invitation. Just tell me where, and we can figure out a date and time.
+{$name}: Alright! In the meantime though…
+You go get a spare chair, pulling it up to her desk.
+{$name}: Let’s get to work.
+<<jump date_tashigi_3_endtrue>>
+===
+
+title: date_tashigi_3_neutral_end
+location: office
+---
+
+{$tashigi}: Dinner? {$name}, are you… asking me out on a date?
+{$name}: Um, yeah! Well, sorta? We could go as friends instead, if you want. 
+{$name}: I guess what I’m saying is that… I’ve really enjoyed spending time with you. You’ve become someone incredibly special and important to me, and while I don’t know if it’s friendship or something more… I’d like to find out.
+A gentle blush settles across Tashigi’s cheeks, and she gives you a shy smile.
+{$tashigi}: {$name}... I have to say, I’ve been considering the same thing. You’ve been on my mind a lot lately, and while I don’t know if what I feel for you is quite at the level of romance, a date with you sounds really nice.
+{$name}: Awesome! Thank you so much, Tashigi. I’m really looking forward to this.
+{$tashigi}: Me too! Unfortunately, the only date I have tonight is with this box of paperwork. Go get some rest, {$name}.
+{$name}: Alright. See you soon!
+{$tashigi}: Have a good night!
+<<jump date_tashigi_3_endtrue>>
+===
+
+title: date_tashigi_3_bad_end
+location: office
+---
+
+{$tashigi}: Oh… um, I’m sorry, {$name} but… I don’t think I can. 
+{$name}: Is it because of the paperwork? I don’t mind helping with it if—
+{$tashigi}: It’s not just that… I’ve been so busy lately that truthfully, I’d rather spend my free time relaxing in my own way. It’s got nothing to do with you; I just think that I need to prioritize myself for a while.
+{$name}: Oh… um, ok! Well, if you change your mind, just let me know, alright?
+{$tashigi}: I will. But for now, I need to get this paperwork done. Have a good evening, {$name}.
+{$name}: …You too, Tashigi.
+<<jump_date_tashigi_3_endtrue>>
+===
+
+title: date_tashigi_3_end
+location: office
+---
+
+You head off to get your work done. Always a busy day being a marine!
+===
+
+title: date_tashigi_3_endtrue
+location: office
+---
+
+What a day! Wonder what tomorrow will bring...
+===

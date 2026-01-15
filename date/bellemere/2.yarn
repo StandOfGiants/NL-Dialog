@@ -301,20 +301,20 @@ Wow. She really does have a problem with underground spaces, huh?
 title: date_bellemere_2_final_4
 ---
 You both bolt, back through the rubble, down the hall, and up the stairs so fast you plow head-first into Vice Admiral Smoker and Captain Tashigi.
-Smoker: ...
-Tashigi: What exactly is the commotion about! Commodore Bellemere?
+{$smoker}: ...
+{$tashigi}: What exactly is the commotion about! Commodore Bellemere?
 Bellemere still looks pale, leaning against the heavy metal door to the staircase as she closes it. You're breathing too hard to make a response, too.
 Tashigi takes in your disheveled appearances... and seems to deflate, her indignation at whatever *shenanigans* she's imagined vanishing.
-Tashigi: Is there really something wrong?
+{$tashigi}: Is there really something wrong?
 Belle-mére shakes her head.
 Belle-mére: Thanks for the concern, but-
 {$name}: We were chased by an animal! Something huge! Like a bear!
-Smoker: ...bear?
+{$smoker}: ...bear?
 Tashigi touched Belle-mére's shoulder, brushing her carefully aside, and the redhead assents. Adjusting her glasses, the swordman wrenches open the door with one hand on the hilt of her ever-present sword.
 There's nothing there.
 Smoker grins in his grim way, shaking his head and dispersing his cigar smoke in a circle as he scoffs.
 Tashigi sighs.
-Tashigi: I can't believe I'm saying this, but maybe you two have been working too hard today.
+{$tashigi}: I can't believe I'm saying this, but maybe you two have been working too hard today.
 Bellemere: Hey!
 They don't believe you, even as you tell the rest of your story from the catacombs below. In fact, while you can't imagine either of your stoic superiors gossiping, by the next day the story of the so-called *basement bear* seems to have spread. Everyone from Rosinante to Kuzan manages to find their way into your office to make a comment- though the latter could possibly be hanging around because your unit has the most ladies he can hit on.
 In any case, the whole adventure could have gone better.

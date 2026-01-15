@@ -74,15 +74,15 @@ Tsuru: This recruit might be joining our te–!
 The wall on the other side of the office has burst inward! A tall man steps through!
 <<show_characters sengoku tsuru rosinante garp>>
 Sengoku: USE THE DOOR GARP!
-Garp: Huh? What door?
+{$garp}: Huh? What door?
 Tsuru, Sengoku, Rosinante: ...*sigh*
-Garp: ? Hey who's that?
+{$garp}: ? Hey who's that?
 Sengoku: New recruit, might be joining us.
-Garp: Huh? You really wanna join us old farts?
+{$garp}: Huh? You really wanna join us old farts?
 Rosinante: I'm not–
 It's then that you realize that you are in the presence of LEGENDS! Garp can only be the one and only Hero of the Navy, Garp the Fist! And Inspector General... well that can only be the former Fleet Admiral, himself, Sengoku! And whoa, Tsuru?! That's the first female Vice Admiral ever! You are unsure of who this Rosinante is, but he must be something special to work among such big names.
 {$name}: Uh, hello.
-Garp: Neat, what's for lunch?
+{$garp}: Neat, what's for lunch?
 Sengoku: *sigh* Well, that's this department. Come, I'll take you on to the stations that have put in a request for a Team Management Specialist.
 You bow quickly, muttering that it's been an honor to meet them before, rushing after the departing Inspector General.
 
@@ -140,7 +140,7 @@ Smoker: Ah. Admiral.
 Sengoku: Former! No need for such titles now, Vice Admiral Smoker. I have the new recruit for the special training program, here.
 Smoker: Eh? This one? I don't care either way; if you need to assign them here, I'll be responsible for getting them up to snuff.
 <<show_characters sengoku smoker tashigi>>
-Tashigi: Smoker! I have the paperwork for– oh! Hello there!
+{$tashigi}: Smoker! I have the paperwork for– oh! Hello there!
 Smoker: This is the new marine here for training. Captain Tashigi works under me– she's capable of handling your training.
 {$name}: I, uh, I'm still not sure where I'm stationed yet...
 <<show_characters sengoku smoker tashigi bellemere>>

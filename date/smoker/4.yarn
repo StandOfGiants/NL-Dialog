@@ -1,0 +1,498 @@
+:: Start
+It’s been a hot minute since you and Smoker have had time to see each other, just the two of you. He’s told you to meet him by the town square at noon, wearing casual clothing that you won’t mind getting dirty. You’re not quite sure what to expect.
+do set_background("town", show)
+Smoker: Hey! Over here!
+do show_character(smoker, center, show)
+
+
+
+
+Smoker is sitting on a bench, an arm slung over the back of it and with his legs spread wide. One hand is raised in greeting, waving at you. You jog over, close enough to spot a tote bag sitting by Smoker’s feet. He follows your gaze and grins.
+Smoker: Oh, this?
+- {$name}: What’s inside?
+  Smoker: Wouldn’t you like to know?
+- {$name}: Oh no, was I supposed to bring something, too?
+  Smoker: Nah, you’re good. I brought enough for both of us.
+- {$name}: **Make a grab for it** (-1)
+  Smoker grabs your hand just before you can open it.
+  Smoker: Have a little patience, would you?
+
+
+
+
+Smoker stands up from the bench and grabs the bag. He slings it over his shoulder in an effortless motion. You can’t help a brief glance as his pecs give a twitch.
+Smoker: Come on, we don’t want to be late.
+- {$name}: Late for what?
+- {$name}: Wait for me!
+do hide_character(smoker, fade)
+
+
+
+
+You hurry along after him and Smoker stops in front of “Grus’ Pottery Shop”. The bell rings above your heads as you walk in. It is a quaint little place with potted plants lining the window sills and sunlight coming in through the windows. Expertly crafted cups, plates and bowls take up the shelves.
+do show_character("smoker", Show)
+Smoker: So, got any clue why we’re here?
+- {$name}: To… make some pottery? => Right_guess
+- {$name}: You’re in dire need of a clay pot? => Joke
+
+
+
+
+:: Joke
+Smoker laughs. A loud, roaring sound that comes from deep within his chest. Your cheeks flush at the sound, and your heart pounds as his glinting eyes land on you.
+Smoker: Ever considered sassing pirates? It might be more effective than pulling a weapon on them.
+- {$name}: Are you saying my weapon skills aren’t up to snuff?
+  Smoker: Well, maybe we should do some more workouts together, if you’re up to the challenge.
+- {$name}: Maybe I *should* become a comedian.
+  Smoker: Eh, if I were you I wouldn’t quit my day job.
+
+
+
+
+You both burst into laughter, standing shoulder to shoulder in the strangely empty shop. You lean into his warmth and, surprisingly, Smoker lets you. From this angle you sneak a peek into his tote bag. There are big, dark globs of clay, all tucked in several layers of cling film.
+Smoker: I might not be in dire need of a clay pot myself, but maybe you are.
+- {$name}: And what if I am? (+1)
+  Smoker: Then today’s your lucky day.
+- {$name}: So we *are* doing pottery… (-1)
+  Smoker: You don’t sound very excited…
+- {$name}: Would you make me one?
+  Smoker: Where’s the fun in that, `name	`? Don’t wanna’ get down and dirty with me?
+
+
+
+
+The shop has rows and rows of little clay sculptures and crockery stacked on shelves. Some are covered in dust, but a few look like recent additions.
+Smoker: Even if a clay pot isn’t your style, there’s plenty of inspiration to be found here, so have a look around.
+- {$name}: I have all the inspiration I need right here.
+  You don’t take your eyes off of Smoker as you say it, and you lean in to brush a dust bunny from his hair. His hair is prickly and coarse beneath your fingers. => Shop_flirt
+- {$name}: There are so many… are any of them yours? => Shop_show
+
+
+
+
+:: Right_guess
+Smoker shakes the tote bag in his hand and holds it open for you to take a peek inside. There are big, dark globs the size of Smoker’s hand; there must be pounds of clay, all tucked in several layers of cling film.
+Smoker: You hit the nail on the head there, how did you guess?
+- {$name}: I’ve got a knack for it, I suppose.
+  Smoker: Or maybe you’re good at reading people… reading me.
+  He smiles as he says it, and you find yourself unable to keep a blush at bay.
+- {$name}: Lucky shot in the dark. (-1)
+  He shrugs his shoulders at your jab, but the smile on his face might be the beginnings of a scowl.
+- {$name}: You’ve already given me a few clues.
+  His gaze follows yours up to the sign above the counter, proudly stating “Grus’ Pottery Shop”.
+  Smoker: Nothing gets past you, does it?
+
+
+
+
+Smoker: Ever tried pottery before?
+- {$name}: Never, but how hard can it be? (-1)
+  Smoker: Yeah, you’ve definitely never done pottery before. That’s alright, I’ll have you eating those words by the end of today.
+- {$name}: Not since kindergarten.
+  Smoker: It’s better than nothing. Do you remember what you made back then?
+  - {$name}: Uh. I mostly did abstract work.
+  - {$name}: Seagulls. One might say I was always destined to be a marine. (+1)
+    Smoker: Heh, a marine *and* an artist.
+- {$name}: Sure! I’m a natural.
+  Smoker: That’s quite the confidence you’ve got there. I hope you’re good with your hands.
+
+
+
+
+You avert your gaze from Smoker’s. There are rows and rows of little clay sculptures and crockery stacked on shelves. Smoker comes to stand beside you, shoulder to shoulder. Even through his coat, he is a blazing furnace. He cocks his head at the clay trinkets.
+Smoker: See anything you like?
+- {$name}: A few things. What about you?
+  Smoker: Yeah, there’s quite a few… things in here that I like.
+  He doesn’t look at you as he says it, but the back of his hand brushes against yours. => Shop_flirt
+- {$name}: Not really.
+  Smoker: There must be something, `name`.
+  - {$name}: Not yet. Hopefully we can change that and make something together.
+  You throw him a wink and Smoker coughs. => Shop_flirt
+- {$name}: Maybe. Are any of these yours? => Shop_show
+
+
+
+
+:: Shop_show
+He nods at the top shelf, where a fine layer of dust coats just about everything. There are quite a few things there. Something that might be a teapot, or a cup holder, or a… you’re not sure what any of it is supposed to be, actually.
+- {$name}: They’re certainly… something.
+  Smoker: No need to beat around the bush, I know they’re awful.
+- {$name}: It’s a shame for them to collect dust like that, they’re masterpieces! (-1)
+  Smoker: Damn, `name`, it’s just us here. No need for all this bootlicking.
+- {$name}: They’ve got character, just like you. (+1)
+  Smoker: Huh. I’ve never thought about it like that before.
+
+
+
+
+Stretching up, Smoker grabs a clay piece and brings it down for you to look at. There are distinct ears on the lump; long, almost triangular, with a heavy-set bottom that might function best as a paperweight.
+- {$name}: I’ll be honest, I can’t quite make out what it is. (+1)
+  Smoker: That’s fine, I appreciate the honesty. None of them are pretty, but someone once told me it would be a shame to throw them away. They’re a benchmark for progress, in a way. Here, feel it.
+  He grabs your hand, uncurling your fingers and puts the clay figure onto your palm. You cradle it there, feeling the texture of something scored into it. Thin, short lines, kind of like fur.
+  - {$name}: It’s a lapin!
+  Smoker: Not a very good one, but yeah. It was the first piece I ever made here in this shop. But it’s about time for it to have a new home. You should take it. For good luck.
+  Your cheeks are warm, and without a doubt flushed beyond belief as you stutter a thanks and put the lapin figure into your pocket.
+  do get("lapin_fig")
+- {$name}: Is that a paperweight for all of the paperwork Tashigi is making you do?
+  Smoker: That might be a better use for it. I know it ain’t pretty to look at, but someone once told me it would be a shame to throw away your old pieces. They’re a benchmark for progress, in a way.
+  - {$name}: It’s still cute, if you sort of squint your eyes.
+    Smoker smiles and bumps your shoulder with his as he stretches, putting the clay figure back onto the top shelf.
+=> Shop_flirt
+
+
+
+
+:: Shop_flirt
+The soft lighting in here is bordering on dim, but there is just enough for you to make out that Smoker’s ears are a pretty red, like the embers of a lit cigar.
+- {$name}: Do you come here often?
+  Smoker: When I can make the time for it, but it isn’t as often as I’d like. Work keeps me busy, I’m sure you know what that’s like.
+  You do. You might not have Smoker’s rank, but there is plenty of work to go around, and there is always an extra shift up for grabs.
+- {$name}: Am I the first one you’ve asked to come here?
+  Smoker nods at one of the little clay figures on the shelf. It has long limbs and a sleek body, like a monkey in the middle of a jump.
+  Smoker: The first one *I’ve* invited along. Garp frequents this place too, and every once in a while we end up just sitting together in silence as we work.
+  - {$name}: Garp does pottery?
+    Smoker: Yeah, it might sound a bit strange, but I think he enjoys the quiet. ‘Sides, it’s nice to have company from time to time.
+  - {$name}: I can’t imagine him around fragile things. (+1)
+    Smoker: I think it’s the only time he actually shuts up, or isn’t eating. He does good work when he feels like it. I can’t complain, it’s nice to have company from time to time.
+
+
+
+
+But there is something about this place. The quiet, the calm; the lack of people asking for directions or delivering paperwork. You can see yourself spending more time here in the future, especially if Smoker is willing to join you.
+- {$name}: I can imagine it must be nice with some quiet. (+1)
+  Smoker: Tashigi knows not to disturb me while I’m here, but Hina has a tendency to bust down the door and drag me back to the office whether I want it or not.
+  He turns his head to look at you as he says it, and the quirk of his lips tells you that it might be a joke, but Hina has definitely done that at some point.
+- {$name}: Is it always this quiet here?
+  Smoker: For the most part, yeah. There are only so many clay pots and figures people are willing to buy. It’s never busy.
+    - {$name}: Good. I like it when we’re alone.
+    - {$name}: It’s a nice spot. Thanks for sharing it with me.
+- {$name}: **Step closer**
+  You step closer to Smoker. He doesn’t back away, and when he turns his head to look at you, there is a gleam of something in his eyes.
+
+
+
+
+You are close enough to his face to count the individual hairs of his stubble. You poke the tote bag slung over Smoker’s shoulder. It seems to have been used a lot, the logo on it is faded, but you can just make out the familiar sight of “Wapol’s Emporium”.
+- {$name}: Should we get started? (-1)
+  Smoker: There’s no rush, but we might as well.
+- {$name}: Are we going to keep talking, or can we start using our hands?
+  You raise an eyebrow for good measure. Smoker shakes his head at you, taking a step back.
+=> R_join
+
+
+
+
+:: R_join
+Smoker: We’re lucky. Grus usually shuts down the shop whenever he gets shipped out, or goes solo camping, but he left it open for us to use. All we gotta’ do is lock up after ourselves.
+Smoker gestures around, and true to his words, there aren’t actually any other people in the shop. The window shutters are closed, letting in a meager amount of light.
+- {$name}: Isn’t he worried about break-ins? (-1)
+  Smoker: Right next to a marine base? I’d like to see anyone try. There’d be cadets on the would-be burglars faster than flies on shit.
+- {$name}: You must be good friends. It sounds like he trusts you a lot.
+  Smoker: Trust might be a strong word. I help out with the shop sometimes, and in exchange he lets me borrow his equipment.
+- {$name}: So… it’s just the two of us here.
+  Smoker raises an eyebrow at you and runs a hand through his hair. The flushed skin of his blush is reaching all the way down his chest, now. Red is an awfully good color on him.
+
+
+
+
+At the back of the shop are two pottery wheels, each with a bowl of water by the side, and Smoker gestures for you to take a seat. The wheel looks like the sort one might use as a turntable for cake decorating, if not for the stains around the floor and the chairs.
+Smoker: My only rule is, don’t make any mugs. I have enough to last me a lifetime, and… actually, how about a bet?
+- {$name}: A bet?
+  Smoker: You make something impressive enough to knock my socks off, and I’ll get you out of the next lecture Tashigi will give you.
+    - {$name}: Now that’s a prize!
+    - {$name}: I can think of another prize I’d want more…
+      Smoker: Show me how good you are, and I might throw in something extra, how about that?
+- {$name}: You’re on! (+1)
+  Smoker: That’s the spirit. Though, aren’t ya interested in what the prize might be?
+    - {$name}: I have my eyes set on something…
+      Smoker smiles, a quick upturn of his lips.
+    - {$name}: Keep it a secret. I’ll *make* you tell me when I win this competition!
+      Smoker throws his head back in a laugh.
+- {$name}: I’d rather not… (-1)
+  Smoker: It’s just a friendly bet, `name`, just do your best.
+  There is a clear frown on his face, but a quick shake of his head wipes it right off before it can stay for long.
+
+
+
+
+Smoker grabs two lumps of clay from his tote bag and unwraps them from the cling film. One of them *thuds* onto your pottery wheel. The big, brown chunk of clay is slightly damp to the touch and your fingerprint stays on it. It’s surprisingly moldable, yet firm.
+Smoker: You’ve gotta’ wet your hands first, then press the pedal to make it spin.
+- {$name}: Like this?
+  You dip both of your hands into the water, the edges of your sleeves getting soaked. You grab at the clay, but your hands slide right off.
+    Smoker: A bit too enthusiastic, but try spinning the wheel and see where it takes you.
+- {$name}: **Wet your hands and get spinning**
+  You dip your fingers into the bowl of water, just enough to get them wet but not enough to make your hands drip. You put your foot on the pedal of the pottery wheel, ready to begin.
+- {$name}: Can you show me? (+1)
+  Smoker: Here, do it like this.
+  He grabs both of your hands, thumb rubbing over the skin and dips them into the bowl for only a second. Then he kneels, looking up at you without breaking eye contact. One of his hands moves your foot to the pedal of the pottery wheel, lingering before he lets go.
+  Smoker: Try it.
+  Smoker stands back up, but the image of him on his knees in front of you is seared into your mind.
+
+
+
+
+Smoker sits next to you, hands shaping his own creation. Gosh, those fingers of his are distracting. The pedal of your pottery wheel squeaks as you press down on it. Whoops, that was too much power! The wheel is spinning faster and faster, the clay getting closer and closer to the edge! Quick, what will you make?!
+- {$name}: A vase! => Pottery_vase
+- {$name}: An Elephant Tuna! => Pottery_tuna
+- {$name}: A lapin! if has_item("lapin_fig") => Pottery_lapin
+
+
+
+
+:: Pottery_vase
+You quickly get to work, trying to get the power of the pedal back under your control. A vase can’t be that hard, can it? It’s technically just a cylinder with a hollow middle. Maybe you should just…
+- {$name}: **Put your hands on it** (+1)
+  You put your fingers on the twirling lump of clay, dragging them slowly up and down until you have the rough shape of a cylinder. Out of the corner of your eye, Smoker is watching you. As you catch him, he quickly looks away and clears his throat.
+- {$name}: **Press the pedal harder**
+  Whoops, a bit of the clay dribbles over the edge of the pottery wheel, but with a whip-quick jerk of your palm, you manage to strike it into a semblance of an oblong shape.
+  Smoker: Whoa, quick reflexes you got there, `name`.
+- {$name}: **Sneak a glance at Smoker**
+  He appears to be in deep concentration, the slightest pinch of his fingers against the clay dragging it into a shape that is somehow both delicate yet rough. You copy his moves, your hands working on autopilot.
+
+
+
+
+You sit in silence for a minute, maybe two. Perhaps longer, you can’t quite tell. There is something delightfully calm about being in Smoker’s presence like this. You’re starting to get the hang of this pottery wheel as well. It is slow and steady work, but it is definitely not just an unidentifiable lump of clay anymore.
+- {$name}: What are you making? (-1)
+  Smoker: Hm? Oh. I never really have a plan for this, I just see where it takes me. It’s sort of intuitive. A bit like fighting, in a way, but maybe you should focus on your own, it seems to be slipping a bit.
+  He’s right, your vase is starting to droop to one side. You hurry to shore it up.
+- {$name}: This whole thing is… surprisingly nice. (+1)
+  Smoker: A lot of things can be surprisingly nice in the right company.
+- {$name}: Look, it’s starting to come together!
+  Smoker: Look at you go! At this rate you’ll finish before I do.
+
+
+
+
+Okay, you’ve got this! All you need is to make an indentation into the shape of it and try not to let it collapse as you do so. Easy as pie.
+- {$name}: **Roll up your sleeves and go ham** (-1) => Pottery_fail
+- {$name}: Would you mind giving me a hand? (+1) => Vase_success
+
+
+
+
+:: Vase_success
+Maybe you’re lying, maybe you aren’t. What matters is the fact that Smoker simply shakes his head and gets up, his pottery wheel coming to a halt. He drags a chair and places it right behind yours. The heat of his body is all-encompassing against your back, and your fingers slip on the vase.
+Smoker: Careful there, be gentle with it.
+- {$name}: I don’t know how.
+  Now that one *is* a lie, but Smoker doesn’t call you out on it. Instead, his hands, big and calloused and warm against yours, steer your hands back on the clay vase.
+  Smoker: Like this, see? It’s easy.
+  He doesn’t let go of your hands, and then all of a sudden he hooks his chin over your shoulder, the stubble on his face prickling against your skin.
+- {$name}: I’m sure the vase can take some… manhandling.
+  You’re clearly not talking about the vase, but judging by the choked off groan behind you, Smoker got your message loud and clear. Still, he grabs your hands and doesn’t let go as he steers them back on the clay sculpture.
+- {$name}: **Take a deep breath** (+1)
+  Smoker: It’s all about timing. You’ve gotta’ find the weak spot first, and then wait for the right moment.
+  His breath is hot against the shell of your ear. Goosebumps break out on your skin, and you can’t hold back a full body shiver as he takes your hands. The rough pads of his fingertips scrape against your skin.
+
+
+
+
+He guides your hands up and down the length of the vase and then at one point, he presses his thumbs against yours and all the way down. The shape gives way beneath your combined efforts, and a hole opens up.
+- {$name}: That was a lot easier than I thought! (+1)
+  Smoker lets go of your hands, but there are smears of clay left behind on your skin where he touched you.
+  Smoker: You’ve got the hands for it. They’re steady and you take directions well.
+  There is a giddiness in your body that you are unable to shake, and in the spur of the moment you pull Smoker into a brief hug that leaves him gaping, mouth wide open. You’re too busy celebrating to take note. You finished the &&vase&&!
+  do get("P_fig")
+- {$name}: I can do the rest myself. (-1) => Pottery_fail
+- {$name}: Huh, that was smooth. (+1)
+  Smoker opens his mouth, but snaps it shut just as quickly. He leans in close to look at the finished clay sculpture. He hums, and a hand lands on your shoulder. It stays there.
+  Smoker: You did good, `name`. If I saw this in a store, I’d buy it in a heartbeat.
+  You lean into his touch, both of you staring at what you have accomplished. You finished the &&vase&&!
+  do get("P_fig")
+=> Pottery_join
+
+
+
+
+:: Pottery_tuna
+Okay, an Elephant Tuna, you can do this! The level of skill this requires is probably high, but you’re committed! You have studied these butt-ugly yet adorable creatures since you could walk.
+- {$name}: Prepare to be amazed by my skills! (+1)
+  You roll up your sleeves and stick your tongue out of your mouth. As you do so, Smoker lifts his head and looks your way, a clear furrow in his brow.
+- {$name}: **Grab a knife and shape it** (-1)
+  You hack away at the lumpy piece of clay, pieces flying left and right. => Pottery_fail
+- {$name}: **Crack your knuckles and punch it** (-1)
+  The clay flattens with a #splat# and Smoker jumps in his chair. This might work! => Pottery_fail
+
+
+
+
+Your wet hands slip right off the sides of the clay lump, but you dig your fingers in with gusto, and slowly the dotted scales of an elephant tuna begin to emerge.
+Smoker: What in the four blues is that?
+- {$name}: An abstract interpretation of Bellemere’s tangerines! (-1)
+  Smoker: Hey, that’s your superior, `name`, watch it.
+  Oops, looks like the joke didn’t land that well, it might be better to concentrate on the pottery for now. => Pottery_fail
+- {$name}: Take a guess.
+  Smoker cocks his head and licks his lips. You follow it with your eyes, and blink back into consciousness just in time to catch his answer.
+  Smoker: A… fish?
+    - {$name}: Ding, ding, ding, we have a winner! It’s an elephant tuna! Or, well, it will be. Growing up in South Blue, my mom would bake fish pie every week.
+      Smoker: Every week? Now I know where you get your go-get-’em attitude from.
+    - {$name}: Yes, an elephant tuna! I remember swimming next to them back when in South Blue. They remind me of home, in a way. (+1)
+      Smoker: Maybe we can both go swimming with elephant tuna together when our shore leaves line up.
+- {$name}: An elephant tuna!
+  Smoker: Bold choice… Of all the things, why go for that?
+  You speak of growing up in the South Blue. There is a pang of something akin to homesickness in your heart as you do. Smoker must spot something of it in your expression, because he grabs your hand and holds it tight.
+
+
+
+
+Time goes by fast as you chat, and before you know it, your piece is finished. It is, perhaps, the ugliest piece of pottery in existence. The face is a droopy mess, the trunk about half the size of its body. You suppose, if you squint, the piece has the shape of an Elephant Tuna.
+- {$name}: **Show it to Smoker** (+1)
+  Smoker smiles at it like it is the sort of ugly that someone wants to both kick and cuddle. That is probably a good sign. You made an &&Elephant Tuna&&!
+  do get("P_fig")
+- {$name}: It’s finished!
+  Smoker: If you’re sure…
+  Well, it probably won’t get any prettier than this. You made an &&Elephant Tuna&&!
+  do get("P_fig")
+=> Pottery_join
+
+
+
+
+:: Pottery_lapin
+You’re not quite sure how to go about actually *making* a lapin out of a lump of clay, but it’s good to have a vision. You manage to maneuver the unruly clay into the middle of the pottery wheel, and with your foot off of the pedal, the spinning is no longer out of control.
+- {$name}: **Shape ears**
+  You pinch the top of the clay lump, pulling it upwards. The motion makes two long antennae stick out, and you poke a pinky into it as makeshift eyes.
+  Smoker: That’s certainly one way to do it. => Cute_lapin
+- {$name}: **Squish it** (-1)
+  You squish the clay in your hands in an attempt to shape the lapin’s body but it bulges out between your fingers in terracotta-colored rivulets. It’s looking a lot more like something got hit with a weedwacker than a lapin.
+  Smoker: Uh, need some help with that?
+  He points at your… artistic approach to the clay, but asking for help at this point seems almost redundant. You put your foot back on the pedal and push. => Pottery_fail
+- {$name}: **Mold a body** (+1)
+  Your hands fly over the clay, pushing and pulling and sculpting until you have sense for little else. It takes a while, but when you lean back in your chair, there is a jacked, six-pack of abs sculpted onto the body of your figure.
+  Smoker: Ha! That’s one way to do it - got your inspiration from somewhere in particular?
+  He flexes his abdomen muscles, and you jerk in your chair as you spot that a very recognizable scar from Smoker’s abs has somehow also found its way to your figure.
+  - {$name}: What can I say, life imitates art.
+    You shrug, but the words don’t come off as confident as you’d hoped. => Ripped_lapin
+  - {$name}: Don’t all great artists create from reference? I’ve got a perfect one right here.
+    Smoker cocks an eyebrow, and a second later he shrugs his coat open a tad more. Sweet, that makes it a lot easier to work with! => Ripped_lapin
+
+
+
+
+:: Cute_lapin
+Your tongue pokes out in concentration and you sneak a glance at Smoker. His brows are furrowed, but when you catch his eyes, he isn’t looking at his own project. His eyes are firmly on your lips *and* your tongue.
+Smoker: Sorry. Didn’t mean to stare.
+- {$name}: It’s alright. I don’t mind. (+1)
+  You throw in a wink for good measure while wetting your lips. Smoker’s hands do an interpretative dance of finger puppet can-can, and you watch as his elaborate seagull sculpture gets squished.
+  Smoker: Actually, do ya want some help with yours?
+- {$name}: You can come closer, you know. I don’t bite.
+  He glances down at his own work – an elaborate and strangely ornate looking seagull that is miles beyond your little lapin.
+  Smoker: If you don’t mind, I’ll have to put that to the test myself.
+
+
+
+
+You grin and jerk your head for him to come and join you. In three steps, Smoker walks over to you while wiping his clay muddied hands on a towel. He drags his chair with him, setting it right next to you. The heat of his thigh brushing against yours is a distraction unlike any other.
+- {$name}: Does it even look like a lapin?
+  Smoker: It might be a little… round, but honestly, it’s better than my attempt. There’s a certain charm to it, and the fact that you made it is even better.
+  The long, overly stretched ears, or the strangely hollowed eyes of what seems to look more like a blob-fish than a lapin isn’t exactly what you’d call charming, but Smoker’s leg bumping against yours is totally worth it. You made a &&lapin&&!
+  do get("P_fig")
+- {$name}: Can you guess where I got the inspiration? (+1)
+  Smoker: I think I can.
+  Smoker’s hand finds its way to the pocket of your trousers and his thumb rubs over the small figure you hid there. A lapin to match the one you’ve just made. Smoker doesn’t remove his hand, even as you put finishing touches on it. You made a &&lapin&&!
+  do get("P_fig")
+=> Pottery_join
+
+
+
+
+:: Ripped_lapin
+You spent the rest of the day looking at Smoker’s abs. You run your hands along the ridges of the clay, and imagine that one day you might get to run your hands over the real thing.
+Smoker: It’s coming together nicely. It’s a… lapin?
+- {$name}: Yeah, I guess I had a little bit of divine intervention. (+1)
+  Smoker: Admit it, you like my figure.
+- {$name}: Yes! Or, at least it’s supposed to be.
+  Smoker: Keep at it, you’re doing good so far.
+
+
+
+
+You keep working, unable to wipe the smile from your face. Smoker, too, is having a hard time keeping his lips from twitching into something bordering on content.
+Smoker: You’re a lot better at this than I thought. A lapin is never anyone’s first choice.
+- {$name}: Well, I *have* taken some artistic liberties.
+  More than a few, actually. Most of the clay has gone to the abs, and what should have been long ears are more rounded. Actually, it might be more like a Hiking Bear, but oh well. Smoker seems impressed, and you made a &&lapin&&!
+  do get("P_fig")
+- {$name}: You’re absolutely right, would you mind posing? (+1)
+  Maybe because you’ve been openly ogling him for the past hour and have clearly liked what you’ve seen, Smoker shrugs off his coat and puts a foot on his chair. He poses there like a half-naked statue while you put the finishing touches on your sculpture. You made a very jacked &&lapin&&!
+  do get("P_fig")
+=> Pottery_join
+
+
+
+
+:: Pottery_fail
+You can’t keep relying on Smoker. Some things are best done on your own, after all! Besides, this is a chance to impress him and you might as well do your best. You push your fingers into the clay but the entire thing ~wobbles~.
+- {$name}: **Press harder** (-1)
+  Smoker: `name`, what are you–?!
+  You grip the clay beneath your hand and squeeze as hard as you can. The clay squelches, and with a #pop# it disintegrates into a million tiny, slightly moist bits splattering everywhere.
+- {$name}: **Attempt to stabilize it**
+  You whip your hand out as it spins on the pottery wheel, but your fingers only manage to graze the edges of it. In front of your eyes your precious clay sculpture shakes.
+  Smoker: Whoa, that’s not good.
+  Your sculpture #shakes# and in the span of a breath it crumples on the pottery wheel, still spinning.
+
+
+
+
+There’s clay on the floor, on the back of Smoker’s chair, the shelves, and oh no, is that spot on the ceiling from your failed project?
+Smoker: So… I guess what you ended up going for was something abstract, huh?
+- {$name}: That was the plan all along!
+  Even as you say it, your ears burn. It makes Smoker laugh, but it is clear that he doesn’t believe a word you’re saying. Gosh, what a disaster!
+  do get("Ruined_fig")
+- {$name}: Pottery is a stupid hobby, anyway. (-1)
+  Smoker: Come on, one bad sculpture isn’t the end of the world, `name`. Though the term ‘sculpture’ might be a tad generous in this case.
+  do get("Ruined_fig")
+- {$name}: I might need some tutoring. (+1)
+  Smoker: If you promise not to fling clay near me again, I’ll think about it.
+  You bark a laugh, almost involuntarily, but the mood feels a lot lighter now.
+  do get("Ruined_fig")
+=> Pottery_join
+
+
+
+
+:: Pottery_join
+if has_item("P_fig")
+The sun has crawled its way across the horizon, and the light streaming through the window shutters is a hazy scarlet. You scrub down the used pottery wheels while Smoker retreats to the back. When he emerges again as you wipe down the last of the chairs, he has your finished figure in hand.
+- {$name}: Better than anything you’ve ever made, isn’t it? (-1)
+  Smoker: Bold words for a newbie. I’m more surprised you managed to finish it despite being… distracted.
+- {$name}: I can’t believe I made that.
+  Smoker: You best believe it. In fact, I think you’ve won our bet, so I guess I’ll have to find a worthy prize now.
+- {$name}: Did it knock your socks off? (+1)
+  Smoker: Consider my socks gone. You won that bet fair and square. Though I’ll have a think on what your prize should be…
+
+
+
+
+if has_item("Ruined_fig")
+The sun has crawled its way across the horizon, and the light streaming through the window shutters is a hazy scarlet. You scrub down the used pottery wheels while Smoker turns his arms into a wisp of smoke to get the clay stains off the ceiling.
+- {$name}: Pottery is a lot harder than it looks. (+1)
+  Smoker: It can take a while to get the hang of it. I can’t say I’ve gotten it on the ceiling, but I’ve had to wipe down the windows more often than I’d like to admit.
+- {$name}: I really don’t know how that got up there… (-1)
+  Smoker: I’d almost call it impressive if it weren’t for the fact that I’m the one having to clean it up.
+- {$name}: Maybe I can call my art &&explosively&& good.
+  Smoker: It definitely has far-reaching consequences. I’m tempted to leave it here and see how long it’ll take Grus to notice.
+
+
+
+
+The two of you lock up shop, Smoker finally grabbing a new cigar and stuffing it in his mouth. He lights it and blows out a thin wisp of smoke in your direction.
+=> End_date
+
+
+
+
+:: End_date
+(If the player got 4+ points) => Two_point_end
+(If the player got 0-3 points) => One_point_end
+(If the player got <0 points) => Zero_point_end
+
+:: Two_point_end
+Smoker: I don’t suppose you’d be up for making this a regular thing, would ya? You make for good company, `name`.
+
+:: One_point_end
+Smoker: There’s definitely room for improvement, but you ain’t half bad, `name`. Let’s go again, sometime.
+
+:: Zero_point_end
+Smoker: We probably shouldn’t do this again. I think you managed to get clay down the back of my coat *and* in my hair.
+
+
