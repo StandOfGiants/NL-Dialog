@@ -8,7 +8,7 @@ title: workday_smokers_and_friend_2_main
 [i]You open the door for your superiors as they start down the narrow staircase, shocked by just how deep down it goes.[/i]
 Bellemere: I hate basements. I hate being confined. I hate-
 do show_character(tashigi, left_side1, show)
-{$tashigi}: Oh, yes. Please tell us more about the things you hate, it's not annoying at all.
+Tashigi: Oh, yes. Please tell us more about the things you hate, it's not annoying at all.
 do show_character(smoker, left_side2, show)
 Smoker: Knock it off, you two. Like it or not, we have to get down there and get this shit done. The longer we argue, the longer it takes.
 do show_character(hina, right_side2, show)
@@ -17,13 +17,13 @@ Hina: Hina is not about to jeopardize our good working relationship with the fin
 Bellemere shivers. You can't remember seeing any of your sharp, strong superiors looking frightened of anything as of yet, but the redhead certainly looks it.
 do show_character(bellemere, scared, show)
 Bellemere: It's too dark down here- why are these lights flickering? This should be quick, right? Smoker? A quick trip?
-{$tashigi}: If it were that easy, they wouldn't have sent all four of us. I expect we'll find a complete mess down there. We'll need to work together if we wish to finish anytime soon.
+Tashigi: If it were that easy, they wouldn't have sent all four of us. I expect we'll find a complete mess down there. We'll need to work together if we wish to finish anytime soon.
 Smoker: More people is more arms to carry... though I guess we could split it up?
 do show_character(smoker, smirk, show)
 Smoker: Don't want you to fall down the stairs.
 do show_character(tashigi, upset, show)
-{$tashigi}: Vice Admiral Smoker! Why did you look at me when you said that?
-{$tashigi}: It only happened once... or twice.
+Tashigi: Vice Admiral Smoker! Why did you look at me when you said that?
+Tashigi: It only happened once... or twice.
 Smoker: You can stay up here with Hina and go through shit; I know how much Hina likes organizing.
 Hina: If things had been organized as they should have been in the first place, we wouldn't be in this predicament now would we?
 Belle-mère: W-wait! I, uh, I love going through old paperwork and boxes of crap! I'd be happy to stay upstairs and-
@@ -34,7 +34,7 @@ Smoker: Sengoku said it was a  blue package, which I assume is related to the re
 -> That sounds reasonable to me.
 -> Ooh, I'd love to read that report. (+1 Tashigi??)
 Hina: It has been determined they were harboring confidential information that was likely left with their belongings. However, someone did not follow protocol when placing said belongings into evidence storage, so we now have to go through every box of evidence to ensure we can fulfill the request.
-{$tashigi}: Officers at Impel Down realised the mistake during one of their usual rounds of questioning. Or so they say. Who knows how they actually got their information. Impel Down is not big on transparency.
+Tashigi: Officers at Impel Down realised the mistake during one of their usual rounds of questioning. Or so they say. Who knows how they actually got their information. Impel Down is not big on transparency.
 Smoker: Well, according to Sadi-chan, the confession was given under duress. I don't know if they're in any condition to tell us the rest of it either...well with Sadi-chan, you have to read between the lines, but that's the gist of what she told us.
 Hina: Fufufu, Sadi-chan is as efficient as ever, one must hand it to their particular skillset at Impel Down. Anyway, Hina is not about to compromise her excellent -ah, uhh...Marine Headquarters' excellent standing with Impel Down. We will need to find the box immediately.
 -> Go help carry boxes from the basement
@@ -277,7 +277,7 @@ Smoker: Do you think you need it?
     Bellemere: On the other hand, that's more work for us.
     {$name}: ...I'll stay and help.
 Smoker: Hey! Hina! Tashigi! {$name}'s ankle got a little busted up. Need an extra person for the sorting?
-{$tashigi}: Some extra help would be great.
+Tashigi: Some extra help would be great.
 You hustle over to Hina and Tashigi, shooting an embarrassed look behind you at Smoker and Bellemere. They don't look too angry at you, at least.
 <<jump workday_smokers_and_friend_2_Sort>>
 ===
@@ -303,20 +303,20 @@ You hoist the box up in your arms, carefully balancing the folder sitting on top
 title: workday_smokers_and_friend_2_Sort
 ---
 Hina: Alright {$name}, we're looking for a box of evidence from the arrest of Blue Finger Jenkins. Our task is to find the right box so we can bring it to Sengoku.
-{$tashigi}: It's always eerie, anything to do with Impel Down. The tales used to give me nightmares as a kid. It was like a threat to kids who misbehaved–which I never–that if they kept it up, they'd be sent to Impel Down. I almost feel sorry for the pirates we send there! I wish they could have turned their lives around before they became pirates. The jailers are often just as scary as the prisoners. All just locked in that multi-layered hell together. Brr.
+Tashigi: It's always eerie, anything to do with Impel Down. The tales used to give me nightmares as a kid. It was like a threat to kids who misbehaved–which I never–that if they kept it up, they'd be sent to Impel Down. I almost feel sorry for the pirates we send there! I wish they could have turned their lives around before they became pirates. The jailers are often just as scary as the prisoners. All just locked in that multi-layered hell together. Brr.
 Hina: Justice is a harsh mistress, but that does not mean she should not be served. But today is not about that Tashigi. {$name}, pass Hina that box? We will need to do this manually to try and find the evidence we are looking for.
 [i]You aren't sure which of the many boxes to even begin with. You pass Hina a heavy box covered in cobwebs to open. The box has a strange, fishy smell.[/i]
 Hina: Ah, lobsters. Well, not this box. Alright, if we divide and conquer we'll be more successful. If you find something of interest, report to Hina. {$name}, you take the boxes in that corner, Tashigi, you take the other side. Hina will keep a running inventory.
-{$tashigi}: I hope we can find some swords to document ... Imagine if there's a graded or legendary sword in these forgotten boxes!? I feel like an archaeologist, documenting a new site, coming up with forgotten treasures. Gosh, I'm tearing up just thinking about it–and it's not just the dust! This is so exciting!
+Tashigi: I hope we can find some swords to document ... Imagine if there's a graded or legendary sword in these forgotten boxes!? I feel like an archaeologist, documenting a new site, coming up with forgotten treasures. Gosh, I'm tearing up just thinking about it–and it's not just the dust! This is so exciting!
 
 [i]The piles of boxes seem endless. There are boxes in every shape and size: small, medium, large, oblong, tiny. Some of them look recent, while others are so dank and grimy they look like they've been down here for decades. You gingerly approach a stack of boxes. Do you decide to open...[/i]
 //  These boxes will be randomized in groups of 3, and will continue until the correct box is selecetd
 //  TODO(zipcodecrone): Implement randomization system
 -> The medium box covered in suspicious red stains
     You tentatively open the box covered in suspicious red stains to find a cake decorating set and several baking tins. A jar of red food color has spilled and is leaking all over the box contents.
-    {$tashigi}: Ah, so cute! Look at all the sprinkles!
+    Tashigi: Ah, so cute! Look at all the sprinkles!
     Hina: Tch, no doubt a poisoner's toolkit.
-    {$tashigi}: No, they're literally just sprinkles.
+    Tashigi: No, they're literally just sprinkles.
     Hina: Put it down Tashigi, Hina will not be rushing you to the infirmary because you willingly touched deadly chemicals.
 -> The square box that smells pleasantly of lemon and citrus
     You open the refreshingly scented box to several large yellow cans marked “Grime-Be-Gone” and rubber gloves. It appears to be a misplaced box of -
@@ -326,26 +326,26 @@ Hina: Ah, lobsters. Well, not this box. Alright, if we divide and conquer we'll 
         Hina: Speak to Hina like that again and you will be on cleaning duty for the rest of the month. Hina does not particularly enjoy spending her day on mindless drudgery either {$name}, but sometimes we must all make sacrifices for the sake of justice.
     -> Of course Rear-Admiral, I apologize. Unless of course, I would be more valuable to you on cleaning duty? (+1 Hina)
         Hina: No {$name}, continue looking. Hina apologizes for her irritability, {$name}. Hina is merely frustrated that the day is being spent on such mindless drudgery. Without rules and protocol being followed we are left wasting the day on a...scavenger hunt.
-{$tashigi}: Well if it's a scavenger hunt, I think I've won it! Hehe, look at this sword. So mighty, so majestic. The sword is not mindless, neither is any activity that results in the pursuit and recovery of swords. I'm having so much fun–look at it, it's gleaming perfection! Mind you, I'll need to give it a little TLC. A cleaning and a sharpening and–but it can wait. There's more boxes to get through.
+Tashigi: Well if it's a scavenger hunt, I think I've won it! Hehe, look at this sword. So mighty, so majestic. The sword is not mindless, neither is any activity that results in the pursuit and recovery of swords. I'm having so much fun–look at it, it's gleaming perfection! Mind you, I'll need to give it a little TLC. A cleaning and a sharpening and–but it can wait. There's more boxes to get through.
 Hina: ...Like Hina said...wasting the day on mindless drudgery. She opens the box sitting to her left with the air of someone who would like to possibly throw the box at the nearest person. Ah, a collection of preserved organs. How charming.
-{$tashigi}: Hey now this isn't mindless! Don't listen to her, you magnificent sword. She knows not what she speaks. God, I love swords. Look at this sword!
+Tashigi: Hey now this isn't mindless! Don't listen to her, you magnificent sword. She knows not what she speaks. God, I love swords. Look at this sword!
 -> We really need to focus so we can find the item (+1 Hina)
 -> Wow! It's absolutely beautiful! (+1 Tashigi / -1 Hina)
-    {$tashigi}: Yes, this is the Yukeno blade - It's one of the 50 skillful grade blades of incredible value! What on earth is it doing in storage? You can see the distinct markings on the blade that indicate its craftsman was from the South Blue! Look here!
+    Tashigi: Yes, this is the Yukeno blade - It's one of the 50 skillful grade blades of incredible value! What on earth is it doing in storage? You can see the distinct markings on the blade that indicate its craftsman was from the South Blue! Look here!
     Hina: We will be at this all day if you two distractible dullards can't stay on task.
-    {$tashigi}: There's nothing dull about this blade! That's so offensi–oh, you were talking about us, nevermind then. I do get a bit sword-brained and off-task.
+    Tashigi: There's nothing dull about this blade! That's so offensi–oh, you were talking about us, nevermind then. I do get a bit sword-brained and off-task.
 //  more boxes
 -> The long, thin, oblong box, wrapped in cord.
-    {$tashigi}: Ahhh, is that a sword? Let me see!
+    Tashigi: Ahhh, is that a sword? Let me see!
     You gingerly unwrap the cord from the box and open the long flaps, as Tashigi looks on eagerly. You reach in and pull out a long, slender-
-    {$tashigi}: An umbrella?! That's not a sword!
+    Tashigi: An umbrella?! That's not a sword!
     You hold up the striped yellow and blue umbrella in bewilderment. Hina looks around and her red lipstick parts slightly in surprise.
     Hina: Well, this certainly takes Hina back.
     She takes the umbrella from you, weighing it deftly in two hands, her red lipstick torn between a smirk and a scowl.
     Hina: This is from a capture Hina made on Kyuka Island a few years back, when she was on vacation. Unfortunately their conspirators managed to free them and escape.
-    {$tashigi}: You arrested someone when you were on vacation, Rear Admiral?
+    Tashigi: You arrested someone when you were on vacation, Rear Admiral?
     Hina: Fufufufu, oh yes, it was the highlight of my trip.
-    {$tashigi}: I think there's such a thing as liking your job too much.
+    Tashigi: I think there's such a thing as liking your job too much.
     -> I agree, we all need good work/life boundaries! (+Tashigi?)
         Hina: And if this necessary item is not found, Hina will be setting boundaries about when you all can leave. Continue with the search, please.
     -> Justice takes no vacations. (+1 Hina)
@@ -355,48 +355,48 @@ Hina: ...Like Hina said...wasting the day on mindless drudgery. She opens the bo
 [i]You return to the seemingly endless boxes before you. This time you choose:[/i]
 -> The medium sized box that is shaking slightly.
     You gingerly open the shaking box to find several oblong, cucumber shaped items and what appear to be a strand of shaking beads. Is it jewelry? Oh wait...no...
-    {$tashigi}: Wow what are these? Vibrating pearls?
+    Tashigi: Wow what are these? Vibrating pearls?
     Hina: TASHIGI PUT THOSE DOWN
 
 -> The small, damp box that smells faintly of herbs and salt.
     You open the small box and place your hand inside. You scream and recoil, whipping your hand out as you touch something slimy and thin.
-    {$tashigi}: [i]looks in the box.[/i] {$name}, it's....spaghetti.
+    Tashigi: [i]looks in the box.[/i] {$name}, it's....spaghetti.
     Hina: [i]sighs[/i] Heaven help us...the Navy's finest bested by a box of spaghetti. Please continue, {$name}.
 
 //  [comment]Is it clear that this is Water Seven, Whiskey Peak and Whole Cake Island? Or does this just sound ridiculous?[/comment]
 -> The large and heavy cobweb covered box.
     You dust the cobwebs off the heavy box and open it up to reveal a pile of books, wait...not books. Comics!
-    {$tashigi}: WOW! Is that Sora, Warrior of the Sea?
+    Tashigi: WOW! Is that Sora, Warrior of the Sea?
     You lift out several issues and newspaper clippings of the classic adventures of *Sora, Warrior of the Sea*!
-    {$tashigi}: Oh my goodness, I love Sora!
+    Tashigi: Oh my goodness, I love Sora!
     Hina: Oh! Let Hina see! She eagerly takes one of the comics from you and begins flipping through it. Oh, Hina loves Sora, she has been reading Sora since she was a little girl!
     -> Why Rear-Admiral, I'm surprised!
-        {$tashigi}: Yes Rear Admiral, you're always telling us we should be sharpening our minds as well as our skills. I wouldn't think that you'd like comics like Sora.
+        Tashigi: Yes Rear Admiral, you're always telling us we should be sharpening our minds as well as our skills. I wouldn't think that you'd like comics like Sora.
         Hina: Even children's stories have important life lessons to be learned. After all, are rules and morality not the governance of the Marines?
-        {$tashigi}: What is your favorite arc, Rear Admiral? I always liked Bourbon Plateau.
+        Tashigi: What is your favorite arc, Rear Admiral? I always liked Bourbon Plateau.
         Hina: Liquid Six is obviously the best arc.
-        {$tashigi}: What? Not Bourbon Plateau?!
+        Tashigi: What? Not Bourbon Plateau?!
         Hina: Just because the arc is about a cursed sword Tashigi doesn't make it the best one.
-        {$tashigi}: Well of course you like Liquid Six arc Rear Admiral, it has that sexy dominatrix lady join Sora on the-
+        Tashigi: Well of course you like Liquid Six arc Rear Admiral, it has that sexy dominatrix lady join Sora on the-
         Hina: That's quite enough Tashigi! {$name}, we have lots of work to do, we will have plenty of time to talk about Sora once we've obtained Sengoku's documents.
-        {$tashigi}: Bourbon Plateau is still better.
+        Tashigi: Bourbon Plateau is still better.
     -> I always liked Captain Wolf III better.
-        {$tashigi}: [i]gasp![/i] Captain Wolf?! That comic has been banned for decades!
+        Tashigi: [i]gasp![/i] Captain Wolf?! That comic has been banned for decades!
         Hina: Hina is surprised at you {$name}. To think that one of our finest harbored an affinity for comics about pirates? Tsk, what will we do with you.
         She tuts and shakes her head, but you notice the smallest of smiles as you turn back to the pile of boxes.
     -> My favorite arc is Slice of Pie Isle!
         Hina: Pfft, please. The Liquid Six arc is obviously superior.
-        {$tashigi}: Both of you are wrong! Bourbon Plateau is the best arc!
+        Tashigi: Both of you are wrong! Bourbon Plateau is the best arc!
         Hina: Just because the arc is about a cursed sword Tashigi it doesn't make it the best one.
-        {$tashigi}: Well of course you like Liquid Six arc Rear Admiral, it has that sexy dominatrix lady join Sora on the-
+        Tashigi: Well of course you like Liquid Six arc Rear Admiral, it has that sexy dominatrix lady join Sora on the-
         Hina: That's quite enough Tashigi! {$name}, we have lots of work to do, we will have plenty of time to talk about Sora once we've obtained Sengoku's documents.
-        {$tashigi}: Bourbon Plateau is still better.
+        Tashigi: Bourbon Plateau is still better.
 
 [i]You cautiously approach another set of boxes, hoping one of these will yield you the item Sengoku is looking for. Do you open...[/i]
 -> The medium sized box with “caution” tape wrapped around it
     You carefully unwrap the ‘caution' tape with shaking hands, expecting to find dangerous weapons or deadly fumes. Instead you find several thick volumes of what appear to be old books. You lift one up to the light, dusting off the cover. On it is an image of a pirate with long flowing hair, standing on the deck of a ship. He cradles a woman in Marine uniform to his sculpted, bare chest. The Marine woman is meanwhile draped against him, loosening the blue sash from her neck; her bosom spilling out of her very tightly-fitting uniform. The title in scripted gold reads “Stolen Valor: Book 3 of Corrupted Justice.”
     Hina: {$name}!! That is immoral material that has been confiscated from Marine recruits! It's not fit for young Marines to see! Put it back!
-    {$tashigi}: It's a book.
+    Tashigi: It's a book.
     Hina: Close your eyes Tashigi! It's corrupting material that is unfit for your young impressionable mind!
     -> You start reading the book. (-1 Hina)
         You skim a few pages to catch phrases like “his gleaming bronze skin glinted with sweat that sparkled like gold drops in the sunset.” “He looked down on her, a cocksure grin on his stubbled face, silver earrings swinging as he laughed at her indignation. “I'll think you'll find that I give the orders around here, Marine.”
@@ -408,7 +408,7 @@ Hina: ...Like Hina said...wasting the day on mindless drudgery. She opens the bo
         -> My apologies Rear Admiral, I just wanted to familiarize myself with the contents to ensure I could be prepared should I ever encounter such filth again.
             Hina: Do you take Hina for a fool, {$name}? Hina has heard such an excuse many times. You will be on galley duty tomorrow morning. Resume your search.
     -> You throw the book across the room
-        {$tashigi}: Oh, I wanted to read it.
+        Tashigi: Oh, I wanted to read it.
         Hina: That's enough out of you, Captain! Return to the search.
     -> Well Rear Admiral, you seem awfully familiar with the contents... (-1 Hina)
         Hina flushes a shade pink to match her hair, her cigarette ground between her teeth.
@@ -416,7 +416,7 @@ Hina: ...Like Hina said...wasting the day on mindless drudgery. She opens the bo
 
 -> The long, thin box standing up in the corner
     [i]You open up the long thin box to reveal a gleaming ebony sheath and blade.[/i]
-    {$tashigi}: Oh!!! Is that–This sword is a graded blade, one of my precious Meito–What are the chances of finding two in one day, just laying around gathering dust and rust? It's amazing but also so tragic. I won't let these babies get blunt! Did you know this sword is rumored to have been used to behead sea-kings? It's not quite as good as a Skillful Blade like my new baby Yukeno, but it's still so beautiful–
+    Tashigi: Oh!!! Is that–This sword is a graded blade, one of my precious Meito–What are the chances of finding two in one day, just laying around gathering dust and rust? It's amazing but also so tragic. I won't let these babies get blunt! Did you know this sword is rumored to have been used to behead sea-kings? It's not quite as good as a Skillful Blade like my new baby Yukeno, but it's still so beautiful–
     Hina: Alright alright, enough swordplay. Get back to work you two.
 
 -> A box that is tightly sealed with layers of tape
@@ -425,7 +425,7 @@ Hina: ...Like Hina said...wasting the day on mindless drudgery. She opens the bo
     Hina: [i]gasp[/i] Is that Sadi-chan, er...Hina means, Sadi and Domino? Oh goodness, how old these photos must be! She quickly takes the photos from you and rifles through them. Goodness, what are these doing here? These are from Smoker and Hina's old days in training.
     [i]At this point, Smoker emerges from the stairwell behind you carrying several boxes.[/i]
     Smoker: Sorry to make this more difficult on you.
-    {$tashigi}: Oh no, not more boxes!
+    Tashigi: Oh no, not more boxes!
     Hina: Oh Smoker! Don't you remember when we had advanced hojojutsu class with Sadi and Domino? Ah, Hina does regret declining placement at Impel Down every once in awhile.
     Smoker: I honestly try not to remember.
     Hina: Yes, you weren't very good, fufufu.
@@ -433,20 +433,20 @@ Hina: ...Like Hina said...wasting the day on mindless drudgery. She opens the bo
     Hina flushes pink, and she lowers her gaze to Smoker.
     Hina: At least Hina passed takedown and capture. Hina seems to recall you had to take the course twice, Smoker.
     Smoker: Yeah yeah, we were all a bunch of wild kids. Now are we makin' progress here or just sitting around getting nostalgic over a buncha old photos?
-    {$tashigi}: Yes sir! We will resume the search.
+    Tashigi: Yes sir! We will resume the search.
 -> A large heavy box that rattles and clunks
     [i]You open the heavy box to discover an array of bottles - alcohol in all manner of varieties. Whiskeys, rum, wine, beer - clearly a haul from a pirate's galley.[/i]
     Would anyone care to stop for a drink?
-    {$tashigi}: {$name} Are you really making jokes about drinking confiscated evidence?
+    Tashigi: {$name} Are you really making jokes about drinking confiscated evidence?
     Hina: Tch...Hina may need a drink at this rate...
     I didn't know we were running a bar down here...
-    Hina: {$tashigi}: {$name} Are you really making jokes about drinking confiscated evidence?
+    Hina: Tashigi: {$name} Are you really making jokes about drinking confiscated evidence?
     Hina: Tch...Hina may need a drink at this rate.
 
 -> The damp, slightly moldy box leaning against the wall
     You take a cautious whiff of the soggy, slightly damp box and open to find...a pile of hay and alfalfa. But amidst the hay there is a small blue envelope that you open to reveal several photos of...Sengoku's goat.
     Hina: Ahhh, {$name} well done! That's exactly what we're looking for! Tashigi, go get Smoker and Bellemere, tell them {$name} has recovered the necessary evidence.
-    {$tashigi}: Yes ma'am!
+    Tashigi: Yes ma'am!
     At this point the date populates individual paths to each different character?
 <<jump workday_smokers_and_friend_2_End>>
 ===
@@ -454,7 +454,7 @@ Hina: ...Like Hina said...wasting the day on mindless drudgery. She opens the bo
 title: workday_smokers_and_friend_2_End
 ---
 After Tashigi has summoned Smoker's group, the five of you reconvene, far from the locked basement door.
-{$tashigi}: So it was nothing to do with Blue-Finger Jenkins after all... Just pictures of Sengoku-san's goat?
+Tashigi: So it was nothing to do with Blue-Finger Jenkins after all... Just pictures of Sengoku-san's goat?
 Hina: Yes, yes. Hina supposes they are important.
 Smoker: ...Seriously?
 -> Well, people are fond of their pets...
@@ -466,7 +466,7 @@ Smoker: I don't even remember where everything was in the basement.
 -> We can just throw everything back down there, not like it was organized in the first place.
 -> Let's just leave it. Maybe the next person who's looking for evidence will thank us. (+1 Bellemere, -1 Hina)
 -> We can do our best! If we all do the reverse of what we did--packing things up and sending them down--it won't be so bad. (+1 Tashigi, -1 Bellemere?)
-{$tashigi}: Let's get the envelope to Sengoku-san first.
+Tashigi: Let's get the envelope to Sengoku-san first.
 -> Great, I'll go with you. (+1 Tashigi?)
 -> How about I do that while everyone else cleans up? (-1 Smoker, -1 Hina)
 -> Sure, we should all go. Maybe he'll be so impressed he'll send someone else in to clean up...

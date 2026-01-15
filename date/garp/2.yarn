@@ -1,46 +1,39 @@
-DATE 2
-Location: Mess Hall
-
-PC chooses Garp date option.
-
-:: Introduction
+title: date_garp_2_intro
+location: Mess Hall
+---
 
 {$name}: Ugh, I’m starving. It wouldn’t be a bad idea to grab some food before I go look for Garp…
-
-set_background(“mess hall”, Show)
-
 {$name}: Finally here. Mmm, something smells good! I should hop in line…
-
 {$name}: I think I’ll grab this, a little of that, maybe some of this… Alright, perfect. Now, where should…
-
 {$name}: Hey! Isn’t that–
-
-{$garp}: BWAHAHAHAHA! My favorite time of day: lunch!
-
+Garp: BWAHAHAHAHA! My favorite time of day: lunch!
 {$name}: (Oh, there he is! He’s sitting alone, though…)
-(I’ll let him eat in peace. We can talk later.) => route_a
-(I should go sit with him! I was looking for him anyway.) => route_b
-(Does he always sit by himself? Maybe I should ask around…) => route_c
-
+-> (I’ll let him eat in peace. We can talk later.)
+    <<jump date_garp_2_route_a>>
+-> (I should go sit with him! I was looking for him anyway.)
+    <<jump date_garp_2_route_b>>
+-> (Does he always sit by himself? Maybe I should ask around…)
+    <<jump date_garp_2_route_c>>
+===
 
 :: route_a
 {$name}: (Alright, I’ll just take my food and–)
 
 There’s a sudden bang.
 
-{$garp}: Did you think I wouldn’t see you, [Name]?!
+Garp: Did you think I wouldn’t see you, [Name]?!
 
 Garp suddenly appears right in front of PC. 
 
-{$garp}: Bwahahaha, what’s with that face? Were you trying to avoid me?
+Garp: Bwahahaha, what’s with that face? Were you trying to avoid me?
 Of course not! I just wasn’t sure you wanted company.
-{$garp}: You see an old man sitting by himself and think he wouldn’t want company? Oh, whatever. Get over here!
+Garp: You see an old man sitting by himself and think he wouldn’t want company? Oh, whatever. Get over here!
 =>route_d
 Uh… no…? (-)
-{$garp}: …I see. Well, let’s go! You’re sitting with me! 
+Garp: …I see. Well, let’s go! You’re sitting with me! 
 =>route_d
 No, I’m just not foolish enough to get between you and your lunch. (+)
-{$garp}: Hah! I knew you had some brains. Well, I’m allowing it, so it’s fine. C’mon, sit with me!
+Garp: Hah! I knew you had some brains. Well, I’m allowing it, so it’s fine. C’mon, sit with me!
 =>route_d
 
 :: route_b
@@ -49,20 +42,20 @@ No, I’m just not foolish enough to get between you and your lunch. (+)
 
 {$name}: (Huh? He looks surprised for some reason…)
 
-{$garp}: …BWAHAHAHA! Sure, [Name]! I’m a little surprised, though; not many Marines tend to sit with me.
+Garp: …BWAHAHAHA! Sure, [Name]! I’m a little surprised, though; not many Marines tend to sit with me.
 Well, I’m not just any old Marine! (+)
-{$garp}: Heh, I guess not! You’ve got guts, but that’s not a bad thing.
-{$garp}: It’s been a long while since I’ve sat at the same table with anyone besides Senny, Tsuru, or my crew, so I might as well enjoy it!
+Garp: Heh, I guess not! You’ve got guts, but that’s not a bad thing.
+Garp: It’s been a long while since I’ve sat at the same table with anyone besides Senny, Tsuru, or my crew, so I might as well enjoy it!
 =>route_d
 Really? Why not?
-{$garp}: …
-{$garp}: Let’s just say that when you’re thought of as a hero, others think they shouldn’t approach you.
+Garp: …
+Garp: Let’s just say that when you’re thought of as a hero, others think they shouldn’t approach you.
 Whether it’s respect or cowardice, everyone’s got an excuse.
-{$garp}: But that doesn’t seem to apply to you, does it…? Well, I don’t mind either way.
+Garp: But that doesn’t seem to apply to you, does it…? Well, I don’t mind either way.
 =>route_d
 Oh… should I move? (-)
-{$garp}: You’re already here, aren’t you?
-{$garp}: Just sit and eat. No need to second-guess yourself too much.
+Garp: You’re already here, aren’t you?
+Garp: Just sit and eat. No need to second-guess yourself too much.
 =>route_d
 
 :: route_c
@@ -104,26 +97,26 @@ I think I’m just going to go eat in Tsuru’s office instead.
 
 —(If the player went on a Garp route during the previous work day:)--- 
 
-{$garp}: Oh, that reminds me! Thanks for doing what you did earlier. You really helped us all out!
+Garp: Oh, that reminds me! Thanks for doing what you did earlier. You really helped us all out!
 
 —(If the player did not go on a Garp route during the previous work day:)--- 
 
-{$garp}: Oh, that reminds me! The others told me about how you helped them out. Nice work.
+Garp: Oh, that reminds me! The others told me about how you helped them out. Nice work.
 
 Both options, continue
 
 {$name}: Oh, it was no big deal! I’m glad I could help!
 
-{$garp}: It’s clear that you’ve got a good head on your shoulders. Makes sense why Tsuru took such a shine to you.
+Garp: It’s clear that you’ve got a good head on your shoulders. Makes sense why Tsuru took such a shine to you.
 
-{$garp}: Anyway, that’s enough talking. Eat up! What’s your favorite kind of food?
+Garp: Anyway, that’s enough talking. Eat up! What’s your favorite kind of food?
 
 Something sweet.
-{$garp}: Sweets, huh? I prefer salty stuff myself, but I hear ya. Alright, wait here.
+Garp: Sweets, huh? I prefer salty stuff myself, but I hear ya. Alright, wait here.
 Something salty. (+)
-{$garp}: Heh, good to see that SOMEONE has good taste around here! Alright, wait here.
+Garp: Heh, good to see that SOMEONE has good taste around here! Alright, wait here.
 Something savory.
-{$garp}: Savory, huh? I prefer salty stuff myself, but I hear ya. Alright, wait here.
+Garp: Savory, huh? I prefer salty stuff myself, but I hear ya. Alright, wait here.
 
 {$name}: (Huh? He’s getting up… Wait, why is he going back to the food line?)
 
@@ -135,62 +128,62 @@ Something savory.
 
 {$name}: (Oh, he’s back… and that’s a LOT of food. Oh boy.)
 
-{$garp}: Here you go, [Name]! Eat up! Salty food’s the best, but I tried to get things you’d like.
+Garp: Here you go, [Name]! Eat up! Salty food’s the best, but I tried to get things you’d like.
 
 {$name}: (I wouldn’t have minded seconds, but this came out of nowhere. I should…)
 (Just refuse. I didn’t ask for this.) (-)
 {$name}: Um, no thanks. I’m full. 
-{$garp}: …Oh.
+Garp: …Oh.
 {$name}: (...Oh no. Now he’s just staring at me. I’d better go.)
 {$name}: Um, see you around, sir!
-{$garp}: …Yeah. See you around.
+Garp: …Yeah. See you around.
 =>end
 (Eat what I can, I guess. He went out of his way to get it for me, and I’m not really full yet.)
 {$name}: Oh! Thank you!
-{$garp}: Heh, best to eat good food while you can!
+Garp: Heh, best to eat good food while you can!
 (Dig in! This stuff’s the best, and I don’t get this every day.) (+)
 {$name}: Mmmmm, thish ish delish.
-{$garp}: BWAHAHAHA! Finally, a Marine with a stomach like mine!
+Garp: BWAHAHAHA! Finally, a Marine with a stomach like mine!
 
 {$name}: Whew! That was good. I’m surprised they were willing to give you extra, though… They’ve never let me get seconds before. 
 
-{$garp}: It’s just because you haven’t spent enough time talking to them! They work hard, but they’re often underappreciated. Whenever I take the time to thank them or compliment their cooking, it makes ‘em just a little prouder, a little more motivated to do what they’re good at. 
+Garp: It’s just because you haven’t spent enough time talking to them! They work hard, but they’re often underappreciated. Whenever I take the time to thank them or compliment their cooking, it makes ‘em just a little prouder, a little more motivated to do what they’re good at. 
 
-{$garp}: It takes all sorts to make the Navy work, [Name]. There’s heroes, sure, and you can be one if you really want to. You can be just about anything if you put in the effort and have a good bit of luck. But the chefs? The mechanics? The people who supervise the den-den mushi? The chore boys who start as janitors? They’re incredibly important. When you’ve been in the Marines for as long as I have, you learn to appreciate all the people who work with you to make you who and what you are.
+Garp: It takes all sorts to make the Navy work, [Name]. There’s heroes, sure, and you can be one if you really want to. You can be just about anything if you put in the effort and have a good bit of luck. But the chefs? The mechanics? The people who supervise the den-den mushi? The chore boys who start as janitors? They’re incredibly important. When you’ve been in the Marines for as long as I have, you learn to appreciate all the people who work with you to make you who and what you are.
 Wow… that’s really admirable. Makes the work I do feel that much more important, honestly. (+)
-{$garp}: Of course it’s important. The work that Tsuru does and that you’re helping her with? It’s absolutely necessary… I guess.
+Garp: Of course it’s important. The work that Tsuru does and that you’re helping her with? It’s absolutely necessary… I guess.
 Huh, I’ve never really thought about it before. (-)
-{$garp}: Hm. Well, it’s worth thinking about. Don’t take people for granted.
+Garp: Hm. Well, it’s worth thinking about. Don’t take people for granted.
 Hmm, I don’t know about that… It definitely feels like some people are more important than others, and not just in terms of rank. 
-{$garp}: As much as I want to say you’re wrong, I understand why it may feel that way. 
+Garp: As much as I want to say you’re wrong, I understand why it may feel that way. 
 
-{$garp}: I know heroes get much more news attention and they’re used for propaganda. Maybe it’s hypocritical coming from me, but I still think that everyone who supports those heroes need to be recognized as well; otherwise, the Marines would fall apart. 
+Garp: I know heroes get much more news attention and they’re used for propaganda. Maybe it’s hypocritical coming from me, but I still think that everyone who supports those heroes need to be recognized as well; otherwise, the Marines would fall apart. 
 
-{$garp}: …That said, heroes don’t always wear Marine uniforms either. 
+Garp: …That said, heroes don’t always wear Marine uniforms either. 
 
 {$name}: (Wait, what was that last bit? I couldn’t quite make out his mumbling…)
 
-{$garp}: Anyway, speaking of support, who do you think is the most important person on a ship, other than the captain?
+Garp: Anyway, speaking of support, who do you think is the most important person on a ship, other than the captain?
 
 {$name}: (Huh, now there’s a change of subject. Well, let’s see…)
 The first mate.
-{$garp}: Bwahahaha! Alright, I’ll give you that one. Not quite, though.
+Garp: Bwahahaha! Alright, I’ll give you that one. Not quite, though.
 The doctor.
-{$garp}: Certainly not a bad answer! Not what I was thinking of, though.
+Garp: Certainly not a bad answer! Not what I was thinking of, though.
 The chef. (+)
-{$garp}: Got it in one!
+Garp: Got it in one!
 
-{$garp}: At sea, the chef is the second most important person aboard a ship. They have to plan meals, supervise ingredients and rations, and be able to juggle everyone’s food preferences and necessities. Their skills range from perfectly crisping rice crackers to making sure there’s enough vitamins in everyone’s diets. Our lives are in their hands. And a skilled chef can work with just about anything!
+Garp: At sea, the chef is the second most important person aboard a ship. They have to plan meals, supervise ingredients and rations, and be able to juggle everyone’s food preferences and necessities. Their skills range from perfectly crisping rice crackers to making sure there’s enough vitamins in everyone’s diets. Our lives are in their hands. And a skilled chef can work with just about anything!
 
-{$garp}: I’ve eaten Sea Kings before, and if not for my chef, some of them would be downright disgusting. Have you ever eaten a Sea King, [Name]?
+Garp: I’ve eaten Sea Kings before, and if not for my chef, some of them would be downright disgusting. Have you ever eaten a Sea King, [Name]?
 No, I’ve never had the chance. I’d love to try one, though! (+)
-{$garp}: An adventurous eater, huh? Good for you! Maybe one day you’ll get lucky!
+Garp: An adventurous eater, huh? Good for you! Maybe one day you’ll get lucky!
 Are you kidding me?! Of course not! (-)
-{$garp}: Hmph, too bad. I didn’t take you for the picky type.
+Garp: Hmph, too bad. I didn’t take you for the picky type.
 Only once. It was… an experience.
-{$garp}: Heh, I’m not surprised. Sea Kings ain’t your average, everyday meal!
+Garp: Heh, I’m not surprised. Sea Kings ain’t your average, everyday meal!
 
-{$garp}: Each one’s got a real unique flavor. Sea Kings from the Blues are smaller and more tender than those from the Grand Line—they’re really good when they’re crispy—but Grand Liners are huge! That said, it’s the fishmen who know how to cook ‘em up just right. Go to Fishman Island, and you’ll have a feast you’ll never forget!
+Garp: Each one’s got a real unique flavor. Sea Kings from the Blues are smaller and more tender than those from the Grand Line—they’re really good when they’re crispy—but Grand Liners are huge! That said, it’s the fishmen who know how to cook ‘em up just right. Go to Fishman Island, and you’ll have a feast you’ll never forget!
 
 {$name}: 
 Wow! Do you have history with the fishman, Gar… sir? (+)
@@ -202,41 +195,41 @@ Wha—keep your voice down! Someone’s going to hear!
 
 :: route_e
 
-{$garp}: Bwahaha! Sure I do! Humans are quick to point fingers, but the fishmen are a good lot. They’ve suffered too much at the hands of humans, and yet they still manage to maintain good relations with some of them. Of course, there have been times when I’ve fought against fishmen too, but… well, I think that most people are intimidated by them based on appearances, but they’re some of the most stalwart warriors of the sea you’ll ever meet.
+Garp: Bwahaha! Sure I do! Humans are quick to point fingers, but the fishmen are a good lot. They’ve suffered too much at the hands of humans, and yet they still manage to maintain good relations with some of them. Of course, there have been times when I’ve fought against fishmen too, but… well, I think that most people are intimidated by them based on appearances, but they’re some of the most stalwart warriors of the sea you’ll ever meet.
 Huh… I’ve never actually met one before. They sound interesting. (+)
-{$garp}: “Interesting” is one way to put it! If you can, try to get to know more about them. The world feels that much bigger once you realize that humans aren’t the only “people” out there.
+Garp: “Interesting” is one way to put it! If you can, try to get to know more about them. The world feels that much bigger once you realize that humans aren’t the only “people” out there.
 Honestly, I’m surprised. I’ve only ever heard rumors, and most of them aren’t so nice.
-{$garp}: …It’s complicated. Let’s just say that fishmen and the nobles of the world, including the Celestial Dragons, have a real difficult history, and that’s reflected in what the everyday folk tend to hear. But if you mean what you say about protecting people, just think about what your definition of “people” is.
+Garp: …It’s complicated. Let’s just say that fishmen and the nobles of the world, including the Celestial Dragons, have a real difficult history, and that’s reflected in what the everyday folk tend to hear. But if you mean what you say about protecting people, just think about what your definition of “people” is.
 I thought that the fishmen were either slaves or enemies… (-)
-{$garp}: …Nah, [Name]. They’re people. They may not be human, but there’s way more than humans out there in the world. The sooner humans start realizing that, the better.
+Garp: …Nah, [Name]. They’re people. They may not be human, but there’s way more than humans out there in the world. The sooner humans start realizing that, the better.
 
 {$name}: (“People,” huh…)
 As far as I’m concerned, the only people I really need to worry about are humans. (-)
-{$garp}: You think so, huh?
+Garp: You think so, huh?
 =>route_f
 You say that, but I’m not sure that the rest of the Navy agrees with you.
-{$garp}: …You might be right. But I have to believe that times are changing, and that humans’ tyranny over others will come to an end.
+Garp: …You might be right. But I have to believe that times are changing, and that humans’ tyranny over others will come to an end.
 {$name}: (...If it were anyone else, they’d probably be arrested for treason. I’m amazed that he can say all that.)
 =>route_g
 I’ve only ever seen other humans, but I’d love to meet fishmen and all the other people of the seas one day. (+)
-{$garp}: That’s a good attitude, [Name]. It’s that kind of thinking that will change the future for the better.
-{$garp}: Some of us have had bad experiences with fishmen and people of other races before, but… just like you can’t judge humanity by the actions of one person, people of other races deserve the same courtesy.
+Garp: That’s a good attitude, [Name]. It’s that kind of thinking that will change the future for the better.
+Garp: Some of us have had bad experiences with fishmen and people of other races before, but… just like you can’t judge humanity by the actions of one person, people of other races deserve the same courtesy.
 =>route_h
 :: route_f
 
-{$garp}: …
+Garp: …
 
-{$garp}: Here’s the thing, [Name]. You’ll find many Marines who agree with you. But I’m not one of them.
+Garp: Here’s the thing, [Name]. You’ll find many Marines who agree with you. But I’m not one of them.
 
-{$garp}: When you said that you wanted to protect people, you only meant humans, didn’t you? I get it. Everyone who’s not human is soooooooo big and scary. They have weird powers and they don’t listen to our laws and they’re just too different. That’s the argument, isn’t it? That humans need to be protected from them?
+Garp: When you said that you wanted to protect people, you only meant humans, didn’t you? I get it. Everyone who’s not human is soooooooo big and scary. They have weird powers and they don’t listen to our laws and they’re just too different. That’s the argument, isn’t it? That humans need to be protected from them?
 
 {$name}: (Oh no. Everyone’s staring…)
 
-{$garp}: Well, I don’t agree. Some of the finest people I know aren’t Marines at all, and some of the worst scum of the seas wear the whites. If we don’t work together alongside the other people of the seas, humans will suffer for it. Hell, we already are!
+Garp: Well, I don’t agree. Some of the finest people I know aren’t Marines at all, and some of the worst scum of the seas wear the whites. If we don’t work together alongside the other people of the seas, humans will suffer for it. Hell, we already are!
 
 {$name}: Garp, I—
 
-{$garp}: Sorry, [Name]. I’ve suddenly lost my appetite. I’ll see you around. (-)(-)
+Garp: Sorry, [Name]. I’ve suddenly lost my appetite. I’ll see you around. (-)(-)
 
 {$name}: …
 
@@ -244,103 +237,103 @@ I’ve only ever seen other humans, but I’d love to meet fishmen and all the o
 
 :: route_g
 
-{$garp}: Bwahahaha! You’re looking at me like I’m about to disappear! What are they gonna do to me, [Name]?
+Garp: Bwahahaha! You’re looking at me like I’m about to disappear! What are they gonna do to me, [Name]?
 
-{$garp}: I’m more useful to the higher-ups as a public figure. Whatever I say, they can play it off. So long as I'm still here, I can still try to help the next generation of Marines down the right path. 
+Garp: I’m more useful to the higher-ups as a public figure. Whatever I say, they can play it off. So long as I'm still here, I can still try to help the next generation of Marines down the right path. 
 
-{$garp}: Tsuru… Senny… they mean the world to me. But they’re not willing to speak up when it matters. They’re not willing to say the terrible truth out loud. They know I’m right, but they risk damaging everything we’ve fought to build and protect if either of them so much as nod.
+Garp: Tsuru… Senny… they mean the world to me. But they’re not willing to speak up when it matters. They’re not willing to say the terrible truth out loud. They know I’m right, but they risk damaging everything we’ve fought to build and protect if either of them so much as nod.
 
-{$garp}: …
+Garp: …
 
-{$garp}: I’d like to think that I’ve tried to do the right thing. I haven’t always succeeded—hell, I haven’t even succeeded when it mattered most. But even so, if I close my eyes to it all, then what kind of example am I for the younger generation who’s giving it all they’ve got? I’d just be failing you all miserably if I did that. 
+Garp: I’d like to think that I’ve tried to do the right thing. I haven’t always succeeded—hell, I haven’t even succeeded when it mattered most. But even so, if I close my eyes to it all, then what kind of example am I for the younger generation who’s giving it all they’ve got? I’d just be failing you all miserably if I did that. 
 
 {$name}: …
 I guess Tsuru and Sengoku are more concerned about appearances than what’s right.
-{$garp}: It’s not that they don’t care about what’s right, but they have too much to lose. 
+Garp: It’s not that they don’t care about what’s right, but they have too much to lose. 
 {$name}: And you don’t?
-{$garp}: …With one or two exceptions, I’ve already lost the things that matter most to me. All I can do now is protect what I have left.
+Garp: …With one or two exceptions, I’ve already lost the things that matter most to me. All I can do now is protect what I have left.
 =>route_h
 If the higher-ups are hiding things from us, then I’m not sure that I really want to know. (-)
-{$garp}: …Well, that’s your choice.
+Garp: …Well, that’s your choice.
 =>route_h
 Thank you for that. (+)
-{$garp}: If even one Marine is able to make the world better because of what I’ve taught them, then it’ll all have been worth it.
+Garp: If even one Marine is able to make the world better because of what I’ve taught them, then it’ll all have been worth it.
 =>route_h
 	
 
 :: route_h
 
-{$garp}: Anyway, I got real sidetracked, huh? We were talking about cooking! I’m starting to get hungry…
+Garp: Anyway, I got real sidetracked, huh? We were talking about cooking! I’m starting to get hungry…
 
 {$name}: (Oh, right! I almost forgot that’s where this all started.)
 
 {$name}: Well, I guess I know a thing or two about good food. See, my mom’s really good at baking. I used to watch her in the kitchen, and I’d even help her out sometimes! I was her best taste-tester.
 
-{$garp}: Oh yeah? How about you, then? Did you pick up her talent for cooking?
+Garp: Oh yeah? How about you, then? Did you pick up her talent for cooking?
 
 {$name}: Well…
 Not to brag, but I’d call myself better than average. (+)
-{$garp}: Bwahahaha! Alright, let’s see you prove it!
+Garp: Bwahahaha! Alright, let’s see you prove it!
 =>route_i
 A little bit, yeah!
-{$garp}: Oh yeah? Gotta say, I’m pretty curious!
+Garp: Oh yeah? Gotta say, I’m pretty curious!
 =>route_i
 Unfortunately, no. 
-{$garp}: Well, that’s too bad, but you can’t do it all.
+Garp: Well, that’s too bad, but you can’t do it all.
 =>route_j
 Only if you like your food crispy. EXTRA crispy. (+)
-{$garp}: Bwahahaha! Now that’s a taste I’m pretty used to.
+Garp: Bwahahaha! Now that’s a taste I’m pretty used to.
 =>route_j
 
 :: route_i
 
-{$garp}: Let’s see you put your money where your mouth is! Why don’t you cook something for me, [Name]? I’d love to see your skills!
+Garp: Let’s see you put your money where your mouth is! Why don’t you cook something for me, [Name]? I’d love to see your skills!
 
 {$name}: Putting me on the spot, huh?
 Fine, I accept your challenge! (+)
-{$garp}: Bwahahaha! Excellent! Let’s head back to the kitchens…
+Garp: Bwahahaha! Excellent! Let’s head back to the kitchens…
 =>game_sequence1
 Not happening! (-)
-{$garp}: …Well, that’s disappointing. Never took you as one to back down from a challenge, but maybe I misjudged you. 
+Garp: …Well, that’s disappointing. Never took you as one to back down from a challenge, but maybe I misjudged you. 
 Hold it! There’s no way I’m backing down now!
-{$garp}: Heh, that’s what I’m talking about! The kitchens are that way…
+Garp: Heh, that’s what I’m talking about! The kitchens are that way…
 =>game_sequence1
 I don’t care what you say; I’m not cooking right now, and that’s final! (-)
-{$garp}: Hmph, have it your way. You should probably get back to work then, [Name].
+Garp: Hmph, have it your way. You should probably get back to work then, [Name].
 =>end
 
 :: game_sequence1
 
-{$garp}: So! What will you cook?
+Garp: So! What will you cook?
 
 {$name}: (Hmmm… That’s a good question…)
 
 {$name}: You know what? I’ll make rice crackers!
 
-{$garp}: Bwahahaha! Alright, then! Give it your best shot!
+Garp: Bwahahaha! Alright, then! Give it your best shot!
 
 {$name}: (Ok! Let’s think through this. What’s the first ingredient?)
 - Flour!
-		- {$garp}: Good!
+		- Garp: Good!
 		- =>game_sequence2
 - Sugar!
-- {$garp}: Hmmm…
+- Garp: Hmmm…
 - =>wrong_order
 - Egg!
-	- {$garp}: I don’t think that’s it.
+	- Garp: I don’t think that’s it.
 - =>wrong_order
 
 :: game_sequence2
 
 {$name}: (Ok, got that… and the rest of the ingredients! This kitchen has everything. Alright, up to seasonings. What should I go with?)
  - Sugar!
-		- {$garp}: Ick.
+		- Garp: Ick.
 		- =>wrong_order
 - Dressing!
-- {$garp}: Urgh.... 
+- Garp: Urgh.... 
 - =>wrong_order
 - Salt!
-	- {$garp}: Yeah, that’s perfect!
+	- Garp: Yeah, that’s perfect!
 - =>game_sequence3
 
 :: game_sequence3
@@ -348,62 +341,62 @@ I don’t care what you say; I’m not cooking right now, and that’s final! (-
 {$name}: (Alright, they’re ready to go in the oven! How should I cook them…)
  - Make ‘em soft!
 	- {$name}: …
-		- {$garp}: Aw, no!
+		- Garp: Aw, no!
 		- =>wrong_order
 - Make ‘em crispy!
 	- {$name}: …
-- {$garp}: As far as I’m concerned, they’re perfect!
+- Garp: As far as I’m concerned, they’re perfect!
 - =>right_order
 - Make ‘em burnt!
 	- {$name}: …
-	- {$garp}: Wow, that’s overdone.
+	- Garp: Wow, that’s overdone.
 - =>wrong_order
 
 :: right_order
 
-{$garp}: Bwahahaha! These are delicious, [Name]! You really did a good job.
+Garp: Bwahahaha! These are delicious, [Name]! You really did a good job.
 
-{$garp}: …
+Garp: …
 
-{$garp}: Way back when, I had to catch and cook my own food. Usually just ate meat until I was sick of it. But when I joined the Marines, I really learned how to appreciate all kinds of food. Hell, if you can believe it, Tsuru was the one who introduced me to rice crackers in the first place. 
+Garp: Way back when, I had to catch and cook my own food. Usually just ate meat until I was sick of it. But when I joined the Marines, I really learned how to appreciate all kinds of food. Hell, if you can believe it, Tsuru was the one who introduced me to rice crackers in the first place. 
 
-{$garp}: I was a new recruit, and I had trouble fitting in. I was too powerful, too loud, too… much for a lot of people to handle. I got used to being alone and acting alone. But one day, when I was sitting by myself, Tsuru came over, introduced herself, and thrust a bag of rice crackers into my hand. 
+Garp: I was a new recruit, and I had trouble fitting in. I was too powerful, too loud, too… much for a lot of people to handle. I got used to being alone and acting alone. But one day, when I was sitting by myself, Tsuru came over, introduced herself, and thrust a bag of rice crackers into my hand. 
 
-{$garp}: …They were the best thing I’d eaten in a long time.
+Garp: …They were the best thing I’d eaten in a long time.
 
-{$garp}: That’s why food’s so important to me, [Name]. It brings people together. When people eat together, they get to talk to each other. Learn from each other. Bond. And it’s because of Tsuru’s kindness that I made irreplaceable friends and comrades. But now that I’ve become a “Marine legend,” nobody other than the people who knew me from way back when or my crew dare to sit with me anymore. 
+Garp: That’s why food’s so important to me, [Name]. It brings people together. When people eat together, they get to talk to each other. Learn from each other. Bond. And it’s because of Tsuru’s kindness that I made irreplaceable friends and comrades. But now that I’ve become a “Marine legend,” nobody other than the people who knew me from way back when or my crew dare to sit with me anymore. 
 
-{$garp}: It made me truly happy that you sat with me. Thank you, [Name].
+Garp: It made me truly happy that you sat with me. Thank you, [Name].
 
 {$name}: Anytime! I’d love to sit and eat with you again, Garp… uh, sir.
 
-{$garp}: BWAHAHAHAHA! For you, [Name], Garp is just fine.
+Garp: BWAHAHAHAHA! For you, [Name], Garp is just fine.
 => date_end1
 
 :: wrong_order
 
-{$garp}: Well, you tried your best. Don’t worry too much about it; I’m not that great at cooking either!
+Garp: Well, you tried your best. Don’t worry too much about it; I’m not that great at cooking either!
 Look, it was just a fluke! (-)
-{$garp}: Hey now, don’t get riled up over it. Mistakes happen, especially in the kitchen. Just means you’ve still got a ways to go.
+Garp: Hey now, don’t get riled up over it. Mistakes happen, especially in the kitchen. Just means you’ve still got a ways to go.
 Yeahhhh, I’ve still got a lot to learn, I guess. (+)
-{$garp}: Don’t sell yourself short; you did your best, and that’s good enough for me!
+Garp: Don’t sell yourself short; you did your best, and that’s good enough for me!
 Somehow, that doesn’t surprise me. 
-{$garp}: Bwahahaha! You’ve got me all figured out, huh?
+Garp: Bwahahaha! You’ve got me all figured out, huh?
 
-{$garp}: Way back when, I used to kill animals and roast meat over a fire. Toughened me up so I could handle whatever the seas threw at me. Taught my grandkids the same way, and even now, Luffy, my youngest, still loves meat the most. 
+Garp: Way back when, I used to kill animals and roast meat over a fire. Toughened me up so I could handle whatever the seas threw at me. Taught my grandkids the same way, and even now, Luffy, my youngest, still loves meat the most. 
 
-{$garp}: …
+Garp: …
 
-{$garp}: Heh, you’re awfully easy to talk to, [Name]. It’s been a while since I’ve opened up to someone else this much. 
+Garp: Heh, you’re awfully easy to talk to, [Name]. It’s been a while since I’ve opened up to someone else this much. 
 
 {$name}: I like talking to you too! I didn’t know you had grandkids, though. Or… well, I knew that Strawhat Luffy was your grandson, but…
 
-{$garp}: Bwahahaha! Maybe I’ll tell you about them some other time.
+Garp: Bwahahaha! Maybe I’ll tell you about them some other time.
 => date_end1
 
 :: date_end1
 
-{$garp}: Alright, [Name], I’m sure Tsuru’s missing you by now. 
+Garp: Alright, [Name], I’m sure Tsuru’s missing you by now. 
 
 3 right:
 
@@ -427,50 +420,50 @@ Eh, the crackers didn’t turn out that great, but the company was nice. Go ahea
 
 :: route_j
 
-{$garp}: Don’t worry too much about whether you’re a good cook or not. Nobody can do it all, you know.
+Garp: Don’t worry too much about whether you’re a good cook or not. Nobody can do it all, you know.
 
-{$garp}: Take my crew, for example: Bogard worries about all the shit I can’t be bothered to remember. Burg, my chef, is the best there is. Silia, my doctor, can spot exhaustion with just a look. Harper, my quartermaster, keeps inventory down to the smallest crumb. And then there’s Koby, who has become a hero for the next generation in a way I never could… 
+Garp: Take my crew, for example: Bogard worries about all the shit I can’t be bothered to remember. Burg, my chef, is the best there is. Silia, my doctor, can spot exhaustion with just a look. Harper, my quartermaster, keeps inventory down to the smallest crumb. And then there’s Koby, who has become a hero for the next generation in a way I never could… 
 
-{$garp}: You have a crew because they do all the things that you can’t do. And since nobody can do it all, it’s nice knowing I have a whole ship of fools still willing to sail with me after all this time.
+Garp: You have a crew because they do all the things that you can’t do. And since nobody can do it all, it’s nice knowing I have a whole ship of fools still willing to sail with me after all this time.
 
 {$name}: Wow. Honestly…
 I’m surprised that you can admit to that. (-)
-{$garp}: What do you take me for, a stuck-up Admiral who can’t appreciate his subordinates?
+Garp: What do you take me for, a stuck-up Admiral who can’t appreciate his subordinates?
 I’m glad! If you could actually do everything, then I think you wouldn't be this easy to talk to.
-{$garp}: I’m glad you think so. I wish more people thought of me that way; my strength is also a weakness.
+Garp: I’m glad you think so. I wish more people thought of me that way; my strength is also a weakness.
 I’d really like to surround myself with people like that too. (+)
-{$garp}: Knowing you, you’ll get there. You’re real good at making people like you, and that’s a strength if I’ve ever seen one!
+Garp: Knowing you, you’ll get there. You’re real good at making people like you, and that’s a strength if I’ve ever seen one!
 
-{$garp}: Good Marines embrace their own strengths and weaknesses. Sometimes you work to compensate for your weaknesses, like learning what’s edible, but other times you focus on your strengths because other people will cover the rest. That’s what it means to be on a team, and to have a crew. It’s why specialists matter.
+Garp: Good Marines embrace their own strengths and weaknesses. Sometimes you work to compensate for your weaknesses, like learning what’s edible, but other times you focus on your strengths because other people will cover the rest. That’s what it means to be on a team, and to have a crew. It’s why specialists matter.
 
-{$garp}: …I’m sure you know by now that my grandson, Strawhat Luffy, has been going around collecting all sorts of weirdos from around the seas. I’ve met some of them and they’re good people. They make up for what he lacks and he rewards them by loving them fiercely. It’s no wonder they’re all so joyful despite being wanted by the law. Like me, that boy can’t cook to save his life, but at least he has people who’ll look out for him.
+Garp: …I’m sure you know by now that my grandson, Strawhat Luffy, has been going around collecting all sorts of weirdos from around the seas. I’ve met some of them and they’re good people. They make up for what he lacks and he rewards them by loving them fiercely. It’s no wonder they’re all so joyful despite being wanted by the law. Like me, that boy can’t cook to save his life, but at least he has people who’ll look out for him.
 
-{$garp}: Of course, that’s not to say that you shouldn’t compensate for your weaknesses. Your life is your own, and you’ve gotta decide what’s best for you.
+Garp: Of course, that’s not to say that you shouldn’t compensate for your weaknesses. Your life is your own, and you’ve gotta decide what’s best for you.
 I think I’d rather focus on my strengths and have a team to support me. (+)
-{$garp}: Heh, a Marine after my own heart! It means you’ll have to be responsible for covering their weaknesses too, but that’s what a crew does.
+Garp: Heh, a Marine after my own heart! It means you’ll have to be responsible for covering their weaknesses too, but that’s what a crew does.
 I think I’d rather cover my weaknesses just enough that they won’t slow me down.
-{$garp}: Fair enough! It’s not a bad thing to work on things you’re bad at. You might never be good at them, but at least it won’t be a detriment!
+Garp: Fair enough! It’s not a bad thing to work on things you’re bad at. You might never be good at them, but at least it won’t be a detriment!
 I think I’d like to be a jack of all trades and be decent at everything. 
-{$garp}: You can certainly try, and many people have. It’s a difficult road, but if that’s your calling, then go for it with all you’ve got! 
+Garp: You can certainly try, and many people have. It’s a difficult road, but if that’s your calling, then go for it with all you’ve got! 
 
-{$garp}: …
+Garp: …
 
-{$garp}: …You know, you’re awfully easy to talk to, [Name]. It’s been a while since I’ve opened up to someone else this much. 
+Garp: …You know, you’re awfully easy to talk to, [Name]. It’s been a while since I’ve opened up to someone else this much. 
 I just like getting to know you better!
-{$garp}: Oh yeah? Guess I’m not as much of a boring old fogey as I thought.
+Garp: Oh yeah? Guess I’m not as much of a boring old fogey as I thought.
 I feel the same way. I’ve enjoyed chatting with you. (+)
-{$garp}: I’m glad you think so. You’re a real interesting one.
+Garp: I’m glad you think so. You’re a real interesting one.
 Don’t worry; I’m not usually the type to hold conversations like this either. (-)
-{$garp}: Well, it’s not like I’ve been closing myself off because I want to…
+Garp: Well, it’s not like I’ve been closing myself off because I want to…
 
-{$garp}: Anyway, as much as I’d love to keep you, I’m sure you’ve gotta get back to Tsuru.
+Garp: Anyway, as much as I’d love to keep you, I’m sure you’ve gotta get back to Tsuru.
 Yeah, I should get back to work… (-)
-{$garp}: …Yeah. See you around, [Name].
+Garp: …Yeah. See you around, [Name].
 =>end
 I guess so. Think we could eat together again soon? (+)
-{$garp}: Bwahahaha! Any time you want, [Name]!
+Garp: Bwahahaha! Any time you want, [Name]!
 =>end
 I should… but maybe I’ll ask her about cooking classes too!
-{$garp}: Bwahahaha! Then in that case, I’ll look forward to the day you’ll cook for me, [Name]!
+Garp: Bwahahaha! Then in that case, I’ll look forward to the day you’ll cook for me, [Name]!
 =>end
 

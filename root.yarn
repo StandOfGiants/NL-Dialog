@@ -121,7 +121,7 @@ Rosinante: But now I am here :D
 <<show_characters sengoku tsuru rosinante>>
 Sengoku: don't forget about me!
 <<show_characters sengoku tsuru rosinante garp>>
-{$garp}: GRAHAHAHAHAHAHAH!
+Garp: GRAHAHAHAHAHAHAH!
 <<show_characters a b c d>>
 <<jump main>>
 ===

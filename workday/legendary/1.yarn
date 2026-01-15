@@ -8,16 +8,16 @@ Coming up to Tsuru's office, the door seems to be closed.
     Tsuru: Come in!
 -> Just go right in
     Tsuru: Oh, there you are! We were just looking for you!
-{$garp}: Eh? Who is this? #pose:chin #expression:questioning
+Garp: Eh? Who is this? #pose:chin #expression:questioning
 {$name}: Pleased to meet you, Inspector General Sengoku, Instructor Garp, Vice-Admiral Tsuru—
-{$garp}: Ah, you can just drop the titles when we're alone in here. Nobody really cares. Anyway, who are you? #pose:hips
+Garp: Ah, you can just drop the titles when we're alone in here. Nobody really cares. Anyway, who are you? #pose:hips
 Sengoku: This is Tsuru's new assistant. We were just talking about this! #pose:pocket
-{$garp}: We were? #expression:smile
+Garp: We were? #expression:smile
 Tsuru: Ugh. Please ignore them. We're happy to have you here.
 -> Is this... normal?
-    {$rosinante}: Pretty much, though everyone is a bit rowdier because of the event later today.
+    Rosinante: Pretty much, though everyone is a bit rowdier because of the event later today.
 -> I'm just happy to be here!
-    {$rosinante}: We're happy to have you. You're just in time too, since we have an event later today!
+    Rosinante: We're happy to have you. You're just in time too, since we have an event later today!
 <<jump workday_legendary_1_ConversationContinues>>
 ===
 
@@ -26,9 +26,9 @@ title: workday_legendary_1_ConversationContinues
 {$name}: Event? What kind of event?
 {$name}: I think I heard something about that...
 Sengoku: It's a welcoming ceremony for the new recruits we have coming in. Something to show them what the Navy's made of, and what to expect! #expression:smile
-{$garp}: Ah... I remember my first day as a rookie... the food was amazing.
+Garp: Ah... I remember my first day as a rookie... the food was amazing.
 Tsuru: That's because you accidentally went to the officer's hall instead of the recruitment ceremony.
-{$rosinante}: That sounds better than my first ceremony... I accidentally set the cannons off.
+Rosinante: That sounds better than my first ceremony... I accidentally set the cannons off.
 Tsuru: Oh, I remember that! Let's hope that doesn't happen this time around.
 Tsuru: But back to business.
 Tsuru: {$name}, we are all writing a speech that myself, Garp, and Sengoku will be presenting at the ceremony. Something about [i]Marine Legends[/i] inspiring the youth... as if I'm old enough to be a legend!
@@ -36,10 +36,10 @@ Tsuru: We could use your help with the final touches. There are a lot of... conf
 -> I'd be happy to help!
     Tsuru: Fantastic!
     Sengoku: Finally - someone who wants to help. #expression:joy
-    {$garp}: I don't see why we can't just skip the speech...
+    Garp: I don't see why we can't just skip the speech...
     Tsuru: Our recruits need to understand our ideals - not just our strength, Garp!
 -> I'd rather just listen; I don't think I have enough speech writing experience for that.
-    {$garp}: See! Someone else who thinks writing this speech is ridiculous!
+    Garp: See! Someone else who thinks writing this speech is ridiculous!
     Tsuru: We already have a demonstration, Garp - not everything can be accomplished by throwing punches!
 -> You said you, Garp, and Sengoku will be performing the speech - what about Rosinante?
     Sengoku: Inspiration! Rosi here is a shining example of what a Marine can be. #expression:smile
@@ -50,59 +50,59 @@ Tsuru: Now, our first decision is about how we should address the recent rise in
 -> How about ‘Piracy is nothing in the face of a united Navy?'
     <<like rosinante>>
     <<like tsuru>>
-    {$rosinante}: It does enforce the value of working together...
+    Rosinante: It does enforce the value of working together...
     Tsuru: And draws attention to how the Navy is one force, while the pirates are divided... Perfect! I'll add it in.
-    {$garp}: Being united didn't help us at Marineford...
+    Garp: Being united didn't help us at Marineford...
 -> You should write ‘Only with new recruits and new ideas can we overcome this adversary.'
     <<like rosinante>>
     <<like tsuru>>
     Sengoku: Captain Coby and his team of recruits are doing far better work than any old legend...
-    {$garp}: It's good that new blood is changing the way we fight.
+    Garp: It's good that new blood is changing the way we fight.
     Tsuru: New recruits are nothing without us veterans training them... but I'll add it in.
 -> Pirates sail free across the sea?
     <<like garp>>
     <<hate tsuru>>
-    {$garp}: Ha! Perfect - Tsuru, add that in!
+    Garp: Ha! Perfect - Tsuru, add that in!
     Tsuru: Absolutely not! That's the opposite message we want to send! Let's try something more about defeating pirates, shall we?
 -> Just say it: piracy is rising faster than the Navy can fight it.
     <<like sengoku>>
     Tsuru: A bit critical...
     Sengoku: But it is the truth.
-    {$rosinante}: All recruits should know the truth of what they will be fighting. Add it in.
+    Rosinante: All recruits should know the truth of what they will be fighting. Add it in.
 Tsuru: Hmm... Glad that issue is settled. Now, how should we address the disruptions by Straw Hat Luffy and his allies? Impel Down, Marineford, and the like?
 -> Straw Hat Luffy's destruction allows us to rebuild bigger and better.
     Sengoku: I don't think we should be endorsing a pirate demolition crew.
-    {$garp}: I do!
-    {$rosinante}: How about a line saying that the Navy always rebuilds?
+    Garp: I do!
+    Rosinante: How about a line saying that the Navy always rebuilds?
     Tsuru: Well, we hope they always rebuild. I don't see another Ennies Lobby... but that's a good line, Rosinante.
 -> Straw Hat Luffy may be destructive, but he can be defeated like any other pirate.
-    {$rosinante}: To be fair... Straw Hat hasn't been defeated yet.
+    Rosinante: To be fair... Straw Hat hasn't been defeated yet.
     Tsuru: He will, though... and the recruits need to believe that he can be.
 -> Attacks by this pirate and others are why the Navy serves to protect.
-    {$rosinante}: How many times has that boy done the Navy's job for us, though?
-    {$garp}: Too many. Far too many times.
+    Rosinante: How many times has that boy done the Navy's job for us, though?
+    Garp: Too many. Far too many times.
     Sengoku: The world doesn't know that, though. Let's keep it.
 -> Can you even explain anything that bastard does?
-    {$garp}: Bwahaha! You can't!
+    Garp: Bwahaha! You can't!
     Sengoku: Stop being so proud of him!
-    {$garp}: Never! Add it in!
+    Garp: Never! Add it in!
     Tsuru: No, Garp. We'll add something about Captain Coby chasing him; that should work.
 Tsuru: Lastly, our recent changes in leadership... and general ideals. This is our most important factor.
 -> Absolute justice ensures that no pirate will go unpunished, at any cost. We'll make our world safe at last.
     Sengoku: We've seen how that turns out.
     Tsuru: It is truthful to the Navy's current philosophies...
-    {$rosinante}: Perhaps change the wording to make it more subtle.
+    Rosinante: Perhaps change the wording to make it more subtle.
     Tsuru: That could work.
 -> A Marine's justice is their own, no matter what the Fleet Admiral says.
-    {$rosinante}: Every Marine has their own line that they won't cross.
-    {$garp}: You mean most Marines.
+    Rosinante: Every Marine has their own line that they won't cross.
+    Garp: You mean most Marines.
     Tsuru: I'm not sure I like the... vigilantism that this line encourages. Let's have something about a Marine's duty instead.
 -> The Navy's change in leadership is reflective of our changing times!
-    {$rosinante}: Marineford did bring many changes to our structure...
+    Rosinante: Marineford did bring many changes to our structure...
     Sengoku: Some of them good, some of them bad.
     Tsuru: Not everything changed; some of us didn't retire, Sengoku. But... I'll keep the line.
 -> We'd also prefer it if someone else was in charge.
-    {$garp}: Ha! That's the truth!
+    Garp: Ha! That's the truth!
     Sengoku: I'm not doing it anymore.
     Tsuru: No one is getting out of retirement until I retire. But... let's say something about justice instead.
 Tsuru: That should be the last bit!
@@ -124,16 +124,16 @@ location: day(office)
 You decide to stay in Tsuru's office.
 Tsuru:  Thank you for staying, {$name}.
 Tsuru:  Let's try to get ahead of this workload before-
-{$garp}: Bwah hah hah hah!
+Garp: Bwah hah hah hah!
 Tsuru:  ...
-{$garp}: Hey, Tsuru, back to paperwork already?
-{$garp}: No rest for the wicked, huh?
+Garp: Hey, Tsuru, back to paperwork already?
+Garp: No rest for the wicked, huh?
 -> That's easy to say when you're retired!
     <<like tsuru>>
     Tsuru:  Good point, {$name}! I don't even know what "retired" means in the Navy anymore.
 -> Hey, are you here to help or to get on our nerves?
     <<like garp>>
-    {$garp}: Ha! You have a spine, kid!
+    Garp: Ha! You have a spine, kid!
     Tsuru:  What do you expect, Garp?
     Tsuru:  You reap what you sow!
 -> Not much else to do around here!
@@ -141,11 +141,11 @@ Tsuru:  ...
     <<hate tsuru>>
     Tsuru:  In fact, you just chose to come help.
     Tsuru:  Don't try and get on Garp's better side by pretending otherwise!
-    {$garp}: If you're so bored, I could run you through some drills instead!
+    Garp: If you're so bored, I could run you through some drills instead!
 -> At least share some of those rice cakes.
     <<like garp>>
     <<hate tsuru>>
-    {$garp}: You've got good taste, but you oughta get your own!
+    Garp: You've got good taste, but you oughta get your own!
     Tsuru: It's no time for banter.
 Tsuru:  You were always a hothead.
 Tsuru:  It doesn't matter what we say; he'll stick around. Just try to be quiet.
@@ -163,48 +163,48 @@ Tsuru:  It doesn't matter what we say; he'll stick around. Just try to be quiet.
 title: workday_legendary_1_GarpTsuruconvo1
 ---
 Tsuru:  Indeed, {$name}. We have been comrades throughout our whole career.
-{$garp}: Ever since we were kids!
+Garp: Ever since we were kids!
 Tsuru: That's one way to put it.
 -> You sure do have some patience, Vice-Admiral Tsuru!
     <<like tsuru>>
     <<hate garp>>
-    {$garp}: People keep sayin' that!
+    Garp: People keep sayin' that!
     Tsuru:  And they aren't wrong.
 -> I'm sure you made a great team together!
     <<like garp>>
     <<hate tsuru>>
-    {$garp}: We used to chase pirates to the last corners of the blues!
-    {$garp}: And don't forget about Sengoku... We had many adventures.
+    Garp: We used to chase pirates to the last corners of the blues!
+    Garp: And don't forget about Sengoku... We had many adventures.
     Tsuru:  Perhaps we should reminisce some other time!
 -> Was it different back then? Beijng a Marine?
     Tsuru: The times have changed. Our Navy has to adapt, but the core stays the same.
-    {$garp}: I'd say the times haven't changed enough.
+    Garp: I'd say the times haven't changed enough.
     Garp scoffs. It seems like this is a conversation they have had often.
     You notice the tension between the two of them.
     -> I hope that we can maintain peace together!
         <<like tsuru>>
         <<hate garp>>
         Tsuru:  That's a good starting point, {$name}.
-        {$garp}: Damn, kid, do you always only parrot what you hear?
+        Garp: Damn, kid, do you always only parrot what you hear?
     -> I hope to be part of the change!
         <<like garp>>
         <<hate tsuru>>
-        {$garp}: Bwahaha! That's the spirit!
+        Garp: Bwahaha! That's the spirit!
 <<jump workday_legendary_1_GarpTsuruWrapUp>>
 ===
 
 title: workday_legendary_1_GarpTsuruconvo2
 ---
-{$garp}: Ah, Roger! It's incredible that, decades after his death, he's not quite gone!
+Garp: Ah, Roger! It's incredible that, decades after his death, he's not quite gone!
 Tsuru:  As much as I disagree with giving a pirate the status of a legend, it's true...
 -> Did you chase him as well, Tsuru?
     Tsuru:  I did, back in the day.
     Tsuru:  Sengoku, too. So did everyone we mentored. But I think, by the end, only Garp could keep up with him.
-    {$garp}: Heh, those were the days... too bad that in the end, he got hung out to dry.
+    Garp: Heh, those were the days... too bad that in the end, he got hung out to dry.
     -> At least he died and that was the end of it.
         <<hate garp>>
         <<hate tsuru>>
-        {$garp}: Hm.
+        Garp: Hm.
         Tsuru:  Roger might've died, but the trouble he caused is still very much alive.
     -> I think Tsuru should hang [i]you[/i] out to dry!
         <<like tsuru>>
@@ -213,15 +213,15 @@ Tsuru:  As much as I disagree with giving a pirate the status of a legend, it's 
         Tsuru:  It won't work to discipline him.
         Tsuru:  Believe it or not, Garp's heart is in the right place.
 -> How did you get him in the end?
-    {$garp}: We didn't.
-    {$garp}: Three times we had him cornered, and three times he got away!
+    Garp: We didn't.
+    Garp: Three times we had him cornered, and three times he got away!
     Tsuru:  Not everybody knows this, {$name}.
     Tsuru:  It's one of the difficult decisions that had to be made from the top.
     -> I understand why.
         <<like tsuru>>
         <<hate garp>>
-        {$garp}: What?! Really?!
-        {$garp}: I wouldn't be happy, kid!
+        Garp: What?! Really?!
+        Garp: I wouldn't be happy, kid!
         Tsuru: The new generation has to stay pragmatic, too.
     -> I think the world should know the truth.
         <<like garp>>
@@ -231,7 +231,7 @@ Tsuru:  As much as I disagree with giving a pirate the status of a legend, it's 
 -> I thought stories about Roger would be a little more... exciting.
     <<hate tsuru>>
     <<hate garp>>
-    {$garp}: What a thing to say to two old-timers like us!
+    Garp: What a thing to say to two old-timers like us!
     Tsuru:  Old-timers?! Speak for yourself
     Tsuru:  But as you wish, {$name}. Just don't forget that knowledge is power.
 <<jump workday_legendary_1_GarpTsuruWrapUp>>
@@ -241,11 +241,11 @@ title: workday_legendary_1_GarpTsuruWrapUp
 ---
 Tsuru sighs.
 Tsuru:  Still, I'm glad that we are working together after all this time... at least, in [i]some[/i] capacity.
-{$garp}: Yeah! You're not getting rid of me that easily!
-{$garp}: You want to catch up with the workload so we can all enjoy Rosinante's promotion in peace too, huh?
+Garp: Yeah! You're not getting rid of me that easily!
+Garp: You want to catch up with the workload so we can all enjoy Rosinante's promotion in peace too, huh?
 Tsuru:  ...Yes.
 Tsuru:  I think that's something we can all agree on.
-{$garp}: I'm glad the boy is back, too! Bwahahah!
+Garp: I'm glad the boy is back, too! Bwahahah!
 Garp seems to be content with sticking around, even helping a little, as you two work.
 <<jump workday_legendary_1_EndOfWorkday>>
 ===
@@ -266,16 +266,16 @@ Sengoku: {$name}, Tsuru sent you?
     {$name}: I assumed you would know.
     Sengoku: Yes...
     Sengoku: Rosinante, it's about your promotion.
-    {$rosinante}: We didn't get to talk about that even though we meant to, right?
+    Rosinante: We didn't get to talk about that even though we meant to, right?
     -> Congratulations on your promotion!
         <<like rosinante>>
         <<like sengoku>>
-        {$rosinante}: Ah, thank you, thank you. It's nothing, really.
+        Rosinante: Ah, thank you, thank you. It's nothing, really.
     -> It would be ideal if you figured out the details as soon as possible, then.
         <<like sengoku>>
         Sengoku: {$name} is right. We can't just sit around. We need to plan the ceremony.
         Sengoku: We got caught talking about [i]other issues.[/i]
-        {$rosinante}: How is this an issue?
+        Rosinante: How is this an issue?
         Sengoku: Of course it's an issue! We were just talking about it.
     -> How could [i]you[/i] possibly get promoted?
         <<hate rosinante>>
@@ -296,49 +296,49 @@ You glance at the wanted poster on the table again.
 Sengoku: Pfft, trouble is too light of a word.
 {$name}: Why? What's happening?
 Sengoku: I'm sure you heard that Straw Hat Luffy and Trafalgar Law formed an alliance. After Doflamingo's fall, they plan to take down Kaidou!
-{$rosinante}: And how is that an issue?
+Rosinante: And how is that an issue?
 -> Rosinante-san is right. Isn't there a chance that they could defeat Kaidou?
     <<like rosinante>>
     Sengoku: Don't be foolish. They don't stand a chance.
-    {$rosinante}: Pfft, don't be so sure of that.
+    Rosinante: Pfft, don't be so sure of that.
     Sengoku: Rosinante, whose side are you on?!
     <<jump workday_legendary_1_CS1B>>
 -> I don't see the issue. Let them take each other out. Less paperwork for us, right?
     <<like sengoku>>
     <<hate rosinante>>
-    {$rosinante}: That's easy for you to say.
+    Rosinante: That's easy for you to say.
     Sengoku: {$name} isn't wrong, you know.
     Sengoku: Are you a Marine, Rosinante? Or did working undercover among pirates for so long make you think like them?
-    {$rosinante}: I'm just saying that not all of them are bad.
+    Rosinante: I'm just saying that not all of them are bad.
     Sengoku: Bad or not, they still cause too much trouble to simply let them run wild.
     <<jump workday_legendary_1_CS1B>>
 -> Is there anything we can do to stop them?
     Sengoku: Heh! I like your enthusiasm, but that's not under our jurisdiction.
     Sengoku: Let Sakazuki figure it out; I'm done with all that!
-    {$rosinante}: Yeah... we're just talking for the sake of conversation. I doubt the Fleet Admiral will deploy any of us at this base to deal with this.
+    Rosinante: Yeah... we're just talking for the sake of conversation. I doubt the Fleet Admiral will deploy any of us at this base to deal with this.
     -> You're right. I don't even know what I would do if I found myself face to face with any of those pirates. They're way too strong.
         <<like rosinante>>
         <<hate sengoku>>
         Sengoku: Don't give them so much credit!
-        {$rosinante}: It's fine, Sengoku-san! Haha.
-        {$rosinante}: {$name} isn't wrong. Out of us three, you're the only one who could stand a chance.
+        Rosinante: It's fine, Sengoku-san! Haha.
+        Rosinante: {$name} isn't wrong. Out of us three, you're the only one who could stand a chance.
         Sengoku: Don't try to flatter your way out of this! Don't think I didn't notice how you've been sympathizing with the pirates for so long.
         Sengoku: It's unacceptable for someone of your rank!
-        {$rosinante}: Yes, yes, I've heard it before.
+        Rosinante: Yes, yes, I've heard it before.
         Sengoku: And yet you never listen.
         Sengoku: What will I do with you...
         <<jump workday_legendary_1_CS1B>>
     -> It's still a nice thought.
         <<like sengoku>>
         <<hate rosinante>>
-        {$rosinante}: Let other people deal with it.
+        Rosinante: Let other people deal with it.
         Sengoku: You want to do good things, and I appreciate it, but you're still just a recruit.
         Sengoku: You'll have to get a lot stronger.
         {$name}: I don't mind! I will get stronger.
         Sengoku: Hahaha! See, Rosinante? This is the sort of attitude I want from you as well.
         Sengoku: Maybe one day, after you stop fraternizing with the enemy...
-        {$rosinante}: ...
-        {$rosinante}: Sengoku-san, you wound me.
+        Rosinante: ...
+        Rosinante: Sengoku-san, you wound me.
         Sengoku: As if [i]you[/i] don't wound me! Hahahaha!
         <<jump workday_legendary_1_CS1B>>
 ===
@@ -351,35 +351,35 @@ The way Rosinante is talking about the pirates is odd, but you also can't help b
     <<like rosinante>>
     Sengoku: We've known each other for a long time. I suppose it's easy to tell.
     {$name}: Really? How did you meet?
-    {$rosinante}: Sengoku-san took me in when I was a child.
-    {$rosinante}: He trained me and taught me everything I know!
+    Rosinante: Sengoku-san took me in when I was a child.
+    Rosinante: He trained me and taught me everything I know!
     Sengoku: Indeed. Rosinante is like a son to me.
     {$name}: Wow! I had no idea.
     {$name}: I bet it's great to work so closely with your father figure like this, right?
-    {$rosinante}: It can be a bit of a headache sometimes.
+    Rosinante: It can be a bit of a headache sometimes.
     Sengoku: ...
-    {$rosinante}: But it feels great knowing that someone will always have your back.
+    Rosinante: But it feels great knowing that someone will always have your back.
     <<jump workday_legendary_1_CS1C>>
 -> You two remind me of the way my brother and father often used to bicker.
     <<like sengoku>>
     <<like rosinante>>
-    {$rosinante}: That makes sense! Sengoku-san is like a father to me.
+    Rosinante: That makes sense! Sengoku-san is like a father to me.
     Sengoku: Yes, and sometimes I can't help but think that it's unfortunate...
-    {$rosinante}: Don't listen to him. No one was happier than him when I came back from my mission.
+    Rosinante: Don't listen to him. No one was happier than him when I came back from my mission.
     {$name}: I bet! You two have a great relationship. I haven't been here for long and I can already tell.
     Sengoku: Eh...
-    {$rosinante}: Don't mind him, don't mind him.
+    Rosinante: Don't mind him, don't mind him.
     <<jump workday_legendary_1_CS1C>>
 -> Why are you defending the pirates so much, Commander?
     <<hate sengoku>>
     <<hate rosinante>>
     Sengoku: Ah... don't take it so seriously.
-    {$rosinante}: We are just joking around.
+    Rosinante: We are just joking around.
     {$name}: I'm sorry! I didn't realize.
-    {$rosinante}: You're new and you didn't know. it's alright!
-    {$rosinante}: We should have made it clearer.
+    Rosinante: You're new and you didn't know. it's alright!
+    Rosinante: We should have made it clearer.
     Sengoku: Yes. Rosinante is an exemplary Marine, never afraid to take down his enemies.
-    {$rosinante}: Here he goes again...
+    Rosinante: Here he goes again...
     <<jump workday_legendary_1_CS1C>>
 
 ===
