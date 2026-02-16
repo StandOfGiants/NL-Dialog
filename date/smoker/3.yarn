@@ -39,7 +39,7 @@ Smoker strikes a match and lights his cigars, holding out the match; you place a
 
 
 
-Smoker: I didn’t know you smoked, $playerName.
+Smoker: I didn’t know you smoked, {$name}.
 - {$name}: You asked if I wanted a light, though.
   Smoker: I guess that’s true.
 - {$name}: What’s that supposed to mean?

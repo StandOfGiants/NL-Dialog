@@ -1,0 +1,415 @@
+title: date_sakazuki_3_start
+location: training grounds
+---
+It’s a bright, beautiful morning. You wake up early, feeling energetic. The sun is still at the horizon, everything is cool and calm. Deciding that it’s good to train once a while, you put on your running shoes and decide to go for a jog.
+Passing by the training field, you stop in surprise when you see a familiar figure there. Isn’t that…
+{$name}: … Fleet Admiral Sakazuki, Sir?!
+The Fleet Admiral stops moving and turns.
+{$sakazuki}: Good morning, {$name}. I didn’t expect to see you here.
+{$name}: Ah, well, I woke up early and training is always a good idea.
+[If the last date ends on the best ending] {$sakazuki}: You are a credit to the Navy. I’m glad to see Marines taking their duty seriously. //HOW DO??
+[If the last date ends on the neutral ending] {$sakazuki}: It is. It’s good to see that you haven’t adopted too many bad habits. //HOW DO??
+[If the last date ends on the bad ending] {$sakazuki}: I didn’t think you had such a drive in you. I suppose one must start somewhere. //HOW DO??
+{$name}: … T-thank you, Sir?
+{$sakazuki}: Come. I’m finishing up my last run around the island. You can join me.
+You feel your face pale. A run around the entire island?! But it’s massive! You might feel suddenly inspired today, but you aren’t sure you are *that* inspired! After a moment of thinking, you decide…
+-> Let’s do it! You feel like you can take on the world!
+    {$name}: Yes, Sir! I want to be a strong Marine, too!
+    {$sakazuki}: [smile] With enough tenacity, you will become one.
+-> Maybe another day… 
+    {$name}: Um, I am not quite sure I’m ready to run a lap around the entire island…
+    {$sakazuki}: Then let’s test it out.
+    {$name}: Um…
+    {$sakazuki}: If you faint, I’ll take you to the infirmary.
+    Sensing that there’s no way to talk yourself out of this, you realize there’s only one option left…
+    {$name}: Yes, Sir…
+Without another word, Fleet Admiral Sakazuki begins running. He at least seems mindful of you and lets you keep pace with him. His strength is still insane, and his drive scares you just a bit.
+Slowly, you two manage to cross the entire island together. There were a few times you thought you’d pass out, but miraculously, you pulled through. By the time you return to your starting point, you are green in the face and panting heavily.
+{$sakazuki}: You did well.
+{$name}: Thank… thank you… Sir…
+Fleet Admiral Sakazuki eyes you thoughtfully while he runs through a series of stretches. He seems like he has something in mind.
+{$sakazuki}: Now that the warm-up is over, we can continue training if you’d like. Going through the katas you know, or we can spar.
+Wait… that was a *warm-up*?! No way! How could he say running around an entire island is a warm up?! That is insanity! But then, surely special training with the Fleet Admiral must be some kind of privilege not everyone gets to have?
+After a long minute of consideration, you reach your decision. You decide that…
+… Doing cool-down katas seems more like your style. 
+    <<jump date_sakazuki_3_Kata_route>>
+… Having a spar with the Fleet Admiral is a rare opportunity you can’t miss! 
+    <<jump date_sakazuki_3_Sparring_route>>
+-> … Yeah, no. It’s time to make a tactical retreat.
+    {$name}: Ah, you know, I would love to stay to train some more but, ah…
+    {$sakazuki}: But you won’t.
+    {$name}: W-well! I’d love to! I really would! But I just remembered that I need to get back to my place to… to read the news! It’s very important to keep up with the world!
+    {$sakazuki}: ... Sure. That is… important.
+    {$sakazuki}: Off you go then. I expect to see you at work in time, {$name}.
+    {$name}: Um, see you, Sir! Thank you for the run!
+    You quickly leave before Fleet Admiral Sakazuki has any new ideas, but he doesn’t call you back. Phew! A bullet dodged!
+===
+
+title: date_sakazuki_3_Kata_route
+location: training grounds
+---
+
+{$name}: Can we do some katas?
+{$sakazuki}: That’s fine. Show me what you know.
+Oh! This is your chance to impress! Taking a deep breath, you decide...
+-> You will go through the most basic set of katas every soldier must know. <<declare sd3_points +=2>>
+    You focus on each movement, making sure your arms and legs are at the right position. Occasionally, you glance at Fleet Admiral Sakazuki, but you can’t tell what he’s thinking.
+    Finally, you end the well practiced movement, stopping a short distance from the Fleet Admiral.
+    {$sakazuki}: Not bad. You are well versed with your basics.
+    {$name}: Thank you, Sir. It’s not glamorous, but I still remember how to do the basic katas.
+    {$sakazuki}: That’s good. I wasn’t expecting much more. Too many think strong people just have flashy moves and nothing else. It’s not true. Flashy moves are only a fraction of it. They build their skills from the ground up.
+    {$name}: Oh, you think I can be strong, too?
+    {$sakazuki}: Hmm, maybe. If you keep working on your skills, you have potential.
+    {$name}: Thank you, Sir! I’ll try my best!
+-> You have to show off with the flashiest move you know! <<set sd3_points -=1>>
+    For a moment,  you stand there, feeling uncertain.
+    But you can do it! You can definitely do it! If you do it well, maybe he’ll even give you a surprise promotion! Or a salary raise!
+    With sufficient motivation, you start throwing wild punches and kicks like how you’ve seen a few stronger Vice Admirals train. You even attempt to mimic Admiral Kizaru’s kick!
+    Your moves are a bit clumsy, but you feel like you’ve definitely done a good job… if it weren’t for Fleet Admiral Sakazuki’s increasingly deepening frown.
+    Alas, one enthusiastic kick sends you tumbling over. You sit up, coughing.
+    {$name}: How about that, Sir? Are you *impressed* by my flashy moves? I know I could have executed that last move a bit better but overall, it’s great, right?
+    {$sakazuki}: [frown] Not in the slightest.
+    {$sakazuki}: Your center of gravity was completely wrong, your moves were, for the lack of better word, *gaudy*. Any enemy combatants with the exception of the least experienced ones can take you down in a minute.
+    {$name}: Eep, I’m sorry, Sir!
+    {$sakazuki}: Focus more on training and less on impressing spectators.
+    {$name}: Yes, Sir, sorry, Sir…
+-> You should definitely make something up to surprise the Fleet Admiral. <<set sd3_points +=1>>
+    Ah, but you don’t even know where to begin with it… it sounds easier in your head than in practice. But you have to give it a try.
+    You begin with the standard kata taught to every Marine, but try to change it up a bit. You follow what feels the most natural to you, switching up different orders of the moves until, at last, you finish. You eye Fleet Admiral’s unreadable face nervously.
+    {$name}: Ah… that’s all, Sir.
+    {$sakazuki}: That’s not the Academy form. But I can see it’s based on it quite heavily.
+    {$name}: Yes, Sir. I’ve been warned if I’m too predictable, people will be able to read my moves and react accordingly. That’s why I have been trying to use the same style, but change it up, just a bit.
+    {$sakazuki}: … I see.
+    {$name}: Wh-what do you think, Sir?
+    {$sakazuki}: It’s not bad for your first attempt at modification. I can see a lot of clumsiness in your form, still. But at least you have the sense not to try and come up with something from scratch.
+    {$name}: Ah… that’d have been bad, Sir?
+    {$sakazuki}: Very. You need to know your fundamentals before anything else. If we have free time, I can help you solidify your style a bit more.
+    {$name}: Thank you, Sir! That’s very generous of you! I’ll definitely consider your offer.
+    {$sakazuki}: Hm, alright.
+There’s a brief moment of awkward silence. The training reminds you of something you have been pretty curious about though. Perhaps Fleet Admiral Sakazuki would answer you this time.
+{$name}: Sir? How are you getting along with the other Admirals? Is it true Admiral Kizaru, Admiral Aokiji and you were all cadets together?
+{$sakazuki}: … Yes, we were.
+{$name}: Well, how about Admiral Fujitora? You seem to get along alright with him. Did you train together, too?
+{$sakazuki}: Ah, no… no, we did not. I met him while I was stationed at a different base, though. That was a long time ago.
+You struggle with your question for a moment, unsure if you should even ask it.
+Luckily, Fleet Admiral Sakazuki has made that choice for you.
+{$sakazuki}: You are curious about something. Ask… I can’t promise I’ll answer everything, but I will answer what I can… as long as it’s asked in good faith.
+You take a deep breath. Well, since the Fleet Admiral has invited you…
+-> How are you all still be friends? Don’t you have different ideologies?
+    {$sakazuki}: <pause> Hmm… I suppose… we are friends.
+    {$sakazuki}: It’s very easy to see the differences between us, differences in ideologies, in personalities, in temperament… 
+    {$sakazuki}: But at the end of the day, we all agree that we have a problem with piracy and that needs to be dealt with. When you see it in that light, our methods might be different, but the end goals align well enough.
+    {$sakazuki}: [smile] We do have our fair share of fights though, as you are well aware.
+    {$name}: … I’m surprised people don’t spend all day just breaking up fights between you guys — whoops! I’m sorry, I didn’t mean to say that aloud!
+    {$sakazuki}: [smile] You do mean it. Don’t worry. It’s nothing I haven’t heard before.
+    {$sakazuki}: Is that all you want to know?
+    Actually yes, but now you feel compelled to say something back…
+    {$name}: I think…
+    -> …You’ve picked a tough path to follow, picking Absolute Justice above all else. <<set sd3_points +=2>>
+        {$sakazuki}: That might be so.
+        {$sakazuki}: I decided a long time ago that I’ll always serve and protect Justice, and that takes… sacrifices.
+        {$sakazuki}: [smile] Being friends with me must be difficult.
+        {$name}: I don’t think so, Sir. You are not hard to befriend. Sometimes you can be difficult, but that doesn’t mean befriending you ever is.
+        {$sakazuki}: ...
+        Whoops… you didn’t mean to be so sappy. Quick, you need to say something to ease the tension.
+        {$name}: *Staying* friends with you through one of your stubborn fits though… now *that* takes patience. But hey, nothing would get done if you weren’t so adamant. 
+        {$sakazuki}: The others are indeed like herding cats.
+        IF FLASHY {$name}: *Staying* friends with you through one of your stubborn fits though… now *that* takes patience. I can’t believe you think so low of flashy moves. *I* think they are superior. //HOW DO??
+        {$sakazuki}: [laugh/smile] We’ll see about that. I suppose you can always distract your opponents if you are flashy enough. Borsalino seems to think so, at least.
+    -> …No matter what you say, it's admirable that you consider the other Admirals your friends while being so different.
+        {$sakazuki}: I suppose so.
+        {$sakazuki}: Don’t focus so much on how different we are. Focus on the pirates we all want gone.
+        {$name}: Yes, Sir. I’ll try my best to remember your words.
+    -> …All this interpersonal stuff is way too complicated. I just want my 9 to 5 without all the dilemmas, maybe a promotion when the time’s right. (Pts: -1pts)
+        {$sakazuki}: Ambitions are nice to have, but without the conviction to back it up, you’ll just be an empty shell with a fancy front.
+        {$sakazuki}: Take some time to think about that, what’s important to you, what do you put first… you will need to answer those questions for yourself eventually.
+        {$name}: Um… okay, Sir. Thanks, I’ll think about it.
+-> Since you are friends… so, um, do you guys hang out and do stuff together?
+    {$sakazuki}: … Yes. I suppose… we do.
+    {$sakazuki}: Due to the unstable situation lately, though, that hasn’t happened in some time. The New Pirate Age has proven to be… chaotic.
+    {$name}: Really? I mean, not about the busy work, but I mean, what do you guys do together? 
+    {$sakazuki}: Hmm… things.
+    {$name}: Fleet Admiral Sakazuki, you said you would answer…
+    {$sakazuki}: Fine, fine. When it was peacetime, we’d go do karaoke. If time was tight, then perhaps something at a bar together.
+    Oh, wow! You didn’t expect Fleet Admiral Sakazuki to actually answer you! But he kept his promise! He seems fairly embarrassed, though. Maybe you should tease him… wouldn’t that be mean, though? Hmm…
+    -> I feel like I prefer something quieter, like a night at the pub. Karaoke is pretty loud. <<set sd3_points +=2>>
+        {$sakazuki}: [smile] I’m glad you think so, too. Karaoke had its charm… when I was younger. But as the Fleet Admiral, I have an image to uphold.
+        {$name}: That must be really tough. Still, I fully believe that it’d be good to hang out with your colleagues. Would you like to go to the pub with me sometime?
+        {$sakazuki}: ...
+        {$name}: N-Not like a date! Like, a hangout. Between friends!
+        {$sakazuki}: A ‘hangout’ between friends, hmm? Hmm.
+        {$sakazuki}: Perhaps. Maybe the others would want to wind down, too. It’s been a difficult, stressful transition.
+    -> I love karaoke! Do you think if things calm down a bit, we can invite the others to do it? (Pts: +0pts)
+        {$sakazuki}: Ah… I’m not sure if they would welcome something like that.
+        {$name}: Why not?! I think it’d be cool! Just a cool hangout without all the responsibility!
+        {$sakazuki}: Maybe… but I don’t make it a habit to initiate such an activity. It might give the others a heart attack if I do.
+        {$name}: I’m sure they’d love to! I did these sorts of things with my friends back home all the time.
+        {$sakazuki}: Alright, alright. I’ll see about that. Once things calm down, perhaps…. *maybe*.
+    -> So are you the best singer in the group? <<set sd3_points -=1>>
+        {$sakazuki}: <pause> … I feel like I’m not quite an impartial judge on that matter…
+        {$name}: So you aren’t a good singer at all?
+        {$sakazuki}: [embarrassed] … As I said, I’m not an impartial judge.
+        {$sakazuki}: Let’s drop this matter. I answered your question.
+        {$name}: … Yes, Sir…
+-> Can you tell me a story about you guys? Maybe a mission? Maybe… something epic?
+    {$sakazuki}: Something… epic?
+    {$name}: Yes, like a mission in your cadet days! Or something really funny works, too!
+    {$sakazuki}: Hmm, well… there are stories, but nothing I was personally involved in. I suppose there was one time, though…
+    {$sakazuki}: You see, there was a dare board back in the day, where people would challenge each other to really foolish feats in hopes of impressing other people. Borsalino was a regular winner of such challenges, though, and I tended to be the unfortunate collateral damage.
+    {$sakazuki}: One day, there was a challenge — have a spice eating contest with me. And Borsalino volunteered.
+    {$name}: Wow! Did he win?
+    {$sakazuki}: He would have. He was about to cheat, the little sneak. But I discovered his scheme first. Exposing him wouldn’t be satisfying enough, so I played with him at his own game.
+    {$sakazuki}: I changed back all of the candies that he had managed to switch into spicy peppers, as they should have been. It was amusing. I didn’t know his face could turn that particular shade of red.
+    -> Wow, I wish I could’ve been there to see it. <<set sd3_points +=2>>
+        {$sakazuki}: [smile] I think you would have been amused. Borsalino couldn’t face me for days, of course.
+        {$name}: And did you tell anyone that he was about to cheat?
+        {$sakazuki}: No. I didn’t think it was necessary. He knows better than to challenge me at any spice eating contests now.
+        {$name}: Perhaps I should challenge him sometime.
+        {$sakazuki}: [smile] I would advise against it. But if you ever did, I would be willing to be the referee.
+    ->That was sneaky of you, Sir!
+        {$sakazuki}: I suppose it was.
+        {$name}: No, no, I’m impressed, Sir! I didn’t know you were the type to do something like that.
+        {$name}: If you ever feel like pranking the other Admirals at some point, invite me, Sir! I bet they’ll never see us coming!
+        {$sakazuki}: You shouldn’t be plotting about pranking anyone else, that’s bad form. But on the off-chance that I might come up with an interesting challenge…
+        {$sakazuki}: [smile] I’ll remember your offer.
+    -> I would have done way worse. <<set sd3_points -=1>>
+        {$sakazuki}: There is no need to go that far. He wanted to challenge me. I just wanted to make sure the challenge was fair.
+        {$name}: That’s lame. I’d have switched it to laxative or something.
+        {$sakazuki}: Hm. I suppose I could have done that. But it would have sparked a childish prank war I wasn’t interested in either creating or participating.
+        {$name}: Okay, that’s fair…
+<<jump date_sakazuki_3_After_Cleanup>>
+===
+
+title: date_sakazuki_3_Sparring_route
+location: training grounds
+---
+
+{$name}: I think I’d like to have a friendly spar with you, Sir! I hope I can learn from you! Please go easy on me!
+{$sakazuki}: I don’t make a habit of going easy on anyone.
+You feel like it’s a joke, but if it was, it was drier than the desert. In any case, you aren’t even sure if Fleet Admiral Sakazuki knows how to tell a joke… 
+Well, here goes nothing.
+You throw a punch first, nothing more than to test the water. The Fleet Admiral bats your incoming fist aside easily, but you are prepared.
+Your next punch immediately follows the first. Fleet Admiral Sakazuki returns fire with a simple punch of his own. He must have lied when he said he wouldn’t go easy on you, though. The punch, while tough, wasn’t any harder than what you received on the training ground.
+Another kick, and another. Fleet Admiral Sakazuki keeps countering your attacks with nothing more than simple blocks. At last, out of frustration, you yell, charging at him. Fleet Admiral Sakazuki’s arms come up to prepare for the upcoming attack.
+But you have a plan. You are going to…
+-> Fight dirty <<set sd3_points +=2>>
+    You kick up as much dirt as possible, grinning when you see Fleet Admiral Sakazuki flinch away and squint.
+    {$name}: Ha! My chance! You can’t see now!
+    Throwing all your power into one last punch, you feel the air get knocked out of you when Fleet Admiral Sakazuki dodges the attack with his eyes closed, sweeping your leg from beneath you. You stare at the morning sky, breathing heavily.
+    Fleet Admiral Sakazuki is brushing dust from his face now, but he still offers to pull you up.
+    {$name}: Um, am I in trouble…? 
+    {$sakazuki}: Why would you be? I didn’t expect you to win against me.
+    {$name}: That’s a total understatement! You kicked my butt! You were so strong!
+    {$name}: But um, no, for… for cheating. Fighting dirty. I heard it’s not very honorable.
+    {$sakazuki}: Hmm.
+    {$sakazuki}: I suppose it depends from person to person. And what kind of battles you are fighting. Especially at sea with pirates, you fight with whatever advantage you get.
+    {$sakazuki}: You can hardly demand pirates stop using their Devil Fruit against non-Devil Fruit users because it’d be dishonorable, can you? Likewise, I was a stronger opponent, the fight wasn’t fair. You use whatever tricks you can to gain the upper hand.
+    {$name}: I see… so you aren’t mad?
+    {$sakazuki}: No. You need to follow through better, though. With my Haki, I don’t need my sight to predict your moves. So even when you manage to gain an advantage over others, you still need to keep your guard up.
+    {$name}: Thank you for the spar, Sir. That was very insightful.
+    {$sakazuki}: You’re welcome.
+-> Attack recklessly <<set sd3_points -=2>>
+    You let out an intimidating roar, ramming against Fleet Admiral Sakazuki with all the strength in your body. It feels like ramming into a concrete wall. It hurts!
+    You refuse to give up though, throwing wild punches and kicks, praying that one will miraculously work. The Fleet Admiral is strong, though, and he doesn’t even flinch facing your strongest kick.
+    Finally, seemingly tired of your display, Fleet Admiral Sakazuki moves with surprising grace. He grabs your wrist and steps behind you so fast you can’t even see him, pinning your hand behind your back.
+    {$sakazuki}: I believe the spar goes to me.
+    He releases your wrist and you stumble away. He’s giving you an unreadable look, but you have the distinctive feeling that you haven’t managed to impress.
+    {$sakazuki}: That was sloppy.
+    {$name}: It normally works… you are just too crazy strong, sir!
+    {$sakazuki}: And I started from somewhere, too. Throwing your punches without thinking will just sap you of your energy faster, or create openings to be taken advantage of, just to name a few things that could go horribly wrong.
+    {$sakazuki}: I suggest you practice the basic moves some more and try to keep your cool during a tough battle.
+    {$name}: Yes, Sir. I will keep your words in mind…
+-> Execute a textbook move <<set sd3_points +=1>>
+    You charge forward with a yell then suddenly stop in front of him and throw a basic punch. He seems surprised that you didn’t really lose your temper, but counters the move easily enough.
+    Another textbook throw from Fleet Admiral Sakazuki sends you tumbling on your back. Only your training helps you break your fall.
+    {$name}: Ouch, my butt.
+    {$sakazuki}: That was interesting. Why did you try that?
+    {$name}: Um, the yelling and running? I was trying to make you think I’m being sloppy… that obviously didn’t work out too well…
+    {$sakazuki}: I see. It’s a good attempt. I was surprised to see that you were trying to trick me, but your attack was predictable enough to be countered.
+    {$name}: I see...
+    {$sakazuki}: You can always train a bit harder, try to develop twists of the basic forms. If you do well, when I have free time, I can spar with you again.
+    {$name}: Thank you, Sir.
+There’s a brief moment of awkward silence. The training reminds you of something you have been pretty curious about, though. Perhaps Fleet Admiral Sakazuki will answer you this time.
+{$name}: Sir? I, um, I heard about the Punk Hazard fight… I couldn’t imagine– is it… is it alright if I ask you something?
+{$sakazuki}: ...
+Fleet Admiral Sakazuki seems closed off. You wonder if you have angered him.
+{$sakazuki}: I don’t want to answer any questions about Punk Hazard.
+{$name}: A-Ah, no! Not about Punk Hazard, but about Admiral Aokiji and you, in general? I heard you guys were cadets together.
+{$sakazuki}: We were.
+You struggle with your question for a moment, unsure if you should even ask it.
+Luckily, Fleet Admiral Sakazuki has made that choice for you.
+{$sakazuki}: You are still curious. Ask… I can’t promise I’ll answer everything, but I will answer what I can… as long as it’s asked in good faith.
+You take a deep breath. Well, since the Fleet Admiral has invited you…
+-> Are you still friends? You and Admiral Aokiji, I mean?
+    There’s a long, deafening pause.
+    {$sakazuki}: … Are we still friends, I wonder.
+    {$sakazuki}: I don’t think so. I don’t think he has considered me his friend for a long time.
+    {$sakazuki}: It’s peculiar. I do remember spending time with him and Borsalino outside of work, as Admirals, not even that long ago. My memories might be playing tricks on me though.
+    {$name}: And you… do you still consider him your friend?
+    {$sakazuki}: … I… don’t think it matters what I consider him. Friends or foes, I think our differences have grown too vast.
+    -> For what it’s worth, I think Admiral Aokiji probably feels the loss, too. <<set sd3_points +=2>>
+        {$sakazuki}: ...
+        {$sakazuki}: It doesn’t matter. We have always been too different.
+        {$name}: I’d argue maybe you are too similar.
+        {$sakazuki}: ... [smile] Hm.
+        {$sakazuki}: [smile] Perhaps that, too.
+        {$sakazuki}: Similar or different, what’s gone is gone.
+    -> I hope someday you can reconcile. <<set sd3_points +=1>>
+        {$sakazuki}: I’m skeptical that’ll ever happen. Perhaps when the sea is free of conflict.
+        {$name}: Sir, the seas will never be free of conflict. Even if the New Pirate Age is over. Something new will happen, and something after that, and then more bad things… 
+        {$sakazuki}: Then that’s just too bad, isn’t it?
+        {$sakazuki}: I do appreciate your well wishes, though. Perhaps, if he changes his opinion one day.
+        {$name}: Or you yours.
+        {$sakazuki}: … That, too, I suppose.
+    -> Yeah, for real. If my friend burned my leg off, I’d never forgive them. <<set sd3_points -=2>>
+        Fleet Admiral Sakazuki flinches. You think he looks pained for a moment.
+        {$sakazuki}: I didn’t leave the battle unscathed, either.
+        {$name}: Oh, I didn’t mean–
+        {$sakazuki}: I’m not looking for your pity. But we were both scarred by it, equally. He wasn’t my punching bag and he didn’t hold back, either.
+        {$sakazuki}: It was a fight both of us had to have.
+        {$name}: I’m sorry, Sir, I didn’t mean–
+        {$sakazuki}: Forget it.
+-> Do you regret it? Having such a big fight with him?
+    {$sakazuki}: No.
+    {$name}: …
+    {$sakazuki}: I suppose, to elaborate, I lament on its loss, but there’s no regret.
+    {$name}: Really?
+    {$sakazuki}: Yes.
+    {$name}: Have you ever regretted anything at all, then?
+    {$sakazuki}: I’m only human. I have regrets, everyone does. But I don’t have any regrets about some of the heavy decisions I have made.
+    {$name}: Even if… even if those choices led to heavy losses?
+    {$sakazuki}: Yes. I would sacrifice my whole life for Justice if that were what was needed of me.
+    {$sakazuki}: Making choices and suffering losses, friendships, or respect, being feared, being hated… they are all prices I’ve paid ever since I decided to become a Marine.
+    -> I respect that but I don’t think I agree. <<set sd3_points +=2>>
+        {$sakazuki}: What do you mean?
+        {$name}: You said you would sacrifice many things for Justice. But how do you know you are always true? What if your ideals lead you astray? What if someone tricks you?
+        {$name}: If you keep sacrificing everything, eventually, there’ll be no one left to tell you when you are going down the wrong path. No one to stop you.
+        {$name}: I understand sacrifices. But I understand making mistakes and needing someone to tell you you are wrong, too.
+        {$sakazuki}: Interesting viewpoint. I don’t know if I agree, but I can see where you are coming from.
+    -> Everything for your Justice, isn’t that right? <<set sd3_points +=1>>
+        {$sakazuki}: Yes. I take my oath seriously.
+        {$name}: I hope I’ll never have to make that kind of choice. But…
+        {$name}: But if I was ever in a situation where a choice had to be made, I hope I make the right one.
+        {$sakazuki}: When that moment arrives, remember the Justice on your back means something.
+        You aren’t sure if that Justice is supposed to mean loneliness or not. But you don’t dare ask. You pray you never have to find out.
+    -> Those are steep. I don’t know if I can pay them. <<set sd3_points -=2>>
+        {$sakazuki}: Not many can or are willing. But we are protecting something bigger than ourselves.
+        {$sakazuki}: I think the price is worth paying.
+        {$name}: For a life of loneliness and being hated, Sir? I would rather have a cushy life. Maybe do simple administrative work with low risk.
+        {$sakazuki}: Then being a Marine isn’t for you.
+-> Can you tell me a story about you and Admiral Aokiji? Like a mission when you were younger or something like that.
+    {$sakazuki}: There’s one, but…
+    {$name}: Really?! Sir! Please tell me! I’d love to hear!
+    {$sakazuki}: Alright, alright… settle down.
+    {$sakazuki}: It was a complicated mission with a lot of moving parts. We were supposed to ambush this big pirate crew that was making a menace out of themselves on an island.
+    {$sakazuki}: I was assigned a mission, to deal with any pirates outside of the island and capture as many as possible. I finished my part and…
+    {$sakazuki}: [embarrassed] And I got impatient. I couldn’t stand not doing something, so I just had to go and check on the island to help with capturing pirates.
+    {$sakazuki}: That idiot Kuzan was assigned to infiltrate the pirate camp as a hopeful pirate-to-be and I didn’t know. I thought he betrayed the Navy. I was furious and… well, that wasn’t pretty.
+    {$name}: Wow, so what happened?
+    {$sakazuki}: The short version, there was a lot of… collateral damage. Our teacher was furious with me… it wasn't my best moment.
+    -> It happens, sir. I make mistakes, too. <<set sd3_points +=1>>
+        {$sakazuki}: You are kind.
+        {$name}: I think the important thing is that you learn from it.
+        {$name}: Did you learn from it?
+        {$sakazuki}: I suppose I did. I used to be a lot more rash in my youth.
+        {$name}: Then it’s all good. Thank you for sharing your story with me, Sir!
+    -> That sounds like a mess. I hope the pirates were arrested at least.
+        {$sakazuki}: They were. None escaped, thankfully. Although… there was damage done to the island and its ports…
+        {$name}: Oh. At least the pirates terrorizing the place were no more. That’s the most important.
+        {$sakazuki}: Indeed.
+    -> Served you right! You should’ve had more faith in Admiral Aokiji! <<set sd3_points -=1>>
+        {$sakazuki}: As I said, it wasn’t one of my best moments. I thought he had betrayed our oath.
+        {$name}: Did you ever apologize to him?
+        {$sakazuki}: Hm.
+        {$name}: Sir, I’d have been furious if I were in Admiral Aokiji’s shoes. Shame on you!
+        {$sakazuki}: <pause> ...
+        {$sakazuki}: I have satisfied your curiosity. I hope that’s all for now.
+<<jump date_sakazuki_3_After_Cleanup>>
+===
+
+title: date_sakazuki_3_After_Cleanup
+location: training grounds
+---
+
+The conversation naturally trails off into silence when Fleet Admiral Sakazuki begins his cooldown stretches. You try your best to follow his lead.
+The Fleet Admiral’s heart isn’t in the cooldown completely, though. He’s observing the training field with a thoughtful frown. You follow his eyes, trying to see what he’s looking at.
+The field looks just like it normally does, with a few weights scattered around, some pieces of trash here and there. Nothing unusual jumps out at you immediately.
+{$name}: Sir? What are you looking at?
+{$sakazuki}: The field is a mess. No one ever takes the time to return it to its original state.
+{$name}: I… guess so. But there’s always a janitor cleaning up the training yard every morning, isn’t there? I guess that’s why people don’t make a habit of picking up their things.
+{$sakazuki}: There isn’t one.
+Now you are confused.
+{$name}: What do you mean there isn’t one, Sir? This particular training yard is always pristine whenever we train in the morn— oh.
+You bite your tongue as realization hits you. Fleet Admiral Sakazuki has started picking up the scattered weights and putting them back in their proper places. He gives you a look, but doesn’t ask for your help.
+Well, now it’s awkward. Now you have a choice to help or not…
+You decide that…
+-> It’s none of your business. Nobody asked Fleet Admiral Sakazuki to do it either.
+    Hoping that Fleet Admiral Sakazuki won’t just order you to work, you slink off to a corner out of sight, sitting down on a bench to relax. After all that training, everything aches!
+    Fleet Admiral Sakazuki glances your direction, but doesn’t force you to help, content to be doing all the work himself. Weird! Who wants to voluntarily do chores anyway! 
+    => Go to the appropriate ending depending on the total scores //HOW DO??
+-> Of course you should help! It’s the right thing to do. <<set sd3_points +=1>>
+    {$name}: Sir, please let me help you! Tell me what I can do.
+    {$sakazuki}:... Alright.
+    {$sakazuki}: Pick up the trash while I return the training weights back to their proper place.
+    {$name}: Yes, Sir, I’m on it!
+    You start with your task. The silence between the two of you stretches out, but it’s not uncomfortable. You wonder if Fleet Admiral Sakazuki does this every day. That takes some true dedication! 
+    => Go to the appropriate ending depending on the total scores //HOW DO??    
+===
+
+title: date_sakazuki_3_best_end
+location: training grounds
+---
+
+Time flies by when you enjoy yourself. You didn’t even notice how far the sun had risen until Fleet Admiral Sakazuki dusted off his hands, throwing away the last bit of trash on the training field.
+{$sakazuki}: That should be adequately clean for later drills now.
+{$sakazuki}: There is still some time left. You should go take a shower and get some breakfast before work, {$name}. I won’t have my soldier fainting because they don’t have proper nutrition.
+{$name}: That’s a great idea, Sir! I’m starving!
+{$name}: Um… would you like to join me?
+{$sakazuki}: Hmm. Not this time, but thank you for the offer, {$name}. I unfortunately have other business to take care of.
+You try not to feel too disappointed. The Fleet Admiral is busy with a lot of extra work.
+Remembering the conversation you had earlier, you hesitate.
+{$name}: … Sir?
+{$sakazuki}: Yes?
+{$name}: Do you consider us… friends?
+{$sakazuki}: ...
+{$name}: Nevermind! Foolish question! I’m sorry, Sir.
+{$sakazuki}: Calm down, {$name}. I’m just surprised and… considering your words.
+{$sakazuki}: I suppose… we are friends.
+{$name}: Oh…!
+{$sakazuki}: But enough about that, I need to go. I’ll see you at work later, {$name}.
+{$name}: See you later, Sir. And I think we’re friends, too!
+{$sakazuki}:... Good to know.
+===
+
+title: date_sakazuki_3_neutral_end
+location: training grounds
+---
+
+Time passes quickly. You grow aware of your empty stomach before long. Fighting down an embarrassed flush when it growls yet again, you sneak a look at Fleet Admiral Sakazuki.
+{$sakazuki}: This is as good of a job as it’s going to get, I suppose. You should go get some breakfast, {$name}. I can’t have people fainting on the job.
+{$name}: Ah… sorry about that, Sir. I’m not used to such a workout in the morning.
+{$sakazuki}: Hm, I see. Keep up with your training and your stamina should improve.
+{$name}: I will, Sir! And… <pause> about the conversation earlier…
+{$sakazuki}: … Yes?
+{$name}: Do you consider us friends?
+{$sakazuki}: … Hm… As we stand right now? Perhaps not yet. Ask me again in the future.
+{$name}: Yes, Sir! I mean, no, Sir! I mean, sorry for asking, Sir!
+{$sakazuki}: [smile] It’s fine. Get breakfast, {$name}. I expect you to be in the office on time.
+{$name}: I will!
+===
+
+title: date_sakazuki_3_worst_ending
+location: training grounds
+---
+
+Time drags on between awkward stretches of silence and stifled conversations. You want to sneak away, but you can’t find a good opportunity to do it.
+After what feels like a lifetime, the Fleet Admiral seems to be satisfied with the condition of the training ground.
+{$sakazuki}: This should work. I have done the best I can. We should leave, {$name}.
+{$name}: Yes, Sir…
+{$sakazuki}: Something’s on your mind?
+{$name}: Ah, just that… do you think we are friends, sir?
+{$sakazuki}: No. We are professional colleagues.
+{$name}: Oh. Oh well.
+{$sakazuki}: Get some breakfast, {$name}. I’ll see you at work.
+{$name}:  Okay, Sir. Goodbye…
+===

@@ -74,7 +74,7 @@ The three of you enter a room to the right with a barely-legible, rusted old pla
 Belle-mère: This is going to take all day.
 You all begin to sort the boxes into piles, though it feels fairly hopeless. There are labels on most of them, though the format of the labeling procedure seemed to change through the years. Older boxes have dates and names on yellowed stickers, but it appears that starting about eight years ago someone lazy decided to just mark the year.
 There is no order to the mess, so it seems you'll all just have to check the boxes out one after another.
-`name`: Did the file say what year the guy was taken in?
+{$name}: Did the file say what year the guy was taken in?
 Smoker: Two years ago.
 Bellemere: Then we just need to bring up everything with that year on it. I'm sure Rear Admiral Hina can sniff out the right stuff once we actually get it to her.
 Smoker: Let's split the room into chunks, then.
@@ -155,7 +155,7 @@ Guess you're done with this side!
 title: workday_smokers_and_friend_2_B
 ---
 Smoker: Another one with attitude, huh? Making excuses for yourself is a bad look. (-1 Smoker)
-Bellemere: Don't look at me! I'm not helping you with the paperwork on this one, `name`! You'll have to report this one on your own.
+Bellemere: Don't look at me! I'm not helping you with the paperwork on this one, {$name}! You'll have to report this one on your own.
 Smoker: Looks like a lot of boxes are destroyed. Damn.
 You feel kind of bad... what if something important was inside? Maybe you could have been more careful... though you're pride doesn't allow you to admit that [i]now[/i]!
 Guess you're done with this side!

@@ -228,10 +228,10 @@ title: date_borsalino_2_route2_pirates
         <<jump date_borsalino_2_route2_cute>>
 -Pick a Warlord of the Sea.
     {$borsalino}: Oh... yes, there might be updates to be made... Their status and our alliances seem to always be shifting...
-    -> 'name': I'll do that.
+    -> {$name}: I'll do that.
         {$borsalino}: Thank you, 'name'.
         <<jump date_borsalino_2_route2_cute>>
-    -> 'name': Don't you think it's strange to be allied with pirates? (+)
+    -> {$name}: Don't you think it's strange to be allied with pirates? (+)
         <<jump date_borsalino_2_route2_vega>>
 -Pick a Yonko. (+)
     {$borsalino}: Oh, thinking big, hmm...?

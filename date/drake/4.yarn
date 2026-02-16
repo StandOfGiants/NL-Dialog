@@ -1,0 +1,398 @@
+title: date_drake_4_start
+location: office
+---
+
+You arrive fashionably early to Drake’s office, ready to use the last minutes before he appears to mentally prepare for the worst. The last time you were here, he had you sorting paperwork…
+At the very least, it had been balmy then, both inside and out. Now midwinter, there’s hardly any place on base that doesn’t send chills down your spine.
+Occasionally, another Marine hurries down the hall, in a rush for whatever has their attention. Sighing, you check a clock mounted on the wall…
+…huh. That’s odd. He specifically asked for you and you’ve never known him to be anything but brutally punctual. Drake should be here by now. You can’t imagine him leaving anyone waiting without a good reason, so you give him another five minutes. Maybe it’s his turn for some behind-the-scenes hijinks.
+…
+Time passes with excruciating slowness and spare for the quiet echo of the clock ticking, the hall is largely silent. But you’ve spent plenty of time running drills and standing at attention for inspection—this is nothing in the long run.
+But after five minutes have passed, Drake still hasn’t shown up and you’re not sure what to make of it….
+You look down one end of the hall. If you strain your ears, you hear faint distant bleating and the voice of someone howling in duress, likely over the loss of important paperwork, and you find solace in that it’s not your problem. Still not Drake.
+Glancing down the other end of the hall, you see a few people shuffling around with boxes. It feels a little reminiscent of your first day with the team. No Drake there either.
+-> Ask one of them if they’ve seen Drake. 
+    <<jump date_drake_4_ask_for_drake>>
+-> Give up and leave. 
+    <<jump date_drake_4_no_drake_end>>
+===
+
+title: date_drake_4_ask_for_drake
+location: office
+---
+
+You call out to the group.
+{$name}: Hey! Have you seen Rear Admiral Diez anywhere?
+Grunt: A little earlier, yeah, but not recently. About ten minutes ago, I passed by the marina and heard him having a fit, flipping over crates and stuff. 
+-> Did he say what was wrong?
+-> Maybe someone misfiled a shipping manifesto? 
+-> (if had Sora conversation in date 2) Did someone try to convince him Winch Green was the best Sora character? //HOW DO??
+Grunt: Do I look dumb enough to get in the way of a guy who can bite me in half? 
+Grunt: Anyway, I think I heard him yelling for a woman. I don’t remember her name, but he was really whipped up about it. I wasn’t going to stick around to see what he planned to do when he found her.
+Unsure what to make of the information, you return to your post. Drake is way serious about his work and he's a little stuffy, but he’s not cruel. Something in the grunt’s story feels off.
+do show_character("drake", Show) //HOW DO??
+Soon enough, Drake shows, hurrying along briskly. Wearing the most distressed expression you’ve seen on him, he clutches his coat tightly around him—which is odd, because you’ve never seen him complain about the cold before, even during the winter training lecture. 
+It looks a little like he’s shielding something in his coat…
+-> You’re late. That’s a first!
+    Drake: I had an unforeseen derailment. 
+-> Are you smuggling in take-out under that coat?
+    Drake: Unfortunately no.
+-> Did you ditch me for someone?
+    Drake: It’s not that at all!
+Drake frowns, clearly uncomfortable as he glances back over his shoulder. 
+Drake: Our plans will have to be rescheduled. This is…it’s a little complicated.
+His scowls softens as he glances down. Tentatively, you step in closer, and slowly he pulls back on his coat to reveal—
+HOLY SHIT, THAT’S A BIG LIZARD. [bold shaking boom text] //HOW DO??
+You spy a long neck and narrow head laid against the breast pocket of his jacket beneath. The giant lizard in his coat is otherwise largely hidden, but you figure it’s got to be at least four, maybe five feet by the length of the tail hanging loose.
+Well…that’s certainly shaped like a reason to be late. You think.
+-> Someone said you were looking for a woman. Is that, uh…is she a zoan too?
+    Drake: N-no!. It’s nothing like that! 
+-> …you’re sure that’s not allosaurus take-out? <<declare dd4_points -=1>>
+    Drake: Absolutely not. That’s beyond offensive—!
+-> BIG.
+    Drake: They generally are–?
+-> I thought you said you didn’t want an office lizard! [if 3BPart2 was chosen in date1] //HOW DO??
+    Drake: She’s not an office lizard!
+Surprised by his own volume, he reins himself into a whisper.
+Drake: Her name is Jessica. She’s a monitor lizard and for the most part, lives on my ship. Or she has these past two years. Gods, this is a disaster… Any other time of the year would have been fine but—
+-> Woah, take a deep breath. Start slow…
+-> Dude, chill. It’s just a lizard. Why are you so worked up? <<set dd4_points -=1>>
+Drake tucks her tail back in and bundles her back up. As the volume from the group down the hall spikes, his posture tenses, defensive. He takes a deep breath to compose himself and tries again.
+Drake: She bucked open her enclosure door and bolted past me on my way out to meet you. I chased her all the way down to the marina—likely homesick for the ship. It took longer than I expected to grab her.
+Drake: She also doesn’t have the luxury of being warm-blooded. Some reptiles native to winter islands or ones with actual seasons can go into a state akin to hibernation in colder climes. But more tropical ones that don’t have that ability. A shock too cold can kill them.
+-> No wonder you were panicking!
+-> What do we do??
+Drake: I would have rushed her back, but with the weather the way it is and how long she’s been out in it… Though loathe to admit it, I’m in desperate need of assistance. 
+<<jump date_drake_4_first_choice>>
+===
+
+title: date_drake_4_first_choice
+location: office
+---
+
+{$name}: And you picked me??
+Drake: As you’re likely aware, with exceedingly few exceptions, we aren’t allowed to keep animals. You were the nearest person I consider trustworthy.
+-> Name it. What do you need? <<set dd4_points +=1>>
+    <<jump date_drake_4_help_jess>>
+-> I don’t know about this…
+    Drake: I understand having reservations when rules are being sidestepped, but time is not something on my, or her side right now. Please.
+    {$name}: I want all the deets first.
+    <<jump date_drake_4_explain_jess>>
+-> Well… it’s an animal in need, scales or not. Yeah, let me help. 
+    <<jump date_drake_4_help_jess>>
+-> I’ll help, but I want a full explanation. 
+    <<jump date_drake_4_explain_jess>>
+===
+
+title: date_drake_4_explain_jess
+location: office
+---
+
+Drake: From a technical standpoint, she isn’t a pet. I found her crated after a raid on a smuggling ship. The whole thing was stuffed to the brim with exotic animals.
+-> Were they all okay? <<set dd4_points +=1>>
+    Drake: As far as I could tell, all were still in prime health. It was lucky we found them when we did. The hold of the ship was less than sanitary.
+-> What did you do with them all?
+    Drake: Thankfully we were able to surrender most to the nearest island to parties that could care for them properly. 
+Drake: Unfortunately, not all the stock of reptiles was native. The idea of handing those over to local authorities, only to be released as an invasive species, killed as a misplaced mercy, or harmed accidentally through unintentional mistreatment sat poorly with me.
+Drake: I’d like to release her someday, but again, finding an appropriate place or person is extremely difficult… 
+-> So, not the right thing by the books, but ethically… <<set dd4_points +=1>>
+    Drake: Thank you for understanding. So will you…?
+-> Why go that far?
+    Drake: Animal or human—we should offer respect and care where we can. I had the means, so I committed. Will that suffice?
+-> Yeah It makes sense. Let’s do this. 
+    <<jump date_drake_4_help_jess>>
+-> It still feels like an excuse, but let’s go. <<set dd4_points -=1>> 
+    <<jump date_drake_4_help_jess>>
+===
+
+title: date_drake_4_help_jess
+location: office
+---
+
+Drake: Thank you. I need to get her someplace warmer as soon as possible. Ideally, I’d rush back to my own, but with the path I cut chasing her… 
+He turns an interesting shade of pink and clears his throat with a cough.
+Drake: Your dormitory is nearby—closer than my apartment, is it not?
+Officer housing is… 
+…to hell with it. You have no idea where he sleeps if he hasn’t overworked himself, slumped over a desk.
+{$name}: I think it is!
+-> That’s also the wildest way to ask yourself in, but I’ll take it.
+    Drake: I-I meant nothing by– Nevermind.
+-> Gimme ten minutes after this and I'll get you your own key.
+    Drake: T-that won’t be necessary.
+Together, you both rush out into the cold in a brisk hustle…
+Reaching your dormitory building, you hurry inside. He drops back, falling in step behind you. Unlocking your door, you swing it open to let him in, and quietly shut it behind you both.
+do show_character("drake", Show) //HOW DO??
+do set_background("bedroom") //HOW DO?
+Drake: Alright, then. We’ll need anything that can generate heat.
+You think for a second. 
+{$name}: I’ve got—
+-> —an electric blanket! 
+    <<jump date_drake_4_blanket>>
+-> —so, so much body heat.
+    Drake’s earlier flush turns positively vibrant.
+    Drake: While passible in a last-ditch scenario, you don’t have anything more—
+    -> Gesture broadly to the monitor lizard and stare at him aggressively.
+        {$name}: Isn’t time an important factor here??
+    -> You should have asked me sooner! Take it or leave it!
+    Drake makes an extremely interesting noise that feels almost a bit too high-pitched for his massive frame, but cornered, he relents. 
+    <<jump date_drake_4_body>>
+===
+
+title: date_drake_4_blanket
+location: quarters
+---
+
+Apparently, it’s extremely easy to turn your bedroom into a makeshift reptile ICU, as Drake demonstrates. Plugging the blanket in, Drake drapes a towel across it to muffle the heat. Atop that, he fills the bottom of a large plastic tub (—with your once-stored summer uniforms and lid neatly cast aside) with shallow water.
+Gently unwrapping the monitor, after he eases her in, Drake crumples, folding on himself to sit beside it in vigil to make sure her head stays above the water level. However, now that she’s in, signs of wear and stress creep out into his features. 
+…for such a tall man, suddenly he seems so small.
+Drake: Ideally, a temperature-controlled incubator would ensure she warms up slowly. If done too quickly, you can cause tissue damage. But set on a middling temperature…this should work.
+-> Even done for the right reasons, I’m still surprised you’ve got a naughty streak. 
+    <<jump date_drake_4_rulebreaking>>
+-> For the record, you pulled that together impressively fast.  
+    <<jump date_drake_4_oopsallanxiety>>
+===
+
+title: date_drake_4_rulebreaking
+location: quarters
+---
+
+Drake: In my position, I’ve been granted a lot of freedom to act as I see fit. I like to think the things I do are well within the rules, but…
+-> Do you think you overstep? 
+    Drake: Sometimes it’s necessary to bend the rules to do good. —to do better than you could otherwise. 
+    Drake: It’s a tricky path to navigate though. Too many good people let freedom uncouple their judgment and their vices lead them astray. 
+    <<jump date_drake_4_RB2_2>>
+-> You’re a Rear Admiral though. Why the secrecy? 
+    Drake: It’s hypocritical, I admit. I could try and steamroll things to get my way, but the rules are in place for a reason. I’d rather maintain what works for the collective than invite chaos just because I can take the added responsibility. 
+    <<jump date_drake_4_RB2_3>>
+===
+
+title: date_drake_4_RB2_2
+location: quarters
+---
+
+{$name}: Dude, Helmeppo would have such BEEF with you if he knew you were keeping an animal when he can’t.
+Drake: Hence, it’s something I've been trying to keep as quiet as possible.
+-> Because you don't want to rub it in? <<set dd4_points +=1>>
+    Drake: Precisely. I never took her as a pet. The last thing I want is for him to misunderstand that. 
+    <<jump date_drake_4_postcare1>>
+-> Is it so he doesn’t rat you out? <<set dd4_points -=1>>
+    Drake: Despite any shortcomings, I sincerely doubt he’s that petty. Still, we work within the same team and I’d rather there be as little friction between us as possible. 
+    <<jump date_drake_4_postcare1>>
+===
+
+title: date_drake_4_RB2_3
+location: quarters
+---
+
+-> Would it really shake things up that much?
+-> I don’t really subscribe to the “slippery slope” mentality.
+Drake: The further you push, the more likely upheaval becomes. Can you imagine a base— or worse, an enclosed ship where everyone can keep a creature of choice?
+-> Good point. <<set dd4_points +=1>>
+-> It could be fun! <<set dd4_points -=1>>
+Drake: Then consider people, untrained and understudied, trying to care for animals they know little about the needs of. Not everyone is as zealously fixated on niche animal study as I am.
+-> {$name}: Okay, maybe I see what you mean... 
+    <<jump date_drake_4_postcare1>>
+-> {$name}: Oh, that’s a mess waiting to happen... 
+    <<jump date_drake_4_postcare1>>
+===
+
+title: date_drake_4_oopsallanxiety
+location: quarters
+---
+
+{$name}: How did you figure out what to do?
+Drake deflates even more and attempts to smile.
+Drake: To be entirely too frank…through lots of preemptive research and even more overthinking.
+-> Does it ever help you more than it exhausts you?
+    {$name}: Because you look like garbage.
+    Drake: Concern will do that. But…
+    He gestures to the warming tank now resting on your floor.
+    Drake: It helped today. I think it’s worth it.
+-> You’re gonna give yourself gray hair like that.
+    Drake: The color of my hair is the least of my concerns.
+    {$name}: But with gray hair and boobs-out every time you go out to sea, someone’s gonna mistake you for Vice Admiral Smoker.
+    Drake makes an extremely unflattering face, sputtering quietly. In her makeshift tank, Jessica hisses softly with a flick of her tail.
+    Drake: No–don’t you dare agree with them!
+	-> {$name}: You can speak lizard??
+	-> {$name}: Did she say something??
+	Drake: Not exactly, but one learns the tells of an animal the longer they know them and unfortunately she’s a lot sharper than she looks.
+As you watch him on the floor, he still looks miserable. You wonder if you can help him take his mind off things.
+{$name}: So long as we’re here…
+-> Tell me more about your comics? (if had Sora conversation in date 2) //HOW DO??
+    Drake: …Even if it means half an hour of ranting about mischaracterization in the lattermost half of the recent reboots, and the about the awful movie they put out over a decade ago?
+    {$name}: Did I stutter?
+-> There’s gotta be more cool stuff to tell about being a dinosaur.
+    Drake: You just want to hear about the time I swallowed a man as a cadet. I know you’ve heard the rumor.
+	-> Well if I didn’t, I DO NOW.
+	-> YOU ATE A DUDE?
+	    Drake: For the record, I spit him back up!
+-> Can you tell me how leather became your big thing undercover?
+    Drake: It was pure pragmatism, I assure you. 
+	-> Was it though?
+	    Drake: It was!
+	-> How many folks thought you were a stripper the first year?
+	    Drake: …too many.
+The rough start is enough to boost his confidence. With a small stammer, he pulls himself together, launching into a lecture.
+The more he continues, though a slow transition, the more he relaxes. He’s never so open about things he likes. Does he think he can’t speak freely, or does no one else ask…?
+Eventually, he winds down.
+-> How will we know when everything’s okay?
+-> This isn’t going to take all day, is it? <<set dd4_points -=1>>
+Drake: It takes as long as it takes, come what may.
+<<jump date_drake_4_postcare1>>
+===
+
+title: date_drake_4_body
+location: quarters
+---
+
+Care for his would-be ward takes precedence over his embarrassment.
+Toeing out of his dress shoes, Drake takes a seat on your bed, and with some wiggling, stretches out as far to the side as he can manage. In the middle, he carefully unwraps the monitor from his coat. Removing his jacket, he drapes it over all but her head, then beckons you in close.
+Drake: Don’t tell me you’re getting shy now. Come on.
+It’s a little too much—both harrowing for the situation of the animal in his care and thrilling for the fact that he’s in your room. On your bed.
+…But his feet stick off the edge and once you notice, you find it difficult not to smile. A giant man with cockatoo hair and a closet full of leather wants you to cuddle a lizard longer than some folks are tall.
+But ready to help (and not minding the disappearing space between you), you take a place on the other side of the monitor. Coaxing you in nearly close enough to touch her, he drapes his long dress coat over the three of you, creating a tent with your bodies.
+Jessica regards you with a suspicious eye, but offers no resistance outside of a fussy and sluggish wriggle when pressed between you.
+After a few minutes, with Jessica almost entirely hidden in his coat and made more comfortable by the slowly building warmth between you, you tuck your head down to examine the worryingly chilled animal between your bodies.
+-> You okay in there, girl?
+-> Can you gimme a sitrep, Godzilla?
+The monitor’s long tongue flicks out and the split at the end tickles your nose. Outside of that, she remains still. Whether she’s choosing to behave or is simply that unwell remains a mystery.
+Drake: With diligence, she should be fine. I hope.
+-> If she’s anything like you, she’ll be fine. <<set dd4_points +=1>>
+    Drake: Anything like me?
+    {$name}: Tough as shoe leather and about as much of a pain in the ass as any boot planted there.
+    Abruptly, Drake snorts, trying and failing to keep from laughing. Between you, Jessica narrows her eyes toward his outburst.
+-> Not exactly where I saw my day going, but I definitely don’t mind the change of scenery. <<set dd4_points +=1>>
+    Drake blushes and clears his throat so strongly it vibrates in his chest. Jessica peers up, dark eyes narrowing at the tremor.
+Drake: I–sorry. I wasn’t expecting that.
+Outside of sparring, you’re unsure you’ve ever been this close—or you have, though not long enough to get a truly good look at the man. His chin’s about as big as the stoic streak he seems so fond of carrying, and the scars sliced across it feel less imposing at this distance. A bit rumpled from his panicked search, strands of red hair fall loose from his usual crest. It’s cute.
+There’s something strange about his eyes though… They’re not their usual color, or so you think.
+-> Did you start wearing contacts?
+    Drake: Excuse me?
+-> I thought you had blue eyes. <<set dd4_points +=1>>
+    He blushes briefly, clearly taken aback that you remember.
+    Drake: I do.
+A rush of realization hits him as he snaps to what you’re referencing.
+Drake: Oh. They’re eye caps.  
+-> So…contacts?
+-> Still drawing a blank.
+Drake: Zoan fruit don’t give an entirely one-to-one representation of any animals. No research suggests that allosaurus had a prehensile tail, and yet when I manifest mine it is.
+Drake: A less useful trait I gained is that as an allosaurus, my scales shed. It’s not all in one piece like a snake, but it’s itchy and awkward all the same. Eventually, no matter what form I'm in, it gets to my eyes. 
+-> Is that something dinosaurs dealt with?
+    Drake: We think so. Or, paleontologists do—for shedding in general, at least. But Zoan fruits have a long and storied history of disregarding the rules of reality and the facts of history. It might simply be my fixation on reptiles shining through.
+-> Did nobody warn you about this before you ate your fruit?
+    Drake: Outside their applications as tools of war, the navy spares little resources for research in things like it.
+It’s all more than a little weird, but it could be worse.
+…Oh no. You can’t stop thinking about how it could be weirder.
+-> Your shed skin… do you eat it?
+    Drake: No. 
+    Drake’s brows pinch in thought and he mutters something about geckos.
+    Drake: Thinking about it now, I wonder if… Hm.
+    He shakes the idea off.
+-> The next time you shed, can I have it?
+    Drake: …I’m going to forget I ever heard you say that.
+Drake: The point is, once they’re developed enough, a little humidity and lubricating eyedrops generally fix the problem.
+Drake: Currently I’ve still got some limited vision, so I’m not at a full disadvantage.
+-> Can you see when it gets worse? Isn’t that scary?
+    Drake: It can be trying, but my sense of smell is far stronger than a normal person's. It makes up well enough for the loss.
+-> Do you eat the scales?
+    Drake: W…what? No.
+    You could eat them.
+    …You need to think of something else than eating his old skin. 
+Rerouting, you fixate back on the one of you that needs genuine help.
+-> How will we know when everything’s okay?
+-> This isn’t going to take all day, is it? <<set dd4_points -=1>>
+Drake: It takes as long as it takes, come what may.
+<<jump date_drake_4_postcare2>>
+===
+
+title: date_drake_4_postcare1
+location: quarters
+---
+
+Though it takes some time, Jessica slowly begins to perk back up. Once Drake deems her suitably warm enough for the trip back, he carefully removes her from her temporary hottub and carefully pats her dry. The longer she’s handled, the more she starts to fidget.
+<<jump date_drake_4_wrap_up>>
+===
+
+title: date_drake_4_postcare2
+location: quarters
+---
+
+Though it takes some time, Jessica slowly begins to perk back up. It begins as an occasional shuffle, but soon enough she starts to try and claw her way out in earnest. You’re pretty sure she’s taken offense to your bedspread pattern.
+<<jump date_drake_4_wrap_up>>
+===
+
+title: date_drake_4_wrap_up
+location: quarters
+---
+
+Once assured of her general well-being via a lengthy poking and prodding, Drake finally concedes and allows her to crawl free.
+Of course, given an inch, Jessica takes a mile. With a moderate amount of coaxing from Drake to get her to stop trying to paw through your things, he manages to convince her that drinking water is more interesting than your laundry.
+It’s almost disappointing when she gives in. Watching him army crawl around your floor, chasing her with a water dish inch-by-inch had been hilarious. 
+Once she’s good and distracted, he takes a knee.
+-> Everything okay?
+    Drake: I think so.
+-> No more laps to run down there?
+    Drake: No, I think we’re about done.
+Drake: You know, I really can’t thank you enough, {$name}. You don’t know how much your help today has meant.
+-> Next time, maybe double-check her before you try and step out?
+    Drake: I will. It’s a lesson learned the hard way, believe me.
+-> Don’t sweat it. We’re Marines. We help those in need, right? <<set dd4_points +=1>>
+    Drake: That’s a good point. Keep carrying that with you and you’ll do a lot of good in the world. I believe it.
+-> It’s just a lizard. Not a big deal. <<set dd4_points -=1>>
+    Drake: Yes, well, tell that to her.
+    He lifts Jessica toward you and she opens her mouth, giving you a testing sniff, only to flick her tail in exasperation when set down again. 
+Drake: I really shouldn’t trouble you anymore. The sooner I get her back into her enclosure, the better.
+-> Just be careful, okay?
+-> I wouldn’t mind seeing her again in better weather. <<set dd4_points +=1>>
+    Drake: If I’m still here come spring… I think that could be arranged.
+-> I could walk you back. Could be less headache with your eyes like this. <<set dd4_points +=1>> [if you chose :: body] //HOW DO??
+    Drake: I’ve a much clearer head now, so the rest of my senses will do just fine. Thank you, though.
+On principle, Drake helps you tidy up. Afterward, once he’s swaddled her for the trip back, he heads off.
+<<jump date_drake_4_End>> //HOW DO?? Endings dependent on points
+===
+
+title: date_drake_4_End
+location: quarters
+---
+
+-> (Date end early) 
+    <<jump date_drake_4_no_drake_end>>
+-> (If PC had <1 points) 
+    <<jump date_drake_4_Zero_point_end>>
+-> (If PC had 2-3 points) 
+    <<jump date_drake_4_One_point_end>>
+-> (If PC had 4+ points) 
+    <<jump date_drake_4_Two_point_end>>
+
+//HOW DO?? ^^
+===
+
+title: date_drake_4_no_drake_end
+location: office
+---
+
+Well, you can say you tried. That he never even bothered to show up is his problem, though honestly, you’re a little disappointed. Still, you have better things to do with your time than wait on someone who won’t respect your time. Maybe you misjudged him?
+===
+
+title: date_drake_4_Zero_point_end
+location: quarters
+---
+
+He leaves with little else but a nod, and in his wake, you feel you could have been a little more sympathetic to his situation. At least your time spent could have been worse…?
+===
+
+title: date_drake_4_One_point_end
+location: quarters
+---
+
+…or tries. Drake pauses partway down the hall, turning to glance back your way. He smiles and briefly Jessica’s head pokes up from within his coat. Regarding you with a flick of her tongue, she tucks back in tightly to her caregiver before he excuses them both for good.
+Whether or not she’s learned her lesson remains a mystery, but you’re definitely left with the satisfaction of doing the right thing. <<set dd4_points +=1>>
+===
+
+title: date_drake_4_Two_point_end
+location: quarters
+---
+
+…or tries. Drake pauses partway down the hall, turning to glance back your way. He smiles a little bolder and brighter than before, and briefly, Jessica’s head pokes up from within his coat. Regarding you with a flick of her tongue, she tucks back in tightly to her caregiver, who nods to you in lieu of a deeper bow, before going for good.
+Whether or not she’s learned her lesson remains a mystery, but you’re definitely left with the satisfaction of doing the right thing. As well, you can’t help but think that the gap between you and Drake is steadily closing... <<set dd4_points +=2>>
+===

@@ -105,7 +105,7 @@ Smoker: See anything you like?
   Smoker: Yeah, there’s quite a few… things in here that I like.
   He doesn’t look at you as he says it, but the back of his hand brushes against yours. => Shop_flirt
 - {$name}: Not really.
-  Smoker: There must be something, `name`.
+  Smoker: There must be something, {$name}.
   - {$name}: Not yet. Hopefully we can change that and make something together.
   You throw him a wink and Smoker coughs. => Shop_flirt
 - {$name}: Maybe. Are any of these yours? => Shop_show
@@ -118,7 +118,7 @@ He nods at the top shelf, where a fine layer of dust coats just about everything
 - {$name}: They’re certainly… something.
   Smoker: No need to beat around the bush, I know they’re awful.
 - {$name}: It’s a shame for them to collect dust like that, they’re masterpieces! (-1)
-  Smoker: Damn, `name`, it’s just us here. No need for all this bootlicking.
+  Smoker: Damn, {$name}, it’s just us here. No need for all this bootlicking.
 - {$name}: They’ve got character, just like you. (+1)
   Smoker: Huh. I’ve never thought about it like that before.
 
@@ -209,7 +209,7 @@ Smoker: My only rule is, don’t make any mugs. I have enough to last me a lifet
     - {$name}: Keep it a secret. I’ll *make* you tell me when I win this competition!
       Smoker throws his head back in a laugh.
 - {$name}: I’d rather not… (-1)
-  Smoker: It’s just a friendly bet, `name`, just do your best.
+  Smoker: It’s just a friendly bet, {$name}, just do your best.
   There is a clear frown on his face, but a quick shake of his head wipes it right off before it can stay for long.
 
 
@@ -245,7 +245,7 @@ You quickly get to work, trying to get the power of the pedal back under your co
   You put your fingers on the twirling lump of clay, dragging them slowly up and down until you have the rough shape of a cylinder. Out of the corner of your eye, Smoker is watching you. As you catch him, he quickly looks away and clears his throat.
 - {$name}: **Press the pedal harder**
   Whoops, a bit of the clay dribbles over the edge of the pottery wheel, but with a whip-quick jerk of your palm, you manage to strike it into a semblance of an oblong shape.
-  Smoker: Whoa, quick reflexes you got there, `name`.
+  Smoker: Whoa, quick reflexes you got there, {$name}.
 - {$name}: **Sneak a glance at Smoker**
   He appears to be in deep concentration, the slightest pinch of his fingers against the clay dragging it into a shape that is somehow both delicate yet rough. You copy his moves, your hands working on autopilot.
 
@@ -296,7 +296,7 @@ He guides your hands up and down the length of the vase and then at one point, h
 - {$name}: I can do the rest myself. (-1) => Pottery_fail
 - {$name}: Huh, that was smooth. (+1)
   Smoker opens his mouth, but snaps it shut just as quickly. He leans in close to look at the finished clay sculpture. He hums, and a hand lands on your shoulder. It stays there.
-  Smoker: You did good, `name`. If I saw this in a store, I’d buy it in a heartbeat.
+  Smoker: You did good, {$name}. If I saw this in a store, I’d buy it in a heartbeat.
   You lean into his touch, both of you staring at what you have accomplished. You finished the &&vase&&!
   do get("P_fig")
 => Pottery_join
@@ -319,7 +319,7 @@ Okay, an Elephant Tuna, you can do this! The level of skill this requires is pro
 Your wet hands slip right off the sides of the clay lump, but you dig your fingers in with gusto, and slowly the dotted scales of an elephant tuna begin to emerge.
 Smoker: What in the four blues is that?
 - {$name}: An abstract interpretation of Bellemere’s tangerines! (-1)
-  Smoker: Hey, that’s your superior, `name`, watch it.
+  Smoker: Hey, that’s your superior, {$name}, watch it.
   Oops, looks like the joke didn’t land that well, it might be better to concentrate on the pottery for now. => Pottery_fail
 - {$name}: Take a guess.
   Smoker cocks his head and licks his lips. You follow it with your eyes, and blink back into consciousness just in time to catch his answer.
@@ -423,7 +423,7 @@ Smoker: You’re a lot better at this than I thought. A lapin is never anyone’
 :: Pottery_fail
 You can’t keep relying on Smoker. Some things are best done on your own, after all! Besides, this is a chance to impress him and you might as well do your best. You push your fingers into the clay but the entire thing ~wobbles~.
 - {$name}: **Press harder** (-1)
-  Smoker: `name`, what are you–?!
+  Smoker: {$name}, what are you–?!
   You grip the clay beneath your hand and squeeze as hard as you can. The clay squelches, and with a #pop# it disintegrates into a million tiny, slightly moist bits splattering everywhere.
 - {$name}: **Attempt to stabilize it**
   You whip your hand out as it spins on the pottery wheel, but your fingers only manage to graze the edges of it. In front of your eyes your precious clay sculpture shakes.
@@ -439,7 +439,7 @@ Smoker: So… I guess what you ended up going for was something abstract, huh?
   Even as you say it, your ears burn. It makes Smoker laugh, but it is clear that he doesn’t believe a word you’re saying. Gosh, what a disaster!
   do get("Ruined_fig")
 - {$name}: Pottery is a stupid hobby, anyway. (-1)
-  Smoker: Come on, one bad sculpture isn’t the end of the world, `name`. Though the term ‘sculpture’ might be a tad generous in this case.
+  Smoker: Come on, one bad sculpture isn’t the end of the world, {$name}. Though the term ‘sculpture’ might be a tad generous in this case.
   do get("Ruined_fig")
 - {$name}: I might need some tutoring. (+1)
   Smoker: If you promise not to fling clay near me again, I’ll think about it.
@@ -487,10 +487,10 @@ The two of you lock up shop, Smoker finally grabbing a new cigar and stuffing it
 (If the player got <0 points) => Zero_point_end
 
 :: Two_point_end
-Smoker: I don’t suppose you’d be up for making this a regular thing, would ya? You make for good company, `name`.
+Smoker: I don’t suppose you’d be up for making this a regular thing, would ya? You make for good company, {$name}.
 
 :: One_point_end
-Smoker: There’s definitely room for improvement, but you ain’t half bad, `name`. Let’s go again, sometime.
+Smoker: There’s definitely room for improvement, but you ain’t half bad, {$name}. Let’s go again, sometime.
 
 :: Zero_point_end
 Smoker: We probably shouldn’t do this again. I think you managed to get clay down the back of my coat *and* in my hair.
