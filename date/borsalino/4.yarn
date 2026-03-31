@@ -94,7 +94,7 @@ Oh, well.
 {$borsalino}: You look very nice…
 {$borsalino}: …Let’s go, shall we…?
 {If 3, 4 positives in the previous interaction} //HOW DO??
-{$borsalino}: Ah! ´Name´! You look radiant. It’s good that I have my sunglasses on.
+{$borsalino}: Ah! {$name}! You look radiant. It’s good that I have my sunglasses on.
 {$borsalino}: Let’s go, my dear~...
 You cling to his arm as he guides you downstairs, quite proud of his date.
 He will definitely boast about this at any chance he gets.

@@ -1,0 +1,164 @@
+
+title: Helmeppo_Gift_Hunt_intro
+location: town
+---
+
+What a lovely winter day — crisp blue skies, and the cadets have been hard at work clearing snow away from the streets (and the rooftops, too!). It feels great to wander the streets on your day off… until suddenly, you hear a lot of commotion coming from the central plaza.
+Rounding the corner, you see that the main thoroughfare is packed with people and merchant stalls hawking wares. What is all this? A banner overhead answers your question: END OF YEAR SELLOUT
+Oh. That’s right, the end of the year holidays are coming up… and New Years. A certain someone crosses your mind… will you perhaps achieve your goal of being kissed at midnight on New Years Eve? A woman rushes by with brightly colored wrapped gifts and something occurs to you. A gift. You should give them a gift! Can’t hurt, certainly (hopefully…)!
+And where else to search for a gift but here, at this conveniently timed market?
+First though, who the heck are you shopping for?
+-character selection- //HOW DO??
+<<jump Helmeppo_Gift_Hunt_SelectStall>>
+===
+
+title: Helmeppo_Gift_Hunt_SelectStall
+location: town
+---
+
+The best place to look for a gift would be…
+-> A book store 
+    <<jump Helmeppo_Gift_Hunt_BookStore>>
+-> A shop with soaps and other toiletries
+    <<jump Helmeppo_Gift_Hunt_SoapShop>>
+-> A stand full of weapons and tools 
+    <<jump Helmeppo_Gift_Hunt_WeaponShop>>
+===
+
+title: Helmeppo_Gift_Hunt_BookStore
+location: town
+---
+
+This stall has a rustic look, made of weathered wood and hung with old but well-cared-for tapestries, many of which are hidden by heaps of books. 
+Most of the books look kind of boring for your purposes, but there are three that catch your eye.
+-> A book about how to be a perfect officer.
+    This book is a manual written by someone who served as an admiral about sixty years ago. She’s writing about how she rose through the ranks and what it means to be a leader.
+    -> Ask the bookseller what it’s about.
+        Bookseller: That one has some good information but is a bit dry. If you’re dead set on climbing the ranks, it’s a good pick, but beyond that…
+        -> Buy the book. 
+            <<jump Helmeppo_Gift_Hunt_GoodGift>>
+        -> Look at something else. 
+            <<jump Helmeppo_Gift_Hunt_Bookstore>>
+    -> Buy the book.  
+        <<jump Helmeppo_Gift_Hunt_GoodGift>>
+    -> Look at something else. 
+        <<jump Helmeppo_Gift_Hunt_Bookstore>>
+-> A book about a boy who befriends a wolf.
+    It looks like an adventure story about a man who gets shipwrecked and makes friends with a wolf. 
+    -> Ask the bookseller what it’s about.
+        Bookseller: It’s a really good adventure, but the main character has to kill the wolf with his own hands at the end. It’s pretty graphic.
+        -> Buy the book. 
+            <<jump Helmeppo_Gift_Hunt_BadGift>>
+        -> Look at something else. 
+            <<jump Helmeppo_Gift_Hunt_Bookstore>>
+    -> Buy the book. 
+        <<jump Helmeppo_Gift_Hunt_BadGift>>
+    -> Look at something else. 
+        <<jump Helmeppo_Gift_Hunt_Bookstore>>
+-> A book about history.
+    It looks like a well researched tome on the history of the West Blue.
+    -> Ask the bookseller what it’s about.
+        Bookseller: That author gets a lot of detail into his books. It’s pretty interesting.
+        -> Buy the book. 
+            <<jump Helmeppo_Gift_Hunt_GoodGift>>
+        -> Look at something else. 
+            <<jump Helmeppo_Gift_Hunt_Bookstore>>
+    -> Buy the book. 
+        <<jump Helmeppo_Gift_Hunt_GoodGift>>
+    -> Look at something else. 
+        <<jump Helmeppo_Gift_Hunt_Bookstore>>
+-> Check another stall. 
+    <<jump Helmeppo_Gift_Hunt_SelectStall>>
+===
+
+title: Helmeppo_Gift_Hunt_SoapShop
+location: town
+---
+
+This shop smells good but also a bit overwhelming. It offers row upon row of creams and powders, but in the end, you narrow it down to three potential presents.
+-> A bottle of lotion.
+    The glass bottle is beautifully crafted, and the lotion within smells like a mix of vanilla and lilac, but a little spicier.
+    -> Ask the proprietor about the lotion.
+        Proprietor: This is one of our top sellers. The flowers only grow on a remote, frozen island in North Blue, and the scent is subtle but can even last through a day’s hard work.
+        -> Buy the lotion. 
+            <<jump Helmeppo_Gift_Hunt_GoodGift>>
+        -> Look at something else. 
+            <<jump Helmeppo_Gift_Hunt_SoapShop>>
+    -> Buy the lotion. 
+        <<jump Helmeppo_Gift_Hunt_GoodGift>>
+    -> Look at something else. 
+        <<jump Helmeppo_Gift_Hunt_SoapShop>>
+-> A jar of wrinkle cream.
+    It’s a small jar made of black glass with an unscented cream inside.
+    -> Ask the proprietor about the wrinkle cream.
+        Proprietor: That’s a great gift for anyone fighting the hands of time. It’s light, non-greasy and works almost like magic!
+        -> Buy the wrinkle cream. 
+            <<jump Helmeppo_Gift_Hunt_BadGift>>
+        -> Look at something else. 
+            <<jump Helmeppo_Gift_Hunt_SoapShop>>
+    -> Buy the wrinkle cream. 
+        <<jump Helmeppo_Gift_Hunt_BadGift>>
+    -> Look at something else. 
+        <<jump Helmeppo_Gift_Hunt_SoapShop>>
+-> A bar of handmade soap.
+    It’s light green and has a citrus-like scent. Each bar comes wrapped in waxed paper with a pretty design on it.
+    -> Ask the proprietor about the soap.
+        Proprietor: The artisan lives further up the Grand Line. A shop here at headquarters carries some of their more common soaps, but we never have enough of this one. It’s made with a rare undersea fruit. 
+        -> Buy the soap. 
+            <<jump Helmeppo_Gift_Hunt_PerfectGift>>
+        -> Look at something else. 
+            <<jump Helmeppo_Gift_Hunt_SoapShop>>
+    -> Buy the soap. 
+        <<jump Helmeppo_Gift_Hunt_PerfectGift>>
+    -> Look at something else. 
+        <<jump Helmeppo_Gift_Hunt_SoapShop>>
+-> Check another stall. 
+    <<jump Helmeppo_Gift_Hunt_SelectStall>>
+===
+
+title: Helmeppo_Gift_Hunt_WeaponShop
+location: town
+---
+
+A woman nods to you as you walk up. There are a variety of weapon types hanging on racks or collected in boxes, along with shelves of weapon-care items. You find a few interesting items.
+-> A hand axe.
+    It’s a light weapon, well balanced for throwing or swinging. The edge is razor sharp.
+    -> Buy the axe. 
+        <<jump Helmeppo_Gift_Hunt_BadGift>>
+    -> Look at something else. 
+        <<jump Helmeppo_Gift_Hunt_WeaponShop>>
+-> A cleaning kit for bladed weapons.
+    This item contains all the items anyone could need for maintaining the edge on a bladed weapon and keeping the steel clean and polished.
+    -> Buy the kit. 
+        <<jump Helmeppo_Gift_Hunt_GoodGift>>
+    -> Look at something else. 
+        <<jump Helmeppo_Gift_Hunt_WeaponShop>>
+-> A gun.
+    This gun is a step up from anything issued by the Marines as part of a typical loadout. It probably shoots straighter as well.
+    -> Buy the gun. 
+        <<jump Helmeppo_Gift_Hunt_BadGift>>
+    -> Look at something else. 
+        <<jump Helmeppo_Gift_Hunt_WeaponShop>>
+-> Check another stall. 
+    <<jump Helmeppo_Gift_Hunt_SelectStall>>
+===
+
+title: Helmeppo_Gift_Hunt_PerfectGift
+location: town
+---
+As you head back, you find yourself excited to give him this gift. You feel sure he’s going to love it. 
+==
+
+title: Helmeppo_Gift_Hunt_GoodGift
+location: town
+---
+
+While you might have been able to find something better if you spent longer at the market, you feel confident in what you’ve chosen.
+===
+
+title: Helmeppo_Gift_Hunt_BadGift
+location: town
+---
+
+As you leave the fair with your gift, you can’t help but feel uneasy. Will he really like this?
+===

@@ -1,0 +1,850 @@
+
+title: workday_coby_crew_4_Start
+location: park
+---
+
+Coby: Thanks for coming out to our winter troop training, everyone! Today we’ll be going over a few things that are important for survival and preparing for cold weather. And we’ll start with the most important…
+Drake: Surviving blizzards.
+Coby: Weatherproofing your ship!
+Helmeppo: Avoiding snow ghosts!
+Coby: …
+Coby: Um… What do you mean?
+Helmeppo: Obviously, you need to be prepared for snow ghosts, duh.
+Drake: Some of the blizzards out here on the Grand Line are worse than back in North Blue. They can strike at any moment.
+Coby: Well. {$name}, what do you think?
+-> We’re Marines, and we’re likely to be out at sea, so weatherproofing a ship would help us most, right? 
+    <<jump workday_coby_crew_4_Coby_training>>
+-> What was that about snow ghosts? 
+    <<jump workday_coby_crew_4_Helmeppo_training>>
+-> A blizzard sounds really scary… 
+    <<jump workday_coby_crew_4_Drake_training>>
+===
+
+title: workday_coby_crew_4_Coby_training
+location: park
+---
+
+Coby: Right. Alright everyone, listen carefully! Winter sailing can be incredibly dangerous, and with the Grand Line’s weather changing so frequently, it could be on you in an instant.
+-> Can it really happen so fast? <<declare wdcc4C_points +=1>>
+    Coby: Faster than you can believe!
+    -> I can believe some pretty fast things.
+        Coby: Just trust me. You’ll want to stay on top of the weather.
+    -> So noted.
+        Coby: Good. It will really help your preparedness if you remember that.
+-> Just another day on the Grand Line. <<set wdcc4C_points -=1>>
+    Coby: It’s good not to be scared of it, but you probably should get some healthy concern. It can be dangerous.
+-> Like a state of emergency in the head after spicy chili night on the ship.
+    Coby: Er… Yeah, I guess. Though that’s usually pretty predictable.
+Coby: Let’s head over to the ship! The first thing we’re going to discuss is how to make sure your ship is ship-shape for the weather you might be facing.
+-> Shouldn’t we do that anyway?
+    Coby: Well … Yes. But there are some particular preparations you’ll want to make for winter-specific areas, because of the cold. 
+-> Sounds like work.
+    Coby: It is work. But if that work keeps you safe and whole in the Grand Line, isn’t it worth it?
+-> Can we start with the galley?
+    Coby: There’s not really anything special we need to do in the mess hall for this, actually. Sorry.
+As he talks, he leads the little group up the gangplank and onto the vessel’s deck. 
+<<jump workday_coby_crew_4_OnShip>>
+===
+
+title: workday_coby_crew_4_OnShip
+location: ship
+---
+
+Coby: OK. So the first thing you need to do is the same thing you do every time you’re about to sail. Any guesses?
+-> Make sure to pack some choice reading material?
+  He looks a little doubtful.
+  Coby: I suppose that’s important for long trips, but I’m thinking of something more immediate.
+-> Check the hull and rigging? <<set wdcc4C_points +=1>>
+  Coby: That’s right. You have to make sure the ship is safe to sail out.
+-> Make sure I’m not listed for late watches? <<set wdcc4C_points -=1>>
+  Coby: Well, that’s a little bit selfish. Everyone should be taking their turn on all watches.
+Coby: So you need to make sure the ship is entirely seaworthy. There can be an urge to hurry past some of the preparations when you’re in a hurry to get to a mission, but the cold can make small problems into big ones very quickly. 
+-> Sounds just like me.
+-> Makes sense. Thank you, sir.
+-> I’m just going to hope all my missions are to summer islands.
+Coby: All right. Now that we know how to get the ship ready, let’s talk about the hazards you might encounter out on the sea in winter.
+Helmeppo: Question.
+Coby: Yes?
+Helmeppo: Is this just going to be a lecture?
+Coby: It’s going to be an informative presentation.
+-> So yes. <<declare wdcc4H_points +=1>>
+  Coby: Hmmm.
+-> See? Not a lecture. <<set wdcc4C_points +=1>>
+  Helmeppo: I’m not sure I see the difference, honestly.
+Coby: Well… Drake, what do you think?
+Drake: Me? Well… Yes, I think it’s easier to retain information when it’s a little more interactive.
+Coby looks thoughtful.
+Coby: Okay. I think I can make this interactive. {$name}, I’m going to run through some scenarios and you say what you think you should do. And I’ll tell you if you’re right, or not quite. Got it?
+-> Sounds good!
+-> If I have to.
+-> As long as I’m not getting graded on this.
+Coby: Great! So would you like to try on your own, or have someone help you?
+-> I’ll do it alone! <<set wdcc4C_points +=1>>
+  <<jump workday_coby_crew_4_PlayerLookout>>
+-> I think Drake would make a good lookout partner. <<declare wdcc4D_points +=1>>
+  <<jump workday_coby_crew_4_DrakeLookout>>
+-> I nominate Helmeppo to help me. <<set wdcc4H_points +=1>>
+  <<jump workday_coby_crew_4_HelmeppoLookout>>
+===
+
+title: workday_coby_crew_4_PlayerLookout
+location: ship
+---
+
+Coby: All right, {$name}! I like that enthusiasm.
+-> I just don’t want to drag anyone down with me.
+  Helmeppo: A person after my own heart.
+  Drake: It’s better for Marines to be a little more self confident than that.
+  -> Yes, sir. <<set wdcc4D_points +=1>>
+  -> Honesty is also a virtue. And I honestly don’t think this will go well. <<set wdcc4D_points -=1>>
+-> Let’s hear the first question!
+Coby: Right, first question. OK. Imagine you’re on a ship in the middle of the ocean.
+Coby: Looking off into the distance, you see a gathering of gray on the horizon. What is it and what do you do?
+-> It’s fog! Probably full of killer tentacle monsters. Bring the cannons around.
+  Coby: …
+  He glances at the others but is met with only shrugs.
+  Coby: That’s certainly…inventive. 
+-> Winter storm. Keep an eye on the wind, trim the sails if needed and prepare to clear the decks. <<set wdcc4C_points +=1>>
+  Coby: Exactly right. 
+-> I guess the artist didn’t finish the background. Best to wait it out. <<set wdcc4H_points +=1>>
+  Helmeppo snickers. Drake is trying to hide a smile.
+  Coby: Artist didn’t… You should really take this seriously, {$name}.
+  His voice takes on a patient, scolding tone.
+  Coby: That’s the sign of a storm gathering. All Marines on the Grand Line need to know the signs.
+Coby: Okay, so a gathering of gray clouds is usually a storm. You end up sailing straight into this one, and it’s full of heavy wind and snow.
+Coby: Next! Through the snow, you see something large and bluish-white looming in the sea ahead of you. 
+-> Iceberg! Right ahead. 
+  Coby: You have been paying attention! Yes, that’s correct.
+-> A giant sea-yeti? <<set wdcc4H_points +=1>>
+  Coby: No, sea-yetis prefer to stay under the surface.
+  He says it with such a straight face that you’re not really sure if he’s joking. Luckily, Helmeppo helps clear it up.
+  Helmeppo: You really are getting better at the deadpan jokes. Nice work, Captain.
+-> A second, taller winter storm? <<set wdcc4D_points +=1>>
+  Drake lets out a snort of laughter.
+  Coby: You laugh, but there actually are places on the Grand Line where that can happen.
+  -> No way.
+  -> What, really?
+  Coby: Yes, the temperature difference essentially makes a  “sea” of colder air between the water and the upper sky.
+  {$name}: Huh. Learn something new every day.
+  Coby: I’m glad! But it’s not that.
+Coby: An iceberg can be just as dangerous as a pirate or a sea monster. Our ships are reinforced in the bow, but ice can get through.
+How should you handle the iceberg once you do see it?
+-> Give it a wide berth. <<set wdcc4C_points +=1>>
+  Coby: Good point. Most people know that icebergs extend quite a ways below the water.
+  Coby: But they can also stretch for a ways under the water.
+  Coby: And let me tell you, it is embarrassing to tell someone you ran aground on a literal chunk of ice.
+  Helmeppo: I can second that.
+  He looks over at Drake. So does Coby.
+  -> Do the same.
+    Drake looks around at all the eyes staring at him.
+    Drake: Hey, no. I never ran aground on an iceberg. *Most* people don’t.
+  -> Leave poor Drake alone. <<set wdcc4D_points +=1>>
+    Coby: Anyway-
+-> Just go around.
+  Coby: OK. What’s the minimum distance you’ll want to stay away?
+  -> I don’t know, ten feet?
+    Coby: That is almost certainly too close.
+  -> A boat-length?
+    Coby: That might be enough.
+  -> As far as you can get. <<set wdcc4C_points +=1>>
+    Coby: Yup! Give that thing a lot of space. You don’t know how far it extends underwater.
+-> Park the boat for a while.
+  Coby: I don’t know if parking is the right term, but yes, that is a viable approach.
+  Coby: Or, if you have a vice admiral or above on board, they can probably just take care of it.
+  {$name}: Take care…?
+  Coby: Melt it. Turn it into ice cubes. Pound it into snow.
+  Coby: You know. Take care of it.
+Coby: Finally, you see a faint glow ahead of you, well above the water line. What’re you seeing out there?
+-> Snow ghosts?
+  Coby: That’s a different session.
+-> Shooting star?
+  Coby: No, this isn’t moving like that.
+-> Another ship? <<set wdcc4C_points +=1>>
+  Coby: Yes, exactly!
+Coby: Other ships in the storm can actually be one of the biggest dangers.
+Coby: The last thing you want is to deal with a fight in the middle of a blizzard. So if you see a ship, be on extra high alert!
+<<jump workday_coby_crew_4_CobyWrapup>>
+===
+
+title: workday_coby_crew_4_DrakeLookout
+location: ship
+---
+
+Coby: Drake’s a trustworthy partner. Good choice.
+Drake: Are you sure it’s not better for them to try this on their own?
+-> You don’t want to be my lookout partner?
+  Drake: It’s not that. 
+  Drake: All right. If you’re sure.
+-> I definitely should not be trusted on my own.
+  Drake: You need more self-confidence. 
+-> Everyone can use a refresher now and then, right? <<set wdcc4C_points +=1>> <<set wdcc4C_points +=1>>
+  Drake: I suppose that’s true.
+Coby nods encouragingly.
+Coby: OK, looking off into the distance, you see a gathering of gray on the horizon. What is it and what do you do?
+-> Let Drake answer.
+  As you look at Drake, he frowns thoughtfully.
+  Drake: Well, that sounds like a storm to me. It always looks like someone just dumped a cloud on the sea.
+  -> So should we sail straight in?
+    Drake: It’s not ideal, but sometimes it is the best option. But if you do, use caution.
+    Coby: Excellent answer, you two.
+  -> So should we avoid it?
+    Drake: That depends on how fast you need to get where you’re going, but if possible, waiting out a storm can be a good idea.
+    Coby: That’s right!
+-> “It’s a storm on the horizon. Avoid if we can, or secure the ship if we can’t.” <<set wdcc4C_points +=1>> <<set wdcc4D_points +=1>>
+  You glance over at Drake, who nods in agreement.
+  Drake: That was my thought as well.
+  Coby gives you both a thumbs up.
+  Coby: That’s right! It can be smart to let the storm blow over, but sometimes you may need to safely sail through.
+-> Say “It’s a horror story. We’re going to want to stay away.”
+  As you look over at Drake, he frowns in confusion.
+  Drake: Erm… Is that a joke? That is a joke, right?
+  -> Yes, it’s a joke. A gray haze is probably a storm that you need to prepare for.
+    Drake looks a little too relieved at that for your comfort. Coby too, actually.
+    Just how foolish did they fear you might be?
+  -> Who’s joking? <<set wdcc4C_points -=1>> <<set wdcc4D_points -=1>>
+    Drake sighs.
+    Drake: That’s wrong. It’s a storm.
+    Coby: That’s right, Drake.
+Coby: OK! So you weren’t able to avoid the storm, so you’re sailing into it.
+Coby: Through the snow you see something large and bluish-white looming in the sea ahead of you. What is it and what do you do?
+-> Let Drake answer.
+  You gesture toward Drake like he’s a prize in a game show. He looks embarrassed but clears his throat.
+  Drake: Sounds like an… Iceberg?
+  Coby: Correct! And what do you do?
+  Drake: Avoid it. Avoid it by a lot.
+  Coby: Exactly!
+-> “A sea king. Give it something to eat so it leaves us alone.”
+  Drake frowns.
+  Drake: Why would it be… Wait, why would you want to feed it?
+  -> Because they’re super cute.
+    Drake: Well, true. They are super cute. But I don’t think feeding one would be a good idea.
+    Drake: And anyway, I think he’s probably talking about an iceberg, not a sea king.
+    {$name}: That’s less cute.
+  -> I really just want to train one like a dog.
+    Drake: Would that even work?
+    {$name}: We won’t know until we try.
+    Drake: That’s a good … Wait, no. It doesn’t matter, that was definitely not a sea king.
+    {$name}: What *was* it then?
+    Drake: Oh. Hm. An iceberg, I imagine. We’ll want to swing wide.
+-> “Sounds like an iceberg. Give it a wide berth.” <<set wdcc4C_points +=1>> <<set wdcc4D_points +=1>>
+  Drake: Good call. Heard of more than one ship thinking they had enough space and scraping their hull open.
+  Coby: It’s a real danger.
+Coby: So you manage to steer safely around the iceberg and continue through the storm.
+Coby: After another hour or so, you see a faint glow appear ahead of you, well above the water line. What’s going on out there?
+-> Let Drake answer.
+  {$name}: All you, Drake.
+  Drake looks thoughtful for a moment.
+  Drake: Sounds like a ship? The lights on the mast can sometimes be up high.
+  Coby nods in approval.
+  Coby: Yup. It’s almost certainly another ship, though it’s impossible to know if they’re a friend or not just from the light.
+-> “It’s probably a ship. Do we know if any other navy vessels are in the area?” <<set wdcc4C_points +=1>> <<set wdcc4D_points +=1>>
+  Coby looks pleased at this answer, and Drake nods in approval.
+  Coby: That’s right!
+-> “Sounds like a will-o-wisp. Whatever we do, we better not follow it!”
+  Drake shakes his head, looking disappointed.
+  Drake: I really think you should be taking this seriously.
+  -> So what’s your answer?
+    Drake: Probably another ship. You always see the lights first. 
+    {$name}: Okay, fair. That does make sense.
+  -> Ah. You’re right. I’m sorry. <<set wdcc4D_points +=1>>
+    Drake: Don’t worry about it. Just learn this for next time.
+  -> I’m serious. I don’t know what else it could be. <<set wdcc4D_points -=1>>
+    Drake: That is concerning.
+    {$name}: So what do you think it is?
+    Drake: Probably another ship. You always see the lights first. 
+Coby: You will need to be cautious. It could be a pirate ship. Though pirates might also be running dark, even in a storm.
+Coby: OK. Nice work, you two. 
+<<jump workday_coby_crew_4_CobyWrapup>>
+===
+
+title: workday_coby_crew_4_HelmeppoLookout
+location: ship
+===
+
+Coby: I’m sure that will go… Well.
+Helmeppo: You don’t *sound* very sure of that.
+Coby: No, I am! I promise.
+-> Let’s get started. Helmeppo and I are gonna ace this test. <<set wdcc4H_points +=1>>
+  Helmeppo: You’re more sure of that than me.
+  {$name}: You mean you’re not up on winter weather sailing?
+  Helmeppo: I may have spent too much time overpreparing for my presentation. 
+-> All right, we’re on lookout! What do we see?
+  Helmeppo makes a *can you say no to that enthusiasm?* gesture.
+  It turns out, Coby cannot. He chuckles and nods.
+-> Coby’s just jealous he doesn’t get to be lookout. <<set wdcc4C_points -=1>> <<set wdcc4H_points +=1>>
+  Coby: That’s not it!
+  Helmeppo just barely hides a smirk behind his hand.
+  Helmeppo: Bad form, Coby. 
+  Coby: I didn’t mean anything by it. 
+Coby: All right. Let’s get started.
+Coby: Looking off into the distance, you see a blur of gray on the horizon. What is it and what do you do?
+-> Let Helmeppo answer.
+  Helmeppo crosses his arms and looks toward the sky thoughtfully. 
+  Helmeppo: Knowing our luck, it’s someone with a really ominous devil fruit approaching. We should run.
+  -> I don’t think that’s right. <<set wdcc4C_points +=1>>
+    Helmeppo: So you think it’s a storm then? In that case, I guess we either anchor up or prepare the ship.
+    {$name}: That’s what I think too.
+  -> Wait, really?
+    Helmeppo: In a just world, no. But we don’t live in that world.
+-> “Sounds like a storm brewing. Time to batten the hatches!” <<set wdcc4C_points +=1>>
+  Coby nods enthusiastically.
+  Coby: Yup! And remember that winter storms can be just as unpredictable as more traditional thunder and rainstorms. 
+  -> You mean like with hail?
+    Coby: Oh, *way* more than hail.
+  -> Does it literally drop frozen cats and dogs?
+    Helmeppo: Honestly, I would not be surprised if it did. Nothing about this sea makes sense.
+  -> Eh, it’s just colder. It’s not like cold weather is *that* bad.
+    Helmeppo: There is an entire section in the field medicine manual about how to safely thaw out a frozen person so…
+    {$name}: Wait, really?
+    Coby: Yes, really.
+-> “A blur? Sounds like I need to get my eyes checked.” <<set wdcc4C_points -=1>>
+  Helmeppo: Really? Did you skip your yearly physical?
+  {$name}: We get those?
+  Helmeppo: We’re supposed to, but most of the medical staff value their health too much to insist.
+  -> Wait, why?
+    Helmeppo: I am pretty sure I saw Garp “accidentally” throw a desk at the door to block it when they just came to ask him about it once.
+    {$name}: … I can see that.
+  -> I wouldn’t hurt a doctor, but I’d definitely work on my speed drills when it’s checkup time.
+		Coby: Can we *please* get back on topic?
+Coby: All right. So you’ve sailed into the storm after making the ship as secure as you can. 
+Coby: Through the snow you see something large and bluish-white looming in the sea ahead of you. What do you do?
+-> Let Helmeppo answer.
+  {$name}: All you, Helmeppo.
+  Helmeppo: How kind. Let’s see now. Something light blue, out on cold oceans…
+  Helmeppo: Probably one of those icebergs, right?
+  He turns to you.
+  Helmeppo: How do you deal with an iceberg again?
+  -> Give it a lot of space? <<set wdcc4C_points +=1>>
+    Coby: Exactly! You need to give it a lot of space in case any of it is jutting out under the water.
+  -> Sail real close so you can get a good look. <<set wdcc4H_points +=1>>
+    He laughs.
+    Helmeppo: I want to see you try that answer on Garp.
+    Coby: I don’t. {$name}, that is not a good way to deal with icebergs. It’s dangerous!
+    {$name}: Oh! So no sailing close?
+    Coby: No sailing close.
+-> “I assume I am hallucinating and go lay down."
+  Coby looks a little worried.
+  Coby: Do you often hallucinate? Because that’s not great.
+  Coby: But anyway, that’s not the answer. It’s an iceberg.
+-> “That sounds like an iceberg. I alert the crew and we try to steer around.”
+  Helmeppo: Or else ask the resident monsters to obliterate it.
+  -> Good point. I bet Coby could wreck an iceberg. <<set wdcc4C_points +=1>>
+    Coby: I wouldn’t-
+    Helmeppo: You absolutely would, and the crew would cheer.
+    Coby turns a bright red.
+  -> I wonder how Drake would manage against an iceberg. <<set wdcc4D_points +=1>>
+    Drake: Ice is actually pretty hard on dinosaurs, so…
+    {$name}: Oh, that’s right! I’m sorry. 
+  -> While we watch from the deck, right? <<set wdcc4H_points +=1>>
+    Helmeppo: Definitely. 
+		Coby: How can you both be correct and still so… this?
+Coby: Finally, you see a faint glow ahead of you, well above the water line. What is it and how do you respond?
+-> Let Helmeppo answer.
+  You tilt your head toward Helmeppo. He makes a little bow.
+  Helmeppo: My turn to answer? 
+  Helmeppo: Are these lights moving?
+  Coby: Hmm. Yes.
+  Helmeppo looks at you.
+  Helmeppo: What other details do we need?
+  -> What color is the light?
+    Coby: It doesn’t matter.
+  -> Do we have knowledge of other ships in the area? <<set wdcc4C_points +=1>>
+    Coby: You do. There is supposed to be another ship nearby.
+    Helmeppo looks over at you.
+    Helmeppo: Ship?
+    {$name}: Ship. And even if we didn’t know about another ship, it could still be.
+    Coby: Correct!
+-> “Seems like a lighthouse, right? Avoid it?”
+  Helmeppo raises an eyebrow in Coby’s direction.
+  Coby: Well, I meant more like a small light. Like on a ship.
+  Helmeppo: But you didn’t mention that before. I think {$name}’s answer fits too, right?
+  Coby looks like he’s about to argue, then closes his mouth and nods.
+  Coby: You’re right, that was poorly worded. And {$name}, if it is a lighthouse, that is the right way to handle it. 
+  Coby: But if it’s a ship, use caution until you know what sort of ship it is.
+-> “I’d be careful. That seems like a ship.” <<set wdcc4C_points +=1>>
+  Coby: That’s right. While some ships might run dark, others will have running lights. In a storm it can prevent collisions, but pirates might try to use the cover to attack.
+  Coby: So just be cautious until you know if it’s a friend or an enemy.
+Coby: OK. Nice work, you two.
+<<jump workday_coby_crew_4_CobyWrapup>>
+===
+
+title: workday_coby_crew_4_CobyWrapup
+location: ship
+---
+
+Coby: I think we learned a lot today! What else should we go over?
+-> (Available if you haven’t yet teamed up with Helmeppo) Tell me more about those snow ghosts... //HOW DO??
+  <<jump workday_coby_crew_4_Helmeppo_training>>
+-> (Available if you haven’t yet teamed up with Drake) Maybe I better learn about blizzards next.. //HOW DO??
+  <<jump workday_coby_crew_4_Drake_training>>
+-> (Available if you’ve already done both) Well, I think we learned a lot today. //HOW DO??
+  <<jump workday_coby_crew_4_End>>
+===
+
+title: workday_coby_crew_4_Helmeppo_training
+location: ship
+---
+
+{$name}: So, uh, what is the deal with the snow ghosts?
+Helmeppo: SO glad you asked!
+Helmeppo pulls a large bin out and… Hold on, how long has *that* been there?
+Helmeppo: So. One of the biggest cold-weather dangers you’ll have to worry about is hypothermia.
+-> Wait, what’s the other one?
+	Helmeppo: Frostbite.
+	{$name}: Ah…
+-> … Wait, you’re talking about hypothermia?
+	Helmeppo: That’s right!
+  {$name}: But I thought you said something about ghosts?
+  Helmeppo: We’ll get there. Don’t worry. *We’ll get there.*
+Helmeppo: Hypothermia happens when someone is exposed to frigid conditions for too long. Most people associate it with snow and ice, but it can also happen in other conditions. Do you know what?
+-> Wet and windy? <<set wdcc4H_points +=1>>
+  Helmeppo: Precisely. People don’t think about it but wind can be deadly too. 
+-> Dull and boring? <<set wdcc4H_points -=1>>
+  Helmeppo: If this isn’t interesting enough, would you rather let someone else lead?
+  -> Yes.
+    Helmeppo: Well, don’t complain if you freeze out there. 
+    <<jump workday_coby_crew_4_TrainingChoice>>
+  -> No.
+    He nods, looking somewhat mollified.
+    Helmeppo: Good.
+  -> Ghost-infested?
+    Helmeppo: Is this the only reason you chose my training?
+    -> I mean, it’s not *not* a consideration…
+    -> Yes. I was promised ghosts.
+    -> Of course not, Professor.
+    He shakes his head in irritation.
+Helmeppo: Now, can anyone share some of the symptoms of mild hypothermia?
+Helmeppo: Anyone? There’s no punishment for wrong answers, except possibly laughter.
+-> Shivering, sleepiness and a rapid heart rate? <<set wdcc4H_points +=1>>
+  Helmeppo: Yes, exactly.
+  Helmeppo: You can see how many people would miss those signs, thinking they’re just feeling a little cold.
+-> Your skin turns blue and your hair turns to ice?
+  Helmeppo: Close on the skin, not so much on the hair unless you went out in the cold straight from the shower.
+  Helmeppo: Also that’s only two.
+  -> Chattering teeth? <<set wdcc4H_points +=1>>
+    Helmeppo looks like he’s about to snark again, then pauses.
+    Helmeppo: I always forget that one. Correct!
+    {$name}: How can you forget that?
+    Helmeppo: It’s kinda rare.
+    Drake: …Er, I don’t think it’s *that* rare.
+    Helmeppo: …
+    Helmeppo: Anyway!
+  -> Being really obsessed about numbers? <<set wdcc4H_points -=1>>
+    Helmeppo: Well, if you don’t want to take this seriously, do you want to train with someone else?
+    -> Yes.
+      Helmeppo: Well, don’t complain if you freeze out there. 
+      <<jump workday_coby_crew_4_TrainingChoice>>
+    -> No.
+      He nods, looking somewhat mollified.
+      Helmeppo: All right, then.
+-> I’ll defer to Coby. <<set wdcc4C_points +=1>>
+  You expect him to insist, but instead he looks at Coby.
+  Helmeppo: Well, Captain?
+  Coby: I believe your teeth will chatter?
+  Helmeppo looks like he’s about to snark again, then pauses.
+  Helmeppo: I always forget that one. 
+  {$name}: How can you forget that?
+  Helmeppo: It’s kinda rare.
+  Drake: …Er, I don’t think it’s *that* rare.
+  Helmeppo: …
+  Helmeppo: Anyway…
+-> Anxiety, puffy eyes and an affinity for Aokiji?
+  Helmeppo: I’m starting to think you’re not taking this seriously. 
+-> Confusion, exhaustion and trouble speaking? <<set wdcc4H_points +=1>>
+  Helmeppo: Yes! Those are not the most common effects, but they can definitely be something to watch out for.
+  Helmeppo: You may think someone is just messing around, but pay attention. In the cold, it could be a sign of real trouble.
+Helmeppo: It’s best to keep an eye on your crewmates in the cold and look out for these signs. 
+Helmeppo: You can’t always avoid them, of course. People are going to shiver in the cold.
+Helmeppo: Especially early in training. Marine commanders may have an inflated idea of how much cold a normal human body can take. 
+Helmeppo: They might just leave you on a winter island for a week, just to see how you do.
+Helmeppo: It’s not *training*, you’re not #teaching us anything Garp#, you’re just-
+-> Helmeppo?
+-> Commander?
+-> You good?
+He blinks, looks around, then visibly straightens up and re-centers himself.
+Helmeppo: Catching hypothermia early can save limbs and lives. Check in with your crewmates often if you see anything that seems wrong.
+He moves smoothly back to the lesson from… Whatever that was. 
+Helmeppo: Now, let’s move on. Can you tell me some symptoms of moderate hypothermia?
+-> Don’t they start walking and talking like they’ve been drinking? <<set wdcc4H_points +=1>>
+  Helmeppo: Yes. If everyone on a cold-weather mission starts walking like they’re leaving the bar at last call, you have a big problem.
+  Helmeppo: The cold is getting past the unimportant things like your hands and feet to things that some people will miss, like your brain and heart.
+-> Their pupils get really big and their heart rate slows down. <<set wdcc4H_points +=1>>
+  Helmeppo: Right. When the cold moves from extremities into your core, the brain and heart start to slow down. 
+  Helmeppo: That’s when you need to find safety, and quickly, before things get worse.
+-> I thought we were talking about ghosts? <<set wdcc4H_points +=1>>
+  Helmeppo: Actually, yes, we’re finally getting to the ghosts.
+  Helmeppo: That’s another of the symptoms of moderate hypothermia. As your brain starts to get too cold, it can start misfiring.
+  Helmeppo: You start to see things.Maybe things that aren’t there at all. Maybe incorrectly seeing things that *are* there.
+  Helmeppo: And since they’re not real, they’re in your brain, you can’t escape.
+  Helmeppo: *Ever.*
+  -> That sounds fascinating.
+    Helmeppo: I am sincerely worried for you out there.
+  -> Sorry I asked…
+    Helmeppo: To be fair, if you hadn’t asked, I would still have talked about it. 
+    Helmeppo: If nothing else I like to wonder what people’s hallucinations would be.
+    -> Mine would be a living skeleton.
+      Helmeppo: To be fair, you might see that even if you weren’t hallucinating.
+    -> Mine would probably be the fleet admiral telling me to get back to work.
+      Helmeppo: A terrible way to spend your last moments on earth.
+    -> What was yours?
+      Helmeppo: Giant, evil penguins with death lasers.
+      {$name}: …
+      Helmeppo: …
+      Helmeppo: Anyways…
+  -> …Can I be excused?
+    Helmeppo: No you may not.
+Helmeppo: When you’ve moved into moderate symptoms, and I *cannot* stress this enough, your body is in power saving mode. 
+Helmeppo: It’s trying to use energy on keeping you alive despite the cold. It doesn’t understand that if it takes too much and you can’t walk, you’re done for anyway.
+Helmeppo: It doesn’t know that your superior officer is expecting you to drag yourself out of a half-frozen river and walk back to camp.
+Helmeppo: Walk! Back! 
+Helmeppo: In the freezing cold! It was six miles. I can’t help it if I didn’t know what kind of wood we needed for a fire.
+Helmeppo: Was that really appropriate penance for bringing back green wood? How would I know the difference? 
+Helmeppo: When would I ever have made a fire, Garp? 
+Helmeppo: #When in Shells Town would I ever need to know how to make a fire?#
+-> Wait, just for bringing back green wood? <<set wdcc4H_points +=1>>
+  He turns very slowly toward you with a thousand-yard stare.
+  Helmeppo: #Yes.#
+-> Oh, hey, speaking of Garp, here he comes! <<set wdcc4H_points -=1>>
+  He snaps his head around, left and right, with the posture of a child caught misbehaving.
+-> Um… Maybe we should move on?
+Coby: Helmeppo? I think you’re scaring {$name}.
+He blinks and seems to snap out of it again, looking guiltily at you.
+-> Yeah, a little.
+-> I’m more just worried.
+-> Nah, this is funny. I’m trying to imagine what it was like.
+Helmeppo looks like he’s going to answer you, but then takes a deep breath, lets it out slowly and again resets.
+Helmeppo: Right. Sorry. Hypothermia.
+Drake: You sure you’re OK to do this? We can just-
+Helmeppo: No, I’m fine. Sorry. Back to it. This is important.
+Helmeppo: OK, moving on. As your core starts to creep inexorably out of the healthy range and toward dangerous temperatures, things get even worse.
+-> Worse than your brain tapping out?
+  Helmeppo: Yes. Think like going from half engines to no engines.
+  -> Yikes.
+    Helmeppo: Yikes indeed.
+  -> Dead in the water huh?
+    Helmeppo: Emphasis on the *dead*.
+-> Like you die?
+  Helmeppo: Yes. Eventually. 
+-> I’m still stuck on the ghosts.
+  Helmeppo: Good news! This level of hypothermia should at least make you stop thinking about the ghosts.
+Helmeppo: But first, you begin to display the final signs of hypothermia.
+Helmeppo: What are the signals that the cold has put someone in the danger zone?
+-> They stop moving? <<set wdcc4H_points +=1>>
+  Helmeppo: Yes. Like everything else in the cold, people’s bodies eventually just freeze up.
+-> They stop shivering? <<set wdcc4H_points +=1>>
+  Helmeppo: Ironically, yes. Your heat regulation systems give up and stop trying to warm you up with shivering. 
+-> If it’s not ghosts, I’ve got nothing.
+  He stares flatly at you for an uncomfortably long few seconds.
+  Helmeppo: You are going to die young.
+Helmeppo: At this point, if things have progressed this far, you will almost certainly need help to survive. 
+The goat bleats at this, though whether it’s from agreement or boredom, you can’t tell.
+Helmeppo: You lose your reflexes. Your heart struggles to circulate blood. Your voluntary movements become limited. 
+Helmeppo: You turn into a zombie, doomed to continue mindlessly until your body can’t move anymore.
+Helmeppo: Basically, if someone else doesn’t come along to help you, you are almost certainly dead.
+Helmeppo: Ideally, the person who sent you out there, miles from camp in the cold, will at least have the decency to come find you.
+Coby: Um… Helmeppo?
+Helmeppo: But he doesn’t. So you manage to drag yourself out of the river and start walking in what you *think* is the right direction, but how would *you* know? It all looks the same. 
+Helmeppo: You just started cold weather training so you don’t really know what to do and now you’re lost and freezing and *alone*, and he’s probably laughing.
+Helmeppo: I mean, sure, he’s a big hero and you’re nothing, but would it kill him to think for two seconds about what he’s doing?
+Helmeppo: “I had five-year-olds who survived worse than this?” That’s not reassuring Garp, #that’s child abuse!#
+Helmeppo: And I swear if I die, then the snow ghosts will not just be a hallucination, #I will haunt you for the rest of your miserable life!#
+This seems to be getting a bit out of hand...
+-> Stare intently at Coby. <<set wdcc4C_points +=1>>
+  He nods at you, then starts to say something to Helmeppo before second guessing it.
+  Instead he walks over to where the other man is still ranting, something about following the sound of evil laughter. 
+  He pauses a moment, judging the timing. Then, in a break between two sentences, he reaches over and pokes Helmeppo in the ribs.
+  Helmeppo leaps like a startled cat and comes down in a somewhat questionable defensive posture.
+  Helmeppo: What was that for?!
+  Coby: You’ve, uh… Kind of wandered away from the lesson.
+  Helmeppo yet again seems to realize where he is. His face turns a remarkable red.
+  Helmeppo: Oh… Yes.
+-> Gesture for Drake to say something. <<set wdcc4D_points +=1>>
+  Drake looks like he definitely doesn’t want to be the person taking this on, but he heaves a sigh.
+  Drake: Hey! Teacher! 
+  Helmeppo breaks off in mid rant and turns to look at him.
+  Drake: Your lessons seem to be less about hypothermia and more about why you shouldn’t train with Garp.
+  -> Yeah, get back to the cold weather lesson!
+    Drake gestures toward you as though to say “See?”
+  -> Honestly, this sounds like it might be more important.
+    Drake shoots you a “honestly now isn’t the time” look.
+  Drake: Maybe it’s time to move on?
+-> Say something yourself. <<set wdcc4H_points +=1>>
+  {$name}: If this is bringing up bad memories, maybe we should go to someone else?
+  Helmeppo: It’s…
+  He pauses in the middle of his rant, acts like he’s about to begin once more, then sighs. 
+  Helmeppo: Sorry you all had to see that. Though now you see why I wanted to do this session.
+He takes a moment, recentering himself, then begins the lesson once more.
+Helmeppo: Treatment for hypothermia is pretty simple. You need to warm the body. At lower levels, this is pretty easy. Any guesses?
+-> Get them somewhere warm and dry. <<set wdcc4H_points +=1>>
+  Helmeppo: Right! Warm is very important but so is dry. 
+  -> So we get naked to save our lives?
+    Helmeppo: More or less. Get your clothes hung up to dry and then… You know, do whatever to warm up.
+  -> So no wet t-shirt contests during hypothermia.
+    Helmeppo: Yes. It would be wise to avoid wet t-shirt contests.
+-> Share your body heat, skin to skin. <<set wdcc4H_points +=1>>
+  Helmeppo: I cannot tell if you are joking or serious, but yes. Sometimes you may have to share body heat to warm yourself up.
+  Helmeppo: Just make sure to keep it professional, unless you ask permission.
+-> Leave them to distract the ghosts.
+  Helmeppo: I am regretting mentioning the ghosts.
+-> One of you take this one, I’m tired! <<set wdcc4C_points +=1>>
+  Coby steps in with the smooth ease of the person who always raised their hand first in school.
+  Coby: Get them and their clothing dry! Warm them up by the fire or in a bath. Feed them something warm if possible.
+  Helmeppo: Right on all counts. 
+Helmeppo: Just make sure you’re taking care with them, especially if their core temperature got super dangerously low.
+Helmeppo: And even once you get them warm again, you’ll need to monitor them.
+Helmeppo: With hypothermia will come frostbite. No one wants to have to lop off a hand, but it’s better than letting the rot spread. Remember that.
+Coby makes a face at that. Helmeppo ignores it.
+Helmeppo: So, last section — how do you prevent hypothermia?
+-> Don’t go anywhere cold?
+  Helmeppo: Would that it were that easy…
+-> Make sure to prepare for bad weather? <<set wdcc4H_points +=1>>
+  Helmeppo: You clearly know your way around a winter island.
+-> Don’t train with Garp?
+  Helmeppo: Good general advice, but it won’t help with the cold.
+Helmeppo: Aside from knowing exactly where you’re going, keeping an eye on the weather and making sure there are camps along the way, you also need to dress properly.
+He opens the bin and takes out a pair of gloves.
+Helmeppo: There are only two rules — stay warm and stay dry. So we’re starting with-
+The goat reaches out and yoinks the gloves from his hand. Without missing a beat, Helmeppo pulls another pair from the container and keeps talking.
+Helmeppo: -gloves, because your fingers are constantly in use, constantly in contact with the snow or rain and rarely fully waterproof. Find ones that are insulated and as waterproof as they can be.
+He tosses the gloves back and fishes a Marine-issue shirt out.
+Helmeppo: For everything else, when in doubt, remember rule no. 1 of fashion.
+-> No white on an autumn island?
+  Helmeppo: That would be pretty hard in a Marine uniform.
+-> Never wear heels you can’t sprint in?
+  Helmeppo: That’s more of a fashion rule that works for all situations, not just cold weather.
+-> The importance of layering? <<set wdcc4H_points +=1>>
+  Helmeppo: The importance of layering!
+Helmeppo: Layering can stave off a lot of the danger. You don’t just have the fabric itself, but even the air between layers can help insulate you.
+He lays the shirt over the goat, who is still chewing happily on the gloves. One of the fingers is already gone.
+Helmeppo: It can also keep water from getting all the way to the layers against your skin as fast. 
+He reaches into the bin again and starts pulling out a series of increasingly thick coats, which he layers atop the goat as he talks.
+Helmeppo: Waterproof layers will help here too, but it’s not always available. Even when you have them, there are just a lot of gaps — the cuffs, neck, and waist, plus where it fastens.
+Helmeppo: Change damp layers when you can. That will help as well.
+Helmeppo: And maybe most importantly, never go out in serious cold weather alone and without a plan. 
+The goat, almost hidden under the layers except for its mouth and the remnants of the gloves, bleats around its meal.
+Helmeppo: Well, that does it for my lesson.
+<<jump workday_coby_crew_4_HelmeppoWrap>>
+===
+
+title: workday_coby_crew_4_HelmeppoWrap
+location: ship
+---
+
+-> (Available if you haven’t yet teamed up with Coby) Okay, let’s talk about weatherproofing. //HOW DO??
+  <<jump workday_coby_crew_4_Coby_training>>
+-> (Available if you haven’t yet teamed up with Drake) Maybe I better learn about blizzards next... //HOW DO??
+  <<jump workday_coby_crew_4_Drake_training>>
+-> (Available if you’ve already done both) Well, I think we learned a lot today. //HOW DO??
+  <<jump workday_coby_crew_4_End>>
+===
+
+title: workday_coby_crew_4_Drake_training
+location: ship
+---
+
+Drake: Blizzards are dangerous, but if you know how to handle them, you’ll be fine. We just need to be aware of our circumstances and stay prepared. 
+-> What if we’re not prepared? <<set wdcc4D_points +=1>> <<set wdcc4H_points -=1>>
+  Drake: Excellent question. We’ll cover that as we go. 
+  Helmeppo: You should always be prepared, though.
+-> Easier said than done. <<set wdcc4D_points -=1>>
+-> How can we be aware of our circumstances if we can’t see through the snow?
+  Drake: ...
+  Coby: What Drake means is, I think, that we should assess things as best we can, especially as it begins to snow harder. 
+Drake: Whenever you’re going somewhere that you can reasonably assume may be cold, you should be sure to bring a coil of strong rope and extra thick clothes and blankets. 
+-> Why the rope?
+  Coby: To haul sticks and other materials for building shelter.
+  Drake: Yes, that’s a good use for it. However, it’s easy to get lost in a snowstorm. Visibility is low and even when it’s not, landmarks can be obscured by snowdrifts and with the cloud cover, starlight navigation is impossible. 
+  -> So you use the rope as a compass?
+    Drake: No.
+    Drake: You hold it with someone else so you don't get separated.
+    <<jump workday_coby_crew_4_Drake_rope>>
+  -> If you’re with someone, you can both hold onto the rope to make sure you don’t get lost.
+    Drake: Yes, exactly.
+    <<jump workday_coby_crew_4_Drake_rope>>
+-> Shouldn’t you be wearing warm clothes already?
+  Coby: There’s lots of variability in the weather out on the Grand Line.
+  <<jump workday_coby_crew_4_Drake_cold>>
+===
+
+title: workday_coby_crew_4_Drake_cold
+location: ship
+---
+
+Drake: Temperatures can drop quite rapidly. In fact, you should always have your heat lamp on you in case it gets too cold and your body can’t adjust.
+Coby: ...**Should** I have a heat lamp?
+Helmeppo: You know not everyone’s a lizard, right? Most normal humans can regulate their body temperatures well enough, even in the cold. A heat lamp’s not a bad idea, I guess, but you might not need it.
+Drake looks offended, or at least you think he does. 
+-> Er, some people do get colder than others, and there might be other cold-blooded zoans in the group. <<set wdcc4D_points +=1>>
+-> That’s rude, Lieutenant Commander! <<set wdcc4D_points +=1>> <<set wdcc4H_points -=1>>
+  Helmeppo: What? It’s the truth.
+-> Yes, let’s try to focus on what’s useful for everyone, not just ourselves. <<set wdcc4C_points +=1>>
+  Coby: I agree. A big picture view is important. 
+Helmeppo: If you have a lamp, you can use it to light, or melt the snow, I guess.
+Drake: Yes, if you’re well-prepared with just your warm clothes, it’s not a bad idea to repurpose the lamp.
+-> Or if you bring too many clothes, could you use them to build a shelter? 
+  Drake: I suppose if it’s that warm... Though perhaps not if it’s windy enough to make a difference...
+-> Couldn’t you share clothes, too? You know, huddle together under them for warmth? *Eyebrow waggle* //HOW DO?? (+1 Drake if you already went on multiple of Drake’s dates, -1 Drake otherwise)
+  Drake: ...
+-> What if we need both the lamp and the clothes to keep warm?
+  Drake: You don’t want to start sweating in the cold. You should be careful.
+Drake: If you do end up with extra clothes that you’re not wearing, they can provide extra insulation in your sleeping bag, or they can be tied to the end of the rope to lengthen it. 
+-> Shouldn’t you be bringing a long enough coil of rope? <<set wdcc4D_points -=1>>
+  Drake: Yes, but lengthening it may be desirable.
+-> Why?
+Drake: The primary purpose of the rope is to ensure the whole party stays together. If you’re all holding on to the same rope, then even if you can’t see or hear one another due to the snow, you won’t get lost.
+-> If you don’t know where you are, aren’t you already lost? <<set wdcc4D_points -=1>> <<set wdcc4H_points +=1>>
+  Helmeppo: Technically, {$name} **is** right...
+-> Wow, I hadn’t thought of that! <<set wdcc4D_points +=1>>
+Drake: And you can tie a spare shirt to the rope to give yourself a better handle as well. 
+Coby: Wouldn’t a scarf work, too?
+-> I like that idea. <<set wdcc4C_points +=1>>
+-> But you’ll be wearing your scarves. <<set wdcc4D_points +=1>>
+  Coby: Ah, that’s true...
+-> Or another rope, if you have one? <<set wdcc4H_points +=1>>
+  Drake: Yes, that’s a good point, but this is in the case that you don’t, or you’re already using them. 
+Drake: Here, I’ll demonstrate.
+He tosses Helmeppo one end of the rope and pulls a crisp dress shirt from his pack.
+Drake: Now, {$name}, take this shirt. You should roll it up so that it forms a sort of rope.
+You follow his instruction; the shirt rolls up easily.
+Drake: Now tie it tightly to the main rope.
+You grasp onto the rope. Helmeppo is playing with his end, and Drake is holding the other...and you need to demonstrate a good knot so you don’t lead all these new recruits astray.
+-> Captain Coby, what knot do you think I should choose? <<set wdcc4C_points +=1>> <<set wdcc4D_points +=1>>
+  Coby: Great question. You’ll want to use a hitch, since you’re tying the shirt to the rope... Do you have enough material to do a clove hitch?
+  You nod. There’s definitely enough here; Drake’s arms are quite long. 
+-> Well, a knot’s a knot. I’ll notice if it slips off. <<set wdcc4D_points -=1>>
+  Drake: In the snow, it may be too late when you do. I would suggest a rolling hitch.
+  You comply with the request. Maybe he’s right.
+<<jump workday_coby_crew_4_Drake_join>>
+===
+
+title: workday_coby_crew_4_Drake_rope 
+location: ship
+---
+
+Drake: It’s important, as soon as visibility starts to drop, to get out the rope and make sure everyone stays together.
+-> Won’t we just look like school kids? <<set wdcc4D_points -=1>>
+  Drake: Better to look foolish for a false alarm than the alternative.
+-> Does nightfall count?
+  Drake: Yes, especially if you risk drawing unwanted attention with a lantern. 
+-> 100%. What if the visibility is dropping so slowly that you don’t notice?
+  Drake: You’ll notice-—if it stays on that pace you’ll have time to prepare. And if not, as soon as you even think it’s starting to get harder to see, it’s better to be safe than sorry.
+Drake: And if you pause or find shelter, then you shouldn’t move away without picking the rope back up. 
+Helmeppo: What if you lose the rope? I think you should bring another just in case...
+-> Well, if everyone’s prepared, then everyone will have a rope. <<set wdcc4D_points +=1>> <<set wdcc4H_points +=1>>
+-> Even so, if you’re all holding on and keeping track, then you shouldn’t lose it. <<set wdcc4D_points +=1>>
+Drake: Yes.
+-> What are some other uses for rope?
+-> That’s it? <<set wdcc4D_points -=1>>
+Drake: Rope is instrumental in building a shelter. For instance, you’ll need rope to haul your materials to the shelter. 
+-> How many materials are we talking?
+  Drake: It depends on what’s available, of course. If the snow’s really bad, then it’s best to save your energy and dig out a hole in the snow, so you won’t need materials at all...
+-> What if all the sticks and things are buried in the snow? <<set wdcc4D_points +=1>>
+  Drake: Great question. Then you should dig a shelter together in the snow.
+Drake: You should refer to your basic training in how to build a shelter, and use what’s available.
+Helmeppo: Or bring a tent.
+Drake: If there’s enough snow or wind, pitching a tent might not work.
+-> If the weather’s good enough to haul branches back to a base, I think we’ll be able to put up a tent. <<set wdcc4H_points +=1>>
+  Drake: I suppose...but you should know how to deal with a situation where you don’t have tents, anyway.
+-> Yeah, we could lose pegs and stuff in the snow drifts too. <<set wdcc4D_points +=1>>
+Drake: You can also use the rope to tie branches together and keep them in place when you lean them up against a rock or snowdrift. That will keep them from blowing over or away in the wind. 
+-> So we should use our standard knots, like we’re building a raft? <<set wdcc4D_points +=1>>
+  Drake: Yes, exactly.
+-> What if our hands are really cold? Tying knots could get difficult.
+  Coby: That’s why you get used to doing things in gloves. It took me a while to get there, though...
+Drake: Of course, you should keep some rope once you have the shelter, in case the snow starts to come down hard again and you need to send someone outside. 
+<<jump workday_coby_crew_4_Drake_join>>
+===
+
+title: workday_coby_crew_4_Drake_join
+location: ship
+---
+
+Coby: What if someone goes out and doesn’t come back?
+Drake: If you notice them leaving without the rope, immediately call them back.
+Helmeppo: What if you don’t? 
+Drake: Stay where you are. You don’t want the situation to get worse. 
+-> Could you send a signal to a companion to lead them back?
+  Drake: In the most hazardous conditions, it’s just not practical—they won’t be able to see the light or hear your voice. But use your judgement.
+-> What if you’re the one who gets lost? 
+  Drake: If you can no longer see the shelter or your tracks, you should dig a shelter in the snow. 
+Some of the recruits are starting to look worried-—this is serious stuff, but you don’t want to scare them too much... Looks like you’re not the only one who’s picking up on this, though.
+Coby: Do you want to demonstrate building a shelter for us?
+Drake: Yes. Let’s do that. I’ll focus on snow-and-cold-weather-specific things. 
+Drake: First, let’s talk about the more optimal situation, when there’s snow on the ground but it’s not coming down too fast to be aware of your surroundings. Then, if we have time, we can talk about digging a shelter in the snow.
+Drake: Normally, when building a shelter, you’ll be gathering branches and rocks from visible places. However, in the snow, they might be covered and difficult to find. 
+-> Don’t they stick up sometimes? <<set wdcc4D_points +=1>>
+  Drake: The smaller the stick and the deeper the snow, the less likely it is—but any suspect lumps in the snow are a great place to start.
+-> Well, that doesn’t give us anything to go on. <<set wdcc4D_points -=1>>
+  Coby: There are other environmental cues you can use, right?
+  Drake: Correct.
+Drake: The best place to look for sticks and branches is near the bases of trees. That’s where they’ll fall—and we, heavy snow is more likely to knock down large branches that will buffer you from the weather. Those will mostly be visible, but—here, for instance.
+He gestures toward a pile of snow at the base of a tree. You can’t see anything special about it. Then, Drake begins to clear away snow with his gloved hands, groping around as if for a light switch in the dark...
+Drake: Here.
+He pulls up a stick, and you can see the rest of it pulling through the snow—it’s pretty long, not too skinny.
+-> You’d need an awful lot of those to build a shelter for multiple people. <<set wdcc4D_points -=1>>
+  Drake: That’s why you should all work together, and why, for this demonstration, we’ll all be gathering sticks.
+-> Should we bring a shovel to help dig in the snow? <<set wdcc4H_points +=1>>
+  Drake: If you can fit one in your pack, that works.
+Drake: All right. We’ve got a lot of trees and snow here. Call me over if you need any questions.
+The group of recruits scatters to the trees. You, Coby, and Helmeppo follow suit, Helmeppo a bit reluctantly. 
+Coby: Oh, this tree looks promising.
+-> **Follow Coby** 
+  Coby: See? I’ve got two sticks already.
+  -> Whoa, nice. Let me join you? <<set wdcc4C_points +=1>>
+    Coby: Sure, we can get this whole tree done pretty quickly.
+  -> Cool.
+    You join him in working in the area around his tree.
+-> **Stay where you are**
+  You don’t want to steal Coby’s bounty, and his tree looks like it’s got a lot of snow beneath its boughs. It would be nice if you could find a few big branches...
+  Nothing looks promising though, so you dig where you are; beneath the snow are a couple of sizeable sticks. 
+do set_background("park", Fade) //HOW DO??
+Drake: Okay, let’s regroup.
+The group makes its way over to him, sticks in arms. Between you all, it’s a pretty good haul—though maybe not enough to build a full shelter. 
+Drake: Now I’m sure you’re all familiar with the shelter-building exercise from basic. If you have some kind of structure—a wall, or even a large tree trunk—you can build your shelter to lean around it. So let’s put it together. Coby, can you be in charge of tying the knots in the rope?
+Coby: Sure. Meppo, can you organize the sticks? {$name}, can you find us a good wall?
+You and Helmeppo nod. 
+There’s a large stone wall, what remains of the old base building before the Marines had to expand, that’s an obvious choice. You won’t really impress your superiors with that, but Coby and Helmeppo are working fast with the sticks.
+{$name}: This wall works, right?
+Drake: Yes.
+The recruits are helping move the sticks over to the wall, and the first stab at the shelter looks—a little too cozy, frankly, even for five of you to pile in on top of each other. 
+Goat: Maaaa!
+You turn, just in time to get out of the way, as Sengoku’s goat comes charging through. It doesn’t stop at the shelter and rams right into it, knocking over the sticks. And is that a cracking you heard?
+Coby: Oh, no...
+-> Bad goat! No, how could you do that to our hard work? <<set wdcc4D_points -=1>>
+  The goat ignores you as it disentangles itself from the structure.
+-> I guess that’s one way to test out the sturdiness, huh...
+The goat turns, free of the sticks and rope, and if goats could smile mischievously, this one definitely would be doing so right now. 
+-> Oh, you.
+  Goat: Maaa~! 
+  The goat walks over you and gently headbutts your leg.
+-> Aw, Rear Admiral, it was a good demo... <<set wdcc4D_points +=1>>
+  Drake: Thank you. I’m not sure that it was, though.
+-> Finally, someone livened things up around here. <<set wdcc4D_points -=1>>
+Drake: We’re running low on time here...
+<<jump workday_coby_crew_4_Drake_wrap>>
+===
+
+title: workday_coby_crew_4_Drake_wrap
+location: ship
+---
+
+-> (Available if you haven’t yet teamed up with Coby) Okay, let’s talk about weatherproofing. //HOW DO??
+  <<jump workday_coby_crew_4_Coby_training>>
+-> (Available if you haven’t yet teamed up with Helmeppo) Tell me more about those snow ghosts... //HOW DO??
+  <<jump workday_coby_crew_4_Helmeppo_training>>
+-> (Available if you’ve already done both) Well, I think we learned a lot today. //HOW DO??
+  <<jump workday_coby_crew_4_End>>
+===
+
+title: workday_coby_crew_4_End 
+location: ship
+---
+
+Coby: Phew, that was a lot.
+Drake: Yes, hopefully you all learned quite a bit today. 
+Helmeppo: And now we’ll all be prepared for the next time we head out in cold weather.
+-> Overprepared, if anything... <<set wdcc4D_points -=1>> <<set wdcc4H_points -=1>>
+  Drake: One can never be too ready.
+-> Great job, everyone! Now for a test on what you’ve learned... Kidding, kidding.
+Helmeppo: Great. But the cold is starting to get to me. Let’s go inside.
+===

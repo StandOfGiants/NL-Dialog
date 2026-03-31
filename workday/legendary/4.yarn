@@ -1,0 +1,1164 @@
+title: workday_legendary_4_intro
+location: town
+---
+{$name}: Ughhhhh, it’s so early… The sun’s only just coming up. 
+Random Marine 1: You’re telling me. I would kill for some coffee right about now.
+Random Marine 2: What are the higher-ups going to make us do? 
+Random Marine 1: Man, how would I know? We got to this random island late last night and now we have to get up at the crack of dawn? Rude.
+Random Marine 2: I hope it’s not some crazy training exercise… Oh! There’s the Vice Admiral.
+Tsuru: Good morning, men! 
+Marines: Good morning…
+Tsuru: …You’d all best perk up before our task begins today. Listen up!
+Tsuru: Today, we will be doing community outreach. The Navy makes a point of supporting various islands under our purview that struggle to make ends meet, so Inspector Sengoku, Instructor Garp, Vice Admiral Rosinante, and I will oversee today’s outreach efforts. Inspector, if you please?
+Sengoku: Right. Today, we’re organizing a food pantry and soup kitchen. Some of you will be assigned to the pantry, while others will help with the kitchen. We will be spending the day here, so you will have the opportunity to work in more than one place!
+Tsuru: Thank you, Inspector. It is important to remember that as Marines, you are trained to fight against pirates and others who would harm the livelihood of civilians. However, humans are not the only threats that the hardworking people of the islands face: poor harvests, natural disasters, and other issues can lead to destruction and even death. As Marines, we are obligated to help the people that we serve in whatever ways they need.
+Tsuru: This island and a few others nearby had poor harvests this year, and they require some assistance from the Navy. As such, we will spend this week visiting the various islands that have requested help.
+Random Marine 3: Wow, I didn’t know that the Navy did this kind of thing. It’s kinda nice that they’ll help out islands that need it.
+Random Marine 4: Yeah… Kinda feels like a PR stunt, though.
+Random Marine 3: Eh, so what? If it helps out, then whatever.
+Random Marine 4: I guess.
+Tsuru: Now, for the available groups: 
+Tsuru: Vice Admiral Rosinante has volunteered to direct the cooking. Instructor Garp will oversee the food service. I will take care of directing the cleaning duties. Finally, Inspector Sengoku will take charge of collecting and sorting food for the food pantry. 
+Tsuru: You may all choose which groups you wish to join, but we would prefer to have about equal numbers at each station. You will get more information once in your groups.
+Sengoku: Correct. And… Instructor Garp’s group can wait by the building in the back. He will join you as soon as he can.
+Random Marine 5: Ten berri says he’s still asleep.
+Random Marine 6: If only I were that powerful.
+Rosinante: If you can cook, you’ll fit right in with my group! And if you can’t, please don’t worry; this will be an excellent opportunity to learn some basic recipes. 
+Random Marine 7: Hmmm… That might be fun…
+Random Marine 8: Or it could be fiery. Possibly both.
+Tsuru: Now, then! Please choose your groups!
+{$name}: (Decisions, decisions… Alright, which group should I join first?)
+-> I'll join Madam Tsuru!
+    <<jump workday_legendary_4_tsuru_clean>>
+-> I'll join Vice Admiral Rosinante!
+    <<jump workday_legendary_4_rosi_cook>>
+-> I'll join the former Fleet Admiral, Sengoku!
+    <<jump workday_legendary_4_sengoku_pantry>>
+-> I'll join Garp!
+    <<jump workday_legendary_4_garp_service>>
+===
+
+title: workday_legendary_4_Sengoku_pantry
+location: mess hall
+---
+{$name}: Collecting food and helping Inspector Sengoku sounds good!
+You head towards the back half of the building which is a bit like a small warehouse. 
+{$name}: Whoa there’s uh… That’s a lot of boxes.
+Sengoku: Thank you for joining me {$name}, and yes. These boxes are full of staple food donations. We need to go through them, sort out the unusable items, and stock the good items on the shelves you see behind me. 
+He winces as he bends over to shift a box. 
+{$name}: Are you alright, sir?
+Sengoku: Yes. I slept a little awkwardly.
+{$name}: Oh, I hate it when that happens. Anyway…
+-> I’ll do the sorting! (S+1)
+    Sengoku: Excellent. Shelving is easier on my back. Less bending to do. 
+    <<jump workday_legendary_4_Sorting>>
+-> I can do the shelving!
+    Sengoku: Thank you, {$name}. I’ll start passing you items. 
+    <<jump workday_legendary_4_Shelving>>
+-> Uh… What do we do with the line of people outside?
+    Sengoku: Those are the citizens we will be serving when we are ready to open, once items have been shelved. [[Loop to the other 2 choices]] //HOW DO??
+    <<jump workday_legendary_4_Sorting>> or <<jump workday_legendary_4_Shelving>>
+===
+
+title: workday_legendary_4_Sorting
+location: mess hall
+---
+
+{$name}: OK, let’s see what we have here…
+-> Big box with a weird smell
+    {$name}: Let’s see what’s in box number one.
+    You discover canned tuna mixed in with canned sea king. Some of the cans are most definitely the source of the smell. You begin sorting, trying not to gag when you must remove a can that has ruptured.
+    Sengoku: What is that smell?
+    {$name}: Uh, pickled Sea King.
+    Sengoku: I ended up inside of one of those once. 
+    {$name}: Really?
+    Sengoku: It was Garp’s fault.
+    {$name}: Ah, that tracks. => Loop //HOW DO??
+-> Medium box with a dented corner
+    {$name}: OK, what have we got here…
+    Inside are not canned or boxed food but a huge number of Buddha’s Hand fruits! 
+    {$name}: Hey, need a hand?
+    Sengoku: …Haha, like I haven’t heard that one before. => Loop //HOW DO??
+-> Small box wrapped with a bow
+    {$name}: I do love opening presents.
+    You undo the bow. Much to your surprise, the box is full of tins of caviar. Uh. Wow. You’ve never even had caviar. 
+    {$name}: Huh, did we get this by mistake?
+    Sengoku: Hm?
+    {$name}: This is a box of caviar.
+    He crouches down close enough beside you that you can smell his cologne to investigate the box. 
+    Sengoku: Hn, there’s a note.
+    {$name}: Oh, what’s it say?
+    Sengoku: “Enjoy this gift from your king, poor citizens.” 
+    He makes a disgusted face. 
+    -> Little bit rude…
+        Sengoku: Tch, we won’t pass along the message.
+    -> Can we send it back? <<set lwd4S_points +=1>>
+        Sengoku: And deprive the people of the tastes of a life they provide to one who doesn’t appreciate it?
+        {$name}: We could add a little note. Something like: “Please take the price of this out of the taxes for next year.”
+        Sengoku: Hah! 
+        Sengoku: Oh, I’m getting bad in my old age… 
+        {$name}: You’re retired, you can do whatever you want.
+        Sengoku: If only…
+    -> Nice of him to donate something. <<set lwd4S_points -=1>>
+        Sengoku: Could have donated more useful food in three times the quantity for the same price. 
+You continue working through the boxes and passing the contents to Sengoku to shelve until at last the boxes are empty and the shelves are full of foodstuffs.
+Sengoku: Perfect timing. Thank you {$name}. Let’s take a brief break and see how the others are doing. 
+<<jump workday_legendary_4_mid_Day_Break_Switch>>
+===
+
+title: workday_legendary_4_Shelving
+location: mess hall
+---
+
+Inspector Sengoku sighs and bends down to start poking through boxes, handing you things.  
+-> Group items by type (S+1)
+    {$name}: OK, I’d love some canned vegetables first.
+    Sengoku: Coming right up–
+    Sengoku: Are tomatoes vegetables?
+    -> They are today.
+        Sengoku: Last I checked, we were not the propaganda department.
+        {$name}: The Tsars of Tomatoes would disagree.
+        Sengoku: Having met the Tomato Tsars, I believe they would prefer their products to be considered fruits.
+        {$name}: Wait, are Tomato Tsars a real thing?!
+        Sengoku: I see you have never visited The Produce Republic.
+        {$name}: That’s not a real thing.
+        Sengoku: …
+        {$name}: You’re kidding.
+        Sengoku: Here’s some canned corn, {$name}. 
+    -> No.
+        Sengoku: This brand does a very poor job of marketing, then.
+        {$name}: Does that can say ‘a serving of vegetables in every bite?’
+        Sengoku: There’s a little recipe for tomato salad on the back. That’s nice.
+        {$name}: …Alright, hand me the falsely advertised tomatoes.
+    You slowly fill in the shelves, vegetables, fruits, canned meats. 
+    Sengoku: Oh, this box…
+    {$name}: Sir?
+    Sengoku: These are terrible.
+    {$name}: What are they, sir?
+    Sengoku: This brand of crackers. Horrible taste. Flat, dry, like cardboard.
+    {$name}: Really?
+    Sengoku: I have tried many types of crackers.
+    -> Taste is subjective, sir. Hand me the crackers. <<set lwd4S_points +=1>>
+        Sengoku: …These people have suffered enough.
+        {$name}: The crackers, sir.
+        Sengoku: Alright, they would be fine in soup, I guess.
+    -> We could subject them to Instructor Garp instead.
+        Sengoku: He’d never forgive me.
+        -> I doubt that.
+            Sengoku: A food grudge is no laughing matter, {$name}. Not with Garp.
+        -> Is there a story here?
+            Sengoku: Yes, a sordid tale of the time I gave him cherry pie and he didn’t speak with me for eight months. 
+            {$name}: … R-really?
+            Sengoku: The man can hold a grudge. There is a reason he is greatly feared by pirates.
+            {$name}: Isn’t that because he’s very strong?
+            Sengoku: That too.
+    You continue to put things on shelves until everything is finally ready to go. 
+    Sengoku: Whew… Glad this part is over with. I need a break. Let’s go see what the others are up to. 
+    <<jump workday_legendary_4_mid_Day_Break_Switch>>
+-> Sort items by alphabetical order
+    {$name}: Alright, the letter A first!
+    After a few minutes of digging around, the Inspector hands you jars of applesauce and cans of preserves.
+    {$name}: OK, B, please!
+    Once again, you wait as Inspector Sengoku shuffles around.
+    Sengoku: Here’s a number of jars of barbeque sauce. 
+    {$name}: Letter C, please!
+    Another few minutes of digging pass, and then–
+    Sengoku: Is corned beef in B or C?
+    {$name}: Well, by the alphabet, it's C.
+    Sengoku: But if one were trying to find it, they would look in B.
+    {$name}: Why is ‘corn’ in the name, anyway?
+    Sengoku: …
+    Sengoku: I don’t think alphabetically is going to give us the best results. Let’s do something else instead. 
+    LOOP to Shelving Choices //HOW DO??
+-> Who needs order? Chaos time! <<set lwd4S_points -=1>>
+    You begin just placing things on the shelves willy-nilly, a thrill of wildness streaking through you.
+    Sengoku: Take this seriously, {$name}. 
+    He looks annoyed. Whoops. Guess you’d better take a path more travelled, crazy wanderer. 
+    LOOP to Shelving 1 choices //HOW DO??
+===
+
+title: workday_legendary_4_rosi_cook
+location: mess hall
+---
+
+When you arrive in the kitchen, Rosinante is by the counter, carefully reading the recipe book. There is a slight furrow between his brows. It’s clear he is trying hard to make sense of whatever he is reading. 
+{$name}: So! Where do we start? 
+Rosinante: I started already, but… it’s not great.
+You take a look into the pot. It *smells* like soup at least, but the way it looks is pretty unappetizing. 
+The vegetables are chopped unevenly. There is way too much dill, giving it a green look, and it’s boiling so much it almost bubbles over the edge. 
+{$name}: Right.
+{$name}: Let’s start by turning down the heat. 
+Rosinante: Ah, that’s true! 
+He quickly turns down the heat until the soup is merely simmering. 
+Rosinante: I got distracted by the recipe book and forgot about that. 
+{$name}: It’s all good. That’s why there’s two of us now. 
+{$name}: So we can look out for each other. 
+Rosinante: I suppose you’re right… 
+Rosinante: So, what do you think about the soup then? 
+-> It’s fixable! <<set lwd4R_points +=1>>
+    <<jump workday_legendary_4_Fix_Soup>>
+-> It’s perfect! <<set lwd4R_points -=1>>
+    <<jump workday_legendary_4_Perfect_Soup>>
+===
+
+title: workday_legendary_4_Fix_Soup
+location: mess hall
+---
+
+His face lights up. 
+Rosinante: Is that so? I’m ashamed to admit it, but I didn’t expect it to be such a hassle. 
+{$name}: Don’t take this the wrong way, but if you didn’t know how to cook, why did you pick this task?
+Rosinante: Who knew following a recipe would be so difficult… I haven’t had a reason to cook something so complex until now. 
+It’s just soup… but you can’t bring yourself to say that. 
+{$name}: That’s fine, we will figure it out. 
+<<jump workday_legendary_4_Better_Soup>>
+===
+
+title: workday_legendary_4_Perfect_Soup
+location: mess hall
+---
+
+The displeasure is obvious on his face.
+Rosinante: Please don’t lie to me. 
+{$name}: I’m not! It smells good, it should taste good as well. Does it really matter what it looks like? 
+Rosinante: Of course it does! 
+He seems very passionate about this…
+{$name}: OK, let’s just make it better! 
+<<jump workday_legendary_4_Better_Soup>>
+===
+
+title: workday_legendary_4_Better_Soup
+location: mess hall
+---
+
+Rosinante: Great, thank you for the help. 
+{$name}: First, let’s taste it! 
+You each pick up a spoon and dip it in the soup. You blow on it to cool it down.
+{$name}: Bleah, it’s awful. <<set lwd4R_points -=1>>
+    <<jump workday_legendary_4_Bad_Soup>>
+{$name}: This is good! <<set lwd4R_points +=1>>
+    <<jump workday_legendary_4_Good_Soup>>
+===
+
+title: workday_legendary_4_Bad_Soup
+location: mess hall
+---
+
+He doesn’t seem to appreciate that. 
+Rosinante: It doesn’t taste that bad…
+Rosinante: There’s too much greens, but can’t we take some out? 
+{$name}: I guess…
+{$name}: The taste is too strong for me. I’m sure many others will feel the same way.
+Rosinante: We’ll just take them out! 
+Using a fork, you begin to fish out the dill. It takes a while, as the pot is huge, but you manage to get as much of it as you can. 
+<<jump workday_legendary_4_No_Dill_Soup>>
+===
+
+title: workday_legendary_4_Good_Soup
+location: mess hall
+---
+
+He looks happy about that. 
+Rosinante: I agree. 
+Rosinante: Although there’s too many greens. Can’t we take some out? 
+{$name}: We should probably do that. 
+Using a fork, you begin to fish out the dill. It takes a while, since the pot is huge, but you manage to get as much of it as you can.  
+<,jump workday_legendary_4_No_Dill_Soup>>
+===
+
+title: workday_legendary_4_No_Dill_Soup
+location: mess hall
+---
+
+{$name}: I believe we’re on the right track! 
+Rosinante: It still has that taste, though…
+{$name}: No worries! What if we add some more water and vegetables? That should help fix the taste. 
+Rosinante: Are you sure about that? 
+He seems doubtful.
+{$name}: That’s what my mother did when the soup was too salty. It shouldn’t be too different.
+It seems like he doesn’t have enough knowledge to counter that. He adds two more cups of water to the pot. 
+{$name}: Next, the seasoning! 
+Rosinante: I’ll check the recipe book again. 
+The seasonings he used are all lined up on the counter. He brings them to you one by one. You add each to the pot as per his instructions. 
+Rosinante: I feel like it’s better already!
+{$name}: Not yet! 
+{$name}: If you want that prettier look, we need to add more veggies.
+Rosinante: We can cut them neater this time. I’ve learned my lesson now. 
+He’s taking it so seriously that it seems a bit silly, but you’re not about to let him down!
+-> Alright, you can do it then. I’ll taste test when it’s ready. 
+    <<jump workday_legendary_4_Rosi_Veggies>>
+-> How about I do the cutting this time…? <<set lwd4R_points -=1>>
+    <<jump workday_legendary_4_Bad_Veggies>>
+-> Then let’s get to it! <<set lwd4R_points +=1>>
+    <<jump workday_legendary_4_Together_Veggies>>
+===
+
+title: workday_legendary_4_Bad_Veggies
+location: mess hall
+---
+
+Rosinante: Please don’t treat me like a child. 
+He’s clearly annoyed. He snatches a knife and immediately begins chopping carrots on the cutting board.
+{$name}: I apologize. That wasn’t my intention at all. 
+You begin cutting as well. 
+{$name}: It’s better that we’re working together. 
+Rosinante: I guess so. 
+His technique is fast and efficient, and it’s definitely a lot better than before. When you’re done, you both drop the vegetables in the soup. 
+Rosinante: That’s a lot better! 
+Finally, he looks happy. 
+<<jump workday_legendary_4_Best_Soup>>
+===
+
+title: workday_legendary_4_Rosi_Veggies
+location: mess hall
+---
+
+Rosinante: I’d better get started! 
+You get comfortable as Rosinante gets to work. He snatches a knife and immediately begins chopping carrots on the cutting board. His technique is fast and efficient, and it’s definitely a lot better than before.
+{$name}: That looks great! 
+Rosinante: You think so? I feel like I am a fast learner.
+{$name}: That certainly seems to be the case!
+Once he is done, he drops the vegetables in the soup. 
+Rosinante: That’s a lot better! 
+<<jump workday_legendary_4_Best_Soup>>
+===
+
+title: workday_legendary_4_Together_Veggies
+location: mess hall
+---
+
+You two get everything ready and soon begin chopping all the vegetables! With the two of you working together, everything goes smoothly.
+Rosinante: That was fast. 
+He throws everything in the pot. 
+{$name}: We make a very good team. 
+Rosinante: That’s true. I wouldn’t have made so much progress if you didn’t come to help me. 
+{$name}: You were already on the right track! 
+He laughs. 
+Rosinante: I guess you could say that. 
+<<jump workday_legendary_4_Best_Soup>>
+===
+
+title: workday_legendary_4_Best_Soup
+location: mess hall
+---
+
+Rosinante: So it should be all better now, right?
+{$name}: I think so. But it still needs to stay on the heat for a while. 
+Rosinante: That’s great! How about a smoke break? 
+{$name}: Sure. We can see what everyone else is up to! 
+Rosinante: And we can check out the soup again when we are back. 
+<<jump workday_legendary_4_mid_Day_Break_Switch>>
+===
+
+title: workday_legendary_4_Garp_service
+location: mess hall
+---
+
+{$name}: Alright, I guess helping Garp sounds good. Let’s go! 
+You go to the building in the back, where a small group of Marines is waiting for both further instructions and your supervisor. Several members of your group make small talk as you wait. After a few awkward minutes of standing around, Garp finally shows up, scratching his head. He lets out a big yawn, then gives you all a big grin.
+Garp: Alright, thanks for waiting! Let’s get started.
+With long strides, he leads your group over to the main building. After going through a few hallways, you find yourselves in what looks like a mess hall. However, none of the tables, benches, or chairs are set up, and the serving tools haven’t been set out either. 
+Garp: Alright! Looks like we have a lot to do. Divide yourselves in two groups and get going! 
+{$name}: So, where should I start?
+-> I guess I’ll help with the bigger furniture.
+    <<jump workday_legendary_4_garp_furniture>>
+-> I’ll work on getting the serving space set up.
+    <<jump workday_legendary_4_garp_space>>
+===
+
+title: workday_legendary_4_Garp_furniture
+location: mess hall
+---
+
+{$name}: Man, there’s just stacks and stacks of furniture… 
+Garp: Bwahaha! Hey, {$name}! Wanna grab that bench? I’ve got this table!
+{$name}: (Woah! Look at him; he makes handling that table look easy!)
+{$name}: I’ll just…
+-> Grab the bench. <<set lwd4G_points +=1>>
+    {$name}: Yeah, let’s stick to what I know I can do.
+    Garp: Alright, there we go! {$name}, just bring that right over here!
+    {$name}: Got it!
+    Garp: Heh, there you go! 
+    {$name}: Hmm… You make moving these tables look so easy. Should I try…?
+    Garp: Bwahahaha! Why not?
+    {$name}: Alright! Let’s do it!
+    {$name}: …Why is he watching me so intently? Oh well. 
+    {$name}: Let’s see… c’mon… um… uh oh! It’s slipping!
+    {$name}: AH!
+    {$name}: …
+    {$name}: …Huh?
+    Garp: Easy there, {$name}. I’ve got it.
+    {$name}: Oh… Whew.
+    {$name}: Sorry about that. I just thought…
+    Garp: Don’t worry about it. You gave it a try, and even if it didn’t work out, now you know.
+    Garp: You’re pretty strong, {$name}, but you’re not there yet! Maybe you need some more training!
+    {$name}: Haha, I guess so. Thanks for the help.
+    Garp: Don’t mention it!
+    <<jump workday_legendary_4_morning_done>>
+-> Try grabbing a table myself. <<set lwd4G_points -=1>>
+    {$name}: I bet they’re lighter than they look if he can whip it around like that. 
+    {$name}: Let’s see… c’mon… um… uh oh! It’s slipping!
+    {$name}: AH!
+    Garp: {$name}!
+    {$name}: …
+    {$name}: …Huh?
+    Garp: Easy there, {$name}. I’ve got it.
+    {$name}: (Wow… how did he get over here so fast? Was that soru…?)
+    Garp: Are you OK?
+    {$name}: Yeah… sorry about the table—
+    Garp: I DON’T CARE ABOUT THE TABLE!
+    {$name}: …
+    Garp: I care about the people under my command, {$name}, and that means you.
+    Garp: Just… maybe stick to furniture you can safely lift, yeah?
+    {$name}: …Yeah. And… thanks.
+    Garp: Bwahahaha! Don’t mention it!
+    <<jump workday_legendary_4_morning_done>>
+===
+
+title: workday_legendary_4_Garp_space
+location: mess hall
+---
+
+{$name}: OK, here’s the serving space… We’ll need to set out the utensils, the cutlery, and all that stuff. Alright! Let’s look around.
+Garp: Ah, {$name}! Here you are. I found a big container of wooden forks. There’s probably some more around here.
+{$name}: Oh, perfect! Alright…
+-> Let’s hunt for the rest of the cutlery! <<set lwd4G_points +=1>>
+    Garp: Bwahaha! Let’s go!
+    {$name}: …
+    {$name}: Hmmmm… It’s not here.
+    {$name}: Not here, either.
+    {$name}: Any luck on your—
+    Garp: Ah, here we go!
+    {$name}: Oh!
+    {$name}: These look like they’ve all been hand-carved, just like the forks…
+    Garp: Heh. Metal’s not too easy to get out here without trading for it, I bet. But this island has lots of trees. Did you see, {$name}?
+    {$name}: See what?
+    Garp: They have a tree nursery here. Probably to make sure that all of the wood they use to make this stuff is sustainable.
+    {$name}: Yeah, that makes sense. There’s enough cutlery here for a hundred people, so they probably would’ve had to use a whole tree for it. 
+    {$name}: I’m surprised they didn’t sell these if they needed the money, though.
+    Garp: Well, these look pretty old and are well kept. Maybe they’re here for sentimentality, or because they didn’t want to get rid of something their community could need.
+    {$name}: …Yeah.
+-> Would you mind looking for the rest? I’d like to help set up the other serving items. <<set lwd4G_points -=1>>
+    Garp: Tch, fine.
+    {$name}: …And there he goes.
+    {$name}: Hm… This serving stuff doesn’t look like it’s been used for a long while. I wonder why?
+    {$name}: Are there just not many parties or festivals on this island?
+    Garp: Heh, might be a little more complicated than that, {$name}.
+    {$name}: (Woah, when did he get back? I didn’t even notice…)
+    Garp: Did you see the castle on the other side of the island? 
+    {$name}: Castle? What castle?
+    Garp: This island has a king, you know. He profits off his citizens’ labor, then asks the World Government for help. He’s got enough money to go to Reverie, but just can’t seem to spare enough for his own damn people.
+    {$name}: That’s just horrible…
+    {$name}: How could anyone who calls themself a king do that?
+    Garp: Ha! That’s what I ask myself every time. Still, the work we’re doing will help these people and give this old hall some good use.
+    {$name}: …Yeah.
+<<jump workday_legendary_4_morning_done>>
+===
+
+title: workday_legendary_4_Morning_done
+location: mess hall
+---
+
+{$name}: OK, we’re all done! 
+Garp: Great work, all of you! 
+Garp: Hey, it’s time for the midday break! Maybe I can finally get some grub…
+Random Marine: Instructor Garp, I come bearing instructions from Vice Admiral Tsuru. She would like to remind you that there will be no additional food available until service time.
+Garp: WHAT?! Ughhhhhh…
+{$name}: …
+-> (Cheer him up.) <<set lwd4G_points -=1>>
+    {$name}: Hey, it’s OK… 
+    {$name}: I bet the time will pass quickly.
+    {$name}: (...He’s giving me a scathing look. OK. We’ll just leave it at that.)
+    <<jump workday_legendary_4_mid_Day_Break_Switch>>
+-> (Grimace internally.) <<set lwd4G_points +=1>>
+    {$name}: (You and me both.)
+    {$name}: Guuuurgle
+    {$name}: (Great. Now MY stomach’s acting up.)
+    Garp: Heh, you and me both, {$name}!
+    Garp: We’ll get through it!
+    <<jump workday_legendary_4_mid_Day_Break_Switch>>
+===
+
+title: workday_legendary_4_tsuru_cleaning
+location: mess hall
+---
+
+{$name}: Helping Lady Tsuru clean sounds good!
+Tsuru: Very well, {$name}.
+Tsuru: No time to lose, then. Let's get these premises clean!
+Tsuru: Ah… Is the kitchenware ready? Judging by the looks of it, it may not… Let’s see. And we will need volunteers to wash dishes, too.
+Tsuru looks at the Marines.
+Random Marine 2: Uh…
+Random Marine 4: For some reason, I'm getting chills…
+Tsuru: I said *volunteers*!
+No one seems to be too eager to help with these tasks…
+Or maybe they're paralyzed with fear. 
+-> Offer your own help. 
+    {$name}: I will do it. 
+    Tsuru sighs. 
+    Tsuru: This is nice of you, {$name}, but I'll need your assistance all around.
+    Tsuru: Don't try to excuse laziness in others.
+    -> Then we're going to have to *force* the volunteers!! <<set lwd4T_points +=1>>
+        Tsuru's expression goes blank…then, she chuckles.
+        Tsuru: It is the only way to go sometimes, isn't it?
+        Tsuru: We’re in the Navy, after all. 
+    -> Of course! Sorry! 
+        Tsuru: Don't worry about it… 
+    Random Marine 4: Okaaay… We'll do it.. 
+    Random Marine 2: *What do you mean, we?*
+    Random Marine 4: You don't want to disappoint Lady Tsuru, do you? 
+    Tsuru: Excellent, officers.
+    {$name}:... 
+    {$name}: They may act like they don't care, but they really seem to value her opinion a lot… 
+-> Pick two people at random. <<set lwd4T_points +=1>>
+    {$name}: Here, you two! 
+    You point at two of the officers. That will have to do. 
+    Tsuru: A quick resolution. Well done. 
+    Tsuru: Although officers are supposed to *want* to do this… 
+    -> You're right, I'll do better!
+        Tsuru: Don't worry about it, {$name}. 
+    -> We don't have too much time, though, do we? <<set lwd4T_points +=1>>
+        Tsuru: That is very true… 
+        Tsuru: Well, then. We'll proceed this way.
+-> Get the chore boys to do it. <<set lwd4T_points -=1>>
+    Tsuru: Excuse me?
+    Tsuru: We are here to help the people, {$name}. 
+    Tsuru: If you think these are chores, you are mistaken. 
+    -> I'm just saying, if nobody wants to do it… <<set lwd4T_points -=2>>
+        Tsuru: Then it's your mentality that has to change! 
+        Tsuru: Do we need to go through the basics again? 
+        That didn't go too well… 
+    -> Ah, of course. I’m sorry! 
+        Tsuru sighs.
+        Tsuru: We have no time for this right now.
+        Random Marine 4: Okaaay… We'll do it.. 
+        Random Marine 2: *What do you mean, we?*
+        Random Marine 4: You don't want to disappoint Lady Tsuru, do you? 
+        Tsuru: Excellent, officers.
+        {$name}: They may act like they don't care, but they really seem to value her opinion a lot… 
+Tsuru: Very well. The kitchen has to be the first to get ready so that Rosinante can get to cooking.
+Tsuru: Let's get started. 
+Tsuru: I will need your help all around, {$name}! 
+{$name}: I'd prefer to…
+-> ...wash the floors!
+    Tsuru: I appreciate that, but I would rather do that.
+    Tsuru: There is no way to clean this mess without a Devil Fruit… but it is very nice of you to volunteer. (Loop back) //HOW DO??
+-> ...do the inventory for cutlery! 
+    <<jump workday_legendary_4_invent>>
+-> ...supervise the officers while they clean. 
+    <<jump workday_legendary_4_dishwashing>>
+Tsuru: Let's get to work. 
+===
+
+title: workday_legendary_4_invent
+location: mess hall
+---
+Tsuru: Going over the available supplies… This is a good idea.
+Tsuru: Follow me, {$name}. 
+Across a hall, you stroll behind Tsuru, your boots sticking now and then to the grime-encrusted floors. 
+Tsuru: It doesn't look like anybody has been using this soup kitchen…
+-> Try to make small talk. 
+    {$name}: Have you ever been to this region before? 
+    Tsuru: Not outside of the last years’ volunteering, no. 
+    Tsuru: Which is not to say it isn't a nice place… A calm corner of the seas. 
+-> Ask about past experiences in this soup kitchen. <<set lwd4T_points +=1>>
+    {$name}: Is this something you do very often? 
+    Tsuru: Under Sengoku, we always did.
+    Tsuru: And well… Under Sakazuki, we do try to, but it isn't a high priority anymore. 
+    Tsuru: For Sengoku, it was very important not to lose touch with civilians… With the real impact of the decisions we make. 
+-> Remark on the lack of maintenance. <<set lwd4T_points -=1>>
+    {$name}: It doesn't look like whoever is in charge cares much about cleaning the soup kitchen, that's for sure. 
+    Tsuru: ... 
+    Tsuru: You're not wrong. But let's try not to point it out in front of our men… Or civilians, for that matter. 
+A flickering light bounces off dull metal. Heaps of rusty pots and greasy pans greet you…
+And the cutlery seems to be coated with dust. 
+Tsuru: Hmm.
+{$name}: It seems like…
+-> …more than enough to start! <<set lwd4T_points -=1>>
+    Tsuru: You might be too optimistic, {$name}. This kitchen is in no condition to cook. 
+    Tsuru: Call your men. I'll take the floors, and you do the dishes, fast. 
+-> …more work than we expected! <<set lwd4T_points +=1>>
+    Tsuru: Exactly what I was thinking. 
+    Tsuru: Get ahold of a couple of officers, {$name}. 
+<<jump workday_legendary_4_dishes_a>> 
+===
+
+title: workday_legendary_4_dishwashing
+location: mess hall
+---
+
+Tsuru: Hm. Supervising sounds like an excuse to play hooky. 
+-> You get nervous. <<set lwd4T_points -=1>>
+    {$name}: N-no! I'd never make excuses in a matter as serious as this—
+    Tsuru:...
+    Tsuru: Don't make me actually suspicious by reacting like that. 
+    Tsuru: After all, I was going to say that I trust you to do a good job, {$name}. Don't disappoint me. 
+-> You stay calm. <<set lwd4T_points +=1>>
+    Tsuru: However, I trust you with this task.
+    Tsuru: Thank you for volunteering. 
+Motioning to the two officers that offered to help, you enter the kitchen. 
+A flickering light overhead reveals heaps of kitchenware on squalid shelves. It looks like somebody may have made an attempt on sorting it out before leaving it there for years.
+Marine B: Ugh… These plates are sticky.
+Marine A: Is the pan supposed to look like this? 
+Marine B: I think there's a whole family of rats living under the cupboard…
+There seems to be quite a lot to do before the cooking can start.
+-> Ask Tsuru for help. 
+    You're about to turn around but then decide… 
+    She probably won't be too happy without you at least trying.
+-> Find the right products to clean the kitchenware.
+    {$name}: Attention, officers! 
+    {$name}: No more complaining. Let's get to business. 
+    The officers straighten up and salute. Hey, this is working well! 
+    As one of them opens the door to a cupboard, a big cloud of dust tickles your nose.
+    Marine B: Hey, boss, it seems like I found some cleaning stuff right here…
+    Marine B: Hmmm… The label says “vinegar”... 
+    -> Yes, that should work! 
+        Marine B: Huh… OK… Is this all we need?
+        -> Yes, that's it! 
+            <<jump workday_legendary_4_dishwashing_neutral>>
+        -> No, let's keep on looking. 
+            <<jump workday_legendary_4_dishes_a>>
+    -> That's not what we want! 
+        Marine B: Huh… All right…
+        {$name}: Just mix whatever you find in a bucket! 
+        <<jump workday_legendary_4_dishes_chaos>> 
+-> Try to scrub the rust off the pans.
+    {$name}: Everybody! Just follow my lead!
+    {$name}: It only takes some hot water and scrubbing… 
+    Marine A: Uh… Officer, that does not look too good. 
+    Marine B: (I hope they know what they are doing…)
+    -> **Keep trying!!**
+        Marine A: Um… There’s like… A whole lot of black bits that are breaking off… 
+        Marine A: Uh, don't think I'd like to have any food that's cooked with that pan. 
+        Marine A: In fact, I'm not hungry. 
+        -> Let's just get this done quickly! 
+            <<jump workday_legendary_4_dishwashing_neutral_B>>
+        -> You're right. Let's just throw it away. 
+            That should render this place actually usable… 
+            <<jump workday_legendary_4_dishes_a>>
+    -> Try to get the pots clean another way instead… 
+        <<jump workday_legendary_4_dishes_a>> 
+===
+
+title: workday_legendary_4_dishes_a
+location: mess hall
+---
+
+Your men scowl over a bunch of brightly colored cleaning supplies…
+Marine B: Maybe let's give this… “Grease cleaner” a try? 
+-> Sure, throw it all in some water with the vinegar too! 
+    <<jump workday_legendary_4_dishes_chaos>>
+-> Not yet. But we will need it later! 
+Marine B: Huh, alright…
+Marine B: Here, I also found some, uh… all-purpose cleaner? 
+He reads slowly, as if he's never heard the words before. 
+-> Sure! That's all we will need, really. 
+    <<jump workday_legendary_4_dishes_neutral>>
+-> Take a wild guess! 
+    Marine B: Honestly… I had never washed dishes before… 
+    {$name}: Somehow, that doesn't surprise me… 
+{$name}: This seems good for now. 
+-> Take a break. 
+    <<jump workday_legendary_4_dishwashing_neutral_B>> 
+-> Get to work! 
+    <<jump workday_legendary_4_dishwashing_good>> 
+===
+
+title: workday_legendary_4_dishes_chaos
+location: mess hall
+---
+
+Marine B: All I find, huh? Like… 
+Marine B: Huh… Disinfectant… 
+Marine B: And bleach… And all-purpose cleaner… Wait, there's a few of these…
+Marine B just squeezes all of them into a bucket of water. 
+The smell it lets out is quite strong… Acidic, in fact. Your eyes and nose itch. 
+Marine A: Huh… No offense but…
+Marine A: This stinks! 
+Marine B: Hey, twice as much stink is half the work, am I right–
+You can't breathe this in!
+The three of you bolt toward the exit and take a lungful of clean clean air. 
+You pant… And breathe… And breathe… 
+Tsuru: {$name}? Is everything OK? 
+Tsuru: What is that smell?
+The officers you were supposed to be supervising burst out the door, panting and coughing. 
+(At least they have evacuated the rat family.)
+They both point at each other and exclaim in unison:
+Marines A & B: It was him! 
+Tsuru: This is ridiculous.
+Tsuru: Now we have to clean your *alleged* cleaning… 
+<<jump workday_legendary_4_mid_Day_Break_Switch>>
+===
+
+title: workday_legendary_4_dishes_neutral
+location: mess hall
+---
+
+With the items you selected, the cleaning is going well. 
+Except… It's taking it more than you expected. 
+Marine A: Aw… My hands are all dry… Can you believe it? 
+Marine B: Think you're supposed to put on some gloves… 
+Tsuru: Hello, {$name}. 
+Tsuru: Hm… I was quite expecting this to be done by now. 
+Tsuru: Well. Leave me to it.
+You hope she's not too disappointed… 
+<<jump workday_legendary_4_mid_Day_Break_Switch>>
+===
+
+title: workday_legendary_4_dishwashing_neutral_B
+location: mess hall
+---
+
+The door swings open. Lady Tsuru is here, and she doesn't look impressed. 
+Tsuru: {$name}, why aren't your men working? 
+Tsuru: Without clean premises, we can't even start cooking! Get to work immediately!
+-> No, I swear, we were working just a moment ago. <<set lwd4T_points -=1>>
+    Tsuru: Are you aware of what that sounds like? This job is top priority. 
+    {$name}: But… With your Devil Fruit, can't you do that yourself? 
+    Tsuru: I can. And in fact, it seems like I will have to do exactly that. 
+    Tsuru: I wanted to give these officers some sense of discipline… But, obviously, you were not the best example. 
+-> Oops… I apologize. <<set lwd4T_points +=1>>
+    Tsuru: At least, you know your mistakes. I will need to give you a helping hand before our midday break. 
+Oh, that didn't go too well… 
+<<jump workday_legendary_4_mid_Day_Break_Switch>>>>
+===
+
+title: workday_legendary_4_dishwashing_good
+location: mess hall
+---
+
+With the items you selected, the cleaning is going well!
+Everything is starting to look clearer… The prospect of cooking with this stuff is not so dire anymore.  
+Marine A: Huh… Just a bit more to do! 
+Marine B: Almost done with the dryin’, boss! 
+Tsuru: How is it going, {$name}? 
+Tsuru: Oh! Your men seem in good spirits… And you're doing a great job. 
+Tsuru: I knew I could count on you! 
+<<jump workday_legendary_4_mid_Day_Break_Switch>>
+===
+
+title: workday_legendary_4_mid_Day_Break_Switch
+location: mess hall
+---
+
+You return to the small group gathering space to see Vice Admiral Tsuru, Instructors Garp and Sengoku, and Vice Admiral Rosinante. Rosinante looks a little worse for wear and Garp looks horribly forlorn. 
+-> Are you alright, Vice Admiral Rosinante?
+    Rosinante: Cooking is quite a challenge.
+-> Are you OK, Instructor Garp?
+    Garp: I have been told I cannot eat anything until after we pass food out…
+Tsuru: The amount of grime on the floors here, you would not believe. 
+Sengoku: Worse than last year?
+Tsuru: I had nightmares last year. This year I may not sleep at all.
+Wow, it seems like everyone is having a bit of a time. Where should you lend aid next?
+-> Inspector Sengoku will need help with giving out all that food you just stocked. 
+    <<jump workday_legendary_4_Sengoku_Afternoon>>
+-> Vice Admiral Rosinante might need assistance in the kitchen. 
+    <<jump workday_legendary_4_rosi_afternoon>>
+-> Vice Admiral Tsuru may need the extra moral support with cleaning… 
+    <<jump workday_legendary_4_tsuru_afternoon>>
+-> Inspector Garp will need someone to keep an eye on him once the food starts being served. 
+    <<jump workday_legendary_4_garp_afternoon>>
+===
+
+title: workday_legendary_4_Sengoku_Afternoon
+location: town
+---
+
+{$name}: I’ll continue to help out Inspector Sengoku. After all, I know where everything is.
+Sengoku: Well, let’s get back to it, {$name}. 
+You return to the pantry, Inspector Sengoku eying the very long line that has formed outside. 
+Sengoku: Are you ready, {$name}?
+{$name}: Yes, sir!
+He nods and opens the door. Cold winter wind blows in your face. People squeeze inside, taking boxes and hurrying down the aisles to grab items. At some point, you completely lose track of time; your only purpose now is to help people find jars of mayonnaise and carry items back to where they belong.
+Sengoku: {$name}, come up to the front please!
+{$name}: You hurry towards the front, where the Inspector is doing double duty collecting more boxes of donated items and making sure nobody is taking more than their fair share. 
+{$name}: Sir?
+Sengoku: Can you please take this box of bittermelon and place it on one of the shelves?
+{$name}: Sure I can d–
+Random Person: Excuse me?
+Sengoku: Yes? 
+Random Person: Just wanted to say ‘thank you.’ Ya know, I served with you forty years ago. 
+Sengoku looks surprised. 
+Random Person: Had to leave the services ‘cause of my leg after that Gold Lion Shiki attack, but it was an honor serving under ya. 
+Sengoku: Thank you for your service.
+The man salutes, takes his box and leaves.
+{$name}: Well, that was nice. 
+Sengoku: …
+You take the box of bittermelon and get back to what you were doing before. Hours pass. Eventually the crowd dwindles and only a few forlorn cans of beans are left on the shelves. 
+{$name}: Whew, that was a lot! I don’t think I’ve had this much of a work out in a while!
+Sengoku: …
+{$name}: Sir?
+Sengoku: …I apologize. What did you say, {$name}? 
+He looks troubled.
+{$name}: Is everything alright, sir?
+Sengoku: …
+Sengoku: …No, {$name}. 
+Sengoku: That man earlier. The former soldier. He shouldn’t be requiring charity.
+{$name}: What do you mean?
+Sengoku: I mean that the Navy should be taking care of its own. Did you know that pensions were only started after I became Fleet Admiral? And they are a damn pittance! 
+{$name}: This seems to be really bothering you. 
+Sengoku: Yes. 
+-> Is there something you can do about it? <<set lwd4S_points +=1>>
+    Sengoku: I… I am not sure. It’s not in my purview, so to say.
+    {$name}: Well, whose is it?
+    Sengoku: Technically, no one’s. Kong is the one who oversees the budget, ultimately.
+    {$name}: Could you ask him about it?
+    Sengoku: Perhaps. Perhaps that is a duty only someone with my experience can head…
+    {$name}: Go for it, sir! 
+    Sengoku: …Thank you, {$name}. Come, let’s go meet up with the others. 
+    <<jump workday_legendary_4_Outro>>
+-> It’s tough, but sometimes there is only so much you can do.
+    Sengoku: It seems that is the story of the life I have lived. Never enough.
+    {$name}: Or you do what you can with what you’ve got. You can’t solve every problem. You’re just one person. Even when you were the Fleet Admiral, things happened that you couldn’t always fix, right?
+    Sengoku: …
+    Sengoku: Yes. Come, let’s finish up and reconvene with the others. 
+    <<jump workday_legendary_4_Outro>>
+-> You could probably find that guy and give him more food. <<set lwd4S_points -=1>>
+    Sengoku: And how long will that last him? A week? A month?
+    Sengoku: And what about others just like him?  
+    {$name}: Um. 
+    Wow, being shouted at by the former Fleet Admiral is not something you can say you enjoy.
+    Sengoku looks like he wants to say more, but stops himself.
+    Sengoku: I apologize, {$name}. Come, let’s finish up and go. 
+    <<jump workday_legendary_4_Outro>>
+===
+
+title: workday_legendary_4_rosi_afternoon
+location: mess hall
+---
+
+You go inside the kitchen. Rosinante looks relaxed. 
+Rosinante: That was a much needed break, really!
+{$name}: I agree.
+{$name}: So, how is the soup coming along? 
+He hands you a spoon. Looks like you’ll be the judge today. 
+After taste testing it’s… actually very good!
+{$name}: It’s delicious! 
+Rosinante: Wait, really?
+He has to try it himself. 
+Rosinante: You’re right. I didn’t actually believe… 
+{$name}: Have more faith in yourself. 
+You pat his back. 
+{$name}: So! What do you need help with? 
+Rosinante: We need to put the soup in the bowls, so that Vice Admiral Garp can hand them out.
+{$name}: Sounds simple enough. 
+Rosinante: I’ll go bring out the bowls from the back. 
+-> Wait, you shouldn’t go on your own. <<set lwd4R_points -=1>>
+    <<jump workday_legendary_4_Offend_Rosi>>
+-> I’ll come help! <<set lwd4R_points +=1>>
+    <<jump workday_legendary_4_Help_Rosi>>
+===
+
+title: workday_legendary_4_Offend_Rosi
+location: mess hall
+---
+
+You remember all those times you saw him trip. You know you two should be careful with those ceramic bowls. 
+Rosinante: What do you mean I shouldn’t go on my own? I can handle it.
+Uh, oh… He’s definitely upset. 
+{$name}: That’s not what I meant. Just thought I should help. 
+Rosinante: I can handle it. 
+He disappears into the storage room. 
+He returns, balancing about a dozen bowls in his arms. In the end, it turns out he can’t handle it, because his foot catches on the corner of the table and the bowls go flying. 
+Somehow, he saves some of them, but at least half fall and smash to the ground with a deafening sound. 
+{$name}: Are you alright?? 
+Rosinante: I’m fine, I’m fine… But the bowls are not.
+The floor is full of shards, making every step treacherous. 
+{$name}: It’s not that bad. 
+{$name}: It can just be cleaned! 
+<<jump workday_legendary_4_Clean_Bowls>>
+===
+
+title: workday_legendary_4_Help_Rosi
+location: mess hall
+---
+
+Rosinante: They’re out here! 
+The boxes in the storage room are filled with ceramic bowls. The two of you each pick some of them up. 
+You walk back outside. As you are about to put them on the counter, Rosinante bumps into you. 
+The bowls you were holding fall to the ground and smash into tiny pieces. 
+You both stare for a few moments. 
+Rosinante: Are you alright? Did you get hurt? 
+{$name}: I’m alright. 
+{$name}: You think we’ll have to pay for those? 
+Rosinante: Not if we hide them… 
+You look at each other. You have to clean it up before anyone walks in. 
+<<jump workday_legendary_4_Clean_Bowls>>
+===
+
+title: workday_legendary_4_Clean_Bowls
+location: mess hall
+---
+
+Rosinante: I’ll get the broom. 
+-> I’ll pick out the larger shards until then. <<set lwd4R_points +=1>>
+    <<jump workday_legendary_4_Together_Clean>>
+-> Yeah, you caused it, so you should clean it up. <<set lwd4R_points -=1>>
+    <<jump workday_legendary_4_Rosi_Clean>>
+===
+
+title: workday_legendary_4_Together_Clean
+location: mess hall
+---
+
+You pick up the large shards, and Rosinante brings over the broom to sweep the little ones. Soon the evidence is hidden away.
+{$name}: Phew.
+Rosinante: That was close. 
+{$name}: I agree. 
+Rosinante: Let’s bring in fewer bowls next time. What do you say?
+{$name}: That’s the plan… 
+{$name}: Let’s do this… We’ve already taken so long. 
+Rosinante: How should we go about it?
+-> You should pour the soup, and I’ll bring them over to the window so we can avoid other disasters. <<set lwd4R_points -=1>>
+    <<jump workday_legendary_4_Rosi_Pour>>
+-> Someone needs to get the soup ready. The other one will set it by the window. <<set lwd4R_points +=1>>
+    <<jump workday_legendary_4_Player_Pour>>
+===
+
+title: workday_legendary_4_Rosi_Clean
+location: mess hall
+---
+
+Rosinante: It wasn’t entirely my fault. You can’t pin it on me. 
+{$name}: You tripped. 
+Rosinante: That can happen to anyone. 
+He continues to mumble, annoyed, but he brings a broom to clean everything up. It takes a while, since there are quite a lot of shards that need sweeping. You only watch him do it. 
+Finally, he is done! 
+Rosinante: That would have been more efficient if you’d helped. 
+{$name}: I would have just gotten in your way. 
+Rosinante: I think you need to learn to talk to your superiors, {$name}. 
+{$name}: Let’s just focus on getting everything ready. 
+{$name}: We’ve wasted enough time already. 
+Rosinante: Fine. Do you have anything in mind? 
+-> You should pour the soup. I’ll bring them over to the window so we can avoid other disasters. <<set lwd4R_points -=1>>
+    <<jump workday_legendary_4_Rosi_Pour>>
+-> Someone needs to get the soup ready. The other one will set it by the window. <<set lwd4R_points +=1>>
+    <<jump workday_legendary_4_Player_Pour>>
+===
+
+title: workday_legendary_4_Rosi_Pour
+location: mess hall
+---
+
+Rosinante: You can’t blame everything on me! 
+{$name}: That wasn’t what I meant. It’s just more efficient. 
+{$name}: While you pour all the soup, I’ll have enough time to place it on the window and bring some more bowls from the back. 
+Rosinante: Fine. I don’t care how we do it as long as it gets done. 
+Rosinante: I need another smoke break. 
+{$name}: Later!
+{$name}: Let’s finish this. 
+<<jump workday_legendary_4_Soup_Serve>>
+===
+
+title: workday_legendary_4_Player_Pour
+location: mess hall
+---
+
+Rosinante: I will take care of the bowls! I can be quite fast when I’m focused. 
+{$name}: That sounds good. I’ll do the pouring. 
+Rosinante: If we build a rhythm, we’ll be done in no time!
+{$name}: Finally,. The kitchen is starting to be way too hot. 
+Rosinante: We’ll take a break after. For now, let’s hurry! 
+<<jump workday_legendary_4_Soup_Serve>>
+===
+
+title: workday_legendary_4_Soup_Serve
+location: mess hall
+---
+
+The two of you work together perfectly. Soon, all the soup is sent out to be served. 
+{$name}: I’m exhausted.
+You’re fine with sitting on the floor. At least the cold tiles provide a good contrast to the heat. 
+Rosinante: Tell me about it. 
+Rosinante: That was more demanding than a regular Marine mission. 
+He sits next to you. 
+Rosinante: I must say, despite the mishaps, we made a great team. 
+{$name}: That’s true… 
+{$name}: Maybe with some more practice, we could build some amazing teamwork.
+Rosinante: All in due time, {$name}. 
+The two of you rest against the kitchen floor, tired but happy with a job well done. 
+<<jump workday_legendary_4_Outro>>
+===
+
+title: workday_legendary_4_tsuru_afternoon
+location: mess hall
+---
+
+Tsuru: {$name}... It seems like we're back to cleaning now. 
+Tsuru: There is no more food… And everyone seems satisfied. 
+Tsuru: So, what do you think, {$name}? 
+-> Can we rest for a little longer?
+    To your surprise, Tsuru nods solemnly.
+    Tsuru: Leave this to me. 
+-> I'll get back to work! <<set lwd4T_points +=1>>
+    Tsuru: Always full of energy, I see. 
+    Tsuru: I was thinking of something else, actually.
+    Tsuru: Leave the cleaning to me this time. 
+-> Don't worry, the other marines will take care of it! <<set lwd4T_points -=1>>
+    Tsuru: So that was your plan all along? Sit here and do nothing? 
+    Tsuru: Well. Anyway. 
+    Tsuru: It might not be that bad of an idea, after all… But first… 
+Tsuru goes into the kitchen, leaving the door wide open. 
+Soon, bubbles start floating out of the kitchen, along with clumps of foam. 
+Marine B: I feel so clean.
+Marine A: I could keep on like this forever! 
+Tsuru: Now, we can leave them to do the rest… I trust they can manage. 
+Tsuru: Would you like to join me, {$name}?
+Outside the soup kitchen, the early afternoon is dim blue and orange. Groups of sated civilians serve themselves tea and coffee from thermos in paper cups.
+You serve tea for Tsuru and yourself and take a seat next to her. 
+Tsuru: A nice afternoon… Let’s enjoy it.
+Tsuru: I consider that our work here has been done.
+-> The people seem happy. That’s all that matters!
+    Tsuru: They do seem happy.
+    Tsuru: Looking at them, and seeing how the people trust us…
+    Tsuru: I wish our work was always this simple.
+-> Doing good things really brings a group together! <<set lwd4T_points +=1>>
+    Tsuru: Yes. That is very important. 
+    Tsuru: Ever since Sengoku-san half-retired, these kinds of missions have become a rarity.
+-> I’m not sure that we can trust the rest of the work to be done… <set lwd4T_points -=1>>
+    Tsuru: Well, if we can’t trust our good teammates, we might as well go home!
+Tsuru: Even when Sengoku was Fleet Admiral, he would always try to take some time to organize these kinds of events.
+Tsuru: And Garp… Well, he doesn’t show it, but it’s important for him to do something good for the people, too.
+Tsuru: We used to host these events quite often… It has always been very important for us, especially the previous generation, to meet the civilians once in a while.
+Tsuru: Can you imagine why?
+-> To get away from the office. <<set lwd4T_points -=1>>
+	Tsuru: {$name}... 
+-> To not forget the people we are supposed to help. <<set lwd4T_points +=1>>
+	Tsuru: That is a good reason. 
+-> To become more humble. <<set lwd4T_points +=1>>
+	Tsuru: Exactly.
+Tsuru: Spending too much time at Marineford, only in your role as a Marine and close to Mary Geoise… Sometimes, it makes you forget important things.
+-> Huh. The times really have really changed, haven’t they? <<set lwd4T_points -=1>>
+	Tsuru: What are you implying?
+-> But what point is there to it if not all Marines treat civilians kindly?
+	Tsuru: I’d like to have a word with any corrupt officers.
+	Tsuru: I’d hang them out to dry in no time!
+-> I wish we got to participate in these kinds of events more often! <<set lwd4T_points +=1>>
+	Tsuru: It certainly helps build character in a different way.
+Tsuru: It’s true, though. These events take place less often. Fleet Admiral’s Sakazuki priorities are different now.
+Tsuru: But… I may be able to talk to him about budgeting some more for them.
+-> That guy? I think you better forget it. <<set lwd4T_points -=1>>
+    Tsuru: You do?
+    Tsuru: I think it would be better for you not to make assumptions, {$name}.
+-> Um… Do you think that would work?
+	{$name}: I mean, he seems very…
+	Tsuru: Serious?
+	Tsuru: I think it’s worth a try.
+Tsuru: Fleet Admiral Sakazuki used to be my pupil. Just like Kuzan was Garp’s, and Borsalino was Sengoku’s.
+-> I… Can sort of see it. <<set lwd4T_points +=1>>
+    Tsuru: I’ll take that as a compliment.
+-> I would’ve never guessed it!
+    Tsuru: Be a bit more observant, will you?
+Tsuru: However… We belong to another generation. Nowadays, the children I helped raise, like my granddaughter Kujaku and Drake… They are all idealists.
+-> X Drake! What an incredible story! <<set lwd4T_points +=1>>
+    Tsuru: I will always remember the day when we rescued him from that North Blue island… Quite a close call for our good friend Rosinante, too.
+    Tsuru: It’s good that everything turned out well, isn’t it?
+-> I don’t understand those people in SWORD!
+    {$name}: What’s the problem with just doing our job regularly?
+    Tsuru: Well, {$name}, the problem is exactly the job, as you would say…
+    Tsuru: But they don’t want approval, of course. They want to make a statement, and for that I am proud of them.
+-> Aren’t you worried about them? <<set lwd4T_points -=1>>
+    Tsuru frowns, taking a sip of her tea. Perhaps this was the wrong question to ask.
+    Tsuru: There are many dangerous situations in our line of work, SWORD or not.
+    But, of course, you know that it’s not the same to have the complete backing of the Navy… or not.
+-> I think we should change the entire system!
+    Tsuru: Hm… You sound like somebody else we don’t talk about often.
+    Tsuru: Garp’s son, Dragon…
+    Tsuru: Perhaps he, too, would have been in SWORD had he been a Marine nowadays. Or perhaps not.
+Tsuru: What about you, {$name}? You have been with us for a few months now. Do you like it here?
+-> I like it, but I want to change everything! <<set lwd4T_points +=1>>
+    Tsuru: You know… I think you may get along well with Kujaku.
+-> I feel comfortable here! 
+    Tsuru: I’m glad.
+    Tsuru: Our colleagues and I… We don’t always see eye-to-eye, but I like to think we’re welcoming.
+-> I’d like to challenge myself more!
+    Tsuru: That’s a very good thing.
+It’s getting dark. The sun is slowly disappearing below the vast horizon.
+Tsuru sips up her tea.
+Tsuru: We will have to pack up soon. See you back on the ship, dear {$name}.
+<<jump workday_legendary_4_Outro>>
+===
+
+title: workday_legendary_4_Garp_afternoon
+location: mess hall
+---
+
+{$name}: Alright, I’m here to help!
+Garp: Good! It’s finally time for food! Let’s get cracking, {$name}! Marines, line up!
+{$name} & Marines: YES SIR!! //HOW DO??
+{$name}: …
+{$name}: Ok, where’s the soup… Oh! There it is. Mmmm, smells good! Looks like the kitchen team is good to go.
+Garp: Bwahaha! I’ll serve the soup!
+{$name}: Looks like a bunch of people have lined up to ladle out soup.
+{$name}: As for me, I’ll…
+-> Also serve!
+    Garp: Uh, {$name}? Hate to break it to ya, but we’ve already got more than we can handle over here!
+    {$name}: …Oh.
+    {$name}: I’ll just… do utensils.
+-> Hide in the back. <<set lwd4G_points -=1>>
+    Garp: If you didn’t want to serve food, then why did you come over here?! 
+    Garp: Just go do utensils!
+-> Hand people utensils! <<set lwd4G_points +=1>>
+    Garp: Good thinking!
+{$name}: …
+{$name}: (OK, I’ve got all the utensils lined up. And just in time, too!)
+Garp: Look alive, you lot! Open the doors!
+{$name}: (Alright, time to… Woah!)
+{$name}: (That’s a lot of people! Keep it together, {$name}!)
+Local: Oh, thank you!
+{$name}: Sure! No problem.
+Local: Oh, that smells heavenly… When’s the last time I had such a nice stew?
+Local: Oh my… are you… the legendary hero, Garp the Fist?! I remember reading about you in the papers!
+Garp: Bwahahaha! That’s me!
+Local: Wow… What an honor!
+{$name}: (This really means a lot to these people, huh…?)
+{$name}: (Yeah, maybe it feels kinda forced to us, but to them, this’ll be something they remember for a long time.)
+{$name}: (Maybe doing this kind of thing once in a while isn’t so bad.)
+{$name}: (And Garp is…)
+Garp: Y’know, maybe I should have a little taste of the soup. Just to make sure it’s good.
+Random Marine: Please don’t, sir.
+{$name}: (...Being himself.)
+{$name}: (But maybe that’s for the best.)
+The last of the townsfolk collect their meals, and the other Marines who’ve been hard at work get in line to get their own soup. They smile at you as they get their utensils and steaming bowls of stew, tired but happy. Once they’ve all been served, it’s finally your turn.
+{$name}: Whew! That took a while, but it’s finally our turn. 
+{$name}: Huh? Garp is still serving?
+Garp: Hm? {$name}, what are you waiting for? You’re the last one!
+{$name}: Oh! Um… OK. I guess I’ll have some.
+Garp: That’s the spirit! You worked hard, so get your reward.
+{$name}: (I think I’ll…)
+-> (Go sit with everyone else at the tables.)
+    {$name}: Guess I’d better go grab a seat. Thanks for the soup! And for, well, everything else. Today turned out to be pretty fun!
+    Garp: Heh, it’s good for us to remember that we’re here to help people. Even if… Well, never mind. Just don’t forget this feeling, {$name}. This is the feeling that Marines should have toward civilians.
+    {$name}: …Yeah. I won’t.
+    <<jump workday_legendary_4_Outro>>
+-> (Keep Garp company.) <<set lwd4G_points +=1>>
+    Garp: You’re not gonna grab a seat?
+    {$name}: Nah, it’s too noisy out there for me. I’d rather hang out with you.
+    Garp: Hah! Well, suit yourself.
+    {$name}: …This is pretty good soup.
+    Garp: Isn’t it? The kitchen crew must have worked real hard on this.
+    {$name}: Yeah… It’s really nice that everyone gave it their all today.
+    Garp: …
+    Garp: Sometimes, when people become Marines, they forget what it’s like to be a small-time civilian. Of course, some people have never felt that way, but a lot have. 
+    Garp: This trip isn’t just to do outreach, {$name}. The biggest reason why Senny sponsors this trip every year is to make sure people remember where they came from, so that they’re more motivated to protect people like them.
+    Garp: Or at least, that’s the goal.
+    {$name}: (Huh, so it wasn’t just a charity mission…)
+    Garp: Heh, but that’s enough of the serious stuff for now! Stuff yourself with soup for a job well done!
+    {$name}: Yeah!!
+    <<jump workday_legendary_4_Outro>>
+===
+
+title: workday_legendary_4_Outro
+location: town
+---
+
+After a hard day’s work, it appears everyone is worn out, even Garp. He’s asleep standing up! 
+Tsuru: Excellent work today.
+Sengoku: Yes. Rosinante, what happened to your uniform?
+R: UHHH?? Oh, I was wondering what smelled like burning…
+Sengoku, Tsuru: It’s you! //HOW DO??
+Garp: Zzzzz MEAT! Zzzzz~
+Sengoku: Let’s head back to the ship.
+Tsuru: Yes, I’ve had enough of grimy kitchens for another year. 
+Garp: Are we leaving? Hope the mess has some leftovers!
+===

@@ -1,382 +1,321 @@
 
-
-:: Start
+title: date_hina_4_Start
+location: town
+---
 It is ten minutes to seven in the morning. You run along the road and into town as fast as your legs can carry you. Hina was very specific in her instructions that you do *not* be late, lest you suffer the consequences.
-
-
-
-
 One part of you is eager to find out exactly what the consequences might be, but a bigger part of you is far more eager to please Hina.
-
-
-
-
 You slide to a stop as you come up to the address that Hina specified with exactly two minutes to spare, except… is this the right place? There is a pasture field with a couple of grazing horses, a big, red barn, and a smaller building that appears to be a stable. You don’t see Hina.
-- **Approach stable**
+-> **Approach stable**
   You approach with careful steps, wincing as your feet drag across the crunchy gravel. As you reach the door and put a hand on the handle, it swings open.
   Hina: {$name}, excellent. You arrived before the scheduled time, but within the margin of acceptable behaviour.
-- **Approach the horses and pet them**
+-> **Approach the horses and pet them**
   There is a little foal running around the pasture, its white, fluffy coat of fur looking… *so* soft. Almost like clouds.
   You click your tongue and produce a leftover carrot from somewhere inside your clothing. It trudges up to you and devours the carrot in one big bite, but it *does* let you pet it.
   So. Soft.
   You get lost in the fluff, and before you know it, someone is tapping you on your shoulder. You turn around and see an absolutely seething Hina.
-  Hina: You are fifteen minutes late, {$name}. Do you think this is acceptable behaviour for a Marine? You would rather spend your time with a foal than Hina? Hina sees how it is. If that is the case, Hina will spend the day alone. Dismissed. => DATE ENDS
-- **Call for Hina** (-1)
+  Hina: You are fifteen minutes late, {$name}. Do you think this is acceptable behaviour for a Marine? You would rather spend your time with a foal than Hina? Hina sees how it is. If that is the case, Hina will spend the day alone. Dismissed. 
+  <<jump date_hina_4_DATE_ENDS>>
+-> **Call for Hina** <<declare hd4_points -=1>>
   There appear to be no other people this early in the morning, the air cold and crisp, so you cup your hands around your mouth and suck in a deep breath, calling out:
     {$name}: “Rear-Admiral Hina, Ma’am?!”
     Hina emerges from the stable, hands on her hips and a scowl on her face.
     Hina: Do you find it appropriate to display such reprehensible behaviour? Are you not a Marine? Are you unable to conduct yourself in an appropriate manner?
-
-
-
-
 Hina stands there, in all of her usual glory. Her hair is brushed to perfection, lipstick as red as the blood of her enemies, and… on her head is a riding helmet. In her hands is a riding crop.
-- {$name}: Could you use that riding crop on me?
-  Hina: Impudence. Clearly Hina will be better off attempting an intellectual conversation with an animal rather than with you, {$name}. Dismissed. => DATE ENDS
-- {$name}: Are we going horseback riding?
+-> {$name}: Could you use that riding crop on me?
+  Hina: Impudence. Clearly Hina will be better off attempting an intellectual conversation with an animal rather than with you, {$name}. Dismissed. 
+  <<jump date_hina_4_DATE_ENDS>>
+-> {$name}: Are we going horseback riding?
   Hina: Astute observation. That is correct.
-- {$name}: Uh, I’m not a big fan of horses. (-1)
+-> {$name}: Uh, I’m not a big fan of horses. <<set hd4_points -=1>>
   Hina snaps her riding crop in the air, and the leather gives a crack that makes you shiver. Anticipation? Fear? It’s a little bit of both.
   Hina: Hina does not put much stock in those unwilling to even attempt. Are you refusing an invitation for personal training with Hina?
-  - {$name}: I’d do anything for you, Ma’am!
-    Hina: The look of a simpering fool does not suit you, {$name}, and Hina does not care to look at it. You’re dismissed. => DATE ENDS
-  - {$name}: I suppose it wouldn’t hurt to try.
+  -> {$name}: I’d do anything for you, Ma’am!
+    Hina: The look of a simpering fool does not suit you, {$name}, and Hina does not care to look at it. You’re dismissed. 
+    <<jump date_hina_4_DATE_ENDS>>
+  -> {$name}: I suppose it wouldn’t hurt to try.
     Hina: Hina appreciates your change in attitude.
-  - {$name}: I’ll pass.
-    Hina: Tch. You have wasted Hina’s time. Leave. => DATE ENDS
-
-
-
-
+  -> {$name}: I’ll pass.
+    Hina: Tch. You have wasted Hina’s time. Leave. 
+    <<jump date_hina_4_DATE_ENDS>>
 Hina: Hina has arranged for the use of this ranch’s cross-country course. Log fences, ditches, oxers. Your horse will jump, and you will jump with it. However, {$name} and Hina will only be utilising the first half of the course, is that understood?
-- {$name}: Uh, come again?
+-> {$name}: Uh, come again?
   Hina: Are you still asleep? Were Hina’s instructions inadequate? {$name} and Hina will attempt to complete the first half of a cross-country obstacle course on horseback.
-  - {$name}: That doesn’t sound like fun.
-    Hina: Hmph, perhaps mucking out the stables will be more to your liking, {$name}. Hina will have fun on her own. Dismissed. => DATE ENDS
-  - {$name}: Understood, Ma’am!
+  -> {$name}: That doesn’t sound like fun.
+    Hina: Hmph, perhaps mucking out the stables will be more to your liking, {$name}. Hina will have fun on her own. Dismissed. 
+    <<jump date_hina_4_DATE_ENDS>>
+  -> {$name}: Understood, Ma’am!
     You click your heels together and salute your superior. Hina’s lips twist into a scowl and she rolls her eyes.
-- {$name}: Yes, Ma’am!
+-> {$name}: Yes, Ma’am!
   Hina: Good. Make sure to remember that gusto when you are face down in the mud.
   Oh man, is she going to put you face down in some mud? It sounds awful, but in a way that makes your skin tingle.
-- {$name}: Why only the first half? (+1)
+-> {$name}: Why only the first half? <<set hd4_points +=1>>
   Hina: A rider should always assess the course first, and since Hina is unaware of your skill level, it would be irresponsible of your superior to put you or the horse in unnecessary danger.
   She doesn’t want to put you in danger! Sure, she also mentioned the horse, but this is amazing news! Does she like you? Is she aware that you like her? Oh no, so many questions and not a single answer!
-
-
-
-
 You sneak a glance around you and Hina. You weren’t aware that the Marines had access to a stable, much less an obstacle course considering that you are, well, sea-faring folk. Or maybe… could it be that the ranch is not associated with the Marines at all? Did Hina arrange all of this just for the two of you?
-
-
-
-
 You dab at your sweaty forehead with the sleeve of your jacket, urging your pounding heart to calm down.
 Hina: Do not worry {$name}, Hina has assessed the course and made sure that it is appropriate for a beginner. You will not encounter any obstacles that will result in your death, unless you prove yourself to be exceptionally inept.
-- {$name}: I’ll be too distracted by your beauty to pay attention to the course.
+-> {$name}: I’ll be too distracted by your beauty to pay attention to the course.
   Hina gives a full-body shudder at your blatant flirting, clenching her gloved fist.
-  Hina: Hina does not care for empty platitudes. Hina knows she is beautiful. It is a fact, and it does not require mentioning. You are dismissed, {$name}. => DATE ENDS
-- {$name}: That’s nice of you, but haven’t you done the course before? (-1)
+  Hina: Hina does not care for empty platitudes. Hina knows she is beautiful. It is a fact, and it does not require mentioning. You are dismissed, {$name}. 
+  <<jump date_hina_4_DATE_ENDS>>
+-> {$name}: That’s nice of you, but haven’t you done the course before? <<set hd4_points -=1>>
   Hina: Hmph. You would think Hina so unfair that she would give herself an advantage? Hina is disappointed in you {$name}. Of course Hina has already thought of how to balance the scales. Come.
-- {$name}: Thank you for thinking of my safety. (+1)
+-> {$name}: Thank you for thinking of my safety. <<set hd4_points +=1>>
   Hina: Hina takes good care of her charges, and for today at least, you are in Hina’s care. Come.
-
-
-
-
 You keep pace with Hina, two feet behind her as she leads you inside the stable building. As she walks, her hair sways in a non-existent breeze, and among the sharp stench of horse manure and dusty hay, you catch a whiff of something almost floral. Is Hina wearing perfume today?
 Hina: Here. Choose wisely, {$name}.
-=> Pick_Horse
+<<jump date_hina_4_Pick_Horse>>
+===
 
+title: date_hina_4_Pick_Horse
+location: park
+---
 
-
-
-::Pick_Horse
 There are three horses in the box stalls. Which one do you check out?
-- The large, black horse with a wavy mane.
+-> The large, black horse with a wavy mane.
   You approach the majestic, black horse. It is like something straight out of a romance novel, with its glossy coat and foot feathering. It looks like it might be the fastest horse here.
-    - **Choose this horse.**
-      do get("Dark_Horse")
+    -> **Choose this horse.**
+      do get("Dark_Horse") //HOW DO??
       Hina: Hmph, Hina sees that you have chosen a challenge for yourself. That takes guts. Odaiko is known among recruits to be particularly malicious, but perhaps you will be the one to make him obedient. Hina will be watching your performance closely, {$name}.
       Was that a compliment or an insult? You can’t quite tell, but you’re fine with either. Anything that gets Hina’s eyes on you is a clear win.
-        - {$name}: I can handle anything this horse throws at me.
-          Hina: Hina does not appreciate this brash attitude. Empty confidence leads to death on the battlefield, is that what you want, {$name}? For now, foolish comments like this will get you galley duty for the next week. You’re dismissed. => DATE ENDS
-        - {$name}: I’ll do my best, ma’am!
-          Hina: Hina expects nothing less than the best from any Marine, but make sure to show Hina that you can rise to the occasion when given the chance. => Giddy_Up
-        - **Pet horse** (-1)
+        -> {$name}: I can handle anything this horse throws at me.
+          Hina: Hina does not appreciate this brash attitude. Empty confidence leads to death on the battlefield, is that what you want, {$name}? For now, foolish comments like this will get you galley duty for the next week. You’re dismissed. 
+          <<jump date_hina_4_DATE_ENDS>>
+        -> {$name}: I’ll do my best, ma’am!
+          Hina: Hina expects nothing less than the best from any Marine, but make sure to show Hina that you can rise to the occasion when given the chance. 
+          <<jump date_hina_4_Giddy_Up>>
+        -> **Pet horse** <<set hd4_points -=1>>
           Seconds before your hand can reach the neck of the horse, its head shoots up. The glare it sends you is downright menacing. Can horses have haki? It sure feels like it!
-          The horse snorts and gets up close to your face. Cold sweat breaks out on your skin. In the next instant, the horse whinnies and headbutts you. Your back smacks against the box stall and a blinding pain radiates from your spine. Ow! => Horse_Injury
-    - **Look at another horse.** => Pick_Horse
-- The short, stocky horse with a dappled, white and black pattern.
+          The horse snorts and gets up close to your face. Cold sweat breaks out on your skin. In the next instant, the horse whinnies and headbutts you. Your back smacks against the box stall and a blinding pain radiates from your spine. Ow! 
+          <<jump date_hina_4_Horse_Injury>>
+    -> **Look at another horse.** 
+      <<jump date_hina_4_Pick_Horse>>
+-> The short, stocky horse with a dappled, white and black pattern.
   Its legs might be short, but it lets you pet it as you approach. The fur is short, but well-kept, and a bunch of flowers have been weaved into its mane and tail. It looks like it might have good endurance.
-    - **Choose this horse.**
-      do get("Round_Horse")
+    -> **Choose this horse.**
+      do get("Round_Horse") //HOW DO??
       Hina: Hina understands. {$name} likes playing it safe, and Small Dad is *very* safe. Safety and protection are both admirable goals.
-      - {$name}: Keeping myself safe means protecting more people.
+      -> {$name}: Keeping myself safe means protecting more people.
         Hina: Hmph, a fair conclusion. Hina also appreciates keeping her Marines safe. Being provided safety, shelter and food allows for Hina and her Marines to chase down and restrain the scum and rabble that dare hurting others.
-        Hina wrinkles her nose, one hand reaching out to give the horse a quick pat on its flank. Does… does that include you? You sure hope so! => Giddy_Up
-      - **Pet horse** (+1)
+        Hina wrinkles her nose, one hand reaching out to give the horse a quick pat on its flank. Does… does that include you? You sure hope so! 
+        <<jump date_hina_4_Giddy_Up>>
+      -> **Pet horse** <<set hd4_points +=1>>
         As your fingers comb through the fur of its neck, it gives a soft little snort and bumps its muzzle against your side. It nibbles at your fingers and you stroke the bridge of its nose.
-        Hina: Tch, Hina supposes you’re not entirely incompetent in regards to animal handling. Hina hopes to see that same sort of teamwork out on the obstacle course today. Do not disappoint Hina, {$name}. => Giddy_Up
-      - {$name}: Protection is always important. (-1)
-        Hina: Your vile double entendres are not appreciated by Hina. As Marines it is our duty to protect, *not* to be protected. You’d do well to remember that in the future, {$name}. Leave. => DATE ENDS
-    - **Look at another horse.** => Pick_Horse
-- The tall, brown horse with flecks of grey in its fur.
+        Hina: Tch, Hina supposes you’re not entirely incompetent in regards to animal handling. Hina hopes to see that same sort of teamwork out on the obstacle course today. Do not disappoint Hina, {$name}. 
+        <<jump date_hina_4_Giddy_Up>>
+      -> {$name}: Protection is always important. <<set hd4_points -=1>>
+        Hina: Your vile double entendres are not appreciated by Hina. As Marines it is our duty to protect, *not* to be protected. You’d do well to remember that in the future, {$name}. Leave. 
+        <<jump date_hina_4_DATE_ENDS>>
+    -> **Look at another horse.** 
+      <<jump date_hina_4_Pick_Horse>>
+-> The tall, brown horse with flecks of grey in its fur.
   The horse pays you no mind as you approach. It is a good deal bigger than all the other horses, but it is clear that it is the oldest among the bunch. It gently bumps its snout against your hand. It looks to be the most powerful horse.
-    - **Choose this horse.**
-      do get("Tall_Horse")
+    -> **Choose this horse.**
+      do get("Tall_Horse") //HOW DO??
       Hina: Hmph, good choice, {$name}. You appear to be adequately competent in judging equestrian specimens – Rusty is a retired competitive eventing horse. She will aid you well, if you treat her with the respect she deserves.
-      - {$name}: I’ll do my best! => Giddy_Up
-      - {$name}: I’m not sure a horse needs respect.
-        Hina: If that is your stance on this magnificent creature, then you deserve less respect than the dirt beneath Hina’s shoe. You’re dismissed, {$name}. => DATE ENDS
-      - {$name}: She’s a beauty. I’ll treat her well. (+1)
+      -> {$name}: I’ll do my best! 
+        <<jump date_hina_4_Giddy_Up>>
+      -> {$name}: I’m not sure a horse needs respect.
+        Hina: If that is your stance on this magnificent creature, then you deserve less respect than the dirt beneath Hina’s shoe. You’re dismissed, {$name}. 
+        <<jump date_hina_4_DATE_ENDS>>
+      -> {$name}: She’s a beauty. I’ll treat her well. <<set hd4_points +=1>>
         Hina: She is a gentle giant. Hina is sure you will become excellent partners.
-        There is a purr to her voice as she says *partners*. The corner of her mouth quirks up, her eyes gleaming as she stares directly at you. You avert your gaze first, and as you do, your legs feel a little bit like jelly. => Giddy_Up
-    - **Look at another horse.** => Pick_Horse
+        There is a purr to her voice as she says *partners*. The corner of her mouth quirks up, her eyes gleaming as she stares directly at you. You avert your gaze first, and as you do, your legs feel a little bit like jelly. 
+        <<jump date_hina_4_Giddy_Up>>
+    -> **Look at another horse.** 
+      <<jump date_hina_4_Pick_Horse>>
+===
 
+title: date_hina_4_Giddy_Up
+location: park
+---
 
-
-
-::Giddy_Up
 Hina is quick to put a lead line on your horse, taking it out of its box stall before thrusting the rope at you. You fumble for it, but your horse is docile and patient, for now at least.
-
-
-
-
 Hina beckons you further inside the barn, and as she passes by you, she hands you a riding helmet – in your exact size, huh – and a riding crop that matches hers.
 Hina: Come. Hina will show you how to saddle your horse.
-
-
-
-
 Your minds drifts as you imagine yourself in a saddle, but a loud *BANG* pulls you out of your daydreaming.
-- **Peer deeper inside the barn.**
+-> **Peer deeper inside the barn.**
   You squint your eyes in the dim lighting of the barn. You see nothing, but the noise grows louder and louder as Hina leads you in the direction of it. This might be where you die.
-- {$name}: What was that? (+1)
+-> {$name}: What was that? <<set hd4_points +=1>>
   Hina: A surprise. Hina is excited to show you.
   That… does not sound like a good surprise. The sound only gets louder, and sweat drips down your back.
-- **Hold Hina’s hand.**
+-> **Hold Hina’s hand.**
   You take a step closer to Hina, grabbing her hand. You squeeze tight, and she squeezes back. This is nice. This is very–
 Ow, ow, *ow!* Too tight, much too tight! The bones in your hand are pulverised in Hina’s iron-tight grip.
 Hina: Consider this a lesson. Do not presume to touch Hina without permission. Report to the infirmary and leave Hina be, horses are better company than you, {$name}. => DATE ENDS
-
-
-
-
 That’s when you see it. A giant, jet-black horse tied up with not one, but two lead ropes attached to its halter. As Hina approaches, its head whips back and forth, lips curling. It pauses, briefly, and turns to you. Its eyes are black pits of anger, its thick neck bulging, hooves slamming against the ground so hard that the ground might crack.
 Hina: This is Kuropan. He is the reason why competition will be fair. He is not yet broken in, and the stable staff have all given up on him. So they asked Hina for help, and Hina will not be defeated by an insubordinate horse.
-
-
-
-
 Hina approaches with not a trace of fear. She keeps her hands out of biting reach, hoisting a saddle blanket onto its large frame.
 Hina: Hina will show you how it’s done. Simply follow Hina’s instructions, and you will have tacked up your horse in no time.
-
-
-
-
 There is an extra set of riding equipment laid out for you. You don’t know half the names for all of this stuff, but you recognize the saddle and a bridle. Looking up, you see Hina is busy with the saddle, hands ghosting over the straps and tightening the buckles with a firm tug.
-- **Grab the blanket** (+1)
+-> **Grab the blanket** <<set hd4_points +=1>>
   You shake your head and banish the impure thoughts. You have a horse to saddle and a woman to impress! Following Hina’s lead, you grab the blanket and put it on.
   Hina: Well done, {$name}. You follow directions well.
-- **Keep observing Hina**
+-> **Keep observing Hina**
   As each buckle and strap is tightened, your mind drifts. What would it be like for Hina to tighten your belts and buckles? Or make good use of that riding crop?
-  Hina pays you no attention, and in return, you pay no attention to your horse. It impatiently bumps against you, and one hoof comes down on top of your foot. You feel a blinding pain radiating from your toes! => Horse_Injury
-- **Put on the bridle**
+  Hina pays you no attention, and in return, you pay no attention to your horse. It impatiently bumps against you, and one hoof comes down on top of your foot. You feel a blinding pain radiating from your toes! 
+  <<jump date_hina_4_Horse_Injury>>
+-> **Put on the bridle**
   You grab the bridle and carefully approach your horse. Does this go on over the halter? Or do you unclasp the halter first?
-  - **Remove the halter first.**
-    You unclasp the halter and remove it from your horse, but as you do so, Kuropan stomps his hooves again and spooks your horse! No longer bound, your horse rears back and steps on your foot. You feel a blinding pain radiating from your toes! => Horse_Injury
-  - **Put on the bridle first.**
+  -> **Remove the halter first.**
+    You unclasp the halter and remove it from your horse, but as you do so, Kuropan stomps his hooves again and spooks your horse! No longer bound, your horse rears back and steps on your foot. You feel a blinding pain radiating from your toes! 
+    <<jump date_hina_4_Horse_Injury>>
+  -> **Put on the bridle first.**
     The halter is the only thing keeping your horse secured, so you slip the halter off before sliding it down its neck. The bridle goes on without a hitch, and you remove the halter.
-
-
-
-
 Alright, how does one put on a saddle? You lift it up, making sure that the saddle blanket is nice and snug beneath it, but all of the buckles and straps are a maze.
-- {$name}: Do I just… tighten them?
+-> {$name}: Do I just… tighten them?
   You lean on your horse as you ask the question, biting your lip and maintaining eye contact with Hina, while your hands struggle to buckle the strap without looking at it.
   Hina sneers at you, and even your horse snickers.
-  Hina: Your vile behaviour will not be tolerated. Hina came here to have a good time, not to be harassed by her subordinate. Know your place, {$name}. You are dismissed. => DATE ENDS
-- {$name}: Can you show me how to do it? (+1)
+  Hina: Your vile behaviour will not be tolerated. Hina came here to have a good time, not to be harassed by her subordinate. Know your place, {$name}. You are dismissed. 
+  <<jump date_hina_4_DATE_ENDS>>
+-> {$name}: Can you show me how to do it? <<set hd4_points +=1>>
   Hina: Hina can appreciate someone knowing when to ask for help. Here, Hina will give you a thorough demonstration.
   Hina steps close to you, her hair tickling the back of your hand and that floral scent once again wafting into your nose. She grabs the largest strap first.
   Hina: Attach the girth to the girth billets.
   *SNAP* She fastens each strap with a sharp tug, her explanation punctuated by several loud *snaps*.
   Hina: Release the cinches, and fasten the front cinch. *SNAP* Then you do the breast collar, and fasten the flank cinch. *SNAP* Tighten the front and flank, for good measure. *SNAP* Did you catch all of that, {$name}?
   By the end of the demonstration, all you can do is nod. Your knees are so weak that you can barely stand. Hina returns to her own horse, and you take a minute to compose yourself.
-- {$name}: Can you slow down? I’m not following. (-1)
+-> {$name}: Can you slow down? I’m not following. <<set hd4_points -=1>>
   Hina narrows her eyes and purses her lips, but complies with your request. She removes the saddle from her horse and does it once more, going extra slow.
   Hina: Do not dawdle any longer, {$name}. We are losing daylight, and Hina has a job to do.
+Both Hina’s and your own horse get tacked up in no time, and Hina leads her horse out of the barn by the reins. She swings herself up in the saddle, elegant as ever. You follow suit, slightly unsteady as you plonk down in the saddle. 
+<<jump date_hina_4_Obstacle_Start>>
+===
 
+title: date_hina_4_Horse_Injury
+location: park
+---
 
+Hina: Tch. Let this be a lesson, {$name}. Incompetence leads to injury, and Hina will not stand for this inattention to your surroundings. Head to the infirmary and write up an injury report. There will be no sick leave for imbeciles – report to cartography for the next two weeks and get out of Hina’s sight. 
+<<jump date_hina_4_DATE_ENDS>>
+===
 
-
-Both Hina’s and your own horse get tacked up in no time, and Hina leads her horse out of the barn by the reins. She swings herself up in the saddle, elegant as ever. You follow suit, slightly unsteady as you plonk down in the saddle. => Obstacle_Start
-
-
-
-
-::Horse_Injury
-Hina: Tch. Let this be a lesson, {$name}. Incompetence leads to injury, and Hina will not stand for this inattention to your surroundings. Head to the infirmary and write up an injury report. There will be no sick leave for imbeciles – report to cartography for the next two weeks and get out of Hina’s sight. => DATE ENDS
-
-
-
-
-::Obstacle_Start
+title: date_hina_4_Obstacle_Start
+location: park
+---
 Your butt is aching even before you make it to a little forest glade. The clearing is a mix of oddly well-kept and wild. Countless shrubs and bushes look entirely untamed, but there are square pits filled with water and logs stacked to act as a jumping fence.
-
-
-
-
 Hina pulls on the reins and her horse comes to a stop, bucking ever so slightly. She stays seated, and paying it no mind, looks your way with a smile.
 Hina: Hina will ride ahead and show you how it is done. Follow a little behind and complete the course in a timely manner. We will do a total of four obstacles. If you can manage it, Hina will be very impressed with you, {$name}.
-
-
-
-
 Now’s your chance to show off your amazing skills! Besides, four obstacles doesn’t sound too bad. Sure, some of them look like they could kill you, but you’re willing to risk the biscuit and earn Hina’s approval.
-
-
-
-
 Hina squeezes her thighs and her horse begins to move. Slowly at first, but then she takes off at a full gallop. Kuropan rears his head, but Hina keeps a tight grip on the reins as she approaches the first obstacle. A log jump with a hollow space beneath it. She sails over it, Kuropan bucking beneath her. Quick, time to follow!
-- **Approach at a trot**
-  Hina said nothing about timing you on your speed. Surely slow and steady wins this race. => Failed_Jump
-- **Approach at a gallop**
+-> **Approach at a trot**
+  Hina said nothing about timing you on your speed. Surely slow and steady wins this race. 
+  <<jump date_hina_4_Failed_Jump>>
+-> **Approach at a gallop**
   You nudge your horse forward, slowly, then at a trot, and finally at full speed. Your horse slows as it approaches the jump, but you saw Hina clear it with ease, and your firm hold on the reins instil confidence in your horse. Together you clear the log jump.
-
-
-
-
 Approaching a second jump, this one is broad and flat, with a greater width than the last one. Hina’s horse isn’t happy, but she successfully steers it towards the jump and clears it on her first try. Okay, you can make that jump, too… right?
-- **Attempt the jump.**
-  if has_item("Dark_Horse")
-  Your horse is as fast as a lightning bolt beneath you, and before you can even tighten your core, you have cleared the broad jump. Thank goodness!
-  if has_item("Round_Horse")
-  Your horse may be small and round, but it’s got spirit! Time to show Hina what you and Small Dad are made of! => Failed_Jump
-  if has_item("Tall_Horse")
-  Thankfully, you chose a tall horse, and in one quick stride, your horse soars over the obstacles, clearing it with space to spare. Nice!
-- **Steer clear of it.**
-  if has_item("Dark_Horse") OR if has_item("Tall_Horse") (-1)
-  You tug on the reins at the last second, and your horse runs around the obstacle instead. Oh man, that sure was a close call! There was no way you could clear that jump as a newbie!
-  As you glance up, you spot Hina frowning at you. Oh no.
-  if has_item("Round_Horse") (+1)
-  Your horse continues in a steady gallop, and as you pass the obstacle, it’s clear that your small horse wouldn’t have been able to clear it. As you look at Hina, she gives you a small, approving nod. Seems like you made the right choice!
-
-
-
-
+-> **Attempt the jump.**
+  if has_item("Dark_Horse") //HOW DO??
+    Your horse is as fast as a lightning bolt beneath you, and before you can even tighten your core, you have cleared the broad jump. Thank goodness!
+  if has_item("Round_Horse") //HOW DO??
+    Your horse may be small and round, but it’s got spirit! Time to show Hina what you and Small Dad are made of! 
+    <<jump date_hina_4_Failed_Jump>>
+  if has_item("Tall_Horse") //HOW DO??
+    Thankfully, you chose a tall horse, and in one quick stride, your horse soars over the obstacles, clearing it with space to spare. Nice!
+-> **Steer clear of it.**
+  if has_item("Dark_Horse") OR if has_item("Tall_Horse") <<set hd4_points -=1>> //HOW DO??
+    You tug on the reins at the last second, and your horse runs around the obstacle instead. Oh man, that sure was a close call! There was no way you could clear that jump as a newbie!
+    As you glance up, you spot Hina frowning at you. Oh no.
+  if has_item("Round_Horse") <<set hd4_points +=1>> //HOW DO??
+    Your horse continues in a steady gallop, and as you pass the obstacle, it’s clear that your small horse wouldn’t have been able to clear it. As you look at Hina, she gives you a small, approving nod. Seems like you made the right choice!
 Hina: Don’t fall behind, {$name}, we’re only halfway!
 Her horse does another wild buck, and Hina clenches her buttocks tightly. Even from this distance, you see it happening as though in slow-motion. A loud ~splash~ draws your attention. Hina has steered her horse into a rather large, water filled ditch and as you stare, she jumps over a very narrow fence with brush sticking out of it. 
-- **Speed up.**
-  if has_item("Dark_Horse")
-  You lean forward in the saddle, urging your horse forward, but as you do so, you can feel it struggle. Uh oh, your horse was built for speed, but it doesn’t have very good endurance. => Failed_Jump
-  if has_item("Round_Horse")
-  It’s a surprisingly skinny jump, but as you come up on it, your small horse is easy to steer. Barely lifting off the ground, you make it with only inches to spare as the brush of the fence tickles your leg.
-  if has_item("Tall_Horse")
-  You barely have to nudge your horse forward before it is plunging through the water. You feel powerful muscles rippling beneath you as the horse jumps. Your butt aches as you land on the other side.
-- **Slow down.**
-  if has_item("Dark_Horse")
-  Your horse huffs and puffs, and as you slow down, you feel your horse regain its strength. The jump isn’t as long as the others, and even at a slower pace, your horse easily clears it.
-  if has_item("Round_Horse") (-1)
-  As you pull on the reins to slow your horse, it goes from an easy gallop to a slow trot, until it comes to a complete stop. As you nudge it with your legs, it barely takes a few steps, and wanders around the obstacle.
-  Hina: Tch. Are you unable to make even the most obedient horse your subordinate? Hina is disappointed in you, {$name}.
-  if has_item("Tall_Horse")
-  As you slow down, you give your horse a soft pat on its neck. It tosses its head, snorting, and at a slow, comfortable pace, approaches the jump. With a powerful jump, it clears the hurdle.
-
-
-
-
+-> **Speed up.**
+  if has_item("Dark_Horse") //HOW DO??
+    You lean forward in the saddle, urging your horse forward, but as you do so, you can feel it struggle. Uh oh, your horse was built for speed, but it doesn’t have very good endurance. 
+    <<jump date_hina_4_Failed_Jump>>
+  if has_item("Round_Horse") //HOW DO??
+    It’s a surprisingly skinny jump, but as you come up on it, your small horse is easy to steer. Barely lifting off the ground, you make it with only inches to spare as the brush of the fence tickles your leg.
+  if has_item("Tall_Horse") //HOW DO??
+    You barely have to nudge your horse forward before it is plunging through the water. You feel powerful muscles rippling beneath you as the horse jumps. Your butt aches as you land on the other side.
+-> **Slow down.**
+  if has_item("Dark_Horse") //HOW DO??
+    Your horse huffs and puffs, and as you slow down, you feel your horse regain its strength. The jump isn’t as long as the others, and even at a slower pace, your horse easily clears it.
+  if has_item("Round_Horse") <<set hd4_points -=1>> //HOW DO??
+    As you pull on the reins to slow your horse, it goes from an easy gallop to a slow trot, until it comes to a complete stop. As you nudge it with your legs, it barely takes a few steps, and wanders around the obstacle.
+    Hina: Tch. Are you unable to make even the most obedient horse your subordinate? Hina is disappointed in you, {$name}.
+  if has_item("Tall_Horse") //HOW DO??
+    As you slow down, you give your horse a soft pat on its neck. It tosses its head, snorting, and at a slow, comfortable pace, approaches the jump. With a powerful jump, it clears the hurdle.
 Hina is already at the next obstacle. It’s another log jump, but they’re lined on a riser and stacked increasingly taller. Hina’s horse throws a fit as she closes in. It gives its biggest buck yet, but Hina stays firmly seated, and with heaving flanks, it finally submits to her.
-
-
-
-
 She tugs on the reins and it obeys, just like her subordinates do. Hina clears the jump with very little build up of speed, a spray of water sparkles like stray pearls around her in the late sun.
-
-
-
-
 Three down, one to go. You and your horse have done some good work so far, what’s one more jump? This is your last chance to impress Hina!
-- **Gallop at it, full throttle.**
-  if has_item("Dark_Horse")
-  The break that you allowed your horse earlier is coming in clutch now! Your horse jumps and you soar through the air. You’re both weightless and in complete harmony.
-  You land on the other side, pulling on the reins. Your horse rears back, and with the sun at your back, drenched in water, your horse’s mane flows in the breeze. You’re majestic. You’re beautiful. You’re the cover of a suggestive novel.
-  - **Hold your pose.**
+-> **Gallop at it, full throttle.**
+  if has_item("Dark_Horse") //HOW DO??
+    The break that you allowed your horse earlier is coming in clutch now! Your horse jumps and you soar through the air. You’re both weightless and in complete harmony.
+    You land on the other side, pulling on the reins. Your horse rears back, and with the sun at your back, drenched in water, your horse’s mane flows in the breeze. You’re majestic. You’re beautiful. You’re the cover of a suggestive novel.
+  -> **Hold your pose.**
     You shoot Hina a smile, and as she looks at you with stars in her eyes, you feel your balance slip. Uh oh. In the next second, you tumble out of the saddle and hit your butt against the hard ground.
-    Hina: Hina sees that she expected too much from you. Go to the infirmary and ensure that you’re not injured. Hina will take your horse back to the stable. Dismissed. => DATE ENDS
-  - **Calm your horse.** (+1)
+    Hina: Hina sees that she expected too much from you. Go to the infirmary and ensure that you’re not injured. Hina will take your horse back to the stable. Dismissed. 
+    <<jump date_hina_4_DATE_ENDS>>
+  -> **Calm your horse.** <<set hd4_points +=1>>
     You quickly give your horse a pat on the neck and it settles without much fuss. Looking up, you spot Hina, her mouth agape and stars in her eyes. She catches you staring and clears her throat.
-  Hina: That was… quite a performance, {$name}.
+    Hina: That was… quite a performance, {$name}.
+    if has_item("Round_Horse") //HOW DO??
+      Your horse was built for endurance, and now is the time to prove it! With a proper runup, you just barely clears the jump, knocking a hoof against the tallest log. You land on the other side, chest heaving.
+    if has_item("Tall_Horse") //HOW DO??
+      With a long runup, you clear the hurdle easy-peasy! Except… oh no, too much power! You land close to Hina, spooking her horse! It bucks her off, and she rolls out of the way of stomping hooves.
+      Hina: Are you incompetent, {$name}?! Leave, before you make the situation worse! 
+      <<jump date_hina_4_DATE_ENDS>>
+-> **Do it like Hina.**
+  if has_item("Dark_Horse") //HOW DO??
+    You slow, and as your horse trudges through the water, the jump gets closer. 
+    <<jump date_hina_4_Failed_Jump>>
   if has_item("Round_Horse")
-  Your horse was built for endurance, and now is the time to prove it! With a proper runup, you just barely clears the jump, knocking a hoof against the tallest log. You land on the other side, chest heaving.
-  if has_item("Tall_Horse")
-  With a long runup, you clear the hurdle easy-peasy! Except… oh no, too much power! You land close to Hina, spooking her horse! It bucks her off, and she rolls out of the way of stomping hooves.
-  Hina: Are you incompetent, {$name}?! Leave, before you make the situation worse! => DATE ENDS
-- **Do it like Hina.**
-  if has_item("Dark_Horse")
-  You slow, and as your horse trudges through the water, the jump gets closer. => Failed_Jump
-  if has_item("Round_Horse")
-  Coming up on the hurdle, you’re not sure if you can make it without the runup. Hina’s favor is on the line!
-  Hina: {$name}!
-  You pull on the reins and your horse stops inches from the log fence. Huh, when did you even close your eyes? Hina rides closer to you, absolutely seething.
-  Hina: You would willingly risk the wellbeing of yourself and your horse? Hina has misjudged you. Take your horse back to the stable. You’re dismissed. => DATE ENDS
-  if has_item("Tall_Horse")
-  You follow Hina’s footsteps expertly. Your horse is powerful enough that even without a runup, the jump is a cakewalk! You land on the other side like it’s the easiest thing in the world.
-
-
-
-
+    Coming up on the hurdle, you’re not sure if you can make it without the runup. Hina’s favor is on the line!
+    Hina: {$name}!
+    You pull on the reins and your horse stops inches from the log fence. Huh, when did you even close your eyes? Hina rides closer to you, absolutely seething.
+    Hina: You would willingly risk the wellbeing of yourself and your horse? Hina has misjudged you. Take your horse back to the stable. You’re dismissed. 
+    <<jump date_hina_4_DATE_ENDS>>
+  if has_item("Tall_Horse") //HOW DO??
+    You follow Hina’s footsteps expertly. Your horse is powerful enough that even without a runup, the jump is a cakewalk! You land on the other side like it’s the easiest thing in the world.
 Hina veers off from the path, all four obstacles complete, and with a quick glance back at you, takes on a fifth. A triple jump! She soars over all of them, her horse clearing each of them with quick, powerful strides, no longer fighting her. Hina’s hair flutters in the wind, and the grin she sends you is a pleased one. She has never looked more beautiful.
-- **Attempt the triple jump.**
-  if has_item("Dark_Horse")
-  You shoot Hina a cocky grin and guide your horse forward. You got this! Your horse takes a few strides forward, but you feel its speed faltering. You clear the first jump, but on the second, you know you’ve made a mistake. => Failed_Jump
+-> **Attempt the triple jump.**
+  if has_item("Dark_Horse") //HOW DO??
+    You shoot Hina a cocky grin and guide your horse forward. You got this! Your horse takes a few strides forward, but you feel its speed faltering. You clear the first jump, but on the second, you know you’ve made a mistake. 
+    <<jump date_hina_4_Failed_Jump>>
   if has_item("Round_Horse")
-  No reward without risk! You motion Small Dad forward, but as you gain speed and get a closer look, all three jumps are taller than the others! There’s no time to abort the mission! => Failed_Jump
-  if has_item("Tall_Horse") (+1)
-  This is it, just you and your horse. You are one. Beneath you, your horse snorts and in your inexperienced hands, you let your horse take the lead. In quick succession, you clear the triple jumps, and come to a stop close to Hina.
-  Hina: Most impressive, {$name}! Hina did not think you had it in you, but Hina sees it now, the trust and care you place in your companions. It is a valuable trait.
-- **Play it safe.**
+   No reward without risk! You motion Small Dad forward, but as you gain speed and get a closer look, all three jumps are taller than the others! There’s no time to abort the mission!
+    <<jump date_hina_4_Failed_Jump>>
+  if has_item("Tall_Horse") <<set hd4_points +=1>> //HOW DO??
+    This is it, just you and your horse. You are one. Beneath you, your horse snorts and in your inexperienced hands, you let your horse take the lead. In quick succession, you clear the triple jumps, and come to a stop close to Hina.
+    Hina: Most impressive, {$name}! Hina did not think you had it in you, but Hina sees it now, the trust and care you place in your companions. It is a valuable trait.
+-> **Play it safe.**
   You trot closer to Hina, one hand off the reins as you clap at her amazing performance. She gives a brief bow, running a hand through her hair and pushing it out of her face.
+Her chest rises in short, shallow motions as she breathes and Hina’s cheeks are flushed a deep, glowing pink. You have never seen her so flustered and spent, and you squirm in the saddle as words escape you. 
+<<jump date_hina_4_Course_Complete>>
+===
 
+title: date_hina_4_Failed_Jump
+location: park
+---
 
-
-
-Her chest rises in short, shallow motions as she breathes and Hina’s cheeks are flushed a deep, glowing pink. You have never seen her so flustered and spent, and you squirm in the saddle as words escape you. => Course_Complete
-
-
-
-
-::Failed_Jump
 As you squeeze your thighs and signal for the horse to jump, it balks beneath you, coming to a complete stop. Huh. That’s funny, the horse stopped, but you haven’t. Your butt flies out of the saddle and you go careening over the hurdle. You land butt first in a puddle of mud, splashing it everywhere.
-
-
-
-
 Hina: Is that what you call elegance? Flawless synchronicity between horse and rider? Hina is disappointed in you. Get cleaned up, and while you are at it, stay on laundry duty for the rest of the day. You will be of more use there.
+As Hina scolds you, you feel like nothing more than a bug being squashed under her shoe. You hope that the copious amount of mud on your face is enough to hide your red cheeks. 
+<<jump date_hina_4_DATE_ENDS>>
+===
 
 
 
+title: date_hina_4_Course_Complete
+location: park
+---
 
-As Hina scolds you, you feel like nothing more than a bug being squashed under her shoe. You hope that the copious amount of mud on your face is enough to hide your red cheeks. => DATE ENDS
-
-
-
-
-::Course_Complete
 Hina: Your excellent skills have been a joy to observe, {$name}. You adapted to your horse, and reacted to the obstacles accordingly. That is the quality of a great leader, *and* a good marine. Hina would like to do this again sometime.
-
-
-
-
 Hina’s praise is almost enough to eject you from your seat, but you hang on through sheer willpower. You clear your dry throat and shoot her a small smile.
-- {$name}: I had an excellent example to follow. (-1)
-  Hina: Hina does not appreciate useless drivel. Obedience is important, but a mindless, simpering fool is not what Hina is looking for. Dismissed. => DATE ENDS
-- {$name}: Leadership is a fine balance between control and obedience, I understand that now. (+1)
+-> {$name}: I had an excellent example to follow. <<set hd4_points -=1>>
+  Hina: Hina does not appreciate useless drivel. Obedience is important, but a mindless, simpering fool is not what Hina is looking for. Dismissed. 
+  <<jump date_hina_4_DATE_ENDS>>
+-> {$name}: Leadership is a fine balance between control and obedience, I understand that now. <<set hd4_points +=1>>
   Hina: Hina is glad to see that her teachings have paid off. You’re an excellent study, {$name}. Hina looks forward to teaching you more.
-- {$name}: Beginner’s luck.
+-> {$name}: Beginner’s luck.
   Hina: Don’t sell yourself short, {$name}, it is unbecoming. Hina will give praise where praise is due.
-
-
-
-
 You spend the rest of the day asking Hina about leadership tips and tricks while grooming the horses. What an excellent day this has been!
+===
+
+title: date_hina_4_DATE_ENDS
+location: park
+---
+
+You skedaddle before you make her angrier. Hopefully she doesn't hate you forever...
+===

@@ -1,0 +1,818 @@
+title: workday_coby_crew_3_start
+location: training grounds
+---
+
+Coby: Thanks for coming out, everyone! It’s been a while since we’ve seen a live battle, so I thought today we might want to spar a little just for, uh… Maintenance.
+Drake: That’s a good point. There’s only so much you can do on your own.
+Helmeppo: And only so much you can do together… But I did grab my training blades for this.
+-> Ooh, I’m excited! Great idea, Captain! <<declare wdcc3C_points +=1>>
+-> Ha ha, go easy on me, OK? I don’t know that it’s quite my strong suit.
+Helmeppo: We’re not doing a free-for-all, right?
+Coby: Oh… I hadn’t thought about that…
+Helmeppo: Well, stop thinking about it.
+-> How about we break into pairs?
+    Coby: Yeah, that works!
+-> Like, one-on-one-on-one-on-one? I’d be slaughtered.
+    Drake: It seems unlikely to be of real use in a battle scenario, anyway. Two-on-two would be better.
+-> One-on-one, tournament style?
+    Coby: But then two of us will sit out each time… Though I guess we could go round-robin…
+    Helmeppo: Oh, let’s just do two-on-two.
+Drake: Great. So how should we divide up?
+Coby: Well, me and Meppo work together a lot, so it might not be fair for us to fight against you two.
+-> Hey, are you calling me and Rear Admiral Drake weak? <<set wdcc3C_points -=1>>
+    Coby: No! It’s just… Well…
+    Helmeppo: He just doesn’t want to team up with me.
+    Coby: Hey, that’s not true.
+-> Yeah, and maybe there’s someone one of us doesn’t want to work with. <<declare wdcc3D_points -=1>> <<declare wdcc3H_points -=1>>
+-> Uh…
+-> Oh. I was kind of hoping to fight you both, since I’ve heard about your teamwork. <<set wdcc3C_points +=1>> <<set wdcc3H_points +=1>>
+    Coby: I mean, I guess if you put it that way…
+Drake: Maybe we can each get a chance to team up with everyone else. Work with different people.
+Helmeppo: Yeah, sure. So, {$name}, who do you want to work with first?
+-> Captain Coby. 
+    <<jump workday_coby_crew_3_Coby_team>>
+-> Rear Admiral Drake. 
+    <<jump workday_coby_crew_3_Drake_team>>
+-> Lieutenant Commander Helmeppo. 
+    <<jump workday_coby_crew_3_Helmeppo_team>>
+===
+
+title: workday_coby_crew_3_Coby_team
+location: training grounds
+---
+
+Coby: So! What are you best at?
+-> Honestly? Nothing really… <<set wdcc3C_points -=1>>
+    Coby: Aw, I’m sure there’s something you’re good at.
+    Coby: Either way, if you’re not confident in fighting well, do you think you can fight… Uh, mean?
+    -> *That* I can do.
+        Coby: Great. You focus on Helmeppo, I’ll focus on Drake.
+        <<jump workday_coby_crew_3_Cobya>>
+    -> Fight... mean? I guess I can, but why?
+        Coby: Helmeppo will fight fair when we’re fighting together. But otherwise he pretends he doesn’t know what that means.
+        Coby: So if you can match that, you’ll do just fine. 
+        <<jump workday_coby_crew_3_Cobya>>
+    -> Um. No, I don’t really think so.
+        Coby: I see… In that case, you focus on Drake. I’ll deal with Helmeppo. 
+        <<jump workday_coby_crew_3_Cobyb>>
+-> I’m sort of quick, I guess.
+    Coby: We, uh, we can probably work with that.
+    Coby: You should probably try and take Drake. You might be able to outmaneuver him, especially if he transforms. 
+    <<jump workday_coby_crew_3_Cobyb>>
+-> I’m not afraid to bite people? <<set wdcc3C_points +=1>>
+    Coby: OK, that can work. You can probably take Helmeppo.
+    -> Um. What?
+        Coby: Don’t worry. It’ll be fine. Just don’t let him bite you back, who knows where he’s been lately. 
+        <<jump workday_coby_crew_3_Cobya>>
+    -> I think I’d rather take Drake, if you don’t mind.
+        Coby: Well, alright. Just be careful. 
+        <<jump workday_coby_crew_3_Cobyb>>
+    -> If you say so…
+        Coby: Great! I’ll focus on Drake. 
+        <<jump workday_coby_crew_3_Cobya>>
+===
+
+title: workday_coby_crew_3_Cobya
+location: training grounds
+---
+
+Drake: Are you two alright to start? 
+Coby: Yes! One second! 
+Coby: {$name} if you need help I’ll jump in, so don’t worry, OK?
+You get into position, standing across from Helmeppo. Despite Coby’s apparent confidence in you, the idea of facing down the Lieutenant Commander is still a little stressful.
+Drake: Three… Two… *One!*
+While Drake and Coby run at each other, Helmeppo begins to rush at you with blunt but still intimidating training blades.
+-> (Dodge to the side) 
+    <<jump workday_coby_crew_3_Dodge_vs_Meppo>>
+-> (Go for the knees) 
+    <<jump workday_coby_crew_3_Kick_vs_Meppo>>
+-> (Kick a rock at him) 
+    <<jump workday_coby_crew_3_Rock_vs_Meppo>>
+===
+
+title: workday_coby_crew_3_Dodge_vs_Meppo
+location: training grounds
+---
+
+You throw yourself to the side as Helmeppo swings his kukri at you, rolling a bit before scrambling back to your feet. Your maneuver didn’t slow him down, though, and he comes at you once again.
+-> (Dodge backwards)
+    As you back away from him, you lose your balance. From the corner of your eye, you see Coby rushing to catch you, only to be bodied by Drake. Landing on your back knocks the wind out of you. A foot is on your chest before you can get reoriented. 
+    <<jump workday_coby_crew_3_Dual_Loss_Coby>>
+-> (Try to tackle him)
+    You charge at him. He sidesteps and drops one of his kukri, instead grabbing you firmly by the back of the shirt.
+    -> (Stop, Drop and Roll)
+        Hoping to catch him by surprise, you try to roll as you drop your weight. Your sudden shift knocks him off balance. Unfortunately, he falls right on top of you, but thankfully he’s not exactly heavy. 
+        Coby: Oh, no, {$name}... I was just coming to help you after my win.
+        <<jump workday_coby_crew_3_Draw_Coby>>
+    -> Coby! <<set wdcc3C_points +=1>>
+        You call your teammate. He rushes to your aid, slamming into Helmeppo before you feel another hand on you. Ah. You’d forgotten about Drake. 
+        <<jump workday_coby_crew_3_Draw_Coby>>
+-> (Catch the kukri)
+    You put your hand up to catch the blade, using the fact they’re training weapons to your advantage. That throws him off. He falters, seemingly unsure of what to do about the situation.
+    It’s the perfect opening to strike.
+    -> (Finish Him) <<set wdcc3H_points +=1>>
+        Without missing a beat, you knee him in the stomach as hard as you can. He doubles over, wheezing as you land one last solid kick to his knee. 
+        <<jump workday_coby_crew_3_Team_Win_Coby>>
+    -> (Wait, that actually worked?)
+        In your surprise, you stop just long enough for Helmeppo to regain composure and grab you, putting you in a headlock. 
+        <<jump workday_coby_crew_3_Draw_Coby>>
+===
+
+title: workday_coby_crew_3_Kick_vs_Meppo
+location: training grounds
+---
+
+You sweep your leg at his knees, and he swings one of his blades towards you. You thank the seas they’re not sharp, but you have a feeling you’re going to have a bruise later. Though his attack knocks you off-balance, you quickly regain your composure.
+-> (Fight Dirty)
+    He’s taking another swing, this time at your torso. You take the momentary opening to launch yourself at him. It seems like you might end up with another bruise as you headbutt Helmeppo in the jaw. He stumbles backward, dropping his kukri in the process. 
+    -> (Trip Him)
+        It seems like Helmeppo’s stumbling set you up to give Coby a bit of help. You’re able to trip him this time, sending him falling right between where Drake is charging at Coby. He stops short to not hit his teammate, but Coby is able to land a final blow. 
+        <<jump workday_coby_crew_3_Team_Win_Coby>>
+    -> (Hit Him Again)
+        You follow after, this time slamming your fist into his stomach. Out of breath, Helmeppo holds up his hands to surrender. Just when the fight was getting good, too... You’re afraid to look away, in case Helmeppo tries some underhanded tactics himself in response, but you hear what sounds like a noise of defeat from Coby behind you. 
+        <<jump workday_coby_crew_3_Draw_Coby>>
+-> (Keep it fair)
+    You bring your arm up to block his attack. It hurts, but you just barely manage to stop it. It’s a good opportunity to strike, but you hear Coby’s panicked shout.
+    -> (Back up) 
+        You jump backwards right as Coby slams into Helmeppo, sending them both rolling into a tangled heap. Ouch… You glance over towards Drake. He meets your gaze and cringes, shrugging. Ah. You thought the way Coby had hit Helmeppo was a bit strange. Seems like he was thrown.
+        <<jump workday_coby_crew_3_Draw_Coby>>
+    -> (Grapple Helmeppo)
+        No turning back now. You grab his arm, keeping firmly in place for you to—
+        Your world is sent spinning suddenly as something hits you from the side. The next thing you know you’re on the ground, Coby laying across both you and Helmeppo. With the way the Captain is groaning, you have a feeling that wasn’t planned… 
+        <<jump workday_coby_crew_3_Loss_Coby1>>
+===
+
+title: workday_coby_crew_3_Rock_vs_Meppo
+location: training grounds
+---
+
+As he comes at you, you step towards a stone sitting on the ground and kick it at him. The rock flies at his head. He stops short, bringing his kukri up to shield himself, but that leaves him staggering. 
+-> (Grab him)
+    You grab one of his arms, twisting it until he drops his kukri. Unfortunately, he turns and manages to put you in a headlock.
+    -> (Chomp chomp) 
+        You bite his arm. Hard. He shouts and tries to jerk his arm away, but you don’t let go. 
+        Coby: {$name}! Duck!
+        Coby’s shout makes you look up as Coby sends Drake flying towards you. You finally let Helmeppo go and throw yourself to the side. Drake and Helmeppo are both sent sprawling as they collide. 
+        <<jump workday_coby_crew_3_Team_Win_Coby>>
+    -> (Step on his foot)
+        You stomp on his foot.
+        Helmeppo: OW!
+        He smacks you in the arm, then kicks you in the shin, bringing his other hand up to stab with the kukri. You dodge, almost tripping over his foot. Instead of stabbing you, he grabs you by the wrist and then grabs the other one too. 
+        Coby: HA!
+        As you struggle, you turn your head toward the noise, hoping Helmeppo is distracted enough for you to break free... He isn’t, but Coby manages to deliver the finishing blow to Drake.
+        <<jump workday_coby_crew_3_Draw_Coby>>
+-> (Hit him)
+    You move to punch Helmeppo in the chest. He manages to move to the side and you get his shoulder. It seems to sting your hand more than it hurts him. 
+    -> Give up yet? <<set wdcc3H_points -=1>>
+        He stumbles forward to try and keep going but trips over a rock and falls flat on his face. Not the kind of victory you would have chosen, but a win is a win, right? You turn to celebrate with Coby, just as he smacks Drake down to the ground. Awesome.
+        <<jump workday_coby_crew_3_Team_Win_Coby>>
+    -> (Kick his legs out from underneath him)
+        Helmeppo’s really not that difficult to destabilize in this state, and you’d better not use your hands... Unfortunately, he grabs your leg as he goes down and takes you down with him. Oops. You look up to see Coby holding out his hand to you; looks like he won his fight.
+        <<jump workday_coby_crew_3_Draw_Coby>>
+===
+
+title: workday_coby_crew_3_Cobyb
+location: training grounds
+---
+
+Drake: Are you two alright to start? 
+Coby: Yes! One second! 
+Coby: {$name}, if you need help I’ll jump in, so don’t worry, OK?
+Drake isn’t going to be an easy opponent, but Helmeppo wouldn’t be either. Drake frowns at you; you match his expression.
+Drake: Three… Two… *One!*
+Coby and Helmeppo circle each other, and you snap your attention away from them. Drake is waiting for your move...
+-> Run at him 
+    <<jump workday_coby_crew_3_b_Run>>
+-> Wait him out 
+    <<jump workday_coby_crew_3_b_Patient>>
+===
+
+title: workday_coby_crew_3_b_Run
+location: training grounds
+---
+
+You charge toward Drake, picking up speed as you go. He’s not even reaching for his weapons—it’s because he’s transforming, and it looks like he’s poised to swing his tail at you.
+-> (Dodge the swing)
+    You swerve out of the way, Drake’s heavy tail whipping the air beside you. He moves to swing again...
+    -> (Grab it and hang on) 
+        <<jump workday_coby_crew_3_b_Run_Grab>>
+    -> (Dodge again)
+        The tail sweeps toward you and you leap to the side, colliding with a body—Helmeppo’s. Oops. As you fall, you get hit in the side—wait, is that Coby?
+        Coby: Sorry, {$name}, I was aiming for Meppo but you came out of nowhere...
+        You land on top of Helmeppo, Coby and Drake standing upright. 
+        <<jump workday_coby_crew_3_Draw_Coby>>
+-> (Try to get close, since his arms are too short to hit you and his tail can’t go around the front)
+    You keep running; he does swing his tail, but you jump out of the way. Drake looms over you; though his arms can’t reach your shoulders, he could still kick you, or lie on top of you... But his belly looks a little soft.
+    -> (Punch him in the stomach.) 
+        <<jump workday_coby_crew_3_b_Run_Punch>>
+    -> (Leap aside so he trips over himself) 
+        You leap to the side, away from Drake’s move, but he catches you with his leg—how can he move that fast as a lumbering dinosaur? You try to land on your feet, but the kick from a whole dinosaur is just too much. You tumble to the dirt and before you can get back to your feet, Drake’s tail descends like the judgment of some dinosaur-based deity. It’s your loss...
+        Nearby, Coby and Helmeppo are still grappling with each other, pushing and shoving, until they fall to the ground in a draw.
+        <<jump workday_coby_crew_3_Loss_Coby1>>
+===
+
+title: workday_coby_crew_3_b_Run_Grab
+location: training grounds
+---
+
+You grasp onto Drake’s tail like a swinging vine, but he smacks it down to the ground, and your knees go straight into the dirt. The impact loosens your grip and you roll off... Ow. With one scaly foot, Drake pins you to the ground. You turn your head to look at Coby and Helmepo; Helmeppo’s in a similar position with Coby. Ugh. 
+<<jump workday_coby_crew_3_Dual_Loss_Coby>>
+===
+
+title: workday_coby_crew_3_b_Run_Punch
+location: training grounds
+---
+
+You jab him with an uppercut, and it connects—he wasn’t expecting it, and his underbelly is soft like a fairy-tale dragon’s. (Strange, with those abs of his.) He  buckles, transforming back as he falls backwards toward the ground. So that’s his weak spot...
+-> That was easy. <<set wdcc3D_points -=1>>
+    Drake: Unexpected. I should have prepared better.
+-> You OK?
+    Drake: Fine. Good move. 
+You turn around to look at Coby and Helmeppo. Coby’s got Helmeppo pinned to the ground. 
+<<jump workday_coby_crew_3_Team_Win_Coby>>
+===
+
+title: workday_coby_crew_3_b_Patient
+location: training grounds
+---
+
+You wait. He waits. You breathe. He breathes. And then, finally, Drake starts forward, reaching for his sword. 
+-> (Move out of his reach)
+    You duck back, trying to avoid his long wingspan and that sharp point. Taking stock of your surroundings, you see Coby on top of Helmeppo, trying what looks like a wrestling move. Maybe you can work with this.
+    -> (Inch back toward Coby and Helmeppo) <<set wdcc3C_points +=1>>
+        You step back, and then again, Drake advancing on you. When he lunges, you make a lateral movement. He’s already committed, driving forward toward Helmeppo, who brings up his kukri at the last second. The force locks their weapons together, and you and Coby can easily pin the two of them down. 
+        Coby: Good teamwork!
+        <<jump workday_coby_crew_3_Team_Win_Coby>>
+    -> (Wait again for Drake’s next move)
+        Before you know what’s happened, Drake has pinned you to a wall with his sword. How is he so quick? Could you have seen this coming?
+        Helmeppo: Haaa!
+        You can’t see what he and Coby are doing, but it sounds like Helmeppo is winning. After a few seconds, Drake moves out of the way so you can see how Helmeppo has Coby in a headlock. 
+        <<jump workday_coby_crew_3_Dual_Loss_Coby>>
+-> (Dart in before he can draw his weapon)
+    Drake’s too close already; you lean in and drive your elbow into his wrist. He drops the sword, not yet raised, and you pull back, kicking the sword out of the way. Drake looks like he's not sure if he should just fight with his fists or reach for his axe. You should take advantage of his indecision.
+    -> (Kick him) 
+        You kick Drake in the shin; he lunges to catch your foot, but you dart away. You’re not sure what your next move should be, but you’re saved by Coby, running forward while using Helmeppo as a battering ram.
+        Coby: HAAAA! 
+        He drives Helmeppo into Drake, dropping them both to the ground.  
+        <<jump workday_coby_crew_3_Team_Win_Coby>>
+    -> (Pick up the sword)
+        You reach down to pick up the sword. 
+        Coby: Ahhh!
+        You don’t even have time to lift your head before Coby crashes into you as if he’s been thrown, knocking you to the ground and putting both of you out of commission. 
+        <<jump workday_coby_crew_3_Dual_Loss_Coby>>
+===
+
+title: workday_coby_crew_3_Dual_Loss_Coby
+location: training grounds
+---
+
+Coby: I guess it’s our loss...
+-> Not my fault. <<set wdcc3C_points -=1>>
+-> Guess so. Better luck next time.
+<<jump workday_coby_crew_3_Coby_wrap>>
+===
+
+title: workday_coby_crew_3_Team_Win_Coby
+location: training grounds
+---
+
+Coby: We did it! Way to go, {$name}.
+-> All thanks to your strategy. <<set wdcc3C_points +=1>>
+-> Hell yeah, we did.
+<<jump workday_coby_crew_3_Coby_wrap>>
+===
+
+title: workday_coby_crew_3_Loss_Coby1
+location: training grounds
+---
+
+Drake: I suppose since I’m the only one standing... That’s our win.
+Coby: Ugh... Yeah, we surrender.
+<<jump workday_coby_crew_3_Coby_wrap>>
+===
+
+title: workday_coby_crew_3_Draw_Coby
+location: training grounds
+---
+
+Drake: We should probably call this one a draw… And a wrap... 
+<<jump workday_coby_crew_3_Coby_wrap>>
+===
+
+title: workday_coby_crew_3_Coby_wrap
+location: training grounds
+---
+
+The fight is over. Nothing to do but move on.
+-> (Available if you haven’t yet teamed up with Helmeppo) How about you and me, Lieutenant Commander? //HOW DO??
+    <<jump workday_coby_crew_3_Helmeppo_team>>
+-> (Available if you haven’t yet teamed up with Drake) OK, let’s go, Rear Admiral! //HOW DO??
+    <<jump workday_coby_crew_3_Drake_team>>
+-> (Available if you’ve already done both) Time for a break… //HOW DO??
+    <<jump workday_coby_crew_3_Break_time>>
+===
+
+title: workday_coby_crew_3_Helmeppo_team
+location: training grounds
+---
+
+Helmeppo: I guess it’s you and me, then. We’ll have to be smart about this if we want a chance of beating those two.
+-> Do you have any ideas? 
+    <<jump workday_coby_crew_3_Idea_Request>>
+-> I think I might have a plan. 
+    <<jump workday_coby_crew_3_Idea_Present>>
+===
+
+title: workday_coby_crew_3_Idea_Request
+location: training grounds
+---
+
+Helmeppo: Well… I do have one. They’re both close combat fighters, so our best chance would be to move fast and keep our distance.
+-> That sounds like a solid strategy. <<set wdcc3H_points +=1>>
+    Helmeppo: Alright. Let’s not keep them waiting.
+    <<jump workday_coby_crew_3_Be_Quick>>
+-> I’m not sure that’s enough of a plan, let me think…
+    <<jump workday_coby_crew_3_Idea_Present>>
+===
+
+title: workday_coby_crew_3_Idea_Present
+location: training grounds
+---
+
+Helmeppo: OK. What’ve you got?
+-> (Available if you didn't come from Idea_Request) Let’s move quickly, get in and strike, and get out. Improvise the rest. <<set wdcc3H_points +=1>> //HOW DO??
+    Helmeppo: Just what I was thinking.
+    <<jump workday_coby_crew_3_Be_Quick>>
+-> Let’s go all in. Give it our best from the start. It’s a little risky, but...
+    Helmeppo: Yeah, might be our best shot.
+    <<jump workday_coby_crew_3_All_In>>
+===
+
+title: workday_coby_crew_3_Be_Quick
+location: training grounds
+---
+
+Helmeppo: Do you want to go first, or should I?
+-> Uh, I don’t want to do it first. <<set wdcc3H_points -=1>>
+-> You’ll set the tone well; it should be you. <<set wdcc3H_points +=1>>
+-> **Shrug**
+Helmeppo: Fine, I’ll do it.
+Helmeppo: Ready?
+Drake: Yes.
+Helmeppo darts in, sweeping his leg for a kick at Coby before swinging his leg down at Drake, nearly clipping his wrist; by the time both of them raise their fists, he’s out and it’s your turn.
+-> **Attack Drake**
+    Drake looks like he’s going for his sword, but you aim a kick at the wrist Helmeppo nearly got and connect, dodging out of the way of Coby’s slap just in time.
+    Drake: Nice kick.
+-> **Attack Coby**
+    You knee Coby in the stomach and he doubles over, ducking under Drake’s punch like a limbo bar. You rush back to Helmeppo.
+They don’t pursue.
+Helmeppo: Nice hit, {$name}. You should go for the next one.
+You go back in again, but this time they’re ready for you, defenses up before you can get in a hit. You make a hasty retreat but trip over your own shoe.
+-> (Available if your relationship score with Helmeppo >= 2) I could use some help here... //HOW DO??
+    <<jump workday_coby_crew_3_Quick_defend>>
+-> Darn it... I have time to get up. 
+    <<jump workday_coby_crew_3_Quick_2>>
+-> **Roll to the side** 
+    <<jump workday_coby_crew_3_Quick_2>>
+===
+
+title: workday_coby_crew_3_Quick_defend
+location: training grounds
+---
+
+Helmeppo: On it!
+You hear the sound of his kukri clashing with Drake’s axe, but where is Coby?
+Helmeppo: Are you OK, {$name}?
+-> Yes, thanks to you. <<set wdcc3H_points +=1>>
+-> For now...
+Helmeppo: Ugh!
+It sounds like he’s been hit. Time to help him out in return.
+<<jump workday_coby_crew_3_Quick_2>>
+===
+
+title: workday_coby_crew_3_Quick_2
+location: training grounds
+---
+
+As you’re about to make your move, you feel the air moving above you. You quickly roll onto your back so you can see Drake and Coby bearing down. You can’t dodge all their blows, but maybe you can keep them distracted until Helmeppo attacks.
+-> **Roll to the left**
+    You roll to the left, just where Coby strikes with his fist. He’s no Garp, but the sting of the blow hurts. Hopefully that bought enough time...
+-> **Roll to the right**
+    You dodge out of the way of Drake’s foot; the vibrations on the floor rattle your jaw. This could be tight...
+Helmeppo: YAAAAAH!
+He slams down on Drake from the side, sending him falling on top of Coby. You manage to extract yourself from harm’s way, and Helmeppo holds out his hand to pull you up.
+-> Nice work, teammate. <<set wdcc3H_points +=1>>
+-> Looks like we’ve won.
+<<jump workday_coby_crew_3_Team_Win>>
+===
+
+title: workday_coby_crew_3_Team_Win
+location: training grounds
+---
+
+Coby: You were too quick for us...
+-> Guess we were better, huh? Look who’s laughing now. <<set wdcc3C_points -=1>> <<set wdcc3D_points -=1>>
+    Coby: Pretty sure neither of us was.
+-> You win some, you lose some.
+-> We make a pretty good team, eh? <<set wdcc3H_points +=1>>
+<<jump workday_coby_crew_3_Helmeppo_wrap>>
+===
+
+title: workday_coby_crew_3_All_In
+location: training grounds
+---
+
+You face Coby and Drake, trying not to be intimidated. They’re standing close together... Maybe trying to do a combination attack?
+Helmeppo: Let’s go!
+The two of you charge forward, fists high; Drake and Coby look unfazed. You veer towards Coby, and he rears back to throw a punch.
+-> Ahhh! Help!
+    (If your relationship score with Helmeppo >= 2) => <<jump workday_coby_crew_3_All_In_Defend>> //HOW DO??
+    (otherwise) Helmeppo: Uh, I’m busy here myself. => <<jump workday_coby_crew_3_All_In_2>> //HOW DO??
+-> Take that!
+    You swing your fists forward, trying to knock Coby aside, but your punches are ineffective against his armament haki.
+    <<jump workday_coby_crew_3_All_In_2>>
+-> **Dodge out of the way**
+    You nearly collide with Helmeppo. <<set wdcc3H_points -=1>>
+    <<jump workday_coby_crew_3_All_In_2>>
+===
+
+title: workday_coby_crew_3_All_In_Defend
+location: training grounds
+---
+
+Helmeppo: Get behind me, {$name}!
+You follow his orders as he advances, meeting Coby’s fist with his—the sound, like cracking, makes you wince, but you realize it’s just haki versus haki... But Coby is pushing Helmeppo back, and Drake is behind you.
+-> I’ll take over. I’ve caught my breath now. <<set wdcc3H_points +=1>>
+    Helmeppo: No... Let’s retreat...
+-> Fall back! This was a bad idea!
+<<jump workday_coby_crew_3_All_In_2>>
+===
+
+title: workday_coby_crew_3_All_In_2
+location: training grounds
+---
+
+The two of you retreat, and Coby and Drake don’t pursue. Coby leans up and Drake bends down as Coby whispers something. Helmeppo shudders.
+Helmeppo: I don’t think I’ll like whatever they’re planning...
+-> Should we charge again?
+    Helmeppo: Might as well.
+    <<jump workday_coby_crew_3_All_In_3>>
+-> Maybe they’re bluffing, trying to psych us out. <<set wdcc3H_points -=1>>
+    Helmeppo: Why would they need to do that?
+    <<jump workday_coby_crew_3_All_In_3>>
+-> Me either. And I don’t like our chances... Unless we don’t play fair.
+    Helmeppo: You know what... Let’s try it. Fight dirty. <<set wdcc3H_points +=1>>
+    <<jump workday_coby_crew_3_All_In_Dirty>>
+===
+
+title: workday_coby_crew_3_All_In_Dirty
+location: training grounds
+---
+
+The two of you run forward. Drake and Coby wait. Now’s your moment...
+-> Hey, look over there! <<set wdcc3H_points +=1>>
+    Drake doesn’t take the bait, but Coby almost does—his face moves enough for Helmeppo to sucker-punch him in the side. 
+    Drake: Coby!
+    You take the opportunity to stick out your leg and try to trip him, but Drake notices just in time to avoid it, pull Coby out of the way and retreat.
+-> **Grab Drake’s coat** <<set wdcc3D_points -=1>>
+    Drake: Huh?
+    You pull on his clothes, kicking at his shins. It looks like Helmeppo’s pulling out the kukri he was concealing in his sleeve. 
+    Coby: Haaa!
+    Coby shoves Helmeppo to the side and pulls you off Drake, and the two of them retreat.
+<<jump workday_coby_crew_3_All_In_3>>
+===
+
+title: workday_coby_crew_3_All_In_3
+location: training grounds
+---
+
+Drake lifts Coby up in the air. What is this, a cheerleading move? 
+Helmeppo: What the...
+And then Drake rears back and throws Coby toward you like a dart. 
+-> **Dodge**
+    You try to roll out of the way, but there’s no time...
+-> **Brace for impact**
+Coby hits you like a bowling ball, sending you flying into Helmeppo— well, it must be him, because his knees and elbows are digging into your back. This is going to bruise. Is he OK? 
+Helmeppo: **Wheeze**
+You groan, trying to roll off him.
+Coby: Uh... You guys OK? 
+-> I’ll live... I think.
+-> I surrender...
+-> I’m OK... What about you, Lieutenant Commander? <<set wdcc3H_points +=1>>
+    Helmeppo: Ugh... Remind me not to get on their bad side.
+    Coby: Hmm, doesn’t seem too bad. You two are pretty sturdy!
+Drake: I can’t believe that worked.
+Coby: Well, that’s our victory.
+<<jump workday_coby_crew_3_Team_Loss>>
+===
+
+title: workday_coby_crew_3_Team_Loss
+location: training grounds
+---
+
+Helmeppo: Some great strategy this turned out to be.
+-> Yeah, sorry about that. Go big or go home? <<set wdcc3H_points +=1>>
+    Helmeppo: Yeah. At least it’s only practice.
+-> I’m not the one who said this might be our best shot. <<set wdcc3H_points -=1>>
+    Helmeppo: Well, you implied it would be.
+Coby: Seriously, I didn’t hurt you?
+-> Are you hurt at all? <<set wdcc3C_points +=1>>
+    Coby: I’m fine. Armament haki.
+-> Stop asking that. <<set wdcc3C_points -=1>>
+-> Yep, we’re good as new.
+<<jump workday_coby_crew_3_Helmeppo_wrap>>
+===
+
+title: workday_coby_crew_3_Helmeppo_wrap
+location: training grounds
+---
+
+Helmeppo: Well. That was a lot...
+-> (Available if you haven’t yet teamed up with Coby) You up for teaming up, Captain? //HOW DO??
+    <<jump workday_coby_crew_3_Coby_team>>
+-> (Available if you haven’t yet teamed up with Drake) OK, let’s go, Rear Admiral! //HOW DO??
+    <<jump workday_coby_crew_3_Drake_team>>
+-> (Available if you’ve already done both) Time for a break… //HOW DO??
+    <<jump workday_coby_crew_3_Break_time>>
+===
+
+title: workday_coby_crew_3_Drake_team
+location: training grounds
+---
+
+Drake: How do you think we should approach this?
+-> I feel like they already work together so much that it’ll be hard to top their strategy…
+    Drake: Yes, I agree.
+-> Hmm. We can’t underestimate Captain Coby’s observation haki. What if we just try and act… Unpredictable?
+-> What do you think? You have years of strategic experience, and you know them better than I do.
+    Drake: There are a few different ways we could approach this. Try to split them up and go one-on-one, maybe. Would you be up for that?
+    -> Sure, I’ll do my best. <<set wdcc3D_points +=1>> 
+    -> Uh… I don’t know… <<set wdcc3D_points -=1>>
+Drake: But we’ll still need a plan of action.
+-> Just come at them? It’s simple enough.
+    Drake: … If you say so.
+    <<jump workday_coby_crew_3_Drake_direct_attack>>
+-> What if you transform, and then I hide behind you and pop out? Or you vault me over with your tail? Er, if that’s OK with you.
+    Drake: Well… Using my fruit would be a bit of an unfair advantage…
+    -> They already have an advantage working together, though.
+    -> You don’t have to actually swipe them with your claws. 
+  <<jump workday_coby_crew_3_Drake_transform>>
+===
+
+title: workday_coby_crew_3_Drake_transform
+location: training grounds
+---
+
+Drake: OK. I just hope you know what you’re doing…
+Coby: Ready?
+The two of you nod, and then you’re off. You duck backward as Drake transforms, the tail growing out of his back. You grasp around it, hoping Drake can feel it. (Do dinosaurs have nerve endings there? Is your weight significant enough?)
+Helmeppo: Wha…?
+Drake’s tail lifts, and before you can register the motion, you’re being flung through the air. You can see this ending badly, but you’ll do your best to uphold the bargain… Right?
+-> Try to direct yourself toward Coby and Helmeppo. 
+    <<jump workday_coby_crew_3_Drake_CH_catch>>
+-> Try to land so you don’t break a bone. 
+    <<jump workday_coby_crew_3_Drake_land>>
+===
+
+title: workday_coby_crew_3_Drake_land
+location: training grounds
+---
+
+#THUD!#
+You land on the ground, and you’re pretty sure Coby and Helmeppo are far away. But that was a hard landing. As you struggle to your feet, Coby and Helmeppo have caught up with you. Before you can roll out of the way, they’ve got you restrained.
+<<jump workday_coby_crew_3_Drake_catch_2>>
+===
+
+title: workday_coby_crew_3_Drake_CH_catch
+loation: training grounds
+---
+
+You try to kick your legs, but just as you’re about to make contact, Coby moves to the side, and he and Helmeppo catch you synchronously, like cheerleaders catching their flier. You’re completely immobilized; you try to struggle with your arms or headbutt Hemleppo, but it’s no use.
+-> How did you guys do that?
+    Coby: We’ve had a lot of practice… Not with people, but, y’know, projectiles.
+-> Let me go!
+    Helmeppo: So you admit it’s our victory?
+    -> It’s not over yet! This was all part of our plan.
+    -> No way.
+<<jump workday_coby_crew_3_Drake_catch_2>>
+===
+
+title: workday_coby_crew_3_Drake_catch_2
+location: training grounds
+---
+
+Drake: Haaaa!
+You can’t see him, but his voice sounds like he’s turned back into a human. Coby’s grip loosens on you just enough so that you can try to kick.
+-> **Pull yourself loose.**
+    Helmeppo: Coby! Remember your grip!
+    Coby: Right!
+-> **Bide your time**
+    Coby’s grip tightens again… Maybe you missed your chance.
+Coby: Meppo, you keep holding {$name}. I’ll fight Drake.
+Helmeppo: Got it.
+Coby lets you go, and you immediately start thrashing against Helmeppo. Alone, you’re more of a match for him; you manage to wriggle out of his grip and set up to face him.
+Helmeppo: Haaa!
+-> **Punch him.**
+    Helmeppo blocks the punch with one of his own, infused with armament haki. It stings; you cringe, and Helmeppo pins your arms behind your back.
+-> **Kick him.**
+    You raise your leg in a roundhouse kick, connecting with the side of Helmeppo’s shoulder–or it would, if his hand didn’t come up at the last second to block you and shove you down to the ground. You raise your hands in defeat.
+Helmeppo: It’s my victory.
+-> Damn. Good job, I guess I’m no match for you. <<set wdcc3H_points +=1>>
+-> Ugh! Why couldn’t I win?
+It looks like Drake has Coby at his mercy. With one win and one loss, it’s a draw.
+-> Sorry about that… We could have won.
+    Drake: That’s OK, it was a… Creative idea you had.
+-> Your zoan form is so powerful, Rear Admiral! Not that you’re not always, but… <<set wdcc3D_points +=1>>
+    Drake: Thanks.
+<<jump workday_coby_crew_3_Drake_wrap>>
+===
+
+title: workday_coby_crew_3_Drake_direct_attack
+location: training grounds
+---
+
+Drake: Go!
+The two of you launch yourselves at Coby and Helmeppo. Both you and Drake have the same idea, to go in and drive them apart, but they’re leaning into each other, an unbreakable front.
+-> **Try to break them off.**
+    You’re nearest to Coby, so you try to draw his attention with a feinted punch just as Drake tries to kick Helmeppo. Drake draws Coby’s attention, and he blocks the kick, ignoring you.
+-> OK, back to the drawing board… Let’s just fight with our all!
+    Drake: Yes.
+    You send your fists flying towards Coby, who is nearer to you. He fends you off easily and turns to help Helmeppo fight off Drake.
+Drake: Come on, {$name}, let’s do a combo attack.
+Helmeppo: Telling us your moves? That’s brave.
+Drake: We’ll both punch at once.
+-> Uh, I think Lieutenant Commander Helmeppo has a point… Let’s have it be a surprise. <<set wdcc3D_points -=1>> <<set wdcc3H_points +=1>>
+    You decide to go for the ultimate surprise… Exactly what you said you were going to do. They’ll be expecting anything but that!
+-> Yes, sir! <<set wdcc3D_points +=1>>
+Drake: One, two, three…
+Coby and Helmeppo are already moving before he finishes. You both go for the punch, Drake’s infused with Haki and yours with all the spirit you can muster. The imbalanced force is enough to throw Coby and Helmeppo for a loop; they stagger backward.
+-> Whoa, great idea, Rear Admiral! <<set wdcc3D_points +=1>>
+-> OK, let’s finish them!
+-> Who’s brave now? <<set wdcc3C_points -=1>> <<set wdcc3H_points -=1>>
+Coby: Let’s do it, Meppo!
+They’re so fast you can barely see them. At the last second, Drake jumps in front of you, shielding you from their blows. All three of them are panting, clearly taxed.
+-> Oh, thank you so much! I guess I left myself too open… <<set wdcc3D_points +=1>>
+    Drake: I know combat isn’t your specialty. Part of teamwork is letting someone else take over for you.
+-> Damn, I couldn’t even get another hit in.
+-> So, uh… Let’s call it a draw then.
+You take a quick break for water.
+<<jump workday_coby_crew_3_Drake_wrap>>
+===
+
+title: workday_coby_crew_3_Drake_wrap
+location: training grounds
+---
+
+-> (Available if you haven’t yet teamed up with Helmeppo) How about you and me, Lieutenant Commander? //HOW DO??
+    <<jump workday_coby_crew_3_Helmeppo_team>>
+-> (Available if you haven’t yet teamed up with Coby) You up for teaming up, Captain? //HOW DO??
+    <<jump workday_coby_crew_3_Coby_team>>
+-> (Available if you’ve already done both) Time for a break… //HOW DO??
+    <<jump workday_coby_crew_3_Break_time>>
+===
+
+title: workday_coby_crew_3_Break_time
+location: training grounds
+---
+
+Coby: Phew, that was a lot of work!
+-> Yeah, I’m beat…
+-> I could go for another round… Kidding, kidding.
+-> I hope you didn’t overexert yourself.
+Drake: It’s good to take breaks.
+Helmeppo: It makes the training actually bearable.
+-> So, how’d I do?
+-> Let’s all give each other scores?
+-> Should we make this a regular thing?
+Goat: #*MAAAA*#
+Before anyone can answer your question, the goat bursts through the doors, slowing its pace when it sees the four of you. It trots up to Helmeppo and butts him affectionately in the knee.
+Helmeppo: Well, look who decided to show up.
+Coby: Aww, hi there.
+-> It’s our team captain! 
+-> Um, hello? I was talking. <<set wdcc3C_points -=1>>
+-> I was beginning to wonder where you were…
+    Drake: Sengoku-san said he would be running errands this afternoon. I expect they spent the morning together, though.
+The goat nuzzles Helmeppo, clearly more interested in him than in you. 
+-> Hey, goat, do you want to chew on my shoelace?
+    The goat ignores you.
+-> So, uh… Rear Admiral, is that detailing on your sword new?
+    Drake: No, but the hilt had been getting tarnished so I polished it. I’m glad you noticed. <<set wdcc3D_points +=1>>
+-> …
+Lieutenant Commander Helmeppo looks a little upset. Or maybe you’re imagining things, it’s hard to tell with the sunglasses.
+-> Er… Do you not like goats, Helmeppo?
+-> Maybe goats aren’t the best fit for the training ground…
+-> Has the goat been bothering you?
+Helmeppo: No, the goat’s fine. It just makes me miss my old friend. Wolves can make amazing pets, don’t you think?
+Drake: I prefer reptiles to mammals. 
+Helmeppo: They’re so cold-blooded! Anyway, I wasn’t asking you. {$name}, what do you think?
+-> You’re right, wolves are better. <<set wdcc3H_points +=1>> <<set wdcc3D_points -=1>>
+    <<jump workday_coby_crew_3_Side_with_Helmeppo>>
+-> I agree with Rear Admiral Drake–reptiles are better. <<set wdcc3H_points -=1>> <<set wdcc3D_points +=1>>
+    <<jump workday_coby_crew_3_Side_with_Drake>>
+-> Er… um… 
+    <<jump workday_coby_crew_3_Neutral_side>>
+===
+
+title: workday_coby_crew_3_Side_with_Helmeppo
+location: training grounds
+---
+
+Helmeppo: Obviously, wolves are superior. They have powerful jaws and claws, sleek and silky fur, and they’re so smart.
+Drake: Some reptiles are quite powerful, too. But there’s nothing better than scales and spines.
+-> But you can’t pet a turtle the same way you can pet a wolf. <<set wdcc3D_points -=1>> <<set wdcc3H_points +=1>>
+    Drake: I wouldn’t try to pet a wolf if I were you.
+    Helmeppo: I wouldn’t pet a snapping turtle!
+    Coby: Yes, you would.
+    Helmeppo: That’s not important right now.
+-> Well, I guess it depends on the reptile…
+    Helmeppo: OK, but wolves are better than **any** reptile. Pick one.
+    Drake: Bearded dragon, then. 
+    Helmeppo: Yeah, wolves are better.
+-> Yeah, reptiles are so slimy. <<set wdcc3D_points -=1>>
+    Drake: Have you ever even touched one?
+    Helmeppo: I think you’re thinking of amphibians, not reptiles. 
+Drake: Anyway, there’s nothing wrong with wolves, or other mammals. I like animals in general, but I like reptiles the best.
+-> Not even the goat dethrones them?
+    Drake: Well, it is quite the troublemaker.
+-> Well, it’s two-to-one against you. <<set wdcc3H_points +=1>>
+-> Suit yourself.
+<<jump workday_coby_crew_3_Join_up>>
+===
+
+title: workday_coby_crew_3_Side_with_Drake
+location: training grounds
+---
+
+Drake: Even before I ate my devil fruit, I found reptiles fascinating… As a child, I used to rescue cold-stunned sea turtles. They’re beautiful creatures.
+Helmeppo: Wolves don’t get sick from the cold.
+-> Every animal has a weakness. If we can help them, we should. <<set wdcc3D_points +=1>>
+    Helmeppo: Wolves are the strongest.
+-> Even in extreme cold?
+    Helmeppo: Yeah, probably.
+-> Wow, helping out sick animals… I can’t say I did anything as great with my childhood.
+    Drake: I did other things, too. 
+    Helmeppo: Hey, I didn’t spend my early years rescuing turtles either.
+Helmeppo: Whatever, I just don’t get it.
+Drake: You should visit a prehistoric island sometime. If you see dinosaurs up close…
+-> Wow, I’ve always wanted to go to one of those. <<set wdcc3D_points +=1>>
+-> You’ll totally like them, Lieutenant Commander! I promise! <<set wdcc3H_points -=1>>
+<<jump workday_coby_crew_3_Join_up>>
+===
+
+title: workday_coby_crew_3_Neutral_side
+location: training grounds
+---
+
+Coby: Guys, let’s not fight about this or put anyone on the spot.
+Helmeppo: No one’s being put on the spot. {$name} started the conversation; I asked a question; Drake interrupted.
+Drake: I thought you were asking all of us.
+Coby: Meppo, you don’t need to start an argument for the sake of it. I know you like reptiles too.
+Goat: Maaaa…
+-> Er, I think goats are the best anyway. Right, Captain? <<set wdcc3C_points +=1>>
+    Coby: Yeah, especially since this one is on our team…
+-> All animals have their charms. Reptiles, wolves, goats… <<set wdcc3D_points +=1>> <<set wdcc3C_points +=1>>
+-> So it was just a misunderstanding then, right? 
+    Helmeppo: You still haven’t answered my question.
+    -> Uh, I’ll take a pass on that. <<set wdcc3H_points -=1>>
+    -> Well, wolves are pretty cool. <<set wdcc3H_points +=1>>
+<<jump workday_coby_crew_3_Join_up>>
+===
+
+title: workday_coby_crew_3_Join_up
+location: training grounds
+---
+
+Coby: Anyway... Great fighting, everyone.
+-> Yes, nicely done— you and Lieutenant Commander Helmeppo make such a great team. <<set wdcc3C_points +=1>> <<set wdcc3H_points +=1>>
+    Coby: Aww, thanks. We’ve had lots of practice.
+-> Maybe I’ll be able to keep up with you all soon...
+    Drake: Given your experience level, you did very well.
+-> I hope this isn’t rude. I wasn’t expecting your solo fighting style, Helmeppo… 
+    Coby: Nobody ever is. Don’t tell Garp-san, but Helmeppo probably did more to help my haki improve than he did!
+    -> Really? How?
+	    Coby: Um. Let’s just say that if you get dirt thrown in your eyes enough, you learn not to rely on them.
+    -> That doesn’t sound right…
+        Helmeppo: Yeah it really doesn’t.
+        Coby: I’m being serious!
+Coby: Is there anything that I should do better?
+-> You shouldn’t have split up to fight Rear Admiral Drake one-on-one. <<set wdcc3C_points +=1>>
+    Coby: Ah, that’s true...
+-> Nothing I can think of, but my point of view is limited...
+    Drake: Agreed. You did well. 
+Coby: Nice job taking on {$name} alone, Meppo.
+Helmeppo: Thanks. 
+-> I’ll work on my punches! Let’s have a rematch sometime. <<set wdcc3H_points +=1>>
+    Helmeppo: Sure. But next time, I expect you to hit me with everything you have, alright?
+-> Well, it’s expected that he’d beat me. <<set wdcc3H_points -=1>>
+    Helmeppo: I wouldn’t exactly call it expected. 
+Helmeppo: Drake, why don’t you use your zoan form more?
+Drake: I don’t need to. 
+-> And the less you use it, the more it can surprise people, right? <<set wdcc3D_points +=1>>
+    Drake: Yes, that’s true.
+-> Well, doesn’t it have disadvantages, too? Like short arms?
+    Drake: And being unable to fit in small spaces, yes... but in most combat situations, that’s not an issue. 
+The four of you lapse into silence.
+Coby: So... How about we go get some food? The mess hall might still be open.
+Helmeppo: Sounds good. I’m hungry.
+You and Drake follow them away from the training grounds.
+===
