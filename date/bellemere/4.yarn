@@ -2,23 +2,23 @@ title: date_bellemere_4_main
 location: park
 ---
 
-It’s a sunny day, but not overly hot.
-You can hardly believe it’s been nearly a whole year since you came to the training island. Bellemere has been in a particularly good mood lately, getting along well with Tashigi and barely even mouthing off to her superiors. 
-And today, she’s invited you out.
-You have a feeling you know what this is about; after all, she’s asked you to meet her at her mikan orchard.
+It's a sunny day, but not overly hot.
+You can hardly believe it's been nearly a whole year since you came to the training island. Bellemere has been in a particularly good mood lately, getting along well with Tashigi and barely even mouthing off to her superiors.
+And today, she's invited you out.
+You have a feeling you know what this is about; after all, she's asked you to meet her at her mikan orchard.
 {$name}: Bellemere! Hey!
 Bellemere: {$name}, about time!
-You know you’re not late; Bellemere is just impatient.
-The young saplings have grown and filled in beautifully, their fruit ripe and sweet smelling, even from where you’re standing.
-Bellemere: I promised you I’d share, didn’t I?
+You know you're not late; Bellemere is just impatient.
+The young saplings have grown and filled in beautifully, their fruit ripe and sweet smelling, even from where you're standing.
+Bellemere: I promised you I'd share, didn't I?
 You notice the two empty baskets at her feet and understanding takes hold.
-{$name}: I’m here to work, aren’t I?
+{$name}: I'm here to work, aren't I?
 She winks, ignoring your sarcastic tone.
 Bellemere: Oh, you know it! Grab a basket and start gathering; I plan on selling some at the market tomorrow in town, so I need to gather up everything ripe and ready!
 {$name}: The market? You need extra money or something?
 Bellemere: You offering to spot me?
--> Maybe…
-	<<jump date_bellemere_4_maybe>>
+-> Maybe...
+    <<jump date_bellemere_4_maybe>>
 -> Ha! Do I look stupid?
     <<jump date_bellemere_4_stupid>>
 ===
@@ -27,11 +27,11 @@ title: date_bellemere_4_maybe
 location: park
 ---
 
-Bellemere: Oh man, you are hopeless, aren’t you? 
+Bellemere: Oh man, you are hopeless, aren't you?
 She holds out a hand, grinning, and you slowly press some berries from your wallet, there.
 Bellemere: Sigh. Do you not value money at all?
 {$name}: Maybe I value you more.
-Bellemere: Oh, cute! Stupid, but… cute.
+Bellemere: Oh, cute! Stupid, but... cute.
 <<jump date_bellemere_4_continue>>
 ===
 
@@ -48,33 +48,33 @@ title: date_bellemere_4_continue
 location: park
 ---
 
-Bellemere: I always need extra money- plus, I can’t eat this much fruit on my own!
+Bellemere: I always need extra money- plus, I can't eat this much fruit on my own!
 {$name}: Makes sense.
 You grab a basket, and pay attention as Bellemere shows you how to find the ripe fruit and cut them safely.
 {$name}: So you used to have an orchard back home?
-Bellemere: Oh, yes. You do what you have to do when you have kids, even if it’s not very profitable. We made do…
+Bellemere: Oh, yes. You do what you have to do when you have kids, even if it's not very profitable. We made do...
 -> Ask about daughters
-	<<jump date_bellemere_4_daughters>>
+    <<jump date_bellemere_4_daughters>>
 -> Ask about money
-	<<jump date_bellemere_4_money>>
+    <<jump date_bellemere_4_money>>
 ===
 
 title: date_bellemere_4_daughters
 location: park
 ---
 
-{$name}: Your daughters… you said one of them saved you before, right? Are they still running the orchard?
+{$name}: Your daughters... you said one of them saved you before, right? Are they still running the orchard?
 Bellemere: Surprisingly, Nojiko is, yeah! My youngest is traveling, though.
-You remember what you’ve learned so far of her daughters. She had spoken in the past about one of them saving her from an infamous pirate…
+You remember what you've learned so far of her daughters. She had spoken in the past about one of them saving her from an infamous pirate...
 {$name}: The one that fought Arlong?
 Bellemere laughs at that.
-Bellemere: Oh, she fought all right! She’s cunning, and strong, and she tried so hard… well, in the end, it was her friends who took down Arlong. Pirates! Pirates saved me, and my daughters, and my village.
-You wouldn’t say your jaw drops at the info- she had hinted at such a thing before, hadn’t she? You had come to your own inferred conclusions, but still… hearing her say it out loud was crazy!
+Bellemere: Oh, she fought all right! She's cunning, and strong, and she tried so hard... well, in the end, it was her friends who took down Arlong. Pirates! Pirates saved me, and my daughters, and my village.
+You wouldn't say your jaw drops at the info- she had hinted at such a thing before, hadn't she? You had come to your own inferred conclusions, but still... hearing her say it out loud was crazy!
 {$name}: Why? Did she pay them!?
-Bellemere: Oh, Nami’s far too frugal for that! She won them over with her charming personality, I expect. They’re a loyal bunch… did so much for our island, and she ended up joining their crew.
-Bellemere’s daughter is a pirate!?
-You can’t figure out something safe to say in response, so you just nod. Still… it gives you something to think about. 
-You’re thankful for those pirates, you suppose. Outlaws or not, they’re the reason Bellemere is here with you today.
+Bellemere: Oh, Nami's far too frugal for that! She won them over with her charming personality, I expect. They're a loyal bunch... did so much for our island, and she ended up joining their crew.
+Bellemere's daughter is a pirate!?
+You can't figure out something safe to say in response, so you just nod. Still... it gives you something to think about.
+You're thankful for those pirates, you suppose. Outlaws or not, they're the reason Bellemere is here with you today.
 <<jump date_bellemere_4_food>>
 ===
 
@@ -84,9 +84,9 @@ location: park
 
 {$name}: Not profitable?
 -> If CONDITION: MIKAN set in Date #3 //HOW DO???
-	<<jump date_bellemere_4_fullstory>>
+    <<jump date_bellemere_4_fullstory>>
 -> No Condition set
-	<<jump date_bellemere_4_brushoff>>
+    <<jump date_bellemere_4_brushoff>>
 ===
 
 title: date_bellemere_4_fullstory
@@ -96,37 +96,37 @@ location: park
 Bellemere is quiet for a moment. She has a single mikan at hand and is turning it slowly; not peeling it or anything, but just feeling its waxy, porous surface under her thumb.
 Bellemere: You know, I used to tell the girls that it was good for my complexion and my figure. The mikans, I mean.
 {$name}: Is that true?
-Bellemere: Well… Maybe? I’ve never researched it!
+Bellemere: Well... Maybe? I've never researched it!
 She laughs, shaking her head, but it seems like a jovial cover for deeper thoughts.
--> You can’t live off fruit alone, huh?
-	<<jump date_bellemere_4_live>>
+-> You can't live off fruit alone, huh?
+    <<jump date_bellemere_4_live>>
 -> Well, scurvy was never a concern, huh?
-	<<jump date_bellemere_4_joke>>
+    <<jump date_bellemere_4_joke>>
 -> Did your kids like eating so much citrus?
-	<<jump date_bellemere_4_citrus>>
+    <<jump date_bellemere_4_citrus>>
 ===
 
 title: date_bellemere_4_citrus
 location: park
 ---
 
-Bellemere: Oh,I made sure the kids ate well! Can’t raise littles on fruit alone, and they take priority. Always.
-{$name}: Well, I’m… glad you’re here, now. I assume things are better back home?
-Bellemere: Oh, yeah, I send back what I can to help out my oldest. Nojiko is taking care of the orchard. And Nami… Nami’s gone to sea. 
+Bellemere: Oh,I made sure the kids ate well! Can't raise littles on fruit alone, and they take priority. Always.
+{$name}: Well, I'm... glad you're here, now. I assume things are better back home?
+Bellemere: Oh, yeah, I send back what I can to help out my oldest. Nojiko is taking care of the orchard. And Nami... Nami's gone to sea.
 {$name}: The girl who saved you?
 Bellemere grins, and this time it seems authentic.
-Bellemere: Nami’s friends are pretty strong. They took down Arlong. She’s a pirate, you know.
-You’re not dumb- you surmised as much. Still, nothing could have prepared you for the bombshell she drops next.
+Bellemere: Nami's friends are pretty strong. They took down Arlong. She's a pirate, you know.
+You're not dumb- you surmised as much. Still, nothing could have prepared you for the bombshell she drops next.
 Bellemere: She runs with Straw Hat Luffy, these days.
 {$name}: S-Straw Hat!?
 Not just any pirate, then! Holy crap!
 She raises a finger to her grinning face, winking.
-Bellemere: Means I trust you, you know, to give you that much information. Ah, what a shameful secret, a Marine raising a famous pirate…
+Bellemere: Means I trust you, you know, to give you that much information. Ah, what a shameful secret, a Marine raising a famous pirate...
 She looks anything but ashamed, though.
-{$name}: I’ll keep your secret, but…
--> …that’s a real conflict of interest, isn’t it?
-	<<jump date_bellemere_4_conflict>>
--> …she sounds very brave, so maybe good pirates do exist?
+{$name}: I'll keep your secret, but...
+-> ...that's a real conflict of interest, isn't it?
+    <<jump date_bellemere_4_conflict>>
+-> ...she sounds very brave, so maybe good pirates do exist?
     <<jump date_bellemere_4_good>>
 ===
 
@@ -135,8 +135,8 @@ location: park
 ---
 
 Bellemere laughs lightly, shaking her head.
-Bellemere: Well, that’s for sure! Always looking on the bright side, huh?
-You can tell you’ve lightened the mood with your joke, and you’re glad Bellemere looks a little more at ease, now. Still, the conversation seems to end with your shift into the lighthearted.
+Bellemere: Well, that's for sure! Always looking on the bright side, huh?
+You can tell you've lightened the mood with your joke, and you're glad Bellemere looks a little more at ease, now. Still, the conversation seems to end with your shift into the lighthearted.
 <<jump date_bellemere_4_food>>
 ===
 
@@ -145,33 +145,33 @@ location: park
 ---
 
 Bellemere: True enough. Nami saw through me right away- she was a contrary little thing when she was young. Still is! But she was worried about me, even when she was just a kid.
-You’re not sure what it would be like to be so poor you didn’t know where your next meal was coming from. Your heart lurches, imagining your friend living like that.
+You're not sure what it would be like to be so poor you didn't know where your next meal was coming from. Your heart lurches, imagining your friend living like that.
 Bellemere: I made sure the kids ate, though! They take priority. Always.
-You nod. You can’t  relate, exactly, to the circumstance, but you can empathize with the sentiment. People you love come first.
-{$name}: Well, I’m… glad you’re here, now. I assume things are better back home?
-Bellemere: Oh, yeah, I send back what I can to help out my oldest. Nojiko is taking care of the orchard. And Nami… Nami’s gone to sea. 
+You nod. You can't  relate, exactly, to the circumstance, but you can empathize with the sentiment. People you love come first.
+{$name}: Well, I'm... glad you're here, now. I assume things are better back home?
+Bellemere: Oh, yeah, I send back what I can to help out my oldest. Nojiko is taking care of the orchard. And Nami... Nami's gone to sea.
 {$name}: The girl who saved you?
 Bellemere grins, and this time it seems authentic.
-Bellemere: Nami’s friends are pretty strong. They took down Arlong. She’s a pirate, you know.
-You’re not dumb- you surmised as much. Still, nothing could have prepared you for the bombshell she drops next.
+Bellemere: Nami's friends are pretty strong. They took down Arlong. She's a pirate, you know.
+You're not dumb- you surmised as much. Still, nothing could have prepared you for the bombshell she drops next.
 Bellemere: She runs with Straw Hat Luffy, these days.
 {$name}: S-Straw Hat!?
 Not just any pirate, then! Holy crap!
 She raises a finger to her grinning face, winking.
-Bellemere: Means I trust you, you know, to give you that much information. Ah, what a shameful secret, a Marine raising a famous pirate…
+Bellemere: Means I trust you, you know, to give you that much information. Ah, what a shameful secret, a Marine raising a famous pirate...
 She looks anything but ashamed, though.
-{$name}: I’ll keep your secret, but…
--> …that’s a real conflict of interest, isn’t it?
-	<<jump date_bellemere_4_conflict>>
--> …she sounds very brave, so maybe good pirates do exist?
-	<<jump date_bellemere_4_good>>
+{$name}: I'll keep your secret, but...
+-> ...that's a real conflict of interest, isn't it?
+    <<jump date_bellemere_4_conflict>>
+-> ...she sounds very brave, so maybe good pirates do exist?
+    <<jump date_bellemere_4_good>>
 ===
 
 title: date_bellemere_4_conflict
 location: park
 ---
 
-Bellemere is quiet, at that, and she shrugs. Something seems severed- less open. The gates are closed once again, and you strongly suspect she’s done opening up on the subject.
+Bellemere is quiet, at that, and she shrugs. Something seems severed- less open. The gates are closed once again, and you strongly suspect she's done opening up on the subject.
 <<jump date_bellemere_4_food>>
 ===
 
@@ -180,16 +180,16 @@ location: park
 ---
 
 Bellemere grins.
-Bellemere: Oh, both my girls are very brave. Nami’s out there making a map of the world. She had a hard life while I was in prison; you know she tried to save a million berries, all on her own, to save me and our village? She made a deal with that asshole, and I won’t speculate on how she obtained that much money, but she very nearly did it, too.
+Bellemere: Oh, both my girls are very brave. Nami's out there making a map of the world. She had a hard life while I was in prison; you know she tried to save a million berries, all on her own, to save me and our village? She made a deal with that asshole, and I won't speculate on how she obtained that much money, but she very nearly did it, too.
 {$name}: Very nearly?
 Bellemere shrugs.
-Bellemere: Pirates cheat. Most do, anyway. Arlong cheated, so Nami’s new friends took over and beat the ever-loving-shit out of him. I have nothing but respect for the Straw Hats, though I wouldn’t go blabbing that in certain circles around here, you know.
-You wonder why you never read any of these things in the paper… for the first time, you start to speculate on how much of what you read is curated to fit a certain narrative. It makes sense, afterall: what lawful government would want to glorify a pirate, no matter what good they did?
-{$name}: Well then I’m glad of them, if they saved you and your kids!
+Bellemere: Pirates cheat. Most do, anyway. Arlong cheated, so Nami's new friends took over and beat the ever-loving-shit out of him. I have nothing but respect for the Straw Hats, though I wouldn't go blabbing that in certain circles around here, you know.
+You wonder why you never read any of these things in the paper... for the first time, you start to speculate on how much of what you read is curated to fit a certain narrative. It makes sense, afterall: what lawful government would want to glorify a pirate, no matter what good they did?
+{$name}: Well then I'm glad of them, if they saved you and your kids!
 She seems pleased with your response, and reaches out to take your hand. Her fingers thread through your own, and you feel your heart rate increase.
 Her hand is unexpectedly soft and cool.
-Bellemere: You’re a special one to say that, you know? I knew I could trust you.
-She squeezes your hand and releases it, but you can still feel that phantom warmth of her skin against your palm…
+Bellemere: You're a special one to say that, you know? I knew I could trust you.
+She squeezes your hand and releases it, but you can still feel that phantom warmth of her skin against your palm...
 <<jump date_bellemere_4_food>>
 ===
 
@@ -197,8 +197,8 @@ title: date_bellemere_4_brushoff
 location: park
 ---
 
-Bellemere: Ah, well… it was hard, but I’m tough, you know! 
-Raising two kids off the profits of some fruit? Yeah, Bellemere’s tough. You nod.
+Bellemere: Ah, well... it was hard, but I'm tough, you know!
+Raising two kids off the profits of some fruit? Yeah, Bellemere's tough. You nod.
 <<jump date_bellemere_4_food>>
 ===
 
@@ -207,24 +207,24 @@ location: park
 ---
 
 Bellemere: Hey, enough of this chatter! I have an idea- see these ugly mikans?
-She points to a few she’s already picked, set aside in a smaller basket. They all look just fine and ripe, but a few have some odd brown marks or are a bit lumpy in shape.
+She points to a few she's already picked, set aside in a smaller basket. They all look just fine and ripe, but a few have some odd brown marks or are a bit lumpy in shape.
 You nod.
-Bellemere: They won’t sell as well, so let’s use them for something! I’m in the mood for something sweet.
-{$name}: Use… you mean cook something?
-Bellemere: Of course! Hell, I know so many ways to prepare these things… you up for it?
--> Hell yeah! I’m an amazing cook!
-	<<jump date_bellemere_4_amazing>>
--> Sure! I’ll need your help to guide me, though.
-	<<jump date_bellemere_4_guide>>
--> Nothing I hate more than cooking…
-	<<jump date_bellemere_4_hate>>
+Bellemere: They won't sell as well, so let's use them for something! I'm in the mood for something sweet.
+{$name}: Use... you mean cook something?
+Bellemere: Of course! Hell, I know so many ways to prepare these things... you up for it?
+-> Hell yeah! I'm an amazing cook!
+    <<jump date_bellemere_4_amazing>>
+-> Sure! I'll need your help to guide me, though.
+    <<jump date_bellemere_4_guide>>
+-> Nothing I hate more than cooking...
+    <<jump date_bellemere_4_hate>>
 ===
 
 title: date_bellemere_4_amazing
 location: park
 ---
 
-Bellemere: Oh-ho! Quite a braggart, aren’t we? We shall see if that confidence is warranted!
+Bellemere: Oh-ho! Quite a braggart, aren't we? We shall see if that confidence is warranted!
 <<jump date_bellemere_4_recipes>>
 ===
 
@@ -232,7 +232,7 @@ title: date_bellemere_4_guide
 location: park
 ---
 
-Bellemere: I’ll help you out, {$name}. What’s the point of cooking together if we’re not doing it, well, *together?*
+Bellemere: I'll help you out, {$name}. What's the point of cooking together if we're not doing it, well, *together?*
 You like that. It sounds sweet and domestic, working together with the redhead to make something. The imagery fills your chest with warm bubbles.
 <<jump date_bellemere_4_recipes>>
 ===
@@ -241,9 +241,10 @@ title: date_bellemere_4_hate
 location: park
 ---
 
-Bellemere: Well, then I won’t bother you with it!
-You help her pick some mikans and the two of you part ways. Apparently, your refusal to cook has ended any chance of spending more time with the redhead today. 
-<<declare $bd4_points = 0>> <<jump date_bellemere_4_DateEndBad>>
+Bellemere: Well, then I won't bother you with it!
+You help her pick some mikans and the two of you part ways. Apparently, your refusal to cook has ended any chance of spending more time with the redhead today.
+<<declare $bd4_points = 0>>
+<<jump date_bellemere_4_DateEndBad>>
 ===
 
 title: date_bellemere_4_recipes
@@ -253,41 +254,41 @@ location: quarters
 Once the fruit is all picked you help Bellemere carry the baskets back to her studio apartment, along with the little basket of less-than-perfect fruit.
 Her apartment is nice, neat and sweet-smelling, simply furnished but not bare. Tasteful art hangs on the walls and a homemade quilt covers the bed. Little knick-knacks sit on a wall-mounted shelf and a bright colored rug has pride of place on the floor. Small details that make this temporary housing look like a home.
 The kitchenette is small, as with all of your assigned apartments, but it has a stove top and Bellemere has stocked it with plenty of kitchen implements.
-{$name}: I never cook at my place, since we have the cafeteria…
+{$name}: I never cook at my place, since we have the cafeteria...
 Bellemere: Oh, I hate cooking, but I hate the cafeteria food more. I prefer to eat out or make my own meals when possible.
 She pulls a cooking book from her bookshelf, waving it enticingly.
-Bellemere: Let’s pick out a couple things and have a contest, shall we?
-{$name}: Contest? I thought we were doing this together! 
+Bellemere: Let's pick out a couple things and have a contest, shall we?
+{$name}: Contest? I thought we were doing this together!
 Bellemere: Yeah yeah, but one of us will make our dish together better.
 Her logic does not seem sound, but you acquiesce anyway.
 Bellemere: How about these?
 She points to two recipes in the index of her book.
 Bellemere: We need to go buy some ingredients. Which do you want to be responsible for?
 -> Mikan glazed chicken
-	<<jump date_bellemere_4_chicken>>
+    <<jump date_bellemere_4_chicken>>
 -> Vanilla mikan tart
-	<<jump date_bellemere_4_tart>>
+    <<jump date_bellemere_4_tart>>
 ===
 
 title: date_bellemere_4_chicken
 location: town
 ---
 
-The two of you copy down your respective recipes and head out to the market, separating for efficiency with promises to meet back at Bellemere’s place afterwards. Carefully, you check off items as you buy them.
+The two of you copy down your respective recipes and head out to the market, separating for efficiency with promises to meet back at Bellemere's place afterwards. Carefully, you check off items as you buy them.
 Chicken breast? Check.
 Green onions? Check.
 Cornstarch? Checkity-check.
-Quickly, you knock off item after item, from the meat market to the veggie stand to the grocery store. 
-You know you need some spices- you’ve found everything else.
-You reach into your pocket to pull out your mostly-finished list and… to your horror, find it missing. You must have dropped it somewhere! Oh crap… Uh…
-Shoot. You know you needed garlic and chili flakes… right? But there was something else…
-You’ll have to make a guess. What is the last missing ingredient for your mikan glazed chicken?
+Quickly, you knock off item after item, from the meat market to the veggie stand to the grocery store.
+You know you need some spices- you've found everything else.
+You reach into your pocket to pull out your mostly-finished list and... to your horror, find it missing. You must have dropped it somewhere! Oh crap... Uh...
+Shoot. You know you needed garlic and chili flakes... right? But there was something else...
+You'll have to make a guess. What is the last missing ingredient for your mikan glazed chicken?
 -> Turmeric
-	<<jump date_bellemere_4_turmeric>>
+    <<jump date_bellemere_4_turmeric>>
 -> Ginger
-	<<jump date_bellemere_4_Ginger>>
+    <<jump date_bellemere_4_Ginger>>
 -> Star Anise
-	<<jump date_bellemere_4_Anise>>
+    <<jump date_bellemere_4_Anise>>
 ===
 
 title: date_bellemere_4_Anise
@@ -295,41 +296,42 @@ location: quarters
 ---
 
 You hurry to grab the anise from the shelves, pay for the groceries, and make your way back to Bellemere's apartment.
-Bellemere: Hey, you’re back!
+Bellemere: Hey, you're back!
 Bellemere has beaten you back to her apartment. She even has the oven preheated and is mixing something in a bowl, already! So fast!
 {$name}: Is this a race?
-Bellemere: No, I’m just fast!
+Bellemere: No, I'm just fast!
 She laughs.
 Bellemere: Did you get what you needed?
-{$name}: Er…. hopefully?
+{$name}: Er.... hopefully?
 Bellemere: Oh, that sounds promising.
-{$name}: I mean, yeah, I got everything on the list, but I may have improvised one item… I lost my list. Pretty sure we’re good!
+{$name}: I mean, yeah, I got everything on the list, but I may have improvised one item... I lost my list. Pretty sure we're good!
 Bellemere seems on the incredulous side, but nods towards some supplies set on her small counter for you. Time to get to work!
-You cut your chicken carefully and then start mixing your batter. This is the point where it could all go right or very wrong, right at the start, so you double check your recipe…
-Ah, crap… ginger… you needed ginger.
-Well, you have the feeling star anise would work well too. It’s a spice! It’ll, uh… spice up the chicken, right?
-You mix all of your spices in with the batter and start frying up your chicken, getting the sauce together as it cooks. Bellemere’s mikan pie smells amazing as it bakes, and the apartment is filled with citrus-y, savory, and sweet scents.
+You cut your chicken carefully and then start mixing your batter. This is the point where it could all go right or very wrong, right at the start, so you double check your recipe...
+Ah, crap... ginger... you needed ginger.
+Well, you have the feeling star anise would work well too. It's a spice! It'll, uh... spice up the chicken, right?
+You mix all of your spices in with the batter and start frying up your chicken, getting the sauce together as it cooks. Bellemere's mikan pie smells amazing as it bakes, and the apartment is filled with citrus-y, savory, and sweet scents.
 You open the patio door to release some of the heat from the stove, the cool ocean breeze adding to the cozy atmosphere.
 {$name}: Hey, you have a table out here. Want to eat on the balcony?
-Bellemere: It’s a nice night- why not? I’ll set the table while this pie bakes and you finish up.
-When you finally finish your meal, you set Bellemere’s pie out to cool and bring the food to the little bistro table set out on her balcony. It’s nothing fancy; the space is very small, the deck made from simple finished wood. However… Bellemere’s managed to make it look very nice, placing candles along the balustrade and on the table. The sun has set, and the stars provide a gorgeous backdrop to the black ocean beyond the edge of the small town.
+Bellemere: It's a nice night- why not? I'll set the table while this pie bakes and you finish up.
+When you finally finish your meal, you set Bellemere's pie out to cool and bring the food to the little bistro table set out on her balcony. It's nothing fancy; the space is very small, the deck made from simple finished wood. However... Bellemere's managed to make it look very nice, placing candles along the balustrade and on the table. The sun has set, and the stars provide a gorgeous backdrop to the black ocean beyond the edge of the small town.
 {$name}: Beautiful.
 Bellemere: Me, the food, or the view?
-{$name}: Uh… all of the above?
+{$name}: Uh... all of the above?
 Bellemere grins.
 Bellemere: Smooth.
 You both taste the mikan chicken at the same time.
 There is a brief, frozen moment of chewing- normal at first, and then slowing down.
-Chew, chew, chew…
+Chew, chew, chew...
 Like a cow grazing, the food remains in your mouth for a long time before you can swallow it down.
-Licorice flavor encases your tongue, interacting with the orange flavor in an extremely unappealing way. Meat and spicy-sweet anise is not the best combination, especially with the orange sauce… oh god…
-You’re going to be sick.
-The night ends early as you both spit out your food, neither in the mood for pie with your stomachs churning. 
-Bellemere: Well… at least this will be funny tomorrow… when I don’t want to vomit.
-{$name}: I’m sorry…
-Bellemere: Nah, I just learned an important lesson: don’t trust you with cooking!
+Licorice flavor encases your tongue, interacting with the orange flavor in an extremely unappealing way. Meat and spicy-sweet anise is not the best combination, especially with the orange sauce... oh god...
+You're going to be sick.
+The night ends early as you both spit out your food, neither in the mood for pie with your stomachs churning.
+Bellemere: Well... at least this will be funny tomorrow... when I don't want to vomit.
+{$name}: I'm sorry...
+Bellemere: Nah, I just learned an important lesson: don't trust you with cooking!
 You feel bad, but Bellemere seems to be handling it with good humor as you part ways, and you return to your apartment in gastric distress.
-<<declare $bd4_points += 1>><<jump date_bellemere_4_DateEndOops>>
+<<set $bd4_points += 1>>
+<<jump date_bellemere_4_DateEndOops>>
 ===
 
 title: date_bellemere_4_turmeric
@@ -337,41 +339,42 @@ location: quarters
 ---
 
 You hurry to grab the turmeric from the shelves, pay for the groceries, and make your way back to Bellemere's apartment.
-Bellemere: Hey, you’re back!
+Bellemere: Hey, you're back!
 Bellemere has beaten you back to her apartment. She even has the oven preheated and is mixing something in a bowl, already! So fast!
 {$name}: Is this a race?
-Bellemere: No, I’m just fast!
+Bellemere: No, I'm just fast!
 She laughs.
 Bellemere: Did you get what you needed?
-{$name}: Er…. hopefully?
+{$name}: Er.... hopefully?
 Bellemere: Oh, that sounds promising.
-{$name}: I mean, yeah, I got everything on the list, but I may have improvised one item… I lost my list. Pretty sure we’re good!
+{$name}: I mean, yeah, I got everything on the list, but I may have improvised one item... I lost my list. Pretty sure we're good!
 Bellemere seems on the incredulous side, but nods towards some supplies set on her small counter for you. Time to get to work!
-You cut your chicken carefully and then start mixing your batter. This is the point where it could all go right or very wrong, right at the start, so you double check your recipe…
-Ah, crap… ginger… you needed ginger.
-Well, you have the feeling turmeric would work well too. It’s a spice! It’ll, uh… spice up the chicken, right?
-You mix all of your spices in with the batter and start frying up your chicken, getting the sauce together as it cooks. Bellemere’s mikan pie smells amazing as it bakes, and the apartment is filled with citrus, savory, and sweet scents.
+You cut your chicken carefully and then start mixing your batter. This is the point where it could all go right or very wrong, right at the start, so you double check your recipe...
+Ah, crap... ginger... you needed ginger.
+Well, you have the feeling turmeric would work well too. It's a spice! It'll, uh... spice up the chicken, right?
+You mix all of your spices in with the batter and start frying up your chicken, getting the sauce together as it cooks. Bellemere's mikan pie smells amazing as it bakes, and the apartment is filled with citrus, savory, and sweet scents.
 You open the patio door to release some of the heat from the stove, the cool ocean breeze adding to the cozy atmosphere.
 {$name}: Hey, you have a table out here. Want to eat on the balcony?
-Bellemere: It’s a nice night- why not? I’ll set the table while this pie bakes and you finish up.
-When you finally finish your meal, you set Bellemere’s pie out to cool and bring the food to the little bistro table set out on her balcony. It’s nothing fancy; the space is very small, the deck simple finished wood. However… Bellemere’s managed to make it look very nice, placing candles along the balustrade and on the table. The sun has set, and the stars provide a gorgeous backdrop to the black ocean beyond the edge of the small town.
+Bellemere: It's a nice night- why not? I'll set the table while this pie bakes and you finish up.
+When you finally finish your meal, you set Bellemere's pie out to cool and bring the food to the little bistro table set out on her balcony. It's nothing fancy; the space is very small, the deck simple finished wood. However... Bellemere's managed to make it look very nice, placing candles along the balustrade and on the table. The sun has set, and the stars provide a gorgeous backdrop to the black ocean beyond the edge of the small town.
 {$name}: Beautiful.
 Bellemere: Me, the food, or the view?
-{$name}: Uh… all of the above?
+{$name}: Uh... all of the above?
 Bellemere grins.
 Bellemere: Smooth.
-You both taste the mikan chicken at the same time. It’s sharp and sweet, mixed with spicy and savory. The turmeric gives it a special kind of kick, lingering and mixing with the citrus on your tongue a little longer than other flavors. Earthy and a bit bitter, the turmeric melds well. More than well.
+You both taste the mikan chicken at the same time. It's sharp and sweet, mixed with spicy and savory. The turmeric gives it a special kind of kick, lingering and mixing with the citrus on your tongue a little longer than other flavors. Earthy and a bit bitter, the turmeric melds well. More than well.
 You must have made a sound of approval, because Bellemere looks up.
-Bellemere: I gotta agree- it’s pretty damned good, {$name}. You might just have the makings of a chef after all!
-You don’t tell her you made a mistake- happy accidents happen, and you gladly accept the credit.
-Bellemere looks very happy in that moment, more content and mellow than usual. 
-Her hair is an auburn that looks nearly purple in the starlight. You would normally use a myriad of adjectives to describe the woman: strong, belligerent, funny, entertaining… but beautiful is one that strikes you every once in a while so hard it’s shocking. Yes, this kick-ass Marine is beautiful.
+Bellemere: I gotta agree- it's pretty damned good, {$name}. You might just have the makings of a chef after all!
+You don't tell her you made a mistake- happy accidents happen, and you gladly accept the credit.
+Bellemere looks very happy in that moment, more content and mellow than usual.
+Her hair is an auburn that looks nearly purple in the starlight. You would normally use a myriad of adjectives to describe the woman: strong, belligerent, funny, entertaining... but beautiful is one that strikes you every once in a while so hard it's shocking. Yes, this kick-ass Marine is beautiful.
 She notices you staring.
 Bellemere: What?
-{$name}: Uh… nothing. 
-You blush, and Bellemere looks pleased to have flustered you so thoroughly (even if she doesn’t understand fully why).
+{$name}: Uh... nothing.
+You blush, and Bellemere looks pleased to have flustered you so thoroughly (even if she doesn't understand fully why).
 The night ends and you return to your own apartment, stomach full of good food and mind full of peaceful memories.
-<<declare $bd4_points += 1>> <<jump date_bellemere_4_DateEndNice>>
+<<set $bd4_points += 1>>
+<<jump date_bellemere_4_DateEndNice>>
 ===
 
 title: date_bellemere_4_Ginger
@@ -379,61 +382,62 @@ location: quarters
 ---
 
 You hurry to grab the ginger from the shelves, pay for the groceries, and make your way back to Bellemere's apartment.
-Bellemere: Hey, you’re back!
+Bellemere: Hey, you're back!
 Bellemere has beaten you back to her apartment. She even has the oven preheated and is mixing something in a bowl, already! So fast!
 {$name}: Is this a race?
-Bellemere: No, I’m just fast!
+Bellemere: No, I'm just fast!
 She laughs.
 Bellemere: Did you get what you needed?
-{$name}: Er…. hopefully?
+{$name}: Er.... hopefully?
 Bellemere: Oh, that sounds promising.
-{$name}: I mean, yeah, I got everything on the list, but I may have improvised one item… I lost my list. Pretty sure we’re good!
+{$name}: I mean, yeah, I got everything on the list, but I may have improvised one item... I lost my list. Pretty sure we're good!
 Bellemere seems on the incredulous side, but nods towards some supplies set on her small counter for you. Time to get to work!
-You cut your chicken carefully and then start mixing your batter. This is the point where it could all go right or very wrong, right at the start, so you double check your recipe…
-Yes! Ginger was the correct missing ingredient! Phew… 
-You mix all of your spices in with the batter and start frying up your chicken, getting the sauce together as it cooks. Bellemere’s mikan pie smells amazing as it bakes, and the apartment is filled with citrus, savory, and sweet scents.
+You cut your chicken carefully and then start mixing your batter. This is the point where it could all go right or very wrong, right at the start, so you double check your recipe...
+Yes! Ginger was the correct missing ingredient! Phew...
+You mix all of your spices in with the batter and start frying up your chicken, getting the sauce together as it cooks. Bellemere's mikan pie smells amazing as it bakes, and the apartment is filled with citrus, savory, and sweet scents.
 You open the patio door to release some of the heat from the stove, the cool ocean breeze adding to the cozy atmosphere.
 {$name}: Hey, you have a table out here. Want to eat on the balcony?
-Bellemere: It’s a nice night- why not? I’ll set the table while this pie bakes and you finish up.
-When you finally finish your meal, you set Bellemere’s pie out to cool and bring the food to the little bistro table set out on her balcony. It’s nothing fancy; the space is very small, the deck simple finished wood. However… Bellemere’s managed to make it look very nice, placing candles along the balustrade and on the table. The sun has set, and the stars provide a gorgeous backdrop to the black ocean beyond the edge of the small town.
+Bellemere: It's a nice night- why not? I'll set the table while this pie bakes and you finish up.
+When you finally finish your meal, you set Bellemere's pie out to cool and bring the food to the little bistro table set out on her balcony. It's nothing fancy; the space is very small, the deck simple finished wood. However... Bellemere's managed to make it look very nice, placing candles along the balustrade and on the table. The sun has set, and the stars provide a gorgeous backdrop to the black ocean beyond the edge of the small town.
 {$name}: Beautiful.
 Bellemere: Me, the food, or the view?
-{$name}: Uh… all of the above?
+{$name}: Uh... all of the above?
 Bellemere grins.
 Bellemere: Smooth.
-You both taste the mikan chicken at the same time. It’s sharp and sweet, mixed with spicy and savory. The citrus stays on your tongue a little longer than any other flavor, like the lingering tone of a plucked violin. 
+You both taste the mikan chicken at the same time. It's sharp and sweet, mixed with spicy and savory. The citrus stays on your tongue a little longer than any other flavor, like the lingering tone of a plucked violin.
 You must have made some sound of approval, because Bellemere says-
-Bellemere: I gotta agree- it’s pretty good, {$name}. You can follow a recipe like a pro!
-You hadn’t even needed any help in making it. Honestly, it was probably more of a testament to the quality of ingredients and the recipe itself, but you’ll gladly take the credit!
-Bellemere looks very happy in that moment, more content and still than usual. 
-Her hair is an auburn that looks nearly purple in the starlight. You would normally use a myriad of adjectives to describe the woman: strong, belligerent, funny, entertaining… but beautiful is one that strikes you every once in a while so hard it’s shocking. Yes, this kick-ass Marine is beautiful.
+Bellemere: I gotta agree- it's pretty good, {$name}. You can follow a recipe like a pro!
+You hadn't even needed any help in making it. Honestly, it was probably more of a testament to the quality of ingredients and the recipe itself, but you'll gladly take the credit!
+Bellemere looks very happy in that moment, more content and still than usual.
+Her hair is an auburn that looks nearly purple in the starlight. You would normally use a myriad of adjectives to describe the woman: strong, belligerent, funny, entertaining... but beautiful is one that strikes you every once in a while so hard it's shocking. Yes, this kick-ass Marine is beautiful.
 She notices you staring.
 Bellemere: What?
-{$name}: Uh… nothing. 
-You blush, and Bellemere looks pleased to have flustered you so thoroughly (even if she doesn’t understand fully why).
+{$name}: Uh... nothing.
+You blush, and Bellemere looks pleased to have flustered you so thoroughly (even if she doesn't understand fully why).
 The night ends and you return to your own apartment, stomach full of good food and mind full of peaceful memories.
-<<declare $bd4_points += 2>> <<jump date_bellemere_4_DateEndCorrect>>
+<<set $bd4_points += 2>>
+<<jump date_bellemere_4_DateEndCorrect>>
 ===
 
 title: date_bellemere_4_tart
 location: town
----	
+---
 
-The two of you copy down your respective recipes and head out to the market, separating for efficiency with promises to meet back at Bellemere’s place afterwards. Carefully, you check off items as you buy them.
+The two of you copy down your respective recipes and head out to the market, separating for efficiency with promises to meet back at Bellemere's place afterwards. Carefully, you check off items as you buy them.
 Flour? Check.
 Butter? Check.
 Cornstarch? Checkity-check.
-Quickly, you knock off item after item, from the bake shop to the egg stand to the grocery store. 
-You know you need some spices- you’ve found everything else.
-You reach into your pocket to pull out your mostly-finished list and… to your horror, find it missing. You must have dropped it somewhere! Oh crap… Uh…
-Shoot. You know you needed vanilla beans and gelatin… right? But there was something else…
-You’ll have to make a guess. What is the last missing ingredient for your vanilla mikan tart?
+Quickly, you knock off item after item, from the bake shop to the egg stand to the grocery store.
+You know you need some spices- you've found everything else.
+You reach into your pocket to pull out your mostly-finished list and... to your horror, find it missing. You must have dropped it somewhere! Oh crap... Uh...
+Shoot. You know you needed vanilla beans and gelatin... right? But there was something else...
+You'll have to make a guess. What is the last missing ingredient for your vanilla mikan tart?
 -> Almond paste
-	<<jump date_bellemere_4_almond>>
+    <<jump date_bellemere_4_almond>>
 -> Mint
-	<<jump date_bellemere_4_mint>>
+    <<jump date_bellemere_4_mint>>
 -> Nutmeg
-	<<jump date_bellemere_4_nutmeg>>
+    <<jump date_bellemere_4_nutmeg>>
 ===
 
 title: date_bellemere_4_almond
@@ -441,35 +445,35 @@ location:
 ---
 
 You hurry to grab the almond paste from the shelves, pay for the groceries, and make your way back to Bellemere's apartment.
-Bellemere: Hey, you’re back!
+Bellemere: Hey, you're back!
 Bellemere has beaten you back to her apartment. She even has the oven preheated and is mixing something in a bowl, already! So fast!
 {$name}: Is this a race?
-Bellemere: No, I’m just fast!
+Bellemere: No, I'm just fast!
 She laughs.
 Bellemere: Did you get what you needed?
-{$name}: Er…. hopefully?
+{$name}: Er.... hopefully?
 Bellemere: Oh, that sounds promising.
-{$name}: I mean, yeah, I got everything on the list, but I may have improvised one item… I lost my list. Pretty sure we’re good!
+{$name}: I mean, yeah, I got everything on the list, but I may have improvised one item... I lost my list. Pretty sure we're good!
 Bellemere seems on the incredulous side, but nods towards some supplies set on her small counter for you. Time to get to work!
-You measure your flour carefully and then start mixing your dough for the pie crust. This is the point where it could all go right or very wrong, right at the start, so you double check your recipe…
-Whoops! Almond was not the correct missing ingredient! Well… you’re pretty sure it'll work though, right?
+You measure your flour carefully and then start mixing your dough for the pie crust. This is the point where it could all go right or very wrong, right at the start, so you double check your recipe...
+Whoops! Almond was not the correct missing ingredient! Well... you're pretty sure it'll work though, right?
 You mix all of your spices in with the batter and start rolling the dough out, laying it nearly over the provided pie-tin. You even dimple the edges artistically, proud of your work. The filling takes a while, but when you put it in the oven it smells amazing as it bakes. The whole apartment is filled with the sweet scent.
 You open the patio door to release some of the heat from the stove, the cool ocean breeze adding to the cozy atmosphere.
 {$name}: Hey, you have a table out here. Want to eat on the balcony?
-Bellemere: It’s a nice night- why not? You set the table while this pie bakes and I finish up the chicken.
-You manage to find some plates and silverware inside a cupboard… and note a few candles set on the opposite side. Should you…?
+Bellemere: It's a nice night- why not? You set the table while this pie bakes and I finish up the chicken.
+You manage to find some plates and silverware inside a cupboard... and note a few candles set on the opposite side. Should you...?
 -> Yes, use the candles to set the mood!
-	<<jump date_bellemere_4_candles_2>>
+    <<jump date_bellemere_4_candles_2>>
 -> No, keep it simple.
-	<<jump date_bellemere_4_simple_2>>
+    <<jump date_bellemere_4_simple_2>>
 ===
 
 title: date_bellemere_4_simple_2
 location: quarters
 ---
 
-You set the table, the light from inside the apartment filtering out through the glass door to illuminate the space. Maybe it’s a bit less romantic, this way, but…
-Romantic? Is that what you’re doing, here? You certainly like Bellemere a lot, but you’re not sure how she feels about you. 
+You set the table, the light from inside the apartment filtering out through the glass door to illuminate the space. Maybe it's a bit less romantic, this way, but...
+Romantic? Is that what you're doing, here? You certainly like Bellemere a lot, but you're not sure how she feels about you.
 You help Bellemere bring out the food and the two of you sit down across from each other. You hope your dish turns out well; you want to impress her.
 <<jump date_bellemere_4_C>>
 ===
@@ -480,7 +484,7 @@ location: quarters
 
 You grab the candles, using them to decorate as you set the table.
 When Bellemere finally finishes the chicken and your pie comes out of the oven to cool, the Commodore joins you out on the balcony. She looks on with approving eyes, setting the bowl of food down between the lovingly-set plates.
-It’s nothing fancy; the space is small, the deck simple finished wood. However… you managed to make it look very nice, placing candles along the balustrade and on the table. The sun has set, and the stars provide a gorgeous backdrop to the black ocean beyond the edge of the small town.
+It's nothing fancy; the space is small, the deck simple finished wood. However... you managed to make it look very nice, placing candles along the balustrade and on the table. The sun has set, and the stars provide a gorgeous backdrop to the black ocean beyond the edge of the small town.
 Bellemere: Beautiful.
 {$name}: Me, the food, or the view?
 Bellemere: Ha! Cheesy! All of the above, I suppose?
@@ -491,22 +495,23 @@ title: date_bellemere_4_C
 location: quarters
 ---
 
-You both taste the mikan chicken at the same time. It’s sharp and sweet, mixed with spicy and savory. The citrus stays on your tongue a little longer than any other flavor, like the lingering tone of a plucked violin. 
+You both taste the mikan chicken at the same time. It's sharp and sweet, mixed with spicy and savory. The citrus stays on your tongue a little longer than any other flavor, like the lingering tone of a plucked violin.
 You serve the pie.
-It’s silky and sweet and perfect. In fact, better than perfect. 
+It's silky and sweet and perfect. In fact, better than perfect.
 You must have made some sound of approval, because Bellemere says-
-Bellemere: This might be the best pie I’ve ever had! The crust… wow! It’s like… like a wedding cake, somehow? What did you put in it?
+Bellemere: This might be the best pie I've ever had! The crust... wow! It's like... like a wedding cake, somehow? What did you put in it?
 {$name}: Uh, might be the almond paste? I mean, of course it turned out great! Did you doubt me?
 She laughs.
 Bellemere: Never.
-Bellemere looks very happy in that moment, more content and mellow than usual. 
-Her hair is an auburn that looks nearly purple in the starlight. You would normally use a myriad of adjectives to describe the woman: strong, belligerent, funny, entertaining… but beautiful is one that strikes you every once in a while with a gravity so strong  it’s shocking. Yes, this kick-ass Marine is beautiful.
+Bellemere looks very happy in that moment, more content and mellow than usual.
+Her hair is an auburn that looks nearly purple in the starlight. You would normally use a myriad of adjectives to describe the woman: strong, belligerent, funny, entertaining... but beautiful is one that strikes you every once in a while with a gravity so strong  it's shocking. Yes, this kick-ass Marine is beautiful.
 She notices you staring.
 Bellemere: What?
-{$name}: Uh… nothing. 
-You blush, and Bellemere looks pleased to have flustered you so thoroughly (even if she doesn’t understand fully why).
+{$name}: Uh... nothing.
+You blush, and Bellemere looks pleased to have flustered you so thoroughly (even if she doesn't understand fully why).
 The night ends and you return to your own apartment, stomach full of good food and mind full of peaceful memories.
-<<declare $bd4_points += 2>> <<jump date_bellemere_4_DateEndNice>>
+<<set $bd4_points += 2>>
+<<jump date_bellemere_4_DateEndNice>>
 ===
 
 title: date_bellemere_4_mint
@@ -514,36 +519,36 @@ location: quarters
 ---
 
 You hurry to grab the mint from the shelves, pay for the groceries, and make your way back to Bellemere's apartment.
-Bellemere: Hey, you’re back!
+Bellemere: Hey, you're back!
 Bellemere has beaten you back to her apartment. She even has the oven preheated and is mixing something in a bowl, already! So fast!
 {$name}: Is this a race?
-Bellemere: No, I’m just fast!
+Bellemere: No, I'm just fast!
 She laughs.
 Bellemere: Did you get what you needed?
-{$name}: Er…. hopefully?
+{$name}: Er.... hopefully?
 Bellemere: Oh, that sounds promising.
-{$name}: I mean, yeah, I got everything on the list, but I may have improvised one item… I lost my list. Pretty sure we’re good!
+{$name}: I mean, yeah, I got everything on the list, but I may have improvised one item... I lost my list. Pretty sure we're good!
 Bellemere seems on the incredulous side, but nods towards some supplies set on her small counter for you. Time to get to work!
-You measure your flour carefully and then start mixing your dough for the pie crust. This is the point where it could all go right or very wrong, right at the start, so you double check your recipe…
-Whoops! Mint was not the correct missing ingredient! Well… you’re pretty sure it’ll work though, right?
+You measure your flour carefully and then start mixing your dough for the pie crust. This is the point where it could all go right or very wrong, right at the start, so you double check your recipe...
+Whoops! Mint was not the correct missing ingredient! Well... you're pretty sure it'll work though, right?
 You mix all of your spices in with the batter and start rolling the dough out, laying it nearly over the provided pie-tin. You even dimple the edges artistically, proud of your work. The filling takes a while, but when you put it in the oven it smells amazing as it bakes. The whole apartment is filled with the sweet scent.
 You open the patio door to release some of the heat from the stove, the cool ocean breeze adding to the cozy atmosphere.
 {$name}: Hey, you have a table out here. Want to eat on the balcony?
-Bellemere: It’s a nice night- why not? You set the table while this pie bakes and I finish up the chicken.
-You manage to find some plates and silverware inside a cupboard… and note a few candles set on the opposite side. Should you…?
+Bellemere: It's a nice night- why not? You set the table while this pie bakes and I finish up the chicken.
+You manage to find some plates and silverware inside a cupboard... and note a few candles set on the opposite side. Should you...?
 -> Yes, use the candles to set the mood!
-	<<jump date_bellemere_4_candles_3>>
+    <<jump date_bellemere_4_candles_3>>
 -> No, keep it simple.
-	<<jump date_bellemere_4_simple_3>>
+    <<jump date_bellemere_4_simple_3>>
 ===
 
 title: date_bellemere_4_simple_3
 location: quarters
 ---
 
-You set the table, the light from inside the apartment filtering out through the glass door to illuminate the space. Maybe it’s a bit less romantic, this way, but…
-Romantic? Is that what you’re doing, here? You certainly like Bellemere a lot, but you’re not sure how she feels about you. 
-You help Bellemere bring out the food and the two of you sit down across from each other. You hope your dish turns out well; you’d like to impress her.
+You set the table, the light from inside the apartment filtering out through the glass door to illuminate the space. Maybe it's a bit less romantic, this way, but...
+Romantic? Is that what you're doing, here? You certainly like Bellemere a lot, but you're not sure how she feels about you.
+You help Bellemere bring out the food and the two of you sit down across from each other. You hope your dish turns out well; you'd like to impress her.
 <<jump date_bellemere_4_D>>
 ===
 
@@ -553,7 +558,7 @@ location: quarters
 
 You grab the candles, using them to decorate as you set the table.
 When Bellemere finally finishes the chicken and your pie comes out of the oven to cool, the redhead joins you out on the balcony. She looks on with approving eyes, setting the bowl of food down between the lovingly-set plates.
-It’s nothing fancy; the space is small, the deck simple finished wood. However… you managed to make it look very nice, placing candles along the balustrade and on the table. The sun has set, and the stars provide a gorgeous backdrop to the black ocean beyond the edge of the small town.
+It's nothing fancy; the space is small, the deck simple finished wood. However... you managed to make it look very nice, placing candles along the balustrade and on the table. The sun has set, and the stars provide a gorgeous backdrop to the black ocean beyond the edge of the small town.
 Bellemere: Beautiful.
 {$name}: Me, the food, or the view?
 Bellemere: Ha! Cheesy! All of the above, I suppose?
@@ -564,21 +569,22 @@ title: date_bellemere_4_D
 location: quarters
 ---
 
-You both taste the mikan chicken at the same time. It’s sharp and sweet, mixed with spicy and savory. The citrus stays on your tongue a little longer than any other flavor, like the lingering tone of a plucked violin. 
+You both taste the mikan chicken at the same time. It's sharp and sweet, mixed with spicy and savory. The citrus stays on your tongue a little longer than any other flavor, like the lingering tone of a plucked violin.
 You serve the pie.
-It’s…
-Uh…
+It's...
+Uh...
 You spit it out back onto your plate in a messy pile. Gross.
-Bellemere: Oh, god… what have you done!?
-{$name}: I don’t know!
-Bellemere: It’s like… like toothpaste and orange juice!
+Bellemere: Oh, god... what have you done!?
+{$name}: I don't know!
+Bellemere: It's like... like toothpaste and orange juice!
 {$name}: I know, I tasted it too!
-You can’t even defend yourself. It was vile. Horrific. Probably the worst thing you’ve ever made.
-Bellemere: Well… at least this will be funny tomorrow… when I don’t want to vomit.
-{$name}: I’m sorry…
-Bellemere: Nah, I just learned an important lesson: don’t trust you with cooking!
+You can't even defend yourself. It was vile. Horrific. Probably the worst thing you've ever made.
+Bellemere: Well... at least this will be funny tomorrow... when I don't want to vomit.
+{$name}: I'm sorry...
+Bellemere: Nah, I just learned an important lesson: don't trust you with cooking!
 You feel bad, but Bellemere seems to be handling it with humor as you part ways, and you return to your apartment in gastrinal distress.
-<<declare $bd4_points += 1>> <<jump date_bellemere_4_DateEndOops>> (+1)
+<<set $bd4_points += 1>>
+<<jump date_bellemere_4_DateEndOops>> (+1)
 ===
 
 title: date_bellemere_4_nutmeg
@@ -586,36 +592,36 @@ location: quarters
 ---
 
 You hurry to grab the nutmeg from the shelves, pay for the groceries, and make your way back to Bellemere's apartment.
-Bellemere: Hey, you’re back!
+Bellemere: Hey, you're back!
 Bellemere has beaten you back to her apartment. She even has the oven preheated and is mixing something in a bowl, already! So fast!
 {$name}: Is this a race?
-Bellemere: No, I’m just fast!
+Bellemere: No, I'm just fast!
 She laughs.
 Bellemere: Did you get what you needed?
-{$name}: Er…. hopefully?
+{$name}: Er.... hopefully?
 Bellemere: Oh, that sounds promising.
-{$name}: I mean, yeah, I got everything on the list, but I may have improvised one item… I lost my list. Pretty sure we’re good!
+{$name}: I mean, yeah, I got everything on the list, but I may have improvised one item... I lost my list. Pretty sure we're good!
 Bellemere seems on the incredulous side, but nods towards some supplies set on her small counter for you. Time to get to work!
-You measure your flour carefully and then start mixing your dough for the pie crust. This is the point where it could all go right or very wrong, right at the start, so you double check your recipe…
-Yes! Nutmeg was the correct missing ingredient! Phew… 
+You measure your flour carefully and then start mixing your dough for the pie crust. This is the point where it could all go right or very wrong, right at the start, so you double check your recipe...
+Yes! Nutmeg was the correct missing ingredient! Phew...
 You mix all of your spices in with the batter and start rolling the dough out, laying it nearly over the provided pie-tin. You even dimple the edges artistically, proud of your work. The filling takes a while, but when you put it in the oven it smells amazing as it bakes. The whole apartment is filled with the sweet scent.
 You open the patio door to release some of the heat from the stove, the cool ocean breeze adding to the cozy atmosphere.
 {$name}: Hey, you have a table out here. Want to eat on the balcony?
-Bellemere: It’s a nice night- why not? You set the table while this pie bakes and I finish up the chicken.
-You manage to find some plates and silverware inside a cupboard… and note a few candles set on the opposite side. Should you…?
+Bellemere: It's a nice night- why not? You set the table while this pie bakes and I finish up the chicken.
+You manage to find some plates and silverware inside a cupboard... and note a few candles set on the opposite side. Should you...?
 -> Yes, use the candles to set the mood!
-	<<jump date_bellemere_4_candles>>
+    <<jump date_bellemere_4_candles>>
 -> No, keep it simple.
-	<<jump date_bellemere_4_simple>>
+    <<jump date_bellemere_4_simple>>
 ===
 
 title: date_bellemere_4_simple
 location: quarters
 ---
 
-You set the table, the light from inside the apartment filtering out through the glass door to illuminate the space. Maybe it’s a bit less romantic, this way, but…
-Romantic? Is that what you’re doing, here? You certainly like Bellemere a lot, but you’re not sure how she feels about you. 
-You help Bellemere bring out the food and the two of you sit down across from each other. You hope your dish turns out well; you’d like to impress her.
+You set the table, the light from inside the apartment filtering out through the glass door to illuminate the space. Maybe it's a bit less romantic, this way, but...
+Romantic? Is that what you're doing, here? You certainly like Bellemere a lot, but you're not sure how she feels about you.
+You help Bellemere bring out the food and the two of you sit down across from each other. You hope your dish turns out well; you'd like to impress her.
 <<jump date_bellemere_4_B>>
 ===
 
@@ -625,7 +631,7 @@ location: quarters
 
 You grab the candles, using them to decorate as you set the table.
 When Bellemere finally finishes the chicken and your pie comes out of the oven to cool, the redhead joins you out on the balcony. She looks on with approving eyes, setting the bowl of food down between the lovingly-set plates.
-It’s nothing fancy; the space is very small, the deck simple finished wood. However… you managed to make it look very nice, placing candles along the balustrade and on the table. The sun has set, and the stars provide a gorgeous backdrop to the black ocean beyond the edge of the small town.
+It's nothing fancy; the space is very small, the deck simple finished wood. However... you managed to make it look very nice, placing candles along the balustrade and on the table. The sun has set, and the stars provide a gorgeous backdrop to the black ocean beyond the edge of the small town.
 Bellemere: Beautiful.
 {$name}: Me, the food, or the view?
 Bellemere: Ha! Cheesy! All of the above, I suppose?
@@ -636,20 +642,21 @@ title: date_bellemere_4_B
 location: quarters
 ---
 
-You both taste the mikan chicken at the same time. It’s sharp and sweet, mixed with spicy and savory. The citrus stays on your tongue a little longer than any other flavor, like the lingering tone of a plucked violin. 
+You both taste the mikan chicken at the same time. It's sharp and sweet, mixed with spicy and savory. The citrus stays on your tongue a little longer than any other flavor, like the lingering tone of a plucked violin.
 You serve the pie.
-It’s silky and sweet and perfect. Exactly as it should be.
+It's silky and sweet and perfect. Exactly as it should be.
 You must have made some sound of approval, because Bellemere says-
-Bellemere: I gotta agree- it’s pretty good, {$name}. You can follow a recipe like a pro!
-You hadn’t even needed any help in making it. Honestly, it was probably more of a testament to the quality of ingredients and the recipe itself, but you’ll gladly take the credit!
-Bellemere looks very happy in that moment, more content and still than usual. 
-Her hair is an auburn that looks nearly purple in the starlight. You would normally use a myriad of adjectives to describe the woman: strong, belligerent, funny, entertaining… but beautiful is one that strikes you every once in a while so hard it’s shocking. Yes, this kick-ass Marine is beautiful.
+Bellemere: I gotta agree- it's pretty good, {$name}. You can follow a recipe like a pro!
+You hadn't even needed any help in making it. Honestly, it was probably more of a testament to the quality of ingredients and the recipe itself, but you'll gladly take the credit!
+Bellemere looks very happy in that moment, more content and still than usual.
+Her hair is an auburn that looks nearly purple in the starlight. You would normally use a myriad of adjectives to describe the woman: strong, belligerent, funny, entertaining... but beautiful is one that strikes you every once in a while so hard it's shocking. Yes, this kick-ass Marine is beautiful.
 She notices you staring.
 Bellemere: What?
-{$name}: Uh… nothing. 
-You blush, and Bellemere looks pleased to have flustered you so thoroughly (even if she doesn’t understand fully why).
+{$name}: Uh... nothing.
+You blush, and Bellemere looks pleased to have flustered you so thoroughly (even if she doesn't understand fully why).
 The night ends and you return to your own apartment, stomach full of good food and mind full of peaceful memories.
-<<declare $bd4_points += 2>> <<jump date_bellemere_4_DateEndCorrect>>
+<<set $bd4_points += 2>>
+<<jump date_bellemere_4_DateEndCorrect>>
 ===
 
 title: date_bellemere_4_DateEndBad

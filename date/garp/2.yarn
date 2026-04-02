@@ -2,17 +2,17 @@ title: date_garp_2_intro
 location: Mess Hall
 ---
 
-{$name}: Ugh, I’m starving. It wouldn’t be a bad idea to grab some food before I go look for Garp…
-{$name}: Finally here. Mmm, something smells good! I should hop in line…
-{$name}: I think I’ll grab this, a little of that, maybe some of this… Alright, perfect. Now, where should…
-{$name}: Hey! Isn’t that–
+{$name}: Ugh, I'm starving. It wouldn't be a bad idea to grab some food before I go look for Garp...
+{$name}: Finally here. Mmm, something smells good! I should hop in line...
+{$name}: I think I'll grab this, a little of that, maybe some of this... Alright, perfect. Now, where should...
+{$name}: Hey! Isn't that–
 Garp: BWAHAHAHAHA! My favorite time of day: lunch!
-{$name}: (Oh, there he is! He’s sitting alone, though…)
--> (I’ll let him eat in peace. We can talk later.)
+{$name}: (Oh, there he is! He's sitting alone, though...)
+-> (I'll let him eat in peace. We can talk later.)
     <<jump date_garp_2_route_a>>
 -> (I should go sit with him! I was looking for him anyway.)
     <<jump date_garp_2_route_b>>
--> (Does he always sit by himself? Maybe I should ask around…)
+-> (Does he always sit by himself? Maybe I should ask around...)
     <<jump date_garp_2_route_c>>
 ===
 
@@ -20,76 +20,80 @@ title: date_garp_2_route_a
 location: mess hall
 ---
 
-{$name}: (Alright, I’ll just take my food and–)
-There’s a sudden bang.
-Garp: Did you think I wouldn’t see you, {$name}?!
-Garp suddenly appears right in front of you. 
-Garp: Bwahahaha, what’s with that face? Were you trying to avoid me?
--> Of course not! I just wasn’t sure you wanted company.
-	Garp: You see an old man sitting by himself and think he wouldn’t want company? Oh, whatever. Get over here!
-	<<jump date_garp_2_route_d>>
--> Uh… no…? <<set gd2_points -=1>>
-	Garp: …I see. Well, let’s go! You’re sitting with me! 
-	<<jump date_garp_2_route_d>>
--> No, I’m just not foolish enough to get between you and your lunch. <<set gd2_points +=1>>
-	Garp: Hah! I knew you had some brains. Well, I’m allowing it, so it’s fine. C’mon, sit with me!
-	<<jump date_garp_2_route_d>>
+{$name}: (Alright, I'll just take my food and–)
+There's a sudden bang.
+Garp: Did you think I wouldn't see you, {$name}?!
+Garp suddenly appears right in front of you.
+Garp: Bwahahaha, what's with that face? Were you trying to avoid me?
+-> Of course not! I just wasn't sure you wanted company.
+    Garp: You see an old man sitting by himself and think he wouldn't want company? Oh, whatever. Get over here!
+    <<jump date_garp_2_route_d>>
+-> Uh... no...?
+    <<set gd2_points -=1>>
+    Garp: ...I see. Well, let's go! You're sitting with me!
+    <<jump date_garp_2_route_d>>
+-> No, I'm just not foolish enough to get between you and your lunch.
+    <<set gd2_points +=1>>
+    Garp: Hah! I knew you had some brains. Well, I'm allowing it, so it's fine. C'mon, sit with me!
+    <<jump date_garp_2_route_d>>
 ===
 
 title: date_garp_2_route_b
 location: mess hall
 ---
 
-{$name}: Hello, Gar… uh, sir! Mind if I sit with you?
-{$name}: (Huh? He looks surprised for some reason…)
-Garp: …BWAHAHAHA! Sure, {$name}! I’m a little surprised, though; not many Marines tend to sit with me.
--> Well, I’m not just any old Marine! <<set gd2_points +=1>>
-	Garp: Heh, I guess not! You’ve got guts, but that’s not a bad thing.
-	Garp: It’s been a long while since I’ve sat at the same table with anyone besides Senny, Tsuru, or my crew, so I might as well enjoy it!
-	<<jump date_garp_2_route_d>>
+{$name}: Hello, Gar... uh, sir! Mind if I sit with you?
+{$name}: (Huh? He looks surprised for some reason...)
+Garp: ...BWAHAHAHA! Sure, {$name}! I'm a little surprised, though; not many Marines tend to sit with me.
+-> Well, I'm not just any old Marine!
+    <<set gd2_points +=1>>
+    Garp: Heh, I guess not! You've got guts, but that's not a bad thing.
+    Garp: It's been a long while since I've sat at the same table with anyone besides Senny, Tsuru, or my crew, so I might as well enjoy it!
+    <<jump date_garp_2_route_d>>
 -> Really? Why not?
-	Garp: …
-	Garp: Let’s just say that when you’re thought of as a hero, others think they shouldn’t approach you.
-	Whether it’s respect or cowardice, everyone’s got an excuse.
-	Garp: But that doesn’t seem to apply to you, does it…? Well, I don’t mind either way.
-	<<jump date_garp_2_route_d>>
--> Oh… should I move? <<set gd2_points -=1>>
-	Garp: You’re already here, aren’t you?
-	Garp: Just sit and eat. No need to second-guess yourself too much.
-	<<jump date_garp_2_route_d>>
+    Garp: ...
+    Garp: Let's just say that when you're thought of as a hero, others think they shouldn't approach you.
+    Whether it's respect or cowardice, everyone's got an excuse.
+    Garp: But that doesn't seem to apply to you, does it...? Well, I don't mind either way.
+    <<jump date_garp_2_route_d>>
+-> Oh... should I move?
+    <<set gd2_points -=1>>
+    Garp: You're already here, aren't you?
+    Garp: Just sit and eat. No need to second-guess yourself too much.
+    <<jump date_garp_2_route_d>>
 ===
 
 title: date_garp_2_route_c
 location: mess hall
 ---
 
-{$name}: Hmmm… Oh! Excuse me!
+{$name}: Hmmm... Oh! Excuse me!
 Random Marine: Yes? What do you need?
 {$name}: I was wondering about Instructor Garp over there. Does he always sit alone?
-Random Marine: Uh, well…
-Random Marine: To tell you the truth, I wouldn’t know. I see him every day, but I don’t really pay attention to stuff like that. He’s a hero, y’know? I wouldn’t want to bother him or anything. What if he caught me staring? He might make me run laps or something! 
--> So you’re afraid of him, then?
-	Random Marine: It’s not like that; he’s just… he’s like the Fleet Commander, or even the Inspector General, y’know? He’s not like us normal, mortal Marines. 
-	Random Marine: I dunno. I once thought that I could be like him, but now, I think it’s better to just do my job and not have delusions of heroism.
-	Random Marine: Anyway, I should go.
-	{$name}: Hmmm…
-		-> I’m going to go sit with him.
-			<<jump date_garp_2_route_b>>
-		-> Maybe I’ll just grab one more plate of food…
-			<<jump date_garp_2_route_a>>
-		-> I think I’m just going to go eat in Tsuru’s office instead.
-			<<jump date_garp_2_route_end>>
+Random Marine: Uh, well...
+Random Marine: To tell you the truth, I wouldn't know. I see him every day, but I don't really pay attention to stuff like that. He's a hero, y'know? I wouldn't want to bother him or anything. What if he caught me staring? He might make me run laps or something!
+-> So you're afraid of him, then?
+    Random Marine: It's not like that; he's just... he's like the Fleet Commander, or even the Inspector General, y'know? He's not like us normal, mortal Marines.
+    Random Marine: I dunno. I once thought that I could be like him, but now, I think it's better to just do my job and not have delusions of heroism.
+    Random Marine: Anyway, I should go.
+    {$name}: Hmmm...
+        -> I'm going to go sit with him.
+            <<jump date_garp_2_route_b>>
+        -> Maybe I'll just grab one more plate of food...
+            <<jump date_garp_2_route_a>>
+        -> I think I'm just going to go eat in Tsuru's office instead.
+            <<jump date_garp_2_route_end>>
 -> So you look up to him, then?
-	Random Marine: I mean, yeah… doesn’t everyone? He’s a legend—he captured the Pirate King and everything, y’know? He’s not like us normal, mortal Marines. 
-	Random Marine: I dunno. I once thought that I could be like him, but now, I’m satisfied just being where I am.
-	Random Marine: Anyway, I should go.
-	{$name}: Hmmm…
-		-> I’m going to go sit with him.
-			<<jump date_garp_2_route_b>>
-		-> Maybe I’ll just grab one more plate of food…
-			<<jump date_garp_2_route_a>>
-		-> I think I’m just going to go eat in Tsuru’s office instead.
-			<<jump date_garp_2_route_end>>
+    Random Marine: I mean, yeah... doesn't everyone? He's a legend—he captured the Pirate King and everything, y'know? He's not like us normal, mortal Marines.
+    Random Marine: I dunno. I once thought that I could be like him, but now, I'm satisfied just being where I am.
+    Random Marine: Anyway, I should go.
+    {$name}: Hmmm...
+        -> I'm going to go sit with him.
+            <<jump date_garp_2_route_b>>
+        -> Maybe I'll just grab one more plate of food...
+            <<jump date_garp_2_route_a>>
+        -> I think I'm just going to go eat in Tsuru's office instead.
+            <<jump date_garp_2_route_end>>
 ===
 
 title: date_garp_2_route_d
@@ -102,110 +106,124 @@ If the player did not go on a Garp route during the previous work day:) //HOW DO
 Garp: Oh, that reminds me! The others told me about how you helped them out. Nice work.
 
 
-{$name}: Oh, it was no big deal! I’m glad I could help!
-Garp: It’s clear that you’ve got a good head on your shoulders. Makes sense why Tsuru took such a shine to you.
-Garp: Anyway, that’s enough talking. Eat up! What’s your favorite kind of food?
+{$name}: Oh, it was no big deal! I'm glad I could help!
+Garp: It's clear that you've got a good head on your shoulders. Makes sense why Tsuru took such a shine to you.
+Garp: Anyway, that's enough talking. Eat up! What's your favorite kind of food?
 -> Something sweet.
-	Garp: Sweets, huh? I prefer salty stuff myself, but I hear ya. Alright, wait here.
--> Something salty. <<set gd2_points +=1>>
-	Garp: Heh, good to see that SOMEONE has good taste around here! Alright, wait here.
+    Garp: Sweets, huh? I prefer salty stuff myself, but I hear ya. Alright, wait here.
+-> Something salty.
+    <<set gd2_points +=1>>
+    Garp: Heh, good to see that SOMEONE has good taste around here! Alright, wait here.
 -> Something savory.
-	Garp: Savory, huh? I prefer salty stuff myself, but I hear ya. Alright, wait here.
-{$name}: (Huh? He’s getting up… Wait, why is he going back to the food line?)
-{$name}: (...He’s chatting with the server. Well, I guess I should eat…)
-…
-…
-…
-{$name}: (Oh, he’s back… and that’s a LOT of food. Oh boy.)
-Garp: Here you go, {$name}! Eat up! Salty food’s the best, but I tried to get things you’d like.
-{$name}: (I wouldn’t have minded seconds, but this came out of nowhere. I should…)
--> (Just refuse. I didn’t ask for this.) <<set gd2_points -=1>>
-	{$name}: Um, no thanks. I’m full. 
-	Garp: …Oh.
-	{$name}: (...Oh no. Now he’s just staring at me. I’d better go.)
-	{$name}: Um, see you around, sir!
-	Garp: …Yeah. See you around.
-	<<jump date_garp_2_route_end>>
--> (Eat what I can, I guess. He went out of his way to get it for me, and I’m not really full yet.)
-	{$name}: Oh! Thank you!
-	Garp: Heh, best to eat good food while you can!
--> (Dig in! This stuff’s the best, and I don’t get this every day.) <<set gd2_points +=1>>
-	{$name}: Mmmmm, thish ish delish.
-	Garp: BWAHAHAHA! Finally, a Marine with a stomach like mine!
-{$name}: Whew! That was good. I’m surprised they were willing to give you extra, though… They’ve never let me get seconds before. 
-Garp: It’s just because you haven’t spent enough time talking to them! They work hard, but they’re often underappreciated. Whenever I take the time to thank them or compliment their cooking, it makes ‘em just a little prouder, a little more motivated to do what they’re good at. 
-Garp: It takes all sorts to make the Navy work, {$name}. There’s heroes, sure, and you can be one if you really want to. You can be just about anything if you put in the effort and have a good bit of luck. But the chefs? The mechanics? The people who supervise the den-den mushi? The chore boys who start as janitors? They’re incredibly important. When you’ve been in the Marines for as long as I have, you learn to appreciate all the people who work with you to make you who and what you are.
--> Wow… that’s really admirable. Makes the work I do feel that much more important, honestly. <<set gd2_points +=1>>
-	Garp: Of course it’s important. The work that Tsuru does and that you’re helping her with? It’s absolutely necessary… I guess.
--> Huh, I’ve never really thought about it before. <<set gd2_points -=1>>
-	Garp: Hm. Well, it’s worth thinking about. Don’t take people for granted.
--> Hmm, I don’t know about that… It definitely feels like some people are more important than others, and not just in terms of rank. 
-	Garp: As much as I want to say you’re wrong, I understand why it may feel that way. 
-Garp: I know heroes get much more news attention and they’re used for propaganda. Maybe it’s hypocritical coming from me, but I still think that everyone who supports those heroes need to be recognized as well; otherwise, the Marines would fall apart. 
-Garp: …That said, heroes don’t always wear Marine uniforms either. 
-{$name}: (Wait, what was that last bit? I couldn’t quite make out his mumbling…)
+    Garp: Savory, huh? I prefer salty stuff myself, but I hear ya. Alright, wait here.
+{$name}: (Huh? He's getting up... Wait, why is he going back to the food line?)
+{$name}: (...He's chatting with the server. Well, I guess I should eat...)
+...
+...
+...
+{$name}: (Oh, he's back... and that's a LOT of food. Oh boy.)
+Garp: Here you go, {$name}! Eat up! Salty food's the best, but I tried to get things you'd like.
+{$name}: (I wouldn't have minded seconds, but this came out of nowhere. I should...)
+-> (Just refuse. I didn't ask for this.)
+    <<set gd2_points -=1>>
+    {$name}: Um, no thanks. I'm full.
+    Garp: ...Oh.
+    {$name}: (...Oh no. Now he's just staring at me. I'd better go.)
+    {$name}: Um, see you around, sir!
+    Garp: ...Yeah. See you around.
+    <<jump date_garp_2_route_end>>
+-> (Eat what I can, I guess. He went out of his way to get it for me, and I'm not really full yet.)
+    {$name}: Oh! Thank you!
+    Garp: Heh, best to eat good food while you can!
+-> (Dig in! This stuff's the best, and I don't get this every day.)
+    <<set gd2_points +=1>>
+    {$name}: Mmmmm, thish ish delish.
+    Garp: BWAHAHAHA! Finally, a Marine with a stomach like mine!
+{$name}: Whew! That was good. I'm surprised they were willing to give you extra, though... They've never let me get seconds before.
+Garp: It's just because you haven't spent enough time talking to them! They work hard, but they're often underappreciated. Whenever I take the time to thank them or compliment their cooking, it makes ‘em just a little prouder, a little more motivated to do what they're good at.
+Garp: It takes all sorts to make the Navy work, {$name}. There's heroes, sure, and you can be one if you really want to. You can be just about anything if you put in the effort and have a good bit of luck. But the chefs? The mechanics? The people who supervise the den-den mushi? The chore boys who start as janitors? They're incredibly important. When you've been in the Marines for as long as I have, you learn to appreciate all the people who work with you to make you who and what you are.
+-> Wow... that's really admirable. Makes the work I do feel that much more important, honestly.
+    <<set gd2_points +=1>>
+    Garp: Of course it's important. The work that Tsuru does and that you're helping her with? It's absolutely necessary... I guess.
+-> Huh, I've never really thought about it before.
+    <<set gd2_points -=1>>
+    Garp: Hm. Well, it's worth thinking about. Don't take people for granted.
+-> Hmm, I don't know about that... It definitely feels like some people are more important than others, and not just in terms of rank.
+    Garp: As much as I want to say you're wrong, I understand why it may feel that way.
+Garp: I know heroes get much more news attention and they're used for propaganda. Maybe it's hypocritical coming from me, but I still think that everyone who supports those heroes need to be recognized as well; otherwise, the Marines would fall apart.
+Garp: ...That said, heroes don't always wear Marine uniforms either.
+{$name}: (Wait, what was that last bit? I couldn't quite make out his mumbling...)
 Garp: Anyway, speaking of support, who do you think is the most important person on a ship, other than the captain?
-{$name}: (Huh, now there’s a change of subject. Well, let’s see…)
+{$name}: (Huh, now there's a change of subject. Well, let's see...)
 -> The first mate.
-	Garp: Bwahahaha! Alright, I’ll give you that one. Not quite, though.
+    Garp: Bwahahaha! Alright, I'll give you that one. Not quite, though.
 -> The doctor.
-	Garp: Certainly not a bad answer! Not what I was thinking of, though.
--> The chef. <<set gd2_points +=1>>
-	Garp: Got it in one!
-Garp: At sea, the chef is the second most important person aboard a ship. They have to plan meals, supervise ingredients and rations, and be able to juggle everyone’s food preferences and necessities. Their skills range from perfectly crisping rice crackers to making sure there’s enough vitamins in everyone’s diets. Our lives are in their hands. And a skilled chef can work with just about anything!
-Garp: I’ve eaten Sea Kings before, and if not for my chef, some of them would be downright disgusting. Have you ever eaten a Sea King, {$name}?
--> No, I’ve never had the chance. I’d love to try one, though! <<set gd2_points +=1>>
-	Garp: An adventurous eater, huh? Good for you! Maybe one day you’ll get lucky!
--> Are you kidding me?! Of course not! <<set gd2_points -=1>>
-	Garp: Hmph, too bad. I didn’t take you for the picky type.
--> Only once. It was… an experience.
-	Garp: Heh, I’m not surprised. Sea Kings ain’t your average, everyday meal!
-Garp: Each one’s got a real unique flavor. Sea Kings from the Blues are smaller and more tender than those from the Grand Line—they’re really good when they’re crispy—but Grand Liners are huge! That said, it’s the fishmen who know how to cook ‘em up just right. Go to Fishman Island, and you’ll have a feast you’ll never forget!
--> Wow! Do you have history with the fishman, Gar… sir? <<set gd2_points +=1>>
-	<<jump date_garp_2_route_e>>
--> Eurgh, fishmen? Are you serious? <<set gd2_points -=1>>
-	<<jump date_garp_2_route_f>>
--> Wha—keep your voice down! Someone’s going to hear!
-	<<jump date garp_2_route_g>>
+    Garp: Certainly not a bad answer! Not what I was thinking of, though.
+-> The chef.
+    <<set gd2_points +=1>>
+    Garp: Got it in one!
+Garp: At sea, the chef is the second most important person aboard a ship. They have to plan meals, supervise ingredients and rations, and be able to juggle everyone's food preferences and necessities. Their skills range from perfectly crisping rice crackers to making sure there's enough vitamins in everyone's diets. Our lives are in their hands. And a skilled chef can work with just about anything!
+Garp: I've eaten Sea Kings before, and if not for my chef, some of them would be downright disgusting. Have you ever eaten a Sea King, {$name}?
+-> No, I've never had the chance. I'd love to try one, though!
+    <<set gd2_points +=1>>
+    Garp: An adventurous eater, huh? Good for you! Maybe one day you'll get lucky!
+-> Are you kidding me?! Of course not!
+    <<set gd2_points -=1>>
+    Garp: Hmph, too bad. I didn't take you for the picky type.
+-> Only once. It was... an experience.
+    Garp: Heh, I'm not surprised. Sea Kings ain't your average, everyday meal!
+Garp: Each one's got a real unique flavor. Sea Kings from the Blues are smaller and more tender than those from the Grand Line—they're really good when they're crispy—but Grand Liners are huge! That said, it's the fishmen who know how to cook ‘em up just right. Go to Fishman Island, and you'll have a feast you'll never forget!
+-> Wow! Do you have history with the fishman, Gar... sir?
+    <<set gd2_points +=1>>
+    <<jump date_garp_2_route_e>>
+-> Eurgh, fishmen? Are you serious?
+    <<set gd2_points -=1>>
+    <<jump date_garp_2_route_f>>
+-> Wha—keep your voice down! Someone's going to hear!
+    <<jump date garp_2_route_g>>
 ===
 
 title: date_garp_2_route_e
 location: mess hall
 ---
 
-Garp: Bwahaha! Sure I do! Humans are quick to point fingers, but the fishmen are a good lot. They’ve suffered too much at the hands of humans, and yet they still manage to maintain good relations with some of them. Of course, there have been times when I’ve fought against fishmen too, but… well, I think that most people are intimidated by them based on appearances, but they’re some of the most stalwart warriors of the sea you’ll ever meet.
--> Huh… I’ve never actually met one before. They sound interesting. <<set gd2_points +=1>>
-	Garp: “Interesting” is one way to put it! If you can, try to get to know more about them. The world feels that much bigger once you realize that humans aren’t the only “people” out there.
--> Honestly, I’m surprised. I’ve only ever heard rumors, and most of them aren’t so nice.
-	Garp: …It’s complicated. Let’s just say that fishmen and the nobles of the world, including the Celestial Dragons, have a real difficult history, and that’s reflected in what the everyday folk tend to hear. But if you mean what you say about protecting people, just think about what your definition of “people” is.
--> I thought that the fishmen were either slaves or enemies… <<set gd2_points -=1>>
-	Garp: …Nah, {$name}. They’re people. They may not be human, but there’s way more than humans out there in the world. The sooner humans start realizing that, the better.
-{$name}: (“People,” huh…)
--> As far as I’m concerned, the only people I really need to worry about are humans. <<set gd2_points -=1>>
-	Garp: You think so, huh?
-	<,jump date_garp_2_route_f>>
--> You say that, but I’m not sure that the rest of the Navy agrees with you.
-	Garp: …You might be right. But I have to believe that times are changing, and that humans’ tyranny over others will come to an end.
-	{$name}: (...If it were anyone else, they’d probably be arrested for treason. I’m amazed that he can say all that.)
-	<<jump date_garp_2_route_g>>
--> I’ve only ever seen other humans, but I’d love to meet fishmen and all the other people of the seas one day. <<set gd2_points +=1>>
-	Garp: That’s a good attitude, {$name}. It’s that kind of thinking that will change the future for the better.
-	Garp: Some of us have had bad experiences with fishmen and people of other races before, but… just like you can’t judge humanity by the actions of one person, people of other races deserve the same courtesy.
-	<<jump date_garp_2_route_h>>
+Garp: Bwahaha! Sure I do! Humans are quick to point fingers, but the fishmen are a good lot. They've suffered too much at the hands of humans, and yet they still manage to maintain good relations with some of them. Of course, there have been times when I've fought against fishmen too, but... well, I think that most people are intimidated by them based on appearances, but they're some of the most stalwart warriors of the sea you'll ever meet.
+-> Huh... I've never actually met one before. They sound interesting.
+    <<set gd2_points +=1>>
+    Garp: “Interesting” is one way to put it! If you can, try to get to know more about them. The world feels that much bigger once you realize that humans aren't the only “people” out there.
+-> Honestly, I'm surprised. I've only ever heard rumors, and most of them aren't so nice.
+    Garp: ...It's complicated. Let's just say that fishmen and the nobles of the world, including the Celestial Dragons, have a real difficult history, and that's reflected in what the everyday folk tend to hear. But if you mean what you say about protecting people, just think about what your definition of “people” is.
+-> I thought that the fishmen were either slaves or enemies...
+    <<set gd2_points -=1>>
+    Garp: ...Nah, {$name}. They're people. They may not be human, but there's way more than humans out there in the world. The sooner humans start realizing that, the better.
+{$name}: (“People,” huh...)
+-> As far as I'm concerned, the only people I really need to worry about are humans.
+    <<set gd2_points -=1>>
+    Garp: You think so, huh?
+    <,jump date_garp_2_route_f>>
+-> You say that, but I'm not sure that the rest of the Navy agrees with you.
+    Garp: ...You might be right. But I have to believe that times are changing, and that humans' tyranny over others will come to an end.
+    {$name}: (...If it were anyone else, they'd probably be arrested for treason. I'm amazed that he can say all that.)
+    <<jump date_garp_2_route_g>>
+-> I've only ever seen other humans, but I'd love to meet fishmen and all the other people of the seas one day.
+    <<set gd2_points +=1>>
+    Garp: That's a good attitude, {$name}. It's that kind of thinking that will change the future for the better.
+    Garp: Some of us have had bad experiences with fishmen and people of other races before, but... just like you can't judge humanity by the actions of one person, people of other races deserve the same courtesy.
+    <<jump date_garp_2_route_h>>
 ===
 
 title: date_garp_2_route_f
 location: mess hall
 ---
 
-Garp: …
-Garp: Here’s the thing, {$name}. You’ll find many Marines who agree with you. But I’m not one of them.
-Garp: When you said that you wanted to protect people, you only meant humans, didn’t you? I get it. Everyone who’s not human is soooooooo big and scary. They have weird powers and they don’t listen to our laws and they’re just too different. That’s the argument, isn’t it? That humans need to be protected from them?
-{$name}: (Oh no. Everyone’s staring…)
-Garp: Well, I don’t agree. Some of the finest people I know aren’t Marines at all, and some of the worst scum of the seas wear the whites. If we don’t work together alongside the other people of the seas, humans will suffer for it. Hell, we already are!
+Garp: ...
+Garp: Here's the thing, {$name}. You'll find many Marines who agree with you. But I'm not one of them.
+Garp: When you said that you wanted to protect people, you only meant humans, didn't you? I get it. Everyone who's not human is soooooooo big and scary. They have weird powers and they don't listen to our laws and they're just too different. That's the argument, isn't it? That humans need to be protected from them?
+{$name}: (Oh no. Everyone's staring...)
+Garp: Well, I don't agree. Some of the finest people I know aren't Marines at all, and some of the worst scum of the seas wear the whites. If we don't work together alongside the other people of the seas, humans will suffer for it. Hell, we already are!
 {$name}: Vice Admiral, I—
-Garp: Sorry, {$name}. I’ve suddenly lost my appetite. I’ll see you around. <<set gd2_points -=2>>
-{$name}: …
+Garp: Sorry, {$name}. I've suddenly lost my appetite. I'll see you around. <<set gd2_points -=2>>
+{$name}: ...
 <<jump date_garp_2_end>>
 ===
 
@@ -213,65 +231,72 @@ title: date_garp_2_route_g
 location: mess hall
 ---
 
-Garp: Bwahahaha! You’re looking at me like I’m about to disappear! What are they gonna do to me, {$name}?
-Garp: I’m more useful to the higher-ups as a public figure. Whatever I say, they can play it off. So long as I'm still here, I can still try to help the next generation of Marines down the right path. 
-Garp: Tsuru… Senny… they mean the world to me. But they’re not willing to speak up when it matters. They’re not willing to say the terrible truth out loud. They know I’m right, but they risk damaging everything we’ve fought to build and protect if either of them so much as nod.
-Garp: …
-Garp: I’d like to think that I’ve tried to do the right thing. I haven’t always succeeded—hell, I haven’t even succeeded when it mattered most. But even so, if I close my eyes to it all, then what kind of example am I for the younger generation who’s giving it all they’ve got? I’d just be failing you all miserably if I did that. 
-{$name}: …
--> I guess Tsuru and Sengoku are more concerned about appearances than what’s right.
-	Garp: It’s not that they don’t care about what’s right, but they have too much to lose. 
-	{$name}: And you don’t?
-	Garp: …With one or two exceptions, I’ve already lost the things that matter most to me. All I can do now is protect what I have left.
-	<<jump date_garp_2_route_h>>
--> If the higher-ups are hiding things from us, then I’m not sure that I really want to know. <<set gd2_points -=1>>
-	Garp: …Well, that’s your choice.
-	<<jump date_garp_2_route_h>>
--> Thank you for that. <<set gd2_points +=1>>
-	Garp: If even one Marine is able to make the world better because of what I’ve taught them, then it’ll all have been worth it.
-	<<jump date_garp_2_route_h>>
+Garp: Bwahahaha! You're looking at me like I'm about to disappear! What are they gonna do to me, {$name}?
+Garp: I'm more useful to the higher-ups as a public figure. Whatever I say, they can play it off. So long as I'm still here, I can still try to help the next generation of Marines down the right path.
+Garp: Tsuru... Senny... they mean the world to me. But they're not willing to speak up when it matters. They're not willing to say the terrible truth out loud. They know I'm right, but they risk damaging everything we've fought to build and protect if either of them so much as nod.
+Garp: ...
+Garp: I'd like to think that I've tried to do the right thing. I haven't always succeeded—hell, I haven't even succeeded when it mattered most. But even so, if I close my eyes to it all, then what kind of example am I for the younger generation who's giving it all they've got? I'd just be failing you all miserably if I did that.
+{$name}: ...
+-> I guess Tsuru and Sengoku are more concerned about appearances than what's right.
+    Garp: It's not that they don't care about what's right, but they have too much to lose.
+    {$name}: And you don't?
+    Garp: ...With one or two exceptions, I've already lost the things that matter most to me. All I can do now is protect what I have left.
+    <<jump date_garp_2_route_h>>
+-> If the higher-ups are hiding things from us, then I'm not sure that I really want to know.
+    <<set gd2_points -=1>>
+    Garp: ...Well, that's your choice.
+    <<jump date_garp_2_route_h>>
+-> Thank you for that.
+    <<set gd2_points +=1>>
+    Garp: If even one Marine is able to make the world better because of what I've taught them, then it'll all have been worth it.
+    <<jump date_garp_2_route_h>>
 ===
 
 title: date_garp_2_route_h
 location: mess hall
 ---
 
-Garp: Anyway, I got real sidetracked, huh? We were talking about cooking! I’m starting to get hungry…
-{$name}: (Oh, right! I almost forgot that’s where this all started.)
-{$name}: Well, I guess I know a thing or two about good food. See, my mom’s really good at baking. I used to watch her in the kitchen, and I’d even help her out sometimes! I was her best taste-tester.
+Garp: Anyway, I got real sidetracked, huh? We were talking about cooking! I'm starting to get hungry...
+{$name}: (Oh, right! I almost forgot that's where this all started.)
+{$name}: Well, I guess I know a thing or two about good food. See, my mom's really good at baking. I used to watch her in the kitchen, and I'd even help her out sometimes! I was her best taste-tester.
 Garp: Oh yeah? How about you, then? Did you pick up her talent for cooking?
-{$name}: Well…
--> Not to brag, but I’d call myself better than average. <<set gd2_points +=1>>
-	Garp: Bwahahaha! Alright, let’s see you prove it!
-	<<jump date_garp_2_route_i>>
+{$name}: Well...
+-> Not to brag, but I'd call myself better than average.
+    <<set gd2_points +=1>>
+    Garp: Bwahahaha! Alright, let's see you prove it!
+    <<jump date_garp_2_route_i>>
 -> A little bit, yeah!
-	Garp: Oh yeah? Gotta say, I’m pretty curious!
-	<<jump date_garp_2_route_i>>
--> Unfortunately, no. 
-	Garp: Well, that’s too bad, but you can’t do it all.
-	<<jump date_garp_2_route_j>>
--> Only if you like your food crispy. EXTRA crispy. <<set gd2_points +=1>>
-	Garp: Bwahahaha! Now that’s a taste I’m pretty used to.
-	<<jump date_garp_2_route_j>>
+    Garp: Oh yeah? Gotta say, I'm pretty curious!
+    <<jump date_garp_2_route_i>>
+-> Unfortunately, no.
+    Garp: Well, that's too bad, but you can't do it all.
+    <<jump date_garp_2_route_j>>
+-> Only if you like your food crispy. EXTRA crispy.
+    <<set gd2_points +=1>>
+    Garp: Bwahahaha! Now that's a taste I'm pretty used to.
+    <<jump date_garp_2_route_j>>
 ===
 
 title: date_garp_2_route_i
 location: mess hall
 ---
 
-Garp: Let’s see you put your money where your mouth is! Why don’t you cook something for me, {$name}? I’d love to see your skills!
+Garp: Let's see you put your money where your mouth is! Why don't you cook something for me, {$name}? I'd love to see your skills!
 {$name}: Putting me on the spot, huh?
--> Fine, I accept your challenge! <<set gd2_points +=1>>
-	Garp: Bwahahaha! Excellent! Let’s head back to the kitchens…
-	<<jump date_garp_2_game_sequence1>>
--> Not happening! <<set gd2_points -=1>>
-	Garp: …Well, that’s disappointing. Never took you as one to back down from a challenge, but maybe I misjudged you. 
-	-> Hold it! There’s no way I’m backing down now!
-		Garp: Heh, that’s what I’m talking about! The kitchens are that way…
-		<<jump date_garp_2_game_sequence1>>
-	-> I don’t care what you say. I’m not cooking right now, and that’s final! <<set gd2_points -=1>>
-		Garp: Hmph, have it your way. You should probably get back to work then, {$name}.
-		<<jump date_garp_2_end>>
+-> Fine, I accept your challenge!
+    <<set gd2_points +=1>>
+    Garp: Bwahahaha! Excellent! Let's head back to the kitchens...
+    <<jump date_garp_2_game_sequence1>>
+-> Not happening!
+    <<set gd2_points -=1>>
+    Garp: ...Well, that's disappointing. Never took you as one to back down from a challenge, but maybe I misjudged you.
+    -> Hold it! There's no way I'm backing down now!
+        Garp: Heh, that's what I'm talking about! The kitchens are that way...
+        <<jump date_garp_2_game_sequence1>>
+    -> I don't care what you say. I'm not cooking right now, and that's final!
+        <<set gd2_points -=1>>
+        Garp: Hmph, have it your way. You should probably get back to work then, {$name}.
+        <<jump date_garp_2_end>>
 ===
 
 title: date_garp_2_game_sequence1
@@ -279,54 +304,54 @@ location: mess hall
 ---
 
 Garp: So! What will you cook?
-{$name}: (Hmmm… That’s a good question…)
-{$name}: You know what? I’ll make rice crackers!
+{$name}: (Hmmm... That's a good question...)
+{$name}: You know what? I'll make rice crackers!
 Garp: Bwahahaha! Alright, then! Give it your best shot!
-{$name}: (Ok! Let’s think through this. What’s the first ingredient?)
+{$name}: (Ok! Let's think through this. What's the first ingredient?)
 -> Flour!
-	Garp: Good!
-	<<jump date_garp_2_game_sequence2>>
+    Garp: Good!
+    <<jump date_garp_2_game_sequence2>>
 -> Sugar!
-	Garp: Hmmm…
-	<<jump date_garp_2_wrong_order>>
+    Garp: Hmmm...
+    <<jump date_garp_2_wrong_order>>
 -> Egg!
-	Garp: I don’t think that’s it.
-	<<jump date_garp_2_wrong_order>>
+    Garp: I don't think that's it.
+    <<jump date_garp_2_wrong_order>>
 ===
 
 title: date_garp_2_game_sequence2
 location: mess hall
 ---
 
-{$name}: (Ok, got that… and the rest of the ingredients! This kitchen has everything. Alright, up to seasonings. What should I go with?)
+{$name}: (Ok, got that... and the rest of the ingredients! This kitchen has everything. Alright, up to seasonings. What should I go with?)
 -> Sugar!
-	Garp: Ick.
-	<<jump date_garp_2_wrong_order>>
+    Garp: Ick.
+    <<jump date_garp_2_wrong_order>>
 -> Dressing!
-	Garp: Urgh.... 
-	<<jump date_garp_2_wrong_order>>
+    Garp: Urgh....
+    <<jump date_garp_2_wrong_order>>
 -> Salt!
-	Garp: Yeah, that’s perfect!
-	<<jump date_garp_2_game_sequence3>>
+    Garp: Yeah, that's perfect!
+    <<jump date_garp_2_game_sequence3>>
 ===
 
 title: date_garp_2_game_sequence3
 location: mess hall
 ---
 
-{$name}: (Alright, they’re ready to go in the oven! How should I cook them…)
+{$name}: (Alright, they're ready to go in the oven! How should I cook them...)
 -> Make ‘em soft!
-	{$name}: …
-	Garp: Aw, no!
-	<<jump date_garp_2_wrong_order>>
+    {$name}: ...
+    Garp: Aw, no!
+    <<jump date_garp_2_wrong_order>>
 -> Make ‘em crispy!
-	{$name}: …
-	Garp: As far as I’m concerned, they’re perfect!
-	<<jump date_garp_2_right_order>>
+    {$name}: ...
+    Garp: As far as I'm concerned, they're perfect!
+    <<jump date_garp_2_right_order>>
 -> Make ‘em burnt!
-	{$name}: …
-	Garp: Wow, that’s overdone.
-	<<jump date_garp_2_wrong_order>>
+    {$name}: ...
+    Garp: Wow, that's overdone.
+    <<jump date_garp_2_wrong_order>>
 ===
 
 title: date_garp_2_right_order
@@ -334,13 +359,13 @@ location: mess hall
 ---
 
 Garp: Bwahahaha! These are delicious, {$name}! You really did a good job.
-Garp: …
-Garp: Way back when, I had to catch and cook my own food. Usually just ate meat until I was sick of it. But when I joined the Marines, I really learned how to appreciate all kinds of food. Hell, if you can believe it, Tsuru was the one who introduced me to rice crackers in the first place. 
-Garp: I was a new recruit, and I had trouble fitting in. I was too powerful, too loud, too… much for a lot of people to handle. I got used to being alone and acting alone. But one day, when I was sitting by myself, Tsuru came over, introduced herself, and thrust a bag of rice crackers into my hand. 
-Garp: …They were the best thing I’d eaten in a long time.
-Garp: That’s why food’s so important to me, {$name}. It brings people together. When people eat together, they get to talk to each other. Learn from each other. Bond. And it’s because of Tsuru’s kindness that I made irreplaceable friends and comrades. But now that I’ve become a “Marine legend,” nobody other than the people who knew me from way back when or my crew dare to sit with me anymore. 
+Garp: ...
+Garp: Way back when, I had to catch and cook my own food. Usually just ate meat until I was sick of it. But when I joined the Marines, I really learned how to appreciate all kinds of food. Hell, if you can believe it, Tsuru was the one who introduced me to rice crackers in the first place.
+Garp: I was a new recruit, and I had trouble fitting in. I was too powerful, too loud, too... much for a lot of people to handle. I got used to being alone and acting alone. But one day, when I was sitting by myself, Tsuru came over, introduced herself, and thrust a bag of rice crackers into my hand.
+Garp: ...They were the best thing I'd eaten in a long time.
+Garp: That's why food's so important to me, {$name}. It brings people together. When people eat together, they get to talk to each other. Learn from each other. Bond. And it's because of Tsuru's kindness that I made irreplaceable friends and comrades. But now that I've become a “Marine legend,” nobody other than the people who knew me from way back when or my crew dare to sit with me anymore.
 Garp: It made me truly happy that you sat with me. Thank you, {$name}.
-{$name}: Anytime! I’d love to sit and eat with you again, Garp… uh, sir.
+{$name}: Anytime! I'd love to sit and eat with you again, Garp... uh, sir.
 Garp: BWAHAHAHAHA! For you, {$name}, Garp is just fine.
 <<jump date_garp_2_date_end1>>
 ===
@@ -349,18 +374,20 @@ title: date_garp_2_wrong_order
 location: mess hall
 ---
 
-Garp: Well, you tried your best. Don’t worry too much about it; I’m not that great at cooking either!
--> Look, it was just a fluke! <<set gd2_points -=1>>
-	Garp: Hey now, don’t get riled up over it. Mistakes happen, especially in the kitchen. Just means you’ve still got a ways to go.
--> Yeahhhh, I’ve still got a lot to learn, I guess. <<set gd2_points +=1>>
-	Garp: Don’t sell yourself short; you did your best, and that’s good enough for me!
--> Somehow, that doesn’t surprise me. 
-	Garp: Bwahahaha! You’ve got me all figured out, huh?
-Garp: Way back when, I used to kill animals and roast meat over a fire. Toughened me up so I could handle whatever the seas threw at me. Taught my grandkids the same way, and even now, Luffy, my youngest, still loves meat the most. 
-Garp: …
-Garp: Heh, you’re awfully easy to talk to, {$name}. It’s been a while since I’ve opened up to someone else this much.
-{$name}: I like talking to you too! I didn’t know you had grandkids, though. Or… well, I knew that Strawhat Luffy was your grandson, but…
-Garp: Bwahahaha! Maybe I’ll tell you about them some other time.
+Garp: Well, you tried your best. Don't worry too much about it; I'm not that great at cooking either!
+-> Look, it was just a fluke!
+    <<set gd2_points -=1>>
+    Garp: Hey now, don't get riled up over it. Mistakes happen, especially in the kitchen. Just means you've still got a ways to go.
+-> Yeahhhh, I've still got a lot to learn, I guess.
+    <<set gd2_points +=1>>
+    Garp: Don't sell yourself short; you did your best, and that's good enough for me!
+-> Somehow, that doesn't surprise me.
+    Garp: Bwahahaha! You've got me all figured out, huh?
+Garp: Way back when, I used to kill animals and roast meat over a fire. Toughened me up so I could handle whatever the seas threw at me. Taught my grandkids the same way, and even now, Luffy, my youngest, still loves meat the most.
+Garp: ...
+Garp: Heh, you're awfully easy to talk to, {$name}. It's been a while since I've opened up to someone else this much.
+{$name}: I like talking to you too! I didn't know you had grandkids, though. Or... well, I knew that Strawhat Luffy was your grandson, but...
+Garp: Bwahahaha! Maybe I'll tell you about them some other time.
 <<jump date_garp_2_date_end1>>
 ===
 
@@ -368,21 +395,21 @@ title: date_garp_2_date_end1
 location: mess hall
 ---
 
-Garp: Alright, {$name}, I’m sure Tsuru’s missing you by now. 
+Garp: Alright, {$name}, I'm sure Tsuru's missing you by now.
 IF right_ORDER = 3//HOW DO??
-Garp: Thanks for the great meal, {$name}. You clearly know what you’re doing in the kitchen, so if you ever get bored of getting paper cuts, just let me know! I’d love to eat a meal of yours again! <<set gd2_points +=2>>
+Garp: Thanks for the great meal, {$name}. You clearly know what you're doing in the kitchen, so if you ever get bored of getting paper cuts, just let me know! I'd love to eat a meal of yours again! <<set gd2_points +=2>>
 <<jump date_garp_2_bestend>>
 
 IF right_order = 2 //HOW DO??
-Garp: That wasn’t too shabby, {$name}! Thanks for the treat. Let me know if you’re up for cooking something again or if you just want to grab a meal—either one’s fine with me. <<set gd2_points +=1>>
+Garp: That wasn't too shabby, {$name}! Thanks for the treat. Let me know if you're up for cooking something again or if you just want to grab a meal—either one's fine with me. <<set gd2_points +=1>>
 <<jump date_garp_2_goodend>>
 
 IF Right_order =1 //HOW DO??
-Garp: Keep practicing your cooking, and maybe next time you’ll finish strong. Still, that was pretty fun! Come sit with me again some time!
+Garp: Keep practicing your cooking, and maybe next time you'll finish strong. Still, that was pretty fun! Come sit with me again some time!
 <<jump date_garp_2_neutralend>>
 
 IF None right_Order //HOW DO??
-Garp: Eh, the crackers didn’t turn out that great, but the company was nice. Go ahead and get back; I’ll be around soon. I’m still pretty hungry, and those rice crackers weren’t exactly edible… <<set gd2_points -=1>>
+Garp: Eh, the crackers didn't turn out that great, but the company was nice. Go ahead and get back; I'll be around soon. I'm still pretty hungry, and those rice crackers weren't exactly edible... <<set gd2_points -=1>>
 <<jump date_garp_2_neutralend>>
 ===
 
@@ -390,43 +417,50 @@ title: date_garp_2_route_j
 location: mess hall
 ---
 
-Garp: Don’t worry too much about whether you’re a good cook or not. Nobody can do it all, you know.
-Garp: Take my crew, for example: Bogard worries about all the shit I can’t be bothered to remember. Burg, my chef, is the best there is. Silia, my doctor, can spot exhaustion with just a look. Harper, my quartermaster, keeps inventory down to the smallest crumb. And then there’s Koby, who has become a hero for the next generation in a way I never could… 
-Garp: You have a crew because they do all the things that you can’t do. And since nobody can do it all, it’s nice knowing I have a whole ship of fools still willing to sail with me after all this time.
-{$name}: Wow. Honestly…
--> I’m surprised that you can admit to that. <<set gd2_points -=1>>
-	Garp: What do you take me for, a stuck-up Admiral who can’t appreciate his subordinates?
--> I’m glad! If you could actually do everything, then I think you wouldn't be this easy to talk to.
-	Garp: I’m glad you think so. I wish more people thought of me that way; my strength is also a weakness.
--> I’d really like to surround myself with people like that too. <<set gd2_points +=1>>
-	Garp: Knowing you, you’ll get there. You’re real good at making people like you, and that’s a strength if I’ve ever seen one!
-Garp: Good Marines embrace their own strengths and weaknesses. Sometimes you work to compensate for your weaknesses, like learning what’s edible, but other times you focus on your strengths because other people will cover the rest. That’s what it means to be on a team, and to have a crew. It’s why specialists matter.
-Garp: …I’m sure you know by now that my grandson, Strawhat Luffy, has been going around collecting all sorts of weirdos from around the seas. I’ve met some of them and they’re good people. They make up for what he lacks and he rewards them by loving them fiercely. It’s no wonder they’re all so joyful despite being wanted by the law. Like me, that boy can’t cook to save his life, but at least he has people who’ll look out for him.
-Garp: Of course, that’s not to say that you shouldn’t compensate for your weaknesses. Your life is your own, and you’ve gotta decide what’s best for you.
--> I think I’d rather focus on my strengths and have a team to support me. <<set gd2_points +=1>>
-	Garp: Heh, a Marine after my own heart! It means you’ll have to be responsible for covering their weaknesses too, but that’s what a crew does.
--> I think I’d rather cover my weaknesses just enough that they won’t slow me down.
-	Garp: Fair enough! It’s not a bad thing to work on things you’re bad at. You might never be good at them, but at least it won’t be a detriment!
--> I think I’d like to be a jack of all trades and be decent at everything. 
-	Garp: You can certainly try, and many people have. It’s a difficult road, but if that’s your calling, then go for it with all you’ve got! 
-Garp: …
-Garp: …You know, you’re awfully easy to talk to, {$name}. It’s been a while since I’ve opened up to someone else this much. 
+Garp: Don't worry too much about whether you're a good cook or not. Nobody can do it all, you know.
+Garp: Take my crew, for example: Bogard worries about all the shit I can't be bothered to remember. Burg, my chef, is the best there is. Silia, my doctor, can spot exhaustion with just a look. Harper, my quartermaster, keeps inventory down to the smallest crumb. And then there's Koby, who has become a hero for the next generation in a way I never could...
+Garp: You have a crew because they do all the things that you can't do. And since nobody can do it all, it's nice knowing I have a whole ship of fools still willing to sail with me after all this time.
+{$name}: Wow. Honestly...
+-> I'm surprised that you can admit to that.
+    <<set gd2_points -=1>>
+    Garp: What do you take me for, a stuck-up Admiral who can't appreciate his subordinates?
+-> I'm glad! If you could actually do everything, then I think you wouldn't be this easy to talk to.
+    Garp: I'm glad you think so. I wish more people thought of me that way; my strength is also a weakness.
+-> I'd really like to surround myself with people like that too.
+    <<set gd2_points +=1>>
+    Garp: Knowing you, you'll get there. You're real good at making people like you, and that's a strength if I've ever seen one!
+Garp: Good Marines embrace their own strengths and weaknesses. Sometimes you work to compensate for your weaknesses, like learning what's edible, but other times you focus on your strengths because other people will cover the rest. That's what it means to be on a team, and to have a crew. It's why specialists matter.
+Garp: ...I'm sure you know by now that my grandson, Strawhat Luffy, has been going around collecting all sorts of weirdos from around the seas. I've met some of them and they're good people. They make up for what he lacks and he rewards them by loving them fiercely. It's no wonder they're all so joyful despite being wanted by the law. Like me, that boy can't cook to save his life, but at least he has people who'll look out for him.
+Garp: Of course, that's not to say that you shouldn't compensate for your weaknesses. Your life is your own, and you've gotta decide what's best for you.
+-> I think I'd rather focus on my strengths and have a team to support me.
+    <<set gd2_points +=1>>
+    Garp: Heh, a Marine after my own heart! It means you'll have to be responsible for covering their weaknesses too, but that's what a crew does.
+-> I think I'd rather cover my weaknesses just enough that they won't slow me down.
+    Garp: Fair enough! It's not a bad thing to work on things you're bad at. You might never be good at them, but at least it won't be a detriment!
+-> I think I'd like to be a jack of all trades and be decent at everything.
+    Garp: You can certainly try, and many people have. It's a difficult road, but if that's your calling, then go for it with all you've got!
+Garp: ...
+Garp: ...You know, you're awfully easy to talk to, {$name}. It's been a while since I've opened up to someone else this much.
 -> I just like getting to know you better!
-	Garp: Oh yeah? Guess I’m not as much of a boring old fogey as I thought.
--> I feel the same way. I’ve enjoyed chatting with you. <<set gd2_points +=1>>
-	Garp: I’m glad you think so. You’re a real interesting one.
--> Don’t worry; I’m not usually the type to hold conversations like this either. <<set gd2_points -=1>>
-	Garp: Well, it’s not like I’ve been closing myself off because I want to…
-Garp: Anyway, as much as I’d love to keep you, I’m sure you’ve gotta get back to Tsuru.
--> Yeah, I should get back to work… <<set gd2_points -=1>>
-	Garp: …Yeah. See you around, {$name}.
-	<<jump date_garp_2_end>>
--> I guess so. Think we could eat together again soon? <<set gd2_points +=1>>
-	Garp: Bwahahaha! Any time you want, {$name}!
-	<<jump date_garp_2_end>>
--> I should… but maybe I’ll ask her about cooking classes too!
-	Garp: Bwahahaha! Then in that case, I’ll look forward to the day you’ll cook for me, {$name}!
-	<<jump date_garp_2_end>>
+    Garp: Oh yeah? Guess I'm not as much of a boring old fogey as I thought.
+-> I feel the same way. I've enjoyed chatting with you.
+    <<set gd2_points +=1>>
+    Garp: I'm glad you think so. You're a real interesting one.
+-> Don't worry; I'm not usually the type to hold conversations like this either.
+    <<set gd2_points -=1>>
+    Garp: Well, it's not like I've been closing myself off because I want to...
+Garp: Anyway, as much as I'd love to keep you, I'm sure you've gotta get back to Tsuru.
+-> Yeah, I should get back to work...
+    <<set gd2_points -=1>>
+    Garp: ...Yeah. See you around, {$name}.
+    <<jump date_garp_2_end>>
+-> I guess so. Think we could eat together again soon?
+    <<set gd2_points +=1>>
+    Garp: Bwahahaha! Any time you want, {$name}!
+    <<jump date_garp_2_end>>
+-> I should... but maybe I'll ask her about cooking classes too!
+    Garp: Bwahahaha! Then in that case, I'll look forward to the day you'll cook for me, {$name}!
+    <<jump date_garp_2_end>>
 ===
 
 title: date_garp_2_bestend
@@ -440,7 +474,7 @@ title: date_garp_2_neutralend
 location: office
 ---
 
-That was an eventful lunch. Now back to the paperwork mines. 
+That was an eventful lunch. Now back to the paperwork mines.
 ===
 
 title: date_garp_2_goodend
@@ -455,7 +489,7 @@ location: mess hall
 ---
 
 That could have gone better. Isn't he technically your boss? Oof, hopefully he's not vengeful.
-You finish your lunch but its lost all its flavor. 
+You finish your lunch but its lost all its flavor.
 ===
 
 title: date_garp_2_route_end
@@ -467,4 +501,3 @@ Tsuru: {$name}? Since you're here, you can help me with this.
 The Vice Admiral drops a massive pile of papers on your desk.
 You put away your lunch with a sigh. So much for a break.
 ===
-

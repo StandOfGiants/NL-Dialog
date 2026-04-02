@@ -1,0 +1,124 @@
+title: Smoker_Gift_Hunt_intro
+location: town
+---
+
+What a lovely winter day — crisp blue skies, and the cadets have been hard at work clearing snow away from the streets (and the rooftops, too!). It feels great to wander the streets on your day off... until suddenly, you hear a lot of commotion coming from the central plaza.
+Rounding the corner, you see that the main thoroughfare is packed with people and merchant stalls hawking wares. What is all this? A banner overhead answers your question: END OF YEAR SELLOUT
+Oh. That's right, the end of the year holidays are coming up... and New Years. A certain someone crosses your mind... will you perhaps achieve your goal of being kissed at midnight on New Years Eve? A woman rushes by with brightly colored wrapped gifts and something occurs to you. A gift. You should give them a gift! Can't hurt, certainly (hopefully...)!
+And where else to search for a gift but here, at this conveniently timed market?
+First though, who the heck are you shopping for?
+-character selection- //HOW DO??
+<<jump Smoker_Gift_Hunt_SelectStall>>
+===
+
+title: Smoker_Gift_Hunt_SelectStall
+location: town
+---
+What looks like it might be a good Smoker shopping place?
+-> A stall with novelty items.
+    <<jump Smoker_Gift_Hunt_NoveltyStall>>
+-> A stall with jewels.
+    <<jump Smoker_Gift_Hunt_JewelStall>>
+===
+
+title: Smoker_Gift_Hunt_NoveltyStall
+location: town
+---
+
+You're sure that somewhere among the precariously stacked postcards and Marine branded pens, something will jump out at you. Actually, there are quite a few things that do stand out.
+-> A statement mug.
+  It's one of those white ceramic mugs with a handle shaped like a seagull, so thin that it might snap if you look at it wrong, but Smoker *does* drink a lot of coffee...
+  -> One of the mugs says “Smokin' Hot & You Know It!”
+        It's... ridiculous, and now that you think about it, have you ever seen Smoker drink out of anything other than the standard Marine mugs? You can't recall.
+        -> Buy the mug.
+            <<jump Smoker_Gift_Hunt_BadGift>>
+        -> Look for another gift.
+            <<jump Smoker_Gift_Hunt_NoveltyStall>>
+  -> Order a custom mug.
+        {$name}: Sorry, but is it possible to customize a mug?
+        Stall owner: Sure thing, got all the equipment for it right here! Are you interested?
+        -> {$name}: Yes, it'll be the perfect gift!
+            Now that you think about it, does Smoker even need a mug? Couldn't he technically just make his own? Oh well, surely a customized one is better!
+            **Prompt player for text** //HOW DO??
+            <<jump Smoker_Gift_Hunt_BadGift>>
+        -> Look for another gift.
+            <<jump Smoker_Gift_Hunt_NoveltyStall>>
+-> A “Garp the Fist” bobble-head figure.
+    You get a sudden urge to bop this figure on the head, and before you know it, your finger is pressing down on his plastic hair.
+    ~Miniature Garp bobbles back and forth, his grin never wavering.~
+    Maybe having a tiny Garp staring at him from his desk will prompt him to finish all of his paperwork early. Tashigi might praise you for such a bold gift choice.
+    -> Buy tiny Garp.
+        <<jump Smoker_Gift_Hunt_BadGift>>
+    -> Look for another gift.
+        <<jump Smoker_Gift_Hunt_NoveltyStall>>
+-> A pair of socks.
+    What size of socks does Smoker even use? You're having a hard time recalling anything except his abs. And biceps. And hands. And those *thighs*–
+    -> Lady Luck will choose! Pick a pair at random.
+        You wind up with a baby blue pair of socks with cartoon seagulls that don't say the size on the packaging. They look awfully small. Oh no.
+        <<jump Smoker_Gift_Hunt_BadGift>>
+    -> Buy a pair of socks with Hina's face on them. It will be the ultimate revenge for Smoker to step on her face all day.
+        As you grab it, it is clearly bootleg Hina merch. As you pull on the fabric, her scowl turns into a long, thin line. This might just be the sort of gag gift that can pull a laugh out of Smoker.
+        <<jump Smoker_Gift_Hunt_GoodGift>>
+  -> Yeah, no, another gift might be better.
+        <<jump Smoker_Gift_Hunt_NoveltyStall>>
+-> Check out another stall.
+    <<jump Smoker_Gift_Hunt_SelectStall>>
+===
+
+title: Smoker_Gift_Hunt_JewelStall
+location: town
+---
+
+There's an elderly woman standing behind the counter, so short that her nose barely pokes over the plush, velvet cushions displaying different glittering gems and snazzy jewels.
+Jewel lady: Has anything caught your eye?
+-> The... gray one.
+    Jewel lady: Ah, yes, the gray chalcedony! It's said that it can bring great comfort to the mind, body and soul – great for balancing your emotions!
+    From what you know of Smoker, it actually fits him quite well. Maybe he can even use it for the little stack of stones in his office.
+    -> Buy the gemstone.
+        <<jump Smoker_Gift_Hunt_GoodGift>>
+    -> Look for another gift.
+        <<jump Smoker_Gift_Hunt_JewelStall>>
+-> The black one?
+    Jewel lady: You have excellent taste! This is an extremely rare black stone. See the porous surface? Not a lot of pieces like this, and I'll sell it to you for a good price.
+    -> I'll take it, although it does look a little frail.
+        You hand over an outrageous sum for what is essentially a rock, but it's sure to be the right gift. Except, now that you feel it in your own two hands, it seems awfully familiar. It's a lava rock, exactly like the ones that Akainu leaves behind on the training grounds after a sparring match.
+        As soon as you turn around to confront the little, old lady, she smiles and points at a tiny sign plastered on her stall front. “All sales are final. No returns. No refunds.”
+        She got you good.
+        <<jump Smoker_Gift_Hunt_BadGift>>
+    -> Look for another gift.
+        <<jump Smoker_Gift_Hunt_JewelStall>>
+-> Do you have velvet bags?
+    Jewel lady: Velvet... bags? Not display pillows?
+    -> Bags. For storing gemstones and the likes? He likes to collect rocks, you see.
+        The little old lady disappears from you for a second and a great clattering ruckus comes from her side of the stall. Then she pops back up, a black, velvet, drawstring bag in hand.
+        -> It's perfect!
+            Like this, you can gather some rocks on your way back and put them in the velvet bag – then Smoker will have a set of rocks to play with on the go!
+            <<jump Smoker_Gift_Hunt_PerfectGift>>
+        -> Hmm, maybe not.
+            <<jump Smoker_Gift_Hunt_JewelStall>>
+    -> Uhm, nevermind, forget I said anything.
+    <<jump Smoker_Gift_Hunt_JewelStall>>
+-> Check out another stall.
+    <<jump Smoker_Gift_Hunt_SelectStall>>
+===
+
+title: Smoker_Gift_Hunt_PerfectGift
+location: town
+---
+
+With your new purchase all wrapped up with a neat little bow on top, there is a skip in your step as you make your way home. Smoker is going to love this!
+===
+
+title: Smoker_Gift_Hunt_GoodGift
+location: town
+---
+
+You pat yourself on the back as you make your way home, whistling the tune from an old “Wapol's Emporium” commercial. A job well done.
+===
+
+title: Smoker_Gift_Hunt_BadGift
+location: town
+---
+
+You make your way back home, new purchase in hand. Each step taking you further away from the stalls fills you with inexplicable dread.
+===

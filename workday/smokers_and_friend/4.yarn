@@ -2,14 +2,14 @@ title: workday_smokers_and_friend_4_intro
 location: ship
 ---
 
-After this long being at the base, you’ve grown used to grueling trials and intense training sessions with your group. Naval exercises are not uncommon, and today, you, Vice Admiral Smoker, Rear Admiral Hina, Captain Tashigi, and Commodore Bellemere are on one such excursion to Mango Island. It’s only about six days away, but you’ve barely made it halfway across that small stretch of sea before your orders are changed.
-Smoker: A band of pirates have been spotted in our area, and it’s important that they’re rounded up as soon as possible. The Booty Hunters… feels like I’ve heard of them.
+After this long being at the base, you've grown used to grueling trials and intense training sessions with your group. Naval exercises are not uncommon, and today, you, Vice Admiral Smoker, Rear Admiral Hina, Captain Tashigi, and Commodore Bellemere are on one such excursion to Mango Island. It's only about six days away, but you've barely made it halfway across that small stretch of sea before your orders are changed.
+Smoker: A band of pirates have been spotted in our area, and it's important that they're rounded up as soon as possible. The Booty Hunters... feels like I've heard of them.
 Hina: We are to pursue and capture them. Hina will do this easily.
 The two officers are suddenly interrupted by the arrival of Tashigi. She is waving a piece of paper, which she then reads aloud for everyone else.
-Tashigi: I have a new Den Den Fax from headquarters! *The captain of the Booty Hunters is a man named Gluteus, worth 200 million berries. These pirates made a name for themselves recently by terrorizing a string of islands in West Blue, and stole away one island’s prized ancient relic, “the Orbs of Dawn.” The relic is a symbol of peace in the region, and its loss has created a series of conflicts and debates among surrounding countries that could even lead to war!* 
+Tashigi: I have a new Den Den Fax from headquarters! *The captain of the Booty Hunters is a man named Gluteus, worth 200 million berries. These pirates made a name for themselves recently by terrorizing a string of islands in West Blue, and stole away one island's prized ancient relic, “the Orbs of Dawn.” The relic is a symbol of peace in the region, and its loss has created a series of conflicts and debates among surrounding countries that could even lead to war!*
 Bellemere: Huh. So we get the relic back and stop a war? Seems like a pretty heroic affair.
 Tashigi: Returning the relic and arresting a violent crew of thieves is a matter of international importance!
--> So we’re not heading to Mango Island? Dang. I love mangos… 
+-> So we're not heading to Mango Island? Dang. I love mangos...
     <<jump workday_smokers_and_friend_4_mango>>
 -> What do the Orbs of Dawn look like?
     <<jump workday_smokers_and_friend_4_relicQ>>
@@ -22,8 +22,8 @@ location: ship
 ---
 
 Bellemere laughs.
-Bellemere: You’re pretty focused on food, huh? Maybe you can ask for mangoes at your commendation after bringing in a bunch of thieves, huh?
-She has a point, as snarky as it is; of course keeping the peace comes before visiting an island of fresh mangoes and white sand beaches and fancy tropical drinks with little umbrellas… okay, so maybe you’d perused a pamphlet or two in anticipation of this training mission. Dang.
+Bellemere: You're pretty focused on food, huh? Maybe you can ask for mangoes at your commendation after bringing in a bunch of thieves, huh?
+She has a point, as snarky as it is; of course keeping the peace comes before visiting an island of fresh mangoes and white sand beaches and fancy tropical drinks with little umbrellas... okay, so maybe you'd perused a pamphlet or two in anticipation of this training mission. Dang.
 <<jump workday_smokers_and_friend_4_storm>>
 ===
 
@@ -32,8 +32,8 @@ location: ship
 ---
 
 Hina: Hina has heard that the relic resembles two rounded, disembodied eyeballs, seeking the sins of man.
-Smoker: That’s a bit grim. I heard it’s the sun god’s eyes watching over the islands. 
-Tashigi: As long as he’s watching over this chain of islands, they can be at peace. By losing that symbol of protection… Well, it seems like the area is in turmoil. The locals are very superstitious.
+Smoker: That's a bit grim. I heard it's the sun god's eyes watching over the islands.
+Tashigi: As long as he's watching over this chain of islands, they can be at peace. By losing that symbol of protection... Well, it seems like the area is in turmoil. The locals are very superstitious.
 <<jump workday_smokers_and_friend_4_storm>>
 ===
 
@@ -52,29 +52,30 @@ title: workday_smokers_and_friend_4_storm
 location: ship
 ---
 
-Patrolling the seas of the Grand Line is no easy task, even though there are certainly tools to help. You’ve been learning quite a bit about navigation, log poses, and island-to-island routes on this training mission, and that knowledge certainly comes in handy when planning how to track down a wanted ship.
-{$name}: So… how can we find a ship in the middle of the ocean? 
-Tashigi: We know where they’re coming from, and we know the various routes they could take with a log pose. So, if we stay on the most likely route, we have a good chance of them coming to us.
-{$name}: Yeah, I get that, but what if they get blown off course by a storm? Or purposefully take a longer way around? The ocean is so big! How do Marines ever find any of these big-name pirates? 
-Bellemere: Easy: we don’t.
+Patrolling the seas of the Grand Line is no easy task, even though there are certainly tools to help. You've been learning quite a bit about navigation, log poses, and island-to-island routes on this training mission, and that knowledge certainly comes in handy when planning how to track down a wanted ship.
+{$name}: So... how can we find a ship in the middle of the ocean?
+Tashigi: We know where they're coming from, and we know the various routes they could take with a log pose. So, if we stay on the most likely route, we have a good chance of them coming to us.
+{$name}: Yeah, I get that, but what if they get blown off course by a storm? Or purposefully take a longer way around? The ocean is so big! How do Marines ever find any of these big-name pirates?
+Bellemere: Easy: we don't.
 Tashigi: Bellemere-san!
-Bellemere: What? It’s kind of true, right? We always get the small fries when they dock somewhere obvious and leave their ships unguarded, but the big wigs sailing out in these waters? It’d take a miracle to just happen to run into–
-Unknown Marine: There’s a ship off the starboard bow!
-The two women freeze, and then exchange a look you can’t help but find amusing. There’s something of an unimpressed “I told you so” in the dark eyes of Captain Tashigi, and a sheepish grin in return from Bellemere.
+Bellemere: What? It's kind of true, right? We always get the small fries when they dock somewhere obvious and leave their ships unguarded, but the big wigs sailing out in these waters? It'd take a miracle to just happen to run into–
+Unknown Marine: There's a ship off the starboard bow!
+The two women freeze, and then exchange a look you can't help but find amusing. There's something of an unimpressed “I told you so” in the dark eyes of Captain Tashigi, and a sheepish grin in return from Bellemere.
 All at once, everyone is moving, but before the other ship can even be investigated as a possible pirate ship, something else happens—something very much in character for these wild seas called the Grand Line. The world around you grows dark, clouds gathering overhead with supernatural speed.
-Bellemere: It’s a storm!
-Smoker appears, looking unconcerned and stoic, the only sign that he’s ready for trouble being the thickening of his cigar smoke. Hina trails close behind, frowning lightly up at the sky.
-Smoker: At the sails! Hard to stern! Let’s go!
+Bellemere: It's a storm!
+Smoker appears, looking unconcerned and stoic, the only sign that he's ready for trouble being the thickening of his cigar smoke. Hina trails close behind, frowning lightly up at the sky.
+Smoker: At the sails! Hard to stern! Let's go!
 As he speaks, Marines all around you begin to scatter, and Hina grabs a spyglass off a Marine running past. She gazes out at the ship they had just caught sight of, looking unimpressed.
-Hina: That pirate ship looks like a plywood raft. These fools mock the sea with their poor shipwright skills and will not survive the storm. The ocean will swallow another crew of incompetents, Hina would bet on it. 
-You feel a little uneasy at that; sure, the battleship you’re currently on is huge, and there are plenty of experienced sailors all around you. Still, if there is one thing about the sea that truly makes it unpredictable, it is its ferocity, which is most clearly seen during storms such as this.
-It almost seems like nighttime now, with the darkness being so complete, and the wind carries with it a chilling coldness as it whips at your face. 
-You take a position up in the crow’s nest, grabbing some binoculars for yourself and noting a large and looming shadow moving on the horizon, growing closer and closer…
+Hina: That pirate ship looks like a plywood raft. These fools mock the sea with their poor shipwright skills and will not survive the storm. The ocean will swallow another crew of incompetents, Hina would bet on it.
+You feel a little uneasy at that; sure, the battleship you're currently on is huge, and there are plenty of experienced sailors all around you. Still, if there is one thing about the sea that truly makes it unpredictable, it is its ferocity, which is most clearly seen during storms such as this.
+It almost seems like nighttime now, with the darkness being so complete, and the wind carries with it a chilling coldness as it whips at your face.
+You take a position up in the crow's nest, grabbing some binoculars for yourself and noting a large and looming shadow moving on the horizon, growing closer and closer...
 A wave. The storm is already kicking up a massive wave! What can you shout to the Marines around you!?
--> Here it comes! Drop anchor! <<declare wdsf4S_points -=1>>
-	<<jump workday_smokers_and_friend_4_anchor>>
+-> Here it comes! Drop anchor!
+    <<set wdsf4S_points -=1>>
+    <<jump workday_smokers_and_friend_4_anchor>>
 -> Waves! Turn parallel to stern!
-	<<jump workday_smokers_and_friend_4_parallel>>
+    <<jump workday_smokers_and_friend_4_parallel>>
 ===
 
 title: workday_smokers_and_friend_4_anchor
@@ -83,7 +84,7 @@ location: ship
 
 Smoker: Why are you giving orders in a situation like this?!
 {$name}: Sorry sir! I panicked!
-Smoker: Even more reason not to give orders when you shouldn’t. You’ll have extra ship duty when we get back.
+Smoker: Even more reason not to give orders when you shouldn't. You'll have extra ship duty when we get back.
 {$name}: S-sorry, sir!
 <<jump workday_smokers_and_friend_4_wave>>
 ===
@@ -94,7 +95,7 @@ location: ship
 
 Smoker: Hey, who gave you permission to call orders?
 {$name}: Sorry, sir! It just seemed like the right call!
-You remember that you learned about this during your training; you know you’re right. Smoker makes a gruff noise, crossing his arms, but he doesn’t contradict your order. Sailors scatter, rushing to move the ship.
+You remember that you learned about this during your training; you know you're right. Smoker makes a gruff noise, crossing his arms, but he doesn't contradict your order. Sailors scatter, rushing to move the ship.
 <<jump workday_smokers_and_friend_4_wave>>
 ===
 
@@ -103,17 +104,17 @@ location: ship
 ---
 
 The water rushes at your ship just as the sails billow with the tearing wind; a non-regulation hat flies by, and a random marine cries out at its loss.
-Click. 
+Click.
 Click, click, clack, cl-ACK.
 CLANK, CLANK, CLANK-!
-Hail begins as a gentle patter, only to devolve into the pounding crash of ice against the deck. It grows in size as the ship rises and falls atop waves the size of palaces, until soon, you are all being pelted with hail the size of Smoker’s weighty fists.
+Hail begins as a gentle patter, only to devolve into the pounding crash of ice against the deck. It grows in size as the ship rises and falls atop waves the size of palaces, until soon, you are all being pelted with hail the size of Smoker's weighty fists.
 You can just make out the screams of Marines running for cover. Others sustain concussions from trying to finish tying off lines. Tashigi leaps into the air and, with a single swing of her sword, splits a particularly large piece of hail. Once as big as a boulder, the hailstone shatters, and the pieces scatter onto the wood of the deck. The moment her sword is back in its sheath, she looks up, and sees you.
 Tashigi: RUN!
-You don’t wait for her to ask twice, abandoning your post to seek the protection of the lower decks.
-Unfortunately, you don’t make it.
-Lightning strikes the mast and splits it neatly in half, and it is now abundantly clear that Mother Nature has decided your ship will not continue its journey. 
-Hina is nearby, and she uses her powers to bind the mast to itself, narrowly preventing a total collapse. 
-Hina: Keep going, {$name}! Our distress call was answered, and there’s help on the way. Hina will not accept defeat! Let’s get those pirates!
+You don't wait for her to ask twice, abandoning your post to seek the protection of the lower decks.
+Unfortunately, you don't make it.
+Lightning strikes the mast and splits it neatly in half, and it is now abundantly clear that Mother Nature has decided your ship will not continue its journey.
+Hina is nearby, and she uses her powers to bind the mast to itself, narrowly preventing a total collapse.
+Hina: Keep going, {$name}! Our distress call was answered, and there's help on the way. Hina will not accept defeat! Let's get those pirates!
 You had forgotten all about the pirates, potentially sailing just beyond the horizon and within easy reach of the large Marine vessel. Now, however, it just seems so impossible!
 How could you argue with her steady confidence, though?
 That is your last thought before the whole ship is overturned by an catastrophically tall wave.
@@ -125,55 +126,58 @@ location: park
 ---
 
 You open your eyes.
-{$name}: Huh…
-Blinking, you realize that you’re soaking wet, and lying on a soft surface under the sun. Sand… you’re on a beach. You scramble to your feet and look around; nothing seems familiar. The storm is gone, but so is your ship. And where are your companions? Could the devil fruit users have survived this?
+{$name}: Huh...
+Blinking, you realize that you're soaking wet, and lying on a soft surface under the sun. Sand... you're on a beach. You scramble to your feet and look around; nothing seems familiar. The storm is gone, but so is your ship. And where are your companions? Could the devil fruit users have survived this?
 {$name}: Hey!
-No one responds to your call. That’s not good… but maybe the ship got turned upright again and they’re out at sea. Yeah. Best to think positive. However, two things catch your eye: are those Tashigi’s glasses lying next to you? And is that large piece of wood from the deck? 
-You scoop up the glasses and start walking. After about 20 minutes, though, you can’t help but stop and catch your breath. Your waterlogged clothes stick to you like a second skin, and a heavy one, at that. 
-{$name}: Haah… hello? Anybody there?
+No one responds to your call. That's not good... but maybe the ship got turned upright again and they're out at sea. Yeah. Best to think positive. However, two things catch your eye: are those Tashigi's glasses lying next to you? And is that large piece of wood from the deck?
+You scoop up the glasses and start walking. After about 20 minutes, though, you can't help but stop and catch your breath. Your waterlogged clothes stick to you like a second skin, and a heavy one, at that.
+{$name}: Haah... hello? Anybody there?
 Tashigi: ...A scarecrow is talking?
-You turn around. Tashigi is wandering around on the shore nearby, squinting without her glasses. Good thing you picked them up… but what’s this about a scarecrow?
+You turn around. Tashigi is wandering around on the shore nearby, squinting without her glasses. Good thing you picked them up... but what's this about a scarecrow?
 -> Missing your glasses?
-    Tashigi: Yes! You wouldn’t happen to have them, would you?
--> Boy, am I glad to see someone else. <<declare wdsf4T_points +=1>>
+    Tashigi: Yes! You wouldn't happen to have them, would you?
+-> Boy, am I glad to see someone else.
+    <<set wdsf4T_points +=1>>
     Tashigi: Me too!
--> You wouldn’t be calling me a scarecrow, would you?
+-> You wouldn't be calling me a scarecrow, would you?
     Tashigi: Um...
 You walk up to her and hand her the glasses. She places them on her face.
-Tashigi: Oh no, {$name}… I can’t believe I thought you were a scarecrow!
--> Rude of you. <<set wdsf4T_points -=1>>
--> All good! I’m pretty disoriented myself.
-Tashigi: What a storm! Have you seen anyone else? I hope they’re ok…
-You shake your head. 
+Tashigi: Oh no, {$name}... I can't believe I thought you were a scarecrow!
+-> Rude of you.
+    <<set wdsf4T_points -=1>>
+-> All good! I'm pretty disoriented myself.
+Tashigi: What a storm! Have you seen anyone else? I hope they're ok...
+You shake your head.
 -> Shall we divide and conquer?
-    Tashigi: I don’t think so… it’s too easy to get lost in an unfamiliar place. 
+    Tashigi: I don't think so... it's too easy to get lost in an unfamiliar place.
 -> Where should we start looking?
-    Tashigi: Let’s stick to the shore for now. Since the two of us washed up here, we’re bound to see the others.
-You walk along the beach. The waves are gentle; that gives you a little bit of hope for everyone’s safety, and the jagged shoreline must be the reason why you haven’t run into anyone yet…
+    Tashigi: Let's stick to the shore for now. Since the two of us washed up here, we're bound to see the others.
+You walk along the beach. The waves are gentle; that gives you a little bit of hope for everyone's safety, and the jagged shoreline must be the reason why you haven't run into anyone yet...
 Tashigi: Look, over there!
-You spot two figures in the distance, one of them waving a hand. You and Tashigi simultaneously start to run toward them. As you draw closer, you realize that the waving one is Bellemere, and the other is Smoker. Both of them look irate, and Smoker’s cigars are damp and unlit.
-Bellemere: Hey! Glad you’re alive. Either of you got a light?
-You shake your head, and so does Tashigi. 
+You spot two figures in the distance, one of them waving a hand. You and Tashigi simultaneously start to run toward them. As you draw closer, you realize that the waving one is Bellemere, and the other is Smoker. Both of them look irate, and Smoker's cigars are damp and unlit.
+Bellemere: Hey! Glad you're alive. Either of you got a light?
+You shake your head, and so does Tashigi.
 Bellemere: Damn it. We both lost ours in the storm.
 Hina: Hina is always prepared.
-Where did she come from? She’s looking flawless as usual, not even a bit bedraggled, and her cigarette is crisp and lit. She offers her lighter to Bellemere and Smoker.
+Where did she come from? She's looking flawless as usual, not even a bit bedraggled, and her cigarette is crisp and lit. She offers her lighter to Bellemere and Smoker.
 Hina: Are there any others?
--> Not that we’ve found yet.
+-> Not that we've found yet.
     Hina: Hina was looking for quite a while before finding you all as well.
--> Let’s keep searching! <<declare wdsf4H_points -=1>> <<declare wdsf4B_points +=1>>
-    Bellemere: Yeah! Good thinking!  
+-> Let's keep searching! <<set wdsf4H_points -=1>>
+    <<set wdsf4B_points +=1>>
+    Bellemere: Yeah! Good thinking!
     Hina: Hold on. We should come up with a plan first.
-Smoker: Right. Guess I’m in command. There’s a lot to do, and we don’t know how much longer we’re going to be stuck here, or who else is here. 
-Bellemere: Well, I’m going to find them, whoever it is. There’s no way we’re alone on this island.
+Smoker: Right. Guess I'm in command. There's a lot to do, and we don't know how much longer we're going to be stuck here, or who else is here.
+Bellemere: Well, I'm going to find them, whoever it is. There's no way we're alone on this island.
 -> What if we run into enemies?
-    Bellemere: We’re Marines. We’ll fight them.
--> I hope so… Or maybe everyone else got picked up by another ship?
-    Smoker: …I admire your optimism.
+    Bellemere: We're Marines. We'll fight them.
+-> I hope so... Or maybe everyone else got picked up by another ship?
+    Smoker: ...I admire your optimism.
 Tashigi: So how should we divide the work?
-Smoker: We’ve gotta define it first. If Captain Bellemere wants to keep searching, that makes sense to me, but most of us are probably needed back here. We’ll need someone to hunt for food, someone to build us a shelter, and someone to work on smoke signals.
--> I’ll help look for survivors with Bellemere. 
+Smoker: We've gotta define it first. If Captain Bellemere wants to keep searching, that makes sense to me, but most of us are probably needed back here. We'll need someone to hunt for food, someone to build us a shelter, and someone to work on smoke signals.
+-> I'll help look for survivors with Bellemere.
     <<jump workday_smokers_and_friend_4_A_Start>>
--> I should stay here and help you guys. 
+-> I should stay here and help you guys.
     <<jump workday_smokers_and_friend_4_B_Start>>
 ===
 
@@ -182,21 +186,21 @@ location: park
 ---
 
 You vomit about half an hour after setting out on your venture, the last of the seawater expelling itself from your body.
-{$name}: Ugh…
+{$name}: Ugh...
 Bellemere: You alright there, {$name}?
-{$name}: I think so… But do you really think anyone else survived that storm?
-Frankly, you’re shocked you survived the shipwreck. Bellemere? Smoker? Hina? Tashigi? They all have something about them that makes them feel untouchable. You feel like they would survive a volcano erupting. But you? How did you get to be so lucky?
+{$name}: I think so... But do you really think anyone else survived that storm?
+Frankly, you're shocked you survived the shipwreck. Bellemere? Smoker? Hina? Tashigi? They all have something about them that makes them feel untouchable. You feel like they would survive a volcano erupting. But you? How did you get to be so lucky?
 Bellemere: Marines are tough, you know.
 {$name}: I know, but–
-Bellemere: No negativity! We have a mission to complete, and I’m not stopping until I find others, or we go all the way around this island. 
-As you walk along the beach, you stop to pick up a pretty seashell you find. It’s an unconscious act, done without thought. Staring down at the reddish shine of the shell, though, you realize it’s a silly thing to keep. You’re on a survival mission! Stranded on an island until help arrives! 
+Bellemere: No negativity! We have a mission to complete, and I'm not stopping until I find others, or we go all the way around this island.
+As you walk along the beach, you stop to pick up a pretty seashell you find. It's an unconscious act, done without thought. Staring down at the reddish shine of the shell, though, you realize it's a silly thing to keep. You're on a survival mission! Stranded on an island until help arrives!
 A pretty shell?
-Useless. 
-But then again…
-You could give the shell to Bellemere. 
-	<<jump workday_smokers_and_friend_4_give>>
+Useless.
+But then again...
+You could give the shell to Bellemere.
+    <<jump workday_smokers_and_friend_4_give>>
 You could try skipping it on the ocean.
-	<<jump workday_smokers_and_friend_4_skip>>
+    <<jump workday_smokers_and_friend_4_skip>>
 ===
 
 title: workday_smokers_and_friend_4_give
@@ -204,9 +208,9 @@ location: park
 ---
 
 Bellemere: Oh? For me?
-{$name}: This shell just seemed to suit you, somehow. It’s all shiny and sharp.
+{$name}: This shell just seemed to suit you, somehow. It's all shiny and sharp.
 Bellemere stares at you for a moment, and then bursts into sudden laughter.
-Bellemere: I’ll take it as a compliment!
+Bellemere: I'll take it as a compliment!
 Well, it is.
 <<jump workday_smokers_and_friend_4_rowboat>>
 ===
@@ -220,12 +224,12 @@ Bellemere: No, see, you need more weight than a shell, {$name}!
 After a moment of searching along the shore, closer to the treeline, she grabs a smooth stone.
 Bellemere: I know this is an emergency situation, but if no one has taught you how to properly skip stones before, then that constitutes an emergency in my book!
 {$name}: Oh yeah? And what is the survival necessity of that?
-Bellemere throws the stone, and it skips several times, finally stopping far enough away that it’s hard to see.
+Bellemere throws the stone, and it skips several times, finally stopping far enough away that it's hard to see.
 {$name}: Whoa.
-Bellemere: What’s the value of that skill? Why, looking cool, of course!
+Bellemere: What's the value of that skill? Why, looking cool, of course!
 {$name}: I guess you got me there; you are pretty damn cool.
 Cartoonishly full of herself, Bellemere throws back her head with her hands on her hips, laughing in a booming voice as you search for a stone of your own. You find one and toss it, only to lose it almost immediately. Bellemere adjusts your aim, and you try again with a stone she finds. This time, the little rock hops three whole times before sinking below the surf!
-The lesson is fun, yet brief. It’s not long before you both dust off sand from your hands, reluctantly remembering that you have a job to do.
+The lesson is fun, yet brief. It's not long before you both dust off sand from your hands, reluctantly remembering that you have a job to do.
 <<jump workday_smokers_and_friend_4_rowboat>>
 ===
 
@@ -233,15 +237,15 @@ title: workday_smokers_and_friend_4_rowboat
 location: park
 ---
 
-After about half a day of walking, you and Bellemere find an abandoned rowboat that’s half-full of water, having washed up just onshore.
+After about half a day of walking, you and Bellemere find an abandoned rowboat that's half-full of water, having washed up just onshore.
 There are some footprints leading away from the rowboat, and you count the signs of at least six survivors.
 {$name}: This is great! Now we just need to go find the sailors–
-Bellemere: Hold on. This boat’s not familiar; someone else has washed up on this shore.
-{$name}: Someone, meaning…?
-Bellemere: Probably whoever was on that other boat we spied. It’s very likely our wanted pirates.
-You approach the boat quietly and dig under the maritime supplies stashed at the bottom of the boat, moving around some rope and a large tarp, looking for things to take back with you. Given your training, you’re sure that the rope could be useful!
+Bellemere: Hold on. This boat's not familiar; someone else has washed up on this shore.
+{$name}: Someone, meaning...?
+Bellemere: Probably whoever was on that other boat we spied. It's very likely our wanted pirates.
+You approach the boat quietly and dig under the maritime supplies stashed at the bottom of the boat, moving around some rope and a large tarp, looking for things to take back with you. Given your training, you're sure that the rope could be useful!
 And then you see it, crumpled up in a corner.
-You grab it and lift it up for Bellemere to inspect, and she sucks in air sharply through her teeth. Someone had managed to save their jolly roger before capsizing, the sickly skull now leering at the two Marines who’d found it. 
+You grab it and lift it up for Bellemere to inspect, and she sucks in air sharply through her teeth. Someone had managed to save their jolly roger before capsizing, the sickly skull now leering at the two Marines who'd found it.
 It is, indeed, the insignia of the Booty Hunters.
 You nod at each other and rush back to camp to tell the others. Bellemere keeps the story brief, relaying the approximate location of the rowboat as you unfurl the jolly roger, showing off your evidence.
 <<jump workday_smokers_and_friend_4_piratefight>>
@@ -253,14 +257,14 @@ location: park
 
 Smoker: We have a lot to do, especially if Commodore Bellemere returns with more survivors.
 Hina: Hina agrees. We should break up the tasks so that they can all be done quicker. Hina will hunt.
-Tashigi: Oh! I can look for firewood! I can make a good fire, as anyone I met in early cadet camp can attest—and not in a lighting-everything-on-fire sort of way! I’m quite proud of my skills!
+Tashigi: Oh! I can look for firewood! I can make a good fire, as anyone I met in early cadet camp can attest—and not in a lighting-everything-on-fire sort of way! I'm quite proud of my skills!
 Smoker: Alright. That leaves setting up the shelter; I can take that. I could use another pair of hands, though.
 Hina: So, who do you want to help, {$name}? Everyone could use some help.
--> Building a shelter seems pretty labor-intensive, so I’ll help Smoker. 
+-> Building a shelter seems pretty labor-intensive, so I'll help Smoker.
     <<jump workday_smokers_and_friend_4_B_Smoker>>
--> I’m great at being stealthy. I can help out Hina. 
+-> I'm great at being stealthy. I can help out Hina.
     <<jump workday_smokers_and_friend_4_B_Hina>>
--> The quicker we gather enough firewood, the sooner we can start sending out smoke signals. I’ll go with Tashigi. 
+-> The quicker we gather enough firewood, the sooner we can start sending out smoke signals. I'll go with Tashigi.
     <<jump workday_smokers_and_friend_4_B_Tashigi>>
 ===
 
@@ -268,30 +272,31 @@ title: workday_smokers_and_friend_4_B_Tashigi
 location: park
 ---
 
-Tashigi looks proudly at you, pleased that you’ve volunteered. She pumps her fist, trying to keep your enthusiasm levels up.
-Tashigi: Who’s excited for a toasty fire? I think we’ll be able to make quite the bonfire; the storm’s left a lot behind. Let’s make something positive out of the wreckage!
-There’s plenty of wood from the wrecked ship scattered around the beach, as well as some fallen trees, branches, and older boards, possibly from other shipwrecks. In another situation, you’d find it macabre, like a ship’s graveyard, but right now, all you can see is handy resources for avoiding hypothermia over what will no doubt be a few hours, at the very least.
-Tashigi: Remember, we’ve got to find tinder and kindling, as well as the bigger, more obvious stuff. Damp logs don't light easily. We can use the newspapers that the New Coos have been delivering. 
+Tashigi looks proudly at you, pleased that you've volunteered. She pumps her fist, trying to keep your enthusiasm levels up.
+Tashigi: Who's excited for a toasty fire? I think we'll be able to make quite the bonfire; the storm's left a lot behind. Let's make something positive out of the wreckage!
+There's plenty of wood from the wrecked ship scattered around the beach, as well as some fallen trees, branches, and older boards, possibly from other shipwrecks. In another situation, you'd find it macabre, like a ship's graveyard, but right now, all you can see is handy resources for avoiding hypothermia over what will no doubt be a few hours, at the very least.
+Tashigi: Remember, we've got to find tinder and kindling, as well as the bigger, more obvious stuff. Damp logs don't light easily. We can use the newspapers that the New Coos have been delivering.
 Tashigi smiles, pleased with herself.
-Tashigi: I’ll bet Vice Admiral Smoker’s happy that I got him that daily subscription now, hehe.
+Tashigi: I'll bet Vice Admiral Smoker's happy that I got him that daily subscription now, hehe.
 After a moment of gloating, she collects herself.
 Tashigi: Right! Sticks, twigs, and dry leaves are also essential. And grab pinecones if there are any!
 You pick up a fresh green pinecone, and hold it out to her as if to say "Will this do"?
-Tashigi: No, dried-out pinecones are better for the main fire. If their moisture content is too high, they’re less likely to catch. But we could make a second platform of more greenery raised above the main fire to increase the amount of smoke… Ah, sorry. I’m rambling on about firemaking.
--> Hey, I’m learning a lot! And it’s great that we have someone with us who’s so knowledgeable. <<set wdsf4T_points +=1>>
-    Tashigi: Well, I– Thank you! 
--> It’s a bit off-topic, Captain.
-    Tashigi: Ah, yeah… I tend to go down weird rabbit holes, haha.
-The two of you gather the dry tinder, thicker branches, and parts of ship wreckage, organizing it all according to Tashigi’s directions.
-The tinder and kindling are piled below the branches, which have been arranged into a tripod formation. You’d learned how to make fire during training, but there’s something about the methodical way Tashigi puts the fire together that makes it seem almost like an art form. 
-Tashigi: And now, we light it. 
-Behind her glasses, her eyes gleam with excitement. 
-{$name}: So you’ve done this before?
+Tashigi: No, dried-out pinecones are better for the main fire. If their moisture content is too high, they're less likely to catch. But we could make a second platform of more greenery raised above the main fire to increase the amount of smoke... Ah, sorry. I'm rambling on about firemaking.
+-> Hey, I'm learning a lot! And it's great that we have someone with us who's so knowledgeable.
+    <<set wdsf4T_points +=1>>
+    Tashigi: Well, I– Thank you!
+-> It's a bit off-topic, Captain.
+    Tashigi: Ah, yeah... I tend to go down weird rabbit holes, haha.
+The two of you gather the dry tinder, thicker branches, and parts of ship wreckage, organizing it all according to Tashigi's directions.
+The tinder and kindling are piled below the branches, which have been arranged into a tripod formation. You'd learned how to make fire during training, but there's something about the methodical way Tashigi puts the fire together that makes it seem almost like an art form.
+Tashigi: And now, we light it.
+Behind her glasses, her eyes gleam with excitement.
+{$name}: So you've done this before?
 Tashigi: Yes, all the time! I was never the fastest at it, but I could always construct a sturdy fire. It made me so proud when my squad asked me to make the fire each night.
--> I can see why! You make an excellent fire. I’m sure this smoke signal will alert everyone.
-    Tashigi: Thank you! You’re too kind. <<set wdsf4T_points +=1>>
--> Are you sure your squad wasn’t just taking advantage of your eagerness to get out of making their own fire?
-    Tashigi: I… never thought about it like that… <<set wdsf4T_points -=1>>
+-> I can see why! You make an excellent fire. I'm sure this smoke signal will alert everyone.
+    Tashigi: Thank you! You're too kind. <<set wdsf4T_points +=1>>
+-> Are you sure your squad wasn't just taking advantage of your eagerness to get out of making their own fire?
+    Tashigi: I... never thought about it like that... <<set wdsf4T_points -=1>>
 The signal fire is burning strong. Thick plumes of smoke dance over the horizon. Surely, someone will see it and bring help.
 <<jump workday_smokers_and_friend_4_Return>>
 ===
@@ -300,39 +305,41 @@ title: workday_smokers_and_friend_4_B_Hina
 location: park
 ---
 
-As confident as you are in your stealth skills, you’re not quite prepared for Hina turning to you with a vicious smile, and using her Devil Fruit to restrain you and hoist you up into her arms. There is truly no escape now. You can’t help but glance at Tashigi and Smoker longingly as Hina pulls you into the forest with her.
-Hina does not set you down, even for a moment. Even as the lush scenery of the forest wooshes by, you can’t help but marvel at Hina’s own skills, given how her heeled feet meticulously walk through the leaf litter yet barely make a sound. It’s impressive. Still, you can’t help but feel like you aren’t contributing anything to this hunting trip.
-{$name}: Please put me down; I promise I can help. I’m good at stealth.
-Hina: Shush. You can’t be that good if your voice is that loud. It’ll scare off the rabbits.
-{$name}: We’re hunting bunnies?
+As confident as you are in your stealth skills, you're not quite prepared for Hina turning to you with a vicious smile, and using her Devil Fruit to restrain you and hoist you up into her arms. There is truly no escape now. You can't help but glance at Tashigi and Smoker longingly as Hina pulls you into the forest with her.
+Hina does not set you down, even for a moment. Even as the lush scenery of the forest wooshes by, you can't help but marvel at Hina's own skills, given how her heeled feet meticulously walk through the leaf litter yet barely make a sound. It's impressive. Still, you can't help but feel like you aren't contributing anything to this hunting trip.
+{$name}: Please put me down; I promise I can help. I'm good at stealth.
+Hina: Shush. You can't be that good if your voice is that loud. It'll scare off the rabbits.
+{$name}: We're hunting bunnies?
 Hina: Never underestimate them. Vicious beings.
-Her voice is barely above a whisper. It’s almost awe-inspiring, the way she prowls through the forest carrying your full weight in one arm. She observes the ground, depositing you on a thick bed of moss once she clears the crinkling leaves away. You stumble a bit as your feet make contact; your legs are a little wobbly from being manhandled, although you know of at least two dancing Rear Admiral Hina fanboys who would kill to have been in your position.
+Her voice is barely above a whisper. It's almost awe-inspiring, the way she prowls through the forest carrying your full weight in one arm. She observes the ground, depositing you on a thick bed of moss once she clears the crinkling leaves away. You stumble a bit as your feet make contact; your legs are a little wobbly from being manhandled, although you know of at least two dancing Rear Admiral Hina fanboys who would kill to have been in your position.
 Hina: Hmph, Hina can be gentle. Now, show Hina your hunting skills.
--> Right. I’ll go ahead and forage for berries and fruits. <<set wdsf4H_points -=1>>
+-> Right. I'll go ahead and forage for berries and fruits.
+    <<set wdsf4H_points -=1>>
     <<jump workday_smokers_and_friend_4_Hina_Forage>>
--> I could make a rope trap, although maybe we should make one together? <<set wdsf4H_points +=1>>
+-> I could make a rope trap, although maybe we should make one together?
+    <<set wdsf4H_points +=1>>
     <<jump workday_smokers_and_friend_4_Hina_Rope_Trap>>
 ===
 
-title: workday_smokers_and_friend_4_Hina_Forage 
+title: workday_smokers_and_friend_4_Hina_Forage
 location: park
 ---
 
-{$name}: I’m actually great at plant identification. My aunt was a botany nerd. So I’ll grab nothing that can poison the crew to help supplement the nutrition of the rabbits.
+{$name}: I'm actually great at plant identification. My aunt was a botany nerd. So I'll grab nothing that can poison the crew to help supplement the nutrition of the rabbits.
 Hina: Thoughtful. Skilled. But Hina knows you are a coward who is scared of bunnies.
-{$name}: I’m not scared! I just… think their twitching noses and little tails are too cute to kill.
+{$name}: I'm not scared! I just... think their twitching noses and little tails are too cute to kill.
 Hina: Oh? You would rather survivors be starved of protein than kill a pest to the island? Hmph. Hina expected better of you.
 Hina takes out a stick of lipstick. Instead of reapplying it to her lips, she instead paints war stripes—no, cat whiskers, and then cat ears and a dab of red on the nose—on her face. Her feline smile is feral.
 Hina: Hina will hunt alone.
-With a cat-like tread, as if doing up her face in such a ridiculous manner has given her confidence and made her fully embody a predator’s skill, she disappears into the forest, leaving you to forage for fruits and mushrooms. You get to work, but you can’t help but feel that you’ve hurt your standing with Hina.
+With a cat-like tread, as if doing up her face in such a ridiculous manner has given her confidence and made her fully embody a predator's skill, she disappears into the forest, leaving you to forage for fruits and mushrooms. You get to work, but you can't help but feel that you've hurt your standing with Hina.
 <,jump workday_smokers_and_friend_4_Return>>
 ===
 
-title: workday_smokers_and_friend_4_Hina_Rope_Trap 
+title: workday_smokers_and_friend_4_Hina_Rope_Trap
 location: park
 ---
 
-Hina: You don’t need Hina to tie a snare.
+Hina: You don't need Hina to tie a snare.
 {$name}: I have rope, but I think a lightweight trap made from your iron cage powers might be most effective.
 Hina: Oh? Hina can make many traps. What designs would you like to make?
 {$name}: I think a simple snare would be great if I could mold the iron made from your Devil Fruit into a noose. Could you make it lightweight enough for that?
@@ -341,7 +348,7 @@ Hina: It would be a challenge. But Hina likes a challenge.
 Hina: Heh! How long do you think the crew will be shipwrecked? Rescue will come soon. No need to think long-term. But Hina appreciates the long-term vision.
 Hina activates her Devil Fruit power, and together, you craft the metal into appropriate shapes for trapping rabbits. Hina even makes you a spear.
 Hina: You can go throw this at the beasts. Test your accuracy with a new weapon. Hina will finish the traps and join you after.
-You wander further into the brush, hoping to mimic Hina’s impeccable footwork so you don’t alert any potential prey to your presence. You see movement in a passing stream, and after judging your aim and the weight of the spear, give it a throw. You land a perfect hit, spearing through a fish. You wish Hina was around to see it, but coming back with a mountain of these fish for your group will surely impress her.
+You wander further into the brush, hoping to mimic Hina's impeccable footwork so you don't alert any potential prey to your presence. You see movement in a passing stream, and after judging your aim and the weight of the spear, give it a throw. You land a perfect hit, spearing through a fish. You wish Hina was around to see it, but coming back with a mountain of these fish for your group will surely impress her.
 <<jump workday_smokers_and_friend_4_Return>>
 ===
 
@@ -349,40 +356,44 @@ title: workday_smokers_and_friend_4_B_Smoker
 location: park
 ---
 
-Smoker: All right, let’s see what we have here…
-You look around. There’s plenty of wood from the wrecked ship, fallen trees and branches (have there been a lot of storms here lately?), and older boards, possibly from other shipwrecks. Even if Tashigi builds a massive bonfire, you won’t have to worry about running short. 
-From the looks of it, the remains of the tattered sails could help too. Based on what you remember from basic training, you ought to try and find a sturdy tree or rock formation to build against. 
+Smoker: All right, let's see what we have here...
+You look around. There's plenty of wood from the wrecked ship, fallen trees and branches (have there been a lot of storms here lately?), and older boards, possibly from other shipwrecks. Even if Tashigi builds a massive bonfire, you won't have to worry about running short.
+From the looks of it, the remains of the tattered sails could help too. Based on what you remember from basic training, you ought to try and find a sturdy tree or rock formation to build against.
 With all of that in mind, where should you start?
 -> We should probably gather up some of this wood.
-  	Smoker: Let’s look for a place to build first.
--> Let’s find a good place to build. <<set wdsf4S_points +=1>>
-  	Smoker: Agreed.
-The beach ahead of you is pretty clear, and you’ll be able to stay close to the shore and the smoke signals. However, Smoker doesn’t seem to be terribly interested.
-Smoker: There might be a clearing in the woods over there. Let’s take a look.
+      Smoker: Let's look for a place to build first.
+-> Let's find a good place to build.
+    <<set wdsf4S_points +=1>>
+      Smoker: Agreed.
+The beach ahead of you is pretty clear, and you'll be able to stay close to the shore and the smoke signals. However, Smoker doesn't seem to be terribly interested.
+Smoker: There might be a clearing in the woods over there. Let's take a look.
 -> Why not the beach?
-  	Smoker: We’ve seen it already. Let’s take a look at our other options.
--> Yeah, or at least some area we can use as a starting point. <<set wdsf4S_points +=1>>
-  	Smoker: Now that’s practical thinking.
--> Are you sure? There could be weird animals. <<set wdsf4S_points -=1>>
-  	Smoker: We just survived a shipwreck on the Grand Line, and you’re worried about a couple of “weird animals”? C’mon.
-The two of you head towards the woods. The trees are thick, but there’s what looks like a trail—maybe it leads to civilization. Or maybe it was just stamped down by some as-of-yet-unidentified creatures. 
-Smoker: Let’s follow the path. 
-You walk behind him, and nothing immediately leaps out at you. You don’t want to get too far away from the others, though, so you’re scanning your surroundings. Up ahead is a clearing with a big rock on the other side of it, but in every other direction, there seems to be nothing but trees.
+      Smoker: We've seen it already. Let's take a look at our other options.
+-> Yeah, or at least some area we can use as a starting point.
+    <<set wdsf4S_points +=1>>
+      Smoker: Now that's practical thinking.
+-> Are you sure? There could be weird animals.
+    <<set wdsf4S_points -=1>>
+      Smoker: We just survived a shipwreck on the Grand Line, and you're worried about a couple of “weird animals”? C'mon.
+The two of you head towards the woods. The trees are thick, but there's what looks like a trail—maybe it leads to civilization. Or maybe it was just stamped down by some as-of-yet-unidentified creatures.
+Smoker: Let's follow the path.
+You walk behind him, and nothing immediately leaps out at you. You don't want to get too far away from the others, though, so you're scanning your surroundings. Up ahead is a clearing with a big rock on the other side of it, but in every other direction, there seems to be nothing but trees.
 -> That big rock beyond the clearing might be perfect!
-  	Smoker: Yeah, let’s go take a look. <<set wdsf4S_points +=1>>
--> Maybe we should turn around and find another path… I don’t think this looks too good. <<set wdsf4S_points -=1>>
-  	Smoker: We’ve made it this far. Let’s at least look. 
-You head into the clearing. The tree canopy is crowded up above, but sunlight is shining through the leaves, illuminating the large rock you’d seen as you’d approached. It doesn’t look climbable, and it’s a little too smooth, but it’s not bad for what you need.
--> It’s not perfect, but at least there’s no animals living around there. Or villains lurking.
-  	Smoker: Heh. True. 
--> There might be something better, but this is pretty good and it’s a sure thing.
-  	Smoker: Agreed.
-Smoker: Well, then. Let’s gather some wood and start building.
-Just like on the beach, there are fallen branches and sticks lying all around the clearing. Some of them are even big enough to make good supports. 
-Between these and the scraps of the sails, it’ll make for a pretty crowded tent, but you probably won’t get rained on or eaten by a bear, and that’s what all those Marine survival courses were about. Right?
+      Smoker: Yeah, let's go take a look. <<set wdsf4S_points +=1>>
+-> Maybe we should turn around and find another path... I don't think this looks too good.
+    <<set wdsf4S_points -=1>>
+      Smoker: We've made it this far. Let's at least look.
+You head into the clearing. The tree canopy is crowded up above, but sunlight is shining through the leaves, illuminating the large rock you'd seen as you'd approached. It doesn't look climbable, and it's a little too smooth, but it's not bad for what you need.
+-> It's not perfect, but at least there's no animals living around there. Or villains lurking.
+      Smoker: Heh. True.
+-> There might be something better, but this is pretty good and it's a sure thing.
+      Smoker: Agreed.
+Smoker: Well, then. Let's gather some wood and start building.
+Just like on the beach, there are fallen branches and sticks lying all around the clearing. Some of them are even big enough to make good supports.
+Between these and the scraps of the sails, it'll make for a pretty crowded tent, but you probably won't get rained on or eaten by a bear, and that's what all those Marine survival courses were about. Right?
 The two of you work to build a basic framework for the tent, and after a little while, Smoker steps back to look over your handiwork.
-Smoker: Phew. That should do it for now. Let’s head back and get some of those sails.
-You make your way back along the path toward the beach, only to see when you arrive that you’re not the only returnees...
+Smoker: Phew. That should do it for now. Let's head back and get some of those sails.
+You make your way back along the path toward the beach, only to see when you arrive that you're not the only returnees...
 <<jump workday_smokers_and_friend_4_Return>>
 ===
 
@@ -391,7 +402,7 @@ location: park
 ---
 
 Bellemere warns you all of what she found, holding up a jolly roger as evidence: the Booty Hunters have indeed washed up on this island. She estimates that at least six pirates have survived, and there could possibly be more. Just as you were hoping to find more surviving Marines, the pirates were probably out searching for more of their own.
-Is it good luck or bad luck? It’s hard to tell at this point, but you know it means trouble.
+Is it good luck or bad luck? It's hard to tell at this point, but you know it means trouble.
 <<jump workday_smokers_and_friend_4_piratefight>>
 ===
 
@@ -399,24 +410,26 @@ title: workday_smokers_and_friend_4_piratefight
 location: park
 ---
 
-Just as Bellemere finishes her tale, a crashing noise from the woods makes you turn. A large, ragged-looking gang stands before you, weapons drawn. There must be at least twenty people there. Suddenly, it clicks as you recognize their leader from the wanted posters. It’s the Booty Hunters!
+Just as Bellemere finishes her tale, a crashing noise from the woods makes you turn. A large, ragged-looking gang stands before you, weapons drawn. There must be at least twenty people there. Suddenly, it clicks as you recognize their leader from the wanted posters. It's the Booty Hunters!
 Smoker: Everyone! In position!
 Everyone readies their weapon and gets behind Smoker. Tashigi looks a little uncertain as to which side she should guard.
--> What should I do? <<set wdsf4S_points -=1>> <<set wdsf4H_points -=1>>
- 	Hina: Remember what we practiced. Do not falter.
--> Captain Tashigi! If you take the right, I’ll take the left! <<set wdsf4T_points +=1>>
+-> What should I do? <<set wdsf4S_points -=1>>
+    <<set wdsf4H_points -=1>>
+     Hina: Remember what we practiced. Do not falter.
+-> Captain Tashigi! If you take the right, I'll take the left!
+    <<set wdsf4T_points +=1>>
     Tashigi: Perfect.
-As the fighting commences, everything seems to happen all at once. Weapons clash, Devil Fruits and haki are activated, and the whole world around you is ablaze with battle. You try to hold position, fending off a pirate or two, but it doesn’t take long before everything descends into chaos. 
-Tashigi is fending off a squid fishman brandishing four swords, and another pirate with a cutlass is coming her way. Hina is surrounded on all sides, working overtime to shackle them all. 
+As the fighting commences, everything seems to happen all at once. Weapons clash, Devil Fruits and haki are activated, and the whole world around you is ablaze with battle. You try to hold position, fending off a pirate or two, but it doesn't take long before everything descends into chaos.
+Tashigi is fending off a squid fishman brandishing four swords, and another pirate with a cutlass is coming her way. Hina is surrounded on all sides, working overtime to shackle them all.
 Bellemere has launched herself at the first mate, throwing solid-sounding punches, although it seems like she might be struggling a bit once two more pirates try to get in on the action. Meanwhile, Smoker is fending off the captain with his jitte.
 Now is the time to act. What will you do?
--> **Grab someone and throw a punch** 
+-> **Grab someone and throw a punch**
     <<jump workday_smokers_and_friend_4_Fight_solo>>
--> **Help Tashigi** 
+-> **Help Tashigi**
     <<jump workday_smokers_and_friend_4_Fight_Tashigi>>
--> **Back up Bellemere** 
+-> **Back up Bellemere**
     <<jump workday_smokers_and_friend_4_Fight_Bellemere>>
--> **See if you can help Smoker** 
+-> **See if you can help Smoker**
     <<jump workday_smokers_and_friend_4_Fight_Smoker>>
 ===
 
@@ -424,22 +437,23 @@ title: workday_smokers_and_friend_4_Fight_solo
 location: park
 ---
 
-SMACK! Your punch connects with the pirate’s jaw, but wow, their bones are hard. You swear as your knuckles smart, throwing another hit as the pirate stumbles back. But they’re not down for the count yet…
--> **Hit them again.** <<set wdsf4S_points +=1>>
-    This time, you hit hard enough to send the pirate running backwards to the safety of their numbers. 
-  	Smoker: Good hit, {$name}!
--> **Retreat** 
-  	You run backwards, hoping no one will notice...
-Another pirate grabs you, twisting your arm. You yell and spin, lashing out with a kick to the shin of your attacker. She winces in pain, and you give her a once-over. No Orbs of Dawn in sight…
+SMACK! Your punch connects with the pirate's jaw, but wow, their bones are hard. You swear as your knuckles smart, throwing another hit as the pirate stumbles back. But they're not down for the count yet...
+-> **Hit them again.**
+    <<set wdsf4S_points +=1>>
+    This time, you hit hard enough to send the pirate running backwards to the safety of their numbers.
+      Smoker: Good hit, {$name}!
+-> **Retreat**
+      You run backwards, hoping no one will notice...
+Another pirate grabs you, twisting your arm. You yell and spin, lashing out with a kick to the shin of your attacker. She winces in pain, and you give her a once-over. No Orbs of Dawn in sight...
 -> Where are the Orbs of Dawn?
-    The pirate doesn’t answer you.
+    The pirate doesn't answer you.
     Tashigi: Keep at it, {$name}! One of them has to know!
     {$name}: Right!
 -> **Punch her**
 You rear back to hit the pirate, but she hits you with the hilt of her sword; you stumble backward, but regain your rhythm and kick her in the knee, causing her to fall back on her butt. Behind you, Rear Admiral Hina continues to cage her attackers. You have two options.
--> Rear Admiral! I’ve got another one for you! 
+-> Rear Admiral! I've got another one for you!
     <<jump workday_smokers_and_friend_4_Fight_Hina>>
--> I’ll just tie you up myself. 
+-> I'll just tie you up myself.
     <<jump workday_smokers_and_friend_4_Fight_solo_tie>>
 ===
 
@@ -447,13 +461,14 @@ title: workday_smokers_and_friend_4_Fight_solo_tie
 location: park
 ---
 
-You grab a length of rope from where it’s tucked into your belt. The pirate looks like she might be getting up, but you only have two hands and so much strength. That said, Captain Bellemere is also nearby…
+You grab a length of rope from where it's tucked into your belt. The pirate looks like she might be getting up, but you only have two hands and so much strength. That said, Captain Bellemere is also nearby...
 -> **Shove her down**
-  	The pirate continues to struggle as you uncoil the rope. She’s not wearing a coat or hat, nor is she carrying anything that could conceal the Orbs of Dawn. Still, you’d better try and get her secured so that she can be arrested.
--> Captain Bellemere, can you help me out? <<set wdsf4B_points -=1>>
-  	Bellemere: Uh, I’m a little busy here.
-She’s smacking pirates with the butt of her rifle, driving them back like a dog herding sheep. It’s quite effective, but it does take up all her attention. You’re on your own here.
-You lean all of your weight forward on the pirate, pinning her back, and grab her wrists to tie them up. However, you’ve left the rope dangling, and the pirate grabs onto it. You try to tug it back, but your balance is awkward and you pitch forward. You aim a kick at her, but it’ll probably miss.
+      The pirate continues to struggle as you uncoil the rope. She's not wearing a coat or hat, nor is she carrying anything that could conceal the Orbs of Dawn. Still, you'd better try and get her secured so that she can be arrested.
+-> Captain Bellemere, can you help me out?
+    <<set wdsf4B_points -=1>>
+      Bellemere: Uh, I'm a little busy here.
+She's smacking pirates with the butt of her rifle, driving them back like a dog herding sheep. It's quite effective, but it does take up all her attention. You're on your own here.
+You lean all of your weight forward on the pirate, pinning her back, and grab her wrists to tie them up. However, you've left the rope dangling, and the pirate grabs onto it. You try to tug it back, but your balance is awkward and you pitch forward. You aim a kick at her, but it'll probably miss.
 <<jump workday_smokers_and_friend_4_Fight_careless>>
 ===
 
@@ -462,17 +477,20 @@ location: park
 ---
 
 Hina: Excellent work, {$name}.
-She barely looks as she shoots out a cage from her arm, locking down the pirate as she fends off another attacker. You’re a little surprised they’re not running away from her, but maybe they have overinflated egos. Could any of them be hiding the Orbs of Dawn?
-Hina: Grab another few for Hina; it’s easier to get the cages on targets that aren't going very fast.
--> Yes, sir! <<set wdsf4H_points +=1>>
--> I thought your cages were faster than that…? <<set wdsf4H_points -=1>>
-  	Hina: They are, but Hina sees no point in useless exertion.
-You try to follow Hina’s orders and subdue the pirates, and eventually you find a rhythm. Each time you yell for Hina’s attention, she throws another set of bars over your way. Despite your progress, however, you haven’t found the treasure…
-Hina: Well, that’s most of them.
+She barely looks as she shoots out a cage from her arm, locking down the pirate as she fends off another attacker. You're a little surprised they're not running away from her, but maybe they have overinflated egos. Could any of them be hiding the Orbs of Dawn?
+Hina: Grab another few for Hina; it's easier to get the cages on targets that aren't going very fast.
+-> Yes, sir!
+    <<set wdsf4H_points +=1>>
+-> I thought your cages were faster than that...?
+    <<set wdsf4H_points -=1>>
+      Hina: They are, but Hina sees no point in useless exertion.
+You try to follow Hina's orders and subdue the pirates, and eventually you find a rhythm. Each time you yell for Hina's attention, she throws another set of bars over your way. Despite your progress, however, you haven't found the treasure...
+Hina: Well, that's most of them.
 -> Any signs of the Orbs of Dawn?
-  	Hina: No. Hina has searched the prisoners thoroughly.
--> I’ll take that group over there and round them up. Unless you think I’d better stand guard? <<set wdsf4H_points +=1>>
-  	Hina: No guard is necessary.
+      Hina: No. Hina has searched the prisoners thoroughly.
+-> I'll take that group over there and round them up. Unless you think I'd better stand guard?
+    <<set wdsf4H_points +=1>>
+      Hina: No guard is necessary.
 <<jump workday_smokers_and_friend_4_Fight_well>>
 ===
 
@@ -480,16 +498,17 @@ title: workday_smokers_and_friend_4_Fight_Tashigi
 location: park
 ---
 
-On seeing that Tashigi’s about to be surrounded, you move to assist her. Fortunately, you’re just in time to intercept the other pirate’s cutlass. 
+On seeing that Tashigi's about to be surrounded, you move to assist her. Fortunately, you're just in time to intercept the other pirate's cutlass.
 Tashigi: {$name}! What are you doing?! I thought you were taking the other side!
--> It looked like you needed some help. <<set wdsf4T_points -=1>>
- 	Tashigi: Well, I don’t, and breaking formation will only inconvenience the others!
-    Tashigi: Still, since you’re already here, just focus on your opponent, and I’ll focus on mine!
--> It’s fine! Focus on your duel!
- 	Tashigi: …Right!
-Tashigi continues squaring off against the fishman, and you push back at the pirate in front of you. You kick at him just as he readies a swing, causing him to lose his balance and crash into the sand. 
-You can’t celebrate your victory just yet, however, as two more pirates take his place, and now, you’re fending off attacks left and right. It’s a lot to handle, but you don’t feel too pressured; maybe it’s thanks to your training—or having to deal with Hina on a regular basis—that lets you keep your cool in the face of adversity. 
-Tashigi: Hiyaa! 
+-> It looked like you needed some help.
+    <<set wdsf4T_points -=1>>
+     Tashigi: Well, I don't, and breaking formation will only inconvenience the others!
+    Tashigi: Still, since you're already here, just focus on your opponent, and I'll focus on mine!
+-> It's fine! Focus on your duel!
+     Tashigi: ...Right!
+Tashigi continues squaring off against the fishman, and you push back at the pirate in front of you. You kick at him just as he readies a swing, causing him to lose his balance and crash into the sand.
+You can't celebrate your victory just yet, however, as two more pirates take his place, and now, you're fending off attacks left and right. It's a lot to handle, but you don't feel too pressured; maybe it's thanks to your training—or having to deal with Hina on a regular basis—that lets you keep your cool in the face of adversity.
+Tashigi: Hiyaa!
 Pirate: GAAAAH!
 Suddenly, a sword comes flying your way, and you dodge just in time as it falls to the sand. The pirates before you hesitate, and you see an opportunity to change the tide of the battle.
 -> **Press the attack**
@@ -502,10 +521,10 @@ title: workday_smokers_and_friend_4_Fight_Tashigi_Attack
 location: park
 ---
 
-You don’t want to miss this chance, so you press the attack, pushing the two pirates back. However, you overextend yourself, leaving a gap between you and Tashigi that’s big enough for another pirate to try and take a swing at you.
+You don't want to miss this chance, so you press the attack, pushing the two pirates back. However, you overextend yourself, leaving a gap between you and Tashigi that's big enough for another pirate to try and take a swing at you.
 Tashigi: {$name}! LOOK OUT!
 {$name}: Woah!
-You just barely manage to dodge a swipe of a dagger from a pirate off to your right, and unfortunately, the surprise attack gives your previous opponents time to gather themselves. You square off against the dagger-wielder, but your heart sinks as you realize that you’re way outmatched, and further from Tashigi than you should be. 
+You just barely manage to dodge a swipe of a dagger from a pirate off to your right, and unfortunately, the surprise attack gives your previous opponents time to gather themselves. You square off against the dagger-wielder, but your heart sinks as you realize that you're way outmatched, and further from Tashigi than you should be.
 <<jump workday_smokers_and_friend_4_Fight_careless>>
 ===
 
@@ -513,13 +532,14 @@ title: workday_smokers_and_friend_4_Fight_Tashigi_Retreat
 location: park
 ---
 
-As tempting as it might be to rush in, you know better. Instead, you back up a few steps, eyes on your foes. 
-{$name}: Captain! I’ll hold them off so you can secure this one!
-Tashigi: Alright! I’ll help you as soon as I can!
-The pirates catch their breath, then run at you. However, you’re prepared for their advance, and once again, manage to keep them at bay. Your arms are growing tired, however, and the uneven surface you’re fighting on isn’t helping things either. 
-However, you don’t have to wait long as Shigure, a sword you’ve come to know rather well ever since you’d been assigned to this group, slices into the pirate on your right, knocking him to the ground and giving you a chance to breathe.
+As tempting as it might be to rush in, you know better. Instead, you back up a few steps, eyes on your foes.
+{$name}: Captain! I'll hold them off so you can secure this one!
+Tashigi: Alright! I'll help you as soon as I can!
+The pirates catch their breath, then run at you. However, you're prepared for their advance, and once again, manage to keep them at bay. Your arms are growing tired, however, and the uneven surface you're fighting on isn't helping things either.
+However, you don't have to wait long as Shigure, a sword you've come to know rather well ever since you'd been assigned to this group, slices into the pirate on your right, knocking him to the ground and giving you a chance to breathe.
 Tashigi: Well done, {$name}! Good job holding them off!
--> Thanks! Your duel was amazing too! <<set wdsf4T_points +=1>>
+-> Thanks! Your duel was amazing too!
+    <<set wdsf4T_points +=1>>
     Tashigi: Haha, well, thank you! He put up quite the fight, but it was a learning experience.
 -> Heh, just doing my part!
     Tashigi: You did it well! Your skills have really improved!
@@ -530,20 +550,20 @@ title: workday_smokers_and_friend_4_Fight_Bellemere
 location: park
 ---
 
-Bellemere is doing her best, but she’s surrounded by pirates, and it’s hard for her to land a good hit on the first mate while she’s trying to keep the other two at bay. You decide the best way you can help is to try and beat back the others, so you grab your sword and rush forward, aiming to get their focus off of her. 
-You’re somewhat successful, as the two pirates trying to interrupt her battle with the first mate turn their attention towards you. However, that now means you have two pirates interested in wearing your guts as garters, and that is far less fun.
-Dodging and weaving, you try to score hits on your opponents, but unfortunately, many of your cuts are shallow as you dance out of the way of the pirates’ blades. 
-Bellemere: Keep it up, {$name}! I’m almost done here!
-You don’t speak, but you narrow your focus. Keeping your rhythm, you fend off the pirates, then when you see an opportunity, kick one to the ground and disarm the other. Moments later, the two are in cages thanks to Hina’s efforts, and Bellemere’s jogging up to stand beside you.
+Bellemere is doing her best, but she's surrounded by pirates, and it's hard for her to land a good hit on the first mate while she's trying to keep the other two at bay. You decide the best way you can help is to try and beat back the others, so you grab your sword and rush forward, aiming to get their focus off of her.
+You're somewhat successful, as the two pirates trying to interrupt her battle with the first mate turn their attention towards you. However, that now means you have two pirates interested in wearing your guts as garters, and that is far less fun.
+Dodging and weaving, you try to score hits on your opponents, but unfortunately, many of your cuts are shallow as you dance out of the way of the pirates' blades.
+Bellemere: Keep it up, {$name}! I'm almost done here!
+You don't speak, but you narrow your focus. Keeping your rhythm, you fend off the pirates, then when you see an opportunity, kick one to the ground and disarm the other. Moments later, the two are in cages thanks to Hina's efforts, and Bellemere's jogging up to stand beside you.
 Bellemere: Good job! We really got ‘em— Augh!!
-Her hands fly to her midsection, face contorted in pain. You gasp in alarm and look at her, only to see that on her side, there’s a jagged cut; she must have been hit during her fight with the first mate. 
+Her hands fly to her midsection, face contorted in pain. You gasp in alarm and look at her, only to see that on her side, there's a jagged cut; she must have been hit during her fight with the first mate.
 {$name}: Bellemere! Are you alright?!
-Bellemere: I’ve had worse. Don’t worry about me; right now, we need to keep at it!
+Bellemere: I've had worse. Don't worry about me; right now, we need to keep at it!
 -> No! We need to treat this!
-    Bellemere: {$name}, this really isn’t the time!
+    Bellemere: {$name}, this really isn't the time!
     <<jump workday_smokers_and_friend_4_Fight_Bellemere_Fix>>
--> Understood. But we’re getting this patched up as soon as the battle’s over!
-    Bellemere: That’s the spirit! (+1 Bellemere)
+-> Understood. But we're getting this patched up as soon as the battle's over!
+    Bellemere: That's the spirit! (+1 Bellemere)
     <<jump workday_smokers_and_friend_4_Fight_Bellemere_Wound>>
 ===
 
@@ -551,18 +571,19 @@ title: workday_smokers_and_friend_4_Fight_Bellemere_Fix
 location: park
 ---
 
-Despite her protests, you know that you can’t let a wound like that fester. You have no idea how long you’ll be on this island, and despite her wishes, you can’t let this fester. 
-{$name}: Captain, I know you don’t want to deal with this right now, but please take your rifle and keep the pirates at bay while I wrap your injury.
-Bellemere: Damn it, {$name}! We’re in the middle of a battle! You can’t be worrying about this now!
--> Don’t you want to complete the mission?
-    Bellemere: The mission?! Of course I do! That’s why I’m saying to just let this go! (-1 Bellemere)
-    {$name}: I can’t! Just let me do this!
--> Don’t you want to see your family again? <<set wdsf4B_points +=1>>
-    Bellemere: My… family?
-    {$name}: If this gets infected, there’s a chance you’ll die before we get off this island, and you’ll never see them again. Is that what you want?
-    Bellemere: …
+Despite her protests, you know that you can't let a wound like that fester. You have no idea how long you'll be on this island, and despite her wishes, you can't let this fester.
+{$name}: Captain, I know you don't want to deal with this right now, but please take your rifle and keep the pirates at bay while I wrap your injury.
+Bellemere: Damn it, {$name}! We're in the middle of a battle! You can't be worrying about this now!
+-> Don't you want to complete the mission?
+    Bellemere: The mission?! Of course I do! That's why I'm saying to just let this go! (-1 Bellemere)
+    {$name}: I can't! Just let me do this!
+-> Don't you want to see your family again?
+    <<set wdsf4B_points +=1>>
+    Bellemere: My... family?
+    {$name}: If this gets infected, there's a chance you'll die before we get off this island, and you'll never see them again. Is that what you want?
+    Bellemere: ...
     Bellemere: Make it quick.
-Bellemere groans, but readies her rifle as you reach for the first aid kit. It’s harrowing work to try and wrap up a wound like this mid-combat, but you do your best to make it secure, even as Bellemere shoots her rifle a little too close for comfort. Still, you make the bandages as secure and tight as you can, then pat her side.
+Bellemere groans, but readies her rifle as you reach for the first aid kit. It's harrowing work to try and wrap up a wound like this mid-combat, but you do your best to make it secure, even as Bellemere shoots her rifle a little too close for comfort. Still, you make the bandages as secure and tight as you can, then pat her side.
 {$name}: Good to go!
 Bellemere: Heh. Good job, {$name}. Thanks.
 <<jump workday_smokers_and_friend_4_Fight_well>>
@@ -572,11 +593,11 @@ title: workday_smokers_and_friend_4_Fight_Bellemere_Wound
 location: park
 ---
 
-You decide to roll the dice and leave it be for now. Bellemere’s made of tough stuff, and you don’t have the luxury of waiting around. 
+You decide to roll the dice and leave it be for now. Bellemere's made of tough stuff, and you don't have the luxury of waiting around.
 However, as you continue fighting back against the pirates, you notice that Bellemere seems to be flagging. Her steps are slower, and her punches seem weaker. Oh no.
 {$name}: Bellemere! You—
-Bellemere: Don’t worry about me! Just keep at it!
-Unfortunately, it’s a bit hard not to worry about Bellemere with the condition she’s in. It’s clear that between the fatigue of exploring the island and the wound she’s received, she’s not doing too well, and you find yourself having to cover her back as the others mop up the remaining pirates.
+Bellemere: Don't worry about me! Just keep at it!
+Unfortunately, it's a bit hard not to worry about Bellemere with the condition she's in. It's clear that between the fatigue of exploring the island and the wound she's received, she's not doing too well, and you find yourself having to cover her back as the others mop up the remaining pirates.
 <<jump workday_smokers_and_friend_4_Fight_careless>>
 ===
 
@@ -584,24 +605,25 @@ title: workday_smokers_and_friend_4_Fight_Smoker
 location: park
 ---
 
-Just as you’re trying to decide what to do, movement out of the corner of your eye makes you turn your head—a pirate is heading straight toward you, with what looks like a hacksaw in place of one of his hands. Could he be a Devil Fruit user?
+Just as you're trying to decide what to do, movement out of the corner of your eye makes you turn your head—a pirate is heading straight toward you, with what looks like a hacksaw in place of one of his hands. Could he be a Devil Fruit user?
 {$name}: Haaa!
 You draw your sword and meet his blade with yours. He starts to push you back on the sand, but you have lateral mobility. On one side is Smoker—maybe the two of you can help each other —and on the other is the water.
 -> **Steer towards Smoker**
-	<<jump workday_smokers_and_friend_4_Towards_Smoker>>
+    <<jump workday_smokers_and_friend_4_Towards_Smoker>>
 -> **Steer towards the water**
-	<<jump workday_smokers_and_friend_4_Fight_water>>
+    <<jump workday_smokers_and_friend_4_Fight_water>>
 ===
 
-title: workday_smokers_and_friend_4_Towards_Smoker 
+title: workday_smokers_and_friend_4_Towards_Smoker
 location: park
 ---
 
-The pirate presses you back, and you sidestep, turning toward Smoker. Smoker is still fighting with the captain, and he clearly has the upper hand. 
--> Vice Admiral Smoker! Help me out here? <<set wdsf4S_points -=1>>
+The pirate presses you back, and you sidestep, turning toward Smoker. Smoker is still fighting with the captain, and he clearly has the upper hand.
+-> Vice Admiral Smoker! Help me out here?
+    <<set wdsf4S_points -=1>>
     Smoker: Shit...
     <<jump workday_smokers_and_friend_4_Towards_Smoker_A>>
--> **Continue moving towards Smoker** 
+-> **Continue moving towards Smoker**
     <<jump workday_smokers_and_friend_4_Towards_Smoker_B>>
 ===
 
@@ -609,8 +631,8 @@ title: workday_smokers_and_friend_4_Towards_Smoker_A
 location: park
 ---
 
-Smoker: This is taking everything I’ve got… ugh.
-Smoker sends out a tendril of smoke toward your opponent, striking harder and faster against his own. You continue battling your own foe, but he’s hemming you in as the smoke draws nearer and wraps around his head. You strike another blow… and send the pirate out of the range of Smoker’s smoke. Oops.
+Smoker: This is taking everything I've got... ugh.
+Smoker sends out a tendril of smoke toward your opponent, striking harder and faster against his own. You continue battling your own foe, but he's hemming you in as the smoke draws nearer and wraps around his head. You strike another blow... and send the pirate out of the range of Smoker's smoke. Oops.
 <<jump workday_smokers_and_friend_4_Fight_careless>>
 ===
 
@@ -618,14 +640,16 @@ title: workday_smokers_and_friend_4_Towards_Smoker_B
 location: park
 ---
 
-If you can just throw this pirate you’re fighting right into the pirate captain’s way, and get the captain to trip… and if you can avoid that hacksaw hand in the meantime…
+If you can just throw this pirate you're fighting right into the pirate captain's way, and get the captain to trip... and if you can avoid that hacksaw hand in the meantime...
 {$name}: Haaa!
 You throw all of your might behind the blow, sending the pirate toppling into the sand, right into the way of the pirate captain, who sidesteps him easily.
 Smoker: {$name}, what are you doing?
--> Trying to help...? <<set wdsf4S_points -=1>>
-  	Smoker: Throwing a helper to their side isn’t exactly helping us.
--> Executing my battle plan! <<set wdsf4S_points -=1>>
- 	Smoker: ...
+-> Trying to help...?
+    <<set wdsf4S_points -=1>>
+      Smoker: Throwing a helper to their side isn't exactly helping us.
+-> Executing my battle plan!
+    <<set wdsf4S_points -=1>>
+     Smoker: ...
 <<jump workday_smokers_and_friend_4_Fight_careless>>
 ===
 
@@ -633,16 +657,16 @@ title: workday_smokers_and_friend_4_Fight_water
 location: park
 ---
 
-If he’s a Devil Fruit user, backing him into the water could immobilize him. Then again, if he’s part of this pirate crew, he’s surely smart enough to know that. Maybe it’s just a specialized hook hand, and he has some other sort of Devil Fruit power… you’ll have to find out.
+If he's a Devil Fruit user, backing him into the water could immobilize him. Then again, if he's part of this pirate crew, he's surely smart enough to know that. Maybe it's just a specialized hook hand, and he has some other sort of Devil Fruit power... you'll have to find out.
 -> **Attack the non-hacksaw hand.**
-    You draw back your blade and instead go for the pirate’s other hand. However, it morphs into another saw at the last second, parrying your blade. Well, that answers that question.
+    You draw back your blade and instead go for the pirate's other hand. However, it morphs into another saw at the last second, parrying your blade. Well, that answers that question.
 -> **Keep going toward the water**
     You slip on the sand, as eager as you are to get to the shore, and you grab onto your opponent as you fall. However, his arm becomes a chainsaw, and you have to let go. You roll away and return to your feet, panting.
-You drive the pirate back toward the ocean; he tries to move laterally, but you’ve got your focus locked onto him, and manage to outmaneuver him. Even if he doesn’t have the orbs, you can still arrest him.
+You drive the pirate back toward the ocean; he tries to move laterally, but you've got your focus locked onto him, and manage to outmaneuver him. Even if he doesn't have the orbs, you can still arrest him.
 -> **Shove him into the water**
-  	You shove the pirate as hard as you can. His midsection turns into a sawblade and you almost nick your fingertips against the jagged metal, but you still manage to push through and he falls into the water from the force of your shove. He tries to pick himself up, but his limbs are too heavy, thanks to the seawater. Good thing you have a pair of seastone cuffs on you. You take them out, preparing to cuff the fruit-user.
+      You shove the pirate as hard as you can. His midsection turns into a sawblade and you almost nick your fingertips against the jagged metal, but you still manage to push through and he falls into the water from the force of your shove. He tries to pick himself up, but his limbs are too heavy, thanks to the seawater. Good thing you have a pair of seastone cuffs on you. You take them out, preparing to cuff the fruit-user.
 -> **Wait for the right opportunity**
-  	You feint right, then left; he kicks with a hacksaw leg, but you dodge, and you can’t help but smile as you see the water rising behind the two of you. The waves come in just in time for the pirate to lose his balance; he topples backwards, into the surf, and you reach down to grab him by the wrist.
+      You feint right, then left; he kicks with a hacksaw leg, but you dodge, and you can't help but smile as you see the water rising behind the two of you. The waves come in just in time for the pirate to lose his balance; he topples backwards, into the surf, and you reach down to grab him by the wrist.
 You cuff the pirate before he can turn his wrists into saws, and drag him back up the beach. You can question him with the others later. Hina has a pile of immobilized pirates, and this guy can be a new addition.
 <<jump workday_smokers_and_friend_4_Fight_well>>
 ===
@@ -654,11 +678,11 @@ As you try your best to hold your own against your opponent, you suddenly notice
 She pulls the pin and hurls it toward the two.
 {$name}: Vice Admiral Smoker! Watch out!
 #BOOM#
-Sand flies up; you instinctively shield your eyes and mouth, but the force of the blast sends you flying backwards. When you sit up a few seconds later, Smoker is rematerializing from smoke, and both the captain and the pirate you were fighting are nowhere to be seen. 
--> Where’d they go?
- 	Smoker: Hell if I know. I got blasted apart, but even if they were both logia-users, I don’t think they could have re-formed that quickly. Not unless they got away in that form.
--> Oh no… I’m so sorry. It was my fault…
-    Bellemere: Come on, now. You’re not the only one here.
+Sand flies up; you instinctively shield your eyes and mouth, but the force of the blast sends you flying backwards. When you sit up a few seconds later, Smoker is rematerializing from smoke, and both the captain and the pirate you were fighting are nowhere to be seen.
+-> Where'd they go?
+     Smoker: Hell if I know. I got blasted apart, but even if they were both logia-users, I don't think they could have re-formed that quickly. Not unless they got away in that form.
+-> Oh no... I'm so sorry. It was my fault...
+    Bellemere: Come on, now. You're not the only one here.
 <<jump workday_smokers_and_friend_4_Bad_ending>>
 ===
 
@@ -666,16 +690,18 @@ title: workday_smokers_and_friend_4_Fight_well
 location: park
 ---
 
-Your group’s teamwork has gotten better the longer you’ve worked together, that’s for sure. Everyone is doing their part in this battle, and you’re no exception. As you continue to fight back the Booty Hunters, you spot something shiny out of the corner of your eye, but it’s just the reflection of the sun off of someone’s belt buckle, not the treasure. 
-There’s no time to be distracted, but you’re still looking for a glimpse of the treasure, whatever it actually looks like. Your eye catches a flash of metal, but that’s not it, either; just a piece of scrap. You dodge a punch and a kick, then grab your opponent’s ankle, flipping her over into the sand. No sign of the treasure.
+Your group's teamwork has gotten better the longer you've worked together, that's for sure. Everyone is doing their part in this battle, and you're no exception. As you continue to fight back the Booty Hunters, you spot something shiny out of the corner of your eye, but it's just the reflection of the sun off of someone's belt buckle, not the treasure.
+There's no time to be distracted, but you're still looking for a glimpse of the treasure, whatever it actually looks like. Your eye catches a flash of metal, but that's not it, either; just a piece of scrap. You dodge a punch and a kick, then grab your opponent's ankle, flipping her over into the sand. No sign of the treasure.
 You hand your opponent over to Hina, who puts her in another one of her cages. The only ones left around you are stragglers; the others are mostly done. Smoker is still holding off Captain Gluteus. The Orbs of Dawn... Where could they be? Could the pirates have a treasure map?
-You catch another flash of sun, but this time, your eye falls on something shiny in the captain’s pocket. A watch? 
--> Vice Admiral! I think the treasure is in the captain’s pocket! <<set wdsf4S_points +=1>>
-  	Smoker: You’d better be right… but I’ll make damn sure I get them. 
--> Rear Admiral Hina, do you think that… in the captain’s pocket...? <<set wdsf4H_points +=1>>
+You catch another flash of sun, but this time, your eye falls on something shiny in the captain's pocket. A watch?
+-> Vice Admiral! I think the treasure is in the captain's pocket!
+    <<set wdsf4S_points +=1>>
+      Smoker: You'd better be right... but I'll make damn sure I get them.
+-> Rear Admiral Hina, do you think that... in the captain's pocket...?
+    <<set wdsf4H_points +=1>>
     Hina: Yes, good eye. Smoker! Check the pocket!
     Smoker sends her a half-salute, still fighting, as his coat billows out behind him.
-Smoker seems to gain his second wind. He drives forward with his jitte, imbuing it with haki. It rings out against the captain’s blade, and he knocks the captain to the sand, kicking at the man’s pocket. Into his hand flies something large and shiny. Could it be?
+Smoker seems to gain his second wind. He drives forward with his jitte, imbuing it with haki. It rings out against the captain's blade, and he knocks the captain to the sand, kicking at the man's pocket. Into his hand flies something large and shiny. Could it be?
 <<jump workday_smokers_and_friend_4_Good_ending>>
 ===
 
@@ -687,45 +713,50 @@ Smoker: ...
 Hina: ...
 Tashigi: ...
 Bellemere: Is that...a butt?
--> It’s… it’s definitely eye-catching...
-  	Smoker: Certainly complimentary to whoever it’s supposed to be from.
--> Orbs of Dawn... I guess that’s a euphemism. 
-  	Hina: Obviously.
+-> It's... it's definitely eye-catching...
+      Smoker: Certainly complimentary to whoever it's supposed to be from.
+-> Orbs of Dawn... I guess that's a euphemism.
+      Hina: Obviously.
 Smoker turns over the relic in his hand. Yep, definitely a butt. Beneath him, Captain Gluteus stirs.
 Smoker: {$name}, you have a pair of seastone cuffs on you, right?
--> Shall I restrain him? <<set wdsf4S_points +=1>>
- 	Smoker: That’d be great.
+-> Shall I restrain him?
+    <<set wdsf4S_points +=1>>
+     Smoker: That'd be great.
 -> Oh, here you go.
-  	Smoker: Gee, I think I’d rather you do it, with me being a fruit user and all.
-You lean down and cuff the captain. It goes easier than expected, but Smoker’s being careful to hold him in place.
-Bellemere: You’ve got sharp eyes, {$name}. Or maybe you just know how to appreciate the good stuff?
--> You know I do. <<set wdsf4H_points -=1>>
- 	Hina: That is not work-appropriate, either of you.
--> Well, I’d been keeping a lookout for anything, uh, orb-like...
- 	Tashigi: I think we all were… still, well done.
--> **Blush** <<set wdsf4B_points +=1>>
-	Bellemere: Hah!
-Tashigi: Well, that’s a wrap on the capturing, and we’ve fulfilled our mission of finding the treasure, so all that’s left is to get out of here. 
--> Do you think there are wild denden mushi in the woods? <<set wdsf4T_points +=1>>
-  	Tashigi: Good thinking. I bet we’ve got enough tech skills among the group to get one working.
+      Smoker: Gee, I think I'd rather you do it, with me being a fruit user and all.
+You lean down and cuff the captain. It goes easier than expected, but Smoker's being careful to hold him in place.
+Bellemere: You've got sharp eyes, {$name}. Or maybe you just know how to appreciate the good stuff?
+-> You know I do.
+    <<set wdsf4H_points -=1>>
+     Hina: That is not work-appropriate, either of you.
+-> Well, I'd been keeping a lookout for anything, uh, orb-like...
+     Tashigi: I think we all were... still, well done.
+-> **Blush**
+    <<set wdsf4B_points +=1>>
+    Bellemere: Hah!
+Tashigi: Well, that's a wrap on the capturing, and we've fulfilled our mission of finding the treasure, so all that's left is to get out of here.
+-> Do you think there are wild denden mushi in the woods?
+    <<set wdsf4T_points +=1>>
+      Tashigi: Good thinking. I bet we've got enough tech skills among the group to get one working.
 -> Should we try and build a raft or something?
- 	Bellemere: Nah, that’s a fool’s errand. Let’s just wait; someone’s gotta have a vivre card or something.
-Soon after that, you spot Marine ships on the horizon, there to rescue you and bring Captain Gluteus to the Marines’ justice. Fortunately, most of the other Marines who’d been on the capsized ship with you have also been rescued, and after briefly getting everything in order, you all head for home at last.
+     Bellemere: Nah, that's a fool's errand. Let's just wait; someone's gotta have a vivre card or something.
+Soon after that, you spot Marine ships on the horizon, there to rescue you and bring Captain Gluteus to the Marines' justice. Fortunately, most of the other Marines who'd been on the capsized ship with you have also been rescued, and after briefly getting everything in order, you all head for home at last.
 ===
 
 title: workday_smokers_and_friend_4_Bad_ending
 location: park
 ---
 
-You look back at the pirates who have been subdued and tied up. Surely, Captain Gluteus will come back for them…
--> I’ll search for Captain Gluteus. I feel responsible. <<set wdsf4H_points +=1>>
-  	Hina: Good initiative. Hina will also search.
- 	<<jump workday_smokers_and_friend_4_Bad_search>>
+You look back at the pirates who have been subdued and tied up. Surely, Captain Gluteus will come back for them...
+-> I'll search for Captain Gluteus. I feel responsible.
+    <<set wdsf4H_points +=1>>
+      Hina: Good initiative. Hina will also search.
+     <<jump workday_smokers_and_friend_4_Bad_search>>
 -> What should we do?
-  	Tashigi: Some of us can stand guard while the rest of us spread out and search. Why don’t you stay here?
-  	-> Ok.
+      Tashigi: Some of us can stand guard while the rest of us spread out and search. Why don't you stay here?
+      -> Ok.
         <<jump workday_smokers_and_friend_4_Bad_guard>>
-  	-> I’d rather help with the search. 
+      -> I'd rather help with the search.
         <<jump workday_smokers_and_friend_4_Bad_search>>
 -> I can stay and guard the captives. Maybe one of them will start talking with Gluteus gone.
     Smoker: Doubt it. We should stand by in case backup arrives, though.
@@ -736,38 +767,43 @@ title: workday_smokers_and_friend_4_Bad_search
 location: park
 ---
 
-Bellemere: Ok, let’s get moving. I don’t think we need too many to stand guard.
+Bellemere: Ok, let's get moving. I don't think we need too many to stand guard.
 Hina: Hina agrees.
 Bellemere: Great. Smoker, did you get a look at what direction they went?
 Smoker: No.
--> Are you sure? You must have seen **something**... <<set wdsf4S_points -=1>>
+-> Are you sure? You must have seen **something**...
+    <<set wdsf4S_points -=1>>
     Smoker: I said no.
- 	Hina: Very well. Hina is thinking about how to divide the search…
+     Hina: Very well. Hina is thinking about how to divide the search...
 -> Should we split up?
- 	Bellemere: Probably.
+     Bellemere: Probably.
 -> Where should we go first?
-  	Bellemere: I think we should head for the forest. There’s plenty of places to hide in there.
+      Bellemere: I think we should head for the forest. There's plenty of places to hide in there.
 Hina: You will stick with Hina, {$name}.
-Bellemere: I’m coming too. Smoker and Tashigi can go the opposite route, and we’ll meet in the middle. 
-Bellemere plows ahead towards the forest, and you and Hina follow. It’ll be tough to find them in there, especially if they have logias on their side…
+Bellemere: I'm coming too. Smoker and Tashigi can go the opposite route, and we'll meet in the middle.
+Bellemere plows ahead towards the forest, and you and Hina follow. It'll be tough to find them in there, especially if they have logias on their side...
 -> How do we know one of the other pirates doesn't have the Orbs?
-    Bellemere: They could, but we’ll look sloppy if we don’t get the captain.
-    Hina: Once the captain is apprehended, the stragglers will surely confess the Orbs’ location.
--> Is this really the best place to start? <<set wdsf4B_points -=1>> <<set wdsf4H_points -=1>>
-  	Hina: Now is not the time for hesitation, {$name}.
-Bellemere finds a path, pushing aside tree branches as she goes. The path doesn’t look well-used, which could be a good sign… or a bad one.
--> Tell me you have more of a plan than just taking the first path? <<set wdsf4H_points +=1>>
-  	Bellemere: We might as well search everywhere, right? Besides, I’m using my womanly intuition.
+    Bellemere: They could, but we'll look sloppy if we don't get the captain.
+    Hina: Once the captain is apprehended, the stragglers will surely confess the Orbs' location.
+-> Is this really the best place to start? <<set wdsf4B_points -=1>>
+    <<set wdsf4H_points -=1>>
+      Hina: Now is not the time for hesitation, {$name}.
+Bellemere finds a path, pushing aside tree branches as she goes. The path doesn't look well-used, which could be a good sign... or a bad one.
+-> Tell me you have more of a plan than just taking the first path?
+    <<set wdsf4H_points +=1>>
+      Bellemere: We might as well search everywhere, right? Besides, I'm using my womanly intuition.
 -> Hello...? Pirates?
-  	Hina: Don’t make so much noise.
-Suddenly, Bellemere cocks her head, as if she hears something. You look at Hina, but she’s impossible to read. Bellemere dives to the side, and you and Hina follow her... right into a pile of leaves.
+      Hina: Don't make so much noise.
+Suddenly, Bellemere cocks her head, as if she hears something. You look at Hina, but she's impossible to read. Bellemere dives to the side, and you and Hina follow her... right into a pile of leaves.
 Hina: This is not funny, Commodore.
 Bellemere: What? I thought I heard something.
--> You probably scared them away. <<set wdsf4B_points -=1>>
-  	Bellemere: Hmph! They should be scared of us.
--> Well, if we have to cover every inch, this part counts. <<set wdsf4B_points +=1>>
-	Bellemere: Exactly!
-The three of you continue on, but there’s nothing promising. Just leaves, trees, and a cute little creek that you can’t even appreciate because you’re hustling along. Unfortunately, when you reach the other side of the woods, you find your comrades, who are similarly empty-handed.
+-> You probably scared them away.
+    <<set wdsf4B_points -=1>>
+      Bellemere: Hmph! They should be scared of us.
+-> Well, if we have to cover every inch, this part counts.
+    <<set wdsf4B_points +=1>>
+    Bellemere: Exactly!
+The three of you continue on, but there's nothing promising. Just leaves, trees, and a cute little creek that you can't even appreciate because you're hustling along. Unfortunately, when you reach the other side of the woods, you find your comrades, who are similarly empty-handed.
 <<jump workday_smokers_and_friend_4_Bad_end_end>>
 ===
 
@@ -775,28 +811,31 @@ title: workday_smokers_and_friend_4_Bad_guard
 location: park
 ---
 
-Bellemere: Ok, everyone who’s searching, come with me!
+Bellemere: Ok, everyone who's searching, come with me!
 Hina: Hina will go with you.
 With that, the two women head into the forest, and you watch them go before turning your attention back to Smoker and Tashigi.
 Tashigi: Should we make sure their bonds are secure?
 Smoker: You can check if you want, but Hina knows her stuff.
--> Is there anything we can do to prepare for the capture of Captain Gluteus? <<set wdsf4T_points +=1>>
-  	Tashigi: Great question, but I don’t think so. Not without a ship on hand.
--> Just in case? Well, not that **I’m** volunteering. <<set wdsf4T_points -=1>>
-  	Tashigi: If you don’t have anything helpful to add, then don’t add anything at all.
+-> Is there anything we can do to prepare for the capture of Captain Gluteus?
+    <<set wdsf4T_points +=1>>
+      Tashigi: Great question, but I don't think so. Not without a ship on hand.
+-> Just in case? Well, not that **I'm** volunteering.
+    <<set wdsf4T_points -=1>>
+      Tashigi: If you don't have anything helpful to add, then don't add anything at all.
 Tashigi rubs her forehead.
 Tashigi: I think I have a caffeine headache.
-Smoker: We can’t get out of here fast enough.
+Smoker: We can't get out of here fast enough.
 -> Well, at least you have your cigars.
-  	Tashigi: Maybe I should start strapping cans of coffee to my jacket…
+      Tashigi: Maybe I should start strapping cans of coffee to my jacket...
 -> Should we get back to the preparations we were making to alert any rescuers and any other Marines who made it here?
-  	Smoker: Can’t hurt, I guess.
--> We could make a raft to get out of here, but if we do, how are we going to transport the prisoners? We can’t just leave them here. <<set wdsf4T_points +=1>>
-  	Tashigi: That’s a great question… but it won’t come to that, right?
-You hear something in the distance, and all three of you turn around, on high alert. Instead of triumphant shouts, however, Bellemere and Hina return, covered in leaves and scratches. It’s clear that they hadn’t found the escapees, and you know they’d have done a thorough search.
-Bellemere: I don’t suppose Captain Gluteus turned up here?
-Smoker: No dice. 
-Bellemere: Well, maybe he’ll turn up. For now, I guess we’ll just have to wait to be rescued.
+      Smoker: Can't hurt, I guess.
+-> We could make a raft to get out of here, but if we do, how are we going to transport the prisoners? We can't just leave them here.
+    <<set wdsf4T_points +=1>>
+      Tashigi: That's a great question... but it won't come to that, right?
+You hear something in the distance, and all three of you turn around, on high alert. Instead of triumphant shouts, however, Bellemere and Hina return, covered in leaves and scratches. It's clear that they hadn't found the escapees, and you know they'd have done a thorough search.
+Bellemere: I don't suppose Captain Gluteus turned up here?
+Smoker: No dice.
+Bellemere: Well, maybe he'll turn up. For now, I guess we'll just have to wait to be rescued.
 <<jump workday_smokers_and_friend_4_Bad_end_end>>
 ===
 
@@ -804,6 +843,6 @@ title: workday_smokers_and_friend_4_Bad_end_end
 location: park
 ---
 
-The captain must have found one hell of a hiding spot, ‘cause you’re pretty sure there’s no way he managed to escape that deserted little island.
-Whether he did or not, however, you never find out, because soon after that you’re picked up by Marine ships and reunited with the rest of your crew, many of whom had thankfully survived. You’re grateful that it wasn’t as bad as it could have been, trying to console yourself as you leave the island —and your failure— behind.
+The captain must have found one hell of a hiding spot, ‘cause you're pretty sure there's no way he managed to escape that deserted little island.
+Whether he did or not, however, you never find out, because soon after that you're picked up by Marine ships and reunited with the rest of your crew, many of whom had thankfully survived. You're grateful that it wasn't as bad as it could have been, trying to console yourself as you leave the island —and your failure— behind.
 ===

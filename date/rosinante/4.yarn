@@ -6,12 +6,12 @@ Today was such a long day, you think as you fall face-first into your bed. Not o
 The only bright part of the day was running into Rosinante during lunch. Of course, it meant more stress, as he had *somehow* managed to set his curry on fire... But that was the kind of stress you actually didn't mind dealing with for some reason. Instead, it charged you with energy to tackle the rest of the day—at least until Inspector General Sengoku's goat ate one of your reports and you had to redo the whole thing.
 To this moment, you have no idea how the goat even managed to *find it* inside a closed drawer.
 All in all... You're completely exhausted. Every single minute of this day was exhausting and right now, you want nothing more than to sleep for a week straight. You refuse to believe it's only Wednesday! How are you supposed to survive two more days of work before catching a break?!
-Your eyes fall shut, and you don’t fight it. You may not even have had dinner yet, but you don’t even care anymore. You let darkness cover you like a blanket—
-There’s a knock on the door, snapping you awake.
-{$name}: What is it *now…?*
+Your eyes fall shut, and you don't fight it. You may not even have had dinner yet, but you don't even care anymore. You let darkness cover you like a blanket—
+There's a knock on the door, snapping you awake.
+{$name}: What is it *now...?*
 -> Ignore it
-    You should probably get up and find out what’s going on…
-    But, you can’t say you *care* right now. Hell, you can barely even move. You doubt you have the capacity to deal with anything that doesn’t involve a pillow and ten hours of absolutely *nothing.*
+    You should probably get up and find out what's going on...
+    But, you can't say you *care* right now. Hell, you can barely even move. You doubt you have the capacity to deal with anything that doesn't involve a pillow and ten hours of absolutely *nothing.*
     With a sigh, you simply bury yourself deeper into your blanket and drift off to sleep, never finding out who was behind your door.
     <<jump date_rosinante_4_DATE_ENDS>>
 -> Open the door
@@ -24,35 +24,35 @@ title: date_rosinante_4_OPEN_DOOR
 location: quarters
 ---
 
-For a moment, you play with the idea of ignoring whoever has decided to ruin your day even *further* but…
+For a moment, you play with the idea of ignoring whoever has decided to ruin your day even *further* but...
 With a tired, long-suffering groan, you force yourself to get out of the comforting embrace of your bed. Not bothering to put on your slippers, you stumble barefoot towards the door.
-The moment you open it, Rosinante, with his hand up in the air as if he was about to knock again, yelps and jumps up in surprise. You’re a little proud of him when he manages to find his balance without falling on his butt.
+The moment you open it, Rosinante, with his hand up in the air as if he was about to knock again, yelps and jumps up in surprise. You're a little proud of him when he manages to find his balance without falling on his butt.
 {$name}: Rosinante? Are you OK?
-Rosinante: {$name}, you scared me! I thought you weren’t there.
-You giggle at the way Rosinante’s clutching at his heart. One would think you’ve dumped cold water on him out of nowhere.
+Rosinante: {$name}, you scared me! I thought you weren't there.
+You giggle at the way Rosinante's clutching at his heart. One would think you've dumped cold water on him out of nowhere.
 {$name}: Sorry, I was in bed, almost asleep. What did you need?
-Rosinante: Oh, I’m the one who’s sorry! I didn’t think I’d wake you up… 
-Rosinante: It’s nothing important, you should rest.
-You study Rosinante’s expression for a moment; he’s avoiding your gaze, looking sheepish. You can’t tell if it’s because he’s feeling guilty for interrupting you or if it’s because what he came for *was* important and now he feels awkward.
--> I’m sorry.
-    {$name}: Can we talk later? I’m really tired right now…
-    Rosinante: Of course, I didn’t mean to wake you up.
-    Rosinante: As I said, it’s not important.
+Rosinante: Oh, I'm the one who's sorry! I didn't think I'd wake you up...
+Rosinante: It's nothing important, you should rest.
+You study Rosinante's expression for a moment; he's avoiding your gaze, looking sheepish. You can't tell if it's because he's feeling guilty for interrupting you or if it's because what he came for *was* important and now he feels awkward.
+-> I'm sorry.
+    {$name}: Can we talk later? I'm really tired right now...
+    Rosinante: Of course, I didn't mean to wake you up.
+    Rosinante: As I said, it's not important.
     Rosinante: Good night.
-    As he walks away, his shoulders hunched up dejectedly, you feel a pang of guilt. Maybe you should have heard him out…
-    But you can barely keep your eyes open. It’s not like you’d be able to give him your full attention anyway!
+    As he walks away, his shoulders hunched up dejectedly, you feel a pang of guilt. Maybe you should have heard him out...
+    But you can barely keep your eyes open. It's not like you'd be able to give him your full attention anyway!
     <<jump date_rosinante_4_DATE_ENDS>>
--> {$name}: No, it’s OK!
+-> {$name}: No, it's OK!
     {$name}: Please, come in.
     Rosinante: Thank you.
     You ignore the way your heart flutters at the sight of his soft smile, instead stepping aside and opening the door wider, gesturing to Rosinante to come in.
-    Suddenly, you realize there’s a pile of clean clothes on your desk chair that you yet have to put where they belong, a few empty glass bottles that you keep forgetting to throw out, and several books and papers lying on the floor around your bed that you couldn’t have been bothered to put away.
+    Suddenly, you realize there's a pile of clean clothes on your desk chair that you yet have to put where they belong, a few empty glass bottles that you keep forgetting to throw out, and several books and papers lying on the floor around your bed that you couldn't have been bothered to put away.
     You wince.
-    {$name}: Sorry about the mess…
+    {$name}: Sorry about the mess...
     Rosinante: You call this a mess? You should see my room.
     He chuckles as he passes you, and a smile tugs on your lips as you close the door.
-    {$name}: You can sit on the bed, since the chair’s—or wait, I’ll just free up the chair. Sorry…
-    Rosinante huffs as you hurry to grab the clothes occupying the chair, putting them on the desk instead. 
+    {$name}: You can sit on the bed, since the chair's—or wait, I'll just free up the chair. Sorry...
+    Rosinante huffs as you hurry to grab the clothes occupying the chair, putting them on the desk instead.
     Nobody said you were good at panic cleaning!
     Taking a deep breath, you force yourself to calm down.
     Finally, you sit on your bed, facing Rosinante and giving him your full attention.
@@ -63,59 +63,59 @@ title: date_rosinante_4_COME_IN
 location: quarters
 ---
 
-For a moment, you play with the idea of ignoring whoever has decided to ruin your day even *further* but…
-With a tired, long-suffering groan, you resign yourself to your fate. That doesn’t mean you have to *move* though, does it?
-{$name}: Door’s open!
-You don’t even bother to look up when the door creaks open slowly—man, you really need to get those hinges oiled—and a person steps inside.
-Rosinante: Should I… come by later?
-It takes you a second to place the voice, but once you realize it’s Rosinante, you turn your head to the side the smallest bit, cracking one eye open to glance at him.
-He’s standing at the door, one foot in and the other still out, clutching at the door and seemingly frozen in place at the sight of your half-dead body collapsed on the bed. His expression is twisted in worry and he looks so *guilty* to have interrupted you.
-{$name}: Sorry, long day…
+For a moment, you play with the idea of ignoring whoever has decided to ruin your day even *further* but...
+With a tired, long-suffering groan, you resign yourself to your fate. That doesn't mean you have to *move* though, does it?
+{$name}: Door's open!
+You don't even bother to look up when the door creaks open slowly—man, you really need to get those hinges oiled—and a person steps inside.
+Rosinante: Should I... come by later?
+It takes you a second to place the voice, but once you realize it's Rosinante, you turn your head to the side the smallest bit, cracking one eye open to glance at him.
+He's standing at the door, one foot in and the other still out, clutching at the door and seemingly frozen in place at the sight of your half-dead body collapsed on the bed. His expression is twisted in worry and he looks so *guilty* to have interrupted you.
+{$name}: Sorry, long day...
 {$name}: What did you need?
-Rosinante: I’m the one who’s sorry! It’s nothing important, I’ll just let you rest.
-As soon as he’s done speaking, he steps away, about to leave the room, but the movement’s hesitant. You study his face for a moment; he’s avoiding your gaze, looking sheepish. You can’t tell if it’s because he’s feeling guilty for interrupting you or if it’s because what he came for *was* important and now he feels awkward.
--> I’m sorry.
-    {$name}: Can we talk later? I’m really tired right now…
-    Rosinante: Of course, I didn’t mean to wake you up.
-    Rosinante: As I said, it’s not important.
+Rosinante: I'm the one who's sorry! It's nothing important, I'll just let you rest.
+As soon as he's done speaking, he steps away, about to leave the room, but the movement's hesitant. You study his face for a moment; he's avoiding your gaze, looking sheepish. You can't tell if it's because he's feeling guilty for interrupting you or if it's because what he came for *was* important and now he feels awkward.
+-> I'm sorry.
+    {$name}: Can we talk later? I'm really tired right now...
+    Rosinante: Of course, I didn't mean to wake you up.
+    Rosinante: As I said, it's not important.
     Rosinante: Good night.
-    As he closes the door behind himself as quietly as he can, you catch one last glimpse of his dejected expression and a pang of guilt runs through you. Maybe you should have heard him out…
-    But you can barely keep your eyes open. It’s not like you’d be able to give him your full attention anyway!
+    As he closes the door behind himself as quietly as he can, you catch one last glimpse of his dejected expression and a pang of guilt runs through you. Maybe you should have heard him out...
+    But you can barely keep your eyes open. It's not like you'd be able to give him your full attention anyway!
     <<jump date_rosinante_4_DATE_ENDS1>>
--> It’s OK.
+-> It's OK.
     {$name}: Please come in.
     You ignore the way your heart flutters at the soft smile he gives you; instead, you force yourself to sit up straight in your bed, rubbing at your eyes to force them to stay open just a bit longer. When you look up again, Rosinante is standing awkwardly in the middle of your room as if not sure what to do with himself.
     {$name}: Rosinante? You OK?
-    Rosinante jumps at your words and it feels like he doesn’t know how to say what’s on his mind.
-    Rosinante: Uhm…
+    Rosinante jumps at your words and it feels like he doesn't know how to say what's on his mind.
+    Rosinante: Uhm...
     Rosinante: Where—Where should I sit?
     {$name}: Just sit in the—
-    As you gesture towards the chair, the state that your room is in suddenly hits you. There’s a pile of clean clothes on your desk chair that you yet have to put where they belong, a few empty glass bottles that you keep forgetting to throw out, and several books and papers lying on the floor around your bed that you couldn’t have been bothered to put away.
+    As you gesture towards the chair, the state that your room is in suddenly hits you. There's a pile of clean clothes on your desk chair that you yet have to put where they belong, a few empty glass bottles that you keep forgetting to throw out, and several books and papers lying on the floor around your bed that you couldn't have been bothered to put away.
     You wince.
-    {$name}: Don’t say anything.
-    {$name}: Just… put the clothes wherever.
-    You see Rosinante’s lips twitching and you huff.
+    {$name}: Don't say anything.
+    {$name}: Just... put the clothes wherever.
+    You see Rosinante's lips twitching and you huff.
     {$name}: Sure, laugh at my mortification.
     With a sigh, you continue.
     {$name}: Sorry about the mess.
     Rosinante: You call this a mess? You should see my room.
     He chuckles as he grabs your clothes and places them on your desk before sitting down in the chair.
     Despite your better judgment, a smile pulls on your own lips in return.
-    But, your terrible home decor choices didn’t bring Rosinante here; you shift a little so that you’re facing Rosinante properly, giving him your full attention.
-	<<jump date_rosinante_4_TALK_START>>
+    But, your terrible home decor choices didn't bring Rosinante here; you shift a little so that you're facing Rosinante properly, giving him your full attention.
+    <<jump date_rosinante_4_TALK_START>>
 ===
 
 title: date_rosinante_4_TALK_START
 location: quarters
 ---
 
-You wait for a moment, but Rosinante doesn’t look eager to start talking. He’s sitting in your chair, his hands laid on his lap and playing with the hem of his shirt. He looks… nervous. Like he’s scared to tell you what he came for.
+You wait for a moment, but Rosinante doesn't look eager to start talking. He's sitting in your chair, his hands laid on his lap and playing with the hem of his shirt. He looks... nervous. Like he's scared to tell you what he came for.
 -> Wait for him
-    You’re very curious what’s gotten him like this, but it doesn’t feel right to push him to talk. And so, you sit quietly, giving him the time he needs.
+    You're very curious what's gotten him like this, but it doesn't feel right to push him to talk. And so, you sit quietly, giving him the time he needs.
     It takes a few more seconds of him silently chewing on his bottom lip until he finally opens his mouth to speak.
     <<jump date_rosinante_4_IfDate3>>
 -> Prompt him to start talking
-    {$name}: So…
+    {$name}: So...
     {$name}: What did you want to talk about?
     Rosinante startles, biting on his bottom lip. He mulls over his words for a second longer before finally opening his mouth to speak.
     <<jump date_rosinante_4_IfDate3>>
@@ -125,12 +125,12 @@ title: date_rosinante_4_IfDate3
 location: quarters
 ---
 
-Rosinante: I…
-Rosinante: When we were in town—at the library, I mean…
+Rosinante: I...
+Rosinante: When we were in town—at the library, I mean...
 Rosinante: Do you remember me mentioning my hometown?
 -> if date 3 ended during KIDS_BAD2 or VISITS_BAD2 //HOW DO????
     <<jump date_rosinante_4_DATE3_FAIL_KIDS>>
--> if date 3 ended during HOME_TOWN2 => 
+-> if date 3 ended during HOME_TOWN2 =>
     <<jump date_rosinante_4_DATE3_FAIL_MAPS>>
 -> if date 3 finished successfully
     <<jump date_rosinante_4_DATE3_SUCCESS>>
@@ -141,16 +141,16 @@ location: quarters
 ---
 
 You pause, tilting your head to the side, thinking back. He mentioned *something* about it in passing before the two of you made it to the library. Then, before you could ask him about it, he left.
-You cringe at the memory; could *that* have gone any worse? You really fucked up there, didn’t you?
-{$name}: Vaguely… You said that it had everything, I think?
-He nods, though his expression darkens. You can’t help but wonder whether he’s also remembering the bitter memory of that outing.
-Rosinante: It does. I wasn’t sure I wanted to talk about it with you but—
-Rosinante: I’d rather you hear it from *me* than find out through some rumor or something.
-You really don’t like the way he said it… But after last time, you suppose you can’t blame him.
-{$name}: You don’t have to tell me if you don’t want to…
+You cringe at the memory; could *that* have gone any worse? You really fucked up there, didn't you?
+{$name}: Vaguely... You said that it had everything, I think?
+He nods, though his expression darkens. You can't help but wonder whether he's also remembering the bitter memory of that outing.
+Rosinante: It does. I wasn't sure I wanted to talk about it with you but—
+Rosinante: I'd rather you hear it from *me* than find out through some rumor or something.
+You really don't like the way he said it... But after last time, you suppose you can't blame him.
+{$name}: You don't have to tell me if you don't want to...
 Rosinante shakes his head.
-Rosinante: I have to. There’s no more running from it.
-You frown a little, watching Rosinante as he closes his eyes, visibly preparing for what’s to come.
+Rosinante: I have to. There's no more running from it.
+You frown a little, watching Rosinante as he closes his eyes, visibly preparing for what's to come.
 <<jump date_rosinante_4_LOCATION1>>
 ===
 
@@ -159,15 +159,15 @@ location: quarters
 ---
 
 Of course you do. It seemed to be a really touchy subject for Rosinante.
-{$name}: You didn’t want to talk about it…
-A shadow passes over Rosinante’s face.
+{$name}: You didn't want to talk about it...
+A shadow passes over Rosinante's face.
 Rosinante: Yes. And you still pushed.
-You cringe at the reminder. You really overstepped there, even though he made it clear where he stood on the topic…
-Rosinante: Still, it’s partly on me, I overreacted. You…
+You cringe at the reminder. You really overstepped there, even though he made it clear where he stood on the topic...
+Rosinante: Still, it's partly on me, I overreacted. You...
 Rosinante: You deserve an explanation.
-{$name}: You don’t have to tell me if you don’t want to, Rosinante. I’m sorry about earlier, I don’t want to force you into telling me.
-Rosinante: No, it’s OK. I’d rather you hear it from me than some rumor or something.
-You tilt your head to the side as Rosinante visibly prepares for what’s to come.
+{$name}: You don't have to tell me if you don't want to, Rosinante. I'm sorry about earlier, I don't want to force you into telling me.
+Rosinante: No, it's OK. I'd rather you hear it from me than some rumor or something.
+You tilt your head to the side as Rosinante visibly prepares for what's to come.
 <<jump date_rosinante_4_LOCATION2>>
 ===
 
@@ -176,13 +176,13 @@ location: quarters
 ---
 
 Of course you do. It seemed to be a really touchy subject for Rosinante.
-{$name}: You didn’t want to talk about it…
+{$name}: You didn't want to talk about it...
 Rosinante smiles.
-Rosinante: And you let me drop it. I wasn’t ready to talk about it then, but…
-Rosinante: You’ve been a really good company and—
+Rosinante: And you let me drop it. I wasn't ready to talk about it then, but...
+Rosinante: You've been a really good company and—
 He stops suddenly, clearing his throat.
 Rosinante: You deserve to know.
-{$name}: You don’t have to tell me if you don’t want to, Rosinante. But if you’re sure, I’d love to hear it.
+{$name}: You don't have to tell me if you don't want to, Rosinante. But if you're sure, I'd love to hear it.
 Rosinante nods, looking you in the eyes earnestly.
 Rosinante: I know, I want to. Thank you.
 You return his smile, giving him a second to gather himself enough to actually start explaining.
@@ -194,31 +194,33 @@ location: quarters
 ---
 
 ::LOCATION1
-Rosinante: Where I was born, it’s—
-Rosinante: It’s true the place has everything you can think of and then *more* things you couldn’t even imagine. It’s… Grand. And beautiful. Also possibly the worst place in the world.
-Rosinante: It’s…
-Rosinante: Well…
+Rosinante: Where I was born, it's—
+Rosinante: It's true the place has everything you can think of and then *more* things you couldn't even imagine. It's... Grand. And beautiful. Also possibly the worst place in the world.
+Rosinante: It's...
+Rosinante: Well...
 He takes a deep breath, looking away as if to avoid seeing your reaction.
-Rosinante: I’m from Mariejois.
-You blink once, twice, trying to process the information. 
+Rosinante: I'm from Mariejois.
+You blink once, twice, trying to process the information.
 {$name}: Wait, hold on.
 {$name}: Mariejois? As in *that* Mariejois?
-Rosinante: The one and only…
+Rosinante: The one and only...
 {$name}: You were a slave?!
 Rosinante chuckles humorlessly.
 Rosinante: Sometimes, I wonder if that would have been better.
 So, not a slave.
-That only leaves…
-{$name}: Rosinante, you’re—
+That only leaves...
+{$name}: Rosinante, you're—
 {$name}: Are you a Celestial Dragon?
 He winces at the name, but nods.
 -> Kneel
-    <<declare $rd4_points -= 2>> <<jump date_rosinante_4_KNEEL>>
--> {$name}: You’re one of those assholes? 
-    <<declare $bd4_points -= 1>> <<jump date_rosinante_4_ATTACK>>
--> {$name}: I could never tell… 
+    <<set $rd4_points -= 2>>
+    <<jump date_rosinante_4_KNEEL>>
+-> {$name}: You're one of those assholes?
+    <<set $bd4_points -= 1>>
+    <<jump date_rosinante_4_ATTACK>>
+-> {$name}: I could never tell...
     <<jump date_rosinante_4_CONFUSION>>
--> Pretend to kneel 
+-> Pretend to kneel
     <<jump date_rosinante_4_TEASE>>
 ===
 
@@ -226,30 +228,32 @@ title: date_rosinante_4_LOCATION2
 location: quarters
 ---
 
-Rosinante: What I said before is true, you won’t find any maps of the place. It’s mostly for security, but also they’re not really needed. The people who have to know the way are either paid to remember the roads, or aren’t allowed to get distracted by something like looking at a map.
-Rosinante: It’s…
-Rosinante: Well…
+Rosinante: What I said before is true, you won't find any maps of the place. It's mostly for security, but also they're not really needed. The people who have to know the way are either paid to remember the roads, or aren't allowed to get distracted by something like looking at a map.
+Rosinante: It's...
+Rosinante: Well...
 He takes a deep breath, looking away as if to avoid seeing your reaction.
-Rosinante: I’m from Mariejois.
-You blink once, twice, trying to process the information. 
+Rosinante: I'm from Mariejois.
+You blink once, twice, trying to process the information.
 {$name}: Wait, hold on.
 {$name}: Mariejois? As in *that* Mariejois?
-Rosinante: The one and only…
+Rosinante: The one and only...
 {$name}: You were a slave?!
 Rosinante chuckles humorlessly.
 Rosinante: Sometimes, I wonder if that would have been better.
 So, not a slave.
-That only leaves…
-{$name}: Rosinante, you’re—
+That only leaves...
+{$name}: Rosinante, you're—
 {$name}: Are you a Celestial Dragon?
 He winces at the name, but nods.
 -> Kneel
-    <<declare $rd4_points -= 2>> <<jump date_rosinante_4_KNEEL>>
--> {$name}: You’re one of those assholes? 
-    <<declare $bd4_points -= 1>> <<jump date_rosinante_4_ATTACK>>
--> {$name}: I could never tell… 
+    <<set $rd4_points -= 2>>
+    <<jump date_rosinante_4_KNEEL>>
+-> {$name}: You're one of those assholes?
+    <<set $bd4_points -= 1>>
+    <<jump date_rosinante_4_ATTACK>>
+-> {$name}: I could never tell...
     <<jump date_rosinante_4_CONFUSION>>
--> Pretend to kneel 
+-> Pretend to kneel
     <<jump date_rosinante_4_TEASE>>
 ===
 
@@ -257,37 +261,38 @@ title: date_rosinante_4_KNEEL
 location: quarters
 ---
 
-Your eyes widen as the reality of the situation sinks in. 
-You’re in the presence of a *Celestial Dragon!* And you’ve been talking to him so casually… Oh god, what have you done?!
+Your eyes widen as the reality of the situation sinks in.
+You're in the presence of a *Celestial Dragon!* And you've been talking to him so casually... Oh god, what have you done?!
 You slide off the bed as fast as you can, immediately dropping to your knees and bowing as deeply as you can.
 {$name}: I am deeply sorry for my disrespect up until now. I humbly ask for forgiveness.
-There’s a moment of silence and you’re acutely aware of every breath you take and every beat of your heart.
-Rosinante: You can’t be serious…
+There's a moment of silence and you're acutely aware of every breath you take and every beat of your heart.
+Rosinante: You can't be serious...
 His voice is cold.
 Rosinante: I knew telling you would be a mistake.
-Rosinante: Get up, stop acting like this. I’m not a Celestial Dragon anymore, nor do I *want* to be. 
--> Stay on the ground. You need to show proper respect! <<declare $rd4_points -=1>>
+Rosinante: Get up, stop acting like this. I'm not a Celestial Dragon anymore, nor do I *want* to be.
+-> Stay on the ground. You need to show proper respect!
+    <<set $rd4_points -=1>>
     {$name}: I cannot do that, my Lord. You are one of the Gods of this land.
-    Rosinante goes quiet again and you can feel his burning gaze on you. 
+    Rosinante goes quiet again and you can feel his burning gaze on you.
     Rosinante: This is beyond ridiculous.
-    Rosinante: There’s obviously no point talking to you, but don’t you dare act this way ever again. Especially in front of other people or I will execute my power—as a *Vice Admiral*—and make sure you never set foot in Marineford again.
+    Rosinante: There's obviously no point talking to you, but don't you dare act this way ever again. Especially in front of other people or I will execute my power—as a *Vice Admiral*—and make sure you never set foot in Marineford again.
     Rosinante: Am I clear?
-    You don’t dare to look at him when you mumble your agreement.
+    You don't dare to look at him when you mumble your agreement.
     {$name}: Understood, sir.
     With a final, disappointed huff, Rosinante gets up from your chair and leaves, stubbing his toe on the way out.
-    Well… you definitely messed up. But you couldn’t just ignore the fact he’s a Celestial Dragon! Still, he sounded really upset.
+    Well... you definitely messed up. But you couldn't just ignore the fact he's a Celestial Dragon! Still, he sounded really upset.
     You can only hope that you can somehow fix this.
-	<<jump date_rosinante_4_DATE_ENDSBad>>
--> Apologize. He sounds upset…
-    {$name}: I’m sorry…
-    {$name}: I acted on instinct, I didn’t mean to be… I don’t know, *weird.*
+    <<jump date_rosinante_4_DATE_ENDSBad>>
+-> Apologize. He sounds upset...
+    {$name}: I'm sorry...
+    {$name}: I acted on instinct, I didn't mean to be... I don't know, *weird.*
     You sit up, glancing at Rosinante carefully. He looks upset, but he is still the same Rosinante. A marine, a Vice Admiral, a sweet, clumsy man. Why in the world did you do that?
     He sighs, shaking his head.
-    Rosinante: It’s fine, just…
+    Rosinante: It's fine, just...
     Rosinante: Never again.
     {$name}: Of course.
-    You climb back on your bed, taking a deep breath before meeting Rosinante’s eyes.
-    {$name}: Sorry, please continue. I assume it’s been a long time since you’ve lived there?
+    You climb back on your bed, taking a deep breath before meeting Rosinante's eyes.
+    {$name}: Sorry, please continue. I assume it's been a long time since you've lived there?
     <<jump date_rosinante_4_TIMELINE>>
 ===
 
@@ -295,17 +300,17 @@ title: date_rosinante_4_TEASE
 location: quarters
 ---
 
-It’s hard to believe. Rosinante, a Celestial Dragon?
-But then, the reality of the situation sinks in. You’re in the presence of a *Celestial Dragon!*
+It's hard to believe. Rosinante, a Celestial Dragon?
+But then, the reality of the situation sinks in. You're in the presence of a *Celestial Dragon!*
 You gulp heavily, biting on your bottom lip to keep your expression straight as you shift on your bed to a proper kneeling position. Then, you bow deeply, speaking in the most fake-sincere voice you can possibly muster.
 {$name}: I humbly kneel in the presence of a God. I deeply apologize for all reprehensible disrespect I may or may not have shown Your Godliness before today. I am so very honored by Your dazzling presence, oh Saint Rosinante.
 A beat of silence passes.
 Rosinante: Oh my god, *stop.*
 You can hear the anguish in his voice as he whines.
-Rosinante: This is really hard for me to talk about, you know. Don’t tease me on top of everything…
-Finally, you can’t hold your amusement in anymore; as a wave of giggles bursts out, you sit up straight once more, giving Rosinante one last cheeky grin.
-{$name}: Sorry, I couldn’t resist.
-{$name}: I’ll stop, please continue. I assume it’s been a long time since you’ve lived there?
+Rosinante: This is really hard for me to talk about, you know. Don't tease me on top of everything...
+Finally, you can't hold your amusement in anymore; as a wave of giggles bursts out, you sit up straight once more, giving Rosinante one last cheeky grin.
+{$name}: Sorry, I couldn't resist.
+{$name}: I'll stop, please continue. I assume it's been a long time since you've lived there?
 <<jump date_rosinante_4_TIMELINE>>
 ===
 
@@ -313,37 +318,38 @@ title: date_rosinante_4_ATTACK
 location: quarters
 ---
 
-{$name}: I can’t believe this! I knew the Navy was compliant to what the Celestial Dragons do but to allow one in their ranks?! This is ridiculous!
-As you go on with your rant, full of insults and malignance—fueled by anger over the slave survivor stories you’ve heard, as well as the coldhearted *murder* you’ve witnessed once before—, Rosinante stays eerily silent.
-It’s only when you pause to take a breath that he interrupts you, his voice carefully measured.
+{$name}: I can't believe this! I knew the Navy was compliant to what the Celestial Dragons do but to allow one in their ranks?! This is ridiculous!
+As you go on with your rant, full of insults and malignance—fueled by anger over the slave survivor stories you've heard, as well as the coldhearted *murder* you've witnessed once before—, Rosinante stays eerily silent.
+It's only when you pause to take a breath that he interrupts you, his voice carefully measured.
 Rosinante: I knew telling you would be a mistake.
 -> {$name}: Yes. It really was.
-    {$name}: I’ve lost all respect for you.
+    {$name}: I've lost all respect for you.
     Rosinante: I see.
     Rosinante: Then I guess we have nothing to talk about.
     His voice is cold as he gets up and turns to leave.
-    Rosinante: Respect or not, I am still your superior and this is an order. Do *not* speak to anyone about this or I’ll make sure you never set foot in Marineford again.
+    Rosinante: Respect or not, I am still your superior and this is an order. Do *not* speak to anyone about this or I'll make sure you never set foot in Marineford again.
     Rosinante: Am I clear?
-    You take a deep breath, about to snap something back, but something in Rosinante’s eyes stops you. You’ve clearly hurt him.
-    Well… Shit.
+    You take a deep breath, about to snap something back, but something in Rosinante's eyes stops you. You've clearly hurt him.
+    Well... Shit.
     You deflate, your eyes dropping to the ground.
     {$name}: Understood.
     With that, Rosinante exits your room, leaving behind heavy silence and a lot of regret.
-    You can only hope you can somehow fix this…
+    You can only hope you can somehow fix this...
     <<jump date_rosinante_4_DATE_ENDSBad>>
--> Suddenly, you realize what you’ve been saying. <<declare $rd4_points +=1>>
-    *Whom* you’ve been saying it to. A wave of shame and regret washes over you—after all, Rosinante’s never shown anything but kindness and care for other people and you’re here, accusing him of crimes someone who merely shared his birthplace committed.
+-> Suddenly, you realize what you've been saying.
+    <<set $rd4_points +=1>>
+    *Whom* you've been saying it to. A wave of shame and regret washes over you—after all, Rosinante's never shown anything but kindness and care for other people and you're here, accusing him of crimes someone who merely shared his birthplace committed.
     You take a deep breath, closing your eyes momentarily before you quickly slap your own cheeks.
     When you look at him again a second later, Rosinante looks clearly taken aback by the action.
-    {$name}: I’m sorry, I didn’t mean to say that. I know you’re nothing like *those* people, I just… I don’t know.
-    {$name}: It wasn’t aimed at you. I know you didn't choose where to be born.
-    He’s silent for a moment, and you gulp heavily. Every second feels like an eternity.
+    {$name}: I'm sorry, I didn't mean to say that. I know you're nothing like *those* people, I just... I don't know.
+    {$name}: It wasn't aimed at you. I know you didn't choose where to be born.
+    He's silent for a moment, and you gulp heavily. Every second feels like an eternity.
     Finally, he sighs.
-    Rosinante: It’s fine, I get it. I hate them too.
-    You’re glad to see he looks a lot more relaxed now than he did just a moment earlier; not so on edge and ready to leave you here with nothing but your own regret.
+    Rosinante: It's fine, I get it. I hate them too.
+    You're glad to see he looks a lot more relaxed now than he did just a moment earlier; not so on edge and ready to leave you here with nothing but your own regret.
     You clear your throat awkwardly.
     {$name}: Anyway.
-    {$name}: I assume it’s been a long time since you’ve lived there?
+    {$name}: I assume it's been a long time since you've lived there?
     <<jump date_rosinante_4_TIMELINE>>
 ===
 
@@ -352,19 +358,19 @@ location: quarters
 ---
 
 Rosinante, a Celestial Dragon?
-It just sounds… *wrong.*
-When you look at Rosinante, you see nothing but kindness and care for other people. You’ve never met a Celestial Dragon in person but you’ve heard enough to know they’re… none of *that.*
+It just sounds... *wrong.*
+When you look at Rosinante, you see nothing but kindness and care for other people. You've never met a Celestial Dragon in person but you've heard enough to know they're... none of *that.*
 Rosinante: {$name}?
-{$name}: Sorry, I’m… trying to wrap my head around this. I mean, this is actually insane.
-He doesn’t respond. 
-Nor do you say anything; even so, your mind is racing— and you’re sure Rosinante’s is doing the same.
-{$name}: OK, so…
+{$name}: Sorry, I'm... trying to wrap my head around this. I mean, this is actually insane.
+He doesn't respond.
+Nor do you say anything; even so, your mind is racing— and you're sure Rosinante's is doing the same.
+{$name}: OK, so...
 {$name}: I believe you. But I do feel like this is some fever dream right now.
 You laugh a little, and are surprised when Rosinante joins you with his own small chuckle.
 Rosinante: It feels like a fever dream talking about this to someone other than Sengoku.
 Taking a deep breath, you close your eyes, forcing your swirling thoughts to a stop. You can compute this all later.
-{$name}: Sorry, I’m good. Mariejois.
-{$name}: I assume it’s been a long time since you’ve lived there?
+{$name}: Sorry, I'm good. Mariejois.
+{$name}: I assume it's been a long time since you've lived there?
 <<jump date_rosinante_4_TIMELINE>>
 ===
 
@@ -372,53 +378,55 @@ title: date_rosinante_4_TIMELINE
 location: quarters
 ---
 
-Rosinante: I was six when my family left. We lost the status immediately, too, so I’m not technically a Celestial Dragon anymore either way.
-{$name}: That makes sense…
+Rosinante: I was six when my family left. We lost the status immediately, too, so I'm not technically a Celestial Dragon anymore either way.
+{$name}: That makes sense...
 {$name}: And you went to North Blue right after?
 Rosinante nods.
-Rosinante: We got this large mansion to live in and all. But we lost that pretty soon. People don’t take it very well when a disgraced Celestial Dragon starts living in the neighborhood, as you can probably imagine.
+Rosinante: We got this large mansion to live in and all. But we lost that pretty soon. People don't take it very well when a disgraced Celestial Dragon starts living in the neighborhood, as you can probably imagine.
 He laughs awkwardly, and you wince.
-Yeah, you *can* imagine. It wouldn’t be pretty, especially for a young child…
-{$name}: It must have been terrible…
-Rosinante: It was a long time ago. I think it turned out better for me this way, honestly. I can’t imagine living in Mariejois my whole life.
-{$name}: Don’t want to live in a golden cage with Cipher Pol at your every beck and call?
+Yeah, you *can* imagine. It wouldn't be pretty, especially for a young child...
+{$name}: It must have been terrible...
+Rosinante: It was a long time ago. I think it turned out better for me this way, honestly. I can't imagine living in Mariejois my whole life.
+{$name}: Don't want to live in a golden cage with Cipher Pol at your every beck and call?
 Rosinante: Hell no. Not for a second.
-You huff at how immediate and final his answer is. Honestly, you wouldn’t expect anything else.
+You huff at how immediate and final his answer is. Honestly, you wouldn't expect anything else.
 {$name}: Why did you guys leave anyway?
-A wistful smile pulls on Rosinante’s lips.
-Rosinante: My parents thought of themselves as human. They wanted to join ‘normal’ people.
+A wistful smile pulls on Rosinante's lips.
+Rosinante: My parents thought of themselves as human. They wanted to join ‘normal' people.
 {$name}: And they expected that to go well?
 He chuckles, but it sounds forced.
 Rosinante: Stupid, I know.
 -> Yes, incredibly so.
-   <<declare $rd4_points -=1>> <<jump date_rosinante_4_FAMILY_BAD>>
+   <<set $rd4_points -=1>>
+   <<jump date_rosinante_4_FAMILY_BAD>>
 -> Idealistic, more like.
-    <<declare $rd4_points +=1>> <<jump date_rosinante_4_FAMILY_GOOD>>
+    <<set $rd4_points +=1>>
+    <<jump date_rosinante_4_FAMILY_GOOD>>
 ===
 
 title: date_rosinante_4_FAMILY_GOOD
 location: quarters
 ---
 
-{$name}: Not stupid just… naive, I suppose. 
-{$name}: But they couldn’t have known any better since they never had the opportunity to see what the world was like away from the Red Line.
-Rosinante: I didn’t expect you to say that.
+{$name}: Not stupid just... naive, I suppose.
+{$name}: But they couldn't have known any better since they never had the opportunity to see what the world was like away from the Red Line.
+Rosinante: I didn't expect you to say that.
 Rosinante: It would be easy to blame them. Doffy certainly did. Or Father at least.
-You hum in agreement; you can just imagine Doflamingo reacting to the news… He wasn’t called *Heavenly Demon* for nothing after a—wait.
-{$name}: Hang on, is this why Doflamingo’s called “Heavenly Demon”? Because he was a Celestial Dragon?
-Rosinante: I’m honestly not sure. I never asked. But if it’s a coincidence, it’s one hell of an irony.
-Well… You wouldn’t put it past someone like Commodore Brannew to think they’re so clever coming up with that, but then again, how many people would have known? It would be a complete scandal if something like this became public.
+You hum in agreement; you can just imagine Doflamingo reacting to the news... He wasn't called *Heavenly Demon* for nothing after a—wait.
+{$name}: Hang on, is this why Doflamingo's called “Heavenly Demon”? Because he was a Celestial Dragon?
+Rosinante: I'm honestly not sure. I never asked. But if it's a coincidence, it's one hell of an irony.
+Well... You wouldn't put it past someone like Commodore Brannew to think they're so clever coming up with that, but then again, how many people would have known? It would be a complete scandal if something like this became public.
 Shaking your head, you focus back at Rosinante.
 {$name}: Your parents, what kind of people were they?
 Rosinante: They were very kind, both of them. They always tried to do the best for me and Doffy and the people working for us.
 {$name}: You mean the slaves.
 The words slip through your lips before you can stop yourself.
-The smile that appeared on Rosinante’s face while he talked about his parents drops immediately and he looks at you with an unreadable expression.
+The smile that appeared on Rosinante's face while he talked about his parents drops immediately and he looks at you with an unreadable expression.
 -> Say nothing. You said what you said.
     <<jump date_rosinante_4_SLAVES_NEUTRAL>>
--> Apologize. You didn’t mean anything by it.
+-> Apologize. You didn't mean anything by it.
     <<jump date_rosinante_4_SLAVES_SORRY>>
--> Demand to know how the slaves were treated. You wouldn’t stand for injustice. 
+-> Demand to know how the slaves were treated. You wouldn't stand for injustice.
     <<jump date_rosinante_4_SLAVES_ANGER>>
 ===
 
@@ -428,17 +436,17 @@ location: quarters
 
 He clicks his tongue.
 Rosinante: Doffy would definitely agree with you. About Father at least.
-{$name}: And you don’t? You said it yourself.
+{$name}: And you don't? You said it yourself.
 With a sigh, Rosinante shakes his head.
-Rosinante: I mean, yeah. But…
-Rosinante: My parents didn’t know any better. They lived their whole lives in a gilded cage. How were they supposed to know it would be *that* bad?
+Rosinante: I mean, yeah. But...
+Rosinante: My parents didn't know any better. They lived their whole lives in a gilded cage. How were they supposed to know it would be *that* bad?
 Rosinante: They were naive to be sure but—
-You frown, tilting your head to the side as you study Rosinante’s expression. You’re honestly taken aback by what you see—a wistful, sad look.
-{$name}: You don’t blame them? Not at all?
+You frown, tilting your head to the side as you study Rosinante's expression. You're honestly taken aback by what you see—a wistful, sad look.
+{$name}: You don't blame them? Not at all?
 {$name}: You could have had the most comfortable life and they tossed their children to the wolves because they thought it was a grand adventure or whatever.
-He gives you an annoyed look, but you’re *right,* OK?
-Rosinante: They were the kindest people I’ve ever known and I’m grateful to them for getting us out.
-Rosinante: Sure, the circumstances weren’t ideal, mistakes were made. But I’ll take it if the alternative is Mariejois.
+He gives you an annoyed look, but you're *right,* OK?
+Rosinante: They were the kindest people I've ever known and I'm grateful to them for getting us out.
+Rosinante: Sure, the circumstances weren't ideal, mistakes were made. But I'll take it if the alternative is Mariejois.
 Rosinante: You know what the place, the people living there are like.
 Rosinante: My parents were the exceptions. They were kind, they cared, and they always tried to do the best for me and Doffy *and* the people working for us.
 {$name}: You mean the slaves.
@@ -446,9 +454,9 @@ The words slip through your lips before you can stop yourself.
 Rosinante pauses, the frown on his face deepening the smallest bit as he looks at you with an unreadable expression.
 - Say nothing. You said what you said.
     <<jump date_rosinante_4_SLAVES_NEUTRAL>>
-- Apologize. You didn’t mean anything by it.
+- Apologize. You didn't mean anything by it.
     <<jump date_rosinante_4_SLAVES_SORRY>>
-- Demand to know how the slaves were treated. You wouldn’t stand for injustice. 
+- Demand to know how the slaves were treated. You wouldn't stand for injustice.
     <<jump date_rosinante_4_SLAVES_ANGER>>
 ===
 
@@ -458,35 +466,37 @@ location: quarters
 
 The both of you are silent for a long while before Rosinante sighs.
 Rosinante: There were other servants and security personnel but yes, the slaves too, as messed up as that is.
-Rosinante: It’s no excuse, but we always treated them well, just like we would any other person. I probably wouldn’t be able to live with myself today otherwise…
+Rosinante: It's no excuse, but we always treated them well, just like we would any other person. I probably wouldn't be able to live with myself today otherwise...
 -> {$name}: I know.
-    {$name}: You’re a very kind person, just like your parents. I can’t imagine you doing anything bad to anyone.
-    {$name}: Can’t say the same about Doflamingo but…
-    Rosinante laughs a little and you’re relieved.
-    Rosinante: Thank you. I’m glad you think so.
-    Warmth envelops you as your eyes meet Rosinante’s soft gaze.
+    {$name}: You're a very kind person, just like your parents. I can't imagine you doing anything bad to anyone.
+    {$name}: Can't say the same about Doflamingo but...
+    Rosinante laughs a little and you're relieved.
+    Rosinante: Thank you. I'm glad you think so.
+    Warmth envelops you as your eyes meet Rosinante's soft gaze.
     {$name}: Of course.
-    <<declare $rd4_points +=1>> <<jump date_rosinante_4_CLOSURE_GOOD>>
--> {$name}: That can’t be true.
+    <<set $rd4_points +=1>>
+    <<jump date_rosinante_4_CLOSURE_GOOD>>
+-> {$name}: That can't be true.
     {$name}: No Celestial Dragon is capable of seeing their slaves as human.
     {$name}: Just look how they act! At the human auctions in Sabaody! Or how Doflamingo turned out!
-    Rosinante: I’m not my brother.
-    Rosinante: And neither were our parents. They’ve never done one bad thing to any of their people.
-    His voice is cold. You’ve definitely upset him…
-	<<declare $rd4_points -=1>> <<jump date_rosinante_4_CLOSURE_BAD>>
+    Rosinante: I'm not my brother.
+    Rosinante: And neither were our parents. They've never done one bad thing to any of their people.
+    His voice is cold. You've definitely upset him...
+    <<set $rd4_points -=1>>
+    <<jump date_rosinante_4_CLOSURE_BAD>>
 ===
 
 title: date_rosinante_4_SLAVES_SORRY
 location: quarters
 ---
 
-{$name}: I’m sorry, I didn’t mean anything by it! Your parents sound lovely, I’m sure they didn’t even have slaves!
-Rosinante sighs, and you feel like there’s a tinge of disappointment in there…
-Rosinante: You’re overdoing it. Of course we had slaves while still in Mariejois. We treated them well, of course, though that’s no excuse. 
-Rosinante: There’s no way we *wouldn’t* have any. I’m sure you know that.
+{$name}: I'm sorry, I didn't mean anything by it! Your parents sound lovely, I'm sure they didn't even have slaves!
+Rosinante sighs, and you feel like there's a tinge of disappointment in there...
+Rosinante: You're overdoing it. Of course we had slaves while still in Mariejois. We treated them well, of course, though that's no excuse.
+Rosinante: There's no way we *wouldn't* have any. I'm sure you know that.
 Rosinante: So stop, please.
-You gulp. How much more obvious could you have made it that you’re scared to say the wrong thing? Damn it…
-{$name}: Yes, I’m sorry…
+You gulp. How much more obvious could you have made it that you're scared to say the wrong thing? Damn it...
+{$name}: Yes, I'm sorry...
 <<jump date_rosinante_4_CLOSURE_NEUTRAL>>
 ===
 
@@ -494,123 +504,127 @@ title: date_rosinante_4_SLAVES_ANGER
 location: quarters
 ---
 
-You can’t help the way your stomach turns at the very idea of anyone ‘owning’ slaves. You have to ask, you *have to*… But you’re not so sure you’ll be able to keep the hostility out of your voice…
-{$name}: You had slaves, didn’t you? How did you treat them?
+You can't help the way your stomach turns at the very idea of anyone ‘owning' slaves. You have to ask, you *have to*... But you're not so sure you'll be able to keep the hostility out of your voice...
+{$name}: You had slaves, didn't you? How did you treat them?
 *Good enough.* Hopefully.
-If Rosinante hears your anger and disgust, he doesn’t show it.
+If Rosinante hears your anger and disgust, he doesn't show it.
 Rosinante: We treated them well, just like any other person. Even Doffy never did or said anything to them, our mom made sure of it.
 -> Believe him. Rosinante wouldn't lie about this.
     You nod with a smile, and Rosinante gives you a teasing grin in return.
-    Rosinante: I’m glad you were worried about them. I get where you’re coming from, the slave market is disgusting…
+    Rosinante: I'm glad you were worried about them. I get where you're coming from, the slave market is disgusting...
     Oops.
     Yeah, he definitely could hear something from your tone.
     {$name}: I had to make sure, OK?
     You defend yourself with a small laugh, relieved.
-	<<declare $rd4_points +=1>> <<jump date_rosinante_4_CLOSURE_GOOD>>
--> Don’t believe him. There’s no way he’d admit it.
+    <<set $rd4_points +=1>>
+    <<jump date_rosinante_4_CLOSURE_GOOD>>
+-> Don't believe him. There's no way he'd admit it.
     You narrow your eyes at him.
     {$name}: Why should I believe you?
-    Rosinante lets out a short bark of laughter. He doesn’t sound very happy or amused though.
-    Rosinante: I get where you’re coming from, the slave market is disgusting.
-    Rosinante: So, if nothing else, I’m glad you’re worried about the people. 
+    Rosinante lets out a short bark of laughter. He doesn't sound very happy or amused though.
+    Rosinante: I get where you're coming from, the slave market is disgusting.
+    Rosinante: So, if nothing else, I'm glad you're worried about the people.
     He gives you a crooked smile.
     -> Admit defeat.
         With a huff, you finally nod.
         {$name}: OK, I get it. I trust you.
         Rosinante: Thank you.
-	    <<jump date_rosinante_4_CLOSURE_NEUTRAL>>
-    -> Still don’t believe him. <<declare $rd4_points -=1>>
-        {$name}: You didn’t answer me.
-        Rosinante: You have nothing but my word, I don’t know what else to tell you.
-        Rosinante: If you can’t trust me, then I think the discussion’s completely pointless, don’t you think?
-        You can’t say you’re happy with his answer, but he sounds annoyed. And well, he’s right. There’s nothing to talk about.
-	    <<jump date_rosinante_4_CLOSURE_BAD>>
+        <<jump date_rosinante_4_CLOSURE_NEUTRAL>>
+    -> Still don't believe him.
+        <<set $rd4_points -=1>>
+        {$name}: You didn't answer me.
+        Rosinante: You have nothing but my word, I don't know what else to tell you.
+        Rosinante: If you can't trust me, then I think the discussion's completely pointless, don't you think?
+        You can't say you're happy with his answer, but he sounds annoyed. And well, he's right. There's nothing to talk about.
+        <<jump date_rosinante_4_CLOSURE_BAD>>
 ===
 
 title: date_rosinante_4_CLOSURE_GOOD
 location: quarters
 ---
 
-The two of you exchange a smile. A moment passes in comfortable silence, a silence full of understanding, trust, and warmth. You couldn’t be more grateful that Rosinante has chosen to confide in you.
+The two of you exchange a smile. A moment passes in comfortable silence, a silence full of understanding, trust, and warmth. You couldn't be more grateful that Rosinante has chosen to confide in you.
 Finally, Rosinante clears his throat.
-Rosinante: Anyway…
-Rosinante: Now when you read the name Donquixote in history books, you’ll know who we are.
+Rosinante: Anyway...
+Rosinante: Now when you read the name Donquixote in history books, you'll know who we are.
 Rosinante: Thank you for hearing me out, {$name}.
 You shake your head with a small huff.
-{$name}: Thank *you* for trusting me with this. I won’t tell a soul.
-His smile widens, but suddenly, there’s also this uncertain look in his eyes.
+{$name}: Thank *you* for trusting me with this. I won't tell a soul.
+His smile widens, but suddenly, there's also this uncertain look in his eyes.
 Rosinante: Does what I told you change anything? Between us, I mean.
 Rosinante: Wait, that sounded wrong.
 Rosinante: I mean, do you see me differently, knowing my past?
--> No. <<declare $rd4_points +=2>>
-    You can’t help the giggle that bubbles out of his chest at the way he waves his arms around. You’re half-expecting him to fall off the chair any second now.
-    {$name}: Of course not. You’re still you, Rosinante.
+-> No.
+    <<set $rd4_points +=2>>
+    You can't help the giggle that bubbles out of his chest at the way he waves his arms around. You're half-expecting him to fall off the chair any second now.
+    {$name}: Of course not. You're still you, Rosinante.
     The smile he gives you this time is so bright that it almost blinds you and something stirs in your stomach at the sight.
     Before you can say anything more, a huge, embarrassing yawn escapes you.
     Rosinante chuckles and gets up. As he wishes you good night with one final grin—but not before accidentally knocking the pile of clothes on your desk to the ground—, you finally fall into your pillows once more.
-    It was an exhausting conversation, especially on top of everything that’s happened earlier in the day… But, you haven’t felt this good, this *happy* in a while.
-    You can’t wait to talk to Rosinante again. 
+    It was an exhausting conversation, especially on top of everything that's happened earlier in the day... But, you haven't felt this good, this *happy* in a while.
+    You can't wait to talk to Rosinante again.
     <<jump date_rosinante_4_BEST_ENDING>>
--> Maybe. <<declare $rd4_points +=1>>
-    {$name}: To be honest… I’m not sure.
-    {$name}: I don’t *think* so but… It’s a lot.
-    Rosinante smiles, but there’s a little sadness behind it.
+-> Maybe.
+    <<set $rd4_points +=1>>
+    {$name}: To be honest... I'm not sure.
+    {$name}: I don't *think* so but... It's a lot.
+    Rosinante smiles, but there's a little sadness behind it.
     Rosinante: I know. And I dropped it on you so suddenly too.
-    He laughs awkwardly and you shake your head. 
-    {$name}: Not at all, don’t worry! I just need to sleep on it to process it, that’s all.
-    {$name}: I’ll be full insubordination mode with you by tomorrow, I’m sure.
-    He laughs at your joke, and a wave of relief washes over you. Yeah, you’ll definitely stop feeling weird about this by morning. You won’t be able to stay away from that laugh for long if you try.
+    He laughs awkwardly and you shake your head.
+    {$name}: Not at all, don't worry! I just need to sleep on it to process it, that's all.
+    {$name}: I'll be full insubordination mode with you by tomorrow, I'm sure.
+    He laughs at your joke, and a wave of relief washes over you. Yeah, you'll definitely stop feeling weird about this by morning. You won't be able to stay away from that laugh for long if you try.
     Suddenly, a huge, embarrassing yawn escapes you.
-    {$name}: Sorry, I think this is it for me for tonight… 
+    {$name}: Sorry, I think this is it for me for tonight...
     With one last chuckle, Rosinante gets up from the chair and, wishing you good night, leaves you alone with your pillow once more—though not before accidentally knocking the pile of clothes on your desk to the ground.
-    It was an exhausting conversation, especially on top of everything that’s happened earlier in the day… But, you haven’t felt this good, this *happy* in a while.
-    You can’t wait to talk to Rosinante again.
-	<<jump date_rosinante_4_GOOD_Ending>>
+    It was an exhausting conversation, especially on top of everything that's happened earlier in the day... But, you haven't felt this good, this *happy* in a while.
+    You can't wait to talk to Rosinante again.
+    <<jump date_rosinante_4_GOOD_Ending>>
 ===
 
 title: date_rosinante_4_CLOSURE_NEUTRAL
 location: quarters
 ---
 
-A moment of silence passes between you; it’s not uncomfortable, just the type of silence where everything that needed to be said has been said.
+A moment of silence passes between you; it's not uncomfortable, just the type of silence where everything that needed to be said has been said.
 Finally, Rosinante clears his throat.
-Rosinante: Well, that’s it. That’s where I come from and why it’s hard for me to talk about.
-Rosinante: Now when you see the name Donquixote in history books, you’ll know who we are.
+Rosinante: Well, that's it. That's where I come from and why it's hard for me to talk about.
+Rosinante: Now when you see the name Donquixote in history books, you'll know who we are.
 {$name}: I get it. Thank you for telling me.
 Rosinante: No problem.
-Rosinante: Just… Don’t—
+Rosinante: Just... Don't—
 {$name}: Tell anyone. I know, I promise.
 Rosinante: Thank you, {$name}.
-You smile, but then frown slightly when you notice the uncertain look in Rosinante’s eyes.
+You smile, but then frown slightly when you notice the uncertain look in Rosinante's eyes.
 {$name}: Rosinante?
-Rosinante: I know it’s been a lot but… I hope it doesn’t change how you see me.
-{$name}: Well… it’s going to take a bit to process for sure…
-Rosinante: Right…
-{$name}: But I’ll be fine.
+Rosinante: I know it's been a lot but... I hope it doesn't change how you see me.
+{$name}: Well... it's going to take a bit to process for sure...
+Rosinante: Right...
+{$name}: But I'll be fine.
 He sighs in relief, giving you a small smile.
-Rosinante: That’s good to hear.
-Rosinante: I shouldn’t keep you up any longer, please get some rest, {$name}.
+Rosinante: That's good to hear.
+Rosinante: I shouldn't keep you up any longer, please get some rest, {$name}.
 With that, Rosinante gets up from the chair and, wishing you good night, leaves you alone with your pillow once more—though not before accidentally knocking the pile of clothes on your desk to the ground.
 As you let yourself fall face first into the pillow with a huge yawn, you feel the exhaustion from the conversation, and the day as a whole, set in.
-Taking a deep breath, you decide to think about all this tomorrow. Right now, you don’t have the capacity to process it all.
+Taking a deep breath, you decide to think about all this tomorrow. Right now, you don't have the capacity to process it all.
 <<jump date_rosinante_4_NEUTRAL_ENDING>>
 ===
 
-title: 
+title:
 location: quarters
 ---
 
-Uncomfortable silence settles over your room. You’re pretty sure this talk couldn’t have gone any worse than it did without Rosinante getting up and leaving in the middle.
+Uncomfortable silence settles over your room. You're pretty sure this talk couldn't have gone any worse than it did without Rosinante getting up and leaving in the middle.
 What can you say? *Is* there anything to say?
 Finally, Rosinante clears his throat. Even that simple sound is strained.
-Rosinante: Well, that’s it. My birthplace, and the truth about the Donquixote family.
-Rosinante: It’s clear you’re not thrilled about it but that’s how it is. At least you heard it from me.
-Rosinante: I’m not going to ask you to treat me the same, but I *do* ask you don’t tell anyone about this for obvious reasons.
+Rosinante: Well, that's it. My birthplace, and the truth about the Donquixote family.
+Rosinante: It's clear you're not thrilled about it but that's how it is. At least you heard it from me.
+Rosinante: I'm not going to ask you to treat me the same, but I *do* ask you don't tell anyone about this for obvious reasons.
 {$name}: Understood.
 With that, Rosinante gets up from the chair and, wishing you good night, leaves you alone with your pillow once more—though not before accidentally knocking the pile of clothes on your desk to the ground.
 As you let yourself fall face first into the pillow with a huge yawn, you feel the exhaustion from the conversation, and the day as a whole, set in.
-It wasn’t a pretty listen, it wasn’t a good conversation… But maybe, you should have been more understanding.
-There’s nothing you can do about it now, is there?
+It wasn't a pretty listen, it wasn't a good conversation... But maybe, you should have been more understanding.
+There's nothing you can do about it now, is there?
 <<jump date_rosinante_4_BAD_ENDING>>
 ===
 
@@ -653,5 +667,5 @@ title: date_rosinante_4_DATE_ENDS1
 location: quarters
 ---
 
-With a sigh, you close your eyes and before you know it, you’re fast asleep.
+With a sigh, you close your eyes and before you know it, you're fast asleep.
 ===
