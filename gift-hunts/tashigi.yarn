@@ -1,0 +1,97 @@
+title: Tashigi_Gift_Hunt_intro
+location: town
+---
+
+What a lovely winter day — crisp blue skies, and the cadets have been hard at work clearing snow away from the streets (and the rooftops, too!). It feels great to wander the streets on your day off... until suddenly, you hear a lot of commotion coming from the central plaza.
+Rounding the corner, you see that the main thoroughfare is packed with people and merchant stalls hawking wares. What is all this? A banner overhead answers your question: END OF YEAR SELLOUT
+Oh. That's right, the end of the year holidays are coming up... and New Years. A certain someone crosses your mind... will you perhaps achieve your goal of being kissed at midnight on New Years Eve? A woman rushes by with brightly colored wrapped gifts and something occurs to you. A gift. You should give them a gift! Can't hurt, certainly (hopefully...)!
+And where else to search for a gift but here, at this conveniently timed market?
+First though, who the heck are you shopping for?
+-character selection- //HOW DO??
+<<jump Tashigi_Gift_Hunt_START>>
+===
+
+title: Tashigi_Gift_Hunt_START
+location: town
+---
+
+You look around the myriad of colorful tents, trying to find something that would appeal to Tashigi. You have a couple of ideas, but none of them are really speaking to you.
+As you wander, however, two interesting stalls in this particular row catch your eye. It's time to make a choice. You decide to visit:
+-> A blacksmith's stall.
+    <<jump Tashigi_Gift_Hunt_good_gift>>
+-> A joke gift stall.
+    <<jump Tashigi_Gift_Hunt_bad_gift>>
+===
+
+title: Tashigi_Gift_Hunt_good_gift
+location: town
+---
+
+As you approach, the smell of cinders and iron washes over you. Inside the tent is a portable forge, an anvil, and some shelves filled with merchandise.
+The blacksmith, a burly woman with a wide grin and a scar across her lip, looks over at you, fixing you with an intense yet welcoming gaze.
+Owner: Ah, c'mon in! What can I getcha?
+{$name}: Um, I've got a... friend... who really likes swords. Have any recommendations on what I could get her? She owns a meito, so...
+Owner: Oh, a meito wielder, huh? Lemme think...
+You watch as the owner goes over to a shelf, looks around, and picks up a sack. She walks back over and hands it to you, and you open the sack to find what looks like a whetstone.
+However, this whetstone shimmers like diamond, even in the dim light of the stall. It's almost pristine, like it hasn't even been used. As you balance it in your hands, you can tell that it's got some real weight to it, and the texture even differs on each side.
+Owner: That there's a Queen of Diamonds whetstone! Real rare to come by. If your special someone loves swords, you'd be hard-pressed to find anythin' better than this.
+You're inclined to agree; even though you're not as knowledgeable about swords as Tashigi, you can tell that this is a quality item. You know that she has whetstones, though, and her swords are always in great condition... is this special enough to catch her attention? Would she want another whetstone?
+{$name}: Yeah, it's lovely...
+-> I'll take it!
+    <<jump Tashigi_Gift_Hunt_gift_wrapup_smith>>
+-> [If PC has not done Tashigi_Gift_Hunt_bad_gift] Thanks for your time. I'll have to think about it. //HOW DO??
+    Owner: Sure thing. Can't guarantee it'll still be here, though!
+    {$name}: I understand! Thanks!
+    {$name}: Now, where was that other stall...
+    <<jump Tashigi_Gift_Hunt_bad_gift>>
+-> [If PC has already done Tashigi_Gift_Hunt_bad_gift] Thanks for your time, but I'll have to pass. //HOW DO??
+    Owner: Oh, well that's a shame. But I hope you find something nice!
+    {$name}: Yeah! Thanks!
+    {$name}: Alright, I'm going to get that sign.
+    <<jump Tashigi_Gift_Hunt_gift_wrapup_joke>>
+===
+
+title: Tashigi_Gift_Hunt_bad_gift
+location: town
+---
+
+You head for the stall where you saw some joke gifts. Tashigi may be a serious person, but you know that she appreciates a good laugh. Maybe you can find something amusing for her here.
+As you step inside, you see that this stall is even more colorful than the others. There's plenty of coffee mugs with funny sayings like “World's Okayest CO”, but there's also a few other odds and ends.
+As you're looking around, your eyes fall on a particular sign. It's designed to be mounted to a wall, and it says “Days Without Incident:” with a small chalkboard attached, for filling in the number of days.
+???: Haha, you've got good taste!
+A voice sounds from behind you, and you spin around to see a shopkeeper who is smiling so widely that you think their face is dangerously close to splitting in half.
+Owner: That board's a big favorite among lower-ranking marines and bigwigs alike! I hand-painted it myself, and it's sure to survive any of the mishaps that you'd be marking on this board! ...Probably.
+Despite the owner's less-than-reassuring words, you give it some real thought. Tashigi is... well, she is pretty accident-prone, but she's always trying to improve herself. Maybe a board like this would get a laugh out of her, even as she's resetting it. Of course, she could also find it totally tasteless and think you're mocking her.
+Owner: Sooooooo?
+{$name}: I think...
+-> I'll take it!
+    <<jump Tashigi_Gift_Hunt_gift_wrapup_joke>>
+-> [If PC has not done Tashigi_Gift_Hunt_good_gift] I'm not sure. I'll have to think about it. //HOW DO??
+    Owner: Oh, but of course! Just come back for it soon!
+    {$name}: Yeah...
+    {$name}: Now, where was that other stall...
+    <<jump Tashigi_Gift_Hunt_good_gift>>
+-> [If PC has already done Tashigi_Gift_Hunt_good_gift] I'm not sure. Sorry. //HOW DO??
+    Owner: Oh, I see. Is there anything else that I can interest you in?
+    {$name}: No, I don't think so. Happy holidays!
+    {$name}: Alright, I'm going to get that whetstone.
+    <<jump Tashigi_Gift_Hunt_gift_wrapup_smith>>
+===
+
+title: Tashigi_Gift_Hunt_gift_wrapup_smith
+location: town
+---
+
+In the smith's tent, the blacksmith is all smiles as you get the price of the whetstone, hand her the berri, and take the sack. It's heavy in your hands, but you can't help but smile. Tashigi's going to love this, you can tell.
+You head back to your room, the smile never leaving your face.
+New Year's can't come soon enough!
+===
+
+title: Tashigi_Gift_Hunt_gift_wrapup_joke
+location: town
+---
+
+In the eye-wateringly colorful tent, the shopkeeper's grin somehow gets even wider as he tells you the price of the sign and you hand over the berri. As you grab the sign to take it back home, you can't help but smile. Tashigi's going to get a kick out of this, you think.
+You head back to your room, the smile never leaving your face.
+New Year's can't come soon enough!
+===

@@ -1,0 +1,145 @@
+title: rosinante_Gift_Hunt_intro
+location: town
+---
+
+What a lovely winter day — crisp blue skies, and the cadets have been hard at work clearing snow away from the streets (and the rooftops, too!). It feels great to wander the streets on your day off... until suddenly, you hear a lot of commotion coming from the central plaza.
+Rounding the corner, you see that the main thoroughfare is packed with people and merchant stalls hawking wares. What is all this? A banner overhead answers your question: END OF YEAR SELLOUT
+Oh. That's right, the end of the year holidays are coming up... and New Years. A certain someone crosses your mind... will you perhaps achieve your goal of being kissed at midnight on New Years Eve? A woman rushes by with brightly colored wrapped gifts and something occurs to you. A gift. You should give them a gift! Can't hurt, certainly (hopefully...)!
+And where else to search for a gift but here, at this conveniently timed market?
+First though, who the heck are you shopping for?
+-character selection- //HOW DO??
+<<jump rosinante_Gift_Hunt_ROSI_START>>
+===
+
+title: rosinante_Gift_Hunt_ROSI_START
+location: town
+---
+
+There are so many stalls. Where do you even *start?*
+For a while, you only walk around, scanning the signs for anything that would grab your attention. So far, it's mostly food, knitted hats, food, drinks, food... You half-expect to run into Instructor Garp any second now.
+You shake your head. No time to get distracted by the smells. You're on a mission here!
+Oh! One of *those* might work!
+-> Beauty & Cosmetics
+    They should have something in the cosmetics store. You still don't know much about make-up, but Rosinante's taught you enough to at least know what you're looking at. A year ago, you would look at a brush and wonder what it's used for but now, you're confident with it... *Mostly.*
+    You look over the available colour palettes, lipsticks, mascaras, and face paints, as well as the *many* brushes on display. You...may have overestimated yourself. A *little.*
+    Ah, whatever! Anything that looks nice should work, right?
+    Should you get them now or see if there's anything better?
+    -> Get the make-up
+        <<jump rosinante_Gift_Hunt_MAKEUP_END>>
+    -> Look elsewhere
+        Maybe you should look around more before making a decision...
+        <<jump rosinante_Gift_Hunt_ROSI_START>>
+-> Marine Merchandise
+    A stall selling official marine merchandise... Normally, you would think how pointless that is *here* of all places, but considering what you're currently hunting for, it feels almost too perfect.
+    Vendor: Hello and welcome! Anything you're looking for?
+    {$name}:: Hi, yes! Do you have any Warlord merch? Trafalgar Law, specifically?
+    Vendor: Sure! We have shirts, mugs, keychains, or a bundle box! Are you a fan? He is a handsome young man, isn't he?
+    {$name}:: Well... He's a creep, I'll give him that.
+    Vendor: Ah, a gift for someone special then, I see.
+    A small blush creeps up your face as you laugh awkwardly.
+    -> Get the merch box
+        <<jump <<jump rosinante_Gift_Hunt_MERCH_END>>
+    -> Look elsewhere
+        Maybe you should look around more before making a decision...
+        <<jump rosinante_Gift_Hunt_ROSI_START>>
+-> Furniture & Gadgets
+    Furniture and gadgets! You know exactly what to look for *there!*
+    You hurry over, immediately waving to the vendor.
+    {$name}:: Hi! Do you have any baby-proofing gadgets?
+    Vendor: Sure. Like some round edges for furniture?
+    {$name}:: Yes!
+    Vendor: How old is your baby?
+    Genuine laughter bubbles out of your chest.
+    {$name}:: Too old to be tripping over his own feet and bumping into furniture so often.
+    Vendor: Sounds like a headache. These good?
+    The vendor shows you a selection of baby-proofing supplies. You look them over...
+    -> Get the supplies
+        <<jump rosinante_Gift_Hunt_BABY_END>>
+    -> Look elsewhere
+        Maybe you should look around more before making a decision...
+        <<jump rosinante_Gift_Hunt_ROSI_START>>
+-> Second-hand Books
+    Can't go wrong with a book, right?
+    Right.
+    You head towards the stall advertising second-hand books and almost immediately regret your decision once their display comes into view. The place is absolutely *covered* in books. It's actually ridiculous.
+    How is a customer supposed to find anything in a pile that's taller than them?
+    Still, you let your gaze wander until something catches your eye.
+    (IF DATE 4 FINISHED SUCCESSFULLY) //HOW DO??
+    Without even thinking about it, you grab the book. It looks old and well-read; the dust jacket is yellowed and torn so badly you're shocked the whole thing isn't covered in duct tape.
+    “Don Quixote”, the title says.
+    Rosinante's family name, or at least, incredibly close to it.
+    You giggle at the cartoonish picture of a man pointing a sword at a windmill. It looks like a funny book, too!
+    -> Get the book
+        <<jump rosinante_Gift_Hunt_BOOK_END>>
+    -> Look elsewhere
+        Maybe you should look around more before making a decision...
+        <<jump rosinante_Gift_Hunt_ROSI_START>>
+    (IF DATE 4 FAILED) //HOW DO??
+    With all the books, you didn't even notice this place sold little decorations too! A smile appears on your face as you reach for the tiny plushies that sit in the corner of the display.
+    They're a matching duo or birds... Or maybe saying they were the same bird in different colours would be more accurate. The little flamingo and black swan are just big enough to fit in your palms perfectly. Their feathers are so soft and fluffy too!
+    They're incredibly cute. Even the flamingo, which reminds you of... Well, *Doflamingo.*
+    -> Get the birds
+        <<jump rosinante_Gift_Hunt_BIRDS_END>>
+    -> Look elsewhere
+        Maybe you should look around more before making a decision...
+        <<jump rosinante_Gift_Hunt_ROSI_START>>
+(AFTER ALL CHOICES SELECTED) //HOW DO??
+Looks like there's nothing else... It's time to make a decision!
+-> Make-up
+    <<jump rosinante_Gift_Hunt_MAKEUP_END>>
+-> Surgeon of Death merch box
+    <<jump rosinante_Gift_Hunt_MERCH_END>>
+-> Baby-proofing
+    <<jump rosinante_Gift_Hunt_BABY_END>>
+-> Book OR Birds //HOW DO??
+    <<jump rosinante_Gift_Hunt_BOOK_END>>
+    <<jump rosinante_Gift_Hunt_BIRDS_END>> //HOW DO??
+===
+
+title: rosinante_Gift_Hunt_MAKEUP_END
+location: town
+---
+
+No matter how you look at it, getting him a make-up kit feels like the best option. Rosinante loves make-up, after all. Whenever he puts it on, he looks like he's having so much fun!
+Not to mention he's so pretty with it on... It's a win for everyone!
+Nodding to yourself, you choose the palette that you feel would suit him best and make your purchase.
+You can't wait to see Rosinante's eyes light up when he opens his gift!
+===
+
+title: rosinante_Gift_Hunt_MERCH_END
+location: town
+---
+
+Well. You may not like Law at all, but Rosinante obviously loves him a lot; he'll probably be elated to have something to remind him of his son! Even if it's cheesy merch.
+Honestly, it's so cheesy it's actually cute; you might have to steal one of those dumb keychains for yourself...
+Alright, it's decided!
+As you make your purchase, you can't help but look forward to the smile Rosinante gives you when he opens his gift.
+===
+
+title: rosinante_Gift_Hunt_BABY_END
+location: town
+---
+
+Considering the amount of times Rosinante impales himself on table corners or stubs his toes on any given day... The baby-proofing kit should be your best bet after all. It's practical and protects him!
+Not to mention it's *funny.*
+As you pay for your purchase, worry suddenly creeps up on you. Hopefully Rosinante doesn't get offended...
+===
+
+title: rosinante_Gift_Hunt_BOOK_END
+location: town
+---
+
+The book should make a decent gift, right? With a name like that, it could remind him of his family during happier times...
+And if not, well... Who doesn't like a book?
+No one, that's who!
+You finish your purchase, happy to have found your gift.
+===
+
+title: rosinante_Gift_Hunt_BIRDS_END
+location: town
+---
+
+The birdies should make a decent gift, right? Remind Rosinante of his brother, during happier times. Times when one of them *wasn't* in Impel Down.
+And if it doesn't work, well... They're still really cute, so it should be fine!
+You finish your purchase, happy to have found your gift.
+===

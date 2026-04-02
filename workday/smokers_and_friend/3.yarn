@@ -3,64 +3,66 @@ location: mess hall
 ---
 
 The mess hall will be closed for another hour or so. It feels a little eerie, entering and flicking on the lights to reveal the silent, empty room. It always feels that way when entering a space that is normally filled with people and voices.
-Bellemere: Brrr… Is it always this creepy in here at 6 AM!? 
-Tashigi: Ah, yes. You’re not usually up this early, are you, Commodore? It’s always a bit strange when it’s so silent, but it’s up to us on mess hall duty to fill the silence with cheer until the others get here! We can do it!
-Bellemere: “Cheer” doesn’t exist at this hour.
+Bellemere: Brrr... Is it always this creepy in here at 6 AM!?
+Tashigi: Ah, yes. You're not usually up this early, are you, Commodore? It's always a bit strange when it's so silent, but it's up to us on mess hall duty to fill the silence with cheer until the others get here! We can do it!
+Bellemere: “Cheer” doesn't exist at this hour.
 Hina: Hina does not enjoy being forced to work because of the incompetence of others.
-Smoker: Well, it is what it is. We need to serve hundreds of Marines today, and it’s not like some of us aren’t already getting up for the early watch. Grab an extra cup of coffee, but you’d better drink it quick and get moving.
+Smoker: Well, it is what it is. We need to serve hundreds of Marines today, and it's not like some of us aren't already getting up for the early watch. Grab an extra cup of coffee, but you'd better drink it quick and get moving.
 {$name}: Why so suddenly? When my den den mushi rang so early, I thought there was some emergency!
-Tashigi: Well, it is an emergency. But a small one! We’re very glad you picked up and were able to help us out. You see, several of the cooks called in sick. I suspect it might be food poisoning. Maybe the flu.
-Hina: Tch, Hina suspects that the cooks are “sick” from the raucous party they attended last night. Too many festivals this time of year and not enough routine and discipline. That would explain why we’re out of cooking sherry.
-Bellemere: Nothing worse than a bunch of hungry Marines… but couldn’t they have chosen another unit to deal with this? I can cook, alright, but not before the sun is up!
-Smoker: So, here’s how it’ll go. Hina and Commodore Bellemere will take the cooking, which leaves me and Tashigi to serve up the food.
-Tashigi: Sounds great, Vice Admiral Smoker, sir! We’re going to be a tightly run operation. Nobody will go hungry today—not on our watch!
-Hina: Hina suspects we will need at least one extra hand in the kitchen or making food. 
+Tashigi: Well, it is an emergency. But a small one! We're very glad you picked up and were able to help us out. You see, several of the cooks called in sick. I suspect it might be food poisoning. Maybe the flu.
+Hina: Tch, Hina suspects that the cooks are “sick” from the raucous party they attended last night. Too many festivals this time of year and not enough routine and discipline. That would explain why we're out of cooking sherry.
+Bellemere: Nothing worse than a bunch of hungry Marines... but couldn't they have chosen another unit to deal with this? I can cook, alright, but not before the sun is up!
+Smoker: So, here's how it'll go. Hina and Commodore Bellemere will take the cooking, which leaves me and Tashigi to serve up the food.
+Tashigi: Sounds great, Vice Admiral Smoker, sir! We're going to be a tightly run operation. Nobody will go hungry today—not on our watch!
+Hina: Hina suspects we will need at least one extra hand in the kitchen or making food.
 Which will you volunteer to do?
--> I’m a decent cook! I’ll help out Commodore Bellemere and Rear Admiral Hina
-	<<jump workday_smokers_and_friend_3_cook>>
--> I’m a people person! I’ll help serve food with Captain Tashigi and Vice Admiral Smoker!
-	 <<jump workday_smokers_and_friend_3_serve>>
+-> I'm a decent cook! I'll help out Commodore Bellemere and Rear Admiral Hina
+    <<jump workday_smokers_and_friend_3_cook>>
+-> I'm a people person! I'll help serve food with Captain Tashigi and Vice Admiral Smoker!
+     <<jump workday_smokers_and_friend_3_serve>>
 ===
 
 title: workday_smokers_and_friend_3_cook
 title: mess hall
 ---
 
-The three of you head into the kitchen, and find a corkboard loaded with recipe cards and a calendar of planned meals. It’s very haphazard, but clean, and you think that between the three of you, you can pull through.
-Hina: Tch, Hina can barely even read half of these. Such terrible handwriting. The disorganization here is absolutely criminal. Hina will have a word with the head chef that the necessity of law and order extends through all our ranks, and that includes the galley. 
+The three of you head into the kitchen, and find a corkboard loaded with recipe cards and a calendar of planned meals. It's very haphazard, but clean, and you think that between the three of you, you can pull through.
+Hina: Tch, Hina can barely even read half of these. Such terrible handwriting. The disorganization here is absolutely criminal. Hina will have a word with the head chef that the necessity of law and order extends through all our ranks, and that includes the galley.
 Bellemere pulls down one of the recipe cards, reads it, and throws it to the ground. She pulls down another. Then another.
 Bellemere: Ah ha! A stew! A stew is easy; we can manage that, right?
 Hina takes the card from her, giving it an intense stare.
 Hina: Hina most certainly can. Start getting the materials together.
-Bellemere: I’ll get right on it, ma’am!
-You don’t think you’ve ever seen Bellemere follow an order so fast. It’s obvious that she carries a lot of respect for the Rear Admiral.
+Bellemere: I'll get right on it, ma'am!
+You don't think you've ever seen Bellemere follow an order so fast. It's obvious that she carries a lot of respect for the Rear Admiral.
 The calendar says the chefs were supposed to make “cordon bleu” today, but you agree with the assessment of your two superiors: keep it simple and doable.
 Hina: We will address the job better if we divide up tasks. {$name}—what skills do you have to offer in this situation?
 -> I can cut the veggies!
-	<<jump workday_smokers_and_friend_3_veggies>>
+    <<jump workday_smokers_and_friend_3_veggies>>
 -> Someone needs to mix the broth and stir the stew, right?
-	<<jump workday_smokers_and_friend_3_stir>>
--> I suppose we’ll need to peel a lot of potatoes!
-	<<jump workday_smokers_and_friend_3_potatoes>>
+    <<jump workday_smokers_and_friend_3_stir>>
+-> I suppose we'll need to peel a lot of potatoes!
+    <<jump workday_smokers_and_friend_3_potatoes>>
 ===
 
 title: workday_smokers_and_friend_3_veggies
 location: mess hall
 ---
 
-You get to work right away, humming as you wash a giant pile of peppers, carrots, and celery. The recipe calls for some herbs to be crushed too, but you see Hina working to that end as she begins to mix the broth. 
-Bellemere: Aw, man, I didn’t think I’d be back to doing this again… I peeled a lot of potatoes in my early days!
-Hina: I thought it was tangerines, Commodore…
+You get to work right away, humming as you wash a giant pile of peppers, carrots, and celery. The recipe calls for some herbs to be crushed too, but you see Hina working to that end as she begins to mix the broth.
+Bellemere: Aw, man, I didn't think I'd be back to doing this again... I peeled a lot of potatoes in my early days!
+Hina: I thought it was tangerines, Commodore...
 Bellemere: Of course! I was just being nostalgic—no complaints from me!
 Huh. You can definitely see why Bellemere admires Hina: both women are tough and no-nonsense. It seems that Bellemere, for one, finds her superior superior in more ways than one.
-Bellemere: The recipe calls for fresh ground pepper… did we find that?
+Bellemere: The recipe calls for fresh ground pepper... did we find that?
 Hina: {$name}, go retrieve the pepper.
-You stop what you’re doing and head back to the cupboard. There are two jars labeled “Peppercorn”, but only one is black. The other is bright pink, which intrigues you. You open the jar and sniff it to find that there’s a slightly floral scent on top of the usual sharpness of pepper.
-You could get creative…or just stick to the recipe exactly.
--> Go with the pink peppercorn <<declare wdsf3H_points -=1>>
-	<<jump workday_smokers_and_friend_3_pink>>
--> Stick with the tried and true black pepper <<set wdsf3H_points +=1>>
-	<<jump workday_smokers_and_friend_3_black>>
+You stop what you're doing and head back to the cupboard. There are two jars labeled “Peppercorn”, but only one is black. The other is bright pink, which intrigues you. You open the jar and sniff it to find that there's a slightly floral scent on top of the usual sharpness of pepper.
+You could get creative...or just stick to the recipe exactly.
+-> Go with the pink peppercorn
+    <<set wdsf3H_points -=1>>
+    <<jump workday_smokers_and_friend_3_pink>>
+-> Stick with the tried and true black pepper
+    <<set wdsf3H_points +=1>>
+    <<jump workday_smokers_and_friend_3_black>>
 ===
 
 title: workday_smokers_and_friend_3_pink
@@ -68,7 +70,7 @@ location: mess hall
 ---
 
 <<declare $ingredientPink = true>> //HOW DO??
-Interesting choice! You taste a little, and it seems a bit sweet and tangy… could be good with the stew!
+Interesting choice! You taste a little, and it seems a bit sweet and tangy... could be good with the stew!
 <<jump workday_smokers_and_friend_3_chop>>
 ===
 
@@ -77,7 +79,7 @@ location: mess hall
 ---
 
 <<declare $ingredientBlack = true>> //HOW DO??
-Why fix what ain’t broke?
+Why fix what ain't broke?
 <<jump workday_smokers_and_friend_3_chop>>
 ===
 
@@ -85,14 +87,16 @@ title: workday_smokers_and_friend_3_chop
 location: mess hall
 ---
 
-You grind up the peppercorn and hand a bowl of it off to Hina, then get back to chopping your cleaned vegetables. 
-Your mom once had advice for cutting onions… what was it again?
+You grind up the peppercorn and hand a bowl of it off to Hina, then get back to chopping your cleaned vegetables.
+Your mom once had advice for cutting onions... what was it again?
 -> Use a very sharp knife!
-	<<jump workday_smokers_and_friend_3_sharp>>
--> Wear goggles! <<declare wdsf3B_points +=1>> <<set wdsf3H_points +=1>>
-	<<jump workday_smokers_and_friend_3_goggles>>
--> Freeze it! <<set wdsf3H_points -=1>>
-	<<jump workday_smokers_and_friend_3_freeze>>
+    <<jump workday_smokers_and_friend_3_sharp>>
+-> Wear goggles! <<set wdsf3B_points +=1>>
+    <<set wdsf3H_points +=1>>
+    <<jump workday_smokers_and_friend_3_goggles>>
+-> Freeze it!
+    <<set wdsf3H_points -=1>>
+    <<jump workday_smokers_and_friend_3_freeze>>
 ===
 
 title: workday_smokers_and_friend_3_sharp
@@ -101,21 +105,23 @@ location: mess hall
 
 Bellemere: What, exactly, are you doing, {$name}?
 {$name}: Oh? I was just hoping a sharper knife would release less juice from the onions.
-Bellemere is currently peeling a large pile of potatoes, and showing remarkable proficiency at the task. You’ll have enough to feed the whole regiment for the day within an hour at this pace.
--> Wow! How do you do that so fast!? <<set wdsf3B_points +=1>>
-	<<jump workday_smokers_and_friend_3_wow>>
--> Is peeling potatoes a common punishment for goofing off in the Marines? <<set wdsf3B_points -=1>>
-	<<jump workday_smokers_and_friend_3_joke>>
--> Don’t distract her.
-	<<jump workday_smokers_and_friend_3_nothing>>
+Bellemere is currently peeling a large pile of potatoes, and showing remarkable proficiency at the task. You'll have enough to feed the whole regiment for the day within an hour at this pace.
+-> Wow! How do you do that so fast!?
+    <<set wdsf3B_points +=1>>
+    <<jump workday_smokers_and_friend_3_wow>>
+-> Is peeling potatoes a common punishment for goofing off in the Marines?
+    <<set wdsf3B_points -=1>>
+    <<jump workday_smokers_and_friend_3_joke>>
+-> Don't distract her.
+    <<jump workday_smokers_and_friend_3_nothing>>
 ===
 
 title: workday_smokers_and_friend_3_wow
 location: mess hall
 ---
 
-Bellemere: Oh? You try making three square meals a day for growing kids on a farmer’s budget! Potatoes are versatile; they keep well and are quick to grow. That’s why we get so damn many of them in the Marines.
-That makes sense, though you’re still impressed.
+Bellemere: Oh? You try making three square meals a day for growing kids on a farmer's budget! Potatoes are versatile; they keep well and are quick to grow. That's why we get so damn many of them in the Marines.
+That makes sense, though you're still impressed.
 <<jump workday_smokers_and_friend_3_sharp2>>
 ===
 
@@ -126,8 +132,8 @@ location: mess hall
 Bellemere: Oh, ha ha.
 Her response is dry, accompanied by a roll of her eyes.
 {$name}: Just, uh, joking!
-Hina: Hina can recall that peeling potatoes used to be a fairly common consequence for failure amongst the new recruits. It was meant to instill a sense of duty in even the most mundane tasks, a teaching tool for those new recruits who were… unruly.
-Bellemere: I, uh… well, yes, perhaps I was ordered to peel potatoes often enough when I was new… but I also got the mom skills! Potatoes are a cheap and easy way to feed growing girls!
+Hina: Hina can recall that peeling potatoes used to be a fairly common consequence for failure amongst the new recruits. It was meant to instill a sense of duty in even the most mundane tasks, a teaching tool for those new recruits who were... unruly.
+Bellemere: I, uh... well, yes, perhaps I was ordered to peel potatoes often enough when I was new... but I also got the mom skills! Potatoes are a cheap and easy way to feed growing girls!
 A fair point.
 <<jump workday_smokers_and_friend_3_sharp2>>
 ===
@@ -144,23 +150,25 @@ title: workday_smokers_and_friend_3_sharp2
 location: mess hall
 ---
 
-When you return to your task and begin cutting up the onions, you find that the sharper knife is not as effective as you’d hoped. You’re still sobbing by the end of it, tears cutting tracks down your cheeks as you tilt your head back to avoid getting them on the food. Maybe you should try something else?
--> Try the goggles. <<set wdsf3B_points +=1>> <<set wdsf3H_points +=1>>
-	<<jump workday_smokers_and_friend_3_goggles>>
--> Freeze it! <<set wdsf3H_points -=1>>
-	<<jump workday_smokers_and_friend_3_freeze>>
+When you return to your task and begin cutting up the onions, you find that the sharper knife is not as effective as you'd hoped. You're still sobbing by the end of it, tears cutting tracks down your cheeks as you tilt your head back to avoid getting them on the food. Maybe you should try something else?
+-> Try the goggles. <<set wdsf3B_points +=1>>
+    <<set wdsf3H_points +=1>>
+    <<jump workday_smokers_and_friend_3_goggles>>
+-> Freeze it!
+    <<set wdsf3H_points -=1>>
+    <<jump workday_smokers_and_friend_3_freeze>>
 ===
 
 title: workday_smokers_and_friend_3_goggles
 location: mess hall
 ---
 
-You’re not sure if this was exactly your mother’s method, but it makes sense, right?
-It takes some digging in a supply closet, but when you come back into the kitchen wearing thick safety goggles, both women immediately start laughing. Hina’s laugh is sharp and suppressed behind a hand, but Bellemere just throws back her head as she pauses her potato peeling.
+You're not sure if this was exactly your mother's method, but it makes sense, right?
+It takes some digging in a supply closet, but when you come back into the kitchen wearing thick safety goggles, both women immediately start laughing. Hina's laugh is sharp and suppressed behind a hand, but Bellemere just throws back her head as she pauses her potato peeling.
 Bellemere: What in the—
-Hina: I don’t believe this is standard for the Marine uniform, {$name}.
-{$name}: Hey, I hate cutting onions! I don’t want to cry all day, okay!?
-You’re feeling perhaps a tad defensive. Still, you finish your task, albeit looking pretty ridiculous while doing it.
+Hina: I don't believe this is standard for the Marine uniform, {$name}.
+{$name}: Hey, I hate cutting onions! I don't want to cry all day, okay!?
+You're feeling perhaps a tad defensive. Still, you finish your task, albeit looking pretty ridiculous while doing it.
 IF CONDITION SET: pink => <<jump workday_smokers_and_friend_3_Finish_2>> //HOW DO??
 If NOT => <<jump workday_smokers_and_friend_3_Finish_1>>
 ===
@@ -170,26 +178,26 @@ location: mess hall
 ---
 
 You pop the box of onions in the freezer and move on to the carrots, cutting them into even-sized medallions. Then, you cut the peppers into strips, making sure to give the onions time to get good and cold.
-When you pull them out, they’re cold, and maybe a bit hard to cut… but they don’t make you cry!
+When you pull them out, they're cold, and maybe a bit hard to cut... but they don't make you cry!
 You grin madly, which eventually catches the attention of Hina as she grabs some red wine vinegar to add to the stew stock.
-Hina: {$name}, are you cooking or attempting to be hired by Dr. Vegapunk? This discombobulated directive will result in you mutilating yourself. 
+Hina: {$name}, are you cooking or attempting to be hired by Dr. Vegapunk? This discombobulated directive will result in you mutilating yourself.
 {$name}: Ah, yeah, I just remembered this trick.
-Hina: Doesn’t that make it dangerous to cut?
+Hina: Doesn't that make it dangerous to cut?
 {$name}: How so?
 At that moment, your knife slips off the thawing surface, slicing neatly into your thumb.
-For a moment, you just stare down at the blood, frozen. And then…
+For a moment, you just stare down at the blood, frozen. And then...
 {$name}: AHHHH!
-Hina: For the love of… Bellemere! Bellemere! Get the damn first aid kit! Really {$name}, if you disliked cooking duty so much, there are better ways to render yourself inadequate. 
-Bellemere: I’ll get it!
+Hina: For the love of... Bellemere! Bellemere! Get the damn first aid kit! Really {$name}, if you disliked cooking duty so much, there are better ways to render yourself inadequate.
+Bellemere: I'll get it!
 Bellemere returns with a white box, and together she and Hina sift through its contents.
 {$name}: S-should I go to the infirmary, or—
-Bellemere: Doesn’t look that bad, {$name}.
+Bellemere: Doesn't look that bad, {$name}.
 Hina: {$name}, so help me, you are not dodging cooking duty because you failed to appropriately handle a knife, of all asinine outcomes. One more word of protest, and Hina will have you working in here for the rest of the month.
-You pout. Maybe it’s easy to assess a situation when you’re not the one bleeding all over the friggin’ onions!
+You pout. Maybe it's easy to assess a situation when you're not the one bleeding all over the friggin' onions!
 You wash the cut, and Hina throws a tube of cream at you, ordering you to apply the disinfectant. Bellemere, meanwhile, unwraps a roll of gauze, and the moment your wound is cleaned, she begins to wrap it.
-{$name}: Sorry…
+{$name}: Sorry...
 You feel sheepish, making them go through all this trouble.
-Hina: Your vaccinations had better be up to date, {$name}. Hina is not about to suffer you missing drills because you’ve acquired some infection. Then again, perhaps such a punishment might not be so bad after your nonsense.
+Hina: Your vaccinations had better be up to date, {$name}. Hina is not about to suffer you missing drills because you've acquired some infection. Then again, perhaps such a punishment might not be so bad after your nonsense.
 Once your wound is dressed, you insist on returning to your task, cleaning up the blood and then cutting the onions with far more care.
 IF CONDITION SET: pink => <<jump workday_smokers_and_friend_3_Finish_2>> //HOW DO??
 If NOT => <<jump workday_smokers_and_friend_3_Finish_1>>
@@ -199,11 +207,11 @@ title: workday_smokers_and_friend_3_Finish_1
 location: mess hall
 ---
 
-You finish cutting the veggies, and bring them to the Vice Admiral to add to the pot before returning to cut more. You’re all going to be making the same recipe multiple times today, after all.
+You finish cutting the veggies, and bring them to the Vice Admiral to add to the pot before returning to cut more. You're all going to be making the same recipe multiple times today, after all.
 It takes a couple hours to get ready, just as, by the sound of it, the cafeteria is starting to grow crowded with the lunch rush.
 Hina tastes the soup, bringing a spoonful up to her pink lips. She takes a moment, considering.
 Hina: Adequate.
-You decide to take that as the highest praise. 
+You decide to take that as the highest praise.
 <<jump workday_smokers_and_friend_3_drinks>>
 ===
 
@@ -211,15 +219,15 @@ title: <<workday_smokers_and_friend_3_Finish_2>>
 location: mess hall
 ---
 
-You finish cutting the veggies, and bring them to the Vice Admiral to add to the pot before returning to cut more. You’re all going to be making the same recipe multiple times today, after all.
+You finish cutting the veggies, and bring them to the Vice Admiral to add to the pot before returning to cut more. You're all going to be making the same recipe multiple times today, after all.
 It takes a couple hours to get ready, just as, by the sound of it, the cafeteria is starting to grow crowded with the lunch rush.
 Hina tastes the soup, bringing a spoonful up to her pink lips. She takes a moment, considering.
 Hina: Hina tastes something that is peculiar. What was the pink spice that you procured for Hina?
-{$name}: Uh… pink peppercorn.
+{$name}: Uh... pink peppercorn.
 Hina: So you deviated from the recipe.
-{$name}: A… bit?
-Hina: {$name}, were you not listening to Hina’s expectations about rules and routine, even in the kitchen? You were given a directive to retrieve the pepper and decided that this was an invitation to defy orders? If Hina cannot trust you with the most basic of tasks in the kitchen, how is Hina to expect your compliance on the battlefield? 
-Well… she has a point.
+{$name}: A... bit?
+Hina: {$name}, were you not listening to Hina's expectations about rules and routine, even in the kitchen? You were given a directive to retrieve the pepper and decided that this was an invitation to defy orders? If Hina cannot trust you with the most basic of tasks in the kitchen, how is Hina to expect your compliance on the battlefield?
+Well... she has a point.
 <<jump workday_smokers_and_friend_3_drinks>>
 ===
 
@@ -227,15 +235,15 @@ title: workday_smokers_and_friend_3_stir
 location: mess hall
 ---
 
-You begin working on the sauce for the stew, boiling water and adding bullion. It’s an easy job; you’re glad you picked it.
+You begin working on the sauce for the stew, boiling water and adding bullion. It's an easy job; you're glad you picked it.
 At least, at first.
-It gets awfully boring awfully fast, though. Stirring the sauce to the right thickness and adding ingredients as the others bring them to you is not the most thrilling task, and you’re working with an absolutely massive mess hall pot, so stirring does get tiring as the stew grows thick with chunky goodness.
-Still, it smells good; you hope you’ll be able to get a taste at some point today.
-As you work, you try to talk to the others in the kitchen to pass the time.	
--> So… what’s the most interesting island you’ve ever visited?
-	<<jump workday_smokers_and_friend_3_island>>
+It gets awfully boring awfully fast, though. Stirring the sauce to the right thickness and adding ingredients as the others bring them to you is not the most thrilling task, and you're working with an absolutely massive mess hall pot, so stirring does get tiring as the stew grows thick with chunky goodness.
+Still, it smells good; you hope you'll be able to get a taste at some point today.
+As you work, you try to talk to the others in the kitchen to pass the time.
+-> So... what's the most interesting island you've ever visited?
+    <<jump workday_smokers_and_friend_3_island>>
 -> Are you more of a cat person or a dog person?
-	<<jump workday_smokers_and_friend_3_pets>>
+    <<jump workday_smokers_and_friend_3_pets>>
 ===
 
 title: workday_smokers_and_friend_3_island
@@ -243,7 +251,7 @@ location: mess hall
 ---
 
 Hina: Hina once went to an island where everyone had taken a vow of silence. Everyone listened very well; Hina liked it there a lot, even if it was a failure of an intel-gathering mission.
-Bellemere: Man, I’m from East Blue. Every island here on the Grand Line floors me!
+Bellemere: Man, I'm from East Blue. Every island here on the Grand Line floors me!
 <<jump workday_smokers_and_friend_3_front>>
 ===
 
@@ -262,19 +270,21 @@ location: mess hall
 
 Once the stew is finally done, you put on some oven gloves and carefully lift the heavy pot, bringing it to the front for Smoker and Tashigi to serve up.
 Tashigi: Ah! Great timing; we were running out of pre-made stuff out here, and the hungry lunch crowd is going to start filing in at any moment!
-{$name}: Ugh, this thing is heavy… but I just thought of something. Who has to do the dishes?
+{$name}: Ugh, this thing is heavy... but I just thought of something. Who has to do the dishes?
 You and Tashigi look at each other, and then you both look to Smoker.
 He shrugs.
 Smoker: Sounds like a problem for the staff in the kitchen—
 {$name}: With all due respect, sir, you can tell Hina that.
 No way would you try to make her responsible for such a daunting task. Already, with the first wave of Marines drifting in for a quick breakfast, you can see tubs full of dishes waiting at the busing stations by the exit.
-Tashigi: Perhaps we can ask for reinforcements? Coby and Helmeppo are just finishing up over there…
-Tashigi tilts her head toward a corner of the mess hall, and you see a couple of young Marines sitting there. The pink-haired boy looks cheerful and has stacked his dishes neatly, while the blond’s making a face like he ate a bug, the table a mess in front of him.
-Smoker: Huh… they’ll do.
--> Go talk to them yourself about helping out. <<declare wdsf3S_points +=1>> <<declare wdsf3T_points +=1>>
-	<<jump workday_smokers_and_friend_3_talk>>
--> Ask if Smoker will do it. <<set wdsf3S_points -=1>> <<set wdsf3T_points -=1>>
-	<<jump workday_smokers_and_friend_3_ask>>
+Tashigi: Perhaps we can ask for reinforcements? Coby and Helmeppo are just finishing up over there...
+Tashigi tilts her head toward a corner of the mess hall, and you see a couple of young Marines sitting there. The pink-haired boy looks cheerful and has stacked his dishes neatly, while the blond's making a face like he ate a bug, the table a mess in front of him.
+Smoker: Huh... they'll do.
+-> Go talk to them yourself about helping out. <<set wdsf3S_points +=1>>
+    <<set wdsf3T_points +=1>>
+    <<jump workday_smokers_and_friend_3_talk>>
+-> Ask if Smoker will do it. <<set wdsf3S_points -=1>>
+    <<set wdsf3T_points -=1>>
+    <<jump workday_smokers_and_friend_3_ask>>
 ===
 
 title: workday_smokers_and_friend_3_talk
@@ -287,13 +297,13 @@ You walk over to the table just as the pair are starting to leave, and Coby noti
 Coby: Oh, hello there, {$name}. We met at orientation, right? And I think I saw you at the sports festival?
 {$name}: Uh, yeah. Hey, crazy question: what are you doing today?
 Helmeppo: Hey, how about if you mind your own business! We have, uh, important training to do—
-Coby: It’s our day off, actually.
-Helmeppo: Dammit, Coby, you fool… obviously they plan to put us to work now.
-Coby: Well, good! I’m glad to help if I can.
+Coby: It's our day off, actually.
+Helmeppo: Dammit, Coby, you fool... obviously they plan to put us to work now.
+Coby: Well, good! I'm glad to help if I can.
 Helmeppo: Ugh.
-Well, that worked out well! You didn’t even really need to ask!
-{$name}: Great! We need a hand with dish duty, and I’m sure everyone will be really happy to hear that you volunteered.
-Helmeppo: I didn’t!
+Well, that worked out well! You didn't even really need to ask!
+{$name}: Great! We need a hand with dish duty, and I'm sure everyone will be really happy to hear that you volunteered.
+Helmeppo: I didn't!
 Coby: Sure thing!
 {$name}: Two volunteers; great!
 You show them the way to the sink even as Helmeppo begins complaining endlessly.
@@ -305,8 +315,8 @@ location: mess hall
 ---
 
 {$name}: Say, Vice Admiral, do you think you could call those two over?
-Smoker: …Tch.
-Smoker seems annoyed at being asked, but doesn’t press it. He doesn’t even bother to walk over; he just yells. 
+Smoker: ...Tch.
+Smoker seems annoyed at being asked, but doesn't press it. He doesn't even bother to walk over; he just yells.
 Smoker: Hey, pink-y and cyclops! Get over here!
 The two turn, surprised, and note who, exactly, is talking to them so rudely. Coby immediately jumps up to follow the orders of a commanding officer. Helmeppo is slower, but he also salutes.
 The two vanish into the kitchen, and you can hear Hina putting them to work.
@@ -317,24 +327,24 @@ title: workday_smokers_and_friend_3_potatoes
 location: mess hall
 ---
 
-Cutting the potatoes is dreary work; you feel your hand getting sore as you repeatedly circle the potato with your knife and thumb. You’re already getting tired of it. How do the cooks do it every day?
+Cutting the potatoes is dreary work; you feel your hand getting sore as you repeatedly circle the potato with your knife and thumb. You're already getting tired of it. How do the cooks do it every day?
 You imagine yourself being literally anywhere else, and the dingy galley around you dissolves and reforms into the deck of a ship. The musky, earthy smell of the potatoes fades away into the sharp, refreshing scent of a salty breeze.
-What’s this? Why, you turn to see Bellemere, who is leaning against the mast of the ship, a cocksure grin around her cigarette. Her burgundy hair is blowing in the sea breeze, and she regards you with her keen brown eyes.
-Bellemere: Ahoy there, sailor! 
-She smirks. 
-Bellemere: Gettin’ your sea legs are ya?
+What's this? Why, you turn to see Bellemere, who is leaning against the mast of the ship, a cocksure grin around her cigarette. Her burgundy hair is blowing in the sea breeze, and she regards you with her keen brown eyes.
+Bellemere: Ahoy there, sailor!
+She smirks.
+Bellemere: Gettin' your sea legs are ya?
 {$name}: A little!
-You stammer, suddenly feeling shaky on your feet for a reason that has nothing to do with the unsteady tide. Bellemere untucks the blue kerchief from her neck, and you can’t help but notice the flush of her collarbone, lightly freckled and tan from the hot sun. She mops her brow and the back of her neck, cooly exhaling her cigarette. You can see the sinew of her arms ripple as she languidly stretches in the sunlight. You suddenly feel warm—and not from the heat. 
+You stammer, suddenly feeling shaky on your feet for a reason that has nothing to do with the unsteady tide. Bellemere untucks the blue kerchief from her neck, and you can't help but notice the flush of her collarbone, lightly freckled and tan from the hot sun. She mops her brow and the back of her neck, cooly exhaling her cigarette. You can see the sinew of her arms ripple as she languidly stretches in the sunlight. You suddenly feel warm—and not from the heat.
 Hina: Commodore! That is inappropriate uniform protocol! And put out that cigarette. Hina will not have you be a walking fire hazard on her ship.
-Rear Admiral Hina herself is striding across the deck, her gray eyes indignant shards of steel. 
+Rear Admiral Hina herself is striding across the deck, her gray eyes indignant shards of steel.
 There's the quietest note of playfulness in her voice, and she somehow manages to smile and frown at the same time. You straighten yourself, suddenly quite concerned with how your own uniform is buttoned and fastened.
-Bellemere: Ahhh, come on Rear Admiral. We all know you take your smoke breaks under the galley. Can’t you let this one slide?
-Hina’s steely eyes blanch for a moment before she regains her composure, pulling her leather gloves taut. 
-Hina: Hmph. Hina shall also remind you that it is appropriate protocol for a Commodore to salute upon their Rear Admiral’s approach.
+Bellemere: Ahhh, come on Rear Admiral. We all know you take your smoke breaks under the galley. Can't you let this one slide?
+Hina's steely eyes blanch for a moment before she regains her composure, pulling her leather gloves taut.
+Hina: Hmph. Hina shall also remind you that it is appropriate protocol for a Commodore to salute upon their Rear Admiral's approach.
 Hina: Between your wanton smoking, lack of uniform compliance, and failure to salute a commanding Rear Admiral, Hina has now counted three infractions, Commodore. Are you asking to be placed on potato duty? Hina would gladly accommodate you if your desire is to spend your career in the galley.
-Bellemere: Aw shucks, Rear Admiral, I was really hoping for a lashing instead…
-The energy between both women is comparable to Conqueror’s Haki. You’re not certain you can stand here much longer between the two of them without passing out. You—
-Hina: {$name}, are you going to bring Hina the potatoes? If you enjoy peeling potatoes so much, then Hina will assign you to a permanent position in the kitchen. Bellemere can give you some helpful pointers. 
+Bellemere: Aw shucks, Rear Admiral, I was really hoping for a lashing instead...
+The energy between both women is comparable to Conqueror's Haki. You're not certain you can stand here much longer between the two of them without passing out. You—
+Hina: {$name}, are you going to bring Hina the potatoes? If you enjoy peeling potatoes so much, then Hina will assign you to a permanent position in the kitchen. Bellemere can give you some helpful pointers.
 {$name}: Ah no, coming!
 <<jump workday_smokers_and_friend_3_drinks>>
 ===
@@ -343,52 +353,57 @@ title: workday_smokers_and_friend_3_serve
 location: mess hall
 ---
 
-You follow Tashigi and Smoker into the front. Smoker reaches over to the coffee machine to fill up his empty mug. Coffee stains adorn the surrounding bench top from Marines who have passed through here in the weeks and months beforehand, each of them also no doubt lamenting the agony of kitchen shifts. 
+You follow Tashigi and Smoker into the front. Smoker reaches over to the coffee machine to fill up his empty mug. Coffee stains adorn the surrounding bench top from Marines who have passed through here in the weeks and months beforehand, each of them also no doubt lamenting the agony of kitchen shifts.
 The smell of coffee hits your nostrils. Smoker grunts in relief.
--> **Sigh with delight.** <<set wdsf3T_points +=1>>
-	{$name}: Ooh, I’ll have some more, too… Captain Tashigi, would you like some?
-	Tashigi: Always. Thank you, {$name}. You know I need my caffeine. 
-	You fill up both your mug and Captain Tashigi’s, hand the captain hers, and then take a sip. All the caffeine in the world can’t get you awake fast enough.
--> **Let out a yawn.** <<set wdsf3S_points -=1>> <<set wdsf3T_points -=1>>
-	{$name}: Do we have time for coffee right now? We have to start working.
-	Tashigi: There’s always time for coffee. To deprive us of morning coffee is simply unjust.
-	Smoker: Yeah, we got time. Not much to serve until the cooks get going, anyway.
-Smoker: Let’s take a look at what’s in the fridges.
+-> **Sigh with delight.**
+    <<set wdsf3T_points +=1>>
+    {$name}: Ooh, I'll have some more, too... Captain Tashigi, would you like some?
+    Tashigi: Always. Thank you, {$name}. You know I need my caffeine.
+    You fill up both your mug and Captain Tashigi's, hand the captain hers, and then take a sip. All the caffeine in the world can't get you awake fast enough.
+-> **Let out a yawn.** <<set wdsf3S_points -=1>>
+    <<set wdsf3T_points -=1>>
+    {$name}: Do we have time for coffee right now? We have to start working.
+    Tashigi: There's always time for coffee. To deprive us of morning coffee is simply unjust.
+    Smoker: Yeah, we got time. Not much to serve until the cooks get going, anyway.
+Smoker: Let's take a look at what's in the fridges.
 He opens one, and Tashigi opens another. There are vegetables and fruit, pre-packaged sides of salads and pickles, and some side dishes, gyoza, and fries at the top of the pile, all of which need to be heated up.
--> So it’s the cooks’ duty to heat those up, right? <<set wdsf3S_points -=1>>
- 	Smoker: Nah, the cooks already made them. 
+-> So it's the cooks' duty to heat those up, right?
+    <<set wdsf3S_points -=1>>
+     Smoker: Nah, the cooks already made them.
 -> What should we tackle first?
--> Okay, this doesn’t look **too** bad…
-Smoker: One of us can stick the hot food in the microwaves and then run them over to the heat lamps. The other two can take the cold dishes and set them out. 
--> Sounds good. I’ll work on the cold dishes. Captain Tashigi, do you want to help me out? 
-	<<jump workday_smokers_and_friend_3_Cold_Tashigi>>
--> You and I can work on the cold dishes, Vice Admiral. 
-	<<jump workday_smokers_and_friend_3_Cold_Smoker>>
--> I’ll do the microwave. 
-	<<jump workday_smokers_and_friend_3_Microwave>>
+-> Okay, this doesn't look **too** bad...
+Smoker: One of us can stick the hot food in the microwaves and then run them over to the heat lamps. The other two can take the cold dishes and set them out.
+-> Sounds good. I'll work on the cold dishes. Captain Tashigi, do you want to help me out?
+    <<jump workday_smokers_and_friend_3_Cold_Tashigi>>
+-> You and I can work on the cold dishes, Vice Admiral.
+    <<jump workday_smokers_and_friend_3_Cold_Smoker>>
+-> I'll do the microwave.
+    <<jump workday_smokers_and_friend_3_Microwave>>
 ===
 
 title: workday_smokers_and_friend_3_Cold_Tashigi
 location: mess hall
 ---
- 
-You and Tashigi get to work on the cold dishes. Tashigi is methodical in her approach, stacking plates to more easily carry them. She’s clearly done this before, given how cautious she is. She stumbles, but does not drop anything.
-Tashigi: We’re in the kitchen around hot stoves and knives, so I’m really concentrating. No spills or trips on my watch!   
+
+You and Tashigi get to work on the cold dishes. Tashigi is methodical in her approach, stacking plates to more easily carry them. She's clearly done this before, given how cautious she is. She stumbles, but does not drop anything.
+Tashigi: We're in the kitchen around hot stoves and knives, so I'm really concentrating. No spills or trips on my watch!
 {$name}: The cucumber looks like it still needs to be cut up and added to the salads. Would you like me to get on that?
-Tashigi: Oh, that would be very helpful, thank you! I’ll just… move these out of the way first.
+Tashigi: Oh, that would be very helpful, thank you! I'll just... move these out of the way first.
 You take out a chopping board and find the sharpest, most impressive knife you can find. You really want to impress the Captain.
--> You cut speedily, aiming to get the task done as quickly as possible. <<set wdsf3T_points -=1>>
-	Tashigi: Hey now, be careful! The chefs meticulously maintain those blades, and you can’t just go hacking away like that! You’ll blunt the blade. 
-	Tashigi: Be a little more respectful of both the chef and the tool in your hand. 
--> You cut cautiously, making thorough, even slices. Chop, chop. <<set wdsf3T_points +=1>>
-	Tashigi: That’s a great job you’re doing there! Nice and precise. It’s not about speed or strength; it’s about respecting the blade and using it for the task at hand. And be sure to make even slices! Everyone should get the same amount in their salad. 
-	{$name}: Thanks for the advice, Captain. You always make really great points. I learn a lot.
-	Tashigi: Great mentorship means a lot. I’ve been very lucky, and I think it’s important to pass it on. Plus, I’d be gutted if I came back and found that my blades hadn’t been treated with care.
-{$name}: Blades and respecting other people’s crafts really mean a lot to you, huh.
-Tashigi: They mean everything to me. Respect is the cornerstone of being both a swordswoman and a Marine, and it’s amazing to see how it applies to nearly every situation. 
-Tashigi: I used to be embarrassed by how much of a sword nerd I was, but again, it’s about showing respect to the tools I’m using. Oh, sorry. I could talk all day about this. Let’s get these salads out!
-{$name}: Maybe I’ll get to pass on what I’ve learned one day.
-Tashigi: If you keep it up, you’ll go far! But it’s hard work and diligence that shows our thanks, yeah? Let’s get these salads out.
+-> You cut speedily, aiming to get the task done as quickly as possible.
+    <<set wdsf3T_points -=1>>
+    Tashigi: Hey now, be careful! The chefs meticulously maintain those blades, and you can't just go hacking away like that! You'll blunt the blade.
+    Tashigi: Be a little more respectful of both the chef and the tool in your hand.
+-> You cut cautiously, making thorough, even slices. Chop, chop.
+    <<set wdsf3T_points +=1>>
+    Tashigi: That's a great job you're doing there! Nice and precise. It's not about speed or strength; it's about respecting the blade and using it for the task at hand. And be sure to make even slices! Everyone should get the same amount in their salad.
+    {$name}: Thanks for the advice, Captain. You always make really great points. I learn a lot.
+    Tashigi: Great mentorship means a lot. I've been very lucky, and I think it's important to pass it on. Plus, I'd be gutted if I came back and found that my blades hadn't been treated with care.
+{$name}: Blades and respecting other people's crafts really mean a lot to you, huh.
+Tashigi: They mean everything to me. Respect is the cornerstone of being both a swordswoman and a Marine, and it's amazing to see how it applies to nearly every situation.
+Tashigi: I used to be embarrassed by how much of a sword nerd I was, but again, it's about showing respect to the tools I'm using. Oh, sorry. I could talk all day about this. Let's get these salads out!
+{$name}: Maybe I'll get to pass on what I've learned one day.
+Tashigi: If you keep it up, you'll go far! But it's hard work and diligence that shows our thanks, yeah? Let's get these salads out.
 <<jump workday_smokers_and_friend_3_Setup_end>>
 ===
 
@@ -396,40 +411,46 @@ title: workday_smokers_and_friend_3_Cold_Smoker
 location: mess hall
 ---
 
-You and Smoker get to work on the cold dishes. Smoker’s arms are huge; he’s carrying a lot of plates in his arms. That seems efficient. Maybe you should give that a try.
-Smoker: Careful there, {$name}. Don’t want to drop anything.
--> You’re carrying a lot more.
-  	Smoker: Well, I’m accepting the risk. I’ve gotten good at this over the years.
--> Hey now, **I’m** not the clumsy one. <<set wdsf3S_points -=1>>
-  	Smoker: Oi. Don’t make passive-aggressive remarks. 
+You and Smoker get to work on the cold dishes. Smoker's arms are huge; he's carrying a lot of plates in his arms. That seems efficient. Maybe you should give that a try.
+Smoker: Careful there, {$name}. Don't want to drop anything.
+-> You're carrying a lot more.
+      Smoker: Well, I'm accepting the risk. I've gotten good at this over the years.
+-> Hey now, **I'm** not the clumsy one.
+    <<set wdsf3S_points -=1>>
+      Smoker: Oi. Don't make passive-aggressive remarks.
 Smoker: Maybe we should do the fruit and vegetables before we do the rest of the packaged food, because we can stack those and fit them into smaller spaces.
--> Oh, good point. How about you take the orange slices and I’ll take the apples? And then we move on to the carrot sticks. <<set wdsf3S_points +=1>>
- 	Smoker: Yeah, I like that. Nice initiative. 
-	<<jump workday_smokers_and_friend_3_Setup_end>>
--> Well, we’ve already started the packaged food. Can we just try and rearrange them if we need to at the end?
-	Smoker: Eh, fair enough.
-	<<jump workday_smokers_and_friend_3_Setup_end>>
+-> Oh, good point. How about you take the orange slices and I'll take the apples? And then we move on to the carrot sticks.
+    <<set wdsf3S_points +=1>>
+     Smoker: Yeah, I like that. Nice initiative.
+    <<jump workday_smokers_and_friend_3_Setup_end>>
+-> Well, we've already started the packaged food. Can we just try and rearrange them if we need to at the end?
+    Smoker: Eh, fair enough.
+    <<jump workday_smokers_and_friend_3_Setup_end>>
 ===
 
 title: workday_smokers_and_friend_3_Microwave
 location: mess hall
 ---
 
-The packages don’t give any helpful hints about how long they should be cooked for.
+The packages don't give any helpful hints about how long they should be cooked for.
 {$name}: Hey, how long should I put these in for?
 Smoker: Eh, a few minutes should be fine.
 You start the first microwave, and then the second. Better queue up some more food and run it over. You turn and start over toward the fridge, and–SMACK!
-You ram right into Captain Tashigi. She squawks like the bird she’s named after as she loses her balance. The apples in her arms go tumbling to the floor as you grab your face and she runs a now-free hand over her arm.
-Tashigi: AHHHH, ouch... Why is my life like this…
--> Totally my fault. Let me help you with those apples. <<set wdsf3T_points +=1>>
--> Dang it, I… ughhh. Excuse me, Captain. <<set wdsf3T_points -=1>>
+You ram right into Captain Tashigi. She squawks like the bird she's named after as she loses her balance. The apples in her arms go tumbling to the floor as you grab your face and she runs a now-free hand over her arm.
+Tashigi: AHHHH, ouch... Why is my life like this...
+-> Totally my fault. Let me help you with those apples.
+    <<set wdsf3T_points +=1>>
+-> Dang it, I... ughhh. Excuse me, Captain.
+    <<set wdsf3T_points -=1>>
 -> Owww.
-Smoker: It’s probably easier if I help out. {$name}, go rewash the apples. The microwaves can wait.
--> But you’ve already set out the carrots, and we don’t have any hot food. <<set wdsf3S_points -=1>>
- 	Smoker: We’ve got some time. Don’t shirk; it’s just some apples.
--> Sure, let me grab the rest on my way over. <<set wdsf3S_points +=1>>
--> I guess…
-You head over to the sink to rewash the apples. Hopefully you’ll at least get some of the hot food out by opening time…
+Smoker: It's probably easier if I help out. {$name}, go rewash the apples. The microwaves can wait.
+-> But you've already set out the carrots, and we don't have any hot food.
+    <<set wdsf3S_points -=1>>
+     Smoker: We've got some time. Don't shirk; it's just some apples.
+-> Sure, let me grab the rest on my way over.
+    <<set wdsf3S_points +=1>>
+-> I guess...
+You head over to the sink to rewash the apples. Hopefully you'll at least get some of the hot food out by opening time...
 <<jump workday_smokers_and_friend_3_Setup_end>>
 ===
 
@@ -437,14 +458,16 @@ title: workday_smokers_and_friend_3_Setup_end
 location: mess hall
 ---
 
-You finally finish setting everything out, just as the clock hits a minute before opening time. The first batch of Hina and Bellemere’s stew has been set out.
+You finally finish setting everything out, just as the clock hits a minute before opening time. The first batch of Hina and Bellemere's stew has been set out.
 Tashigi: Right on time.
-Smoker: Yep. Nothing left to do; it’s not like we have a till or any money to deal with.
--> Uh…more coffee? <<set wdsf3S_points +=1>>
-	Smoker: Yeah, top me off. 
--> Do you think we could get away with charging them? <<set wdsf3S_points -=1>> <<set wdsf3T_points -=1>>
-	Smoker: …
-	Tashigi: I don’t think anyone would want to pay for the food they’ve already worked hard for. It could lead to a mutiny. And besides… we wouldn’t want the chefs to get the same idea.
+Smoker: Yep. Nothing left to do; it's not like we have a till or any money to deal with.
+-> Uh...more coffee?
+    <<set wdsf3S_points +=1>>
+    Smoker: Yeah, top me off.
+-> Do you think we could get away with charging them? <<set wdsf3S_points -=1>>
+    <<set wdsf3T_points -=1>>
+    Smoker: ...
+    Tashigi: I don't think anyone would want to pay for the food they've already worked hard for. It could lead to a mutiny. And besides... we wouldn't want the chefs to get the same idea.
 <<jump workday_smokers_and_friend_3_Coby_group>>
 ===
 
@@ -452,28 +475,32 @@ title: workday_smokers_and_friend_3_Coby_group
 lcation: mess hall
 ---
 
-Tashigi: Okay, {$name}, let’s get ready to start serving!
--> Okay, let me roll up my sleeves. <<set wdsf3T_points +=1>>
--> Are you sure you’d be good at that? <<set wdsf3T_points -=1>>
-	Tashigi: I will be perfectly fine, thank you.
+Tashigi: Okay, {$name}, let's get ready to start serving!
+-> Okay, let me roll up my sleeves.
+    <<set wdsf3T_points +=1>>
+-> Are you sure you'd be good at that?
+    <<set wdsf3T_points -=1>>
+    Tashigi: I will be perfectly fine, thank you.
 -> What about Vice Admiral Smoker?
-	Smoker: I’ll be in the back, microwaving some more of this. You know how people here eat.
-The door to the mess hall opens, as if people have been waiting outside for the clock to turn over. Captain Coby strides in, a cheerful smile on his face; he’s practically dragging Lieutenant Commander Helmeppo behind him.
+    Smoker: I'll be in the back, microwaving some more of this. You know how people here eat.
+The door to the mess hall opens, as if people have been waiting outside for the clock to turn over. Captain Coby strides in, a cheerful smile on his face; he's practically dragging Lieutenant Commander Helmeppo behind him.
 Coby: Good morning!
-Helmeppo: Hnghh…
--> Uh, good morning. Stew? Coffee? <<set wdsf3T_points +=1>>
-  	Coby: Meppo needs some coffee. I’ll have some stew.
+Helmeppo: Hnghh...
+-> Uh, good morning. Stew? Coffee?
+    <<set wdsf3T_points +=1>>
+      Coby: Meppo needs some coffee. I'll have some stew.
 -> Is he okay?
-  	Coby: Not much of a morning person, that’s all. Could I get some stew?
--> Can you help them? <<set wdsf3T_points -=1>>
-	Tashigi: …Certainly.
-  	Tashigi: Coby, Helmeppo, hello! I’ll get you your usual.
-	{$name}: How do you know their usual?
+      Coby: Not much of a morning person, that's all. Could I get some stew?
+-> Can you help them?
+    <<set wdsf3T_points -=1>>
+    Tashigi: ...Certainly.
+      Tashigi: Coby, Helmeppo, hello! I'll get you your usual.
+    {$name}: How do you know their usual?
     Tashigi: We eat together a lot. Could you please get Coby some stew?
-You ladle out stew while Tashigi fetches a cup of coffee. The door opens again, with a sharp sound, as if it’s been kicked, and the next customer isn’t a customer at all… It’s Sengoku’s goat.
+You ladle out stew while Tashigi fetches a cup of coffee. The door opens again, with a sharp sound, as if it's been kicked, and the next customer isn't a customer at all... It's Sengoku's goat.
 Goat: Maaaa!
-Its nose is in the air, as if it’s following a scent trail.
-Coby: Oh no… I know it’s allowed to eat scraps, but not regular people food.
+Its nose is in the air, as if it's following a scent trail.
+Coby: Oh no... I know it's allowed to eat scraps, but not regular people food.
 Tashigi: Goats in cafeterias are unsanitary. {$name}, can you help out?
 <<jump workday_smokers_and_friend_3_Goat_choice_1>>
 ===
@@ -483,43 +510,45 @@ location: mess hall
 ---
 
 {$name}: Shoo! Go away, goat!
-Goat: Maaa. 
-It looks like it’s not going anywhere. 
--> Vice Admiral Smoker! Help? 
-	<<jump workday_smokers_and_friend_3_Smoker_goat>>
--> Captain Tashigi, can you help me get it out? 
-	<<jump workday_smokers_and_friend_3_Tashigi_goat>>
--> Wasn’t the goat hanging around you the other day, Captain Coby? 
-	Coby: Yeah. ‘Meppo’s better at this stuff than I am.
-	Lieutenant Commander Helmeppo seems to have woken up a little after a few sips of coffee. 
-	Helmeppo: Yeah, I’ll get it out of here.
-	<<jump workday_smokers_and_friend_3_Coby_end>>
--> If we gave it a bowl of stew, would it leave us alone? <<set wdsf3T_points -=1>>
- 	Coby: ...Probably.
-	You serve the goat up a fresh bowl of stew. The goat gets a gleam in its eyes as soon as you open the pot—that must be what it’s looking for. It slurps up the stew and trots away.
-	{$name}: Crisis averted.
-  	Tashigi: Urgh... We’ll just have to scrub that bowl extra hard.
- 	<<jump workday_smokers_and_friend_3_Coby_end>>
+Goat: Maaa.
+It looks like it's not going anywhere.
+-> Vice Admiral Smoker! Help?
+    <<jump workday_smokers_and_friend_3_Smoker_goat>>
+-> Captain Tashigi, can you help me get it out?
+    <<jump workday_smokers_and_friend_3_Tashigi_goat>>
+-> Wasn't the goat hanging around you the other day, Captain Coby?
+    Coby: Yeah. ‘Meppo's better at this stuff than I am.
+    Lieutenant Commander Helmeppo seems to have woken up a little after a few sips of coffee.
+    Helmeppo: Yeah, I'll get it out of here.
+    <<jump workday_smokers_and_friend_3_Coby_end>>
+-> If we gave it a bowl of stew, would it leave us alone?
+    <<set wdsf3T_points -=1>>
+     Coby: ...Probably.
+    You serve the goat up a fresh bowl of stew. The goat gets a gleam in its eyes as soon as you open the pot—that must be what it's looking for. It slurps up the stew and trots away.
+    {$name}: Crisis averted.
+      Tashigi: Urgh... We'll just have to scrub that bowl extra hard.
+     <<jump workday_smokers_and_friend_3_Coby_end>>
 ===
 
 title: workday_smokers_and_friend_3_Smoker_goat
 location: mess hall
 ---
 
-Smoker: Yeah, that goat’s always causing trouble. Let me take care of it; it’ll be a break from microwaving. 
-Goat: Maaa…
+Smoker: Yeah, that goat's always causing trouble. Let me take care of it; it'll be a break from microwaving.
+Goat: Maaa...
 Smoker: So, how do you want to do this?
--> You’re strong. I bet you could pick up the goat and carry it out. <<set wdsf3S_points +=1>>
-	Smoker: Heh, thanks, I guess. Wouldn’t it just end up coming back, though?
-	Helmeppo: We’ll take care of it.
-	He looks more awake now, so you feel that you can take his word for it.
- 	<<jump workday_smokers_and_friend_3_Coby_end>>
+-> You're strong. I bet you could pick up the goat and carry it out.
+    <<set wdsf3S_points +=1>>
+    Smoker: Heh, thanks, I guess. Wouldn't it just end up coming back, though?
+    Helmeppo: We'll take care of it.
+    He looks more awake now, so you feel that you can take his word for it.
+     <<jump workday_smokers_and_friend_3_Coby_end>>
 -> Yell as loudly as we can?
-	Smoker: ...I don’t think that’ll work. We could try to approach it and see if we can pick it up or point it in a direction.
--> Chase it? Make it think it’s a game?
-	Smoker: You know what, that might work...
-	The two of you approach the goat, Smoker with his arms wide open as if going to scoop it up. The goat backs away. Smoker darts forward, and the chase is on! Luckily, the goat heads straight for the exit; it must have sensed an easier food source somewhere else. Your work is done.
-	<<jump workday_smokers_and_friend_3_Coby_end>>
+    Smoker: ...I don't think that'll work. We could try to approach it and see if we can pick it up or point it in a direction.
+-> Chase it? Make it think it's a game?
+    Smoker: You know what, that might work...
+    The two of you approach the goat, Smoker with his arms wide open as if going to scoop it up. The goat backs away. Smoker darts forward, and the chase is on! Luckily, the goat heads straight for the exit; it must have sensed an easier food source somewhere else. Your work is done.
+    <<jump workday_smokers_and_friend_3_Coby_end>>
 ===
 
 title: workday_smokers_and_friend_3_Tashigi_goat
@@ -527,17 +556,19 @@ location: mess hall
 ---
 
 Tashigi: Sure! Should we try to lure it outside with some stew?
--> I like it! Let’s use Coby’s; he can eat it afterward. <<set wdsf3T_points -=1>>
-	Tashigi: That’s definitely unsanitary. You should pour a fresh one.
--> Isn’t that a waste?
-	Tashigi: Less than if the goat gets into the pot itself. I’ve... seen things.
- 	She shudders, her point well-made.
-You ladle out some stew for the goat into a fresh bowl; either it can understand you perfectly, or is just hoping it’s the intended recipient. 
--> You want some? Follow me! <<set wdsf3T_points +=1>>
+-> I like it! Let's use Coby's; he can eat it afterward.
+    <<set wdsf3T_points -=1>>
+    Tashigi: That's definitely unsanitary. You should pour a fresh one.
+-> Isn't that a waste?
+    Tashigi: Less than if the goat gets into the pot itself. I've... seen things.
+     She shudders, her point well-made.
+You ladle out some stew for the goat into a fresh bowl; either it can understand you perfectly, or is just hoping it's the intended recipient.
+-> You want some? Follow me!
+    <<set wdsf3T_points +=1>>
 -> Do you want to hold the bowl or should I?
-  	Tashigi: You can.
+      Tashigi: You can.
 You hold the bowl aloft and the goat follows you as you carry it over to the door. You set it on the ground, and the goat happily begins to eat as you make your escape back into the mess hall.
-Tashigi: Don’t forget to wash your hands.
+Tashigi: Don't forget to wash your hands.
 <<jump workday_smokers_and_friend_3_Coby_end>>
 ===
 
@@ -545,7 +576,7 @@ title: workday_smokers_and_friend_3_Coby_end
 location: mess hall
 ---
 
-The mess hall’s only been open for about 15 minutes before more Marines start crowding in, and it’s a while before you get to even catch your breath (although at least the goat doesn’t make another appearance).
+The mess hall's only been open for about 15 minutes before more Marines start crowding in, and it's a while before you get to even catch your breath (although at least the goat doesn't make another appearance).
 <<jump workday_smokers_and_friend_3_Admiral_group>>
 ===
 
@@ -553,54 +584,59 @@ title: workday_smokers_and_friend_3_Admiral_group
 location: mess hall
 ---
 
-Smoker: Tashigi, you’ve done a lot. I’ll take over the serving; you can keep microwaving stuff.
--> Uh, what about me? Don’t I get a break? <<set wdsf3S_points -=1>>
-  	Smoker: It’s not a break; it’s just different work. And we need two to help serve.
--> Glad that little adventure’s over!
-	Smoker: Eh, it wasn’t so bad.
+Smoker: Tashigi, you've done a lot. I'll take over the serving; you can keep microwaving stuff.
+-> Uh, what about me? Don't I get a break?
+    <<set wdsf3S_points -=1>>
+      Smoker: It's not a break; it's just different work. And we need two to help serve.
+-> Glad that little adventure's over!
+    Smoker: Eh, it wasn't so bad.
 Tashigi: Hina-san just sent out some stew!
-Smoker: Great. Bring it up here; we can serve it to our next guests. 
+Smoker: Great. Bring it up here; we can serve it to our next guests.
 Tashigi carries over the pot of stew, slowly and carefully.
 -> Do we have bowls and spoons? (+1 Smoker)
-  	Smoker: Yeah, they’re in the line with the rest. Good question, though.
+      Smoker: Yeah, they're in the line with the rest. Good question, though.
 -> Oh, this smells so good!
- 	Smoker: You should tell Hina that later.
+     Smoker: You should tell Hina that later.
 The door opens again, revealing Admirals Kizaru and Aokiji. They seem to be in conversation– or, at least, Admiral Kizaru is talking.
-{$borsalino}: Oh, and if it isn’t Vice Admiral Smoker and... {$name}. I love to see officers spending time together…
--> It’s because we’re on the job! <<set wdsf3S_points -=1>>
-	Smoker: You come here for some food?
--> Oh, er…. Thank you, sir.
-  	{$borsalino}: Of course, of course…
+{$borsalino}: Oh, and if it isn't Vice Admiral Smoker and... {$name}. I love to see officers spending time together...
+-> It's because we're on the job!
+    <<set wdsf3S_points -=1>>
+    Smoker: You come here for some food?
+-> Oh, er.... Thank you, sir.
+      {$borsalino}: Of course, of course...
 -> UH, in what way, um, exactly??
-	{$borsalino}: Teamwork! Why, what did you think I meant, Petty Officer?
-	{$name}: I…er…**blush** <<set wdsf3S_points +=1>>
-	{$name}: Exactly that, sir. 
-You dole out some stew into Admiral Kizaru’s bowl.
+    {$borsalino}: Teamwork! Why, what did you think I meant, Petty Officer?
+    {$name}: I...er...**blush** <<set wdsf3S_points +=1>>
+    {$name}: Exactly that, sir.
+You dole out some stew into Admiral Kizaru's bowl.
 {$borsalino}: Thank you~ What an upgrade over the usual service this is!
 {$kuzan}: Smoker. Long time no see.
 Smoker: I just saw you at the sports festival.
 {$kuzan}: Yes, but that was a while ago, you know.
--> Oh, did you come to see Vice Admiral Smoker? <<set wdsf3S_points +=1>>
-	Smoker: Oi. He came for the food. 
-	{$kuzan}: Maybe, maybe not. 
--> Sir? I don’t mean to be rude, but would you like any stew? 
-  	{$kuzan}: Uhh..yeah. Here’s the bowl.
-Aokiji holds out his bowl and you ladle him out some stew. 
+-> Oh, did you come to see Vice Admiral Smoker?
+    <<set wdsf3S_points +=1>>
+    Smoker: Oi. He came for the food.
+    {$kuzan}: Maybe, maybe not.
+-> Sir? I don't mean to be rude, but would you like any stew?
+      {$kuzan}: Uhh..yeah. Here's the bowl.
+Aokiji holds out his bowl and you ladle him out some stew.
 {$kuzan}: Is there any coffee?
--> Yes, I’ll get you some. 
--> Vice-Admiral Smoker, would you do the honors? <<set wdsf3S_points +=>>
-  	Kuzan: Oh? Some coffee from Smoker? Whoa exciting...
-Aokiji takes his coffee, but he doesn’t leave; instead, he begins talking to Smoker. You look around awkwardly, and your eyes meet Admiral Kizaru’s.
-{$borsalino}: {$name}, I don’t believe we’ve gotten much of a chance to speak~ Hoooow are you liking being a Marine?
--> It’s a lot of work, sir, but I’m up to the challenge.
- 	{$borsalino}: Oh, no need to be so formal…
--> I’m liking it a lot! My groupmates are great to work with.
-  	{$borsalino}: Hmmm, you’re with the Vice Admiral, little Captain Tashigi, the loooovely Rear Admiral Hina, and Commodore Bellemere... A very interesting group~ Not too haaard on you?
-	-> They’re tough but fair. Exactly what I need. <<set wdsf3S_points +=1>>
-	-> Not at all. 
-	-> Well, I’m getting used to it…
-	You hear a cough. Looks like Smoker and Aokiji are done talking, and Smoker heard what you’d just said.
-{$borsalino}: We don’t want to hold up the line too much, do we, Kuzan-kuuun~?
+-> Yes, I'll get you some.
+-> Vice-Admiral Smoker, would you do the honors?
+    <<set wdsf3S_points +=>>
+      Kuzan: Oh? Some coffee from Smoker? Whoa exciting...
+Aokiji takes his coffee, but he doesn't leave; instead, he begins talking to Smoker. You look around awkwardly, and your eyes meet Admiral Kizaru's.
+{$borsalino}: {$name}, I don't believe we've gotten much of a chance to speak~ Hoooow are you liking being a Marine?
+-> It's a lot of work, sir, but I'm up to the challenge.
+     {$borsalino}: Oh, no need to be so formal...
+-> I'm liking it a lot! My groupmates are great to work with.
+      {$borsalino}: Hmmm, you're with the Vice Admiral, little Captain Tashigi, the loooovely Rear Admiral Hina, and Commodore Bellemere... A very interesting group~ Not too haaard on you?
+    -> They're tough but fair. Exactly what I need.
+        <<set wdsf3S_points +=1>>
+    -> Not at all.
+    -> Well, I'm getting used to it...
+    You hear a cough. Looks like Smoker and Aokiji are done talking, and Smoker heard what you'd just said.
+{$borsalino}: We don't want to hold up the line too much, do we, Kuzan-kuuun~?
 {$kuzan}: No one else is here.
 Just then, the door opens. Kuzan and Kizaru make their way over to a table and you prepare to serve the next guests.
 <<jump workday_smokers_and_friend_3_Legend_group>>
@@ -610,92 +646,98 @@ title: workday_smokers_and_friend_3_Legend_group
 location: mess hall
 ---
 
-Tashigi: Phew! We finally get a breather, but we’re running out of stew. Looks like Bellemere-san finished the last pot…
+Tashigi: Phew! We finally get a breather, but we're running out of stew. Looks like Bellemere-san finished the last pot...
 -> I just hope we have enough.
--> I’ll help you bring it out. <<set wdsf3T_points +=1>>
-You swap out the old pot for the new one, and are just coming back when the door opens yet again, revealing former Vice Admiral Garp. 
-Garp: Tsuru-chan wouldn’t share her crackers with me, then the goat ran off with my sandwich… I’m so hungry. 
-Garp: Wait, you two aren’t th’ usual servers… What happened? You in the doghouse for something?
-Smoker: The regulars were sick. We’re just covering.
-Garp: Huh, weird. don't know what that's like. Anyway, how’s the work treatin’ ya?
-Smoker: Eh. It ain’t my cup of tea.
--> I’m doing well, thank you.
--> I’m pretty tired, actually…
-	Garp: Can’t say it’s ever a bad time for a nap! Except if you’re on the job, which you are.
-Garp: Anyway, enough whining! I’ll take some stew!
-You serve it up to him quickly and he heads over to a table to eat it. 
--> Ugh, just talking to him made me tired. Maybe I should have some more coffee… <<set wdsf3S_points +=1>>
-  	Smoker: Not a bad idea. I’ll get us some more.
+-> I'll help you bring it out.
+    <<set wdsf3T_points +=1>>
+You swap out the old pot for the new one, and are just coming back when the door opens yet again, revealing former Vice Admiral Garp.
+Garp: Tsuru-chan wouldn't share her crackers with me, then the goat ran off with my sandwich... I'm so hungry.
+Garp: Wait, you two aren't th' usual servers... What happened? You in the doghouse for something?
+Smoker: The regulars were sick. We're just covering.
+Garp: Huh, weird. don't know what that's like. Anyway, how's the work treatin' ya?
+Smoker: Eh. It ain't my cup of tea.
+-> I'm doing well, thank you.
+-> I'm pretty tired, actually...
+    Garp: Can't say it's ever a bad time for a nap! Except if you're on the job, which you are.
+Garp: Anyway, enough whining! I'll take some stew!
+You serve it up to him quickly and he heads over to a table to eat it.
+-> Ugh, just talking to him made me tired. Maybe I should have some more coffee...
+    <<set wdsf3S_points +=1>>
+      Smoker: Not a bad idea. I'll get us some more.
 -> Is he always like that?
- 	Smoker: Garp? Yeah. 
-Tashigi’s gotten a head start on putting away some of the extra food items. No one’s coming in through the door to be served, so maybe you should go help her…
+     Smoker: Garp? Yeah.
+Tashigi's gotten a head start on putting away some of the extra food items. No one's coming in through the door to be served, so maybe you should go help her...
 Garp: Hey! Who made this?
-Garp’s appeared at the counter again, gesturing to his empty bowl of stew.
+Garp's appeared at the counter again, gesturing to his empty bowl of stew.
 Smoker: Hina and Bellemere.
 Garp: #HINA! BELLE-MERE!#
 Hina pokes her head out of the kitchen.
 Hina: Oh, Garp-kun. What is it?
-Garp: This stew is amazing! Way better than the slop they usually give out here. Served up well, too. You should all keep these jobs bwahahaha! 
-Hina: You shouldn’t joke about these things, Garp-kun. Hina is offended that her combat skills would be set aside for this.
--> Well, I appreciate the compliment… <<set wdsf3H_points -=1>>
--> Yeah, I didn’t become a Marine for this…
-Garp: Food is the most important thing there is, though. Anyone can learn to fight, but on the sea, you need a good cook, or else you’ll die! BWAHAHAHA! 
-Smoker: …
-{$name}: …
-Hina: …
-Garp: Well, that hit the spot. Maybe I’ll go find Senny's goat.
-Hina: We’ve reached the end of the mess hall hours. {$name}, go hurry and lock the door so we can clean up.
-It’s finally time to clean up for the day. You help put everything back in the fridge, decide if fruit/vegetables have gone bad, and have one last cup of coffee. Despite how harrowing it was, you’re pretty proud of yourself. You somehow made it through, goat and all!
+Garp: This stew is amazing! Way better than the slop they usually give out here. Served up well, too. You should all keep these jobs bwahahaha!
+Hina: You shouldn't joke about these things, Garp-kun. Hina is offended that her combat skills would be set aside for this.
+-> Well, I appreciate the compliment...
+    <<set wdsf3H_points -=1>>
+-> Yeah, I didn't become a Marine for this...
+Garp: Food is the most important thing there is, though. Anyone can learn to fight, but on the sea, you need a good cook, or else you'll die! BWAHAHAHA!
+Smoker: ...
+{$name}: ...
+Hina: ...
+Garp: Well, that hit the spot. Maybe I'll go find Senny's goat.
+Hina: We've reached the end of the mess hall hours. {$name}, go hurry and lock the door so we can clean up.
+It's finally time to clean up for the day. You help put everything back in the fridge, decide if fruit/vegetables have gone bad, and have one last cup of coffee. Despite how harrowing it was, you're pretty proud of yourself. You somehow made it through, goat and all!
 <<jump workday_smokers_and_friend_3_drinks>>
 ===
 
 title: workday_smokers_and_friend_3_drinks
 location: mess hall
 ---
-	
-When all is said and done, you realize you’ve just survived your first day doing kitchen service. You take a deep breath as you put away a mop, having cleaned the last of the dining room floor. It’s finally time to close up.
-Bellemere: I’m exhausted! Let’s go grab a beer!
-Tashigi: I’m with you, Bellemere! Normally I'm not one for drinking after work, but I can understand why the chefs got into the cooking sherry. Allegedly. Kitchen shift and standing on your feet all day trying to feed everyone is roooough. 
-Bellemere: Hell yeah! That’s the smartest thing you’ve ever said. You worked hard today, too; you’re starting to grow on me, Tash!
+
+When all is said and done, you realize you've just survived your first day doing kitchen service. You take a deep breath as you put away a mop, having cleaned the last of the dining room floor. It's finally time to close up.
+Bellemere: I'm exhausted! Let's go grab a beer!
+Tashigi: I'm with you, Bellemere! Normally I'm not one for drinking after work, but I can understand why the chefs got into the cooking sherry. Allegedly. Kitchen shift and standing on your feet all day trying to feed everyone is roooough.
+Bellemere: Hell yeah! That's the smartest thing you've ever said. You worked hard today, too; you're starting to grow on me, Tash!
 Tashigi: Really? You mean that? That's the nicest thing you've ever said to me, and I really appreciate it!
-Tashigi: You must have the fastest potato-peeling hands in the Marines. I caught a glimpse earlier and I could never peel anything that quickly, especially without cutting myself. I think I can understand why you let loose so often when you get the opportunity; you’ve got to reward yourself for working that efficiently.
+Tashigi: You must have the fastest potato-peeling hands in the Marines. I caught a glimpse earlier and I could never peel anything that quickly, especially without cutting myself. I think I can understand why you let loose so often when you get the opportunity; you've got to reward yourself for working that efficiently.
 The five of you finish the last of your work and head out of the mess hall, then make your way out of the base, into the refreshing evening air.
 set location: town //HOW DO??
-Bellemere: Hey, I know! There’s a festival tonight. Let’s go check it out!
+Bellemere: Hey, I know! There's a festival tonight. Let's go check it out!
 Tashigi: Oh, yes! That would be fun!
 Hina: Hina has no problem with this. After today, Hina would like to enjoy some fun.
 Smoker: Fine with me.
 With a consensus reached, you all make your way over to where the festival is, only to find that the area is filled with people, and the lights and music are almost hypnotic. You can even catch a whiff of the food and drinks from here.
-Smoker: Man, this place is packed… it’s a wonder more people didn’t play hooky.
-Hina: Tch, Hina can’t even make her way to the bar like this.
-Smoker: Let’s go find somewhere quiet to get a drink.
-Your small group makes its way through the crowd, finally finding a quiet festival stall serving beer. Even better is that there’s outside seating down a nearby alley, away from the hustle-and-bustle of the main thoroughfare.
-Bellemere: Hey, Vice Admiral Smoker! As the senior officer present, the first round’s on you, right?
-Tashigi: So presumptuous! Though… that is usually the social protocol, correct?
+Smoker: Man, this place is packed... it's a wonder more people didn't play hooky.
+Hina: Tch, Hina can't even make her way to the bar like this.
+Smoker: Let's go find somewhere quiet to get a drink.
+Your small group makes its way through the crowd, finally finding a quiet festival stall serving beer. Even better is that there's outside seating down a nearby alley, away from the hustle-and-bustle of the main thoroughfare.
+Bellemere: Hey, Vice Admiral Smoker! As the senior officer present, the first round's on you, right?
+Tashigi: So presumptuous! Though... that is usually the social protocol, correct?
 {$name}: Really?
 Hina: Yes, that is protocol.
-Smoker: Eh, fine. Just don’t use it as an excuse to overdo it.
+Smoker: Eh, fine. Just don't use it as an excuse to overdo it.
 Smoker pays for the first round of drinks, and you all settle at a table. Everyone is in good spirits.
-Tashigi: You know, I don’t think any of our previous training exercises showed what a good team we were quite like today. I’m really proud of us. I feel like we could become kindred spirits. 
+Tashigi: You know, I don't think any of our previous training exercises showed what a good team we were quite like today. I'm really proud of us. I feel like we could become kindred spirits.
 Hina: Hina would have to agree. It was quite a surprise, but Hina feels as though perhaps you all are somewhat trustworthy in a crisis.
-Bellemere: Let’s have a toast, then! {$name}, lead the way!
+Bellemere: Let's have a toast, then! {$name}, lead the way!
 {$name}:
--> May we be the people Sengoku’s goat thinks we are. <<set wdsf3T_points +=1>>
-	<<jump workday_smokers_and_friend_3_cute>>
--> A toast to bread. Without bread, we would have no toast. <<set wdsf3S_points +=1>>
-	<<jump workday_smokers_and_friend_3_pun>>
--> To those who’ve seen us at our best and at our worst, and can’t tell the difference! <<set wdsf3B_points +=1>>
-	<<jump workday_smokers_and_friend_3_dumb>>
+-> May we be the people Sengoku's goat thinks we are.
+    <<set wdsf3T_points +=1>>
+    <<jump workday_smokers_and_friend_3_cute>>
+-> A toast to bread. Without bread, we would have no toast.
+    <<set wdsf3S_points +=1>>
+    <<jump workday_smokers_and_friend_3_pun>>
+-> To those who've seen us at our best and at our worst, and can't tell the difference!
+    <<set wdsf3B_points +=1>>
+    <<jump workday_smokers_and_friend_3_dumb>>
 ===
 
 title: workday_smokers_and_friend_3_cute
 location: town
 ---
 
-Tashigi: Aw, that’s too wholesome. Maybe it’s because I’m so tired, but I feel like I’m about to cry. Truly, that is something to aspire to. He looks up at us with such awe and curiosity, like we’re wonderful. 
+Tashigi: Aw, that's too wholesome. Maybe it's because I'm so tired, but I feel like I'm about to cry. Truly, that is something to aspire to. He looks up at us with such awe and curiosity, like we're wonderful.
 Bellemere: What if he thinks we want to eat him?
 You stare at Bellemere, unsure of how to respond. That goat is like an island mascot; the idea of eating it feels oddly like cannibalism.
-Bellemere: I’m just kidding! Stop looking at me like I kicked a puppy! Yeesh!
+Bellemere: I'm just kidding! Stop looking at me like I kicked a puppy! Yeesh!
 <<jump workday_smokers_and_friend_3_Z>>
 ===
 
@@ -703,7 +745,7 @@ title: workday_smokers_and_friend_3_pun
 location: town
 ---
 
-Hina: …Hina needs another drink.  
+Hina: ...Hina needs another drink.
 Smoker: Heh. I liked it.
 <<jump workday_smokers_and_friend_3_Z>>
 ===
@@ -712,7 +754,7 @@ title: workday_smokers_and_friend_3_dumb
 location: town
 ---
 
-Tashigi: I don’t think that applies to us all! 
+Tashigi: I don't think that applies to us all!
 Bellemere: No, I can see it.
 Smoker: Depends on what you mean by “best” and “worst”.
 Hina: Hina would like to think we all have more critical thinking skills than that.
@@ -723,5 +765,5 @@ title: workday_smokers_and_friend_3_Z
 location: town
 ---
 
-Overall, the night ends on a cheery note as you all drink and laugh (or stoically stare) with your superiors. You feel like you’ve learned a lot over the past few months of working together, but tonight proves that the camaraderie you feel is only continuing to grow.
+Overall, the night ends on a cheery note as you all drink and laugh (or stoically stare) with your superiors. You feel like you've learned a lot over the past few months of working together, but tonight proves that the camaraderie you feel is only continuing to grow.
 ===

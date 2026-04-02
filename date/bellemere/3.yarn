@@ -2,17 +2,17 @@ title: date_bellemere_3_main
 location: docks
 ---
 
-Bellemere: Hey, {$name}, let’s bar!
-{$name}: Let’s… what?
+Bellemere: Hey, {$name}, let's bar!
+{$name}: Let's... what?
 Bellemere: The bar! You know?
 She indicates drinking with her hand raised as the two of you leave your post for the day–a patrolling vessel with Vice Admiral Smoker.
 
-{$name}: Ah… you turned “bar” into a verb.
+{$name}: Ah... you turned “bar” into a verb.
 
-Bellemere: It’s a verb the way I do it- you game?
+Bellemere: It's a verb the way I do it- you game?
 -> Hell, yeah!
     <<jump date_bellemere_3_YesStart>>
--> Nah, I’m kinda tired…
+-> Nah, I'm kinda tired...
     <<jump date_bellemere_3_NoStart>>
 ===
 
@@ -20,31 +20,31 @@ title: date_bellemere_3_NoStart
 location: docks
 ---
 <<declare $bd3_points = 0>>
-Bellemere: Huh, okay then. I’ll just file that away for future reference: you’re a weenie after eight p.m.
+Bellemere: Huh, okay then. I'll just file that away for future reference: you're a weenie after eight p.m.
 {$name}: W-weenie!? Are you a grandpa!?
 Bellemere: Oh, look who's talking, “eight p.m!”
-On that immature note, Bellemere leaves you with a playful, mocking expression, and you feel a small ping of regret… Did you just pass up a rare opportunity to spend time one-on-one with the hot redheaded gunner?
-You’ve made a mistake. <<jump date_bellemere_3_dateEnd>>
+On that immature note, Bellemere leaves you with a playful, mocking expression, and you feel a small ping of regret... Did you just pass up a rare opportunity to spend time one-on-one with the hot redheaded gunner?
+You've made a mistake. <<jump date_bellemere_3_dateEnd>>
 ===
 
 title: date_bellemere_3_YesStart
 location: docks
 ---
 
-Bellemere: Alright! You’re buying!
-It is not framed as a question, and you cringe momentarily. 
-{$name}: Uh…
+Bellemere: Alright! You're buying!
+It is not framed as a question, and you cringe momentarily.
+{$name}: Uh...
 She elbows you, grinning.
-Bellemere: Relax, I’m just kidding! If I was going to rob you, I’ll just cheat at gambling or something. Let’s go get wasted! 
-The two of you head towards the bar in town. It’s still an hour or so until sunset, but you figure… for an off-duty Marine, it’s never too early, right? //LOCATION CHANGE
+Bellemere: Relax, I'm just kidding! If I was going to rob you, I'll just cheat at gambling or something. Let's go get wasted!
+The two of you head towards the bar in town. It's still an hour or so until sunset, but you figure... for an off-duty Marine, it's never too early, right? //LOCATION CHANGE
 {$name}: You think anyone else will be there?
-It was a common hang-out for their workmates, after all, though usually the little bar doesn’t really start popping until later. There weren’t a whole lot of options to relax on the small military installation, so the off-hours Marines tended to descend into the small town.
-Bellemere: Hmm.. maybe? At least, we might see some of the officers that aren’t high-strung. Tashigi’s been more easy-going lately… maybe next time we can drag her out, too?
-You doubt it. Still, it’s nice to note the two are not at each other's throats so much anymore.
+It was a common hang-out for their workmates, after all, though usually the little bar doesn't really start popping until later. There weren't a whole lot of options to relax on the small military installation, so the off-hours Marines tended to descend into the small town.
+Bellemere: Hmm.. maybe? At least, we might see some of the officers that aren't high-strung. Tashigi's been more easy-going lately... maybe next time we can drag her out, too?
+You doubt it. Still, it's nice to note the two are not at each other's throats so much anymore.
 The bar is small but clean, and the two of you opt for a table in the corner, calling your order across the mostly-empty room.
 -> Just a beer for me, thanks!
-	<<jump date_bellemere_3_Darts>>
--> Long Island… with one of those little umbrellas!
+    <<jump date_bellemere_3_Darts>>
+-> Long Island... with one of those little umbrellas!
     <<jump date_bellemere_3_talk>>
 -> Tequila shots! SHOTS SHOTS SHOTS!
     <<jump date_bellemere_3_drinkingcontest>>
@@ -55,12 +55,12 @@ location: bar
 ---
 
 Bellemere, at least, finds your outburst amusing, and with a challenging air she makes her declaration.
-Bellemere: Alright then, {$name}! You asked for it! Keep in mind I got a strong constitution and a stubborn nature. You’re gonna regret your little chant!
-Maybe she’s right, but-
--> At least we’ll have fun working our way to ruin- let’s go! Unless you’re all talk?
+Bellemere: Alright then, {$name}! You asked for it! Keep in mind I got a strong constitution and a stubborn nature. You're gonna regret your little chant!
+Maybe she's right, but-
+-> At least we'll have fun working our way to ruin- let's go! Unless you're all talk?
     <<jump date_bellemere_3_tease>>
--> Yeah? Well I’ll start, then!
-	<<jump date_bellemere_3_gracious>>
+-> Yeah? Well I'll start, then!
+    <<jump date_bellemere_3_gracious>>
 ===
 
 title: date_bellemere_3_tease
@@ -69,11 +69,11 @@ location: bar
 She takes that personally, throwing back her glass of tequila and motioning for the bartender to bring over the whole bottle with a delicate pointed finger.
 Bellemere: You gotta match me, glass for glass, punk!
 You do it, feeling the burn of the alcohol hit the back of your throat with force.
-Think back… when did you last eat?
+Think back... when did you last eat?
 -> 5+ hours ago
-	<<jump date_bellemere_3_b2p2>>
+    <<jump date_bellemere_3_b2p2>>
 -> Less than 5 hours ago
-	<<jump date_bellemere_3_b2p1>>
+    <<jump date_bellemere_3_b2p1>>
 ===
 
 title: date_bellemere_3_gracious
@@ -82,13 +82,13 @@ location: bar
 
 You do it, feeling the burn of the alcohol hit the back of your throat with force.
 She takes that personally, throwing back her own glass of tequila and motioning for the bartender to bring over the whole bottle with a delicate pointed finger.
-Bellemere: I’ll match you then, glass for glass, punk!
+Bellemere: I'll match you then, glass for glass, punk!
 
-Think back… when did you last eat?
+Think back... when did you last eat?
 -> 5+ hours ago
-	<<jump date_bellemere_3_b1p2>>
+    <<jump date_bellemere_3_b1p2>>
 -> Less than 5 hours ago
-	<<jump date_bellemere_3_b2p2>>
+    <<jump date_bellemere_3_b2p2>>
 ===
 
 title: date_bellemere_3_b1p2
@@ -97,14 +97,14 @@ location: bar
 
 Shot after shot goes down, the burning eventually smoothing out. It gets worryingly easy after a while, though the room is spinning a bit.
 You feel far more woozy than your companion, but neither of you are willing to give up. You have something to prove, here, and Bellemere is just always stubborn.
-You fall off your chair, first. You’re pretty sure you don’t actually pass out, but the ground is so comfy… It's very hard to get up again. Despite her own inebriated state, Bellemere manages to support you and half-drag you safely home.
-She certainly doesn’t let you live it down; Bellemere is the clear “winner” of the competition!
-Bellemere: You better remember the day I drank you literally under the table, {$name}! 
-{$name}: Ugh…
-Bellemere: Next time try a more tame challenge… like checkers, or-
-{$name}: I get it! Please talk… softer…
-Considering the hangover you both suffer from, is there even a “winner?” Well, at least it’s a story good for a laugh.
-<<jump date_bellemere_3_dateEnd>> <<declare $bd3_points += 1>>
+You fall off your chair, first. You're pretty sure you don't actually pass out, but the ground is so comfy... It's very hard to get up again. Despite her own inebriated state, Bellemere manages to support you and half-drag you safely home.
+She certainly doesn't let you live it down; Bellemere is the clear “winner” of the competition!
+Bellemere: You better remember the day I drank you literally under the table, {$name}!
+{$name}: Ugh...
+Bellemere: Next time try a more tame challenge... like checkers, or-
+{$name}: I get it! Please talk... softer...
+Considering the hangover you both suffer from, is there even a “winner?” Well, at least it's a story good for a laugh.
+<<jump date_bellemere_3_dateEnd>> <<set $bd3_points += 1>>
 ===
 
 title: date_bellemere_3_b2p1
@@ -112,12 +112,12 @@ location: bar
 ---
 
 Shot after shot goes down, burning and then eventually smooth. It gets worryingly easy after a while, though the room is spinning a bit.
-Bellemere seems far more woozy, but neither of you are willing to give up. You have something to prove, here, and Bellemere is just always stubborn. 
-Bellemere falls off her chair, first. You’re pretty sure she doesn’t actually pass out, but she mutters something about the ground being comfy… it's very hard to get her up again. Despite your own inebriated state, you manage to support her and half-drag her safely home.
-You certainly don’t let her live it down; you are the clear “winner” of the competition!
-Bellemere: Fine! You win! I’m suitably impressed!
-Considering the hangover you both suffer from, is there even a “winner?” Well, at least it’s a story good for a laugh.
-<<jump date_bellemere_3_dateEnd>> <<declare $bd3_points += 2>>
+Bellemere seems far more woozy, but neither of you are willing to give up. You have something to prove, here, and Bellemere is just always stubborn.
+Bellemere falls off her chair, first. You're pretty sure she doesn't actually pass out, but she mutters something about the ground being comfy... it's very hard to get her up again. Despite your own inebriated state, you manage to support her and half-drag her safely home.
+You certainly don't let her live it down; you are the clear “winner” of the competition!
+Bellemere: Fine! You win! I'm suitably impressed!
+Considering the hangover you both suffer from, is there even a “winner?” Well, at least it's a story good for a laugh.
+<<jump date_bellemere_3_dateEnd>> <<set $bd3_points += 2>>
 ===
 
 title: date_bellemere_3_b2p2
@@ -126,17 +126,17 @@ location: bar
 
 Shot after shot goes down, burning and then eventually smooth. It gets worryingly easy after a while, though the room spins if you focus too hard on Bellemere.
 She seems equally woozy, and neither of you seem willing to give up. You have something to prove, here, and Bellemere is just always stubborn.
-You have no idea who falls off their chair, first. You’re pretty sure neither of you actually pass out, but the ground is so comfy… you find yourself falling asleep, despite the bartender’s remonstrances…
+You have no idea who falls off their chair, first. You're pretty sure neither of you actually pass out, but the ground is so comfy... you find yourself falling asleep, despite the bartender's remonstrances...
 The next morning you wake up in your own bed, and when you track down Bellemere you find she shares the same story. Somehow the two of you managed to stumble home, and neither of you can agree on a “winner” in your competition.
-Considering the hangover you both suffer from, is there even a “winner?” Well, at least it’s a story good for a laugh.
-<<jump date_bellemere_3_dateEnd>> <<declare $bd3_points += 1>>
+Considering the hangover you both suffer from, is there even a “winner?” Well, at least it's a story good for a laugh.
+<<jump date_bellemere_3_dateEnd>> <<set $bd3_points += 1>>
 ===
 
 title: date_bellemere_3_Darts
 location: bar
 ---
 
-Bellemere: I’ll have the same!
+Bellemere: I'll have the same!
 The bartender nods with a smile, and begins pouring your drinks. No waitress yet tonight, which makes sense at this time. He brings the beers directly to you, opening a tab.
 The two of you drink for a while, talking about work and the recent Sports Festival, until your friend points out a dart board across the room.
 She raises her brows in challenge, and you can do nothing but accept.
@@ -144,41 +144,43 @@ Bellemere: Alright! Winner pays for drinks!
 You had a feeling it would turn out like this. You laugh, but nod.
 Bellemere: Should we play 301 or 501?
 -> 301
-	<<jump date_bellemere_3_game_1>>
+    <<jump date_bellemere_3_game_1>>
 -> 501
-	<<jump date_bellemere_3_game_2>>
+    <<jump date_bellemere_3_game_2>>
 -> Huh?
-	<<jump date_bellemere_3_game_3>>
+    <<jump date_bellemere_3_game_3>>
 ===
 
 title: date_bellemere_3_game_1
 location: bar
 ---
 
-You feel like a shorter game, at least to start. It’s been a while since you last played, and you’re up against a gunner for the Marines, so… perhaps the game would be over quickly, either way!
-Still, you’ll try your best…
--> …because you want to impress her. (+1)
-	<<declare $bd3_points += 1>> <<jump date_bellemere_3_play_1>>
--> …because you want to add something to the bet. (+0)
-	<<declare $bd3_points = 0>> <<jump date_bellemere_3_play_2>>
+You feel like a shorter game, at least to start. It's been a while since you last played, and you're up against a gunner for the Marines, so... perhaps the game would be over quickly, either way!
+Still, you'll try your best...
+-> ...because you want to impress her. (+1)
+    <<set $bd3_points += 1>>
+    <<jump date_bellemere_3_play_1>>
+-> ...because you want to add something to the bet. (+0)
+    <<declare $bd3_points = 0>>
+    <<jump date_bellemere_3_play_2>>
 ===
 
 title: date_bellemere_3_play_1
 location: bar
 ---
 
-You do your very best, playing through the game with legs shoulder-width apart, aiming for the big points. Since it’s only a 301-point game, it goes fast. You’re not too far behind, since the game is short, but you’re not winning. Bellemere, predictably, gets close to the end first, and since she needs only four points to end the game she just needed to hit a double 2 in the outer ring.
+You do your very best, playing through the game with legs shoulder-width apart, aiming for the big points. Since it's only a 301-point game, it goes fast. You're not too far behind, since the game is short, but you're not winning. Bellemere, predictably, gets close to the end first, and since she needs only four points to end the game she just needed to hit a double 2 in the outer ring.
 Such a tiny little block of red; she was on her second try, and swore when she barely missed.
 Bellemere: Too much beer, I think!
 {$name}: Oh? Excuses?
 Bellemere gives you a surprised look, then shakes her head.
-Bellemere: Oh, you’re in for it now! Just wait!
-Teasing aside, the short game actually means it’s quite close. On your next turn, you come up to the end point on your own game. If Bellemere fails her next turn, and you hit a double 20 on your own, you could win…
-Unfortunately, you’re not that lucky. She hits her mark, and jumps up in victory.
+Bellemere: Oh, you're in for it now! Just wait!
+Teasing aside, the short game actually means it's quite close. On your next turn, you come up to the end point on your own game. If Bellemere fails her next turn, and you hit a double 20 on your own, you could win...
+Unfortunately, you're not that lucky. She hits her mark, and jumps up in victory.
 Bellemere: WOOO! In your FACE, {$name}!
 She is not a very gracious winner.
-Bellemere: Good show though, overall. I’m impressed!
-Okay, so… maybe you didn’t win, but with the redhead’s kind words, it still feels like it.
+Bellemere: Good show though, overall. I'm impressed!
+Okay, so... maybe you didn't win, but with the redhead's kind words, it still feels like it.
 <<jump date_bellemere_3_dance>>
 ===
 
@@ -186,55 +188,60 @@ title: date_bellemere_3_play_2
 location: bar
 ---
 
-{$name}: Okay, hold up. What if… if I lose, I pay for our drinks. But if I win, I get something else.
+{$name}: Okay, hold up. What if... if I lose, I pay for our drinks. But if I win, I get something else.
 Bellemere looks thoughtful, but carefully amused at your burst of enthusiasm.
 Bellemere: Oh yeah? What do you want, {$name}?
 You gulp, trying to get the words out, your face blazing red.
-You mumble your answer…
+You mumble your answer...
 -> A kiss!
-	<<declare $bd3_points += 1>> <<jump date_bellemere_3_kiss>>
+    <<set $bd3_points += 1>>
+    <<jump date_bellemere_3_kiss>>
 -> You do my end-of-week report for the next three weeks!
-	<<declare $bd3_points = 0>> <<jump date_bellemere_3_report>>
--> I get a basket of your mikans when they’re finally ripe!
-	<<declare $bd3_points += 2>> <<jump date_bellemere_3_mikans>>
+    <<declare $bd3_points = 0>>
+    <<jump date_bellemere_3_report>>
+-> I get a basket of your mikans when they're finally ripe!
+    <<set $bd3_points += 2>>
+    <<jump date_bellemere_3_mikans>>
 ===
 
 title: date_bellemere_3_kiss
 location: bar
 ---
 
-Bellemere blinks, completely taken aback by your presumptuous condition. She seems… to consider, a pinger to her chin, and then-
+Bellemere blinks, completely taken aback by your presumptuous condition. She seems... to consider, a pinger to her chin, and then-
 Bellemere: Done! But you better be ready to buy me the most expensive top-shelf stuff in this dive bar when I win!
-You do your very best, playing through the game with legs shoulder-width apart, aiming for the big points. It seems like time flies by, points accumulating (or, rather, detracting) fast. You’re not too far behind by the end, but you’re not winning. Bellemere, predictably, gets close to the end first, and since she needs only four points to win the game she aims to hit a double 2 in the outer ring.
+You do your very best, playing through the game with legs shoulder-width apart, aiming for the big points. It seems like time flies by, points accumulating (or, rather, detracting) fast. You're not too far behind by the end, but you're not winning. Bellemere, predictably, gets close to the end first, and since she needs only four points to win the game she aims to hit a double 2 in the outer ring.
 Such a tiny little block of red; she was on her second try, and swore when she barely missed.
 Bellemere: Too much beer, I think!
 {$name}: Oh? Or maybe you want me to win?
 Bellemere gives you a surprised look, then shakes her head.
-Bellemere: Oh, you’re in for it now! Just wait!
-Teasing aside, the short game actually means it’s quite close. On your next turn, you come up to the end point on your own game. If Bellemere fails her next turn, and you hit a double twenty on your own, you could win…
+Bellemere: Oh, you're in for it now! Just wait!
+Teasing aside, the short game actually means it's quite close. On your next turn, you come up to the end point on your own game. If Bellemere fails her next turn, and you hit a double twenty on your own, you could win...
 -> Let it be up to fate!
-	<<declare $bd3_points += 1>> <<jump date_bellemere_3_fate>>
+    <<set $bd3_points += 1>>
+    <<jump date_bellemere_3_fate>>
 -> Cough. LOUD.
-	<<declare $bd3_points = 0>> <<jump date_bellemere_3_cheat>>
+    <<declare $bd3_points = 0>>
+    <<jump date_bellemere_3_cheat>>
 ===
 
 title: date_bellemere_3_cheat
 location: bar
 ---
 
-You cough, and the sound jars Bellemere just a bit… but she keeps hold of her dart.
+You cough, and the sound jars Bellemere just a bit... but she keeps hold of her dart.
 Flashing you a cheeky grin she aims and releases it, hitting her mark and winning the game.
 Bellemere: Oh, we thought we were real clever there, huh?
-{$name}: Uh… maybe. 
+{$name}: Uh... maybe.
 Bellemere leans in real close to you; you can feel her breath on your cheek and she moves in to whisper in your ear, and the warmth spreads to color your cheeks.
-Bellemere: Or maybe you’re just that desperate for a kiss?
-Your heart is in your throat, your mind racing. Did you make a mistake? Offend her? You can’t tell from her tone if she’s angry, amused… or something else entirely.
-{$name}: Er…
-Bellemere grabs your face, keeping your eyes directed at her own, pressing hard enough on your cheeks that you know you’re making a fish-like expression.
-Bellemere: Well, if you’re so into the idea…
-Her face grows close, and you’re sure she’s about to do it. Kiss you. For real, you’ll finally get to grow that much closer to the beautiful badass Marine. You close your eyes, unable to take it; the anticipation is making you dizzy, the redhead moving at an agonizingly slow pace…
+Bellemere: Or maybe you're just that desperate for a kiss?
+Your heart is in your throat, your mind racing. Did you make a mistake? Offend her? You can't tell from her tone if she's angry, amused... or something else entirely.
+{$name}: Er...
+Bellemere grabs your face, keeping your eyes directed at her own, pressing hard enough on your cheeks that you know you're making a fish-like expression.
+Bellemere: Well, if you're so into the idea...
+Her face grows close, and you're sure she's about to do it. Kiss you. For real, you'll finally get to grow that much closer to the beautiful badass Marine. You close your eyes, unable to take it; the anticipation is making you dizzy, the redhead moving at an agonizingly slow pace...
 And then you feel a sudden wetness against your forehead, a smacking sound obvious as she throws your head back, laughing. Your eyes shoot open and you touch the spot, embarrassed.
-Bellemere: Ha! As if I’d make it that easy for ya! 
+Bellemere: Ha! As if I'd make it that easy for ya!
 You gulp, but manage to recover soon enough.
 <<jump date_bellemere_3_dance>>
 ===
@@ -243,11 +250,11 @@ title: date_bellemere_3_fate
 location: bar
 ---
 
-Unfortunately, you’re not that lucky. She hits her mark, and jumps up in victory.
+Unfortunately, you're not that lucky. She hits her mark, and jumps up in victory.
 Bellemere: WOOO! In your FACE, {$name}!
 She is not a very gracious winner.
-Bellemere: Good show though, overall. I’m impressed!
-Okay, so… maybe you didn’t win, but with the redhead’s kind words, it still feels like it.
+Bellemere: Good show though, overall. I'm impressed!
+Okay, so... maybe you didn't win, but with the redhead's kind words, it still feels like it.
 <jump date_bellemere_3_dance>>
 ===
 
@@ -256,10 +263,11 @@ location: bar
 ---
 
 Bellemere pulls a sour face, clearly displeased with your response.
-Bellemere: You want to bet… on work? Yuck. No thanks.
-She seems to lose interest in the game, and though the two of you continue to drink for a while, it’s clear you’ve annoyed her by bringing up work during off-hours like that.
+Bellemere: You want to bet... on work? Yuck. No thanks.
+She seems to lose interest in the game, and though the two of you continue to drink for a while, it's clear you've annoyed her by bringing up work during off-hours like that.
 You go home early, feeling the cold shoulder from your lovely companion.
-<<declare $bd3_points = 0>> <<jump date_bellemere_3_dateEnd>>
+<<declare $bd3_points = 0>>
+<<jump date_bellemere_3_dateEnd>>
 ===
 
 title: date_bellemere_3_mikans
@@ -267,22 +275,22 @@ location: bar
 ---
 
 Bellemere looks thoughtful.
-Bellemere: A whole basket, huh? I was gonna share a few…
-{$name}: Well, if it’s too much… I mean, if you’re scared of losing…!
-Bellemere: Oh-ho, I see how it is! I’m not scared to lose to you, {$name}! Deal- you get a whole bushel if you can beat me!
-You grin. It’s obvious that you’ve pleased her, asking for the mikans… she seems to really be attached to those trees, after all, so putting them on such a pedestal is a mark in your favor, even if you do lose.
-And of course you do your very best, playing through the game with legs shoulder-width apart, aiming for the big points. It’s not exactly hopeless, but… well, you’re clearly outmatched to a certain extent. 
+Bellemere: A whole basket, huh? I was gonna share a few...
+{$name}: Well, if it's too much... I mean, if you're scared of losing...!
+Bellemere: Oh-ho, I see how it is! I'm not scared to lose to you, {$name}! Deal- you get a whole bushel if you can beat me!
+You grin. It's obvious that you've pleased her, asking for the mikans... she seems to really be attached to those trees, after all, so putting them on such a pedestal is a mark in your favor, even if you do lose.
+And of course you do your very best, playing through the game with legs shoulder-width apart, aiming for the big points. It's not exactly hopeless, but... well, you're clearly outmatched to a certain extent.
 Bellemere, predictably, gets close to the end first, and since she needs only four points to end the game she just needed to hit a double 2 in the outer ring to win.
 Such a tiny little block of red; she was on her second try, and swore when she barely missed.
 Bellemere: Too much beer, I think!
 {$name}: Oh? Excuses?
 Bellemere gives you a surprised look, then shakes her head.
-Bellemere: Oh, you’re in for it now! Just wait!
-Teasing aside, you don’t think you really have much hope. She’s very far ahead by this point, and sure enough she manages to nail it on the next round.
+Bellemere: Oh, you're in for it now! Just wait!
+Teasing aside, you don't think you really have much hope. She's very far ahead by this point, and sure enough she manages to nail it on the next round.
 Bellemere: WOOO! In your FACE, {$name}!
 She is not a very gracious winner.
-Bellemere: Don’t look so down! Hell, I’ll still share my mikans with you. You can have a bushel to keep, too. But keep in mind it’s a gift out of the goodness of my heart, alright? I totally destroyed you at this game!
-Well… she wasn’t wrong.
+Bellemere: Don't look so down! Hell, I'll still share my mikans with you. You can have a bushel to keep, too. But keep in mind it's a gift out of the goodness of my heart, alright? I totally destroyed you at this game!
+Well... she wasn't wrong.
 
 SET CONDITION: MIKANS EARNED //HOW??
 
@@ -293,25 +301,27 @@ title: date_bellemere_3_game_2
 location: bar
 ---
 
-A longer game would be better, since it means more time spent with Bellemere. You don’t know what your chances will be like, going up against someone like her, but still, you’ll try your best.
-Why? 
--> …because you want to impress her.
-	<<declare $bd3_points += 1>> <<jump date_bellemere_3_play_3>>
--> …because you want to add something to the bet (+0)
-	<<declare $bd3_points = 0>> <<jump date_bellemere_3_play_2>>
+A longer game would be better, since it means more time spent with Bellemere. You don't know what your chances will be like, going up against someone like her, but still, you'll try your best.
+Why?
+-> ...because you want to impress her.
+    <<set $bd3_points += 1>>
+    <<jump date_bellemere_3_play_3>>
+-> ...because you want to add something to the bet (+0)
+    <<declare $bd3_points = 0>>
+    <<jump date_bellemere_3_play_2>>
 ===
 
 title: date_bellemere_3_play_3
 location: bar
 ---
 
-You do your very best, playing through the game with legs shoulder-length apart, aiming for the big points. Since it’s a 501-point game, there’s plenty of time for your superior to gain a very significant lead on your. Bellemere, predictably, gets close to the end first, and since she needs only four points to end the game she needs to hit a double 2 in the outer ring.
+You do your very best, playing through the game with legs shoulder-length apart, aiming for the big points. Since it's a 501-point game, there's plenty of time for your superior to gain a very significant lead on your. Bellemere, predictably, gets close to the end first, and since she needs only four points to end the game she needs to hit a double 2 in the outer ring.
 Such a tiny little block of red; she was on her second try, and swore when she barely missed.
 Bellemere: Too much beer, I think!
 {$name}: Oh? Excuses?
 Bellemere gives you a surprised look, then shakes her head.
-Bellemere: Oh, you’re in for it now! Just wait!
-Teasing aside, you don’t think you really have much hope. She’s very far ahead by this point, and sure enough she manages to nail it on the next round.
+Bellemere: Oh, you're in for it now! Just wait!
+Teasing aside, you don't think you really have much hope. She's very far ahead by this point, and sure enough she manages to nail it on the next round.
 Bellemere: WOOO! In your FACE, {$name}!
 She is not a very gracious winner.
 <<jump date_bellemere_3_dance>>
@@ -321,31 +331,33 @@ title: date_bellemere_3_game_3
 location: bar
 ---
 
-Bellemere: It’s just the length of the game. See, you throw the darts at the board and aim for high points-
+Bellemere: It's just the length of the game. See, you throw the darts at the board and aim for high points-
 {$name}: Yeah, well, anyone knows that much.
-Bellemere: But see you’re counting down, not up, right? So we either start with 301 points we’re trying to get rid of, or 501. But you have to get to zero exactly, so the end of the game is the hardest part!
+Bellemere: But see you're counting down, not up, right? So we either start with 301 points we're trying to get rid of, or 501. But you have to get to zero exactly, so the end of the game is the hardest part!
 -> Oh, okay. Then 301 is good.
-	<<jump date_bellemere_3_game_1>>
--> We got all night! 501 doesn’t sound too long, anyway!
-	<<jump date_bellemere_3_game_2>>
+    <<jump date_bellemere_3_game_1>>
+-> We got all night! 501 doesn't sound too long, anyway!
+    <<jump date_bellemere_3_game_2>>
 ===
 
 title: date_bellemere_3_talk
 location: bar
 ---
 
-Bellemere: W-hoa, we’re getting a bit wild tonight, huh? I mean…tiny umbrellas?
-By this point in the year, you’ve started to understand the Commodore's humor, so you just shake your head.
-{$name}: Laugh it up! What will you do when there’s tiny rain?
-She snorts, orders a beer, and the two of you settle into your seats. You both talk and laugh for a while as you drink- your long island tasting sweet and unassuming and lulling you into a state of false confidence. That’s fine though; it’s what you expected, and you just enjoy the light feeling that fills you as the conversation gets louder and more people begin to drift into the bar.
+Bellemere: W-hoa, we're getting a bit wild tonight, huh? I mean...tiny umbrellas?
+By this point in the year, you've started to understand the Commodore's humor, so you just shake your head.
+{$name}: Laugh it up! What will you do when there's tiny rain?
+She snorts, orders a beer, and the two of you settle into your seats. You both talk and laugh for a while as you drink- your long island tasting sweet and unassuming and lulling you into a state of false confidence. That's fine though; it's what you expected, and you just enjoy the light feeling that fills you as the conversation gets louder and more people begin to drift into the bar.
 Bellemere: Okay, never have I ever-
 {$name}: Wait, what are we doing?
-Bellemere: It’s a drinking game! Look, I say, “Never have I ever,” and supply something outrageous. If you’ve done it before, you take a drink. It’s both embarrassing and a great way to get drunk. A two-fer.
+Bellemere: It's a drinking game! Look, I say, “Never have I ever,” and supply something outrageous. If you've done it before, you take a drink. It's both embarrassing and a great way to get drunk. A two-fer.
 {$name}:
--> Sounds like a disaster. I’m in.
-	<<declare $bd3_points += 1>> <<jump date_bellemere_3_fun>>
+-> Sounds like a disaster. I'm in.
+    <<set $bd3_points += 1>>
+    <<jump date_bellemere_3_fun>>
 -> Sounds like a disaster. No way!
-	<<declare $bd3_points = 0>> <<jump date_bellemere_3_boo>>
+    <<declare $bd3_points = 0>>
+    <<jump date_bellemere_3_boo>>
 ===
 
 title: date_bellemere_3_boo
@@ -354,7 +366,7 @@ location: bar
 
 Bellemere rolls her eyes and sighs.
 Bellemere: Spoilsport. Well- entertain me then!
-{$name}: Entertain you how…?
+{$name}: Entertain you how...?
 <<jump date_bellemere_3_dance>>
 ===
 
@@ -363,11 +375,11 @@ location: bar
 ---
 
 Bellemere: Never have I ever skipped work!
-You stare at her, unimpressed, as she takes a drink. Seems to be against the idea of the game, saying something you’ve actually done…of course. With a sigh, you…
+You stare at her, unimpressed, as she takes a drink. Seems to be against the idea of the game, saying something you've actually done...of course. With a sigh, you...
 -> Take a drink!
-	<<jump date_bellemere_3_drink_1>>
+    <<jump date_bellemere_3_drink_1>>
 -> Do nothing
-	<<jump date_bellemere_3_nothing_1>>
+    <<jump date_bellemere_3_nothing_1>>
 ===
 
 title: date_bellemere_3_drink_1
@@ -384,7 +396,7 @@ title: date_bellemere_3_nothing_1
 location: bar
 ---
 
-Bellemere gives you a look, and you shrug. Either she doesn’t believe you, or she thinks you’re lame. You let an air of mystique surround the look, because you’d hate to find out for sure it’s the later interpretation.
+Bellemere gives you a look, and you shrug. Either she doesn't believe you, or she thinks you're lame. You let an air of mystique surround the look, because you'd hate to find out for sure it's the later interpretation.
 <<jump date_bellemere_3_fun_2>>
 ===
 
@@ -394,14 +406,17 @@ location: bar
 
 Bellemere: Now *you* go.
 {$name}: I have to come up with one!?
-Bellemere: Well yeah, it’d be boring if it was just me! Besides, I get less articulate the more I drink. Help me out, here!
-{$name}: Er, okay… Never have I ever…
--> …peed in a pool
-	<<declare $bd3_points += 1>> <<jump date_bellemere_3_peed>>
--> …lied about my age
-	<<declare $bd3_points = 0>> <<jump date_bellemere_3_age>>
--> …flirted to get out of trouble
-	<<declare $bd3_points += 1>> <<jump date_bellemere_3_flirt>>
+Bellemere: Well yeah, it'd be boring if it was just me! Besides, I get less articulate the more I drink. Help me out, here!
+{$name}: Er, okay... Never have I ever...
+-> ...peed in a pool
+    <<set $bd3_points += 1>>
+    <<jump date_bellemere_3_peed>>
+-> ...lied about my age
+    <<declare $bd3_points = 0>>
+    <<jump date_bellemere_3_age>>
+-> ...flirted to get out of trouble
+    <<set $bd3_points += 1>>
+    <<jump date_bellemere_3_flirt>>
 ===
 
 title: date_bellemere_3_flirt
@@ -411,13 +426,15 @@ location: bar
 Bellemere takes a biiiig old drink. A *chug,* if you will.
 You laugh, and she pretends to be offended, a hand to her chest.
 Bellemere: Is there something amusing about using my *assets* to get free stuff?
-{$name}: Maybe not, but there’s something funny about just how proud you are of it!
-Bellemere: Hey, “a fool and his money will soon be parted.” If fools want to buy me things because of my hot bod, that’s on them. If they take my flirting seriously, that’s on them too. By the way, you’ve got the check this time, right?
+{$name}: Maybe not, but there's something funny about just how proud you are of it!
+Bellemere: Hey, “a fool and his money will soon be parted.” If fools want to buy me things because of my hot bod, that's on them. If they take my flirting seriously, that's on them too. By the way, you've got the check this time, right?
 She bats her eyes cartoonishly, and you shake your head.
--> Well, I’ll be a fool for you any day!
-	<<declare $bd3_points += 1>> <<jump date_bellemere_3_fool>>
--> Ha! Nice try, but we’re going Dutch this time around!
-	<<declare $bd3_points = 0>> <<jump date_bellemere_3_split_bill>>
+-> Well, I'll be a fool for you any day!
+    <<set $bd3_points += 1>>
+    <<jump date_bellemere_3_fool>>
+-> Ha! Nice try, but we're going Dutch this time around!
+    <<declare $bd3_points = 0>>
+    <<jump date_bellemere_3_split_bill>>
 ===
 
 title: date_bellemere_3_split_bill
@@ -425,7 +442,7 @@ location: bar
 ---
 
 Bellemere looks amused, shaking her head.
-Bellemere: Yeah, yeah, whatever you say, {$name}! 
+Bellemere: Yeah, yeah, whatever you say, {$name}!
 <<jump date_bellemere_3_dateEnd>>
 ===
 
@@ -434,8 +451,8 @@ location: bar
 ---
 
 Bellemere reaches forward and pulls your cap down over your eyes, making a clicking noise with her tongue.
-Bellemere: Don’t be so easily moved, {$name}! Have some pride!
-{$name}: …Really?
+Bellemere: Don't be so easily moved, {$name}! Have some pride!
+{$name}: ...Really?
 Bellemere: Nah- just messing with you. Bend that pride to my will all you like! I like a soldier that treats me well!
 <<jump date_bellemere_3_GameEnd>>
 ===
@@ -445,12 +462,12 @@ location: bar
 ---
 
 Bellemere takes a drink, and then quickly explains while licking her drink from her lips.
-Bellemere: Hmm… when I was younger, I wanted to get some of these.
+Bellemere: Hmm... when I was younger, I wanted to get some of these.
 She raises her drink cheekily, the ice tinkling against the glass as she shakes it lightly.
-{$name}: And now…?
-Bellemere: Oi! You think I need to lie about my age now!? I’m thirty, but I don’t look a day over twenty-five! Just how old did you think I was, anyway!?
-{$name}: Er…
-There’s no right answer- if you say any older, you’re dead. If you say younger, she could take it wrong and you’d also be dead. You keep your opinion to yourself and take a sip of your own drink.
+{$name}: And now...?
+Bellemere: Oi! You think I need to lie about my age now!? I'm thirty, but I don't look a day over twenty-five! Just how old did you think I was, anyway!?
+{$name}: Er...
+There's no right answer- if you say any older, you're dead. If you say younger, she could take it wrong and you'd also be dead. You keep your opinion to yourself and take a sip of your own drink.
 Whether you have lied about your age or not, you drink in solidarity to avoid further trouble.
 <<jump date_bellemere_3_GameEnd>>
 ===
@@ -460,15 +477,15 @@ location: bar
 ---
 
 Bellemere: Ew!
-Immediately after saying this… she takes a drink.
-{$name}: Ah! So hypocritical! 
+Immediately after saying this... she takes a drink.
+{$name}: Ah! So hypocritical!
 Bellemere: Ah, well, I was an impatient kid.
 She smirks, sheepishly, and you can only laugh.
 Do you drink, too?
 -> Yes
-	<<jump date_bellemere_3_peed_1>>
+    <<jump date_bellemere_3_peed_1>>
 -> No
-	<<jump date_bellemere_3_peed_2>>
+    <<jump date_bellemere_3_peed_2>>
 ===
 
 title: date_bellemere_3_peed_1
@@ -476,7 +493,7 @@ location: bar
 ---
 
 Bellemere laughs so hard a bit of her drink comes out of her nose.
-Bellemere: Who’s the hypocrite?! Ow… that burns!
+Bellemere: Who's the hypocrite?! Ow... that burns!
 <<jump date_bellemere_3_GameEnd>>
 ===
 
@@ -494,7 +511,7 @@ title: date_bellemere_3_GameEnd
 location: bar
 ---
 
-The two of you go back and forth oversharing, though by the end of it you’ve drank enough you doubt you’ll remember much of this in the morning.
+The two of you go back and forth oversharing, though by the end of it you've drank enough you doubt you'll remember much of this in the morning.
 <<jump date_bellemere_3_dance>>
 ===
 
@@ -507,49 +524,51 @@ She hesitates, then takes your hand as you lead her out to the very small space 
 Bellemere: Oh? Are we dancing now?
 {$name}: Any requests?
 You step up to the old neon-tubed machine, peering at the playlist.
-Bellemere: Well, here’s a good chance to get a read on you, {$name}. You can tell a lot by someone’s taste in music…
+Bellemere: Well, here's a good chance to get a read on you, {$name}. You can tell a lot by someone's taste in music...
 The machine operates via a series of dials, the glistening shells knocked on or off by an arm-like mechanism. The whole thing is brightly lit, and when you put in your berries the machinery seems to come to life behind the glass.
 What do you select?
 -> Soul King Brook
-	<<jump date_bellemere_3_Brook>>
+    <<jump date_bellemere_3_Brook>>
 -> Princess Uta
-	<<jump date_bellemere_3_Uta>>
+    <<jump date_bellemere_3_Uta>>
 ===
 
 title: date_bellemere_3_Uta
 location: bar
 ---
 
-You love Princess Uta’s music, so powerful and pop-y at the same time. She’s a worldwide sensation, so you figure it’s a good bet that Bellemere likes her too.
-Bellemere: Hey, it’s Princess Uta! I don’t know how someone can always seem so kind and patient with the whole world watching… I’d eventually get caught picking my nose or bad mouthing someone on video den-den mushi. 
-{$name}: You’re too real to be a pop princess, you mean?
-Bellemere: Well… yeah, and also I can’t sing worth shit!
+You love Princess Uta's music, so powerful and pop-y at the same time. She's a worldwide sensation, so you figure it's a good bet that Bellemere likes her too.
+Bellemere: Hey, it's Princess Uta! I don't know how someone can always seem so kind and patient with the whole world watching... I'd eventually get caught picking my nose or bad mouthing someone on video den-den mushi.
+{$name}: You're too real to be a pop princess, you mean?
+Bellemere: Well... yeah, and also I can't sing worth shit!
 You laugh, holding out a hand for the Commodore, and she takes it eagerly. Before you can lead her to the dance floor she leaps forward, pulling you behind roughly and turning you in a full circle before dipping you dramatically in a sweeping motion.
 The two of you dance- not *well*, but with a sudden enthusiasm brought on by good music and drinks.
-You end the night exhausted from so much partying, both promising to do it again sometime. 
-<<declare $bd3_points += 2>> <<jump date_bellemere_3_dateEnd>>
+You end the night exhausted from so much partying, both promising to do it again sometime.
+<<set $bd3_points += 2>>
+<<jump date_bellemere_3_dateEnd>>
 ===
 
 title: date_bellemere_3_Brook
 location: bar
 ---
 
-You find Soul King Brook’s music rather soulful and blood-pumping, even if the guy is(technically) a pirate. You’ve been a fan for a while now, and you hope Bellemere won’t judge your taste in music too harshly.
-Bellemere: Hey, I love this guy! He’s got a jazzy beat… like, what a voice! Lots of exclamations. He must be fun at parties!
-{$name}: I hear he’s literally the living dead.
-Bellemere: I know; isn’t it cool?
-Ah, so she’s a fan, too? 
+You find Soul King Brook's music rather soulful and blood-pumping, even if the guy is(technically) a pirate. You've been a fan for a while now, and you hope Bellemere won't judge your taste in music too harshly.
+Bellemere: Hey, I love this guy! He's got a jazzy beat... like, what a voice! Lots of exclamations. He must be fun at parties!
+{$name}: I hear he's literally the living dead.
+Bellemere: I know; isn't it cool?
+Ah, so she's a fan, too?
 You grin, holding out a hand for the Commodore, and she takes it eagerly. Before you can lead her to the dance floor she leaps forward, pulling you behind roughly and turning you in a full circle with a laugh.
 The two of you dance- not *well*, but with a sudden enthusiasm brought on by good music and drinks.
-You end the night exhausted from so much partying, both promising to do it again sometime. 
-<<declare $bd3_points += 2>> <<jump date_bellemere_3_dateEnd>>
+You end the night exhausted from so much partying, both promising to do it again sometime.
+<<set $bd3_points += 2>>
+<<jump date_bellemere_3_dateEnd>>
 ===
 
 title: date_bellemere_3_dateEnd
 location: bedroom
 ---
 
-That sure was a night! 
+That sure was a night!
 Uh oh.
 You have work in the morning!
 ===

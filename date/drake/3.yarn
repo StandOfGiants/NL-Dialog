@@ -1,20 +1,20 @@
 :: Start
 do set_background("park", Show)
 do show_character("drake", Show)
-Drake: I know when we’ve spent time together before, {$name}, it’s been to accomplish a task, so thank you for meeting me just to talk.
-- {$name}: Oh, it’s no problem!
-- {$name}: You’re the one who suggested we do those activities.
-  Drake: I have… Difficulty sometimes setting aside time to not work. 
+Drake: I know when we've spent time together before, {$name}, it's been to accomplish a task, so thank you for meeting me just to talk.
+- {$name}: Oh, it's no problem!
+- {$name}: You're the one who suggested we do those activities.
+  Drake: I have... Difficulty sometimes setting aside time to not work.
 - {$name}: Thanks for suggesting it.
   Drake: Of course.
 
 
 Drake begins to walk towards a calm pond dotted with lily pads. Near the shore are some mossy logs, on top of which a few turtles are sunbathing.
 - {$name}: Aww, turtles are so cute! (+1)
-  Drake: I think so too. 
-- {$name}: Huh. Didn’t know we had turtles here.
+  Drake: I think so too.
+- {$name}: Huh. Didn't know we had turtles here.
   Drake: Yes, there are quite a few living in the ponds and wells.
-- {$name}: I wish I were a turtle. Sunbathing on a log all day, until I get tired and swim around…
+- {$name}: I wish I were a turtle. Sunbathing on a log all day, until I get tired and swim around...
   Drake: I see your point.
 
 
@@ -23,32 +23,32 @@ Drake: In my early days as a Marine, they didn't quite know what to do with me, 
 - {$name}: Is that why you chose to eat that devil fruit?
   Drake: Among other reasons, yes.
 - {$name}: What made you go into other areas?
-  Drake: I don’t think the higher-ups wanted me to get too comfortable. And I wanted to prove myself in combat.
-  - {$name}: Why not? Isn’t comfort a good thing?
+  Drake: I don't think the higher-ups wanted me to get too comfortable. And I wanted to prove myself in combat.
+  - {$name}: Why not? Isn't comfort a good thing?
     Drake: Not in the position I was in at the time.
   - {$name}: Oh, makes sense. So were you right out on the front lines after that?
     Drake: Not right away, no.
   - {$name}: Do you miss it?
-    Drake: Sometimes. I’d like to do it again someday if I’m not needed elsewhere.
+    Drake: Sometimes. I'd like to do it again someday if I'm not needed elsewhere.
 - {$name}: That sounds fun!
-  Drake: It was, though I’m not sure how useful it was to the Marines.
+  Drake: It was, though I'm not sure how useful it was to the Marines.
 
 
 
-Drake: Turtles are fascinating creatures—ah, sorry, I don’t want to bore you. 
+Drake: Turtles are fascinating creatures—ah, sorry, I don't want to bore you.
 - {$name}: Not boring at all!(+1)
-- {$name}: Oh, um… (-1)
-- {$name}: I agree, they really are. Though I don’t know much about them…
-  Drake: I’d be happy to show you some of my research papers. That is, if you’re interested.
+- {$name}: Oh, um... (-1)
+- {$name}: I agree, they really are. Though I don't know much about them...
+  Drake: I'd be happy to show you some of my research papers. That is, if you're interested.
   - {$name}: That could be interesting.
-  - {$name}: Yes, please! Let’s do that the next rainy day. (+1)
+  - {$name}: Yes, please! Let's do that the next rainy day. (+1)
 
 
 
-Drake: …
-- {$name}: I’ve been thinking a lot lately, about the stuff we’ve been talking about. Justice. What it means. => Justice_talk 
-- {$name}: (available if you didn’t find out who Drake was shopping for in the second date) So, when we went shopping the other day… Who were you shopping for? => Shop_talk_a 
-- {$name}: (available if you did find out who Drake was shopping for in the second date) Did Vice Admiral Tsuru like her gift? => Shop_talk 
+Drake: ...
+- {$name}: I've been thinking a lot lately, about the stuff we've been talking about. Justice. What it means. => Justice_talk
+- {$name}: (available if you didn't find out who Drake was shopping for in the second date) So, when we went shopping the other day... Who were you shopping for? => Shop_talk_a
+- {$name}: (available if you did find out who Drake was shopping for in the second date) Did Vice Admiral Tsuru like her gift? => Shop_talk
 
 
 
@@ -56,18 +56,18 @@ Drake: …
 
 :: Justice_talk
 Drake: Yes, I think about it often as well.
-- {$name}: I don’t just mean, you know, because we’re Marines and we have to.
-  Drake: There are some among our number who don’t think much of it. 
+- {$name}: I don't just mean, you know, because we're Marines and we have to.
+  Drake: There are some among our number who don't think much of it.
   - {$name}: Because they already understand it?
-    Drake: I suppose that could be true of a few. But for most, it’s rather because they accept things thoughtlessly.
-  - {$name}: Well, I guess… Some people tend to avoid overthinking?
-    Drake: Yes, that’s one way of putting it.
+    Drake: I suppose that could be true of a few. But for most, it's rather because they accept things thoughtlessly.
+  - {$name}: Well, I guess... Some people tend to avoid overthinking?
+    Drake: Yes, that's one way of putting it.
   => Justice_2
-- {$name}: But surely you know what justice means…
-  Drake: I wonder. In some situations it’s easy to define…
+- {$name}: But surely you know what justice means...
+  Drake: I wonder. In some situations it's easy to define...
   - {$name}: Is it really situational? => Situational_justice
-  - {$name}: I agree… I didn’t know it was something senior officers struggled with. 
-    Drake: The more I know, the more I know I don’t know…
+  - {$name}: I agree... I didn't know it was something senior officers struggled with.
+    Drake: The more I know, the more I know I don't know...
     => Justice_2
 
 
@@ -76,23 +76,23 @@ Drake: Yes, I think about it often as well.
 :: Situational_justice
 Drake: Yes. For example, if an island is not being served well by the Marines, justice might be to assign new officers to the area and help the other officers improve their performance. Right?
 - {$name}: But if nothing catastrophic happened, was it really being underserved?
-  Drake: It could be in subtle ways. Turning a blind eye to minor incidents with pirates and bandits, taking advantage of hospitality, ignoring calls for aid that don’t strictly fall under the Marines’ jurisdiction…
+  Drake: It could be in subtle ways. Turning a blind eye to minor incidents with pirates and bandits, taking advantage of hospitality, ignoring calls for aid that don't strictly fall under the Marines' jurisdiction...
   - {$name}: So to do your job, you have to go above and beyond?
     Drake: Yes.
   - {$name}: Oh, I see. Yeah, that could erode faith in the Marines.
   - {$name}: How could someone do that? Just let all that happen? (+1)
-    Drake: You’d be surprised.
+    Drake: You'd be surprised.
 - {$name}: Right, that makes sense.
 Drake: But if pirates take over the island, murder people, destroy buildings—what must be done to restore the island? Punish the pirates?
-- {$name}: Capture them and make sure they don’t reoffend. Then fix the island and rebuild.
-  Drake: Right. It’s a different justice, because it’s a different situation.
-- {$name}: Oh, I see what you mean. But… Isn’t it, in principle, the same?
+- {$name}: Capture them and make sure they don't reoffend. Then fix the island and rebuild.
+  Drake: Right. It's a different justice, because it's a different situation.
+- {$name}: Oh, I see what you mean. But... Isn't it, in principle, the same?
   Drake: How so?
   - {$name}: Justice is justice, right? (-1)
-    Drake: That’s a tautology. 
+    Drake: That's a tautology.
   - {$name}: You make reparations and do better. Just at a different magnitude. (+1)
-    Drake: Yes, you’ve got a point. That’s an interesting way of thinking about it.
-- {$name}: … Promise to do better next time? (-1)
+    Drake: Yes, you've got a point. That's an interesting way of thinking about it.
+- {$name}: ... Promise to do better next time? (-1)
   Drake: Those words will ring empty.
 => Justice_2
 
@@ -101,70 +101,70 @@ Drake: But if pirates take over the island, murder people, destroy buildings—w
 
 
 :: Justice_2
-Drake: I suppose, when I was younger, it was easier to define justice as what it wasn’t. 
-- {$name}: But it’s not now?
-  Drake: When you are surrounded by obvious injustice…
-  - {$name}: I don’t mean to pry, but how so?
-  - {$name}: Yeah, it’s easier when it’s not subtle.
+Drake: I suppose, when I was younger, it was easier to define justice as what it wasn't.
+- {$name}: But it's not now?
+  Drake: When you are surrounded by obvious injustice...
+  - {$name}: I don't mean to pry, but how so?
+  - {$name}: Yeah, it's easier when it's not subtle.
 - {$name}: Oh, is that why you became a Marine? To fight injustice around you?
-  Drake: I’m not sure that’s how I’d put it.
-- {$name}: I get it. You can only see so far, and even though you don’t know what justice is, you know what’s wrong and you have to go against it. (+1)
+  Drake: I'm not sure that's how I'd put it.
+- {$name}: I get it. You can only see so far, and even though you don't know what justice is, you know what's wrong and you have to go against it. (+1)
 
 
 
-Drake: I spent my early life as the son of a Marine officer. I was raised on the idea that I would strive for justice, that I should be like my father. Then he betrayed the Marines and took me with him to become a pirate, and… Somehow, in the end, the Marines took me back.
-- {$name}: I’m sorry you had to go through that. (+1)
-  Drake: Thank you. It was…
-  He trails off. You’re not sure if you should try to finish the sentence, so you keep waiting.
-- {$name}: You didn’t choose to become a pirate.
+Drake: I spent my early life as the son of a Marine officer. I was raised on the idea that I would strive for justice, that I should be like my father. Then he betrayed the Marines and took me with him to become a pirate, and... Somehow, in the end, the Marines took me back.
+- {$name}: I'm sorry you had to go through that. (+1)
+  Drake: Thank you. It was...
+  He trails off. You're not sure if you should try to finish the sentence, so you keep waiting.
+- {$name}: You didn't choose to become a pirate.
   Drake: No, but I went along with it.
   - {$name}: What could anyone have done in that situation?
     Drake: Others would have fought back.
-  - {$name}: I mean… If you want to blame yourself… (-1)
+  - {$name}: I mean... If you want to blame yourself... (-1)
 
 
 Drake: And then I had to go undercover as a pirate again.
-- {$name}: Was it hard to go back? 
-  Drake: Mentally, yes. But I knew how to play the part… And everyone was ready to see my betrayal.
-- {$name}: I can’t believe they’d ask you to do that again.
-  Drake: It… I didn’t want to, but I knew I could. And I knew people would believe me. 
+- {$name}: Was it hard to go back?
+  Drake: Mentally, yes. But I knew how to play the part... And everyone was ready to see my betrayal.
+- {$name}: I can't believe they'd ask you to do that again.
+  Drake: It... I didn't want to, but I knew I could. And I knew people would believe me.
 
 
-Drake: You’re lucky. Whatever you’ve done, good or bad, before you joined the Marines, is all in the past for you. You can start new. You can see who you really are, and you can define that by showing others who that is. 
+Drake: You're lucky. Whatever you've done, good or bad, before you joined the Marines, is all in the past for you. You can start new. You can see who you really are, and you can define that by showing others who that is.
 - {$name}: Surely not everyone knew when you started?
   Drake: Enough of them did. Gossip travels fast among cadets.
 - {$name}: That must have been lonely. (+1)
-  Drake: I did make friends. And Sengoku-san and Tsuru-san stood up for me. I’m sorry, I’m not trying to complain about my situation.
-  - {$name}: But you **should** complain! That’s not fair!
+  Drake: I did make friends. And Sengoku-san and Tsuru-san stood up for me. I'm sorry, I'm not trying to complain about my situation.
+  - {$name}: But you **should** complain! That's not fair!
     Drake: Is it?
   - {$name}: We were talking about you, you know. (-1)
-- {$name}: You can’t control what others think of you, though. 
+- {$name}: You can't control what others think of you, though.
   Drake: To a certain extent, I suppose.
 
-Drake: In the end… I wonder. 
-- {$name}: Well, that goes back to what you said about what justice means, right? It wasn’t fair that your father took away your shot, so giving you another chance righted that.
+Drake: In the end... I wonder.
+- {$name}: Well, that goes back to what you said about what justice means, right? It wasn't fair that your father took away your shot, so giving you another chance righted that.
 => Justice_chance
-- {$name}: You can’t go back and undo it. So isn’t it best to play the hand you’ve been dealt and ensure justice for the future?
+- {$name}: You can't go back and undo it. So isn't it best to play the hand you've been dealt and ensure justice for the future?
 => Justice_future
 
 
 
 :: Justice_chance
-Drake: It wasn’t, no. I’ll never get back what he took, but I took things from people that they’ll never get back. 
-- {$name}: But you’re aware of that… More than most. It’s not something I think about a lot, and I doubt most people who haven’t been pirates think about it. Your perspective is valuable. (+1)
-  Drake: Thank you. 
-- {$name}: And knowing that meant that when they sent you undercover, you would do your best to minimize the harm you caused. If they’d sent someone else, things could have been worse.
-  Drake: I know. That’s what made me do it, in the end. That and… Knowing that perhaps something good could come of all those wasted years.
+Drake: It wasn't, no. I'll never get back what he took, but I took things from people that they'll never get back.
+- {$name}: But you're aware of that... More than most. It's not something I think about a lot, and I doubt most people who haven't been pirates think about it. Your perspective is valuable. (+1)
+  Drake: Thank you.
+- {$name}: And knowing that meant that when they sent you undercover, you would do your best to minimize the harm you caused. If they'd sent someone else, things could have been worse.
+  Drake: I know. That's what made me do it, in the end. That and... Knowing that perhaps something good could come of all those wasted years.
   - {$name}: Wow.
-  - {$name}: They weren’t wasted; they made you who you are today, right? (+1)
-    Drake: …
+  - {$name}: They weren't wasted; they made you who you are today, right? (+1)
+    Drake: ...
 
 
 
-Drake: I know that I’ve gotten a chance that others don’t. And the response to that isn’t to throw away my second chance, but to make sure others get that kind of chance, too.
-- {$name}: If you’re trying to make any institutional effort, I’d love to do what I can to help. (+1)
+Drake: I know that I've gotten a chance that others don't. And the response to that isn't to throw away my second chance, but to make sure others get that kind of chance, too.
+- {$name}: If you're trying to make any institutional effort, I'd love to do what I can to help. (+1)
   Drake: Thank you. I have no concrete plans, but let me know if you have any ideas.
-- {$name}: There are other people who used to be pirates. Wasn’t Lieutenant Commander Jango a big-time pirate captain in East Blue? 
+- {$name}: There are other people who used to be pirates. Wasn't Lieutenant Commander Jango a big-time pirate captain in East Blue?
   Drake: Yes, and there are others who were turned away.
 - {$name}: Easier said than done. (-1)
   Drake: I know. But perhaps if I can get enough others on board, we can make a difference.
@@ -173,69 +173,69 @@ Drake: I know that I’ve gotten a chance that others don’t. And the response 
 
 
 :: Justice_future
-Drake: While it’s true you can’t go back, amends must still be made. When we can.
-- {$name}: I’m more of a subscriber to “pay it forward.” (-1)
-  Drake: They’re not mutually exclusive. 
+Drake: While it's true you can't go back, amends must still be made. When we can.
+- {$name}: I'm more of a subscriber to “pay it forward.” (-1)
+  Drake: They're not mutually exclusive.
 - {$name}: But how much of an effort should we make?
-  Drake: I don’t know. I’m not doing enough right now, but maybe I never can.
+  Drake: I don't know. I'm not doing enough right now, but maybe I never can.
 
 
 
-Drake: At least, knowing what I know… I hope there’s some corruption I’ve prevented. But just as we can’t see the future, we can’t see the world as it would be if we’d made different choices.
-- {$name}: We can speculate, though. 
+Drake: At least, knowing what I know... I hope there's some corruption I've prevented. But just as we can't see the future, we can't see the world as it would be if we'd made different choices.
+- {$name}: We can speculate, though.
   Drake: Yes.
-- {$name}: Can’t you? Sometimes it’s obvious, right, like if you’d answered one question differently on a test, it would have changed your grade from passing to failing.
-  Drake: I suppose… But if you’ve added more deterrents to corruption, do you know if they work? If people simply wouldn’t have been tempted, or are passing undetected?
+- {$name}: Can't you? Sometimes it's obvious, right, like if you'd answered one question differently on a test, it would have changed your grade from passing to failing.
+  Drake: I suppose... But if you've added more deterrents to corruption, do you know if they work? If people simply wouldn't have been tempted, or are passing undetected?
   - {$name}: You can infer. (-1)
-  - {$name}: Yeah, that’s different from what I was thinking. Much more open. (+1)
-- {$name}: That’s tough. But we can’t agonize over choices either. (+1)
+  - {$name}: Yeah, that's different from what I was thinking. Much more open. (+1)
+- {$name}: That's tough. But we can't agonize over choices either. (+1)
   Drake: I agree.
 => Justice_3
 
 :: Justice_3
-You stop for a moment; the rocks at the side of the path are arranged intentionally, as if someone had stacked them up. 
+You stop for a moment; the rocks at the side of the path are arranged intentionally, as if someone had stacked them up.
 Drake: Are you fitting in well with the Marines?
-- {$name}: I think so. You’re all so easy to get along with. (+1)
-  Drake: Thank you, that’s nice to hear.
-- {$name}: That’s my job, to fit in and ease social bonds.
-- {$name}: Do I not seem to be? 
-  Drake: No, not at all—but we don’t see each other all the time.
+- {$name}: I think so. You're all so easy to get along with. (+1)
+  Drake: Thank you, that's nice to hear.
+- {$name}: That's my job, to fit in and ease social bonds.
+- {$name}: Do I not seem to be?
+  Drake: No, not at all—but we don't see each other all the time.
 
 
 
 Drake: Some people have to put up with a lot.
 - {$name}: Like you? => Justice_fit_in
-- {$name}: That’s true. But when it’s that much, someone else usually notices, even if they pretend not to.
+- {$name}: That's true. But when it's that much, someone else usually notices, even if they pretend not to.
   Drake: Very astute. (+1)
   => Justice_4
-- {$name}: I guess… But I’d hope when we’re this seasoned, most folks would grow out of it. => Justice_4
+- {$name}: I guess... But I'd hope when we're this seasoned, most folks would grow out of it. => Justice_4
 
 
 
 
 :: Justice_fit_in
-Drake: Not now. I can tell people don’t trust me, but… When I first became a Marine, it wasn’t fun. But maybe it’s what I deserved.
-- {$name}: Well, if they didn’t trust you, I wouldn’t blame you if you really did return to a life of crime. (-1)
+Drake: Not now. I can tell people don't trust me, but... When I first became a Marine, it wasn't fun. But maybe it's what I deserved.
+- {$name}: Well, if they didn't trust you, I wouldn't blame you if you really did return to a life of crime. (-1)
   Drake: Nothing would have made me go back to that.
-- {$name}: I trust you. I know we don’t know each other very well, but I do. (+1)
+- {$name}: I trust you. I know we don't know each other very well, but I do. (+1)
   Drake: I know you do. Thank you.
   You lean in and clasp him on his back, your fingers accidentally brushing his hand as you withdraw... But he doesn't seem to mind.
 => Justice_4
 
 :: Justice_4
 Drake: Thank you for talking about this with me.
-- {$name}: Justice is important to talk about… I hope we can do that more. 
-- {$name}: I’d listen to you talk about **anything**. (+1)
-  Drake: …!
+- {$name}: Justice is important to talk about... I hope we can do that more.
+- {$name}: I'd listen to you talk about **anything**. (+1)
+  Drake: ...!
 
 
 
 Over by the pond, you see a splash—a turtle has emerged.
-- {$name}: **Tug on Drake’s sleeve** (+1)
-  Drake: Hm? Oh… Wow. Looks like a younger turtle.
+- {$name}: **Tug on Drake's sleeve** (+1)
+  Drake: Hm? Oh... Wow. Looks like a younger turtle.
 - {$name}: Look, a turtle! (+1)
-  Drake: Oh, over by the log—they don’t usually like that spot.
-- {$name}: …
+  Drake: Oh, over by the log—they don't usually like that spot.
+- {$name}: ...
 => Wrap_up
 
 
@@ -244,8 +244,8 @@ Over by the pond, you see a splash—a turtle has emerged.
 Drake: It was Vice Admiral Tsuru, actually.
 - {$name}: Did you get her anything good?
   Drake: Yes, in the end I got her a new orchid for her office. Her old one died.
-  - {$name}: Aw, that’s too bad about the old one.
-  - {$name}: That’s thoughtful.
+  - {$name}: Aw, that's too bad about the old one.
+  - {$name}: That's thoughtful.
 - {$name}: Wow, she sounds hard to buy for. (-1)
   Drake: Not if you know her well.
 - {$name}: Oh! OKkay.
@@ -253,97 +253,97 @@ Drake: It was Vice Admiral Tsuru, actually.
 
 
 Drake: You seem surprised.
-- {$name}: I didn’t know you were close.
-- {$name}: I don’t know for what occasion this would be.
-- {$name}: Geez, I’m not! Chill out. (-1)
+- {$name}: I didn't know you were close.
+- {$name}: I don't know for what occasion this would be.
+- {$name}: Geez, I'm not! Chill out. (-1)
 
 
 
-Drake: Vice Admiral Tsuru has been a mentor to me, so I’m glad I could get her something. And…
+Drake: Vice Admiral Tsuru has been a mentor to me, so I'm glad I could get her something. And...
 => Shop_talk
 
 
 
 :: Shop_talk
-Drake: She liked the gift. 
-- {$name}: Good! 
-- {$name}: I’m not surprised. You made a good choice. (+1)
+Drake: She liked the gift.
+- {$name}: Good!
+- {$name}: I'm not surprised. You made a good choice. (+1)
   Drake: Thank you.
 - {$name}: Really? (-1)
-  Drake: …
+  Drake: ...
 
 
-You walk further into the trees, Drake pushing aside some of the boughs gently with his hand. 
-Drake: I could tell she was pleased, and Sengoku-san told me so as well. 
+You walk further into the trees, Drake pushing aside some of the boughs gently with his hand.
+Drake: I could tell she was pleased, and Sengoku-san told me so as well.
 - {$name}: Oh, nice. Do you see yourself following in her footsteps as a mentor, too?
-  Drake: There’s no shortage of people who need mentoring.
+  Drake: There's no shortage of people who need mentoring.
   => Shop_mentor
-- {$name}: So you’re close with both Vice Admiral Tsuru and the former Fleet Admiral… Any advice you want to pass on to me about getting a promotion? (-1)
-  Drake: We don’t talk about that sort of thing much.
+- {$name}: So you're close with both Vice Admiral Tsuru and the former Fleet Admiral... Any advice you want to pass on to me about getting a promotion? (-1)
+  Drake: We don't talk about that sort of thing much.
   => Shop_Sengoku
 
 
 
 :: Shop_Sengoku
 Drake adjusts one of his gloves.
-Drake: It’s interesting to hear Sengoku-san’s point of view. He’s had so much experience and he’s got a unique way of thinking about things.
-- {$name}: Doesn’t everyone, though?
-  Drake: Sengoku-san would say the same thing, I think. Perhaps with him, it’s easy to see…
+Drake: It's interesting to hear Sengoku-san's point of view. He's had so much experience and he's got a unique way of thinking about things.
+- {$name}: Doesn't everyone, though?
+  Drake: Sengoku-san would say the same thing, I think. Perhaps with him, it's easy to see...
   - {$name}: I think **you** have a unique perspective. (+1)
-  - {$name}: Or perhaps it’s easy to assume? After all, he’s done and seen so many things most of us don’t get to. 
+  - {$name}: Or perhaps it's easy to assume? After all, he's done and seen so many things most of us don't get to.
 - {$name}: Surely he and Vice Admiral Tsuru have given you some advice. (-1)
-  Drake: Of course they have. 
+  Drake: Of course they have.
 => Shop_Sengoku_perspective
 
 :: Shop_Sengoku_perspective
-Drake: I suppose I haven’t walked a traditional path… Not that our situations can be compared.
-- {$name}: Maybe that’s part of why he likes talking to you. If he’s surrounded by people who have experiences in the Marines more like him, it’s probably refreshing to get a different perspective. (+1)
-  Drake: I hadn’t thought of it that way.
-- {$name}: Why not? You’re an officer, too. Maybe not as high up but was he an admiral at your age?
-  Drake: Well, no…
-- {$name}: But that’s good for both of you, right? To get a different viewpoint?
-  Drake: Yes, actually. Sengoku-san’s perspective is always valuable, but he doesn’t judge me for being different the way… Some others do.
+Drake: I suppose I haven't walked a traditional path... Not that our situations can be compared.
+- {$name}: Maybe that's part of why he likes talking to you. If he's surrounded by people who have experiences in the Marines more like him, it's probably refreshing to get a different perspective. (+1)
+  Drake: I hadn't thought of it that way.
+- {$name}: Why not? You're an officer, too. Maybe not as high up but was he an admiral at your age?
+  Drake: Well, no...
+- {$name}: But that's good for both of you, right? To get a different viewpoint?
+  Drake: Yes, actually. Sengoku-san's perspective is always valuable, but he doesn't judge me for being different the way... Some others do.
 
 
 
 
-Drake: I know I’ve been very lucky having Sengoku-san and Tsuru-san both so willing to answer the questions I had, and in just being available. It’s easier to strive to be like someone you know than someone who’s a far-off figure.
-- {$name}: Oh, I totally get that. You remind me a lot of Vice Admiral Tsuru—you’re both such good listeners. Is that something you’ve picked up from her? (+1)
-  Drake: It’s not something I’ve tried to imitate consciously, but thank you.
+Drake: I know I've been very lucky having Sengoku-san and Tsuru-san both so willing to answer the questions I had, and in just being available. It's easier to strive to be like someone you know than someone who's a far-off figure.
+- {$name}: Oh, I totally get that. You remind me a lot of Vice Admiral Tsuru—you're both such good listeners. Is that something you've picked up from her? (+1)
+  Drake: It's not something I've tried to imitate consciously, but thank you.
 - {$name}: So how have you tried to be like them?
-  Drake: Conscientiousness. Caring. Noticing things, and the way they bring out the best in people… I want to do that.
-  - {$name}: That’s a little generic. (-1)
-    Drake: It’s hard to articulate.
+  Drake: Conscientiousness. Caring. Noticing things, and the way they bring out the best in people... I want to do that.
+  - {$name}: That's a little generic. (-1)
+    Drake: It's hard to articulate.
   - {$name}: Those are good things to strive for. (+1)
-- {$name}: I don’t know. Sometimes it’s hard to look up to people if you know their true self.
-  Drake: It depends on the person, but yes… (-1)
+- {$name}: I don't know. Sometimes it's hard to look up to people if you know their true self.
+  Drake: It depends on the person, but yes... (-1)
 =>  Shop_talk_2
 
 
 :: Shop_mentor
-Drake: I haven’t stayed in one place long enough to mentor someone myself.
-- {$name}: Is that something you’d be interested in?
-  Drake: It would be nice to give back… To pass on the knowledge that others have given me.
-- {$name}: You’d be a great mentor!
+Drake: I haven't stayed in one place long enough to mentor someone myself.
+- {$name}: Is that something you'd be interested in?
+  Drake: It would be nice to give back... To pass on the knowledge that others have given me.
+- {$name}: You'd be a great mentor!
   Drake: Thank you.
-- {$name}: Well, you’re kind of mentoring me here, right?
+- {$name}: Well, you're kind of mentoring me here, right?
   Drake: How so?
-  - {$name}: I’m still new to the Marines and I’m not sure what I’m doing, but you never hesitate to help me along or correct me. (+1)
-  - {$name}: You mean, that’s not why you agreed to hang out? (-1)
-    Drake: Not that I don’t want to set a good example—but I am trying to spend some time with you outside of work. As friends. 
+  - {$name}: I'm still new to the Marines and I'm not sure what I'm doing, but you never hesitate to help me along or correct me. (+1)
+  - {$name}: You mean, that's not why you agreed to hang out? (-1)
+    Drake: Not that I don't want to set a good example—but I am trying to spend some time with you outside of work. As friends.
 
 
 
 
-Drake: Formally, though… I’m not sure too many people would want me as a mentor.
+Drake: Formally, though... I'm not sure too many people would want me as a mentor.
 - {$name}: What makes you say that?
-  Drake: People don’t talk to me all that much… They don’t trust my loyalty.
-  - {$name}: Maybe that’s true for some, but a lot of people think you’re really cool. Maybe they’re just intimidated.
-  - {$name}: You’re kind of quiet. If you want to talk to someone, sometimes you have to make the first move. (+1)
-- {$name}: They don’t know what they’re missing out on.
-- {$name}: You can’t mentor everyone. I’m sure there are a few who would be delighted to learn from you.
-  Drake: I wonder…
-  - {$name}: Can’t hurt to try! Talk to new recruits; make them feel welcome.
+  Drake: People don't talk to me all that much... They don't trust my loyalty.
+  - {$name}: Maybe that's true for some, but a lot of people think you're really cool. Maybe they're just intimidated.
+  - {$name}: You're kind of quiet. If you want to talk to someone, sometimes you have to make the first move. (+1)
+- {$name}: They don't know what they're missing out on.
+- {$name}: You can't mentor everyone. I'm sure there are a few who would be delighted to learn from you.
+  Drake: I wonder...
+  - {$name}: Can't hurt to try! Talk to new recruits; make them feel welcome.
   - {$name}: Fishing for compliments? (-1)
 => Shop_talk_2
 
@@ -351,59 +351,59 @@ Drake: Formally, though… I’m not sure too many people would want me as a men
 
 
 :: Shop_talk_2
-Drake: I’m still not sure why Tsuru-san and Sengoku-san both took such a shine to me… Many orphans join the Marines as adults. They’re strong fighters, some of them stronger than me.
-- {$name}: Your hardworking personality must have shone through. It’s obvious to me how much you care about doing your job. (+1)
+Drake: I'm still not sure why Tsuru-san and Sengoku-san both took such a shine to me... Many orphans join the Marines as adults. They're strong fighters, some of them stronger than me.
+- {$name}: Your hardworking personality must have shone through. It's obvious to me how much you care about doing your job. (+1)
   Drake: Thank you.
-- {$name}: Maybe it’s fate. (-1)
-- {$name}: I don’t know… But they did.
+- {$name}: Maybe it's fate. (-1)
+- {$name}: I don't know... But they did.
 
 
 
 Drake: {$name}, have you heard of Diez Barrels, the pirate?
 - {$name}: Yes.
-  Drake: I see. I don’t know if you know the whole story…
+  Drake: I see. I don't know if you know the whole story...
 - {$name}: No.
-  Drake: He’s not worth remembering. But still…
+  Drake: He's not worth remembering. But still...
 
 
 
-Drake: Before he was a pirate, he was a Marine officer. And he was my father. When I was a child, he took me with him to his life of piracy and betrayed the World Government. And so, in light of that… I’m surprised anyone allowed me to join the Marines at all.
-- {$name}: But that’s not your fault!
-  Drake: I was still a pirate, even if I didn’t want to be.
-- {$name}: Whoa…
+Drake: Before he was a pirate, he was a Marine officer. And he was my father. When I was a child, he took me with him to his life of piracy and betrayed the World Government. And so, in light of that... I'm surprised anyone allowed me to join the Marines at all.
+- {$name}: But that's not your fault!
+  Drake: I was still a pirate, even if I didn't want to be.
+- {$name}: Whoa...
 
 
 
 Drake: Sometimes I wonder if they thought they owed a debt. That they were making up for their error in not seeing Barrels for what he truly was by helping me.
 - {$name}: Does it matter?
-  Drake: Not to me. Whatever their reasoning, if it was out of guilt, they don’t want me to know it, and I have to respect that.
-- {$name}: Do you think they were or they weren’t?
-  Drake: I’m not sure it matters, only that they did it.
-- {$name}: Do you think it’s an equal exchange?
-  Drake: I don’t know. It’s impossible to measure the negative impact he had, or to compare it to any positive impact he also had, or to what the Marines have done for me.
-  - {$name}: That’s kind of a cop-out.
-    Drake: That’s fair.
+  Drake: Not to me. Whatever their reasoning, if it was out of guilt, they don't want me to know it, and I have to respect that.
+- {$name}: Do you think they were or they weren't?
+  Drake: I'm not sure it matters, only that they did it.
+- {$name}: Do you think it's an equal exchange?
+  Drake: I don't know. It's impossible to measure the negative impact he had, or to compare it to any positive impact he also had, or to what the Marines have done for me.
+  - {$name}: That's kind of a cop-out.
+    Drake: That's fair.
   - {$name}: Yeah, you can make conjectures about how different things could have gone for you, but who really knows? (+1)
-    Drake: Yes, exactly. 
-  - {$name}: Even so… I’m glad—not that I’m glad he did those things, but that despite that, everything else happened, too. (+1)
+    Drake: Yes, exactly.
+  - {$name}: Even so... I'm glad—not that I'm glad he did those things, but that despite that, everything else happened, too. (+1)
     Drake: Me too.
 
 
 
-Drake looks away, as if composing himself. It’s hard to tell from his body language what he’s thinking; he’s always so tense.
+Drake looks away, as if composing himself. It's hard to tell from his body language what he's thinking; he's always so tense.
 - {$name}: **Reach for his hand.** (+1) => Shop_hand
-- {$name}: Um… Are you okay?
-  Drake: I’m fine, thank you.
+- {$name}: Um... Are you okay?
+  Drake: I'm fine, thank you.
   => Shop_talk_3
-- {$name}: Well, uh, anyway! Cold weather we’re having… (-1)
-  Drake: … 
+- {$name}: Well, uh, anyway! Cold weather we're having... (-1)
+  Drake: ...
   => Shop_talk_3
 
 
 
 :: Shop_hand
-Drake’s hand wraps around yours. You can feel his pulse, even and measured, against your skin. Your own heart feels like it’s beating faster than ever.
-You squeeze his hand. 
+Drake's hand wraps around yours. You can feel his pulse, even and measured, against your skin. Your own heart feels like it's beating faster than ever.
+You squeeze his hand.
 Drake squeezes your hand back. He turns his head so you can see his expression—the usual neutral, but perhaps with a little smile.
 => Shop_talk_3
 
@@ -411,29 +411,29 @@ Drake squeezes your hand back. He turns his head so you can see his expression�
 
 
 :: Shop_talk_3
-Drake: {$name}, do you think there is justice in the world? 
-- {$name}: Yes… I have to believe that.
-  Drake: I see…
-- {$name}: No. But that’s why we fight, right? Without us, who will? 
+Drake: {$name}, do you think there is justice in the world?
+- {$name}: Yes... I have to believe that.
+  Drake: I see...
+- {$name}: No. But that's why we fight, right? Without us, who will?
   Drake: We, being the Marines?
-  - {$name}: Well, yeah, that’s our job. (-1)
-  - {$name}: No, we in general. You don’t have to do it in an organized way. (+1)
-- {$name}: That’s kind of a heavy question. (-1)
-  Drake: …
-  - {$name}: But…I don’t know, it’s hard to say when I don’t know too much about the world as a whole.
-  - {$name}: …
-  - {$name}: Does it matter if justice exists when it’s not everywhere?
-    Drake: I think it does, somewhat. But you’re right.
+  - {$name}: Well, yeah, that's our job. (-1)
+  - {$name}: No, we in general. You don't have to do it in an organized way. (+1)
+- {$name}: That's kind of a heavy question. (-1)
+  Drake: ...
+  - {$name}: But...I don't know, it's hard to say when I don't know too much about the world as a whole.
+  - {$name}: ...
+  - {$name}: Does it matter if justice exists when it's not everywhere?
+    Drake: I think it does, somewhat. But you're right.
 
 
 
-Drake: I think… We can’t make assumptions. We must continue to question whether it’s justice we’re truly serving and spreading. That justice we’ve spread hasn’t curdled and rotted away…
-- {$name}: Whoa, that’s deep.
+Drake: I think... We can't make assumptions. We must continue to question whether it's justice we're truly serving and spreading. That justice we've spread hasn't curdled and rotted away...
+- {$name}: Whoa, that's deep.
   Drake: Do you really think so?
-  - {$name}: Yeah, it’s clear you’ve been thinking about it a lot. (+1)
-  - {$name}: I wouldn’t say it if I didn’t.
-- {$name}: But if we haven’t really been spreading lasting justice in the past, how can we know if we are now?
-  Drake: Yes, that’s the question, isn’t it…
+  - {$name}: Yeah, it's clear you've been thinking about it a lot. (+1)
+  - {$name}: I wouldn't say it if I didn't.
+- {$name}: But if we haven't really been spreading lasting justice in the past, how can we know if we are now?
+  Drake: Yes, that's the question, isn't it...
 => Wrap_up
 
 :: Wrap_up
@@ -446,7 +446,7 @@ The clouds move across the sky above you, warping the shadows on the path.
 
 :: Two_point_end (4+ points)
 You continue walking until you find a mossy bench on which to sit. Due to the chill in the air maybe, Drake lets you sit a little closer to him.
-Drake: I’d love to keep sitting with you, {$name}, but I have to be on watch. Let’s hang out again soon.
+Drake: I'd love to keep sitting with you, {$name}, but I have to be on watch. Let's hang out again soon.
 
 
 
@@ -456,4 +456,4 @@ Drake: Thank you for joining me.
 
 
 :: Zero_point_end (0 or fewer points)
-Drake: …
+Drake: ...

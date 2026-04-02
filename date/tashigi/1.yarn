@@ -63,7 +63,7 @@ Tashigi: I have no time to get down to the mess hall; I'm already behind as-is.
     Tashigi: I understand. I'm sorry for keeping you, then.
     You file your papers quickly, then bid Captain Tashigi goodbye and leave the main office. After all, the mess hall won't be open all night, and you've more than earned a big slice of apple pie today.
     <<set $td1_points += 0>>
-	<<jump date_tashigi_1_TSD1E>>
+    <<jump date_tashigi_1_TSD1E>>
 ===
 
 title: date_tashigi_1_TSD1P1_2
@@ -74,10 +74,10 @@ Tashigi: ...
 Tashigi: You should file those forms and head to the mess hall. It's already dinner time.
 -> I'm not all that hungry. Would you like some help?
     <<set $td1_points += 1>>
-	<<jump date_tashigi_1_TSD1P1_3>>
+    <<jump date_tashigi_1_TSD1P1_3>>
 -> Thanks. Hope you finish soon.
     <<set $td1_points += 0>>
-	<<jump date_tashigi_1_TSD1E>>
+    <<jump date_tashigi_1_TSD1E>>
 ===
 
 title: date_tashigi_1_TSD1P1_3
@@ -97,8 +97,8 @@ Tashigi: Oh! You don't have to do that. You should go to the mess hall, or else 
 -> ...If you say so. Good luck.
     Captain Tashigi probably doesn't like you, anyway.
     You quickly file your paperwork and go down to the mess hall for dinner. Perhaps you'll see her around some other time.
-	<<set $td1_points += 0>>
-	<<jump date_tashigi_1_TSD1E>>
+    <<set $td1_points += 0>>
+    <<jump date_tashigi_1_TSD1E>>
 ===
 
 title: date_tashigi_1_TSD1SB
@@ -112,7 +112,7 @@ Tashigi: Be careful not to get sauce on the papers, though, or we'll have to sta
     Tashigi: Good thinking!
     <<set $td1_points += 1>>
 -> Oh. It may be a little late for that...
-    Captain Tashigi takes the piece of paper from your hands, and her fingers brush against yours for an instant.   
+    Captain Tashigi takes the piece of paper from your hands, and her fingers brush against yours for an instant.
     Tashigi: It's just a copy of a memo, so it's alright.
     <<set $td1_points += 0>>
     Captain Tashigi is great company. She's so easy to talk to, and her stories of her time at sea are absolutely fantastic, particularly when she speaks about chasing the Strawhat Pirates.
@@ -154,7 +154,7 @@ Tashigi: So, what is your motivation for being here?
     Her tone is neutral, but you get the sense that she doesn't seem to be too pleased by that fact.
     You go back to working in silence after that, and as soon as you're done, you make your escape with only a quick goodbye.
     <<set $td1_points += 0>>
-	<<jump date_tashigi_1_TSD1E>>
+    <<jump date_tashigi_1_TSD1E>>
 Tashigi: I'm from East Blue, you know, and I've seen firsthand how catastrophic pirate activity can be. Ever since I got promoted to G-5, I haven't been able to go home and visit, but I've always kept my hometown in my thoughts.
 Tashigi: I have a brother who still lives there, and I miss him dearly, but there's so much work to do here. We send each other letters from time to time, but it's not the same. It is worth it, though, if I can help keep him safe.
 -> (Hm, maybe I should tell her about my family.)
@@ -186,7 +186,7 @@ Tashigi: I have a brother who still lives there, and I miss him dearly, but ther
     {$name}: My brother and sister were so jealous when I told them I would be sailing the four blues.
     {$name}: They made me promise to bring them souvenirs next time I visit.
     Tashigi: Then you'd better go into town one of these days. There are many places where you can find the perfect gift.
-	<<set $td1_points += 1>>
+    <<set $td1_points += 1>>
     You keep working for a while longer, the ticking of the clock getting louder as more time passes and the base grows silent. Almost everyone else must be asleep by now.
     Tashigi: Phew! We're almost done. I can finish up here if you're too tired. You've already helped me out a lot.
     -> No, I'll stay. I like to finish what I start.
@@ -194,7 +194,7 @@ Tashigi: I have a brother who still lives there, and I miss him dearly, but ther
         When you finally finish, you stand from the desk, mumble a weary “good night” to Captain Tashigi, and practically drag yourself to your room.
         You drowsily climb into bed, knowing that in a couple of hours another day will start anew, and your head barely hits the pillow before you're out cold.
         <<set $td1_points += 1>>
-	    <<jump date_tashigi_1_TSD1E>>
+        <<jump date_tashigi_1_TSD1E>>
     -> Well, if you don't mind, then I think I'll go catch some sleep. Hope you finish soon!
         You stand from the desk and stumble your way back to your room. The moment your head hits the pillow, you're sound asleep.
         <<set $td1_points += 0>>
