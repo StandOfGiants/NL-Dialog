@@ -1,4 +1,3 @@
-
 title: Helmeppo_Gift_Hunt_intro
 location: town
 ---
@@ -38,11 +37,11 @@ Most of the books look kind of boring for your purposes, but there are three tha
         -> Buy the book.
             <<jump Helmeppo_Gift_Hunt_GoodGift>>
         -> Look at something else.
-            <<jump Helmeppo_Gift_Hunt_Bookstore>>
+            <<jump Helmeppo_Gift_Hunt_BookStore>>
     -> Buy the book.
         <<jump Helmeppo_Gift_Hunt_GoodGift>>
     -> Look at something else.
-        <<jump Helmeppo_Gift_Hunt_Bookstore>>
+        <<jump Helmeppo_Gift_Hunt_BookStore>>
 -> A book about a boy who befriends a wolf.
     It looks like an adventure story about a man who gets shipwrecked and makes friends with a wolf.
     -> Ask the bookseller what it's about.
@@ -50,11 +49,11 @@ Most of the books look kind of boring for your purposes, but there are three tha
         -> Buy the book.
             <<jump Helmeppo_Gift_Hunt_BadGift>>
         -> Look at something else.
-            <<jump Helmeppo_Gift_Hunt_Bookstore>>
+            <<jump Helmeppo_Gift_Hunt_BookStore>>
     -> Buy the book.
         <<jump Helmeppo_Gift_Hunt_BadGift>>
     -> Look at something else.
-        <<jump Helmeppo_Gift_Hunt_Bookstore>>
+        <<jump Helmeppo_Gift_Hunt_BookStore>>
 -> A book about history.
     It looks like a well researched tome on the history of the West Blue.
     -> Ask the bookseller what it's about.
@@ -62,11 +61,11 @@ Most of the books look kind of boring for your purposes, but there are three tha
         -> Buy the book.
             <<jump Helmeppo_Gift_Hunt_GoodGift>>
         -> Look at something else.
-            <<jump Helmeppo_Gift_Hunt_Bookstore>>
+            <<jump Helmeppo_Gift_Hunt_BookStore>>
     -> Buy the book.
         <<jump Helmeppo_Gift_Hunt_GoodGift>>
     -> Look at something else.
-        <<jump Helmeppo_Gift_Hunt_Bookstore>>
+        <<jump Helmeppo_Gift_Hunt_BookStore>>
 -> Check another stall.
     <<jump Helmeppo_Gift_Hunt_SelectStall>>
 ===
@@ -147,18 +146,16 @@ title: Helmeppo_Gift_Hunt_PerfectGift
 location: town
 ---
 As you head back, you find yourself excited to give him this gift. You feel sure he's going to love it.
-==
+===
 
 title: Helmeppo_Gift_Hunt_GoodGift
 location: town
 ---
-
 While you might have been able to find something better if you spent longer at the market, you feel confident in what you've chosen.
 ===
 
 title: Helmeppo_Gift_Hunt_BadGift
 location: town
 ---
-
 As you leave the fair with your gift, you can't help but feel uneasy. Will he really like this?
 ===

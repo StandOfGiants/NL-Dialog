@@ -1,6 +1,6 @@
 title: date_smoker_3_Start
 location: office
-do show_character("smoker", Show)
+characters: [smoker]
 ---
 
 Smoker has some paperwork to finish up, so you've agreed to meet him at his office before heading out to enjoy the garden. The idea had seemed like a good one earlier in the day, but as you head down the corridor, you notice dark clouds outside.
@@ -11,19 +11,19 @@ Smoker: I'm almost done here. Just gotta drop these off.
 do set_background("office", Fade) //HOW DO??
 Thunder rolls overhead, and before the sound fades away, rain begins to drum against the windowpane outside. So much for having a nice evening in the garden.
 Smoker: Damn. I should have saved the paperwork for later.
--> {$name}: Then we would have been caught in the rain.
-    <<set sd3_points +=1>>
+-> Then we would have been caught in the rain.
+    <<set $sd3_points +=1>>
   Smoker: I could live with that...
   His eyes travel up and down your body. Oh.
--> {$name}: But then it could have interfered with something else you wanted to do.
+-> But then it could have interfered with something else you wanted to do.
   Smoker: I guess.
--> {$name}: Or you could have done it earlier.
+-> Or you could have done it earlier.
   Smoker: Who are you, Hina?
 Smoker signs the last document with a flourish and places it on the pile. You assume the two of you will head over to wherever he's turning it in, but instead Smoker leans back in his chair and takes out two fresh cigars.
 Smoker: Want a light?
--> {$name}: Weren't we going to turn in the papers?
+-> Weren't we going to turn in the papers?
   <<jump date_smoker_3_Talk>>
--> {$name}: Yes, please.
+-> Yes, please.
   <<jump date_smoker_3_Smoke_together>>
 ===
 
@@ -32,59 +32,59 @@ location: office
 ---
 
 Smoker strikes a match and lights his cigars, holding out the match; you place a cigarette in your mouth.
--> {$name}: **Lean in toward the match**
+-> **Lean in toward the match**
   Smoker lights your cigarette and shakes off the match.
--> {$name}: **Lean in toward Smoker**
-    <<set sd3_points +=1>>
+-> **Lean in toward Smoker**
+    <<set $sd3_points +=1>>
   You light your cigarette on the end of Smoker's cigar nearest to you; as you draw back you can feel his breath on your face. Smoker seems... surprised with your actions, but not displeased.
 Smoker: I didn't know you smoked, {$name}.
--> {$name}: You asked if I wanted a light, though.
+-> You asked if I wanted a light, though.
   Smoker: I guess that's true.
--> {$name}: What's that supposed to mean?
-    <<set sd3_points -=1>>
+-> What's that supposed to mean?
+    <<set $sd3_points -=1>>
   Smoker: What I said. It's just a conversation piece.
--> {$name}: Aw, I'm not trying to hide anything from you.
+-> Aw, I'm not trying to hide anything from you.
   Smoker: Wasn't accusing you. But you're always welcome to come smoke with me.
 The thunder roars outside again.
--> {$name}: So why do you smoke two cigars at once?
+-> So why do you smoke two cigars at once?
   Smoker: Well, I started smoking because I heard it helped with stress. I thought smoking two cigars at once would help more, and it actually did for a while but I think that was just having more to do with my hands, and having to learn to talk like that.
--> {$name}: Did you smoke before you had your powers?
-    <<set sd3_points -=1>>
+-> Did you smoke before you had your powers?
+    <<set $sd3_points -=1>>
   Smoker: Everyone always asks that. But yeah. Heard it was supposed to ease stress.
 Smoker: Anyway, I'm used to it now.
--> {$name}: You seem pretty unflappable, though... I'm surprised you're the type to get stressed out.
+-> You seem pretty unflappable, though... I'm surprised you're the type to get stressed out.
   Smoker: I have a short temper. I try not to let things get to me, but it happens.
--> {$name}: The stress, or smoking?
+-> The stress, or smoking?
   Smoker: Both.
 Smoker: Sometimes I don't think I worry enough, though, or about the right things. I take them for granted. I was betrayed — we all were — by Vice Admiral Vergo a while back. Dunno if you know about that, but I didn't see it coming.
--> {$name}: He had a stellar reputation, even among civilians. You couldn't have seen it coming.
+-> He had a stellar reputation, even among civilians. You couldn't have seen it coming.
   Smoker: Yeah, but I wonder if that made people look the other way...make excuses for him...not suspect him where they would have suspected an ordinary person.
--> {$name}: How could you? A little paranoia is healthy, but you can't just go around suspecting everyone.
-    <<set sd3_points +=1>>
+-> How could you? A little paranoia is healthy, but you can't just go around suspecting everyone.
+    <<set $sd3_points +=1>>
   Smoker: I know, but... maybe there was something I could have seen.
 Smoker's eyes have been focusing on the cigarette in your mouth, the way it moves when you talk. You try to think of something to say again...
--> {$name}: Hindsight is 20/20. Vice Admiral Vergo didn't just fool you.
--> {$name}: It's not your fault...
--> {$name}: Maybe you'll know better next time?
-    <<set sd3_points -=1>>
+-> Hindsight is 20/20. Vice Admiral Vergo didn't just fool you.
+-> It's not your fault...
+-> Maybe you'll know better next time?
+    <<set $sd3_points -=1>>
   Smoker: That doesn't fix the past.
 Smoker: Because I didn't know, I put my subordinates in a position to be hurt. Some of them were killed. I had to make compromises — working with pirates, telling my subordinates to do the same thing. It was the right thing to do, but we shouldn't have had to do it then.
--> {$name}: But it's his fault you were in that position.
+-> But it's his fault you were in that position.
   Smoker: Sure. But it's the fault of pirates who attack us that they're attacking us. Doesn't mean I don't owe it to my subordinates to protect them.
--> {$name}: So what do you think we should do about corruption?
-    <<set sd3_points +=1>>
+-> So what do you think we should do about corruption?
+    <<set $sd3_points +=1>>
   Smoker: There's the rub. I always knew it was a thing, but I didn't realize that it was this far up in the ranks... I guess I was just naive.
--> {$name}: Maybe you shouldn't have, but what's done is done.
-    <<set sd3_points -=1>>
+-> Maybe you shouldn't have, but what's done is done.
+    <<set $sd3_points -=1>>
   Smoker: I guess... Doesn't erase the guilt, though.
 Smoker: I know being a Marine means trusting your colleagues unless they give you a reason not to. Sometimes I think it'd be easier to be like Hina, and look to books and protocols, but I don't know there is one about this.
--> {$name}: In my training they mentioned how to be a whistle-blower...
+-> In my training they mentioned how to be a whistle-blower...
   Smoker: Well, at least there's something. Does it tell you how to find them?
   You shake your head. Smoker sighs, blowing out a smoke ring.
--> {$name}: Trusting your gut has worked out for you most of the time, though. This time just sticks out.
-    <<set sd3_points +=1>>
+-> Trusting your gut has worked out for you most of the time, though. This time just sticks out.
+    <<set $sd3_points +=1>>
   Smoker: There may be some truth to that. It's easy to dwell on failure.
--> {$name}: Even Rear Admiral Hina doesn't always have the answers.
+-> Even Rear Admiral Hina doesn't always have the answers.
   Smoker: Hard to make her speechless, though.
 <<jump date_smoker_3_Route_join>>
 ===
@@ -95,66 +95,66 @@ location: office
 
 Smoker: We should, but we'd have to walk outside to get there.
 To reinforce his point, the thunder crashes again. As the lightning strikes, your eye catches a vase standing atop the file cabinet. It looks like it's made of mosaic, with shining veins keeping the tiles together.
--> {$name}: That vase is lovely.
-    <<set sd3_points +=1>>
+-> That vase is lovely.
+    <<set $sd3_points +=1>>
   Smoker: Thanks.
--> {$name}: ...
+-> ...
   Smoker: Oh, looking at the vase?
 Smoker: I made it. I do pottery as a hobby. I took the original out of the kiln and then brushed my wrist against it — ended up jerking my arm and smashing the damn thing all over the floor. Carried the pieces around for a while before I had a chance to put it back together.
--> {$name}: I never would have guessed you had such an eye for... color.
-    <<set sd3_points -=1>>
+-> I never would have guessed you had such an eye for... color.
+    <<set $sd3_points -=1>>
   Smoker: Uh. Thanks, I guess.
--> {$name}: Do you make a lot of things? Sell them?
+-> Do you make a lot of things? Sell them?
   Smoker: It's not for money. But I don't make as much as I'd like to. I did a couple of bowls for Hina, and some big pieces for Kuzan...I just don't have time for much more.
-  -> {$name}: It's hard to make the time.
-  -> {$name}: Would you make **me** something?
-      <<set sd3_points +=1>>
+  -> It's hard to make the time.
+  -> Would you make **me** something?
+      <<set $sd3_points +=1>>
     Smoker: Maybe if we get to know each other a little better.
--> {$name}: It's good to work with your hands... after all, yours are so talented.
-    <<set sd3_points +=1>>
+-> It's good to work with your hands... after all, yours are so talented.
+    <<set $sd3_points +=1>>
   Smoker: Glad you think so.
 Smoker: For a while, I only had a burn mark on my arm to show for it. This all happened before I ate my fruit.
 He turns over his arm and taps a mark on the underside — it's noticeably darker than the skin surrounding it, faded from an angrier shade.
--> {$name}: It looks smooth... like it healed really well.
-    <<set sd3_points +=1>>
+-> It looks smooth... like it healed really well.
+    <<set $sd3_points +=1>>
   Smoker: Yeah, it doesn't feel any different from the rest of the skin.
   You reach out to brush your thumb over it. It does feel normal.
--> {$name}: Does it affect your powers? Like, is there always a darker part of your smoke?
+-> Does it affect your powers? Like, is there always a darker part of your smoke?
   Smoker: I never really thought about it, but I doubt it.
--> {$name}: So if you did the same thing now, would you just turn into smoke?
+-> So if you did the same thing now, would you just turn into smoke?
   Smoker: Depends. If there was someone behind me, I'd use Armament Haki.
 Smoker shakes his sleeve back over his arm, then strikes a match and lights his cigars.
--> {$name}: Are your other scars from fighting?
+-> Are your other scars from fighting?
   Smoker: Yeah, most of ‘em.
--> {$name}: How long have you done pottery?
+-> How long have you done pottery?
   Smoker: Almost as long as I've known how to fight. I wanted to use my hands for something, and smacking around a piece of clay works well enough.
 Smoke trails off into the air. You don't feel the urge to fidget, or to say anything. Smoker is the next one to speak, but it's about a totally different subject.
 Smoker: We— well, just me, I guess, but a lot of other Marines tend to think of fighting as a physical thing. But it's mental, too. Acuity, awareness, thinking on your feet.
--> {$name}: Wow, did you write the basic training handbook?
-    <<set sd3_points -=1>>
+-> Wow, did you write the basic training handbook?
+    <<set $sd3_points -=1>>
   Smoker: Do they actually say that there? Seems at odds with the other stuff they teach.
-  -> {$name}: They didn't actually tell us **how** to do it.
-  -> {$name}: Yeah. It helped me try to stay aware while I was learning.
--> {$name}: You're so good at both...
+  -> They didn't actually tell us **how** to do it.
+  -> Yeah. It helped me try to stay aware while I was learning.
+-> You're so good at both...
   Smoker: I have to be.
--> {$name}: It's a tough balance for me!
+-> It's a tough balance for me!
   Smoker: Gets easier the more you learn. And we need people who are better at one side than the other. Balance and all that.
 Smoker: Physical strength is all well and good, but even outside of battle, you have to be aware of how your colleagues are doing. Sometimes, they hide things, and if you're not on top of it, there can be consequences.
--> {$name}: Like with an injury?
+-> Like with an injury?
   Smoker: Not what I was thinking of, but yeah, that too. Tashigi's good at seeing that, but I can't just assume she will.
--> {$name}: In terms of mental health and stress?
+-> In terms of mental health and stress?
   Smoker: Yeah. And, y'know, personality. I know G-5 has a reputation for wild cards, but... I need to trust that they've got good hearts.
--> {$name}: Like... if they turn out to be a spy?
-    <<set sd3_points +=1>>
+-> Like... if they turn out to be a spy?
+    <<set $sd3_points +=1>>
   Smoker: Exactly like that.
 Smoker: When Vice Admiral Vergo betrayed us, many of my subordinates didn't believe it. Even when he caused their injuries. Their deaths. At my rank, I need to be able to face hard truths.
--> {$name}: You did accept the truth.
-    <<set sd3_points -=1>>
+-> You did accept the truth.
+    <<set $sd3_points -=1>>
   Smoker: Too little, too late. I was every bit as blind up to a certain point.
--> {$name}: Do you think someone in our group is a spy?
+-> Do you think someone in our group is a spy?
   Smoker: Nah. But who knows, maybe I'm wrong. Why, do you?
   You shake your head.
--> {$name}: What could be a harder truth than that?
+-> What could be a harder truth than that?
   Smoker: More spies, more corruption. Something about the big picture. It's easy to just focus on fighting pirates and keeping a good budget, stuff like that... but what is it all building up to?
 Smoker: Anyway.
 Smoke trails from his cigars and from his fingers, like the mist outside the window but in miniature. It brushes against your arm, not on accident. You turn your hand over to brush it back.
@@ -167,25 +167,25 @@ location: office
 
 Lightning flashes again, and the rain continues its steady drumming.
 You notice a pile of stones on one end of Smoker's desk. Oh, right, when you went to the garden before, he pointed out those rocks...
--> {$name}: So you really do like rocks.
+-> So you really do like rocks.
   Smoker: It'd be stupid to make small talk about it if I didn't.
--> {$name}: Nice rocks. Did you get them from the garden?
+-> Nice rocks. Did you get them from the garden?
   Smoker: Nope, I've had ‘em for years now.
--> {$name}: (Available if player got to section 2B on date 1) You **did** say you'd show me your rocks.
-    <<set sd3_points +=1>> //HOW DO??
+-> (Available if player got to section 2B on date 1) You **did** say you'd show me your rocks.
+    <<set $sd3_points +=1>> //HOW DO??
   Smoker: I did, didn't I?
 Smoker: So. Ever stacked rocks before?
--> {$name}: I was hoping you would help me. Like when you showed me how to fight...
-    <<set sd3_points +=1>>
+-> I was hoping you would help me. Like when you showed me how to fight...
+    <<set $sd3_points +=1>>
   Smoker: I can do that.
--> {$name}: Yes, but I'd like to see how you do it.
+-> Yes, but I'd like to see how you do it.
 Smoker: There's an art to balancing them. It's easy to, say, put a smaller one on top of a bigger one, but if you pay attention you can make them do different things.
 He spreads out the rocks on the table, pushing the paperwork aside.
 Smoker: But let's start simple. Let's say I want this one to be my base, I place it in the middle and choose the next one.
 He looks at you.
--> {$name}: This round one on the far side.
+-> This round one on the far side.
   <<jump date_smoker_3_Round_rock>>
--> {$name}: This shiny one at the back.
+-> This shiny one at the back.
   <<jump date_smoker_3_Shiny_rock>>
 ===
 
@@ -195,15 +195,15 @@ location: office
 
 Smoker: Heh, good choice. This is a hard one — it's pretty smooth. Doesn't have crevices or much friction.
 He presses the rock into your palm, fingers grazing the side of your hand. You place the rock on top of the first, and let go — and it rolls right off.
--> {$name}: Ugh, I'll try that again.
+-> Ugh, I'll try that again.
   You lift the rock, and this time look for a place it could balance — maybe right on top of a small crack in the first. You place the rock down and hold it, waiting for it to wobble. It stays steady. You remove your hand, and somehow it stays in place.
   Smoker: Good job. Next time, you should be more careful with taking your hands away.
--> {$name}: Can you show me?
+-> Can you show me?
   Smoker: Sure. See that crack in the first one?
   You nod. He picks up the rock and puts it on top of the crack, holding it in place and gradually peels away his fingers.
   Smoker: I can get away with snatching my hand away, but it's probably better for a beginner not to.
--> {$name}: Can you help me?
-    <<set sd3_points +=1>>
+-> Can you help me?
+    <<set $sd3_points +=1>>
   Smoker: Pick it up. Show me where you want to put it.
   You pick the round stone up and scan the surface of the base, spotting a crevice, to which you point.
   Smoker: Okay.
@@ -212,16 +212,16 @@ He presses the rock into your palm, fingers grazing the side of your hand. You p
   He peels each of yours away, hooking it under one of his.
 Smoker: There we go. So, next, I'd probably want something that could stabilize the round one...lean against both that one and the base.
 Your eyes catch a flat rock shaped like an oval, a chunky dark one shaped like a trapezoid, and a different flat one — or is that a coin?
--> {$name}: Can we use things other than rocks?
-    <<set sd3_points +=1>>
+-> Can we use things other than rocks?
+    <<set $sd3_points +=1>>
   Smoker: You're thinking outside the box, good. I don't personally don't like to – there's something about the feeling of the rock in your hand.
-  -> {$name}: Okay, that flat one.
+  -> Okay, that flat one.
     <<jump date_smoker_3_Flat>>
-  -> {$name}: Fair enough. Let's pick the trapezoid one.
+  -> Fair enough. Let's pick the trapezoid one.
     <<jump date_smoker_3_Trapezoid>>
--> {$name}: The flat rock shaped like an oval.
+-> The flat rock shaped like an oval.
   <<jump date_smoker_3_Flat>>
--> {$name}: The dark trapezoid one over there.
+-> The dark trapezoid one over there.
   <<jump date_smoker_3_Trapezoid>>
 ===
 
@@ -230,9 +230,9 @@ location: office
 ---
 
 Smoker: That's not really going to stabilize it.
--> {$name}: Why did you tell me to pick, then?
-    <<set sd3_points -=1>>
--> {$name}: Oh, yeah, probably not.
+-> Why did you tell me to pick, then?
+    <<set $sd3_points -=1>>
+-> Oh, yeah, probably not.
 Smoker: Here.
 He picks up the trapezoid-shaped rock you spotted and places it in your hand.
 <<jump date_smoker_3_Trapezoid>>
@@ -243,13 +243,13 @@ location: office
 ---
 
 You take the trapezoid-shaped rock, and hold it above the other two. Where will it best stabilize? Maybe if you lean it against the far side...
--> {$name}: Let's do it together?
-    <<set sd3_points +=1>>
+-> Let's do it together?
+    <<set $sd3_points +=1>>
   Smoker: Sure.
   He takes your hand in his, but he's waiting for you to guide the rock into place. You tug it forward, toward the far side, and then set it down, first against the base, and then down to touch the round stone.
   Smoker: Nicely done.
   He slowly takes his hand off of yours, and then you pull off each finger. The structure stays in place.
--> {$name}: Okay, I'll just put it down...
+-> Okay, I'll just put it down...
   You set the rock carefully on the base, and then lean it on the round one. It wobbles, but then stays, and you peel off your hands — success!
 <<jump date_smoker_3_Rock_join>>
 ===
@@ -259,19 +259,19 @@ location: office
 ---
 
 You gaze at the base rock. The shiny one is pretty, but how to position it?
--> {$name}: Should I put the long side down or the short side?
+-> Should I put the long side down or the short side?
   Smoker: You can try it both ways.
--> {$name}: Okay, I'll put the long side down.
+-> Okay, I'll put the long side down.
   You set the rock down on the base, and it tumbles off. Now what?
--> {$name}: Short side down will make it taller.
+-> Short side down will make it taller.
   You place it on what looks like a secure ledge, but as you're removing your hand, you knock the rock off...oops. Should you try that again?
 Smoker: What I like most about stacking the rocks is trying lots of different approaches. It helps me try and see the things I'm thinking about differently.
 He picks up a flat, oval-shaped rock, then sets it back down.
 Smoker: I don't like planning for battles that much...it all goes to hell once the first shot's fired. But at least if I consider different possibilities...what if we disable the other side's ship, what if we're sinking, what if I have to bail someone out...
--> {$name}: So you use this instead of battle maps?
+-> So you use this instead of battle maps?
   Smoker: More or less. Those things are way too detailed.
--> {$name}: Sometimes it's good to have something to do with your hands.
-    <<set sd3_points +=1>>
+-> Sometimes it's good to have something to do with your hands.
+    <<set $sd3_points +=1>>
   Smoker: Yeah.
   He adjusts the cigars in the holster on his jacket.
 Smoker: Anyway, if you want my advice...
@@ -288,15 +288,15 @@ location: office
 What you've built is not much of a tower, but it's something, and you've built it together. The light streams through the open window, shining off the rocks — hey, wait a minute, light outside?
 Smoker: Huh, looks like the rain's stopped.
 You can't see any clouds at all outside; the sky is clear, though everything still looks wet.
--> {$name}: Can we keep building the structure?
-    <<set sd3_points +=1>>
+-> Can we keep building the structure?
+    <<set $sd3_points +=1>>
   Smoker: Can I take a rain check? Heh. I do need to turn in these papers or Tashigi will come after me.
--> {$name}: Do you think there's still time to go to the garden?
-    <<set sd3_points +=1>>
+-> Do you think there's still time to go to the garden?
+    <<set $sd3_points +=1>>
   Smoker checks his watch.
   Smoker: Doubt it, but we can pass through on our way by.
--> {$name}: Guess there's no excuse for not turning in the papers.
-    <<set sd3_points -=1>>
+-> Guess there's no excuse for not turning in the papers.
+    <<set $sd3_points -=1>>
   Smoker: Guess not.
 The two of you get up, leaving the office and the structure behind.
 <<jump date_smoker_3_End_date>>
@@ -305,9 +305,12 @@ The two of you get up, leaving the office and the structure behind.
 title: date_smoker_3_End_date
 location: office
 ---
-(If the player got 4+ points) => <<jump date_smoker_3_Two_point_end>> //HOW DO??
-(If the player got 0-3 points) => <<jump date_smoker_3_One_point_end>> //HOW DO??
-(If the player got <0 points) => <<jump date_smoker_3_Zero_point_end>> //HOW DO??
+(If the player got 4+ points) =>
+  <<jump date_smoker_3_Two_point_end>> //HOW DO??
+(If the player got 0-3 points) =>
+  <<jump date_smoker_3_One_point_end>> //HOW DO??
+(If the player got <0 points) =>
+  <<jump date_smoker_3_Zero_point_end>> //HOW DO??
 ===
 
 title: date_smoker_3_Two_point_end

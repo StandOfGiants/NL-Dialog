@@ -33,9 +33,9 @@ Vendor: Welcome! Has something caught your eye?
         Vendor: See if you like any of our earrings, then.
         You take a look at the selection. Many of them are bird-shaped.
         There's one, in fact, with two stylized silver cranes.
-        -> {$name}: Yes, this will work!
+        -> Yes, this will work!
             <<jump tsuru_gift_hunt_tsuru_great_gift>>
-        -> {$name}: No, this isn't what I'm looking for.
+        -> No, this isn't what I'm looking for.
             Vendor: I see! Well, hope you find something else.
             <<jump tsuru_gift_hunt_intro>>
 -> Look somewhere else.
@@ -57,7 +57,7 @@ Vendor: Welcome! Do you need any help?
     {$name}: That sounds good!
     After all, like all Navy folks, Tsuru is quite a busy woman...
     (And has her thorns...)
-    <<jump tsuru_gift_hunt_tsuru-good-gift>>
+    <<jump tsuru_gift_hunt_tsuru_good_gift>>
 -> ... some decorations.
     Vendor: Of course! We have a nice assortment of figurines for your garden.
     The vendor gestures in the direction of garden gnomes and lawn flamingos.

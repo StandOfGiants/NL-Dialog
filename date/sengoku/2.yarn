@@ -7,7 +7,7 @@ A beautiful day at Headquarters. The streets are bustling, vendors hawking their
 Sengoku: Oh, hello {$name}.
 -> Whoa the Fleet Admiral is out of the office!
     <<set $sd2_points -= 1>>
-    Sengoku: Retired Fleet Admiral. And I do have a life outside work, {$name}. #expression:frown
+    Sengoku: Retired Fleet Admiral. And I do have a life outside work, {$name}. #expression:grumpy
     -> Could have fooled me.
         <<set $sd2_points -= 1>>
         Sengoku: ...
@@ -35,7 +35,7 @@ Sengoku: Oh, hello {$name}.
 title: date_sengoku_2_sengoku_is_concern
 ---
 -> Ask if something is wrong
-    -> {$name}: Is something on your mind Sir?
+    -> Is something on your mind Sir?
         Sengoku: Call me Sengoku when we are off duty if you please. And no, nothing is wrong per say, but...
         {$name}: But? //  test
         Sengoku: I am having a bit of trouble with something. I need a gift for Rosinante, his birthday is coming up.
@@ -102,12 +102,12 @@ title: date_sengoku_2_BOOKSTORE_END
 ---
 {$name}: Alright, so do you think this book is the right gift?
 Sengoku: Hm. If it's not too much trouble, I would like to keep looking. I will leave this at the front desk however.
--> {$name}: This is the right gift, I'm sure.
+-> This is the right gift, I'm sure.
     <<set $sd2_points -= 1>>
     Sengoku: Hm...perhaps you are right. I will get this for Rosinante. Thank you for your input, {$name}.
     He gives you a wave and heads off, leaving you to the rest of your day.
-    <<jump date_sengoku_2_DATE_END>>
--> {$name}: Okay, where to next?
+    <<jump date_sengoku_2_DATE_ENDS_EARLY>>
+-> Okay, where to next?
     <<jump date_sengoku_2_GIFT_HUNT_OPTIONS>>
 ===
 

@@ -1,6 +1,10 @@
 title: workday_legendary_2_intro
 location: office
 ---
+<<declare $lwd2R_points = 0>>
+<<declare $lwd2T_points = 0>>
+<<declare $lwd2S_points = 0>>
+<<declare $lwd2G_points = 0>>
 
 You arrive at Tsuru's office. The door is open, and everyone is already inside.
 {$name}: Good morning! {$name}, reporting for duty!
@@ -9,18 +13,20 @@ Rosinante: Can we just skip the ceremony part? I feel like I'm going to mess up,
 Garp: Bwahahaha! You'll be fine, Rosi! You did a great job on your mission, so you should just go out there with your head held high!
 Sengoku: For once, Garp is right. You did well, befitting of your promotion.
 {$name}: Wow, Rosinante must have really done something special if they're talking about him like this...
--> Congratulations on your promotion! <<set lwd2R_points +=1>>
-    <<set lwd2T_points +=1>>
+-> Congratulations on your promotion!
+    <<set $lwd2R_points +=1>>
+    <<set $lwd2T_points +=1>>
     Rosinante: Thank you. It still feels weird, though...
     Tsuru: Don't be humble. It is well-deserved.
--> So, what exactly was your assignment? <<set lwd2G_points +=1>>
-    <<set lwd2S_points -=1>>
+-> So, what exactly was your assignment?
+    <<set $lwd2G_points +=1>>
+    <<set $lwd2S_points -=1>>
     Rosinante: Oh. Uhm, well—I was—
     Sengoku: That's classified, but it was difficult and dangerous, as all high-level assignments are.
     Garp: Eh, don't worry about it. I can tell you more later!
     Sengoku: Don't you dare, Garp!
 -> You deserve it, sir.
-    <<set lwd2S_points +=1>>
+    <<set $lwd2S_points +=1>>
     Sengoku: Rosinante has accomplished something that very few have, and brought peace to many. It is a shame most will never know of his sacrifices.
     Rosinante: I just did what was right...
 Rosinante: Really, I'm just happy to be here today.
@@ -32,20 +38,23 @@ Tsuru: Still, we cannot thank you enough for what you've done.
 Tsuru: It is admirable to put your life on the line to fulfill your duty.
 {$name}: Being a top Marine really is tough, isn't it? It's not all about paperwork and promotions. You really could die.
 {$name}: Wow...
--> Truthfully, I don't know if I could do something like that. My fighting skills aren't the best, but I know where I'm meant to contribute—by supporting the heroes. <<set lwd2T_points +=1>>
-    <<set lwd2G_points -=1>>
+-> Truthfully, I don't know if I could do something like that. My fighting skills aren't the best, but I know where I'm meant to contribute—by supporting the heroes.
+    <<set $lwd2T_points +=1>>
+    <<set $lwd2G_points -=1>>
     Tsuru: That's a noble attitude, {$name}.
     Garp: Tch. Not everyone needs to be a hero, but it sounds like you're giving up on yourself. Maybe I should help whip you into shape...
--> I hope that I can go on a mission like that soon. I would love to be out there, making things better for all the people who need my help. <<set lwd2S_points +=1>>
-    <<set lwd2R_points -=1>>
+-> I hope that I can go on a mission like that soon. I would love to be out there, making things better for all the people who need my help.
+    <<set $lwd2S_points +=1>>
+    <<set $lwd2R_points -=1>>
     Sengoku: The Navy always has a need for those with good intentions.
     Rosinante: Maybe, but also, don't throw yourself out there completely blind. That's not helping anyone, no matter how good your intentions are...
--> I have a long way to go before I can get there, but I don't want to give up. I'd like to work toward the day when I can go on a mission like this. <<set lwd2G_points +=1>>
-    <<set lwd2T_points -=1>>
+-> I have a long way to go before I can get there, but I don't want to give up. I'd like to work toward the day when I can go on a mission like this.
+    <<set $lwd2G_points +=1>>
+    <<set $lwd2T_points -=1>>
     Garp: That's a good outlook, {$name}! Keep training and don't rush it. You have potential!
     Tsuru: It's good to have priorities, but remember to work on yourself and don't get caught in the glamor.
 -> Honestly, I don't know yet. I'm taking things one day at a time, seeing what I'm good at and letting the pieces fall where they may.
-    <<set lwd2R_points +=1>>
+    <<set $lwd2R_points +=1>>
     Rosinante: Good! It's always better to take your time rather than rush forward and then crash into a wall.
 Tsuru: Well, enough chit-chat. The ceremony is going to start soon.
 [fade out] //HOW DO??
@@ -110,28 +119,32 @@ Sengoku: At least the coffee did its job and woke you up. Now, I... no. Oh no.
 Garp: What's eatin' you, Senny?
 Sengoku: Rosinante's promotion certificate is ruined, that's what! Now what am I supposed to do?!
 {$name}: (I should...)
--> (... Suggest that they just sign the coffee-stained papers.) <<set lwd2G_points +=1>>
-    <<set lwd2S_points -=1>>
+-> (... Suggest that they just sign the coffee-stained papers.)
+    <<set $lwd2G_points +=1>>
+    <<set $lwd2S_points -=1>>
     {$name}: Sengoku... uh, sir... the papers look fine. There's only a little bit of coffee on them. They're still usable.
     Garp: There you go! {$name}'s got the right idea!
     Sengoku: Why in the world would I give Rosi coffee-stained papers to commemorate the biggest promotion of his career?!
     <<jump workday_legendary_2_continue_1>>
--> (...Suggest that he make up a reason for Rocinante to sign the papers in his office later.) <<set lwd2G_points -=1>>
-    <<set lwd2S_points +=1>>
+-> (...Suggest that he make up a reason for Rocinante to sign the papers in his office later.)
+    <<set $lwd2G_points -=1>>
+    <<set $lwd2S_points +=1>>
     {$name}: Um, sir, you could always say that you'll have him sign the papers in your office later. It may be a little unusual, but better that than a stained certificate, right?
     Sengoku: ...Right. Yes. Good thinking, {$name}. I can certainly think of something like that.
     Garp: Tch, are you really going to just go up there and make excuses, Senny?
     Sengoku: I will do what I must. I don't want anything else to go wrong while he is receiving his honors.
     <<jump workday_legendary_2_continue_1>>
--> (...Feed the papers to the goat.) <<set lwd2G_points +=1>>
-    <<set lwd2S_points +=1>>
+-> (...Feed the papers to the goat.)
+    <<set $lwd2G_points +=1>>
+    <<set $lwd2S_points +=1>>
     {$name}: Oy, goat. Here. Eat up.
     Goat: Bahhhhh!
     Sengoku: No, wait... and they're gone. I... Well, I guess that solves that problem.
     Garp: Bwahahahaha! Now that was some quick thinking, {$name}!
     <<jump workday_legendary_2_continue_1>>
--> (...Go get paper towels) <<set lwd2G_points -=1>>
-    <<set lwd2S_points -=1>>
+-> (...Go get paper towels)
+    <<set $lwd2G_points -=1>>
+    <<set $lwd2S_points -=1>>
     {$name}: Oh no. I'll go get napkins!
     Sengoku: That would have been smart to bring the first time.
     Garp: The napkins will just fall apart anyway; the Navy always cheaps out on what's important.
@@ -157,7 +170,7 @@ Sengoku: To all who are assembled here, thank you for attending. It is my great 
 [applause noise] //HOW DO??
 {$name}: (Wow, it's so loud! But so well-deserved!)
 {$name}: Congratulations, Vice Admiral!!
-<<jump workday_legendary_2_outro>>
+<<jump workday_legendary_2_outro_good>>
 ===
 
 title: workday_legendary_2_two_cups
@@ -175,21 +188,24 @@ Sengoku: At least the coffee did its job and woke you up. Now, I... no. Oh no.
 Garp: What's eatin' you, Senny?
 Sengoku: There's coffee all over the shoulder of my coat! I can't possibly wear this onstage!
 {$name}: (I should...)
--> (... Suggest that he borrow Garp's coat. It has miraculously avoided the coffee spill.) <<set lwd2G_points -=1>>
-    <<set lwd2S_points +=1>>
+-> (... Suggest that he borrow Garp's coat. It has miraculously avoided the coffee spill.)
+    <<set $lwd2G_points -=1>>
+    <<set $lwd2S_points +=1>>
     {$name}: Um, maybe you could borrow Garp's coat?
     Sengoku: Well, we are about the same size... Fine. It'll do.
     Garp: Wait a minute! Don't I get a say in this?!
     Sengoku: Hand it over, Garp!
     <<jump workday_legendary_2_continue_2>>
--> (... Suggest that he just wear the coat as-is.) <<set lwd2G_points +=1>>
-    <<set lwd2S_points -=1>>
+-> (... Suggest that he just wear the coat as-is.)
+    <<set $lwd2G_points +=1>>
+    <<set $lwd2S_points -=1>>
     {$name}: It's not a very noticeable stain, sir. You could probably just wear it as-is.
     Garp: {$name}'s right! Besides, Marines shouldn't be so bothered over little things like this!
     Sengoku: Speak for yourself, Garp!
     <<jump workday_legendary_2_continue_2>>
--> (... Suggest that he wear the goat like a scarf to hide the stain.) <<set lwd2G_points +=1>>
-    <<set lwd2S_points +=1>>
+-> (... Suggest that he wear the goat like a scarf to hide the stain.)
+    <<set $lwd2G_points +=1>>
+    <<set $lwd2S_points +=1>>
     {$name}: Hmmm... well, sir. You could always hide it.
     Sengoku: Is that so? Enlighten me.
     {$name}: You have the greatest fashion accessory of all right there.
@@ -199,8 +215,9 @@ Sengoku: There's coffee all over the shoulder of my coat! I can't possibly wear 
     Garp: It's not like we have any better ideas. Go for it, Senny!
     Sengoku: ... If I must, I must.
     <<jump workday_legendary_2_continue_2>>
--> (... Suggest that he not go up on stage.) <<set lwd2G_points -=1>>
-    <<set lwd2S_points -=1>>
+-> (... Suggest that he not go up on stage.)
+    <<set $lwd2G_points -=1>>
+    <<set $lwd2S_points -=1>>
     {$name}: If you're that worried, then don't go up there. You can congratulate him in private later!
     Garp: That's cowardly. It's just a stain.
     Sengoku: And embarrass Rosinante even more by not showing up? Tch.
@@ -219,7 +236,7 @@ Sengoku: To all who are assembled here, thank you for attending. It is my great 
 [applause noise] //HOW DO??
 {$name}: (Wow, it's so loud! But so well-deserved!)
 {$name}: Congratulations, Vice Admiral!!
-<<jump workday_legendary_2_outro>>
+<<jump workday_legendary_2_outro_good>>
 ===
 
 title: workday_legendary_2_rositsuru_path
@@ -240,7 +257,7 @@ Rosinante: It's my speech!
 Rosinante: I might have lost the notecards that have my speech.
 He avoids your gaze and returns to his crazed search of the cabinets.
 -> How did you lose your speech?
-    <<set lwd2R_points +=1>>
+    <<set $lwd2R_points +=1>>
     Rosinante: I don't know! I was sure I left my notes here, but I can't find them anywhere.
     {$name}: What if they fell out of your pocket? Did you look everywhere you were today?
     He nods frantically.
@@ -248,7 +265,7 @@ He avoids your gaze and returns to his crazed search of the cabinets.
     {$name}: OK, I'll help you look.
     <<jump workday_legendary_2_help_find_1A>>
 -> (This is your chance! Grab the gift while he's not looking.)
-    <<set lwd2T_points +=1>>
+    <<set $lwd2T_points +=1>>
     You're not sure if the gift is meant to be a surprise, but you don't want to take any chances. While Rosinante has his back turned, you take the gift from the drawer Tsuru specified.
     You stuff it under your shirt at the last moment, just as Rosinante turns to face you.
     Rosinante: What do I do? I need those notes.
@@ -307,7 +324,7 @@ The office isn't that large. At this point, you're sure you've looked everywhere
     Tsuru: Rosinante! We don't have time for this. We need you to think about your speech.
     Rosinante: I hardly remember any of it...
     -> Tsuru-san is right. We don't have time anymore.
-        <<set lwd2T_points +=1>>
+        <<set $lwd2T_points +=1>>
         Tsuru: We can write a basic speech. You'll be done quickly. Just remember the general ideas.
         Rosinante: It's not that easy. There were some key moments Dad prepared for me to inspire the new recruits.
         Rosinante: He's way better at this than I am. Most of my cover relied on people thinking I'm mute. I'm not used to giving speeches!
@@ -318,7 +335,7 @@ The office isn't that large. At this point, you're sure you've looked everywhere
         Rosinante: Alright. Let's do it.
         <<jump workday_legendary_2_write_speech>>
     -> (You put a hand on his shoulder in order to reassure him.)
-        <<set lwd2R_points +=1>>
+        <<set $lwd2R_points +=1>>
         {$name}: We'll help you. Five minutes is plenty of time. You've gone through things far scarier than this. You can pull through.
         He calms down a bit at the reassurance.
         Rosinante: I just wish I could remember... Dad helped me with some parts. He said I should inspire the new recruits.
@@ -341,13 +358,15 @@ The office isn't that large. At this point, you're sure you've looked everywhere
     Tsuru: Do you remember any of it? We can write down what you remember.
     Rosinante: Hardly...
     How can you fix this?
-    -> In three minutes, we can think of something! I'm sure Garp can stall for time. <<set lwd2R_points +=1>>
-        <<set lwd2T_points -=1>>
+    -> In three minutes, we can think of something! I'm sure Garp can stall for time.
+        <<set $lwd2R_points +=1>>
+        <<set $lwd2T_points -=1>>
         Tsuru: I'd rather you go there unprepared than have him up on stage for that long...
         {$name}: Then let's hurry, and we can rewrite it in time.
         <<jump workday_legendary_2_write_speech>>
-    -> Try to remember! We're out of time. <<set lwd2T_points +=1>>
-        <<set lwd2R_points -=1>>
+    -> Try to remember! We're out of time.
+        <<set $lwd2T_points +=1>>
+        <<set $lwd2R_points -=1>>
         {$name}: Here!
         You take out a piece of paper, ready to write down what Rosinante will say.
         <<jump workday_legendary_2_write_speech>>
@@ -393,9 +412,10 @@ Tsuru: Thank you.
 Tsuru: Let's head to the ceremony. We wouldn't want to miss the speech we worked so hard on.
 ===
 
-title: workday_legendary_2_outro_bad_sengarp //HOW DO?? dependent on choices
+title: workday_legendary_2_outro_bad_sengarp
 location: office
 ---
+//HOW DO?? dependent on choices
 
 Rosinante: [laughs] Well, that was...
 Tsuru: *Terrible...*
@@ -403,21 +423,28 @@ Garp: Bwah hah hah hah!
 Tsuru: Garp! Behave!
 Tsuru: Will you two fools ever take anything seriously?!
 Sengoku: It's easy to complain! We tried our best!
--> Take Sengoku's side. <<set lwd2T_points -=1>> <<set lwd2S_points +=1>>
-    <<set lwd2G_points -=1>>
+-> Take Sengoku's side.
+    <<set $lwd2T_points -=1>>
+    <<set $lwd2S_points +=1>>
+    <<set $lwd2G_points -=1>>
     {$name}: I was there! I saw it.
     Tsuru: And you were of no help!
     Garp: Geez, aren't you all fun at parties!
     Rosinante: It was fun, though, wasn't it? A little?
     Sengoku: At least it's over...
--> Take Tsuru's side. <<set lwd2T_points +=1>> <<set lwd2S_points -=1>>
-    <<set lwd2R_points -=1>>
+-> Take Tsuru's side.
+    <<set $lwd2T_points +=1>>
+    <<set $lwd2S_points -=1>>
+    <<set $lwd2R_points -=1>>
     {$name}: Yes! We need some discipline around here!
     Sengoku: What a thing to say after all we have been through...
     Garp: What we need is a drink!
     Rosinante: Poor dad and Garp. I know you tried.
--> Laugh at them both. <<set lwd2G_points +=1>> <<set lwd2R_points +=1>> <<set lwd2S_points -=1>>
-    <<set lwd2T_points -=1>>
+-> Laugh at them both.
+    <<set $lwd2G_points +=1>>
+    <<set $lwd2R_points +=1>>
+    <<set $lwd2S_points -=1>>
+    <<set $lwd2T_points -=1>>
       {$name}: You're all taking this way too seriously!
     Sengoku, Tsuru: What?!
     Tsuru: We'll have a word after this, {$name}.
@@ -426,34 +453,41 @@ Sengoku: It's easy to complain! We tried our best!
     Sengoku: That's the most important thing...
 Rosinante: Well...
 Rosinante: Thank you all for being here!
--> Tomorrow will be another day... <<set lwd2S_points +=1>>
-    <<set lwd2T_points +=1>>
+-> Tomorrow will be another day...
+    <<set $lwd2S_points +=1>>
+    <<set $lwd2T_points +=1>>
     Garp: What? No afterparty?
     Tsuru: I hope you're joking.
--> The mood is a bit down... Hey, wanna hear a joke? <<set lwd2G_points +=1>>
-    <<set lwd2R_points +=1>>
+-> The mood is a bit down... Hey, wanna hear a joke?
+    <<set $lwd2G_points +=1>>
+    <<set $lwd2R_points +=1>>
     Garp: I do!
     Tsuru: Not the best timing, is it?!
     Rosinante: Aww... I'll hear your joke.
     Sengoku: At least he's happy...
 ===
 
-title: workday_legendary_2_outro_bad_rositsuru //HOW DO?? Based on total negative points??
+title: workday_legendary_2_outro_bad_rositsuru
 location: office
 ---
+//HOW DO?? Based on total negative points??
 Rosinante: [laughs] Well, that was...
 Tsuru: *Terrible...*
 Garp: Bwah hah hah hah!
 Tsuru: This is no laughing matter!
 Garp: Lighten up a little!
--> Take Garp's side. <<set lwd2G_points +=1>> <<set lwd2S_points -=1>>
-    <<set lwd2T_points -=1>>
+-> Take Garp's side.
+    <<set $lwd2G_points +=1>>
+    <<set $lwd2S_points -=1>>
+    <<set $lwd2T_points -=1>>
     {$name}: It's true, we couldn't do much to prevent what happened!
     Tsuru: If we had been better organized...
     Sengoku pinches his nose.
     Sengoku: No one should ever find out about the chaos behind the scenes.
--> Take Tsuru's side. <<set lwd2G_points -=1>> <<set lwd2R_points -=1>>
-    <<set lwd2T_points +=1>>
+-> Take Tsuru's side.
+    <<set $lwd2G_points -=1>>
+    <<set $lwd2R_points -=1>>
+    <<set $lwd2T_points +=1>>
     {$name}: We really should have accounted for this...
     Rosinante: Aw, let's stop focusing on the negatives, shall we?
     Rosinante: It's all water under the bridge.
@@ -462,12 +496,14 @@ Garp: Lighten up a little!
     Sengoku: Enough fighting.
 Rosinante: Well...
 Rosinante: Thank you all for being here!
--> Tomorrow will be another day... <<set lwd2S_points +=1>>
-    <<set lwd2T_points +=1>>
+-> Tomorrow will be another day...
+    <<set $lwd2S_points +=1>>
+    <<set $lwd2T_points +=1>>
     Garp: What? No afterparty?
     Tsuru: I hope you're joking.
--> The mood is a bit down... Hey, wanna hear a joke? <<set lwd2G_points +=1>>
-    <<set lwd2R_points +=1>>
+-> The mood is a bit down... Hey, wanna hear a joke?
+    <<set $lwd2G_points +=1>>
+    <<set $lwd2R_points +=1>>
     Garp: I do!
     Tsuru: Not the best timing, is it?!
     Rosinante: Aww... I'll hear your joke.

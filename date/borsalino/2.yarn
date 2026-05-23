@@ -1,6 +1,6 @@
 title: date_borsalino_2_main
 ---
-<<declare $bd2_points = 0>>
+<<declare $bod2_points = 0>>
 if has_romance_points(borsalino, 2)
     Didn't {$borsalino} say you could do something else together soon?
     Speaking of the devil...
@@ -8,18 +8,18 @@ else
     It's nearing the end of a working day, on the training grounds...
 {$borsalino}: Oh, [wave][i]hellooo[/i][/wave], {$name}...
 {$borsalino}: What a fun day today, wasn't it...?
--> {$name}: Have you forgotten about me?! [comment]if has_romance_points(borsalino, 2)[/comment]
-    <<set $bd2_points += 1>>
-    <<set $bd2_points += 1>>
+-> Have you forgotten about me?! [comment]if has_romance_points(borsalino, 2)[/comment]
+    <<set $bod2_points += 1>>
+    <<set $bod2_points += 1>>
     {$borsalino}: Oh, my...
     {$borsalino}: You're cute when you're angry...
     {$borsalino}: Of [wave]cooourse[/wave] not, {$name}.
 // I dunno about this one. What gave the player the idea they'd been forgotten? Has it been a long time since the last date? Without any context, it just makes them sound creepily clingy. I do like his reaction, though
 -> Are you free today?
-    <<set $bd2_points += 1>>
+    <<set $bod2_points += 1>>
     {$borsalino}: Ah... I wish I was, [wave]belieeeve[/wave] me...
 -> I thought it was stressful... (-)
-    <<set $bd2_points -= 1>>
+    <<set $bod2_points -= 1>>
     {$borsalino}: Oh, you [i]poor thing...[/i]
     {$borsalino}: I'd love to help you decompress, I really [wave][i]wooould...[/i][/wave]
 // The indicator for point gain/loss here is different from date 1? There wasn't any mention of increment or decrement before. Not sure if this is an error or if you need to add this a lot more to this date/the last one
@@ -83,7 +83,7 @@ Borsalino lays back on his chair, arms comfortably crossed behind his head...
     {$borsalino}: [wave]Okaay...[/wave]
     <<jump date_borsalino_2_work>>
 -> Well? When are you getting started?
-    <<set $bd2_points += 1>>
+    <<set $bod2_points += 1>>
     <<jump date_borsalino_2_route3>>
 ===
 
@@ -228,10 +228,10 @@ title: date_borsalino_2_route2_pirates
         <<jump date_borsalino_2_route2_cute>>
 -Pick a Warlord of the Sea.
     {$borsalino}: Oh... yes, there might be updates to be made... Their status and our alliances seem to always be shifting...
-    -> {$name}: I'll do that.
+    -> I'll do that.
         {$borsalino}: Thank you, 'name'.
         <<jump date_borsalino_2_route2_cute>>
-    -> {$name}: Don't you think it's strange to be allied with pirates? (+)
+    -> Don't you think it's strange to be allied with pirates? (+)
         <<jump date_borsalino_2_route2_vega>>
 -Pick a Yonko. (+)
     {$borsalino}: Oh, thinking big, hmm...?

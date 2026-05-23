@@ -12,12 +12,13 @@ Helmeppo: Babysitting duty on top of assigned work, basically.
 Goat: Maaaa!
 {$name}: Er... Do you think it'll be helpful? Won't it just eat the decorations?
 Coby: I'm sure the four of us can keep watch well enough.
--> Aww, we get to have a little friend help us the whole day. <<set ccwd2C_points +=1>>
-    <<set ccwd2D_points +=1>>
+-> Aww, we get to have a little friend help us the whole day.
+    <<set $ccwd2C_points +=1>>
+    <<set $ccwd2D_points +=1>>
     Drake: He's good company if you keep your eyes on him.
     Coby: Hopefully we can keep him out of anything too important.
 -> Nice. All that on top of our usual assigned work, though...
-    <<set ccwd2H_points +=1>>
+    <<set $ccwd2H_points +=1>>
     Helmeppo: Yeah. I don't see why someone else couldn't goat-sit.
     Coby: Because he trusts us to get this done. The bigger projects we can work as a team, then split off as we need to. We'll get it done in no time.
 Coby claps his hands together to get the group's attention. The goat startles a little from the sound but soon goes back to chewing on some paper it managed to get a hold of in the office.
@@ -25,11 +26,11 @@ Coby: Drake-san, could you read off the assignments please?
 With some gentle coaxing, Drake tugs the paper from the goat's mouth.
 Drake: It's a sizeable list for one afternoon, but not impossible. On the field, we have to set up for the relay races and fencing. Off-field, we have the space for the judges and all of the bleachers. There's... Also a maid cafe.
 -> Well, we'd better get to it then. Even with the extra little helper, that's a lot to do.
-    <<set ccwd2D_points +=1>>
+    <<set $ccwd2D_points +=1>>
 -> It's a lot to do but with the four of us it'll be easy.
-    <<set ccwd2C_points +=1>>
+    <<set $ccwd2C_points +=1>>
 -> That is a lot of grunt work for the four of us to do, along with wrangling the goat.
-    <<set ccwd2H_points +=1>>
+    <<set $ccwd2H_points +=1>>
 <<jump workday_coby_crew_2_setup_start>>
 ===
 
@@ -60,11 +61,11 @@ Coby: Good thinking.
 Coby hands you a first-aid kit from the nearest bag as Drake begins to unpack some of the others, revealing tent poles and pieces of cloth. You look into the kit. It seems pretty stuffed. There are plenty of bandages and the bottle of antiseptic looks full. The thermometer looks fine, and the bottles of pills rattle with the sound of contents.
 Coby: Oh, man, all those bandages... Takes me back...
 -> *Bandages* make you feel nostalgic?
-    <<set ccwd2C_points -=1>>
+    <<set $ccwd2C_points -=1>>
     Coby: You could say that yes...
     Coby: Good marines get injured.
 -> More misadventures from your earlier days?
-    <<set ccwd2C_points +=1>>
+    <<set $ccwd2C_points +=1>>
     Coby: Something like that, I get hurt a lot because I try to put my all into what I do. That's what a good marine should do right, Drake-san?
 Drake: A good marine shouldn't charge in looking for harm, but planning for it doesn't hurt. The Grand Line throws a lot of unexpected obstacles at you, so learning and training for as many scenarios as possible is your best bet.
 Coby: I don't think the festival will be throwing anyone through walls-
@@ -89,17 +90,17 @@ Drake: No, not about you in particular, but about cutting corners.
     Drake: I don't know. I'm not privy to that information – this is all speculation.
     Coby: But even if recruitment's not down, with everything going on, it feels like we're still losing more people than we're gaining.
 -> So, what's this weeklong camping trip?
-    <<set ccwd2D_points +=1>>
+    <<set $ccwd2D_points +=1>>
     Drake: For officer training, they sent us out on individual rowboats with a compass and a tent. We had to make it to the island, set up a tent, and command a squadron back at base remotely via den den mushi while also surviving the week on the island. It's to test our command skills under stress.
     -> Whoa, that's hardcore.
     -> I guess I can see how that's practical...
     -> Well, I bet Captain Coby would have aced it if he had to do it!
-        <<set ccwd2C_points +=1>>
+        <<set $ccwd2C_points +=1>>
         Coby: I'm not so sure about that. I'm lacking in the experience Drake-san has. Plus being on your own is much harder than you think.
 You get the tent all set up. It looks bigger than you expected.
 Drake: We still need to get the chairs set up. And the table for the first aid kits.
 -> Ugh, this is so much work.
-    <<set ccwd2D_points -=1>>
+    <<set $ccwd2D_points -=1>>
 -> OK, let's do it!
 -> Not too much left, then.
 The furniture is compact and unfolds easily, and before you know it, everything is set up. As you survey your handiwork, Helmeppo comes walking over toward the three of you.
@@ -138,11 +139,11 @@ location: training grounds
 Helmeppo sighs.
 Helmeppo: He threw me a birthday party once. I tried, but everyone realized pretty quickly I wasn't having fun.
 -> Oh, so you're just a killjoy then.
-    <<set ccwd2H_points -=1>>
+    <<set $ccwd2H_points -=1>>
     Helmeppo: You think I didn't want to be able to enjoy it? Sorry, you can lie to people about what you like if you want, but I'm not that dedicated an actor.
     <<jump workday_coby_crew_2_Maid_Cafe2>>
 -> Yikes. That must've been awkward.
-    <<set ccwd2H_points +=1>>
+    <<set $ccwd2H_points +=1>>
     Helmeppo: It was. Thankfully Coby apologized after and hasn't tried it again.
     <<jump workday_coby_crew_2_Maid_Cafe2>>
 -> You'd think he'd have known if you hid your birthday that long...
@@ -195,14 +196,14 @@ location: training grounds
 You follow Helmeppo to a set of doors along one of the walls. He opens them, revealing a large closet full of folding tables and chairs. They're crowded in so close that you can't really count them all but it looks like they come in two different sizes.
 Helmeppo: Alright. Let's get these out. We can adjust the layout later.
 -> I'm glad I came to help. That's a lot of tables...
-    <<set ccwd2H_points +=1>>
+    <<set $ccwd2H_points +=1>>
     Helmeppo: I'm glad you're here too. Doing this alone would suck.
     <<jump workday_coby_crew_2_Cafe_Tables2>>
 -> Right. Let's do this!
     Helmeppo: That's the spirit.
     <<jump workday_coby_crew_2_Cafe_Tables2>>
 -> Yikes. Is it too late to go help with the medical tent?
-    <<set ccwd2H_points -=1>>
+    <<set $ccwd2H_points -=1>>
     Helmeppo: Yes. Now grab a table.
     <<jump workday_coby_crew_2_Cafe_Tables2>>
 ===
@@ -214,12 +215,12 @@ location: training grounds
 You and Helmeppo pull the chairs and tables out and start setting them up. It takes a while to get them all unfolded and arranged, but eventually you get there. On one side of the room, you put the larger tables in rows, and on the other side, you space out the smaller ones, with some partitions you found in between them.
 Helmeppo: I think that looks good. We don't have anything to set the tables with yet, so this is about as much as we can do.
 -> Alright! Let's keep this ball rolling.
-    <<set ccwd2H_points +=1>>
+    <<set $ccwd2H_points +=1>>
     <<jump workday_coby_crew_2_WhatNext>>
 -> I guess it's onto the next thing.
     <<jump workday_coby_crew_2_WhatNext>>
 -> Finally! I can't wait to be done with this bullshit.
-    <<set ccwd2H_points -=1>>
+    <<set $ccwd2H_points -=1>>
     <<jump workday_coby_crew_2_WhatNext>>
 ===
 
@@ -253,14 +254,14 @@ location: training grounds
 
 He guides you through how to set up the frame and hang the curtain. Luckily, it is fairly simple once you learn where everything is supposed to go.
 -> Thanks for showing me. It makes a lot more sense now.
-    <<set ccwd2H_points +=1>>
+    <<set $ccwd2H_points +=1>>
     Helmeppo: Yeah. Uh... Glad I could help.
     <<jump workday_coby_crew_2_Cafe_Decor3>>
 -> Alright. Time to do the rest.
     Helmeppo: Should go quick, if nothing goes wrong...
     <<jump workday_coby_crew_2_Cafe_Decor3>>
 -> That's it? I could've figured that out myself.
-    <<set ccwd2H_points -=1>>
+    <<set $ccwd2H_points -=1>>
     Helmeppo: A simple thank you would've been fine.
     <<jump workday_coby_crew_2_Cafe_Decor3>>
 ===
@@ -274,12 +275,12 @@ Helmeppo: Well at least that part's done.
 {$name}: I think we did a pretty good job!
 Helmeppo: I suppose so. Excellent curtain hanging. Truly masterful.
 -> Your sarcasm is duly noted. So what else needs to be done?
-    <<set ccwd2H_points +=1>>
+    <<set $ccwd2H_points +=1>>
     <<jump workday_coby_crew_2_WhatNext>>
 -> Yes. What else do we have to do?
     <<jump workday_coby_crew_2_WhatNext>>
 -> You don't have to be rude. Nevermind, let's do something else.
-    <<set ccwd2H_points -=1>>
+    <<set $ccwd2H_points -=1>>
     <<jump workday_coby_crew_2_WhatNext>>
 ===
 
@@ -302,13 +303,13 @@ Helmeppo: There's not?
         Once you have a list, you double check it before letting Helmeppo know you're finished.
         <<jump workday_coby_crew_2_KitchenDone>>
     -> How would this possibly be a two-person job?
-        <<set ccwd2H_points -=1>>
+        <<set $ccwd2H_points -=1>>
         Helmeppo: Fine, just don't complain if you get bored.
         You go through each of the items on the menu and list out their ingredients. There's coffee, tea, juice, chocolate and strawberry cakes, and vanilla cupcakes with seagulls drawn on in icing.
         Once you have a list, you double check it before letting Helmeppo know you're finished.
         <<jump workday_coby_crew_2_KitchenDone>>
     -> Yeah, it'll go faster with two.
-        <<set ccwd2H_points +=1>>
+        <<set $ccwd2H_points +=1>>
         You read out the ingredients for each item on the menu: coffee, tea, juice, chocolate and strawberry cakes and vanilla cupcakes with seagulls drawn on in icing. He writes them down, then reads them back to you. The whole thing takes a couple minutes.
         <<jump workday_coby_crew_2_KitchenDone>>
 -> Let's try making everything and see what we need.
@@ -329,14 +330,14 @@ Having seen yours, Helmeppo guiltily hands you his.
 If you didn't know it was supposed to be a seagull, you'd think it was some sort of sea monster.
 The red intended for its tongue has bled down to the neckline, making it look like someone decapitated the creature and put it out of its misery.
 -> It looks OK...
-    <<set ccwd2H_points -=1>>
+    <<set $ccwd2H_points -=1>>
     Helmeppo: You don't have to lie. Let's just finish up and get out of here.
     <<jump workday_coby_crew_2_KitchenDone>>
 -> Wow.
     Helmeppo: Yeah. Let's just forget about this and get back to work, OK?
     <<jump workday_coby_crew_2_KitchenDone>>
 -> I think some Marines would probably prefer one like that.
-    <<set ccwd2H_points +=1>>
+    <<set $ccwd2H_points +=1>>
     He chuckles.
     Helmeppo: Decapitated and dying? Yeah, I can see that.
     <<jump workday_coby_crew_2_KitchenDone>>
@@ -383,10 +384,10 @@ Helmeppo: It's lucky the higher ups mostly like you. If they ran a tab of everyt
 Coby sighs, letting the table drop. You can see now the fissure in the plastic where it had given up the ghost.
 Coby: You're right. At this rate I'm going to be the first Marine who owes more than he makes...
 -> Well it looks kind of old, maybe it was on its way out?
-    <<set ccwd2C_points +=1>>
+    <<set $ccwd2C_points +=1>>
     Coby: Hopefully...
 -> They're gonna use you to pull ships if you keep that up.
-    <<set ccwd2H_points +=1>>
+    <<set $ccwd2H_points +=1>>
     Helmeppo: I can just see it. Paddling across the Grand Line with an anchor chain in your teeth.
     Coby: I don't want to think about it, I'll look like a swimming ox.
 -> You are a swimming ox...
@@ -439,21 +440,22 @@ Drake: Thank you for agreeing to help me with this. It's tedious work, but it go
 -> Uh, I'm not sure what exactly the work entails.
 Drake: They're standard aluminum bleachers. We have to get out the frames, the seats, and the tools, and put them all together.
 -> Ooh, lots of screwing, eh? **wink**
-    <<set ccwd2D_points -=1>>
+    <<set $ccwd2D_points -=1>>
 -> That doesn't sound too bad.
 -> Great, so... Where's all the stuff?
     Drake: It's in that storage shed.
 -> No problem! I wouldn't want you to have to do this all by yourself.
     Drake: I'm used to it.
 -> Tedious? I mean, damn. I can't believe we got stuck with boring work again.
-    <<set ccwd2D_points -=1>>
+    <<set $ccwd2D_points -=1>>
     Drake: This is something we agreed to do – something you could have contested had you met up on time. And doing it helps ensure the sports festival goes well.
 You reach your destination, a storage shed by the side of the main building. Drake takes out a key from his pocket and unlocks the padlock on the shed. The double doors swing open readily, revealing a big metal... Thing.
 Drake: That'll be the first piece of frame. We should probably take everything out before we start putting it together.
 -> Wouldn't it be faster if one of us did the moving and one of us started assembly?
     Drake: That might work if we had three people, but this way will be easier with just us two. They're relatively light pieces, but their size makes everything unwieldy.
 -> Okay, do you want me to grab it from behind?
-    Drake: That would be great, thank you. <<set ccwd2D_points +=1>>
+    Drake: That would be great, thank you.
+    <<set $ccwd2D_points +=1>>
 -> What do I do?
     Drake: Can you go into the shed and grab it from the back? I'll pull it from this side.
 The two of you position yourselves one at each end of the frame and lift. It's even lighter than you expected, or maybe Drake is just really strong. Either way, you're fine with it. You haul the frame maybe a third of the way to where the others are setting up the judging zone.
@@ -488,10 +490,11 @@ He picks up a plank effortlessly (so those muscles really aren't just for show) 
     -> What do you mean?
         Drake: It's... Not exactly quiet, but it's a place to breathe. I find most public events mentally taxing.
     -> If I find you hiding when *we* have to be out there, I'm ratting you out.
-        <<set ccwd2D_points -=1>>
+        <<set $ccwd2D_points -=1>>
         Drake: Of course... Where were we?
     -> I didn't know that was a problem. If I see you down here later, I'll let you have the space.
-        Drake: Thank you. It's not something I enjoy giving into, but I'd appreciate it. Now let's continue. <<set ccwd2D_points +=1>>
+        Drake: Thank you. It's not something I enjoy giving into, but I'd appreciate it. Now let's continue.
+        <<set $ccwd2D_points +=1>>
 -> Wow, I thought your answer would be “never”... So you've got a bit of a rulebreaker streak in you.
     Drake: It's really not like that. Let's move along.
 -> Aw, I already feel like a troublemaker down here, even if I'm being helpful.
@@ -520,7 +523,7 @@ title: workday_coby_crew_2_Drake_goat
 location: training grounds
 ---
 
-Goat: #Maaaaa!#
+Goat: [shake]Maaaaa![/shake]
 You look up from your latest beam. The goat is trotting up the bleachers with a familiar gleam in its eyes.
 -> Oh, no...
 -> Uh, Rear Admiral Drake?
@@ -552,7 +555,7 @@ location: training grounds
 The goat pauses near the top of the bleachers, and you begin to climb after it. It turns, looks at you, and scampers off the other way. You give chase, but climbing up and down is hard work, especially with the gaps where you haven't installed all of the beams yet. The goat heads for the high corner, and you wonder if you can hem it in... This time, it pauses, as if waiting.
 -> Uh, nice goat, come here...
 -> Quit bothering us!
-    <<set ccwd2D_points -=1>>
+    <<set $ccwd2D_points -=1>>
 -> OK... I'm coming closer... Just to meet you and we'll go for a nice walk off the bleachers...
 And just as you reach the goat, it jumps over your head, landing with a resounding clang of hooves against metal. At this point, you might as well give up. You sit down and catch your breath as it runs off.
 <<jump workday_coby_crew_2_Drake_goat_rescue>>
@@ -567,7 +570,7 @@ You survey the state of the bleachers. You haven't put in as many benches as Dra
 {$name}: Huh, not too shabby! You were right, it's pretty easy.
 Drake: It's going better than I expected.
 -> Me too. The company's been good.
-    <<set ccwd2D_points +=1>>
+    <<set $ccwd2D_points +=1>>
     Drake: I could say the same.
 -> So you'd thought I would suck?
     Drake: I have a tendency to over-anticipate group work as worse than it usually turns out.
@@ -622,10 +625,10 @@ Drake: Well, it's no secret. It's just not something I talk about much.
     -> Oh, that's good!
     -> Nerves of steel, eh?
     -> Well, should we tie it up or something?
-        <<set ccwd2D_points -=1>>
+        <<set $ccwd2D_points -=1>>
         Drake: With the rate it chews, I don't think that will work.
 -> Well, you can talk about it with me!
-    <<set ccwd2D_points +=1>>
+    <<set $ccwd2D_points +=1>>
     {$name}: Not that I'm a fruit user myself, but I'm willing to listen.
     Drake: Thank you. I'll try not to talk your ear off. Its species is a special interest of mine.
 -> Oh, OK. I won't bug you about it then.
@@ -692,11 +695,11 @@ The two of them open and close several lockers. You, meanwhile, are stuck with o
 -> **Pull again.**
     You pull as hard as you can, but the door still won't budge...
 As you move on towards the other end, the sound of hooves makes you turn around. The goat is running straight toward the locker you couldn't open!
-#CRASH#
+[shake]CRASH[/shake]
 The locker door opens.
 -> Ooh, what's inside?
 -> Oh, no, goat, are you okay?
-    <<set ccwd2D_points +=1>> (+1 Goat) //HOW DO?? are we doing points for goat?
+    <<set $ccwd2D_points +=1>> // (+1 Goat) //HOW DO?? are we doing points for goat?
     Goat: Maaa!
     It looks no worse for wear, as if it had fun doing that.
 -> ... Should we have just let the goat open all of these?
@@ -705,7 +708,7 @@ Drake: I've got the helmets and swords. Let's get out of here.
 Shooing the goat out, you all exit the closet quickly, spoils in tow. The goat wanders off again, content with having helped.
 Drake: Can you help me with the fencing setup, {$name}?
 -> Sure!
-    <<set ccwd2D_points +=1>>
+    <<set $ccwd2D_points +=1>>
     <<jump workday_coby_crew_2_Group_setup_3_fencing>>
 -> Actually, I think Lieutenant Commander Helmeppo needs more help with the track.
     <<jump workday_coby_crew_2_Group_setup_3_relay>>
@@ -736,7 +739,7 @@ Helmeppo: What do you think?
     Helmeppo: Sorry. That's not convincing me.
 Helmeppo: But what can we do to make this start line?
 -> Pull up the grass and make a line of dirt?
-    <<set ccwd2H_points +=1>>
+    <<set $ccwd2H_points +=1>>
     You can sense a smart-alec answer building up... But then Helmeppo pauses, then nods.
     Helmeppo: That's a pretty good idea actually. Here.
     He hands you one of his kukri and keeps the other himself.
@@ -744,7 +747,7 @@ Helmeppo: But what can we do to make this start line?
     Helmeppo: Grass is probably the nicest thing they've ever been asked to cut. They're fine.
     You scrape a remarkably decent line in the grass, wide enough to be clearly visible.
 -> Burn the grass?
-    <<set ccwd2H_points +=1>>
+    <<set $ccwd2H_points +=1>>
     He starts to retort, then just shakes his head.
     Helmeppo: If you want to, be my guest.
     Helmeppo: This should be amusing at least.
@@ -754,13 +757,13 @@ Helmeppo: But what can we do to make this start line?
     It takes a little longer than you like, but with short, careful burnings with a lighter borrowed from Helmeppo, you make a passable line.
     Helmeppo: You win. I'm impressed.
 -> Make the goat help?
-    <<set ccwd2H_points +=1>>
+    <<set $ccwd2H_points +=1>>
     Helmeppo: Why is everyone so invested in involving the goat?
     {$name}: I think it's important that the goat pulls its weight too.
     Helmeppo: Fine, fine. Let's go get the goat.
     It takes some wrangling, but lucky for you, the goat actually is interested in helping once it realizes it's being expected to crop grass. The result isn't very clear or even, but it is a start line, more or less.
 -> I really think it's fine without.
-    <<set ccwd2H_points -=1>>
+    <<set $ccwd2H_points -=1>>
     He doesn't answer, and after a short pause, pulls one of his weapons and uses it to cut away the grass for a start line.
 With the start line set up, you survey the field. The race will have the runners take laps around the fencing area, so you don't need to mark out any other parts of the course. Finished, you rejoin the rest of the group.
 <<jump workday_coby_crew_2_Group_setup_finish>>
@@ -789,7 +792,7 @@ Coby: Problem is he kind of does. Logia can give off smells, which is why you kn
 -> He smells like the world's largest cabbage cook-off.
     Coby: It's rude and you shouldn't say it.
 -> Something about if you can't say anything nice?
-    <<set ccwd2C_points +=1>>
+    <<set $ccwd2C_points +=1>>
     Coby: Pretty much, now we have to get rid of these... I guess we'll see what Drake-san and Meppo-san have to say.
 -> Got it. If it's true though...
     Coby: Still shouldn't say it especially if you want to keep your job. Now we have to get rid of these... I guess we'll see what Drake-san and Meppo-san have to say.

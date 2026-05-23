@@ -83,7 +83,7 @@ location: park
 ---
 
 {$name}: Not profitable?
--> If CONDITION: MIKAN set in Date #3 //HOW DO???
+-> If // CONDITION: MIKAN set in Date \#3 //HOW DO???
     <<jump date_bellemere_4_fullstory>>
 -> No Condition set
     <<jump date_bellemere_4_brushoff>>
@@ -243,7 +243,7 @@ location: park
 
 Bellemere: Well, then I won't bother you with it!
 You help her pick some mikans and the two of you part ways. Apparently, your refusal to cook has ended any chance of spending more time with the redhead today.
-<<declare $bd4_points = 0>>
+<<declare $bed4_points = 0>>
 <<jump date_bellemere_4_DateEndBad>>
 ===
 
@@ -330,7 +330,7 @@ Bellemere: Well... at least this will be funny tomorrow... when I don't want to 
 {$name}: I'm sorry...
 Bellemere: Nah, I just learned an important lesson: don't trust you with cooking!
 You feel bad, but Bellemere seems to be handling it with good humor as you part ways, and you return to your apartment in gastric distress.
-<<set $bd4_points += 1>>
+<<set $bed4_points += 1>>
 <<jump date_bellemere_4_DateEndOops>>
 ===
 
@@ -373,7 +373,7 @@ Bellemere: What?
 {$name}: Uh... nothing.
 You blush, and Bellemere looks pleased to have flustered you so thoroughly (even if she doesn't understand fully why).
 The night ends and you return to your own apartment, stomach full of good food and mind full of peaceful memories.
-<<set $bd4_points += 1>>
+<<set $bed4_points += 1>>
 <<jump date_bellemere_4_DateEndNice>>
 ===
 
@@ -415,7 +415,7 @@ Bellemere: What?
 {$name}: Uh... nothing.
 You blush, and Bellemere looks pleased to have flustered you so thoroughly (even if she doesn't understand fully why).
 The night ends and you return to your own apartment, stomach full of good food and mind full of peaceful memories.
-<<set $bd4_points += 2>>
+<<set $bed4_points += 2>>
 <<jump date_bellemere_4_DateEndCorrect>>
 ===
 
@@ -510,7 +510,7 @@ Bellemere: What?
 {$name}: Uh... nothing.
 You blush, and Bellemere looks pleased to have flustered you so thoroughly (even if she doesn't understand fully why).
 The night ends and you return to your own apartment, stomach full of good food and mind full of peaceful memories.
-<<set $bd4_points += 2>>
+<<set $bed4_points += 2>>
 <<jump date_bellemere_4_DateEndNice>>
 ===
 
@@ -583,7 +583,7 @@ Bellemere: Well... at least this will be funny tomorrow... when I don't want to 
 {$name}: I'm sorry...
 Bellemere: Nah, I just learned an important lesson: don't trust you with cooking!
 You feel bad, but Bellemere seems to be handling it with humor as you part ways, and you return to your apartment in gastrinal distress.
-<<set $bd4_points += 1>>
+<<set $bed4_points += 1>>
 <<jump date_bellemere_4_DateEndOops>> (+1)
 ===
 
@@ -655,7 +655,7 @@ Bellemere: What?
 {$name}: Uh... nothing.
 You blush, and Bellemere looks pleased to have flustered you so thoroughly (even if she doesn't understand fully why).
 The night ends and you return to your own apartment, stomach full of good food and mind full of peaceful memories.
-<<set $bd4_points += 2>>
+<<set $bed4_points += 2>>
 <<jump date_bellemere_4_DateEndCorrect>>
 ===
 

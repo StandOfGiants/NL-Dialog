@@ -1,6 +1,7 @@
 title: date_borsalino_4_intro
 location: quarters
 ---
+<<declare $bod4_points = 0>>
 
 It's been another full day of work and team-building chaos!
 Finally, some time to decompress... maybe you'll freshen up and then train, or perhaps go to the city. That's what you're thinking, when your Den Den Mushi rings!
@@ -12,14 +13,14 @@ Finally, some time to decompress... maybe you'll freshen up and then train, or p
 {$borsalino}: So, if you don't have anything to do this evening... I was thinking that perhaps it would be a good opportunity to... ah... correct that mistake, wouldn't it~?
 How do you react?
 -> Confused
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     {$name}: A date?!
     {$name}: I must've forgotten.
     {$borsalino}: Forgotten, had you?
     He hums. Maybe he's disappointed... it's hard to tell.
     Well, he *has* been dragging his feet on this one for a very, very long time!
 -> Flirty
-    <<set bd4_points +=1>>
+    <<set $bod4_points +=1>>
     {$name}: Why don't you come over right now and make up for it?
     Borsalino suddenly loses his usual drawl.
     {$borsalino}: {$name}, p-please....
@@ -40,7 +41,7 @@ How do you react?
 {$borsalino}: I'll pick you up in an hour...
 -Click!-
 It seems that you have a proper date with him.
-You have a ##proper date## !!!
+You have a [wave]proper date[/wave] !!!
 Is it time to panic?
 -> PANIC!!!
     You fling yourself away from the desk and thrash around your room.
@@ -61,26 +62,26 @@ You stare into your closet. Are you going to be dressing up?
 -> You'd rather do casual and comfy, don't think this date will be anything fancy. (-)
     Oh, of course! The bakery trip on a lazy Sunday look...what's not to love about joggers anyway?
 -> Not TOO much... Don't want to look too interested.
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     Business casual it is! Maybe he'll appreciate the intentional lack of effort!
 -> Yes, you'll wear something that you really shine in!
-    <<set bd4_points +=1>>
+    <<set $bod4_points +=1>>
     Bring on that glamour! Borsalino loves to dazzle, after all...
 How about accessories?
 -> Nothing exaggerated, but all planned to match!
     Sounds good! At the end of the day, you've won him over by being yourself.
 -> Sure, really glamorous and SHINY! Bring it on!
-    <<set bd4_points +=1>>
+    <<set $bod4_points +=1>>
     You're pretty sure the Admiral has found his match in you. You'll make a great couple. Blinding, almost.
 -> No, that's not really my thing, I'll just throw my work boots on and call it a day.
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     ...Well, that's a decision!
 Hair gel, makeup, cologne, perfume?
 -> Just a touch, be seductive. Nothing wrong with spicing things up.
-    <<set bd4_points +=1>>
+    <<set $bod4_points +=1>>
     Very good! Bring on the glamour!
 -> I'll just BATHE in the best perfume I can find.
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     You proceed to cough at yourself... well, you certainly have an *aura* now!
 -> I think I look the best when I'm being myself, so I won't do more or less than I usually do.
     That's a very good point!
@@ -88,7 +89,7 @@ Looking good!
 -> Yes!
 -> Still panicking!
 -> Scratch all this, I'll just get a pinstriped suit and aviators!
-    <<set bd4_points +=2>>
+    <<set $bod4_points +=2>>
 There's a knock at the door...
 Well, that was fast! You were half-expecting him to be an hour late, as usual.
 But of course, he can teleport.
@@ -119,7 +120,7 @@ You're amazed at the sight. And, anchored at the port, its impressive silhouette
 {$borsalino}: Well, well... I hope you like this.
 {$borsalino}: I remember how these ships caught your attention back at the base... Vice Admiral Woof was kind enough to lend us one.
 -> I actually don't like that royals gift them these ships at all!
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     {$name}: All of this dirty money... couldn't we have gone for something a bit more humble?
     Borsalino almost pouts.
     {$borsalino}: Hmm...
@@ -127,7 +128,7 @@ You're amazed at the sight. And, anchored at the port, its impressive silhouette
     {$borsalino}: Ah, it doesn't matter.
     <<jump date_borsalino_4_dinner_date_onboard>>
 -> Well, even I have to admit it...this is impressive!
-    <<set bd4_points +=1>>
+    <<set $bod4_points +=1>>
     {$name}: And very beautiful! Look at the woodwork!
     {$borsalino}: Yes... true... I do suppose that the people at the G-9 deserve it.
 -> This is exactly what I wanted!
@@ -135,7 +136,7 @@ You're amazed at the sight. And, anchored at the port, its impressive silhouette
     {$borsalino}: Shipbuilding is an art all by itself, wouldn't you agree...?
 Borsalino walks you along the side of the ship, its sides sculpted like vines, the figurehead a siren looking onwards.
 -> Admire the ship.
-    <<set bd4_points +=1>>
+    <<set $bod4_points +=1>>
     {$name}: It's very unique work!
     {$borsalino}: Mm-hm...
     {$borsalino}: I like it, when you can tell that shipbuilders are allowed to be freely creative... the result is always the most beautiful...
@@ -143,7 +144,7 @@ Borsalino walks you along the side of the ship, its sides sculpted like vines, t
 -> Say nothing.
     {$borsalino}: Hmm~... you're not thinking about work, are you?
     -> Yes, I am.
-        <<set bd4_points -=1>>
+        <<set $bod4_points -=1>>
         {$borsalino}: Ah, {$name}... always so hard-working...
         {$borsalino}: But, to be honest, I'd rather leave work at Headquarters if you don't mind...
     -> Of course not!
@@ -166,12 +167,12 @@ There's a tent there, very tastefully decorated, candlelight painting soft shado
     {$borsalino}: I just prefer to move like this all the time...
     {$borsalino}: Saves some trouble, doesn't *i~it*?
 -> That was cool!
-    <<set bd4_points +=1>>
+    <<set $bod4_points +=1>>
     {$name}: You have the best powers.
     Borsalino smiles knowingly.
     {$borsalino}: It's exciting, isn't it...?
 -> How can you stand to move like that all the time?!
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     {$name}: I'd much rather walk anywhere.
     {$borsalino}: Aww, but where's the fun in that...?
 You follow him down elaborate staircases to a tastefully decorated dining room. Paper lamps hang from the walls like colorful fireflies, making for a cozy, playful atmosphere. Candles illuminate a table for two, casting reflections on the wine glasses.
@@ -190,38 +191,38 @@ You do remember what Borsalino's favorite food is, right?
     {$borsalino}: That's correct... in part.
     {$borsalino}: What can I say, there is too much good food in the world...
 -> It's sherry wine!
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     {$borsalino}: Hmm... not really... you must be thinking of someone else...
     Whoops... did you just get his favorite food mixed up with his colleague's?
     <<jump date_borsalino_4_dinner_bad_route>>
 -> It's rice with yellow peppers!
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     {$borsalino}: Hmm... not really... you must be thinking of someone else...
     Whoops... did you just get his favorite food mixed up with his colleague's?
     <<jump date_borsalino_4_dinner_bad_route>>
 -> This is a trick question! You have multiple favourite foods!
-    <<set bd4_points +=2>>
+    <<set $bod4_points +=2>>
     {$borsalino}: Ahh, {$name}...
     {$borsalino}: You know me too well...
     He grins indulgently.
 {$borsalino}: Still... I will really have to congratulate the chef...
 {$borsalino}: Although, they were happy to cook something other than your typical, ah, mess hall food, you see...?
 -> Well, that's their job!
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     He looks at you quizzically.
     {$borsalino}: Maybe it is... but everyone appreciates a challenge...
     <<jump date_borsalino_4_dinner_bad_route>>
 -> I believe you! This is amazing!
-    <<set bd4_points +=1>>
+    <<set $bod4_points +=1>>
     {$borsalino}: They wouldn't do this for just anybody, you know...
     {$name}: I remember your advice.
         -> Always make friends in important places!
-            <<set bd4_points +=1>>
+            <<set $bod4_points +=1>>
             {$borsalino}: Hmm... I knew you were a good listener...
         -> Today for you, tomorrow for me!
             {$borsalino}: So to speak...
         -> Be the perfect mix of scary and friendly so people don't dare say no!
-            <<set bd4_points -=1>>
+            <<set $bod4_points -=1>>
             {$borsalino}: Aww, {$name}... is that really how you see me?
             {$name}: I meant it as a compliment...
             <<jump date_borsalino_4_dinner_bad_route>>
@@ -233,7 +234,7 @@ Inevitably, the conversation while you eat delves into work.
     {$borsalino}: Ah, well... with some more experience, I suppose...
     {$borsalino}: We were all new at some point, {$name}, and look at us now.
 -> It's not always easy, but I appreciate a challenge!
-    <<set bd4_points +=1>>
+    <<set $bod4_points +=1>>
     {$borsalino}: You know... I have seen everything. Many good things, bad things.
     {$borsalino}: *Done*... some bad things, even.
     {$borsalino}: Ah, it doesn't matter...
@@ -241,13 +242,13 @@ Inevitably, the conversation while you eat delves into work.
     He smiles, a Cheshire cat's grin under the lamplight.
     <<jump date_borsalino_4_dinner_good_route>>
 -> I mean, we haven't worked a day since I came aboard, am I right?
-    <<set bd4_points +=1>>
+    <<set $bod4_points +=1>>
     Borsalino chuckles.
     {$borsalino}: It depends on what you mean by ‘work', I *suppo~ose*...
     {$name}: Well, so what do you understand by “work”?
     <<jump date_borsalino_4_dinner_good_route>>
 -> Nah, I should've really chosen to work with less difficult folks.
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     {$borsalino}: Ah, at least you're honest...
     {$borsalino}: Although... “less difficult folks”... you mean here, in the Navy...?
     He looks skeptical...
@@ -256,11 +257,11 @@ Inevitably, the conversation while you eat delves into work.
 {$borsalino}: Over the past years... Things have gotten *qui~ite* tense here, you see...?
 {$borsalino}: Even before Issho was promoted...
 -> Why, because Sakazuki and Kuzan can't stop being dumb?
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     {$borsalino}: Ah... being dumb is a way to put it...
     {$borsalino}: But it's a little more than arguing, I would say...
 -> It must have been hard on you to be stuck in the middle.
-    <<set bd4_points +=1>>
+    <<set $bod4_points +=1>>
     {$borsalino}: *Ha~ard...?*
     {$borsalino}: Well... Punk Hazard was very worrying, but not only for me...
     {$borsalino}: Oh, well... does it matter...?
@@ -272,14 +273,14 @@ Inevitably, the conversation while you eat delves into work.
 {$borsalino}: And to get a taste of the old times... even if it's just that, a taste...
 He smiles, the way the corners of his eyes wrinkle makes it seem genuine.
 -> Tell me a story about you three in the old days!
-    <<set bd4_points +=1>>
+    <<set $bod4_points +=1>>
     Borsalino's face lights up.
     {$borsalino}: Oh dear...
     {$borsalino}: Well, all those things about us in the two-truths-one-lie game were true...
     {$borsalino}: You can imagine... Kuzan and Sakazuki, always at each other's thro~oat... and I...
     {$name}: You were always probably
         -> ...fueling the fire.
-            <<set bd4_points +=1>>
+            <<set $bod4_points +=1>>
             {$borsalino}: I mean... *So~ometimes,* it was funny...
         -> ...balancing things out.
             {$borsalino}: I suppose you could say so...
@@ -296,7 +297,7 @@ He smiles, the way the corners of his eyes wrinkle makes it seem genuine.
     {$borsalino}: Well, my dear {$name}, does anything last?
     {$borsalino}: I don't think you should be too concerned about that...
 -> Well, so things are looking up, everything's okay now isn't it?
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     {$borsalino}: We are still in quite an uncertain time, although...
     {$borsalino}: Ah... there are surely better things to talk about during a date, aren't there...?
 {$borsalino}: The thing is that they haven't been quite themselves after...
@@ -333,7 +334,7 @@ You watch his grin tighten into a grimace.
 -> Hey, the date just got better, didn't it?
     He's not in the mood for jokes...
 -> Can't you just like... Evaporate it or something...?
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     {$borsalino}: Oh... suddenly, you know everything about Logia powers, don't *yo~ou,* dear...?
 He runs a hand down the lapels of his dress. A burst of light! You wince at its blinding, aggressive brightness.
 {$borsalino}: Ah... it's just not the same...
@@ -342,10 +343,10 @@ You have no idea what he means.
 {$borsalino}: Don't worry about it...
 {$borsalino}: But ah, we will need something else to eat, won't we...?
 -> Of course!
-    <<set bd4_points +=1>>
+    <<set $bod4_points +=1>>
     {$borsalino}: O~okay then...
 -> I'll fix this!
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     {$borsalino}: Mmm... I don't think that's a good idea.
     {$name}: (Ouch... That hurt!)
     {$borsalino}: All I mean is that... well, you have a long day of work behind yourself, {$name}...
@@ -357,14 +358,14 @@ You knock the candlestick over!
 And it's burning a nice black stain into the tablecloth!
 {$name}: ...
 -> Try to smother it.
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     You throw your napkin at the flame, but somehow it only starts smoldering.
     {$name}: Oh no. I should've paid more attention during the first aid courses.
     It seems that your only other choice is to pour something onto it...
     Uhh...why not the wine!
     <<jump date_borsalino_4_route_bad_fire>>
 -> Pour wine on it.
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     <<jump date_borsalino_4_route_bad_fire>>
 ===
 
@@ -383,13 +384,13 @@ Borsalino appears in a cloud of sparkles.
 {$name}: You don't say!
 {$borsalino}: I didn't think I was going on a date with Sengoku's child...
 -> (Okay, that was cute.)
-    <<set bd4_points +=1>>
+    <<set $bod4_points +=1>>
     The Rosinante slander has made its way into your heart.
     He smiles at you. He's got this!
 -> (Isn't he going to do something about this?!)
     He's certainly taking his time....
 -> (Continue trying to put it out!)
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     Well, *somebody* has to do it, right?!
 Borsalino disappears again, a flash across the heat.
 In a cloud of sparkles, he reappears and tosses a bucket of seawater on the fire.
@@ -400,7 +401,7 @@ You... happen to be in the way.
     {$borsalino}: Accidents happen, don't they?
     {$borsalino}: I have them all the time on duty...
 -> What the hell are you doing?!
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     {$borsalino}: Oh, I'm *so~orry*...
     ...
     He does not seem sorry.
@@ -412,7 +413,7 @@ One emergency intervention later...
 -> I'm so sorry!
     {$borsalino}: Ah, you don't have to apologize...
 -> We were already off to such a bad start...
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     {$borsalino}: Hmmm...
     {$borsalino}: It didn't go how you had pictured either, did it...?
 {$borsalino}: What's the worst that can happen, though...?
@@ -422,12 +423,12 @@ One emergency intervention later...
 -> That's not very reassuring.
     {$borsalino}: Oh... You think so?
 -> Anybody can have a bad day, right?
-    <<set bd4_points +=1>>
+    <<set $bod4_points +=1>>
     {$name}: I promise you it won't be like this all the time.
     {$borsalino}: Ah... okay, {$name}.
     {$borsalino}: Let's do something else if we manage to... ah, meet up another time.
 -> Let's do this again, some other time!
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     {$borsalino}: Oh, I only have so many bridges I can burn...
     Seems like it wasn't quite the time to say that...
 {$borsalino}: ...
@@ -446,7 +447,7 @@ location: bar
 {$borsalino}: Hmmm?
 You pause, trying to gather your thoughts.
 -> So when are we going to make things official?
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     {$name}: I mean, we have been seeing each other for a while, and...
     Borsalino doesn't flinch, but... you could swear he is a little bit pale.
     {$borsalino}: Make things official... You mean...?
@@ -455,13 +456,13 @@ You pause, trying to gather your thoughts.
     He removes his sunglasses and scratches his temple.
     {$borsalino}: *We~ell,* I think compromise is quite a slippery slope...
     -> Get angry.
-        <<set bd4_points -=1>>
+        <<set $bod4_points -=1>>
         {$name}: No shit! You've been avoiding this for ages!
         {$name}: Just getting one date with you is so complicated.
         {$name}: You need to make up for it, or at least make a decision!
         {$borsalino}: ...Oh... I'm sorry you feel like this, {$name}...
         -> That's not an apology!!
-            <<set bd4_points -=1>>
+            <<set $bod4_points -=1>>
             {$borsalino}: Hmmm~
             {$borsalino}: Oh, don't you feel that this ship is swaying too hard?
             {$borsalino}: I think these currents we're navigating may be a bit more turbulent than I thought...
@@ -490,20 +491,20 @@ You pause, trying to gather your thoughts.
     This would have been a good moment to ask him something a bit more personal, but... perhaps there will be more chances.
     <<jump date_borsalino_4_neutral_end>>
 -> I want to get to know you better!
-    <<set bd4_points +=1>>
+    <<set $bod4_points +=1>>
     {$borsalino}: Hmmm?
     {$name}: All I mean is that...
     {$name}: Even if we know each other as friends, and at work... I have the feeling that you're putting up a facade.
     {$borsalino}: ...
     You have no idea what this silence means.
     -> Uh... is he OK with this?
-        <<set bd4_points +=1>>
+        <<set $bod4_points +=1>>
         {$name}: I didn't mean to say anything wrong.
         {$name}: We can talk about something else, if you want.
         {$borsalino}: Oh no, no no...
         {$borsalino}: I'm curious about what you have to say.
     -> Continue! We dig the hole deeper!
-        <<set bd4_points -=1>>
+        <<set $bod4_points -=1>>
         {$name}: Ah... Screw it.
         {$name}: I mean that all of *you* Admirals are incredibly closed off, you know that?
         {$borsalino}: Hmm...
@@ -533,12 +534,12 @@ Nice!
     {$borsalino}: My family, you say?
     {$borsalino}: We~ell, you know Sakazuki and Kuzan already, don't you...?
     -> Colleagues are not real family!
-        <<set bd4_points -=1>>
+        <<set $bod4_points -=1>>
         {$borsalino}: Oh... do you really think so, even after all this time here?
         {$borsalino}: Hmm...
         <<jump date_borsalino_4_good_route_end>>
     -> Do you have anyone else?
-        <<set bd4_points +=1>>
+        <<set $bod4_points +=1>>
         {$borsalino}: Anyone as close as they are?
         {$borsalino}: Hmm...
         {$borsalino}: Yes... I do.
@@ -563,12 +564,12 @@ Nice!
     {$borsalino}: Ah...
     {$borsalino}: *Disenchanted* we grow...
     -> How sad!
-        <<set bd4_points -=1>>
+        <<set $bod4_points -=1>>
         {$borsalino}: Oh, I suppose...
         {$borsalino}: But now, now... you don't think we live in a pitch-perfect world, do *you...?*
-        <<jump date_borsalino_4_good-route-end>>
+        <<jump date_borsalino_4_good_route_end>>
     -> That makes sense...
-        <<set bd4_points +=1>>
+        <<set $bod4_points +=1>>
         {$name}: Maybe not the way I think, but...
         {$borsalino}: Ah, but you have just started your career... still young, so to speak...
         {$borsalino}: You see... sometimes, I see our cadets being headstrong, fighting for what is right... and I feel that spark again.
@@ -580,13 +581,13 @@ Nice!
     {$borsalino}: Well... there is not much to talk about, truly...
     {$borsalino}: I haven't been back to the North Blue in a *lo~ong* time... I suppose you can understand why...
     -> Come on! Reveal your Tragic Past to me!
-        <<set bd4_points -=1>>
+        <<set $bod4_points -=1>>
         {$borsalino}: Mmm... if that's what you're looking for, I might have to disappoint you...
         {$borsalino}: I wasn't an unlucky man, in comparison to others...
         He smiles cryptically. It seems like this is the last thing he'll say about it!
         <<jump date_borsalino_4_good_route_end>>
     -> We don't have to talk about it.
-        <<set bd4_points +=1>>
+        <<set $bod4_points +=1>>
         {$borsalino}: Oh... why not?
         {$borsalino}: I was orphaned, you see... as were many back in the North Blue at the time...
         {$borsalino}: It wasn't nice... but, well, that stopped mattering, didn't it...?
@@ -660,7 +661,7 @@ Although the conversation was nice, you get an unresolved feeling.
 The both of you go upstairs, to the deck. The sky is inky black, full of stars; a spill of dots into infinity.
 {$borsalino}: Look, we'll be docking soon.
 -> That was all?!
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     {$borsalino}: Aww... yes, you're welcome, too.
     The sarcastic response doesn't match his tone.
 -> Well, thank you for the evening!
@@ -681,7 +682,7 @@ location: ship deck
 {$borsalino}: Well, enough talk for today...
 {$borsalino}: Look, we will be docking soon...
 -> That was it?!
-    <<set bd4_points -=1>>
+    <<set $bod4_points -=1>>
     {$borsalino}: Aww... yes, you're welcome, too.
     The sarcastic response doesn't match his tone.
 -> Well, thank you for the evening!

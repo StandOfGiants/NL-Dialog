@@ -37,7 +37,7 @@ You're sure that somewhere among the precariously stacked postcards and Marine b
   -> Order a custom mug.
         {$name}: Sorry, but is it possible to customize a mug?
         Stall owner: Sure thing, got all the equipment for it right here! Are you interested?
-        -> {$name}: Yes, it'll be the perfect gift!
+        -> Yes, it'll be the perfect gift!
             Now that you think about it, does Smoker even need a mug? Couldn't he technically just make his own? Oh well, surely a customized one is better!
             **Prompt player for text** //HOW DO??
             <<jump Smoker_Gift_Hunt_BadGift>>

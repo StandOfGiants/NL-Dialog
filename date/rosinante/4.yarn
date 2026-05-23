@@ -42,7 +42,7 @@ You study Rosinante's expression for a moment; he's avoiding your gaze, looking 
     As he walks away, his shoulders hunched up dejectedly, you feel a pang of guilt. Maybe you should have heard him out...
     But you can barely keep your eyes open. It's not like you'd be able to give him your full attention anyway!
     <<jump date_rosinante_4_DATE_ENDS>>
--> {$name}: No, it's OK!
+-> No, it's OK!
     {$name}: Please, come in.
     Rosinante: Thank you.
     You ignore the way your heart flutters at the sight of his soft smile, instead stepping aside and opening the door wider, gesturing to Rosinante to come in.
@@ -215,10 +215,10 @@ He winces at the name, but nods.
 -> Kneel
     <<set $rd4_points -= 2>>
     <<jump date_rosinante_4_KNEEL>>
--> {$name}: You're one of those assholes?
+-> You're one of those assholes?
     <<set $bd4_points -= 1>>
     <<jump date_rosinante_4_ATTACK>>
--> {$name}: I could never tell...
+-> I could never tell...
     <<jump date_rosinante_4_CONFUSION>>
 -> Pretend to kneel
     <<jump date_rosinante_4_TEASE>>
@@ -248,10 +248,10 @@ He winces at the name, but nods.
 -> Kneel
     <<set $rd4_points -= 2>>
     <<jump date_rosinante_4_KNEEL>>
--> {$name}: You're one of those assholes?
+-> You're one of those assholes?
     <<set $bd4_points -= 1>>
     <<jump date_rosinante_4_ATTACK>>
--> {$name}: I could never tell...
+-> I could never tell...
     <<jump date_rosinante_4_CONFUSION>>
 -> Pretend to kneel
     <<jump date_rosinante_4_TEASE>>
@@ -282,7 +282,7 @@ Rosinante: Get up, stop acting like this. I'm not a Celestial Dragon anymore, no
     With a final, disappointed huff, Rosinante gets up from your chair and leaves, stubbing his toe on the way out.
     Well... you definitely messed up. But you couldn't just ignore the fact he's a Celestial Dragon! Still, he sounded really upset.
     You can only hope that you can somehow fix this.
-    <<jump date_rosinante_4_DATE_ENDSBad>>
+    <<jump date_rosinante_4_BAD_ENDING>>
 -> Apologize. He sounds upset...
     {$name}: I'm sorry...
     {$name}: I acted on instinct, I didn't mean to be... I don't know, *weird.*
@@ -322,7 +322,7 @@ location: quarters
 As you go on with your rant, full of insults and malignance—fueled by anger over the slave survivor stories you've heard, as well as the coldhearted *murder* you've witnessed once before—, Rosinante stays eerily silent.
 It's only when you pause to take a breath that he interrupts you, his voice carefully measured.
 Rosinante: I knew telling you would be a mistake.
--> {$name}: Yes. It really was.
+-> Yes. It really was.
     {$name}: I've lost all respect for you.
     Rosinante: I see.
     Rosinante: Then I guess we have nothing to talk about.
@@ -335,7 +335,7 @@ Rosinante: I knew telling you would be a mistake.
     {$name}: Understood.
     With that, Rosinante exits your room, leaving behind heavy silence and a lot of regret.
     You can only hope you can somehow fix this...
-    <<jump date_rosinante_4_DATE_ENDSBad>>
+    <<jump date_rosinante_4_BAD_ENDING>>
 -> Suddenly, you realize what you've been saying.
     <<set $rd4_points +=1>>
     *Whom* you've been saying it to. A wave of shame and regret washes over you—after all, Rosinante's never shown anything but kindness and care for other people and you're here, accusing him of crimes someone who merely shared his birthplace committed.
@@ -353,7 +353,7 @@ Rosinante: I knew telling you would be a mistake.
     <<jump date_rosinante_4_TIMELINE>>
 ===
 
-title: date:date_rosinante_4_CONFUSION
+title: date_rosinante_4_CONFUSION
 location: quarters
 ---
 
@@ -467,7 +467,7 @@ location: quarters
 The both of you are silent for a long while before Rosinante sighs.
 Rosinante: There were other servants and security personnel but yes, the slaves too, as messed up as that is.
 Rosinante: It's no excuse, but we always treated them well, just like we would any other person. I probably wouldn't be able to live with myself today otherwise...
--> {$name}: I know.
+-> I know.
     {$name}: You're a very kind person, just like your parents. I can't imagine you doing anything bad to anyone.
     {$name}: Can't say the same about Doflamingo but...
     Rosinante laughs a little and you're relieved.
@@ -476,7 +476,7 @@ Rosinante: It's no excuse, but we always treated them well, just like we would a
     {$name}: Of course.
     <<set $rd4_points +=1>>
     <<jump date_rosinante_4_CLOSURE_GOOD>>
--> {$name}: That can't be true.
+-> That can't be true.
     {$name}: No Celestial Dragon is capable of seeing their slaves as human.
     {$name}: Just look how they act! At the human auctions in Sabaody! Or how Doflamingo turned out!
     Rosinante: I'm not my brother.
@@ -610,7 +610,7 @@ Taking a deep breath, you decide to think about all this tomorrow. Right now, yo
 <<jump date_rosinante_4_NEUTRAL_ENDING>>
 ===
 
-title:
+title: date_rosinante_4_CLOSURE_BAD
 location: quarters
 ---
 

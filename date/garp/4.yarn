@@ -13,10 +13,10 @@ Garp: Bwahahah! I'm amazed you haven't gotten tired of us old fogeys yet.
 -> Of course not! I'm here to make a difference, and who better to work with than the people who know the Navy best?
     Garp: Heh, you're not wrong about that, {$name}. Still, the Marines aren't perfect by any stretch of the imagination, and that goes for us old folks as well.
 -> It can be a lot sometimes, but it's not like any of you act your age.
-    <<set gd4_points +=1>>
+    <<set $gd4_points +=1>>
     Garp: Well, I can't disagree with that! We've still got work to do back there, and who'd be left to train all these brats if we were gone?
 -> Not yet, but I think I might be getting there.
-    <<set gd4_points -=1>>
+    <<set $gd4_points -=1>>
     Garp: Hmph! Might wanna get reassigned sooner rather than later, then! Pick up some work closer to your speed.
 {$name}: Still, even though I mostly do office stuff, I've been through basic training and all. It's pretty clear that you're unbelievably strong. You've always been strong, haven't you, Garp?
 Garp: ...No, not always.
@@ -28,7 +28,7 @@ Garp: ...
 Garp: Can I trust you, {$name}? Can I trust you with all of this?
 {$name}: (He sounds... sad. Almost like he's pleading. I've never heard him sound like this before...)
 -> Yes, of course! Please, tell me!
-    <<set gd4_points -=1>>
+    <<set $gd4_points -=1>>
     Garp: ...I'm really trying to trust you here, {$name}. Are you happy that I'm trusting you, or are you just happy to hear my secrets?
     <<jump date_garp_4_route_a>>
 -> Truthfully, I think I'd rather not know.
@@ -39,7 +39,7 @@ Garp: Can I trust you, {$name}? Can I trust you with all of this?
     Garp: Have a good day, {$name}.
     <<jump date_garp_4_end>>
 -> You can trust me, Garp.
-    <<set gd4_points +=1>>
+    <<set $gd4_points +=1>>
     Garp: ...Thank you, {$name}. That means more than you could ever know.
     <<jump date_garp_4_route_a>>
 ===
@@ -69,7 +69,7 @@ Garp: Heh, it's still hard to talk about even now, despite the fact that so much
         Garp: ...Yeah. I think so.
         <<jump date_garp_4_route_b>>
     -> It's not that.
-        <<set gd4_points +=1>>
+        <<set $gd4_points +=1>>
         {$name}: It's not about holding back. I'm not going to pry into your feelings; you should only tell me if you want to.
         Garp: ...Thank you, {$name}. But I really do feel like I owe you—
         {$name}: You don't owe me anything. I promise.
@@ -118,14 +118,14 @@ Garp: ...Heh. I can't believe I'm shedding more tears for Ace now than when he d
     Garp: Let's talk about something else.
     <<jump date_garp_4_route_c>>
 -> ...think he hated you?
-    <<set gd4_points -=1>>
+    <<set $gd4_points -=1>>
     Garp: How could he not? I swore to protect him and yet I let him die. I forced him to hide himself away from the world. I would be shocked if he didn't hate me.
     Garp: But I guess now, I'll never know.
     Garp: ...
     Garp: Let's talk about something else.
     <<jump date_garp_4_route_c>>
 -> ...think we could visit his grave one day?
-    <<set gd4_points +=1>>
+    <<set $gd4_points +=1>>
     Garp: ...We?
     {$name}: Yes. As you know, I'm from South Blue, and I've heard of what happened on Baterilla. I know how much he means to you, but he also means something to me.
     {$name}: I know that it's a bit of a dangerous journey, but... I'd like to pay my respects with you one day.
@@ -189,7 +189,7 @@ Garp: There's nothing I can do for them now. Just like with Ace, all I can do is
 {$name}: (He means... they'll have to fight...)
 {$name}: (Urgh, what should I do? Should I say something or not? Or should I try to change the topic?)
 -> Say something.
-    <<set gd4_points +=1>>
+    <<set $gd4_points +=1>>
     {$name}: Garp, you've made mistakes. Some pretty big ones at that. But you've also done a lot of good for the world.
     {$name}: You've raised some incredible Marines who really do care about protecting the people. You've also beaten up some terrible people who would have made everyone's lives worse.
     {$name}: You've made mistakes, but you've done good too. You can't do anything more for those who have died, but you can do what you can for those who still live.
@@ -199,7 +199,7 @@ Garp: There's nothing I can do for them now. Just like with Ace, all I can do is
     Garp: ...Yeah.
     <<jump date_garp_4_route_e>>
 -> Say nothing.
-    <<set gd4_points -=1>>
+    <<set $gd4_points -=1>>
     <<jump date_garp_4_route_silence>>
 -> Change the topic.
     <<jump date_garp_4_route_e>>
@@ -215,20 +215,20 @@ location: ship Deck
 Garp: ...Yeah, alright. We've already talked about him a little, but... that brat's always been a handful.
 Garp: For better or worse, he's a lot like me.
 -> I think it's for the better. You two are both powerhouses who changed the world, after all.
-    <<set gd4_points +=1>>
+    <<set $gd4_points +=1>>
     Garp: Not a bad way of putting it. When it comes to the D. clan, change is going to happen whether we like it or not.
 -> You two are nothing alike. I don't really know how you can deal with the fact that your grandson's a criminal.
-    <<set gd4_points -=1>>
+    <<set $gd4_points -=1>>
     Garp: ...Some days are harder than others.
 -> Well, I have heard stories about both of your... eating habits.
     Garp: Bwahahaha! Well, the stories might not be exaggerations with that boy!
 Garp: Still... He's changed a lot of things for a lot of people. No matter what the papers say, a lot of it has been for the better.
 Garp: Some of the things he's done have massive repercussions, and yet he's managed to keep his freedom each and every time. But that might run out sooner rather than later, now that Sakazuki's behind the desk. That boy's too much like Roger for my liking.
 -> Will he be ok?
-    <<set gd4_points -=1>>
+    <<set $gd4_points -=1>>
     Garp: If he's caught? No. I don't know if you heard during the war at Marineford, but given who his father is... no. Nothing good will come of that.
 -> Will you be ok?
-    <<set gd4_points +=1>>
+    <<set $gd4_points +=1>>
     Garp: What are you worried about me for? I'm just an old man living out the rest of my days behind thick walls! But... thank you all the same.
 -> Will the people under him be ok?
     Garp: ...I don't know. I don't know what they'll do if the Marines decide to try and use them against Luffy. But what I do know is that it won't be pretty.
@@ -243,11 +243,11 @@ Garp: ...
 {$name}: (It must be hard for him. I couldn't even imagine having to arrest my family members if I ever saw them...)
 {$name}: Garp, I think...
 -> You've done your best.
-    <<set gd4_points +=1>>
+    <<set $gd4_points +=1>>
     {$name}: I can't really say anything about how Luffy feels about you, but you tried to help make him stronger in the best way you knew how. The fact that he's been able to survive this long... isn't it thanks to you, even in some small way?
     Garp: Maybe you're right... after all, it's not like I had a lot of options.
 -> There was nothing you could have done.
-    <<set gd4_points -=1>>
+    <<set $gd4_points -=1>>
     Garp: ...You're wrong. There was so much more I could have done. I could've found a safer place for him. I could've forced him to become a Marine and kept an eye on him. Even if he wouldn't be happy, at least he'd be safe.
     Garp: ...No, that's foolish. Maybe he would've just been easier to kill.
 -> You shouldn't blame yourself.
@@ -287,15 +287,19 @@ location: ship Deck
     Garp: ...At one point, I would have tried. But now, or rather, even back then, there was no point. Sengoku was firm. Tsuru was apathetic. And I... I was already on the edge of a cliff. There's nobody I could have told that would have made anything better.
     Garp: At least... not until you came along.
     {$name}: (...Oh, Garp...)
-    IF + IS ABOVE [THRESHOLD]: <<jump date_garp_4_route_g>> //HOW DO??
-    Else: <<jump date_garp_4_route_h>> //HOW DO??
+    IF + IS ABOVE [THRESHOLD]:
+        <<jump date_garp_4_route_g>> //HOW DO??
+    Else:
+        <<jump date_garp_4_route_h>> //HOW DO??
 -> ...Considered retiring from the Marines?
     Garp: ...Heh. I did, but... there's still things that I need to do here. Still, once things settle down a bit, maybe it would be nice to put it all behind me. Spend time with other people. Maybe even...
     {$name}: ...Even what?
     Garp: ...Never mind.
     {$name}: (Was it just me, or... was he blushing a bit?)
-    IF + IS ABOVE [THRESHOLD]: <<jump date_garp_4_route_g>> //HOW DO??
-    Else: <<jump date_garp_4_route_h>> //HOW DO??
+    IF + IS ABOVE [THRESHOLD]:
+        <<jump date_garp_4_route_g>> //HOW DO??
+    Else:
+        <<jump date_garp_4_route_h>> //HOW DO??
 ===
 
 title: date_garp_4_route_g
@@ -326,7 +330,7 @@ Garp: Don't. Don't say anything. It's just the silly wish of an old man. I don't
     {$name}: (I can't believe I finally said it...)
     {$name}: (Maybe one day, he'll... well. We'll just have to see.)
     {$name}: (But... maybe there's a chance.)
-    <<set gd4_points +=3>>
+    <<set $gd4_points +=3>>
     <<jump date_garp_4_end>>
 -> You're... a dear friend to me.
     Garp: ...
@@ -341,7 +345,7 @@ Garp: Don't. Don't say anything. It's just the silly wish of an old man. I don't
     Garp: Same here!
     Garp: Alright, we should get back to work. Thanks for listening, {$name}!
     {$name}: Anytime. And... thank you, Garp.
-    <<set gd4_points +=1>>
+    <<set $gd4_points +=1>>
     <<jump date_garp_4_end>> PC locked out of romantic Garp ending //HOW DO??
 ===
 
@@ -373,7 +377,8 @@ Garp: I should just go.
 -> (I can't think of anything to say.)
     {$name}: ...
     {$name}: ...I'm sorry...
-    Garp: ...Me too. <<set gd4_points -=1>>
+    Garp: ...Me too.
+    <<set $gd4_points -=1>>
     <<jump date_garp_4_badend>>
 ===
 

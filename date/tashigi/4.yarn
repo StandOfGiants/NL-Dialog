@@ -114,7 +114,7 @@ Tashigi: Hm? You're staring... is something wrong?
 Tashigi: Wait, what's that? Do you hear something?
 {$name}: Um... wait, I think so! It sounds like... moaning?
 Tashigi: Blast... Someone may be hurt. We need to get in there. Alright, here's the plan.
-Tashigi: There's no way they didn't leave a watch. I'll go deal with them while you investigate the hold. Take a look, survey the area, and then report back to me in 10 minutes. Use the Marines Standard Call Sequence #10 to contact me. Understood?
+Tashigi: There's no way they didn't leave a watch. I'll go deal with them while you investigate the hold. Take a look, survey the area, and then report back to me in 10 minutes. Use the Marines Standard Call Sequence \#10 to contact me. Understood?
 {$name}: Understood!
 Tashigi: Alright, then our plan is set. Let's move.
 <<jump date_tashigi_4_route_b>>
@@ -309,6 +309,11 @@ Tashigi: Thanks again, {$name}.
 Tashigi: I'd like that.
 Tashigi: I'd like that a lot.
 <<jump date_tashigi_4_trueend>>
+===
+
+title: date_tashigi_4_speak_to_prisoners
+---
+TODO: SPEAK TO PRISONERS??
 ===
 
 title: date_tashigi_4_end

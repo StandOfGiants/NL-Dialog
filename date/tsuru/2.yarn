@@ -1,32 +1,35 @@
 title: date_tsuru_2_intro
 location: park
 ---
+<<declare $td2_points = 0>>
 
 You have a day off. Away from the full-time insanity of HQ...
 A perfect time to catch up on errands.
 {$name}: (Oh! Vice Admiral Tsuru is here.)
 It may be a good opportunity to get to know her outside of work...
 -> Greet her.
-    {$name}:  Hello, Vice Admiral Tsuru! <<set td2_points +=1>>
+    {$name}:  Hello, Vice Admiral Tsuru!
+    <<set $td2_points +=1>>
     Tsuru: Ah... Good afternoon, {$name}.
     Tsuru: You seem in a good mood!
 -> Say nothing.
-    <<set td2_points -=1>>
+    <<set $td2_points -=1>>
     T sees you watching her awkwardly and approaches first.
     Tsuru: Well, don't just stand there!
     Tsuru: Are you hiding from me?
-    -> {$name}: I didn't see you.
-        <<set td2_points -=1>>
+    -> I didn't see you.
+        <<set $td2_points -=1>>
         Tsuru: ...
         Tsuru: Hmm.
     -> {$name}:: Yes! You scare me.
-        <<set td2_points +=1>>
+        <<set $td2_points +=1>>
         Tsuru: Oh.
         --Tsuru scoffs-- //HOW DO??
 -> Wave at her.
     Tsuru: Hello, {$name}.
 Tsuru: Are you enjoying your day off?
-- No. It's hard for me to take days off! <<set td2_points -=1>>
+- No. It's hard for me to take days off!
+    <<set $td2_points -=1>>
     Tsuru: I know you work hard.
     Tsuru: But it's healthy to distract oneself if the time is there.
 (If you had a bad run in the last date:) //HOW DO??
@@ -35,7 +38,8 @@ Tsuru: Are you enjoying your day off?
 - It's nice to have a break from the chaos at work!
     Tsuru: ... After yesterday, I must agree.
     Tsuru: I'm sorry that the old geezers are behaving like they're children...*Again.*
--Yes, are you off as well? <<set td2_points +=1>>
+-Yes, are you off as well?
+    <<set $td2_points +=1>>
     Tsuru: Oh. Thank you for asking.
 Tsuru: I am running errands on behalf of HQ, actually. And afterwards I need to pick up a cake... I'll just get on my way.
 {$name}: Wait, I...
@@ -85,7 +89,7 @@ Tsuru: Go first, {$name}, please.
         Shop Assistant: We'll make minimum fifty pieces.
         Tsuru: Are you sure you want to order, {$name}?
         -> Why not?
-            <<set td2_points -=1>>
+            <<set $td2_points -=1>>
             Shop Assistant: Oh, so they're for you? Have a sweet tooth, don't we?
             Shop Assistant: Here are our price listings.
             Ouch... The list the assistant hands you makes your stomach sink.
@@ -93,10 +97,10 @@ Tsuru: Go first, {$name}, please.
             Tsuru: I find it pricey for a personal fancy.
             Tsuru: But who am I to judge?
             -> Yes, I will order.
-                <<set td2_points -=1>>
-                <<jump tsuru_2_route1_outside_1>>
+                <<set $td2_points -=1>>
+                <<jump date_tsuru_2_route1_outside_1>>
             -> No, I'm not interested.
-                <<set td2_points +=1>>
+                <<set $td2_points +=1>>
                 Shop Assistant: Oh!
                 Tsuru: I thought so...
                 <<jump date_tsuru_2_route1_cake>>
@@ -104,17 +108,17 @@ Tsuru: Go first, {$name}, please.
             Tsuru: I thought so...
             <<jump date_tsuru_2_route1_cake>>
     -> No, I just want something to eat.
-        <<set td2_points -=1>>
+        <<set $td2_points -=1>>
         Tsuru: {$name}, you sound like Garp.
         Shop Assistant: Do you mean you'd... Um... Like a sample?
         -> Is it food?
-            <<set td2_points -=1>>
+            <<set $td2_points -=1>>
             Tsuru: {$name}... Behave!
             Tsuru: If you're only here to irritate me, get yourself on your way!
             Tsuru doesn't look too happy...
             <<jump date_tsuru_2_earlyEnd>>
-        -> {$name}: Oh, I misunderstood. I'm sorry.
-            <<set td2_points +=1>>
+        -> Oh, I misunderstood. I'm sorry.
+            <<set $td2_points +=1>>
             Shop Assistant: No problem!
             Shop Assistant: (What a weird couple...)
             Tsuru: Oh, that explains everything.
@@ -125,19 +129,21 @@ Tsuru: Go first, {$name}, please.
                 <<jump date_tsuru_2_route1_promotion>>
 -> I just want something to eat!
     Shop Assistant: You mean as in... Um... A sample?
-    - {$name}: Is it food? <<set td2_points -=1>>
+    - {$name}: Is it food?
+        <<set $td2_points -=1>>
         Tsuru: {$name}... Behave!
         Tsuru: If you're only here to irritate me, get yourself on your way!
         Tsuru doesn't look too happy...
         <<jump date_tsuru_2_earlyEnd>>
-    - {$name}: Oh, I misunderstood. <<set td2_points +=1>>
+    - {$name}: Oh, I misunderstood.
+        <<set $td2_points +=1>>
         {$name}: I thought I could just order something to eat here.
         Shop Assistant: Oh, I see!
         Tsuru: Of course.
         Tsuru: Will you wait for me outside while I pick up my order?
         <<jump date_tsuru_2_route1_outside_2>>
 -> I'll have a tea to go, please.
-    <<set td2_points +=1>>
+    <<set $td2_points +=1>>
     <<jump date_tsuru_2_route1_tea>>
 ===
 
@@ -152,12 +158,12 @@ Tsuru: I don't doubt it.
 Tsuru: ...
 Tsuru: Tell me something, {$name}.
 Tsuru: Did you only come here to spend time with me?
-    -> {$name}: Yes...
-        <<set td2_points +=1>>
+    -> Yes...
+        <<set $td2_points +=1>>
         Tsuru: I thought so.
         Tsuru: You really didn't have to go through all these leaps, {$name}.
-            -> {$name}: I'm sorry, ma'am.
-                <<set td2_points +=1>>
+            -> I'm sorry, ma'am.
+                <<set $td2_points +=1>>
                 Tsuru sighs.
                 Tsuru: No, no... I realize what it must be to start anew somewhere.
                 Tsuru: Maybe I should apologize for being too focused on my own tasks.
@@ -166,8 +172,8 @@ Tsuru: Did you only come here to spend time with me?
                 Tsuru: Cause and consequence!
                 Tsuru: I'm sure you can find some use for them.
                 <<jump date_tsuru_2_route1_end_neutral>>
-    -> {$name}: No!
-        <<set td2_points -=1>>
+    -> No!
+        <<set $td2_points -=1>>
         <<jump date_tsuru_2_route1_end_bad>>
 ===
 
@@ -181,7 +187,7 @@ Tsuru: Well, this is quite the amount of chocolate...
     Tsuru: If you do that, Garp will devour it in one sitting.
     Tsuru: It's still a good idea.
 -> Let us eat some of it first.
-    <<set td2_points +=1>>
+    <<set $td2_points +=1>>
     Tsuru: ...
     Tsuru: I don't usually like sweets.
     Tsuru: ...I'll take a little bit.
@@ -210,17 +216,17 @@ Tsuru: ...a promotion?
 Tsuru: We did celebrate that already, didn't we?
 -> It's just a belated present.
     <<jump date_tsuru_2_route1_present>>
--> {$name}: But it was so chaotic...
-    <<set td2_points +=1>>
+-> But it was so chaotic...
+    <<set $td2_points +=1>>
     Tsuru: That is true...
     Tsuru: It could be a good idea, for team cohesion.
--> {$name}: True! I forgot!
-    <<set td2_points -=1>>
+-> True! I forgot!
+    <<set $td2_points -=1>>
     Tsuru: What planet do you live on, {$name}?
 Shop Assistant: I'm back. Here is our price list!
 ...
 Those numbers make you want to jump out of your skin! But you cannot back down now...
-<<jump date_tsuru_2_route1_ending_neutral>>
+<<jump date_tsuru_2_route1_end_neutral>>
 ===
 
 title: date_tsuru_2_route1_present
@@ -251,13 +257,13 @@ Shop Assistant: A birthday cake, right?
 Tsuru: Yes.
 Shop Assistant: I'll be back in a moment.
 -> Is it somebody's birthday?
-    <<set td2_points +=1>>
+    <<set $td2_points +=1>>
     Tsuru: One of my subordinates and a close friend...
     Tsuru: You couldn't have known.
     -> Say nothing.
         Tsuru: Don't worry. You didn't miss a birthday. You couldn't have known.
     -> Is it Sengoku's or Garp's birthday?
-        <<set td2_points -=1>>
+        <<set $td2_points -=1>>
         Tsuru: No.
         Tsuru shakes her head gravely.
 Shop Assistant: Here we go!
@@ -270,14 +276,17 @@ Tsuru: Well, what do you think?
     Tsuru: I should think so!
     Tsuru: It's not something that I would get for myself...
 -> I've seen this pattern before...
-    <<set td2_points +=1>>
-        - On somebody's uniform. <<set td2_points -=1>>
-            Tsuru: ...? (Are they making things up again?)
-        - On a bounty poster. <<set td2_points -=1>>
-            Tsuru: (Are they making things up again?)
-        - On a tattoo. <<set td2_points +=1>>
-            Tsuru: That's a good memory!
-            Tsuru: You must have met Gion, then. She leaves quite the impression, doesn't she?
+    <<set $td2_points +=1>>
+    -> On somebody's uniform.
+        <<set $td2_points -=1>>
+        Tsuru: ...? (Are they making things up again?)
+    -> On a bounty poster.
+        <<set $td2_points -=1>>
+        Tsuru: (Are they making things up again?)
+    -> On a tattoo.
+        <<set $td2_points +=1>>
+        Tsuru: That's a good memory!
+        Tsuru: You must have met Gion, then. She leaves quite the impression, doesn't she?
 While you chatted, the Vice Admiral has paid.
 Shop Assistant: Thank you for your visit~!
 <<jump date_tsuru_2_route1_end_best>>
@@ -292,7 +301,7 @@ Tsuru:... {$name}.
 Tsuru: You were curious, weren't you?
 Tsuru: Tell me the truth. Is that why you came here?
 -> Not at all!
-    <<set td2_points -=1>>
+    <<set $td2_points -=1>>
     She sighs.
     Tsuru: I see.
 -> Well...
@@ -310,10 +319,10 @@ location: town
 
 Tsuru: Oh, in this case, let me join you.
 -> Order black tea for us both.
-    <<set td2_points -=1>>
+    <<set $td2_points -=1>>
     Tsuru: Ah, not for me, thank you.
 -> What do you recommend?
-    <<set td2_points +=1>>
+    <<set $td2_points +=1>>
     Tsuru: Oh just what I like to hear. I enjoy the white tea with cherry blossom buds.
 Tsuru: Wait for me outside, will you, dear {$name}?
 <<jump date_tsuru_2_route1_outside_2>>
@@ -327,18 +336,18 @@ You wait outside again by the white-painted walls.
 Tsuru comes out with a pink confectionery package and two cups of tea.
 Tsuru: There is no cake to eat, but I thought I ouught to show all new workers what a decent green tea tastes like!
 -> Thank you!
-    <<set td2_points +=1>>
+    <<set $td2_points +=1>>
     Tsuru: My pleasure.
 -> I prefer black!
-    <<set td2_points -=1>>
+    <<set $td2_points -=1>>
     Tsuru: Well, you have no choice.
 Tsuru: Well now...
 -> What's in the package?
-    <<set td2_points +=1>>
+    <<set $td2_points +=1>>
     Tsuru: Curious, aren't you?
     Tsuru: Tell me the truth. Is that why you came here?
     -> Not at all!
-        <<set td2_points -=1>>
+        <<set $td2_points -=1>>
         She sighs.
         Tsuru: Well. Even if you won't be honest with me...
     -> Well...
@@ -362,10 +371,10 @@ Tsuru: Well, {$name}, we all like to have some things in the office that are not
     Tsuru: I do wonder if I should stop indulging him!
     Tsuru: As long as he behaves...
 -> Like better coffee than the cheap stuff our subordinates drink?
-    <<set td2_points -=1>>
+    <<set $td2_points -=1>>
     Tsuru: That's unnecessarily arrogant, {$name}!
 -> Like goat feed to keep some unnamed pets from eating documents?
-    <<set td2_points +=1>>
+    <<set $td2_points +=1>>
     She sighs.
     Tsuru: Exactly.
 Tsuru: I am going to restock some of the supplies. After all, it's busy days ahead...
@@ -374,12 +383,12 @@ Tsuru: Oh, but not on your day off.
 -> I need a few things myself actually!
     Tsuru: If you insist.
 -> It's not really working if we're outside the office!
-    <<set td2_points +=1>>
+    <<set $td2_points +=1>>
     Tsuru: Hmm...
     Tsuru winks.
     Tsuru: That might be the loophole we need.
 -> I can help you carry all that stuff!
-    <<set td2_points -=1>>
+    <<set $td2_points -=1>>
     Tsuru: I can take good care of myself!
     Tsuru: ...That being said...
 Tsuru: I suppose it would be a good thing if you come along.
@@ -413,7 +422,7 @@ Shop Assistant: Do we need to order food for the baby elephant today?
 Tsuru: Oh, no, thank you.
 {$name}: We are here for...
 -> Leashes for all our colleagues.
-    <<set td2_points -=1>>
+    <<set $td2_points -=1>>
     Shop Assistant: Ah...?
     Tsuru: ...
     Tsuru: Behave.
@@ -423,12 +432,12 @@ Tsuru: Oh, no, thank you.
     Tsuru: But we need something else.
     Tsuru: We actually need hay, please.
 -> Hay and grain, a lot of it.
-    <<set td2_points +=1>>
+    <<set $td2_points +=1>>
     Tsuru: Exactly.
 Shop Assistant: Of course! Let me see what I can find...
 Tsuru: *sigh*... That goat is a menace...
 -> They say Sengoku-san has changed a lot in the last two years.
-    <<set td2_points -=1>>
+    <<set $td2_points -=1>>
     Tsuru: Don't pay mind to what *they* say.
     Tsuru: Sengoku hasn't changed.
 -> Maybe we should help Sengoku-san train it!
@@ -437,7 +446,7 @@ Tsuru: *sigh*... That goat is a menace...
     Tsuru: ...
     Tsuru: It's a long story.
 -> Sengoku-san seems so happy with his semi-retirement!
-    <<set td2_points +=1>>
+    <<set $td2_points +=1>>
     Tsuru: He'd be happier completely retired!
     Tsuru: Although, of course, no Fleet Admiral will ever do that.
     Tsuru: One thing is true— I haven't seen him smiling like that in so long!
@@ -461,20 +470,20 @@ Tsuru: What did we need to buy?
     Tsuru: I wonder if we should at all! They're always gone in less than a day.
     Tsuru: But...
 -> How about some fruit for everybody to snack on?
-    <<set td2_points +=1>>
+    <<set $td2_points +=1>>
     Tsuru: That's a lovely idea, {$name}.
     Tsuru: *If we must*, we'll get some rice cakes as well...
 -> Let's not buy anything!
-    <<set td2_points -=1>>
+    <<set $td2_points -=1>>
     Tsuru: {$name}, you're supposed to be helpful.
 Tsuru: It would be unfair to buy something for everyone *but* Garp...
 -> He doesn't take anything seriously!
-    <<set td2_points +=1>>
+    <<set $td2_points +=1>>
     Tsuru: My thoughts exactly.
     Tsuru: Although... He's much more than he seems.
     Tsuru: You can count on him when the time calls for it.
 -> I can't believe the Hero of the Marines is like that!
-    <<set td2_points -=1>>
+    <<set $td2_points -=1>>
     Tsuru: ...
     Tsuru: He's much more than what meets the eye.
     Tsuru: Heroism has nothing to do with presentation... But with deeds.
@@ -498,11 +507,11 @@ Tsuru: Oh? You want to go to the teahouse?
     Tsuru: But...
     Tsuru: I appreciate the sentiment.
 -> Let's buy something for the girls of your crew!
-    <<set td2_points +=1>>
+    <<set $td2_points +=1>>
         Tsuru: Oh! Of course, how could I forget.
         Tsuru: I appreciate that very much.
         -> Is it hard to train an all-women squad?
-            <<set td2_points +=1>>
+            <<set $td2_points +=1>>
             Tsuru: ...
             Tsuru: Not many people realize it, but...
             Tsuru: There used to be *no* women in the Navy.
@@ -510,7 +519,7 @@ Tsuru: Oh? You want to go to the teahouse?
 -> Do we want to buy tea, or tea pastries?
     Tsuru: Both.
 -> So coffee it is!
-    <<set td2_points -=1>>
+    <<set $td2_points -=1>>
     Tsuru: ...
     Tsuru: I suppose it's the idea that counts...
 The two of you make your way to the teahouse. Who knew tea was such an art? It takes you over an hour, but finally you finish shopping at the teahouse.
@@ -530,7 +539,7 @@ location: town
 Tsuru: The liquor store?!
 Tsuru: You do know we're to buy supplies for *work*...
 -> I was thinking about Rosinante's cigarettes!
-    <<set td2_points +=1>>
+    <<set $td2_points +=1>>
     Tsuru: Oh, so *that* is what you mean!
     Tsuru: We better fetch some safety matches as well...
     Tsuru: I wouldn't let him near a lighter.
@@ -540,7 +549,7 @@ Tsuru: You do know we're to buy supplies for *work*...
     Tsuru: I'll have a word with Kuzan and Borsalino.
     Tsuru: *Still,* it would not be a bad idea to fetch cigarettes for Rosinante.
 -> What's wrong with a little shot in the morning coffee?
-    <<set td2_points -=1>>
+    <<set $td2_points -=1>>
     Tsuru: Have you lost your mind?!
     Tsuru: If you *feel* the need, at least don't tell me!
     She breathes deep.
@@ -548,12 +557,12 @@ Tsuru: You do know we're to buy supplies for *work*...
 The two of you make your way to the store. It smells of dank tobacco as light gleams on the rows and rows of finely shaped bottles in the mahogany stands.
 Tsuru: Do you know what brand Rosinante would prefer?
 -> No! It's a nasty habit.
-    <<set td2_points -=1>>
+    <<set $td2_points -=1>>
     Tsuru: Even if I agree, I won't judge him.
 -> I think I'll recognize it when I see it.
     Tsuru: Hmm... perhaps so.
 -> I don't know him that well, what is he like?
-    <<set td2_points +=1>>
+    <<set $td2_points +=1>>
     Tsuru: He resembles his father. Well, his *fathers*, I should say.
     Tsuru: Another many layered person.
     Tsuru: It's a good thing that you are trying to get to know all of us, {$name}.

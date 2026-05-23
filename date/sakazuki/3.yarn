@@ -53,7 +53,7 @@ location: training grounds
 {$sakazuki}: That's fine. Show me what you know.
 Oh! This is your chance to impress! Taking a deep breath, you decide...
 -> You will go through the most basic set of katas every soldier must know.
-    <<set sd3_points +=2>>
+    <<set $sd3_points +=2>>
     You focus on each movement, making sure your arms and legs are at the right position. Occasionally, you glance at Fleet Admiral Sakazuki, but you can't tell what he's thinking.
     Finally, you end the well practiced movement, stopping a short distance from the Fleet Admiral.
     {$sakazuki}: Not bad. You are well versed with your basics.
@@ -63,7 +63,7 @@ Oh! This is your chance to impress! Taking a deep breath, you decide...
     {$sakazuki}: Hmm, maybe. If you keep working on your skills, you have potential.
     {$name}: Thank you, Sir! I'll try my best!
 -> You have to show off with the flashiest move you know!
-    <<set sd3_points -=1>>
+    <<set $sd3_points -=1>>
     For a moment,  you stand there, feeling uncertain.
     But you can do it! You can definitely do it! If you do it well, maybe he'll even give you a surprise promotion! Or a salary raise!
     With sufficient motivation, you start throwing wild punches and kicks like how you've seen a few stronger Vice Admirals train. You even attempt to mimic Admiral Kizaru's kick!
@@ -76,7 +76,7 @@ Oh! This is your chance to impress! Taking a deep breath, you decide...
     {$sakazuki}: Focus more on training and less on impressing spectators.
     {$name}: Yes, Sir, sorry, Sir...
 -> You should definitely make something up to surprise the Fleet Admiral.
-    <<set sd3_points +=1>>
+    <<set $sd3_points +=1>>
     Ah, but you don't even know where to begin with it... it sounds easier in your head than in practice. But you have to give it a try.
     You begin with the standard kata taught to every Marine, but try to change it up a bit. You follow what feels the most natural to you, switching up different orders of the moves until, at last, you finish. You eye Fleet Admiral's unreadable face nervously.
     {$name}: Ah... that's all, Sir.
@@ -109,7 +109,7 @@ You take a deep breath. Well, since the Fleet Admiral has invited you...
     Actually yes, but now you feel compelled to say something back...
     {$name}: I think...
     -> ...You've picked a tough path to follow, picking Absolute Justice above all else.
-        <<set sd3_points +=2>>
+        <<set $sd3_points +=2>>
         {$sakazuki}: That might be so.
         {$sakazuki}: I decided a long time ago that I'll always serve and protect Justice, and that takes... sacrifices.
         {$sakazuki}: [smile] Being friends with me must be difficult.
@@ -137,7 +137,7 @@ You take a deep breath. Well, since the Fleet Admiral has invited you...
     {$sakazuki}: Fine, fine. When it was peacetime, we'd go do karaoke. If time was tight, then perhaps something at a bar together.
     Oh, wow! You didn't expect Fleet Admiral Sakazuki to actually answer you! But he kept his promise! He seems fairly embarrassed, though. Maybe you should tease him... wouldn't that be mean, though? Hmm...
     -> I feel like I prefer something quieter, like a night at the pub. Karaoke is pretty loud.
-        <<set sd3_points +=2>>
+        <<set $sd3_points +=2>>
         {$sakazuki}: [smile] I'm glad you think so, too. Karaoke had its charm... when I was younger. But as the Fleet Admiral, I have an image to uphold.
         {$name}: That must be really tough. Still, I fully believe that it'd be good to hang out with your colleagues. Would you like to go to the pub with me sometime?
         {$sakazuki}: ...
@@ -151,7 +151,7 @@ You take a deep breath. Well, since the Fleet Admiral has invited you...
         {$name}: I'm sure they'd love to! I did these sorts of things with my friends back home all the time.
         {$sakazuki}: Alright, alright. I'll see about that. Once things calm down, perhaps.... *maybe*.
     -> So are you the best singer in the group?
-        <<set sd3_points -=1>>
+        <<set $sd3_points -=1>>
         {$sakazuki}: <pause> ... I feel like I'm not quite an impartial judge on that matter...
         {$name}: So you aren't a good singer at all?
         {$sakazuki}: [embarrassed] ... As I said, I'm not an impartial judge.
@@ -167,7 +167,7 @@ You take a deep breath. Well, since the Fleet Admiral has invited you...
     {$sakazuki}: He would have. He was about to cheat, the little sneak. But I discovered his scheme first. Exposing him wouldn't be satisfying enough, so I played with him at his own game.
     {$sakazuki}: I changed back all of the candies that he had managed to switch into spicy peppers, as they should have been. It was amusing. I didn't know his face could turn that particular shade of red.
     -> Wow, I wish I could've been there to see it.
-        <<set sd3_points +=2>>
+        <<set $sd3_points +=2>>
         {$sakazuki}: [smile] I think you would have been amused. Borsalino couldn't face me for days, of course.
         {$name}: And did you tell anyone that he was about to cheat?
         {$sakazuki}: No. I didn't think it was necessary. He knows better than to challenge me at any spice eating contests now.
@@ -180,7 +180,7 @@ You take a deep breath. Well, since the Fleet Admiral has invited you...
         {$sakazuki}: You shouldn't be plotting about pranking anyone else, that's bad form. But on the off-chance that I might come up with an interesting challenge...
         {$sakazuki}: [smile] I'll remember your offer.
     -> I would have done way worse.
-        <<set sd3_points -=1>>
+        <<set $sd3_points -=1>>
         {$sakazuki}: There is no need to go that far. He wanted to challenge me. I just wanted to make sure the challenge was fair.
         {$name}: That's lame. I'd have switched it to laxative or something.
         {$sakazuki}: Hm. I suppose I could have done that. But it would have sparked a childish prank war I wasn't interested in either creating or participating.
@@ -201,7 +201,7 @@ Your next punch immediately follows the first. Fleet Admiral Sakazuki returns fi
 Another kick, and another. Fleet Admiral Sakazuki keeps countering your attacks with nothing more than simple blocks. At last, out of frustration, you yell, charging at him. Fleet Admiral Sakazuki's arms come up to prepare for the upcoming attack.
 But you have a plan. You are going to...
 -> Fight dirty
-    <<set sd3_points +=2>>
+    <<set $sd3_points +=2>>
     You kick up as much dirt as possible, grinning when you see Fleet Admiral Sakazuki flinch away and squint.
     {$name}: Ha! My chance! You can't see now!
     Throwing all your power into one last punch, you feel the air get knocked out of you when Fleet Admiral Sakazuki dodges the attack with his eyes closed, sweeping your leg from beneath you. You stare at the morning sky, breathing heavily.
@@ -218,7 +218,7 @@ But you have a plan. You are going to...
     {$name}: Thank you for the spar, Sir. That was very insightful.
     {$sakazuki}: You're welcome.
 -> Attack recklessly
-    <<set sd3_points -=2>>
+    <<set $sd3_points -=2>>
     You let out an intimidating roar, ramming against Fleet Admiral Sakazuki with all the strength in your body. It feels like ramming into a concrete wall. It hurts!
     You refuse to give up though, throwing wild punches and kicks, praying that one will miraculously work. The Fleet Admiral is strong, though, and he doesn't even flinch facing your strongest kick.
     Finally, seemingly tired of your display, Fleet Admiral Sakazuki moves with surprising grace. He grabs your wrist and steps behind you so fast you can't even see him, pinning your hand behind your back.
@@ -230,7 +230,7 @@ But you have a plan. You are going to...
     {$sakazuki}: I suggest you practice the basic moves some more and try to keep your cool during a tough battle.
     {$name}: Yes, Sir. I will keep your words in mind...
 -> Execute a textbook move
-    <<set sd3_points +=1>>
+    <<set $sd3_points +=1>>
     You charge forward with a yell then suddenly stop in front of him and throw a basic punch. He seems surprised that you didn't really lose your temper, but counters the move easily enough.
     Another textbook throw from Fleet Admiral Sakazuki sends you tumbling on your back. Only your training helps you break your fall.
     {$name}: Ouch, my butt.
@@ -259,7 +259,7 @@ You take a deep breath. Well, since the Fleet Admiral has invited you...
     {$name}: And you... do you still consider him your friend?
     {$sakazuki}: ... I... don't think it matters what I consider him. Friends or foes, I think our differences have grown too vast.
     -> For what it's worth, I think Admiral Aokiji probably feels the loss, too.
-        <<set sd3_points +=2>>
+        <<set $sd3_points +=2>>
         {$sakazuki}: ...
         {$sakazuki}: It doesn't matter. We have always been too different.
         {$name}: I'd argue maybe you are too similar.
@@ -267,7 +267,7 @@ You take a deep breath. Well, since the Fleet Admiral has invited you...
         {$sakazuki}: [smile] Perhaps that, too.
         {$sakazuki}: Similar or different, what's gone is gone.
     -> I hope someday you can reconcile.
-        <<set sd3_points +=1>>
+        <<set $sd3_points +=1>>
         {$sakazuki}: I'm skeptical that'll ever happen. Perhaps when the sea is free of conflict.
         {$name}: Sir, the seas will never be free of conflict. Even if the New Pirate Age is over. Something new will happen, and something after that, and then more bad things...
         {$sakazuki}: Then that's just too bad, isn't it?
@@ -275,7 +275,7 @@ You take a deep breath. Well, since the Fleet Admiral has invited you...
         {$name}: Or you yours.
         {$sakazuki}: ... That, too, I suppose.
     -> Yeah, for real. If my friend burned my leg off, I'd never forgive them.
-        <<set sd3_points -=2>>
+        <<set $sd3_points -=2>>
         Fleet Admiral Sakazuki flinches. You think he looks pained for a moment.
         {$sakazuki}: I didn't leave the battle unscathed, either.
         {$name}: Oh, I didn't mean–
@@ -295,21 +295,21 @@ You take a deep breath. Well, since the Fleet Admiral has invited you...
     {$sakazuki}: Yes. I would sacrifice my whole life for Justice if that were what was needed of me.
     {$sakazuki}: Making choices and suffering losses, friendships, or respect, being feared, being hated... they are all prices I've paid ever since I decided to become a Marine.
     -> I respect that but I don't think I agree.
-        <<set sd3_points +=2>>
+        <<set $sd3_points +=2>>
         {$sakazuki}: What do you mean?
         {$name}: You said you would sacrifice many things for Justice. But how do you know you are always true? What if your ideals lead you astray? What if someone tricks you?
         {$name}: If you keep sacrificing everything, eventually, there'll be no one left to tell you when you are going down the wrong path. No one to stop you.
         {$name}: I understand sacrifices. But I understand making mistakes and needing someone to tell you you are wrong, too.
         {$sakazuki}: Interesting viewpoint. I don't know if I agree, but I can see where you are coming from.
     -> Everything for your Justice, isn't that right?
-        <<set sd3_points +=1>>
+        <<set $sd3_points +=1>>
         {$sakazuki}: Yes. I take my oath seriously.
         {$name}: I hope I'll never have to make that kind of choice. But...
         {$name}: But if I was ever in a situation where a choice had to be made, I hope I make the right one.
         {$sakazuki}: When that moment arrives, remember the Justice on your back means something.
         You aren't sure if that Justice is supposed to mean loneliness or not. But you don't dare ask. You pray you never have to find out.
     -> Those are steep. I don't know if I can pay them.
-        <<set sd3_points -=2>>
+        <<set $sd3_points -=2>>
         {$sakazuki}: Not many can or are willing. But we are protecting something bigger than ourselves.
         {$sakazuki}: I think the price is worth paying.
         {$name}: For a life of loneliness and being hated, Sir? I would rather have a cushy life. Maybe do simple administrative work with low risk.
@@ -325,7 +325,7 @@ You take a deep breath. Well, since the Fleet Admiral has invited you...
     {$name}: Wow, so what happened?
     {$sakazuki}: The short version, there was a lot of... collateral damage. Our teacher was furious with me... it wasn't my best moment.
     -> It happens, sir. I make mistakes, too.
-        <<set sd3_points +=1>>
+        <<set $sd3_points +=1>>
         {$sakazuki}: You are kind.
         {$name}: I think the important thing is that you learn from it.
         {$name}: Did you learn from it?
@@ -336,7 +336,7 @@ You take a deep breath. Well, since the Fleet Admiral has invited you...
         {$name}: Oh. At least the pirates terrorizing the place were no more. That's the most important.
         {$sakazuki}: Indeed.
     -> Served you right! You should've had more faith in Admiral Aokiji!
-        <<set sd3_points -=1>>
+        <<set $sd3_points -=1>>
         {$sakazuki}: As I said, it wasn't one of my best moments. I thought he had betrayed our oath.
         {$name}: Did you ever apologize to him?
         {$sakazuki}: Hm.
@@ -367,7 +367,7 @@ You decide that...
     Fleet Admiral Sakazuki glances your direction, but doesn't force you to help, content to be doing all the work himself. Weird! Who wants to voluntarily do chores anyway!
     => Go to the appropriate ending depending on the total scores //HOW DO??
 -> Of course you should help! It's the right thing to do.
-    <<set sd3_points +=1>>
+    <<set $sd3_points +=1>>
     {$name}: Sir, please let me help you! Tell me what I can do.
     {$sakazuki}:... Alright.
     {$sakazuki}: Pick up the trash while I return the training weights back to their proper place.
