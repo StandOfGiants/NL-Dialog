@@ -38,7 +38,7 @@ Oh! One of *those* might work!
     Vendor: Ah, a gift for someone special then, I see.
     A small blush creeps up your face as you laugh awkwardly.
     -> Get the merch box
-        <<jump <<jump rosinante_Gift_Hunt_MERCH_END>>
+        <<jump rosinante_Gift_Hunt_MERCH_END>>
     -> Look elsewhere
         Maybe you should look around more before making a decision...
         <<jump rosinante_Gift_Hunt_ROSI_START>>

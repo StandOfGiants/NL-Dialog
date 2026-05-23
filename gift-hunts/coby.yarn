@@ -14,9 +14,9 @@ Three of them catch your eye as you look around. Coby isn't a flashy person, so 
 -> Bait and Tackle store. It looks a little run down, but maybe you can find him a new pole.
     <<jump CobyGiftHunt_Baitandtackle>>
 -> A cute accessory store. Most of the stuff in the window is a bit gaudy, but they have some headbands and glasses cases that Coby might like.
-    <<jump CobyGiftHunt_accessoryshop>>
+    <<jump CobyGiftHunt_Accessoryshop>>
 -> A weird stall that seems to be selling some questionable souvenirs from past events. Some of it looks a little tacky, like an execution platform, but maybe Coby would appreciate the humor?
-    <<jump CobyGiftHunt_weirdstall>>
+    <<jump CobyGiftHunt_souvenirstall>>
 ===
 
 title: CobyGiftHunt_Baitandtackle
@@ -33,7 +33,7 @@ You bite your lip, pondering what to select as you study the selection of poles.
     <<jump CobyGiftHunt_Badgift>>
 ===
 
-title: CobyGiftHunt_Acessoryshop
+title: CobyGiftHunt_Accessoryshop
 location: town
 ---
 

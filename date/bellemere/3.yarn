@@ -1,6 +1,7 @@
 title: date_bellemere_3_main
 location: docks
 ---
+<<declare $bed3_points = 0>>
 
 Bellemere: Hey, {$name}, let's bar!
 {$name}: Let's... what?
@@ -19,12 +20,12 @@ Bellemere: It's a verb the way I do it- you game?
 title: date_bellemere_3_NoStart
 location: docks
 ---
-<<declare $bd3_points = 0>>
 Bellemere: Huh, okay then. I'll just file that away for future reference: you're a weenie after eight p.m.
 {$name}: W-weenie!? Are you a grandpa!?
 Bellemere: Oh, look who's talking, “eight p.m!”
 On that immature note, Bellemere leaves you with a playful, mocking expression, and you feel a small ping of regret... Did you just pass up a rare opportunity to spend time one-on-one with the hot redheaded gunner?
-You've made a mistake. <<jump date_bellemere_3_dateEnd>>
+You've made a mistake.
+<<jump date_bellemere_3_dateEnd>>
 ===
 
 title: date_bellemere_3_YesStart
@@ -104,7 +105,7 @@ Bellemere: You better remember the day I drank you literally under the table, {$
 Bellemere: Next time try a more tame challenge... like checkers, or-
 {$name}: I get it! Please talk... softer...
 Considering the hangover you both suffer from, is there even a “winner?” Well, at least it's a story good for a laugh.
-<<jump date_bellemere_3_dateEnd>> <<set $bd3_points += 1>>
+<<jump date_bellemere_3_dateEnd>> <<set $bed3_points += 1>>
 ===
 
 title: date_bellemere_3_b2p1
@@ -117,7 +118,7 @@ Bellemere falls off her chair, first. You're pretty sure she doesn't actually pa
 You certainly don't let her live it down; you are the clear “winner” of the competition!
 Bellemere: Fine! You win! I'm suitably impressed!
 Considering the hangover you both suffer from, is there even a “winner?” Well, at least it's a story good for a laugh.
-<<jump date_bellemere_3_dateEnd>> <<set $bd3_points += 2>>
+<<jump date_bellemere_3_dateEnd>> <<set $bed3_points += 2>>
 ===
 
 title: date_bellemere_3_b2p2
@@ -129,7 +130,7 @@ She seems equally woozy, and neither of you seem willing to give up. You have so
 You have no idea who falls off their chair, first. You're pretty sure neither of you actually pass out, but the ground is so comfy... you find yourself falling asleep, despite the bartender's remonstrances...
 The next morning you wake up in your own bed, and when you track down Bellemere you find she shares the same story. Somehow the two of you managed to stumble home, and neither of you can agree on a “winner” in your competition.
 Considering the hangover you both suffer from, is there even a “winner?” Well, at least it's a story good for a laugh.
-<<jump date_bellemere_3_dateEnd>> <<set $bd3_points += 1>>
+<<jump date_bellemere_3_dateEnd>> <<set $bed3_points += 1>>
 ===
 
 title: date_bellemere_3_Darts
@@ -158,10 +159,9 @@ location: bar
 You feel like a shorter game, at least to start. It's been a while since you last played, and you're up against a gunner for the Marines, so... perhaps the game would be over quickly, either way!
 Still, you'll try your best...
 -> ...because you want to impress her. (+1)
-    <<set $bd3_points += 1>>
+    <<set $bed3_points += 1>>
     <<jump date_bellemere_3_play_1>>
 -> ...because you want to add something to the bet. (+0)
-    <<declare $bd3_points = 0>>
     <<jump date_bellemere_3_play_2>>
 ===
 
@@ -194,13 +194,12 @@ Bellemere: Oh yeah? What do you want, {$name}?
 You gulp, trying to get the words out, your face blazing red.
 You mumble your answer...
 -> A kiss!
-    <<set $bd3_points += 1>>
+    <<set $bed3_points += 1>>
     <<jump date_bellemere_3_kiss>>
 -> You do my end-of-week report for the next three weeks!
-    <<declare $bd3_points = 0>>
     <<jump date_bellemere_3_report>>
 -> I get a basket of your mikans when they're finally ripe!
-    <<set $bd3_points += 2>>
+    <<set $bed3_points += 2>>
     <<jump date_bellemere_3_mikans>>
 ===
 
@@ -218,10 +217,9 @@ Bellemere gives you a surprised look, then shakes her head.
 Bellemere: Oh, you're in for it now! Just wait!
 Teasing aside, the short game actually means it's quite close. On your next turn, you come up to the end point on your own game. If Bellemere fails her next turn, and you hit a double twenty on your own, you could win...
 -> Let it be up to fate!
-    <<set $bd3_points += 1>>
+    <<set $bed3_points += 1>>
     <<jump date_bellemere_3_fate>>
 -> Cough. LOUD.
-    <<declare $bd3_points = 0>>
     <<jump date_bellemere_3_cheat>>
 ===
 
@@ -266,7 +264,6 @@ Bellemere pulls a sour face, clearly displeased with your response.
 Bellemere: You want to bet... on work? Yuck. No thanks.
 She seems to lose interest in the game, and though the two of you continue to drink for a while, it's clear you've annoyed her by bringing up work during off-hours like that.
 You go home early, feeling the cold shoulder from your lovely companion.
-<<declare $bd3_points = 0>>
 <<jump date_bellemere_3_dateEnd>>
 ===
 
@@ -304,10 +301,9 @@ location: bar
 A longer game would be better, since it means more time spent with Bellemere. You don't know what your chances will be like, going up against someone like her, but still, you'll try your best.
 Why?
 -> ...because you want to impress her.
-    <<set $bd3_points += 1>>
+    <<set $bed3_points += 1>>
     <<jump date_bellemere_3_play_3>>
 -> ...because you want to add something to the bet (+0)
-    <<declare $bd3_points = 0>>
     <<jump date_bellemere_3_play_2>>
 ===
 
@@ -353,10 +349,9 @@ Bellemere: Okay, never have I ever-
 Bellemere: It's a drinking game! Look, I say, “Never have I ever,” and supply something outrageous. If you've done it before, you take a drink. It's both embarrassing and a great way to get drunk. A two-fer.
 {$name}:
 -> Sounds like a disaster. I'm in.
-    <<set $bd3_points += 1>>
+    <<set $bed3_points += 1>>
     <<jump date_bellemere_3_fun>>
 -> Sounds like a disaster. No way!
-    <<declare $bd3_points = 0>>
     <<jump date_bellemere_3_boo>>
 ===
 
@@ -409,13 +404,12 @@ Bellemere: Now *you* go.
 Bellemere: Well yeah, it'd be boring if it was just me! Besides, I get less articulate the more I drink. Help me out, here!
 {$name}: Er, okay... Never have I ever...
 -> ...peed in a pool
-    <<set $bd3_points += 1>>
+    <<set $bed3_points += 1>>
     <<jump date_bellemere_3_peed>>
 -> ...lied about my age
-    <<declare $bd3_points = 0>>
     <<jump date_bellemere_3_age>>
 -> ...flirted to get out of trouble
-    <<set $bd3_points += 1>>
+    <<set $bed3_points += 1>>
     <<jump date_bellemere_3_flirt>>
 ===
 
@@ -430,10 +424,9 @@ Bellemere: Is there something amusing about using my *assets* to get free stuff?
 Bellemere: Hey, “a fool and his money will soon be parted.” If fools want to buy me things because of my hot bod, that's on them. If they take my flirting seriously, that's on them too. By the way, you've got the check this time, right?
 She bats her eyes cartoonishly, and you shake your head.
 -> Well, I'll be a fool for you any day!
-    <<set $bd3_points += 1>>
+    <<set $bed3_points += 1>>
     <<jump date_bellemere_3_fool>>
 -> Ha! Nice try, but we're going Dutch this time around!
-    <<declare $bd3_points = 0>>
     <<jump date_bellemere_3_split_bill>>
 ===
 
@@ -544,7 +537,7 @@ Bellemere: Well... yeah, and also I can't sing worth shit!
 You laugh, holding out a hand for the Commodore, and she takes it eagerly. Before you can lead her to the dance floor she leaps forward, pulling you behind roughly and turning you in a full circle before dipping you dramatically in a sweeping motion.
 The two of you dance- not *well*, but with a sudden enthusiasm brought on by good music and drinks.
 You end the night exhausted from so much partying, both promising to do it again sometime.
-<<set $bd3_points += 2>>
+<<set $bed3_points += 2>>
 <<jump date_bellemere_3_dateEnd>>
 ===
 
@@ -560,7 +553,7 @@ Ah, so she's a fan, too?
 You grin, holding out a hand for the Commodore, and she takes it eagerly. Before you can lead her to the dance floor she leaps forward, pulling you behind roughly and turning you in a full circle with a laugh.
 The two of you dance- not *well*, but with a sudden enthusiasm brought on by good music and drinks.
 You end the night exhausted from so much partying, both promising to do it again sometime.
-<<set $bd3_points += 2>>
+<<set $bed3_points += 2>>
 <<jump date_bellemere_3_dateEnd>>
 ===
 

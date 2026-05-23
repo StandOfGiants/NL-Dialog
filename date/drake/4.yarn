@@ -42,13 +42,13 @@ It looks a little like he's shielding something in his coat...
 Drake frowns, clearly uncomfortable as he glances back over his shoulder.
 Drake: Our plans will have to be rescheduled. This is...it's a little complicated.
 His scowls softens as he glances down. Tentatively, you step in closer, and slowly he pulls back on his coat to reveal—
-HOLY SHIT, THAT'S A BIG LIZARD. [bold shaking boom text] //HOW DO??
+{$name}: HOLY SHIT, THAT'S A BIG LIZARD. #bold #shake
 You spy a long neck and narrow head laid against the breast pocket of his jacket beneath. The giant lizard in his coat is otherwise largely hidden, but you figure it's got to be at least four, maybe five feet by the length of the tail hanging loose.
 Well...that's certainly shaped like a reason to be late. You think.
 -> Someone said you were looking for a woman. Is that, uh...is she a zoan too?
     Drake: N-no!. It's nothing like that!
 -> ...you're sure that's not allosaurus take-out?
-    <<set dd4_points -=1>>
+    <<set $dd4_points -=1>>
     Drake: Absolutely not. That's beyond offensive—!
 -> BIG.
     Drake: They generally are–?
@@ -58,7 +58,7 @@ Surprised by his own volume, he reins himself into a whisper.
 Drake: Her name is Jessica. She's a monitor lizard and for the most part, lives on my ship. Or she has these past two years. Gods, this is a disaster... Any other time of the year would have been fine but—
 -> Woah, take a deep breath. Start slow...
 -> Dude, chill. It's just a lizard. Why are you so worked up?
-    <<set dd4_points -=1>>
+    <<set $dd4_points -=1>>
 Drake tucks her tail back in and bundles her back up. As the volume from the group down the hall spikes, his posture tenses, defensive. He takes a deep breath to compose himself and tries again.
 Drake: She bucked open her enclosure door and bolted past me on my way out to meet you. I chased her all the way down to the marina—likely homesick for the ship. It took longer than I expected to grab her.
 Drake: She also doesn't have the luxury of being warm-blooded. Some reptiles native to winter islands or ones with actual seasons can go into a state akin to hibernation in colder climes. But more tropical ones that don't have that ability. A shock too cold can kill them.
@@ -75,7 +75,7 @@ location: office
 {$name}: And you picked me??
 Drake: As you're likely aware, with exceedingly few exceptions, we aren't allowed to keep animals. You were the nearest person I consider trustworthy.
 -> Name it. What do you need?
-    <<set dd4_points +=1>>
+    <<set $dd4_points +=1>>
     <<jump date_drake_4_help_jess>>
 -> I don't know about this...
     Drake: I understand having reservations when rules are being sidestepped, but time is not something on my, or her side right now. Please.
@@ -93,21 +93,21 @@ location: office
 
 Drake: From a technical standpoint, she isn't a pet. I found her crated after a raid on a smuggling ship. The whole thing was stuffed to the brim with exotic animals.
 -> Were they all okay?
-    <<set dd4_points +=1>>
+    <<set $dd4_points +=1>>
     Drake: As far as I could tell, all were still in prime health. It was lucky we found them when we did. The hold of the ship was less than sanitary.
 -> What did you do with them all?
     Drake: Thankfully we were able to surrender most to the nearest island to parties that could care for them properly.
 Drake: Unfortunately, not all the stock of reptiles was native. The idea of handing those over to local authorities, only to be released as an invasive species, killed as a misplaced mercy, or harmed accidentally through unintentional mistreatment sat poorly with me.
 Drake: I'd like to release her someday, but again, finding an appropriate place or person is extremely difficult...
 -> So, not the right thing by the books, but ethically...
-    <<set dd4_points +=1>>
+    <<set $dd4_points +=1>>
     Drake: Thank you for understanding. So will you...?
 -> Why go that far?
     Drake: Animal or human—we should offer respect and care where we can. I had the means, so I committed. Will that suffice?
 -> Yeah It makes sense. Let's do this.
     <<jump date_drake_4_help_jess>>
 -> It still feels like an excuse, but let's go.
-    <<set dd4_points -=1>>
+    <<set $dd4_points -=1>>
     <<jump date_drake_4_help_jess>>
 ===
 
@@ -179,11 +179,11 @@ location: quarters
 {$name}: Dude, Helmeppo would have such BEEF with you if he knew you were keeping an animal when he can't.
 Drake: Hence, it's something I've been trying to keep as quiet as possible.
 -> Because you don't want to rub it in?
-    <<set dd4_points +=1>>
+    <<set $dd4_points +=1>>
     Drake: Precisely. I never took her as a pet. The last thing I want is for him to misunderstand that.
     <<jump date_drake_4_postcare1>>
 -> Is it so he doesn't rat you out?
-    <<set dd4_points -=1>>
+    <<set $dd4_points -=1>>
     Drake: Despite any shortcomings, I sincerely doubt he's that petty. Still, we work within the same team and I'd rather there be as little friction between us as possible.
     <<jump date_drake_4_postcare1>>
 ===
@@ -196,13 +196,13 @@ location: quarters
 -> I don't really subscribe to the “slippery slope” mentality.
 Drake: The further you push, the more likely upheaval becomes. Can you imagine a base— or worse, an enclosed ship where everyone can keep a creature of choice?
 -> Good point.
-    <<set dd4_points +=1>>
+    <<set $dd4_points +=1>>
 -> It could be fun!
-    <<set dd4_points -=1>>
+    <<set $dd4_points -=1>>
 Drake: Then consider people, untrained and understudied, trying to care for animals they know little about the needs of. Not everyone is as zealously fixated on niche animal study as I am.
--> {$name}: Okay, maybe I see what you mean...
+-> Okay, maybe I see what you mean...
     <<jump date_drake_4_postcare1>>
--> {$name}: Oh, that's a mess waiting to happen...
+-> Oh, that's a mess waiting to happen...
     <<jump date_drake_4_postcare1>>
 ===
 
@@ -223,8 +223,8 @@ Drake: To be entirely too frank...through lots of preemptive research and even m
     {$name}: But with gray hair and boobs-out every time you go out to sea, someone's gonna mistake you for Vice Admiral Smoker.
     Drake makes an extremely unflattering face, sputtering quietly. In her makeshift tank, Jessica hisses softly with a flick of her tail.
     Drake: No–don't you dare agree with them!
-    -> {$name}: You can speak lizard??
-    -> {$name}: Did she say something??
+    -> You can speak lizard??
+    -> Did she say something??
     Drake: Not exactly, but one learns the tells of an animal the longer they know them and unfortunately she's a lot sharper than she looks.
 As you watch him on the floor, he still looks miserable. You wonder if you can help him take his mind off things.
 {$name}: So long as we're here...
@@ -247,7 +247,7 @@ The more he continues, though a slow transition, the more he relaxes. He's never
 Eventually, he winds down.
 -> How will we know when everything's okay?
 -> This isn't going to take all day, is it?
-    <<set dd4_points -=1>>
+    <<set $dd4_points -=1>>
 Drake: It takes as long as it takes, come what may.
 <<jump date_drake_4_postcare1>>
 ===
@@ -269,12 +269,12 @@ After a few minutes, with Jessica almost entirely hidden in his coat and made mo
 The monitor's long tongue flicks out and the split at the end tickles your nose. Outside of that, she remains still. Whether she's choosing to behave or is simply that unwell remains a mystery.
 Drake: With diligence, she should be fine. I hope.
 -> If she's anything like you, she'll be fine.
-    <<set dd4_points +=1>>
+    <<set $dd4_points +=1>>
     Drake: Anything like me?
     {$name}: Tough as shoe leather and about as much of a pain in the ass as any boot planted there.
     Abruptly, Drake snorts, trying and failing to keep from laughing. Between you, Jessica narrows her eyes toward his outburst.
 -> Not exactly where I saw my day going, but I definitely don't mind the change of scenery.
-    <<set dd4_points +=1>>
+    <<set $dd4_points +=1>>
     Drake blushes and clears his throat so strongly it vibrates in his chest. Jessica peers up, dark eyes narrowing at the tremor.
 Drake: I–sorry. I wasn't expecting that.
 Outside of sparring, you're unsure you've ever been this close—or you have, though not long enough to get a truly good look at the man. His chin's about as big as the stoic streak he seems so fond of carrying, and the scars sliced across it feel less imposing at this distance. A bit rumpled from his panicked search, strands of red hair fall loose from his usual crest. It's cute.
@@ -282,7 +282,7 @@ There's something strange about his eyes though... They're not their usual color
 -> Did you start wearing contacts?
     Drake: Excuse me?
 -> I thought you had blue eyes.
-    <<set dd4_points +=1>>
+    <<set $dd4_points +=1>>
     He blushes briefly, clearly taken aback that you remember.
     Drake: I do.
 A rush of realization hits him as he snaps to what you're referencing.
@@ -315,7 +315,7 @@ Drake: Currently I've still got some limited vision, so I'm not at a full disadv
 Rerouting, you fixate back on the one of you that needs genuine help.
 -> How will we know when everything's okay?
 -> This isn't going to take all day, is it?
-    <<set dd4_points -=1>>
+    <<set $dd4_points -=1>>
 Drake: It takes as long as it takes, come what may.
 <<jump date_drake_4_postcare2>>
 ===
@@ -352,19 +352,19 @@ Drake: You know, I really can't thank you enough, {$name}. You don't know how mu
 -> Next time, maybe double-check her before you try and step out?
     Drake: I will. It's a lesson learned the hard way, believe me.
 -> Don't sweat it. We're Marines. We help those in need, right?
-    <<set dd4_points +=1>>
+    <<set $dd4_points +=1>>
     Drake: That's a good point. Keep carrying that with you and you'll do a lot of good in the world. I believe it.
 -> It's just a lizard. Not a big deal.
-    <<set dd4_points -=1>>
+    <<set $dd4_points -=1>>
     Drake: Yes, well, tell that to her.
-    He lifts Jessica toward you and she opens her mouth, giving you a testing sniff, only to flick her tail in exasperation when set down again.
+    He lifts Jessica toward you and she opens her mouth, giving you a testing sniff, only to flick her tail in exasperation when set $down again.
 Drake: I really shouldn't trouble you anymore. The sooner I get her back into her enclosure, the better.
 -> Just be careful, okay?
 -> I wouldn't mind seeing her again in better weather.
-    <<set dd4_points +=1>>
+    <<set $dd4_points +=1>>
     Drake: If I'm still here come spring... I think that could be arranged.
 -> I could walk you back. Could be less headache with your eyes like this.
-    <<set dd4_points +=1>> [if you chose :: body] //HOW DO??
+    <<set $dd4_points +=1>> [if you chose :: body] //HOW DO??
     Drake: I've a much clearer head now, so the rest of my senses will do just fine. Thank you, though.
 On principle, Drake helps you tidy up. Afterward, once he's swaddled her for the trip back, he heads off.
 <<jump date_drake_4_End>> //HOW DO?? Endings dependent on points
@@ -405,7 +405,8 @@ location: quarters
 ---
 
 ...or tries. Drake pauses partway down the hall, turning to glance back your way. He smiles and briefly Jessica's head pokes up from within his coat. Regarding you with a flick of her tongue, she tucks back in tightly to her caregiver before he excuses them both for good.
-Whether or not she's learned her lesson remains a mystery, but you're definitely left with the satisfaction of doing the right thing. <<set dd4_points +=1>>
+Whether or not she's learned her lesson remains a mystery, but you're definitely left with the satisfaction of doing the right thing.
+<<set $dd4_points +=1>>
 ===
 
 title: date_drake_4_Two_point_end
@@ -413,5 +414,6 @@ location: quarters
 ---
 
 ...or tries. Drake pauses partway down the hall, turning to glance back your way. He smiles a little bolder and brighter than before, and briefly, Jessica's head pokes up from within his coat. Regarding you with a flick of her tongue, she tucks back in tightly to her caregiver, who nods to you in lieu of a deeper bow, before going for good.
-Whether or not she's learned her lesson remains a mystery, but you're definitely left with the satisfaction of doing the right thing. As well, you can't help but think that the gap between you and Drake is steadily closing... <<set dd4_points +=2>>
+Whether or not she's learned her lesson remains a mystery, but you're definitely left with the satisfaction of doing the right thing. As well, you can't help but think that the gap between you and Drake is steadily closing...
+<<set $dd4_points +=2>>
 ===

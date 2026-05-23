@@ -169,7 +169,7 @@ title: date_kuzan_2_EH
     {$name}: Be nice.
     {$kuzan}: No. Those days are long past...
     The two of you drift off into silence, a difficult expression on Kuzan's face. A breeze blows across your shoulders, the Admiral continuing to stare moodily at the horizon. It takes you a moment to notice that he's doing something with his gloved hand. You squint. Is that... is that a flower made of ice?
-    <<jump
+    // <<jump  TODO: Fix jump target
 
 -> Well... yeah. The Fleet Admiral can be very strict, I see why you clash so much.
     {$kuzan}: Tch. Stupid bastard.
@@ -655,4 +655,8 @@ You toss and turn until finally on a toss, you find yourself standing outside a 
             -> Yes
             -> LOOP
 ===
+
+title: date_kuzan_2_End
+---
+DATE WITH KUZAN ENDS
 ===

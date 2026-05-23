@@ -51,9 +51,9 @@ Vendor: Welcome! Have any of these pieces caught your attention?
         The vendor pulls out a tie with mauve, red, and blue polka dots. Very... striking.
         Difficult to forget.
         The ones Borsalino usually wears do look a bit different...
-        -> {$name}: Yes, I think he will like this!
+        -> Yes, I think he will like this!
             <<JUMP borsalino_gift_hunt_bad_gift>>
-        -> {$name}: Oh, I'm not really sure about this...
+        -> Oh, I'm not really sure about this...
             (=> loop back to question) //HOW DO??
 -> ...ah. Forget about it.
     Vendor: Okay, maybe some other time!
@@ -71,11 +71,11 @@ Vendor: Welcome! Has something caught your eye?
 Vendor: Oh, I see! Is this for a soldier here at Marineford?
 The vendor pulls out a nicely packed set of bath related items. It seems perfect!
 Vendor: Just a thought, but our soap and deodorant packs are at half-price~
--> {$name}: These look great... that does sound like a good gift.
+-> These look great... that does sound like a good gift.
     After all, who doesn't like to smell nice?
     You hope he won't misinterpret it...
-    <<jump borsalino_gift_hunt_gift_bad>>
--> {$name}: That's not exactly what I'm looking for.
+    <<jump borsalino_gift_hunt_bad_gift>>
+-> That's not exactly what I'm looking for.
     Vendor: Oh, I see... so your soldier doesn't need any motivation to shower. You're lucky! How about one of our perfumes or colognes, then? Feel free to try them on.
     You take them up on the offer, pouring a few drops of cologne on your wrist and smelling different variants that tickle your nose.
     They all seem nice. None of them strike you as particularly outstanding however.
@@ -99,7 +99,7 @@ Vendor: Welcome, stranger! Are you interested in buying any of these?
         {$name}: After all, he mentioned that he used to love reading and was sad to lose the habit.
         -> Yes! I'll take it!
             <<jump borsalino_gift_hunt_great_gift>>
-        -> {$name}: I don't think so — what would he do with them?
+        -> I don't think so — what would he do with them?
             (=> loop back to question) //HOW DO??
     -> ...something more decorative.
         Vendor: At this moment, I'm sold out of almost any decorations... except for these figurines.

@@ -6,7 +6,7 @@ location: office
 You get ready for work, then set off for the office. Once you arrive, Fleet Admiral Sakazuki is as strict as always, although you wonder if it's just your imagination or if he seems a little bit distracted.
 5 o'clock rolls around and you jump out of your seat for a big stretch. Ahhhh... you feel so much better now! Time to head home, take a shower, rinse and repeat.
 Walking down the long hall, you stop when you see a figure in white from afar. Is that...?
-Wait a second... #FLEET ADMIRAL SAKAZUKI?!# //HOW DO??
+Wait a second... [shake]FLEET ADMIRAL SAKAZUKI?![/shake]
 Has he clocked out at 5pm on the dot and not three hours later?! You've never seen him leave work earlier than you the entire time you've been here... You are almost concerned. Is Marineford under attack by pirates? Is there a war coming? Will you still have to come in tomorrow?!
 You approach him, but he appears to be distracted, staring at something on the wall... You wave your hand but he doesn't acknowledge you at all. Maybe he hasn't noticed you yet? Or perhaps you are actually more stealthy than you thought? You decide to...
 -> ... sneak up behind him to see what he's looking at.
@@ -77,9 +77,9 @@ Ohhhh, you see what's going on now. You understand why he is here looking over t
     {$name}: I know what you're doing! You want your name on it too, don't you, Fleet Admiral Sakazuki? That's really cool! You're ambitious!
     {$sakazuki}: <pause>...
     {$sakazuki}: No.
-    {$name}: ...Wait... #WHAT?!# No way! Who wouldn't want to have their name remembered by everyone?! That'd be like... a promotion for a Fleet Admiral!
+    {$name}: ...Wait... [shake]WHAT?![/shake] No way! Who wouldn't want to have their name remembered by everyone?! That'd be like... a promotion for a Fleet Admiral!
     {$sakazuki}: A promotion isn't everything, {$name}. It'd do you well to remember that.
-    {$name}: B-But what about... glory? #Happiness#?!
+    {$name}: B-But what about... glory? [shake]Happiness[/shake]?!
     {$sakazuki}: Do you genuinely think heroes of the Marines are happy people?
     {$name}: Well, Vice Admiral Garp seems pretty happy? He laughs all the time.
     {$sakazuki}: <pause>... If that is your measurement of happiness...
@@ -142,7 +142,7 @@ It feels silly now that you actually take a few moments to think about it. Of co
 You are kinda jealous. Being the Fleet Admiral must be *so* well paid. Maybe he's going to take you to a fancy place to do his shopping.
 {$sakazuki}: Come, {$name}. The supermarket isn't far from the residential district. I don't want to spend all night walking there.
 Of course, that makes sense. It does take a while to walk to the supermarket...
-Wait a minute... the #SUPERMARKET?!#
+Wait a minute... the [shake]SUPERMARKET?![/shake]
 Date Location: Town //HOW DO??
 You look at the supermarket. It's... it's a supermarket. It's *the* Supermarket, in fact – the one everyone goes to get their groceries. You have visited it yourself many times before.
 You aren't impressed. You thought he'd at least go to one of those fancy exotic places the higher ups go to. Apparently not?
@@ -200,7 +200,7 @@ Well... you *are* curious. And maybe he won't scold you for being distracted if 
         {$sakazuki}: I don't.
         {$sakazuki}: I value practicality. I don't have a lot of time in the day to begin with.
     -> That's perfect! I don't have time to make anything too complicated!
-        <<set sd2_points +=1>>
+        <<set $sd2_points +=1>>
         Fleet Admiral Sakazuki scrutinizes you.
         {$name}: I'm serious, Sir! I can't spend hours a day making food. There's a reason I'm a Marine and not a baker.
         {$name}: I just want to switch up my meals, not cook for a dinner party.
@@ -220,7 +220,7 @@ Well... you *are* curious. And maybe he won't scold you for being distracted if 
     {$name}: I... see...
     {$sakazuki}: Why do you want to know?
     -> Cooking is hard. It takes a lot of patience to get it right!
-        <<set sd2_points +=1>>
+        <<set $sd2_points +=1>>
         {$sakazuki}: ... It's a discipline. With enough training, you'll gain mastery.
         {$name}: Do you have mastery over it?
         {$sakazuki}: No.
@@ -228,7 +228,7 @@ Well... you *are* curious. And maybe he won't scold you for being distracted if 
         {$name}: That's still pretty cool though.
         {$sakazuki}: Thank you. It has earned its place in my life. Quite the calming activity, even if I have no desire to get fancy about it.
     -> You are famous, it's just weird you cook, I guess.
-        <<set sd2_points -= 1>>
+        <<set $sd2_points -= 1>>
         {$sakazuki}: Hm...
         {$sakazuki}: Is it?
         {$name}: Yeah! Not that I meant to call you weird, just in general I–
@@ -240,7 +240,7 @@ Well... you *are* curious. And maybe he won't scold you for being distracted if 
         {$name}: ...Yes, Sir...
         {$sakazuki}: I thought so.
 -> But you are the Fleet Admiral, why don't you just hire people?
-    <<set sd2_points -=2>>
+    <<set $sd2_points -=2>>
     {$sakazuki}:... And why should I do that?
     {$name}: I mean, you're filthy rich, right? Why should you have to do something so mundane?
     {$name}: If I were the Fleet Admiral, I would have people do everything for me. I wouldn't even lift a finger.
@@ -268,23 +268,23 @@ Finally, he moves away from them. You breathe a sigh of relief, but it's short-l
 {$name}: Wow, sir...
 {$sakazuki}: What?
 -> You must really like spicy food! I love peppers too!
-    <<set sd2_points +=1>>
+    <<set $sd2_points +=1>>
     {$sakazuki}: Is that so?
     {$name}: Yeah! I like all types! Jalapeno, serrano and cayenne! I have never gone hotter than habanero though.
     {$sakazuki}: ... Spicy food is good.
     {$sakazuki}: I like red peppers with rice.
     {$name}: That sounds tasty!
 -> Do you like peppers ‘cause you're hot, too?
-    <<set sd2_points -=1>>
+    <<set $sd2_points -=1>>
     {$sakazuki}: No.
     {$sakazuki}: My coworkers have made those jokes often enough. I refuse to take them anymore.
     -> That was out of line. I'm sorry.
-        <<set sd2_points +=2>>
+        <<set $sd2_points +=2>>
         {$sakazuki}: <pause>... It's fine. Do not tease others like that if you accompany them. They will get the wrong idea.
         Oh... he thinks you were teasing him. You want to tell him that you really do find him handsome, but you have a feeling it's not the right time.
         You keep the thought to yourself and let him finish picking his peppers.
     -> What joke, sir? I thought you liked to spice it ~up~? Because... spicy food? &&Geddit&&?
-        <<set sd2_points +=1>>
+        <<set $sd2_points +=1>>
         Fleet Admiral Sakazuki groans, rubs the bridge of his crooked nose.
         {$sakazuki}: *I get it.* You are just as awful as the rest of the lot.
         {$name}: A lot that you might be exasperated by, but you still keep ~around~
@@ -292,7 +292,7 @@ Finally, he moves away from them. You breathe a sigh of relief, but it's short-l
         {$sakazuki}: Enough joking around, I have to finish my shopping.
         {$name}: Sir, yes, Sir!
     -> Oh you misunderstood! It's not a joke! I was trying to say you're really sexy!
-        <<set sd2_points -=1>>
+        <<set $sd2_points -=1>>
         {$sakazuki}: No.
         {$name}: Sir, I don't think–
         {$sakazuki}: I understand perfectly what you meant. *No.* We do not have that kind of relationship. Focus on being a good Marine and build up your skills.
@@ -302,7 +302,7 @@ Finally, he moves away from them. You breathe a sigh of relief, but it's short-l
         Oh... he thinks you were teasing him. You want to tell him that you really do find him handsome, but you have a feeling it's not the right time.
         You keep the thoughts to yourself and let him finish picking his peppers.
 -> Aren't red peppers way below your paygrade?
-    <<set sd2_points -=2>>
+    <<set $sd2_points -=2>>
     {$name}: With how many you're buying, one would think you just eat red peppers and nothing else!
     {$sakazuki}: And what's wrong with that?
     {$name}: I-I... well, it's really weird!
@@ -336,10 +336,10 @@ These should've been in the trash, *yesterday*!
 Fleet Admiral Sakazuki walks straight to the shelf of dying plants. He picks one up, examines it carefully. Places it down. Picks up another one. And then another.
 {$sakazuki}: I'll take everything.
 ...
-Everything? #Everything?!#
+Everything? [shake]Everything?![/shake]
 {$name}: Sir! You can't!
 {$sakazuki}: <pause> Why not?
-{$name}: Why not? #Why not?# It's clearly a rip-off! These plants are dying.
+{$name}: Why not? [shake]Why not?[/shake] It's clearly a rip-off! These plants are dying.
 {$sakazuki}: They are.
 {$name}: Wait... wait a minute... if you already know they are *dying*, why do you still insist on buying them? They are priced way too high and–
 {$sakazuki}: They are dying.
@@ -348,7 +348,7 @@ Everything? #Everything?!#
 The wind gets knocked out of you. You watch, a bit dumbfounded as Fleet Admiral Sakazuki gives the wilted plants a look of determination. He makes room in his cart and starts placing them inside. There's no talking him out of it.
 You take a deep breath, watching him load plant after plant into the cart. Those plants are really way too overpriced...
 -> You should at least help him!
-    <<set sd2_points +=1>>
+    <<set $sd2_points +=1>>
     {$name}: Sir!
     {$sakazuki}: ... You're not stopping me.
     {$name}: I'm not planning to, Sir. I know you won't stop once you've decided on something. With that said...
@@ -359,8 +359,8 @@ You take a deep breath, watching him load plant after plant into the cart. Those
     {$name}: That's not why I'm here. He... Fleet Admiral Sakazuki, wants to take these off your hands.
     Employee: Oh... well, then...
     {$name}: Yes, that's why...
-    -> Please consider a discount, given the condition of the plants! <<
-        <<set sd2_points +=1>>
+    -> Please consider a discount, given the condition of the plants!
+        <<set $sd2_points +=1>>
         Employee: Well... that's...
         {$name}: Please! Think about it for a moment! You will just be throwing them away anyway! We will at least bring them home with us and you get something out of it!
         Employee: Well... I suppose... you have a point...
@@ -379,7 +379,7 @@ You take a deep breath, watching him load plant after plant into the cart. Those
         {$name}: Nope! But I want to help you. You were really worried about the plants, right? This is the least I could do.
         {$sakazuki}: <pause> Thank you, I appreciate it.
     -> Let me pay for them all!
-        <<set sd2_points -=1>>
+        <<set $sd2_points -=1>>
         Without thinking, you grab the Fleet Admiral by his wrist, tugging him toward an employee. He is surprised enough to let you do that.
         {$sakazuki}: {$name}! What do you think you are doing?!
         {$name}: Sir, please let me help! I feel bad!
@@ -390,7 +390,7 @@ You take a deep breath, watching him load plant after plant into the cart. Those
     You stand back and do nothing. Let him do whatever he wants. It's none of your business.
     Fleet Admiral Sakazuki finishes inspecting all the venus fly traps and places them in his cart, seemingly unconcerned that he has just wasted a huge amount of money.
 -> He's being unbelievably stupid! You should at least tell him he's being stupid!
-    <<set sd2_points -=1>>
+    <<set $sd2_points -=1>>
     {$name}: Do you really not care?
     {$sakazuki}: <pause> Care? About what?
     {$name}: About wasting money! You're being deliberately obtuse! It's sad that these guys are dying, but no one can save them! You are fighting a futile battle!
@@ -398,7 +398,7 @@ You take a deep breath, watching him load plant after plant into the cart. Those
     {$name}:... Well... yeah!
     {$sakazuki}: What if there is a one percent chance of winning? Do you still think it's a fight worth fighting for?
     -> One percent? Forget it! That battle is done for!
-        <<set sd2_points -=1>>
+        <<set $sd2_points -=1>>
         {$sakazuki}: I hesitate to imagine you on the battlefield, {$name}.
         {$name}: Wait, what does that mean, sir?
         {$sakazuki}: You tell me. A battle with one percent odds of winning isn't worth fighting for. If pirates attack, and they are overwhelmingly strong, that battle is done for.
@@ -408,7 +408,7 @@ You take a deep breath, watching him load plant after plant into the cart. Those
         {$sakazuki}: *Enough.*
         Fleet Admiral Sakazuki says nothing else. You stand back and watch as the Fleet Admiral finishes inspecting all the venus fly traps and places them in his cart.
     -> Well... one percent is kinda awful... but I guess if one of these plants can be saved... then... yeah...? Still awful odds though.
-        <<set sd2_points +=1>>
+        <<set $sd2_points +=1>>
         {$sakazuki}: <pause> Yes. The odds aren't high.
         {$sakazuki}: But if only one plant survives, I'll take it. It's worth the sacrifice.
         {$name}: Well, that's...
@@ -437,9 +437,9 @@ There's a tiny white blur rushing past you, a furry *something* with a long leas
 You feel a yank around your ankles.
 You look down. Too late!
 The furry animal makes yet another mad dash, the sharp tug of the leash knocks you on your butt.
-{$name}: #OUCH!#
+{$name}: [shake]OUCH![/shake]
 Fleet Admiral Sakazuki bends down to pick up the struggling, wiggling furball while you sit up, glaring at the culprit.
-{$name}: Ouch. That #hurt.#
+{$name}: Ouch. That [shake]hurt.[/shake]
 {$sakazuki}: You're a Marine. Deal with it.
 Despite his words, Fleet Admiral Sakazuki offers you a hand. He appears distracted as he pulls you up, staring at his caught prize.
 {$name}: What is that? I couldn't see it clearly.
@@ -454,7 +454,7 @@ Fleet Admiral Sakazuki pats the dog once. He adjusts his grip so the wiggling fu
 {$name}: We haven't finished your shopping yet... what... what should we do with the furball, Sir?
 {$sakazuki}: You are a Marine, aren't you? This is a crisis. What do *you* think we should do?
 -> We have to find its owner, Sir! They must be so worried!
-    <<set sd2_points +=1>>
+    <<set $sd2_points +=1>>
     {$sakazuki}: Shouldn't getting the shopping done come first?
     {$name}: Fleet Admiral...
     {$name}: Respectfully, Sir, I'll help get whatever you need later, but right now, the owner must be worried. It won't sit well with my conscience to do nothing about it.
@@ -470,7 +470,7 @@ Fleet Admiral Sakazuki pats the dog once. He adjusts his grip so the wiggling fu
     {$sakazuki}: You have to thank the person next to me. Here. Put a dog tag with an address on it next time.
     Without waiting for further words, Fleet Admiral Sakazuki turns around and walks away. You wave to the old lady and follow quickly after.
 -> We should give it to the security guard at the door and finish your shopping.
-    <<set sd2_points +=2>>
+    <<set $sd2_points +=2>>
     {$sakazuki}: And what's your reasoning behind it?
     {$name}: It'd be more efficient, Sir. We don't actually know how long finding the owner is going to take, and they most likely would seek help from an employee first. This way everything is resolved and there's no compromise on either task.
     {$sakazuki}: Hmm. Exactly like how I'd have done it. Excellent strategy, {$name}.
@@ -480,7 +480,7 @@ Fleet Admiral Sakazuki pats the dog once. He adjusts his grip so the wiggling fu
     You, like many others, have heard horror stories about the kind of things Fleet Admiral Sakazuki can do. Yet surprisingly, he's gentle with the animal in his hand. The dog appears content once it stops trying to run off, begging him for extra pets which he begrudgingly gives.
     He walks to the security guard to explain the situation and hands over the furball along with the leash.
 -> We should definitely just leave the dog here! Someone's bound to find it eventually!
-    <<set sd2_points -=1>>
+    <<set $sd2_points -=1>>
     {$sakazuki}: You think leaving it behind will solve the issue?
     {$name}: Well, yeah... why should we care about some random dog?
     {$name}: Plus, it tripped me! Mangy mutt! Hmph!
@@ -538,7 +538,7 @@ The question slips out before you can hold it back.
     {$name}: Your peers? You mean like the other Admirals?
     {$sakazuki}: And many more, a lot of them are dead, but a few are now Vice Admirals.
     -> D-Dead ones?
-        <<set sd2_points -=1>>
+        <<set $sd2_points -=1>>
         {$sakazuki}: Yes, dead ones.
         {$name}: A lot of them?
         {$sakazuki}: Yes.
@@ -561,7 +561,7 @@ The question slips out before you can hold it back.
         {$sakazuki}: Perhaps another time. Today we have more things to get to.
         <<jump date_sakazuki_2_Balcony>>
     -> I think it's cool you watch over them. You're right. They are the future.
-        <<set sd2_points +=1>>
+        <<set $sd2_points +=1>>
         Fleet Admiral Sakazuki nods curtly at your words. He watches the training for a long moment. Just when you think he is content to just stand there and observe...
         {$sakazuki}: ... I worry about what is to come. About the Navy and its future.
         {$sakazuki}: What a time to be the Fleet Admiral.
@@ -580,7 +580,7 @@ The question slips out before you can hold it back.
     {$sakazuki}: Do you find me too cruel?
     {$name}: You want my honest opinion? Well...
     -> There's nothing wrong with a promotion as motivation for improvement!
-        <<set sd2_points -=1>>
+        <<set $sd2_points -=1>>
         That was the wrong thing to say.
         Fleet Admiral Sakazuki gives you a sharp glare.
         {$sakazuki}: There's no place in the Marines for people who seek glory over justice.
@@ -596,7 +596,7 @@ The question slips out before you can hold it back.
         {$sakazuki}: Hm. Let's go. I have more things to get to.
         <<jump date_sakazuki_2_Balcony>>
     -> I guess you have a point... being a Marine is hard work...
-        <<set sd2_points +=1>>
+        <<set $sd2_points +=1>>
         {$sakazuki}: It is. And the standards I put out for them are high, I'm well aware. But I'd rather get people with true passion, than a bunch of weaklings without conviction.
         {$name}: I admire that. I know your... intensity scares a lot of other people though.
         {$sakazuki}: <pause>... I know.
@@ -609,7 +609,7 @@ The question slips out before you can hold it back.
     {$sakazuki}: It's been a while since I visited any of the Blues. The reports indicate that the training there is sufficient. I did read about your performance though. It's acceptable.
     {$name}: Thank you. That means a lot coming from you. Um...
     -> ...Maybe you can watch me train sometime? Like a date?
-        <<set sd2_points -=1>>
+        <<set $sd2_points -=1>>
         {$sakazuki}: ... I can give you pointers for your training, but it's not a date.
         {$name}: Well, can we arrange it like a date? I can wear my best clothes...?
         {$sakazuki}: No.
@@ -618,7 +618,7 @@ The question slips out before you can hold it back.
         {$sakazuki}: If that's all, we need to go. I have more business to handle.
         <<jump date_sakazuki_2_Balcony>>
     -> ...I don't see a lot of high ranking Marines train though. Do you still do your drills?
-        <<set sd2_points +=1>>
+        <<set $sd2_points +=1>>
         {$sakazuki}: <pause>...
         {$sakazuki}: Not these particular sets of drills, but I still train to keep my skills sharp.
         {$name}: Oh... but you are already the Fleet Admiral. Doesn't that mean you are really strong?
@@ -646,7 +646,7 @@ You follow Fleet Admiral Sakazuki's lead, looking at Headquarters from above. It
 {$sakazuki}: It is rather impressive, isn't it? It's a good place when you need to think. The residential area is over there... And we are standing on where the best Marines are trained and prepared.
 {$name}: Huh...
 -> I don't get it. It's a bunch of buildings. What's so interesting?
-    <<set sd2_points -=1>>
+    <<set $sd2_points -=1>>
     {$sakazuki}:...
     {$sakazuki}: It's not just the buildings. It's the people. We are the very best the Navy has to offer. The last bastion.
     {$name}: I... don't get what you're talking about at all.
@@ -663,7 +663,7 @@ You follow Fleet Admiral Sakazuki's lead, looking at Headquarters from above. It
     {$sakazuki}: It's getting late and we have one last errand to run.
     <<jump date_sakazuki_2_Post_Office>>
 -> I can see why it's a nice place to think.
-    <<set sd2_points +=1>>
+    <<set $sd2_points +=1>>
     {$name}: Do you mind if I come here from time to time to think?
     {$sakazuki}: I don't see why not. I don't own New Marineford.
     {$name}: ...
@@ -704,7 +704,7 @@ Arriving at the glassdoor of the post office, you hesitate. You aren't too sure 
     {$sakazuki}: It's done now. Thank you for your company.
     => Go to the corresponding Ending depends on the total points //HOW DO??
 -> If you don't mind my presence, sir.
-    <<set sd2_points +=1>>
+    <<set $sd2_points +=1>>
     {$sakazuki}: ... No. Come.
     You hesitate only for a moment before following Fleet Admiral Sakazuki inside.
     {$name}: What kind of paperwork do you need to send, Sir?

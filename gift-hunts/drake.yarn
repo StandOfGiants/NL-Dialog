@@ -62,7 +62,7 @@ Shopkeep: It's outdated, but that doesn't mean it's bad. Never going to understa
     <<jump Drake_Gift_Hunt_survivalguide>>
 -> I need some time to think...
     You head back out and go to scope out the toy store.
-    <<jump Drake_Gift_Hunt_toystore>>
+    <<jump Drake_Gift_Hunt_d_toystore>>
 ===
 
 title: Drake_Gift_Hunt_survivalguide

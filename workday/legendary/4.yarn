@@ -29,13 +29,13 @@ Random Marine 8: Or it could be fiery. Possibly both.
 Tsuru: Now, then! Please choose your groups!
 {$name}: (Decisions, decisions... Alright, which group should I join first?)
 -> I'll join Madam Tsuru!
-    <<jump workday_legendary_4_tsuru_clean>>
+    <<jump workday_legendary_4_tsuru_cleaning>>
 -> I'll join Vice Admiral Rosinante!
     <<jump workday_legendary_4_rosi_cook>>
 -> I'll join the former Fleet Admiral, Sengoku!
-    <<jump workday_legendary_4_sengoku_pantry>>
+    <<jump workday_legendary_4_Sengoku_pantry>>
 -> I'll join Garp!
-    <<jump workday_legendary_4_garp_service>>
+    <<jump workday_legendary_4_Garp_service>>
 ===
 
 title: workday_legendary_4_Sengoku_pantry
@@ -94,7 +94,7 @@ location: mess hall
     -> Little bit rude...
         Sengoku: Tch, we won't pass along the message.
     -> Can we send it back?
-        <<set lwd4S_points +=1>>
+        <<set $lwd4S_points +=1>>
         Sengoku: And deprive the people of the tastes of a life they provide to one who doesn't appreciate it?
         {$name}: We could add a little note. Something like: “Please take the price of this out of the taxes for next year.”
         Sengoku: Hah!
@@ -102,7 +102,7 @@ location: mess hall
         {$name}: You're retired, you can do whatever you want.
         Sengoku: If only...
     -> Nice of him to donate something.
-        <<set lwd4S_points -=1>>
+        <<set $lwd4S_points -=1>>
         Sengoku: Could have donated more useful food in three times the quantity for the same price.
 You continue working through the boxes and passing the contents to Sengoku to shelve until at last the boxes are empty and the shelves are full of foodstuffs.
 Sengoku: Perfect timing. Thank you {$name}. Let's take a brief break and see how the others are doing.
@@ -142,7 +142,7 @@ Inspector Sengoku sighs and bends down to start poking through boxes, handing yo
     {$name}: Really?
     Sengoku: I have tried many types of crackers.
     -> Taste is subjective, sir. Hand me the crackers.
-        <<set lwd4S_points +=1>>
+        <<set $lwd4S_points +=1>>
         Sengoku: ...These people have suffered enough.
         {$name}: The crackers, sir.
         Sengoku: Alright, they would be fine in soup, I guess.
@@ -175,7 +175,7 @@ Inspector Sengoku sighs and bends down to start poking through boxes, handing yo
     Sengoku: I don't think alphabetically is going to give us the best results. Let's do something else instead.
     LOOP to Shelving Choices //HOW DO??
 -> Who needs order? Chaos time!
-    <<set lwd4S_points -=1>>
+    <<set $lwd4S_points -=1>>
     You begin just placing things on the shelves willy-nilly, a thrill of wildness streaking through you.
     Sengoku: Take this seriously, {$name}.
     He looks annoyed. Whoops. Guess you'd better take a path more travelled, crazy wanderer.
@@ -201,10 +201,10 @@ Rosinante: I got distracted by the recipe book and forgot about that.
 Rosinante: I suppose you're right...
 Rosinante: So, what do you think about the soup then?
 -> It's fixable!
-    <<set lwd4R_points +=1>>
+    <<set $lwd4R_points +=1>>
     <<jump workday_legendary_4_Fix_Soup>>
 -> It's perfect!
-    <<set lwd4R_points -=1>>
+    <<set $lwd4R_points -=1>>
     <<jump workday_legendary_4_Perfect_Soup>>
 ===
 
@@ -241,9 +241,11 @@ location: mess hall
 Rosinante: Great, thank you for the help.
 {$name}: First, let's taste it!
 You each pick up a spoon and dip it in the soup. You blow on it to cool it down.
-{$name}: Bleah, it's awful. <<set lwd4R_points -=1>>
+{$name}: Bleah, it's awful.
+    <<set $lwd4R_points -=1>>
     <<jump workday_legendary_4_Bad_Soup>>
-{$name}: This is good! <<set lwd4R_points +=1>>
+{$name}: This is good!
+    <<set $lwd4R_points +=1>>
     <<jump workday_legendary_4_Good_Soup>>
 ===
 
@@ -295,10 +297,10 @@ He's taking it so seriously that it seems a bit silly, but you're not about to l
 -> Alright, you can do it then. I'll taste test when it's ready.
     <<jump workday_legendary_4_Rosi_Veggies>>
 -> How about I do the cutting this time...?
-    <<set lwd4R_points -=1>>
+    <<set $lwd4R_points -=1>>
     <<jump workday_legendary_4_Bad_Veggies>>
 -> Then let's get to it!
-    <<set lwd4R_points +=1>>
+    <<set $lwd4R_points +=1>>
     <<jump workday_legendary_4_Together_Veggies>>
 ===
 
@@ -370,9 +372,9 @@ With long strides, he leads your group over to the main building. After going th
 Garp: Alright! Looks like we have a lot to do. Divide yourselves in two groups and get going!
 {$name}: So, where should I start?
 -> I guess I'll help with the bigger furniture.
-    <<jump workday_legendary_4_garp_furniture>>
+    <<jump workday_legendary_4_Garp_furniture>>
 -> I'll work on getting the serving space set up.
-    <<jump workday_legendary_4_garp_space>>
+    <<jump workday_legendary_4_Garp_space>>
 ===
 
 title: workday_legendary_4_Garp_furniture
@@ -384,7 +386,7 @@ Garp: Bwahaha! Hey, {$name}! Wanna grab that bench? I've got this table!
 {$name}: (Woah! Look at him; he makes handling that table look easy!)
 {$name}: I'll just...
 -> Grab the bench.
-    <<set lwd4G_points +=1>>
+    <<set $lwd4G_points +=1>>
     {$name}: Yeah, let's stick to what I know I can do.
     Garp: Alright, there we go! {$name}, just bring that right over here!
     {$name}: Got it!
@@ -404,9 +406,9 @@ Garp: Bwahaha! Hey, {$name}! Wanna grab that bench? I've got this table!
     Garp: You're pretty strong, {$name}, but you're not there yet! Maybe you need some more training!
     {$name}: Haha, I guess so. Thanks for the help.
     Garp: Don't mention it!
-    <<jump workday_legendary_4_morning_done>>
+    <<jump workday_legendary_4_Morning_done>>
 -> Try grabbing a table myself.
-    <<set lwd4G_points -=1>>
+    <<set $lwd4G_points -=1>>
     {$name}: I bet they're lighter than they look if he can whip it around like that.
     {$name}: Let's see... c'mon... um... uh oh! It's slipping!
     {$name}: AH!
@@ -423,7 +425,7 @@ Garp: Bwahaha! Hey, {$name}! Wanna grab that bench? I've got this table!
     Garp: Just... maybe stick to furniture you can safely lift, yeah?
     {$name}: ...Yeah. And... thanks.
     Garp: Bwahahaha! Don't mention it!
-    <<jump workday_legendary_4_morning_done>>
+    <<jump workday_legendary_4_Morning_done>>
 ===
 
 title: workday_legendary_4_Garp_space
@@ -434,7 +436,7 @@ location: mess hall
 Garp: Ah, {$name}! Here you are. I found a big container of wooden forks. There's probably some more around here.
 {$name}: Oh, perfect! Alright...
 -> Let's hunt for the rest of the cutlery!
-    <<set lwd4G_points +=1>>
+    <<set $lwd4G_points +=1>>
     Garp: Bwahaha! Let's go!
     {$name}: ...
     {$name}: Hmmmm... It's not here.
@@ -451,7 +453,7 @@ Garp: Ah, {$name}! Here you are. I found a big container of wooden forks. There'
     Garp: Well, these look pretty old and are well kept. Maybe they're here for sentimentality, or because they didn't want to get rid of something their community could need.
     {$name}: ...Yeah.
 -> Would you mind looking for the rest? I'd like to help set up the other serving items.
-    <<set lwd4G_points -=1>>
+    <<set $lwd4G_points -=1>>
     Garp: Tch, fine.
     {$name}: ...And there he goes.
     {$name}: Hm... This serving stuff doesn't look like it's been used for a long while. I wonder why?
@@ -465,7 +467,7 @@ Garp: Ah, {$name}! Here you are. I found a big container of wooden forks. There'
     {$name}: How could anyone who calls themself a king do that?
     Garp: Ha! That's what I ask myself every time. Still, the work we're doing will help these people and give this old hall some good use.
     {$name}: ...Yeah.
-<<jump workday_legendary_4_morning_done>>
+<<jump workday_legendary_4_Morning_done>>
 ===
 
 title: workday_legendary_4_Morning_done
@@ -479,13 +481,13 @@ Random Marine: Instructor Garp, I come bearing instructions from Vice Admiral Ts
 Garp: WHAT?! Ughhhhhh...
 {$name}: ...
 -> (Cheer him up.)
-    <<set lwd4G_points -=1>>
+    <<set $lwd4G_points -=1>>
     {$name}: Hey, it's OK...
     {$name}: I bet the time will pass quickly.
     {$name}: (...He's giving me a scathing look. OK. We'll just leave it at that.)
     <<jump workday_legendary_4_mid_Day_Break_Switch>>
 -> (Grimace internally.)
-    <<set lwd4G_points +=1>>
+    <<set $lwd4G_points +=1>>
     {$name}: (You and me both.)
     {$name}: Guuuurgle
     {$name}: (Great. Now MY stomach's acting up.)
@@ -514,7 +516,7 @@ Or maybe they're paralyzed with fear.
     Tsuru: This is nice of you, {$name}, but I'll need your assistance all around.
     Tsuru: Don't try to excuse laziness in others.
     -> Then we're going to have to *force* the volunteers!!
-        <<set lwd4T_points +=1>>
+        <<set $lwd4T_points +=1>>
         Tsuru's expression goes blank...then, she chuckles.
         Tsuru: It is the only way to go sometimes, isn't it?
         Tsuru: We're in the Navy, after all.
@@ -527,7 +529,7 @@ Or maybe they're paralyzed with fear.
     {$name}:...
     {$name}: They may act like they don't care, but they really seem to value her opinion a lot...
 -> Pick two people at random.
-    <<set lwd4T_points +=1>>
+    <<set $lwd4T_points +=1>>
     {$name}: Here, you two!
     You point at two of the officers. That will have to do.
     Tsuru: A quick resolution. Well done.
@@ -535,16 +537,16 @@ Or maybe they're paralyzed with fear.
     -> You're right, I'll do better!
         Tsuru: Don't worry about it, {$name}.
     -> We don't have too much time, though, do we?
-        <<set lwd4T_points +=1>>
+        <<set $lwd4T_points +=1>>
         Tsuru: That is very true...
         Tsuru: Well, then. We'll proceed this way.
 -> Get the chore boys to do it.
-    <<set lwd4T_points -=1>>
+    <<set $lwd4T_points -=1>>
     Tsuru: Excuse me?
     Tsuru: We are here to help the people, {$name}.
     Tsuru: If you think these are chores, you are mistaken.
     -> I'm just saying, if nobody wants to do it...
-        <<set lwd4T_points -=2>>
+        <<set $lwd4T_points -=2>>
         Tsuru: Then it's your mentality that has to change!
         Tsuru: Do we need to go through the basics again?
         That didn't go too well...
@@ -582,13 +584,13 @@ Tsuru: It doesn't look like anybody has been using this soup kitchen...
     Tsuru: Not outside of the last years' volunteering, no.
     Tsuru: Which is not to say it isn't a nice place... A calm corner of the seas.
 -> Ask about past experiences in this soup kitchen.
-    <<set lwd4T_points +=1>>
+    <<set $lwd4T_points +=1>>
     {$name}: Is this something you do very often?
     Tsuru: Under Sengoku, we always did.
     Tsuru: And well... Under Sakazuki, we do try to, but it isn't a high priority anymore.
     Tsuru: For Sengoku, it was very important not to lose touch with civilians... With the real impact of the decisions we make.
 -> Remark on the lack of maintenance.
-    <<set lwd4T_points -=1>>
+    <<set $lwd4T_points -=1>>
     {$name}: It doesn't look like whoever is in charge cares much about cleaning the soup kitchen, that's for sure.
     Tsuru: ...
     Tsuru: You're not wrong. But let's try not to point it out in front of our men... Or civilians, for that matter.
@@ -597,11 +599,11 @@ And the cutlery seems to be coated with dust.
 Tsuru: Hmm.
 {$name}: It seems like...
 -> ...more than enough to start!
-    <<set lwd4T_points -=1>>
+    <<set $lwd4T_points -=1>>
     Tsuru: You might be too optimistic, {$name}. This kitchen is in no condition to cook.
     Tsuru: Call your men. I'll take the floors, and you do the dishes, fast.
 -> ...more work than we expected!
-    <<set lwd4T_points +=1>>
+    <<set $lwd4T_points +=1>>
     Tsuru: Exactly what I was thinking.
     Tsuru: Get ahold of a couple of officers, {$name}.
 <<jump workday_legendary_4_dishes_a>>
@@ -613,13 +615,13 @@ location: mess hall
 
 Tsuru: Hm. Supervising sounds like an excuse to play hooky.
 -> You get nervous.
-    <<set lwd4T_points -=1>>
+    <<set $lwd4T_points -=1>>
     {$name}: N-no! I'd never make excuses in a matter as serious as this—
     Tsuru:...
     Tsuru: Don't make me actually suspicious by reacting like that.
     Tsuru: After all, I was going to say that I trust you to do a good job, {$name}. Don't disappoint me.
 -> You stay calm.
-    <<set lwd4T_points +=1>>
+    <<set $lwd4T_points +=1>>
     Tsuru: However, I trust you with this task.
     Tsuru: Thank you for volunteering.
 Motioning to the two officers that offered to help, you enter the kitchen.
@@ -641,7 +643,7 @@ There seems to be quite a lot to do before the cooking can start.
     -> Yes, that should work!
         Marine B: Huh... OK... Is this all we need?
         -> Yes, that's it!
-            <<jump workday_legendary_4_dishwashing_neutral>>
+            <<jump workday_legendary_4_dishes_neutral>>
         -> No, let's keep on looking.
             <<jump workday_legendary_4_dishes_a>>
     -> That's not what we want!
@@ -739,13 +741,13 @@ The door swings open. Lady Tsuru is here, and she doesn't look impressed.
 Tsuru: {$name}, why aren't your men working?
 Tsuru: Without clean premises, we can't even start cooking! Get to work immediately!
 -> No, I swear, we were working just a moment ago.
-    <<set lwd4T_points -=1>>
+    <<set $lwd4T_points -=1>>
     Tsuru: Are you aware of what that sounds like? This job is top priority.
     {$name}: But... With your Devil Fruit, can't you do that yourself?
     Tsuru: I can. And in fact, it seems like I will have to do exactly that.
     Tsuru: I wanted to give these officers some sense of discipline... But, obviously, you were not the best example.
 -> Oops... I apologize.
-    <<set lwd4T_points +=1>>
+    <<set $lwd4T_points +=1>>
     Tsuru: At least, you know your mistakes. I will need to give you a helping hand before our midday break.
 Oh, that didn't go too well...
 <<jump workday_legendary_4_mid_Day_Break_Switch>>>>
@@ -785,7 +787,7 @@ Wow, it seems like everyone is having a bit of a time. Where should you lend aid
 -> Vice Admiral Tsuru may need the extra moral support with cleaning...
     <<jump workday_legendary_4_tsuru_afternoon>>
 -> Inspector Garp will need someone to keep an eye on him once the food starts being served.
-    <<jump workday_legendary_4_garp_afternoon>>
+    <<jump workday_legendary_4_Garp_afternoon>>
 ===
 
 title: workday_legendary_4_Sengoku_Afternoon
@@ -827,7 +829,7 @@ Sengoku: I mean that the Navy should be taking care of its own. Did you know tha
 {$name}: This seems to be really bothering you.
 Sengoku: Yes.
 -> Is there something you can do about it?
-    <<set lwd4S_points +=1>>
+    <<set $lwd4S_points +=1>>
     Sengoku: I... I am not sure. It's not in my purview, so to say.
     {$name}: Well, whose is it?
     Sengoku: Technically, no one's. Kong is the one who oversees the budget, ultimately.
@@ -843,7 +845,7 @@ Sengoku: Yes.
     Sengoku: Yes. Come, let's finish up and reconvene with the others.
     <<jump workday_legendary_4_Outro>>
 -> You could probably find that guy and give him more food.
-    <<set lwd4S_points -=1>>
+    <<set $lwd4S_points -=1>>
     Sengoku: And how long will that last him? A week? A month?
     Sengoku: And what about others just like him?
     {$name}: Um.
@@ -874,10 +876,10 @@ Rosinante: We need to put the soup in the bowls, so that Vice Admiral Garp can h
 {$name}: Sounds simple enough.
 Rosinante: I'll go bring out the bowls from the back.
 -> Wait, you shouldn't go on your own.
-    <<set lwd4R_points -=1>>
+    <<set $lwd4R_points -=1>>
     <<jump workday_legendary_4_Offend_Rosi>>
 -> I'll come help!
-    <<set lwd4R_points +=1>>
+    <<set $lwd4R_points +=1>>
     <<jump workday_legendary_4_Help_Rosi>>
 ===
 
@@ -924,10 +926,10 @@ location: mess hall
 
 Rosinante: I'll get the broom.
 -> I'll pick out the larger shards until then.
-    <<set lwd4R_points +=1>>
+    <<set $lwd4R_points +=1>>
     <<jump workday_legendary_4_Together_Clean>>
 -> Yeah, you caused it, so you should clean it up.
-    <<set lwd4R_points -=1>>
+    <<set $lwd4R_points -=1>>
     <<jump workday_legendary_4_Rosi_Clean>>
 ===
 
@@ -944,10 +946,10 @@ Rosinante: Let's bring in fewer bowls next time. What do you say?
 {$name}: Let's do this... We've already taken so long.
 Rosinante: How should we go about it?
 -> You should pour the soup, and I'll bring them over to the window so we can avoid other disasters.
-    <<set lwd4R_points -=1>>
+    <<set $lwd4R_points -=1>>
     <<jump workday_legendary_4_Rosi_Pour>>
 -> Someone needs to get the soup ready. The other one will set it by the window.
-    <<set lwd4R_points +=1>>
+    <<set $lwd4R_points +=1>>
     <<jump workday_legendary_4_Player_Pour>>
 ===
 
@@ -967,10 +969,10 @@ Rosinante: I think you need to learn to talk to your superiors, {$name}.
 {$name}: We've wasted enough time already.
 Rosinante: Fine. Do you have anything in mind?
 -> You should pour the soup. I'll bring them over to the window so we can avoid other disasters.
-    <<set lwd4R_points -=1>>
+    <<set $lwd4R_points -=1>>
     <<jump workday_legendary_4_Rosi_Pour>>
 -> Someone needs to get the soup ready. The other one will set it by the window.
-    <<set lwd4R_points +=1>>
+    <<set $lwd4R_points +=1>>
     <<jump workday_legendary_4_Player_Pour>>
 ===
 
@@ -1029,12 +1031,12 @@ Tsuru: So, what do you think, {$name}?
     To your surprise, Tsuru nods solemnly.
     Tsuru: Leave this to me.
 -> I'll get back to work!
-    <<set lwd4T_points +=1>>
+    <<set $lwd4T_points +=1>>
     Tsuru: Always full of energy, I see.
     Tsuru: I was thinking of something else, actually.
     Tsuru: Leave the cleaning to me this time.
 -> Don't worry, the other marines will take care of it!
-    <<set lwd4T_points -=1>>
+    <<set $lwd4T_points -=1>>
     Tsuru: So that was your plan all along? Sit here and do nothing?
     Tsuru: Well. Anyway.
     Tsuru: It might not be that bad of an idea, after all... But first...
@@ -1053,7 +1055,7 @@ Tsuru: I consider that our work here has been done.
     Tsuru: Looking at them, and seeing how the people trust us...
     Tsuru: I wish our work was always this simple.
 -> Doing good things really brings a group together!
-    <<set lwd4T_points +=1>>
+    <<set $lwd4T_points +=1>>
     Tsuru: Yes. That is very important.
     Tsuru: Ever since Sengoku-san half-retired, these kinds of missions have become a rarity.
 -> I'm not sure that we can trust the rest of the work to be done... <set lwd4T_points -=1>>
@@ -1063,28 +1065,28 @@ Tsuru: And Garp... Well, he doesn't show it, but it's important for him to do so
 Tsuru: We used to host these events quite often... It has always been very important for us, especially the previous generation, to meet the civilians once in a while.
 Tsuru: Can you imagine why?
 -> To get away from the office.
-    <<set lwd4T_points -=1>>
+    <<set $lwd4T_points -=1>>
     Tsuru: {$name}...
 -> To not forget the people we are supposed to help.
-    <<set lwd4T_points +=1>>
+    <<set $lwd4T_points +=1>>
     Tsuru: That is a good reason.
 -> To become more humble.
-    <<set lwd4T_points +=1>>
+    <<set $lwd4T_points +=1>>
     Tsuru: Exactly.
 Tsuru: Spending too much time at Marineford, only in your role as a Marine and close to Mary Geoise... Sometimes, it makes you forget important things.
 -> Huh. The times really have really changed, haven't they?
-    <<set lwd4T_points -=1>>
+    <<set $lwd4T_points -=1>>
     Tsuru: What are you implying?
 -> But what point is there to it if not all Marines treat civilians kindly?
     Tsuru: I'd like to have a word with any corrupt officers.
     Tsuru: I'd hang them out to dry in no time!
 -> I wish we got to participate in these kinds of events more often!
-    <<set lwd4T_points +=1>>
+    <<set $lwd4T_points +=1>>
     Tsuru: It certainly helps build character in a different way.
 Tsuru: It's true, though. These events take place less often. Fleet Admiral's Sakazuki priorities are different now.
 Tsuru: But... I may be able to talk to him about budgeting some more for them.
 -> That guy? I think you better forget it.
-    <<set lwd4T_points -=1>>
+    <<set $lwd4T_points -=1>>
     Tsuru: You do?
     Tsuru: I think it would be better for you not to make assumptions, {$name}.
 -> Um... Do you think that would work?
@@ -1093,13 +1095,13 @@ Tsuru: But... I may be able to talk to him about budgeting some more for them.
     Tsuru: I think it's worth a try.
 Tsuru: Fleet Admiral Sakazuki used to be my pupil. Just like Kuzan was Garp's, and Borsalino was Sengoku's.
 -> I... Can sort of see it.
-    <<set lwd4T_points +=1>>
+    <<set $lwd4T_points +=1>>
     Tsuru: I'll take that as a compliment.
 -> I would've never guessed it!
     Tsuru: Be a bit more observant, will you?
 Tsuru: However... We belong to another generation. Nowadays, the children I helped raise, like my granddaughter Kujaku and Drake... They are all idealists.
 -> X Drake! What an incredible story!
-    <<set lwd4T_points +=1>>
+    <<set $lwd4T_points +=1>>
     Tsuru: I will always remember the day when we rescued him from that North Blue island... Quite a close call for our good friend Rosinante, too.
     Tsuru: It's good that everything turned out well, isn't it?
 -> I don't understand those people in SWORD!
@@ -1107,7 +1109,7 @@ Tsuru: However... We belong to another generation. Nowadays, the children I help
     Tsuru: Well, {$name}, the problem is exactly the job, as you would say...
     Tsuru: But they don't want approval, of course. They want to make a statement, and for that I am proud of them.
 -> Aren't you worried about them?
-    <<set lwd4T_points -=1>>
+    <<set $lwd4T_points -=1>>
     Tsuru frowns, taking a sip of her tea. Perhaps this was the wrong question to ask.
     Tsuru: There are many dangerous situations in our line of work, SWORD or not.
     But, of course, you know that it's not the same to have the complete backing of the Navy... or not.
@@ -1117,7 +1119,7 @@ Tsuru: However... We belong to another generation. Nowadays, the children I help
     Tsuru: Perhaps he, too, would have been in SWORD had he been a Marine nowadays. Or perhaps not.
 Tsuru: What about you, {$name}? You have been with us for a few months now. Do you like it here?
 -> I like it, but I want to change everything!
-    <<set lwd4T_points +=1>>
+    <<set $lwd4T_points +=1>>
     Tsuru: You know... I think you may get along well with Kujaku.
 -> I feel comfortable here!
     Tsuru: I'm glad.
@@ -1147,11 +1149,11 @@ Garp: Bwahaha! I'll serve the soup!
     {$name}: ...Oh.
     {$name}: I'll just... do utensils.
 -> Hide in the back.
-    <<set lwd4G_points -=1>>
+    <<set $lwd4G_points -=1>>
     Garp: If you didn't want to serve food, then why did you come over here?!
     Garp: Just go do utensils!
 -> Hand people utensils!
-    <<set lwd4G_points +=1>>
+    <<set $lwd4G_points +=1>>
     Garp: Good thinking!
 {$name}: ...
 {$name}: (OK, I've got all the utensils lined up. And just in time, too!)
@@ -1185,7 +1187,7 @@ Garp: That's the spirit! You worked hard, so get your reward.
     {$name}: ...Yeah. I won't.
     <<jump workday_legendary_4_Outro>>
 -> (Keep Garp company.)
-    <<set lwd4G_points +=1>>
+    <<set $lwd4G_points +=1>>
     Garp: You're not gonna grab a seat?
     {$name}: Nah, it's too noisy out there for me. I'd rather hang out with you.
     Garp: Hah! Well, suit yourself.
