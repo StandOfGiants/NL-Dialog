@@ -1,0 +1,217 @@
+title: Helmepponye_intro
+location: ballroom
+---
+
+Wow, it’s the end of the year already and HQ is throwing a grand old party! Just look at those decorations! Everyone is dressed to the nines, too! You are as well - you look good, if you don’t say so yourself. The best part is that your outfit seems to have a pocket that could just about fit anything and not ruin your look. Perfect for carrying around that gift you got for -insert character chosen for gift hunt-! Vegapunk really does make some incredible things. 
+You glance at the clock, remembering your goal from a whole year ago. When it chimes midnight, you hope you have someone interested in kissing those lips of yours. Or holding your hand. Or liking you at all, really.
+Well, no way to go but forward. Though it couldn’t hurt to say hello to some familiar faces at the party, could it?
+-Pick character- //HOW DO??
+You wander through the party, picking up a drink and greeting those you’ve come to know over the past year as you keep an eye out for Helmeppo.
+Finally, you spot him, talking to a couple Marines you don’t know. Unlike some of the others, he looks entirely at home in his, er, pretty loud suit. You wouldn’t have picked it for him, but he looks confident.
+The other two excuse themselves. Helmeppo watches them go, sipping from his drink, then sees you coming over and smiles over the rim of his cup.
+Helmeppo: {$name}, good to see you.
+{$name}: You too. I’ve actually been looking for you.
+Helmeppo: You’re that bored, huh?
+-> Very funny.
+    Helmeppo: That’s me. Ringing in the new year with stellar comedy.
+-> If you want me to leave…
+    He studies you, trying to figure out if you’re serious or not, then bursts out laughing.
+    Helmeppo: I guess I asked for that.
+-> What? No!
+    Grinning, he shakes his head.
+    Helmeppo: Nevermind. 
+With a tilt of his head, he invites you to step over toward the wall, where it’s a little quieter.
+Gift time?
+-> Give gift
+    <<jump helmepponye_reject>> <<jump helmepponye_friend>> <<jump helmepponye_best>> <<jump helmepponye_ultra>> //HOW DO??
+-> Don't give gift
+    <<jump helmepponye_wrong>>
+===
+
+title: helmepponye_reject
+location: ballroom
+---
+
+This is your chance. The present is burning a hole in your pocket. As Helmeppo starts making small talk about the dressy clothes the other Marines are wearing, you summon up your resolve. It’s now or never.
+{$name}: So, Helmeppo? I wanted to … Uh… Here. This is for you.
+You pull your gift out and hold it out to him in both hands. 
+Helmeppo looks from the item to you. It takes a moment for understanding to dawn in his expression. His voice is abruptly stiff and formal.
+Helmeppo: Oh. {$name}, this is very flattering, but I think you might have misread something. I can’t accept your gift. But I hope you enjoy the party.
+He excuses himself, leaving you standing there with the gift still in your hands and midnight fast approaching.
+<<jump helmepponye_other>> //HOW DO?? as in this goes to other characters able to confess, or to ending.
+===
+
+title: helmepponye_friend
+location: ballroom
+---
+
+This is your chance. As Helmeppo starts making small talk about the dressy clothes the other Marines are wearing, you summon up your resolve. 
+{$name}: So, Helmeppo? I wanted to … Uh… This is for you.
+You pull your gift out and hold it out to him in both hands. 
+Helmeppo: This is thoughtful. I’m afraid I didn’t get you anything.
+{$name}: That’s OK. I wanted to.
+-> IF (Bad gift) //HOW DO??
+    Helmeppo opens the gift and frowns.
+    Helmeppo: Was this meant to be a joke? 
+    {$name}: No. I thought you’d like it.
+    Helmeppo: Well, I guess I didn’t get you anything at all, so we’re even.
+-> IF (Anything other gift) //HOW DO??
+    Helmeppo opens the gift and smiles.
+    Helmeppo: Hey! This is really thoughtful, {$name}. Thank you.
+Helmeppo: You’re the second friend ever to buy me a gift. I’m still not used to it.
+{$name}: I was actually hoping we could be more than friends?
+He looks blankly at you. 
+Helmeppo: Sorry, {$name}. I don’t feel like that. Um… Do you want this back?
+{$name}: No! It’s a gift, not a bribe. Happy New Year.
+You walk quickly away before your disappointment reaches your face.
+<<jump helmepponye_other>>
+===
+
+title: helmepponye_best
+location: ballroom
+---
+
+This is your chance. As Helmeppo starts making small talk about the dressy clothes the other Marines are wearing, you summon up your resolve. 
+{$name}: So, Helmeppo? I wanted to … Uh… This is for you.
+You pull your gift out and hold it out to him in both hands. 
+Helmeppo: This is thoughtful. Thank you.
+-> IF (Bad gift) //HOW DO??
+    Helmeppo opens the gift and frowns.
+    Helmeppo: Was this meant to be a joke? 
+    {$name}: No. I thought you’d like it.
+    Helmeppo: Well, I guess I didn’t get you anything at all, so we’re even.
+-> IF (good gift) //HOW DO??
+    Helmeppo opens the gift and smiles.
+    Helmeppo: Hey! This is really thoughtful, {$name}. 
+    Helmeppo: But I didn’t get you anything.
+-> IF (best gift) //HOW DO??
+    Helmeppo opens the gift and smiles up at you.
+    Helmeppo: {$name}, this is perfect! 
+    Helmeppo: Now I’m really wishing I’d bought you something.
+{$name}: Actually, as a gift— could you listen to what I have to say?
+Helmeppo: Of course. What is it?
+Time to go for it!
+{$name}: I like you, Helmeppo.
+He looks startled, blushing.
+Helmeppo: You-
+{$name}: Like you. Want to go out with you. This is not a joke.
+He looks flustered and takes a deep, steadying breath. Is he nervous too?
+Helmeppo: Actually, me too.
+His words are almost drowned out as the crowd begins counting down from 10. Midnight snuck up on you.
+{$name}: Can I kiss you? To make it official?
+He nods, leaning in.
+Helmeppo: Happy New Year, {$name}.
+As the countdown reaches zero, your lips meet for the first time of, hopefully, many.
+<<jump helmepponye_end>>
+===
+
+title: helmepponye_ultra
+location: ballroom
+---
+
+This is your chance. As Helmeppo starts making small talk about the dressy clothes the other Marines are wearing, you summon up your resolve. 
+{$name}: Helmeppo? I wanted to … Uh… This is for you.
+You pull your gift out and hold it out to him in both hands. 
+Helmeppo: This is thoughtful. Thank you.
+-> IF (Bad gift) //HOW DO??
+    Helmeppo opens the gift and frowns.
+    Helmeppo: Was this meant to be a joke? 
+    {$name}: No. I thought you’d like it.
+    Helmeppo: Well, I guess I didn’t get you anything at all, so we’re even.
+> IF (good gift) //HOW DO??
+    Helmeppo opens the gift and smiles.
+    Helmeppo: Hey! This is really thoughtful, {$name}. 
+    Helmeppo: But I didn’t get you anything.
+-> IF (best gift) //HOW DO??
+    Helmeppo opens the gift, then smiles up at you.
+    Helmeppo: {$name}, this is perfect! 
+    Helmeppo: Now I’m really wishing I’d bought you something.
+{$name}: Actually, as a gift—could you listen to what I have to say?
+Helmeppo: Of course. What is it?
+Here it is. Time to go for it!
+{$name}: I like you, Helmeppo.
+He looks startled, and a blush starts across his face. 
+Helmeppo: You-
+{$name}: Like you. Want to go out with you. This is not a joke.
+He looks flustered, shakes his head and takes a deep, steadying breath. Is he nervous too?
+Helmeppo: I like you too.
+It’s what you’ve been hoping for, but hearing it from his mouth is still a shock. You grin giddily.
+Helmeppo: I kept wondering if you… I mean, I knew I enjoyed spending time with you, but it wasn’t at all like hanging out with Coby, and-
+{$name}: Can we *not* talk about Coby right now?
+Helmeppo: Oh! Yes. Of course. Tonight? It’s all about you.  
+His words are almost drowned out as the crowd begins counting down to midnight. As the noise grows, he leans closer, his breath tickling your ear.
+Helmeppo: This might be the happiest I’ve ever been. Happy New Year, {$name}.
+Helmeppo: Can I kiss you? To make it official?
+You nod.
+As the countdown reaches zero, your lips meet for the first time of, hopefully, many.
+<<jump helmepponye_end>>
+===
+
+title: helmepponye_wrong
+location: ballroom
+---
+
+You fish in your pocket and pull the gift out. 
+{$name}: This is for you.
+He looks quizzically at you, then peeks into the present. One eyebrow raises.
+Helmeppo: Are you *sure* this is for me?
+{$name}: …
+Helmeppo: …
+{$name}: Ahhh, you’re right. 
+{$name}: Sorry, can I have it back?
+He hands it back with a smile.
+Helmeppo: Sure. Good luck on your mission.
+You hurry off, looking for the right person.
+===
+
+title: helmepponye_confess
+location: ballroom
+---
+
+Well, you took your shot and it didn’t quite work out. That was disappointing, but you suppose there’s always next year. As midnight approaches, you refresh your drink and try to get into the mood again, but it’s hard. 
+You’re standing alone near the door when a voice interrupts your circling thoughts.
+Helmeppo: Hey {$name}, you busy?
+You look up to see him smiling at you. He’s wearing one heck of a purple suit and has left his signature visor at home for this event.
+As he looks down at you, the smile fades a little.
+Helmeppo: Hey. Something wrong?
+-> No, I’m fine.
+    He raises an eyebrow.
+    Helmeppo: If you say so, I won’t pry.
+-> Actually, yeah. It hasn’t been a great night.
+    He nods sympathetically.
+    Helmeppo: Sorry to hear it. 
+Helmeppo: Mind if I try to distract you for a bit, then? 
+{$name}: Be my guest.
+He moves to stand next to you. You both lean on the wall, watching the party.
+Helmeppo: I needed a bit of a break. Fighting pirates has nothing on forced socialization.
+{$name}: I can see that. The intrigue. The back and forth.
+Helmeppo: A true battle worthy of the Marines.
+Comfortable silence falls between you.
+Helmeppo: But anyway, I’m glad I found you. I wanted to tell you something.
+{$name}: Oh? What?
+You glance over to see… Is he blushing?
+Helmeppo: I meet a lot of new people in the Marines. I don’t usually find myself thinking about them much. But my thoughts keep returning to you.
+He’s *definitely* blushing now.
+Helmeppo: I think I like you. And tonight seemed like a night for sharing secrets. So I figured, why not be honest?
+-> Actually, I feel the same.
+    Helmeppo: You do?
+    {$name}: Yes. Do you need a lesson on when things *aren’t* jokes?
+    He looks surprised, but it dissolves into a broad, natural smile almost immediately. Around you, the crowd begins counting down to midnight.
+    Helmeppo: Wow. Just in time, it seems.
+    {$name}: Seems like.
+    As midnight hits, the two of you share your first kiss. Maybe this wasn’t what you were hoping for. But right now, it feels perfect.
+    <<jump helmepponye_end>>
+-> I’m sorry. I don’t feel the same.
+    He takes in a breath, holds it a moment, then lets it all out.
+    Helmeppo: I didn’t think so. But I wanted to say it. Happy New Year, {$name}. 
+    He smiles sadly and walks away, leaving you with your thoughts.
+    <<jump helmepponye_end>>
+===
+
+title: helmepponye_end
+location: ballroom
+---
+
+Wow what a crazy year its been! Who knows what next year will bring.
+You smile and watch the New Years Eve fireworks.
+===
