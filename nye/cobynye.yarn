@@ -1,0 +1,149 @@
+title: cobynye_intro
+location: ballroom
+---
+
+Wow, it’s the end of the year already and HQ is throwing a grand old party! Just look at those decorations! Everyone is dressed to the nines, too! You are as well - you look good, if you don’t say so yourself. The best part is that your outfit seems to have a pocket that could just about fit anything and not ruin your look. Perfect for carrying around that gift you got for -insert character chosen for gift hunt-! Vegapunk really does make some incredible things. 
+You glance at the clock, remembering your goal from a whole year ago. When it chimes midnight, you hope you have someone interested in kissing those lips of yours. Or holding your hand. Or liking you at all, really.
+Well, no way to go but forward. Though it couldn’t hurt to say hello to some familiar faces at the party, could it?
+-Pick character- //HOW DO??
+The party is pretty loud, the crowd making a thunderous roar as you move through. You snatch a drink as you pass a table and sip it with intent. You hear a familiar laugh and see Coby looking dashing in his New Year’s finery. He has a different air about him in a black dress uniform with gold accents. He even has a black bandana to match. The only thing keeping him from looking too stuffy is a purple scarf draped artfully around his neck. 
+He turns and waves you over. 
+Coby: Happy New Year’s! 
+-> It’s not quite there yet.
+       Coby: That doesn't matter. I still wanted to tell you.
+-> Thank you. Happy New Year’s to you too!
+       Coby: Thanks! It's kind of exciting to ring it in together for the first time!
+Coby invites you to join his group, but you shake your head. Your nerves surge as you grab his sleeve. You feel silly, but it's now or never, right? Especially with the time growing closer to midnight.
+{$name}: Can we go somewhere private? 
+Coby: Sure! Your face is red so let's…go get you some air. 
+Once free of the room, you clear your throat and thrust out the gift you had smuggled in. Coby takes it, a little surprised.
+Coby: Oh… Whats this for? 
+He seems a little confused and hesitates to open it. You fight to find your words, until the confession comes pouring out of you like the drinks they were serving inside. 
+-> Ireallylikeyouandgotthisforyou. 
+       <<jump cobynye_rejected>> <<jump cobynye_friendzoned>> <<jump cobynye_best>> <<jump cobynye_ultra>> //HOW DO??
+-> Whoops wrong person!
+       <<jump cobynye_wrong>>
+===
+
+title: cobynye_rejected
+location: ballroom
+---
+
+You immediately avert your eyes as the words pour out of you. When you look back up, Coby looks a little sheepish. He offers you a sympathetic smile. Your stomach sinks.
+Coby: I’m so sorry. {$name}. I… I don't feel the same way. You've been kind of…
+He hesitates, then gently passes the gift back to you and pats your hand. 
+Coby: It wouldn't work out. Sorry.
+This had to be the politest rejection in human history. You hold the box to your chest, feeling rotten. At least, you can hopefully return the gift for credit or maybe keep it for yourself. You  wait until Coby’s gone before re-entering the room. 
+<<jump cobynye_other>>
+===
+
+title: cobynye_friendzoned
+location: ballroom
+---
+
+Color floods his face. He laughs nervously and rubs the back of his neck as he holds onto the box. You think it's a good sign until he sighs. 
+Coby: Oh no, I thought we were just friends! 
+You blink, taken aback, and realize that maybe your intentions hadn't been clear. Your cheeks grow warm. Embarrassed, you reach to take the item back, but Coby stops you. 
+Coby: Oh no, friends don't take back friends' gifts. Even though it's not what you wanted, in the end… I would still like to be that with you. I might not have the same feelings, but it is the New Year, and things can change. 
+You sniffle, still embarrassed, and wipe your face as he opens the box. 
+-> if BADGIFT His expression turns to mild horror. Then he starts laughing. //HOW DO??
+       Coby: Yeah, I definitely think we could only be friends with a gift idea like this. 
+       {$name}: I thought it was funny.
+-> IF :goodgift: His expression brightens a bit. //HOW DO??
+       Coby: I like it. Maybe there is hope for you yet. 
+       {$name}: I’m glad you like it.
+-> IF :bestgift: He looks at the gift with deep surprise and joy. //HOW DO??
+       Coby: Oh wow, you know how to make a guy feel guilty, huh? 
+       {$name}: Not my intention, but at least you like it.
+Coby: I love it, and I am sorry. Come on, let's go watch Smoker get bridesmaid wasted. 
+Coby lets you link arms with him as he leads you back inside. Maybe next year, things will work out for the better. At least, for the time being, you made a really good friend. 
+<<jump cobynye_other>>
+===
+
+title: cobynye_best
+location: ballroom
+---
+
+Coby looks a little puzzled. His face turns bright red. He fights to regain his composure. You’re worried that you misunderstood—or worse.But then his face breaks out in a wide grin. 
+Coby: Oh wow… I didn’t get you anything. This is…
+He laughs. You’re still trying to make heads or tails of the situation, but it's hard not to be taken in by that warm smile. He clutches the box to his chest and takes a deep breath. 
+Coby: Thank you. I mean it and I… I like you too. 
+{$name}: I… I wasn’t sure what you were going to say!
+Coby: You shot your shot, and that was very brave. Now let’s see what’s inside, shall we?
+He rattles the gift box.
+-> IF :badgift: Coby: Oh this is… I’m sure I’ll adapt to your humor. //HOW DO??
+       {$name}: I… I wasn’t trying to be funny, I just wasn’t sure what to get!
+-> IF :goodgift: Coby: Oh… I’ll definitely make use of this. //HOW DO??
+       {$name}: Ahaha, I’m glad you like it.
+-> IF :bestgift: Coby: Oh… Oh wow! Thank you so much. This is really nice! //HOW DO??
+       {$name}: As soon as I saw it, I thought of you… So I’m glad you like it. 
+Coby: I love it and, well….
+Another nervous laugh. He puts an arm around your waist to guide you inside. You feel a warmth in your chest and grin ear to ear as you return to the ballroom.
+<<jump cobynye_end>>
+===
+
+title: cobynye_ultra
+location: ballroom
+---
+
+Coby looks a little puzzled. His face turns bright red. He fights to regain his composure. You’re worried that you misunderstood—or worse.But then his face breaks out in a wide grin. 
+Coby: Oh wow… I didn’t get you anything. This is…
+He laughs. You’re still trying to make heads or tails of the situation, but it's hard not to be taken in by that warm smile. He clutches the box to his chest and takes a deep breath. 
+Coby: Thank you. I mean it, and I… I like you too. 
+{$name}: I… I wasn’t sure what you were going to say.
+Coby: You shot your shot, and that was very brave. Now let’s see what’s inside, shall we?
+-> IF :badgift: Coby: Oh this is… I’m sure I’ll adapt to your humor. //HOW DO??
+       {$name}: I wasn’t trying to be funny, I just wasn’t sure what to get, haha.
+-> IF :goodgift: Coby: Oh… I’ll definitely make use of this. //HOW DO??
+       {$name}: Ahaha, I’m glad you like it.
+-> IF:bestgift: Coby: Oh… Oh, wow! Thank you so much. This is really nice! //HOW DO??
+       {$name}: As soon as I saw it, I thought of you… So I’m glad you like it. 
+Coby: I love it and, well….
+He puts the box down and pulls you into a tight hug. It’s a bit much, but at the same time, you don’t mind it. Every bit of tension from the evening melts away as he kisses you gently on the forehead. It’s oddly polite, but you don’t want to rush things, not with something so new. 
+Coby: Let’s go back inside.
+You nod. He lets you go to gather up the box before you lean into him. You walk inside, arm and arm, heart pounding in your chest as the clock tolls in the new year. 
+<<jump cobynye_end>>
+===
+
+title: cobynye_wrong
+location: ballroom
+---
+
+Coby: Oh… Whats this for? 
+You hand him the box. Everything seems to be OK until you realize you gave him the wrong box. Color drains from your face as Coby opens it. You freeze, unable to snatch it away.
+Coby: Oh… Erm, I don’t think this is for me. Let me reseal it for you. 
+You put your face in your hands and groan. That could have gone so much better. This is what you get for buying all your gift boxes and wrapping paper for two for one at the local one berry store.
+<<jump cobynye_intro>>
+===
+
+title: cobynye_confess
+location: ballroom
+---
+
+You come back inside with a red face, maybe a bit teary. Nothing like some sobering humiliation to start the evening out. At least, you can calm down a bit. No such luck though, since Coby intercepts you. 
+Coby: Are you OK?
+-> Yes.
+       Coby: Let me get a drink. You don’t look fine.
+-> No.
+       Coby: Ah, let me get you some water.
+He disappears and returns with a glass of water, which he hands you, looking nervous. You wipe your face off and find him staring at you, expression soft.
+Coby: I know this is a bad time, but… I really like you, like, like like you. I… Just know I’m here, no matter what the answer is.
+-> Accept Coby's feelings
+       {$name}: Yes, I'd enjoy spending the evening with you though I may be a bit drunk. Sorry.
+       Coby: Well, I’m glad. Means I can look after you the rest of the evening.
+       After the failure from earlier, his confession feels incredibly warm. Plus Coby is one of the nicest people you know. As much as this evening ended on a sore spot, at least you got this in the end.
+       <<jump cobynye_end>>
+-> Reject Coby's feelings
+       {$name}: I’m so sorry, but no.
+       Coby: That’s fine, you just had a rough time. I’ll still be here for you.
+       You go get drinks together, and it's not so bad after all. 
+       <<jump cobynye_end>>
+===
+
+title: cobynye_end
+location: ballroom
+---
+
+Wow what a crazy year its been! Who knows what next year will bring.
+You smile and watch the New Years Eve fireworks.
+===
