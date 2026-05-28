@@ -1,5 +1,6 @@
 title: date_bellemere_3_main
 location: docks
+characters: [bellemere]
 ---
 <<declare $bed3_points = 0>>
 

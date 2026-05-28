@@ -1,11 +1,13 @@
 title: date_bellemere_4_main
 location: park
+characters: []
 ---
 
 It's a sunny day, but not overly hot.
 You can hardly believe it's been nearly a whole year since you came to the training island. Bellemere has been in a particularly good mood lately, getting along well with Tashigi and barely even mouthing off to her superiors.
 And today, she's invited you out.
 You have a feeling you know what this is about; after all, she's asked you to meet her at her mikan orchard.
+<<show_characters  bellemere>>
 {$name}: Bellemere! Hey!
 Bellemere: {$name}, about time!
 You know you're not late; Bellemere is just impatient.

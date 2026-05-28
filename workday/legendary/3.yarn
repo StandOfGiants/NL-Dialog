@@ -1,4 +1,4 @@
-title: workday_legendary_3_start
+title: workday_legendary_3_main
 location: ship deck
 ---
 <<declare $lwd3S_points = 0>>
