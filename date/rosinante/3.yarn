@@ -1,4 +1,4 @@
-title: date_rosinante_3_start
+title: date_rosinante_3_main
 location: town
 ---
 
@@ -13,7 +13,7 @@ Rosinante: Wasn't that embarrassing? This is the first time you've witnessed it,
 {$name}: Were there other occurrences?
 Rosinante: Ah! I shouldn't have said that, ignore all that.
 -> Fine, fine, no more.
-    <<jump date_rosinante_3_Start_Walking>>
+    <<jump date_rosinante_3_main_Walking>>
 -> Now you've got to tell me more!
     <<jump date_rosinante_3_Fire_Incidents>>
 -> Fine! I'll ignore it, but I've noticed you did your make-up again. =>
@@ -55,10 +55,10 @@ Rosinante: But it's his own way of showing he cares. I never minded much.
 Rosinante: I'm glad you think so! Maybe you can meet him one day.
 You'd rather not, but you can't bring yourself to say that. Instead you smile and nod hoping it's enough.
 {$name}: Why don't we talk while walking? We wouldn't want to catch the noon sun. =>
-<<jump date_rosinante_3_Start_Walking>>
+<<jump date_rosinante_3_main_Walking>>
 ===
 
-title: date_rosinante_3_Start_Walking
+title: date_rosinante_3_main_Walking
 location: town
 ---
 

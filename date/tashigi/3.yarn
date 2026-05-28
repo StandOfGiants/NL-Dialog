@@ -31,17 +31,17 @@ You nod to yourself as you pull up a chair to keep her company. As you chat, tho
 <<jump date_tashigi_3_route_join>>
 ===
 
-title: date_tashigi_3_start
-location: office
----
-::TSD3 Regular Start // HOW DO??
+// title: date_tashigi_3_main
+// location: office
+// ---
+// ::TSD3 Regular Start // HOW DO??
 
-It's lunchtime at last. Despite the chilly weather, you'd worked up a great sweat this morning from early morning drills and weapons practice, and your body is aching pleasantly. You've almost nailed one particular move with your sword that you're hoping will impress Tashigi, considering your lack of specialization in the area. You've really been taking all of her sword and footwork pointers to heart, gleaning what you can from your casual conversations.
-Tashigi has been absent from the training grounds lately, working hard on paperwork and cases, but you've caught glimpses of her training at odd hours. You're pretty sure, based on what you've heard, that she's been pouring over files on the recent pillaging of a nearby village she had promised to protect.
-For your part, you've been struggling to sleep. You miss the Blues, and you miss your family. You've found friends among the Marines, some even feeling more like family, but you only get that nostalgic sense of warmth, care, and compassion from a few people.
-One of those people is Tashigi, and you're currently on your way to her desk. You briefly knock on the door before stepping inside and walking over. Even if you didn't already know which desk was hers, it's easy to tell thanks to the towering pile of paperwork sitting atop it. She doesn't see you at first, but as you approach, she looks up, her glasses sliding down her nose a little bit. Come to think of it...
-<<jump date_tashigi_3_route_join>>
-===
+// It's lunchtime at last. Despite the chilly weather, you'd worked up a great sweat this morning from early morning drills and weapons practice, and your body is aching pleasantly. You've almost nailed one particular move with your sword that you're hoping will impress Tashigi, considering your lack of specialization in the area. You've really been taking all of her sword and footwork pointers to heart, gleaning what you can from your casual conversations.
+// Tashigi has been absent from the training grounds lately, working hard on paperwork and cases, but you've caught glimpses of her training at odd hours. You're pretty sure, based on what you've heard, that she's been pouring over files on the recent pillaging of a nearby village she had promised to protect.
+// For your part, you've been struggling to sleep. You miss the Blues, and you miss your family. You've found friends among the Marines, some even feeling more like family, but you only get that nostalgic sense of warmth, care, and compassion from a few people.
+// One of those people is Tashigi, and you're currently on your way to her desk. You briefly knock on the door before stepping inside and walking over. Even if you didn't already know which desk was hers, it's easy to tell thanks to the towering pile of paperwork sitting atop it. She doesn't see you at first, but as you approach, she looks up, her glasses sliding down her nose a little bit. Come to think of it...
+// <<jump date_tashigi_3_route_join>>
+// ===
 
 title: date_tashigi_3_route_join
 location: office
