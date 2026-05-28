@@ -229,7 +229,7 @@ title: date_borsalino_2_route2_pirates
 -Pick a Warlord of the Sea.
     {$borsalino}: Oh... yes, there might be updates to be made... Their status and our alliances seem to always be shifting...
     -> I'll do that.
-        {$borsalino}: Thank you, 'name'.
+        {$borsalino}: Thank you, {$name}.
         <<jump date_borsalino_2_route2_cute>>
     -> Don't you think it's strange to be allied with pirates? (+)
         <<jump date_borsalino_2_route2_vega>>
@@ -255,7 +255,7 @@ title: date_borsalino_2_route2_pirates1
 -> Pick a Warlord of the Sea.
     {$borsalino}: Oh... yes, there might be updates to be made... their status and our alliances seem to always be shifting...
     -> I'll do that.
-        {$borsalino}: Thank you, 'name'.
+        {$borsalino}: Thank you, {$name}.
         <<jump date_borsalino_2_route1_more_work>>
     -> Can I have a closer look?
         <<jump date_borsalino_2_route2_cute>>
@@ -276,7 +276,7 @@ You're taken away by the pictures on the posters. You think of battle and advent
             {$borsalino}: You don't say...
 // Might be worth a positive, since it feels like you're flirting with him
 -> Are you crazy? That's forbidden... (-)
-            {$borsalino}: Ah, but can you forbid feelings, dear 'name'...?
+            {$borsalino}: Ah, but can you forbid feelings, dear {$name}...?
 {$borsalino}: Hmm... but if it were true, we'd be in for heartbreak...
 {$borsalino}: Marines and pirates... not much in common...
 -> Nothing at all!
