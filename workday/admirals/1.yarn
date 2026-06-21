@@ -4,7 +4,7 @@ characters: [sakazuki, kuzan, issho, borsalino]
 music: bar
 ---
 You arrive at the mostly vacant bar. Following behind you are four intimidating figures, their heights and statures dwarfing everyone else around them.
-{$sakazuki}: I told you it's too early to get a drink. #expression:frown
+{$sakazuki}: I told you it's too early to get a drink. #expression:angry
 {$kuzan}: ...It's never too early when we have to deal with you.
 {$sakazuki}: What did you just say?
 {$issho}: Gentlemen, let's give this bonding exercise a try first. We don't have to do it for long, but it's worth the gamble.

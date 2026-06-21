@@ -1,0 +1,398 @@
+title: date_garp_4_main
+location: day(ship)
+---
+<<declare $gd4_points = 0>>
+
+{$name}: Oh man, it's beautiful out here! I'm really glad that I managed to convince Tsuru to let me out of the office for once.
+???: Bwahahahaha! So, taking my advice, are you?
+{$name}: Huh?! Who–Oh! Garp!
+Garp: Who else?! I was surprised to see that you'd signed up for this quick little excursion, but being out and about is good for you. When I was young, I roamed the mountains and caught my prey with my own two hands! Those were the days!
+{$name}: (That would sound pretty unbelievable coming from anyone else...)
+Garp: Still, you've been doing great, {$name}. Even if you're usually in the office, you've been a big help.
+{$name}: Really? I'm glad! If I'm being honest, I thought that I'd join the Marines, be assigned to a crew, and go out there and help out on various islands. I never imagined that I'd be helping some of the most famous Marines on the seas back at headquarters.
+Garp: Bwahahah! I'm amazed you haven't gotten tired of us old fogeys yet.
+-> Of course not! I'm here to make a difference, and who better to work with than the people who know the Navy best?
+    Garp: Heh, you're not wrong about that, {$name}. Still, the Marines aren't perfect by any stretch of the imagination, and that goes for us old folks as well.
+-> It can be a lot sometimes, but it's not like any of you act your age.
+    <<set $gd4_points +=1>>
+    Garp: Well, I can't disagree with that! We've still got work to do back there, and who'd be left to train all these brats if we were gone?
+-> Not yet, but I think I might be getting there.
+    <<set $gd4_points -=1>>
+    Garp: Hmph! Might wanna get reassigned sooner rather than later, then! Pick up some work closer to your speed.
+{$name}: Still, even though I mostly do office stuff, I've been through basic training and all. It's pretty clear that you're unbelievably strong. You've always been strong, haven't you, Garp?
+Garp: ...No, not always.
+{$name}: (...Did I touch a nerve? He suddenly looks so serious...)
+Garp: ...
+Garp: {$name}, since it's just us out here, I think it's about time I... get something off my chest, so to speak.
+Garp: Last time we met, you asked me about my family, and I wasn't ready to answer. Now, though... For some reason, I want to tell you. I'm not sure why. I've never wanted to tell anyone about my family before, and yet, if it's you...
+Garp: ...
+Garp: Can I trust you, {$name}? Can I trust you with all of this?
+{$name}: (He sounds... sad. Almost like he's pleading. I've never heard him sound like this before...)
+-> Yes, of course! Please, tell me!
+    <<set $gd4_points -=1>>
+    Garp: ...I'm really trying to trust you here, {$name}. Are you happy that I'm trusting you, or are you just happy to hear my secrets?
+    <<jump date_garp_4_route_a>>
+-> Truthfully, I think I'd rather not know.
+    {$name}: Your family... most of them are pirates, aren't they?
+    {$name}: At the end of the day, I'm still a Marine. If I see criminals, then I'm duty-bound to do something about them.
+    Garp: ...
+    Garp: Yeah, you're right. Forget I said anything.
+    Garp: Have a good day, {$name}.
+    <<jump date_garp_4_end>>
+-> You can trust me, Garp.
+    <<set $gd4_points +=1>>
+    Garp: ...Thank you, {$name}. That means more than you could ever know.
+    <<jump date_garp_4_route_a>>
+===
+
+title: date_garp_4_route_a
+location: day(ship)
+---
+
+Garp: Let's see, where to start...
+Garp: I have three grandsons, you know. Or, well... I had three.
+Garp: ...
+Garp: Their names are Ace, Sabo, and Luffy.
+{$name}: (Wait, does he mean Portgas D. Ace? Is he calling Portgas D. Ace his grandson...? Then that means...)
+Garp: Heh, it's still hard to talk about even now, despite the fact that so much time has passed...
+{$name}: (...)
+{$name}: (Should I ask...?)
+-> (Yes.)
+    {$name}: Garp, do you mean Portgas D. Ace?
+    {$name}: The same Ace who... perished... a few years ago?
+    Garp: ...Yeah. The very same.
+    <<jump date_garp_4_route_b>>
+-> (No.)
+    {$name}: (No, it's better not to ask.)
+    Garp: ...It's ok, {$name}. You don't have to hold back on my account. If you want to know, then ask.
+    {$name}: Well...
+    -> Could you... tell me more about Ace?
+        Garp: ...Yeah. I think so.
+        <<jump date_garp_4_route_b>>
+    -> It's not that.
+        <<set $gd4_points +=1>>
+        {$name}: It's not about holding back. I'm not going to pry into your feelings; you should only tell me if you want to.
+        Garp: ...Thank you, {$name}. But I really do feel like I owe you—
+        {$name}: You don't owe me anything. I promise.
+        Garp: Even so... I think I do want to tell you.
+        <<jump date_garp_4_route_b>>
+===
+
+title: date_garp_4_route_b
+location: day(ship)
+---
+
+Garp: Ace was... well, he was the child of Portgas D. Rouge and Gol D. Roger. Now, Rouge was a real spitfire of a woman! She was probably the only one who could keep Roger in line. She and the old queen of Amazon Lily got along well... maybe a little too well.
+Garp: Still, Rouge and Roger were inseparable. Rouge was as good of a pirate as her man, maybe even better. She had a wink that could stop a man's heart and a smile that charmed anyone who saw it. I was surprised to hear that she'd left the crew, but when I received a message from Roger, begging me to protect her and his child... it all clicked.
+{$name}: (I can't believe what I'm hearing... this is unreal...)
+Garp: He wanted me to protect Ace. He hadn't told any of his crew that Rouge was pregnant; probably because he already knew his life was coming to an end and didn't want them to be burdened by what would come next. Asking them to sacrifice themselves to save his kid... he would never ask that of them, even if they'd all do it in a heartbeat.
+{$name}: ...By what came next, do you mean... the burning of Baterilla?
+Garp: ...The very same.
+{$name}: I see...
+Garp: I don't think I need to tell you what the government did when they found out about Rouge and Ace. I was a step too late; in trying to be careful and cautious, I ended up moments too late to save Rouge. I did, however, escape with her son.
+Garp: I took him home, back to East Blue. I couldn't stay to raise him myself, though, so to protect him, I left him with some... acquaintances. They owed me a favor, and I thought he'd be safe with them.
+Garp: ...
+Garp: I wasn't there for most of his life. The demands of my job and everything else were a factor, of course, but I made excuses. Said that I was busy. That it was best to not draw attention toward him. But in the end...
+Garp: I was a coward.
+{$name}: Garp...
+Garp: Don't. Please don't try to comfort or pity me, {$name}.
+Garp: I guess... all I can say is that I really did care about him. Really. I'd promised Roger that I would take care of him, but in the end, I couldn't do anything for him at all.
+Garp: I left him to die. I should have helped Luffy. I should have tried to break him out of Impel Down. I should have done something. Anything. And yet, all I could do was plead and pray that others would do something.
+Garp: What a fool I was.
+Garp: I got my grandson killed. It wasn't his fault. It never was.
+{$name}: ...
+{$name}: I'm sorry, Garp. I'm so sorry.
+Garp: It's alright, {$name}. It's alright. I... huh?
+{$name}: What is it?
+Garp: I'm sorry, I...
+{$name}: (Are those tears? Is he... crying?)
+Garp: {$name}, I...
+{$name}: It's alright, Garp. It's ok. I promise.
+Garp: How long has it been since I've cried like this...?
+{$name}: ...
+Garp: ...Heh. I can't believe I'm shedding more tears for Ace now than when he died. I don't... something must be wrong with me, {$name}. For some reason, it's hitting me all at once just how much I've lost to my own foolishness.
+{$name}: Garp, do you...
+-> ...regret what you did?
+    Garp: Every day.
+    Garp: Every single damn day.
+    Garp: ...
+    Garp: Let's talk about something else.
+    <<jump date_garp_4_route_c>>
+-> ...think he hated you?
+    <<set $gd4_points -=1>>
+    Garp: How could he not? I swore to protect him and yet I let him die. I forced him to hide himself away from the world. I would be shocked if he didn't hate me.
+    Garp: But I guess now, I'll never know.
+    Garp: ...
+    Garp: Let's talk about something else.
+    <<jump date_garp_4_route_c>>
+-> ...think we could visit his grave one day?
+    <<set $gd4_points +=1>>
+    Garp: ...We?
+    {$name}: Yes. As you know, I'm from South Blue, and I've heard of what happened on Baterilla. I know how much he means to you, but he also means something to me.
+    {$name}: I know that it's a bit of a dangerous journey, but... I'd like to pay my respects with you one day.
+    Garp: ...I'd like that.
+    <<jump date_garp_4_route_c>>
+===
+
+title: date_garp_4_route_c
+location: day(ship)
+---
+
+Garp: Alright, where was I...?
+Garp: Ah, right! Then there's my son, who is Luffy's father. Dragon.
+{$name}: (Huh? Dragon? Does he mean...?)
+Garp: Heh, yeah. Monkey D. Dragon, the very same man leading the Revolutionary Army. In fact... my second grandson, Sabo, is apparently with him.
+{$name}: (Oh my word. Wow. I figured, but... hearing it firsthand is pretty incredible. And did he say that his second grandson is also a Revolutionary?)
+{$name}: (Do I want to know more?)
+-> (Yes.)
+    {$name}: Is Dragon... was Dragon... erm...
+    Garp: Heh, curious, are you? I don't blame ya.
+    <<jump date_garp_4_route_d>>
+-> (No.)
+    {$name}: (No, I shouldn't ask. This is above my pay grade, and asking would probably just make him uncomfortable.)
+    <<jump date_garp_4_route_silence>>
+===
+
+title: date_garp_4_route_d
+location: day(ship)
+---
+
+Garp: Dragon was... a lonely kid. I didn't want him to be, but he was anyway. His mother didn't want him, so I took him. Instead of leaving him by himself, I took him on the seas and kept him with me, just raising him on the ship.
+Garp: I didn't want him to be alone like I was when I was a kid, so I thought I should just bring him along. It worked for a while, but...
+Garp: Being the only kid on a ship full of men, professional sailors at that, must have been tough. He was strong willed and worked hard, but he didn't have any friends.
+Garp: Still, things were fine. He grew up, he got promoted, and he started being sent off on his own missions. I was so proud of him.
+Garp: Everything was going great... until it didn't.
+Garp: Dragon always had a strong sense of justice. It's why at first, he seemed perfect for the Marines.
+Garp: But then... he experienced... certain things. Certain tragedies. Have you heard of Ohara? In West Blue?
+{$name}: Ohara?
+-> I've heard of it.
+    Garp: I'm not surprised. It became a very public, very storied mark of shame for many of us.
+->That doesn't sound familiar.
+    Garp: It's an island in West Blue. There were many researchers there who were investigating the Void Century.
+    {$name}: But that's...
+    Garp: Forbidden, yes. And so, by the World Government's decree, a Buster Call went out.
+Garp: When Dragon heard about Ohara, it destroyed him. It made him question his loyalty to the Navy and the people of the world. He asked to see me, and the two of us... we had an argument.
+{$name}: Oh no...
+Garp: He asked me why this had happened. I told him why. He told me that it wasn't fair. I told him he was right.
+Garp: He asked why I didn't seem to care. I told him that I did, but that there was nothing I could do. And then...
+Garp: He asked me how I could stand to be a Marine after all of that. And I told him that it was because of loyalty.
+{$name}: ...
+Garp: He went quiet. He was so angry. And I could sense it with haki; all the years of pride, of purpose, of bonding... all of it crumbling, replaced by disappointment and loss. It felt like the void.
+Garp: He asked me if I was loyal to the World Government, or to the people. I couldn't think. I remember telling him that the World Government represented the people, and then...
+Garp: ...
+Garp: ...He hissed at me that the World Government only sought to oppress the people. That they were the enemies of the people. He told me that he was resigning. And that... that was the last I saw of him.
+Garp: His resignation came in the form of his ship and his crew defecting, and that was the start of the Revolutionary Army.
+{$name}: I... I'm so sorry...
+Garp: ...It is what it is. I was stunned to see that Sabo had joined him when his name appeared in the paper, and now... he might be dead too. Again.
+Garp: I wasn't as close to Sabo as Luffy or Ace, but they loved him like a brother, and that's all I cared about. And now, I may never get the chance.
+{$name}: ...
+Garp: There's nothing I can do for them now. Just like with Ace, all I can do is pray. Pray that I never see Dragon again. Or else... I'll have to fulfill my duty, and he'll have to follow his own path.
+{$name}: (He means... they'll have to fight...)
+{$name}: (Urgh, what should I do? Should I say something or not? Or should I try to change the topic?)
+-> Say something.
+    <<set $gd4_points +=1>>
+    {$name}: Garp, you've made mistakes. Some pretty big ones at that. But you've also done a lot of good for the world.
+    {$name}: You've raised some incredible Marines who really do care about protecting the people. You've also beaten up some terrible people who would have made everyone's lives worse.
+    {$name}: You've made mistakes, but you've done good too. You can't do anything more for those who have died, but you can do what you can for those who still live.
+    Garp: ...You're right. And I know you're right. You're not the first one to tell me that.
+    Garp: And yet... I can't get it out of my head.
+    {$name}: Would it help to think about something else?
+    Garp: ...Yeah.
+    <<jump date_garp_4_route_e>>
+-> Say nothing.
+    <<set $gd4_points -=1>>
+    <<jump date_garp_4_route_silence>>
+-> Change the topic.
+    <<jump date_garp_4_route_e>>
+===
+
+title: date_garp_4_route_e
+location: day(ship)
+---
+
+{$name}: (In thinking about it...)
+{$name}: (This family seems to be a little too incredible...)
+{$name}: Oh, um... Could you tell me about Luffy?
+Garp: ...Yeah, alright. We've already talked about him a little, but... that brat's always been a handful.
+Garp: For better or worse, he's a lot like me.
+-> I think it's for the better. You two are both powerhouses who changed the world, after all.
+    <<set $gd4_points +=1>>
+    Garp: Not a bad way of putting it. When it comes to the D. clan, change is going to happen whether we like it or not.
+-> You two are nothing alike. I don't really know how you can deal with the fact that your grandson's a criminal.
+    <<set $gd4_points -=1>>
+    Garp: ...Some days are harder than others.
+-> Well, I have heard stories about both of your... eating habits.
+    Garp: Bwahahaha! Well, the stories might not be exaggerations with that boy!
+Garp: Still... He's changed a lot of things for a lot of people. No matter what the papers say, a lot of it has been for the better.
+Garp: Some of the things he's done have massive repercussions, and yet he's managed to keep his freedom each and every time. But that might run out sooner rather than later, now that Sakazuki's behind the desk. That boy's too much like Roger for my liking.
+-> Will he be ok?
+    <<set $gd4_points -=1>>
+    Garp: If he's caught? No. I don't know if you heard during the war at Marineford, but given who his father is... no. Nothing good will come of that.
+-> Will you be ok?
+    <<set $gd4_points +=1>>
+    Garp: What are you worried about me for? I'm just an old man living out the rest of my days behind thick walls! But... thank you all the same.
+-> Will the people under him be ok?
+    Garp: ...I don't know. I don't know what they'll do if the Marines decide to try and use them against Luffy. But what I do know is that it won't be pretty.
+Garp: It wouldn't be a bad thing if he'd become a Marine, like I wanted him to, but he's a pirate, {$name}. One of the Worst Generation, at that. After what happened with Ace, they... they won't let him off.
+Garp: He's stubborn, too. As stubborn as an ox. Once he sets his mind on something, there's no changing it. Takes after me in that regard too... no regard for authority or elders. Argh! Why does he have to be such a pain?!
+{$name}: (Yeah, they definitely sound alike...)
+Garp: I've been responsible for him ever since he was young. I kept him on a quiet little island in East Blue; he should have grown up into a good kid.
+Garp: But no! He ended up eating a devil fruit of all things, and making friends with Red-Haired Shanks. Yes, that Red-Haired Shanks. So I sent him off to live on a mountain with some people I know to help make him strong. Toughen him up the way I did when I was a kid.
+Garp: But now... now he's out there, sailing around and causing trouble. I should have taken him with me... but no, that wouldn't have worked...
+Garp: I just... I don't know what to do, {$name}. I wanted to protect him. I still do. But there's nothing I can do for him now. I'm...
+Garp: ...
+{$name}: (It must be hard for him. I couldn't even imagine having to arrest my family members if I ever saw them...)
+{$name}: Garp, I think...
+-> You've done your best.
+    <<set $gd4_points +=1>>
+    {$name}: I can't really say anything about how Luffy feels about you, but you tried to help make him stronger in the best way you knew how. The fact that he's been able to survive this long... isn't it thanks to you, even in some small way?
+    Garp: Maybe you're right... after all, it's not like I had a lot of options.
+-> There was nothing you could have done.
+    <<set $gd4_points -=1>>
+    Garp: ...You're wrong. There was so much more I could have done. I could've found a safer place for him. I could've forced him to become a Marine and kept an eye on him. Even if he wouldn't be happy, at least he'd be safe.
+    Garp: ...No, that's foolish. Maybe he would've just been easier to kill.
+-> You shouldn't blame yourself.
+    Garp: How can I not? I'm his grandfather. I should be looking after him, not hoping that our paths never cross again.
+Garp: And yet... despite all of that, I'm so proud of him.
+{$name}: (He's... smiling?)
+Garp: Even in the face of a world that hates him, he's smiling. He's happy. As a grandfather, how could I not be happy? Seeing him thrive like this?
+Garp: It probably sounds ridiculous to you, {$name}. It sounds ridiculous to me, too. How could I be proud of a boy who's causing us trouble at every turn?
+Garp: And yet... he's doing more to make this world better than most Marines have. Call it traitorous if you like, but it's true.
+{$name}: ...
+{$name}: I think...
+-> That if he's doing good in the world, then he should keep doing it.
+    {$name}: The code of the Marines is pretty strict. We can help in approved ways, but there's too much that we can't do. We can't stop slavers if they work for the Celestial Dragons. We can't free people from suffering if their ruler is a member of the World Government. It's not right, and yet there's nothing we can do.
+    {$name}: I think it's a good thing that there's someone out there who can do what we can't.
+    Garp: ...I think so too.
+-> That making the world a better place is a good thing, but he should think more about the people he affects.
+    {$name}: Sure, he's helping out a lot of people, but all of the people flying under his flag will be targets. That doesn't just mean his crew, but also all of the innocents on his islands. If he's not strong enough to protect them, or they're not strong enough to protect themselves, he's just causing problems.
+    {$name}: Maybe his crewmates are happy now, but what if they have to choose between him and their families?
+    Garp: Well... you're not wrong.
+-> That he's going about it all wrong.
+    {$name}: If he wanted to do some real good in the world, then he should have been a Marine. Attempt to change things from the inside by becoming an officer instead of being a pirate.
+    Garp: You know, you're right, but... that boy has no interest in being a hero. He just wants to be free.
+    Garp: And I think... to some extent, I must've been the one who made him that way.
+Garp: But whatever the case, he's still the enemy of the entire Navy. Maybe I should count myself lucky that I got to see him before he made such a name for himself... even more so for the fact that he managed to escape after Marineford. And yet... am I his enemy now? Can he forgive me after I failed Ace?
+Garp: I... I'm terrified, {$name}. I've already come face to face with him twice, and both times, I... I faltered. I just want him to be happy, and yet, he's picked a fight with the whole world. If I see him again, we'll be enemies, but... What should I do, {$name}?
+{$name}: ...(Garp looks so tired. I wish I could comfort him somehow...)
+{$name}: (Think, {$name}! What can I suggest? I should think carefully about this.)
+<<jump date_garp_4_route_f>>
+===
+
+title: date_garp_4_route_f
+location: day(ship)
+---
+
+{$name}: Garp, have you...
+-> ...Told anyone else about this?
+    Garp: ...At one point, I would have tried. But now, or rather, even back then, there was no point. Sengoku was firm. Tsuru was apathetic. And I... I was already on the edge of a cliff. There's nobody I could have told that would have made anything better.
+    Garp: At least... not until you came along.
+    {$name}: (...Oh, Garp...)
+    IF + IS ABOVE [THRESHOLD]:
+        <<jump date_garp_4_route_g>> //HOW DO??
+    Else:
+        <<jump date_garp_4_route_h>> //HOW DO??
+-> ...Considered retiring from the Marines?
+    Garp: ...Heh. I did, but... there's still things that I need to do here. Still, once things settle down a bit, maybe it would be nice to put it all behind me. Spend time with other people. Maybe even...
+    {$name}: ...Even what?
+    Garp: ...Never mind.
+    {$name}: (Was it just me, or... was he blushing a bit?)
+    IF + IS ABOVE [THRESHOLD]:
+        <<jump date_garp_4_route_g>> //HOW DO??
+    Else:
+        <<jump date_garp_4_route_h>> //HOW DO??
+===
+
+title: date_garp_4_route_g
+location: day(ship)
+---
+
+Garp: You know... you really are something special.
+{$name}: Hm? You really think so?
+Garp: I do. It's hard not to like you, {$name}. If I ever tried searching for love again, I think it would be with someone like you.
+{$name}: Garp, I—
+Garp: Don't. Don't say anything. It's just the silly wish of an old man. I don't even know if you—I mean, if anyone could like me that way.
+{$name}: Garp. The truth is...
+-> Of course I do.
+    {$name}: I do like you. And as more than a mentor, or even just a friend.
+    {$name}: Garp, I...
+    {$name}: I've always found you attractive. It's not just your physique, although that definitely helps, but...
+    {$name}: It's your laughter. It's the way you don't judge people. It's the way you care about everyone in your life even if you can't always express it.
+    {$name}: It's... you.
+    Garp: ...
+    Garp: ...I ...
+    Garp: ...
+    {$name}: You don't have to say anything now. I just... wanted you to know.
+    Garp: ...Thank you, {$name}. Truly.
+    Garp: I think... I think I should get back to my duties. I have a lot to think about.
+    {$name}: (He's blushing...)
+    {$name}: Um, yeah! See you around!
+    You watch as Garp leaves, your own heart fluttering in your chest.
+    {$name}: (I can't believe I finally said it...)
+    {$name}: (Maybe one day, he'll... well. We'll just have to see.)
+    {$name}: (But... maybe there's a chance.)
+    <<set $gd4_points +=3>>
+    <<jump date_garp_4_end>>
+-> You're... a dear friend to me.
+    Garp: ...
+    Garp: Bwa...BWAHAHAHA!
+    {$name}: Wh—what is it?
+    Garp: Hah! I dunno! Just... somehow, I feel relieved! I was worried that you'd think I was flirting with you or something.
+    {$name}: Hahahaha! No, no worries! Like I said, you're a dear friend, Garp, and I'm really happy that you've come to trust me with all of this.
+    Garp: Haaah... man, I feel loads better after all that. No, I meant it when I said I'd be interested in someone like you. You're more like a special trainee or mentee to me, y'know?
+    {$name}: ...Really?
+    Garp: Really and truly! I enjoy your company, {$name}. You're a good kid.
+    {$name}: Thanks, Garp. I'm really glad I could get to know you.
+    Garp: Same here!
+    Garp: Alright, we should get back to work. Thanks for listening, {$name}!
+    {$name}: Anytime. And... thank you, Garp.
+    <<set $gd4_points +=1>>
+    <<jump date_garp_4_end>> PC locked out of romantic Garp ending //HOW DO??
+===
+
+title: date_garp_4_route_h
+location: day(ship)
+---
+
+Garp: Anyway, we should get back to work. I think I've said everything that I can for now.
+Garp: Thanks, {$name}. I guess... I really needed this after all.
+{$name}: No problem, Garp. I'm here for you, whenever you need.
+Garp: You really are something special, {$name}. You're gonna go far.
+{$name}: If you think so, then it must be true!
+{$name}: So... I'll see you around?
+Garp: Bwahahaha! Count on it!
+<<jump date_garp_4_end>>
+===
+
+title: date_garp_4_route_silence
+location: day(ship)
+---
+
+{$name}: (I wish I knew what to say... C'mon, {$name}!)
+{$name}: Garp, I...
+Garp: ...It's ok, {$name}. This was a lot, and I just sorta... dumped it on ya.
+Garp: I should just go.
+{$name}: (He's turning to leave...)
+-> Garp, wait!
+    <<jump date_garp_4_route_f>>
+-> (I can't think of anything to say.)
+    {$name}: ...
+    {$name}: ...I'm sorry...
+    Garp: ...Me too.
+    <<set $gd4_points -=1>>
+    <<jump date_garp_4_badend>>
+===
+
+title: date_garp_4_end
+location: quarters
+---
+
+When you get back later, your room feels brighter than ever, in fact, your whole life feels brighter than ever. You have no idea how you're going to sleep with Garp's smile playing on repeat in your head.
+===
+
+title: date_garp_4_badend
+location: quarters
+---
+
+That could have gone so much differently you could kick yourself. Ugh. You crawl under the covers and hope the darkness takes you.
+===

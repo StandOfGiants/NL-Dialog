@@ -1,0 +1,647 @@
+title: date_borsalino_3_main
+location: day(ship)
+---
+<<declare $bod3_points = 0>>
+<<declare $bod3_investigation_good = 0>>
+<<declare $bod3_investigation_bad = 0>>
+
+Today, you are out on the high seas, sailing with Admiral Kizaru!
+After the last failed attempt at a date, this should be close to getting *some* time together... Even if it's for a mission.
+{$borsalino}: Oh, {$name}! How are *yo~ou...?*
+{$borsalino}: We haven't seen each other since... Hmm? The last workday...?
+-> Didn't you say you'd take me on a date?!
+    <<set $bod3_points +=1>>
+    {$borsalino}: Oh, I did...?
+    {$borsalino}: Yes, yes, that rings a bell...
+    {$borsalino}: Well, see you later, will—
+    {$name}: *Wait.*
+    {$borsalino}: ...Okay, okay... I *will* take you out on a date... But for now, we are stuck here together, aren't we...?
+-> That was this morning.
+    {$borsalino}: Oh, it was?
+{$borsalino}: Time is so slow when you're in my shoes...
+{$borsalino}: I find it quite comforting to sail like this...
+-> Where are we going again?
+    <<set $bod3_points -=1>>
+    {$borsalino}: Mm... I thought at least one of us was paying attention.
+    {$borsalino}: Oh... I'm *ju~ust* kidding... Almost...
+-> I suppose it's nice... I always liked to travel.
+    <<set $bod3_points +=1>>
+    {$borsalino}: Mmm... I do remember.
+-> What sort of mission is this anyway?
+    {$borsalino}: Ah... always *so~o* hard-working...
+{$borsalino}: We are on our way to the G-9... Something of a diplomatic mission, you see...
+{$borsalino}: Inspect the Navy base... Renew treaties... Keep good relations with our allies...
+-> Sounds... Very exciting. Yawn.
+    {$borsalino} chuckles.
+    {$borsalino}: Do you miss the action, {$name}?
+    -> Not at all.
+        {$borsalino}: O~oh... Good to hear that...
+    -> Maybe.
+        <<set $bod3_points +=1>>
+        {$borsalino}: *O~oh...* Well... Still, you are talented at what you do...
+        {$borsalino}: But I'll tell you a secret... I feel the same way sometimes...
+        <<jump date_borsalino_3_route1>>
+-> I think I'd be good at this.
+    {$borsalino}: I'm sure you will... That's why I chose you to come along...
+    <<jump date_borsalino_3_route2>>
+-> Ew. Not doing business for the World Nobles.
+    <<set $bod3_points -=1>>
+    {$borsalino} chuckles.
+    {$borsalino}: *We~ell...* Don't let them hear you, will you...?
+    <<jump date_borsalino_3_route2>>
+===
+
+title: date_borsalino_3_route1
+location: day(ship)
+---
+
+{$borsalino}: ...
+He remains in silence for what feels like an hour.
+Is he only enjoying the breeze, or is there something else...?
+{$borsalino}: You kno~ow—
+{$borsalino}: In theory... *Only* in theory... It couldn't hurt to have a look at the crow's nest, could *i~it...?*
+{$borsalino}: Only to be sure, ah... That there is no danger...
+Borsalino offers you a hand.
+-> Yes!
+    <<set $bod3_points +=1>>
+    You wrap your fingers around his and...
+    **Swoosh!**
+    You vanish. The world blurs around you. An incredible force propelling you from under your limbs!
+    You appear at the crow's nest and hop down from Borsalino's arms.
+    {$borsalino}: You're welcome~...
+    Both your coats are wave in the strong, salty wind. Even this massive ship looks tiny from up here. Like on a roller-coaster before the fall, your stomach twists...
+    -> Have a look around the surroundings.
+        <<set $bod3_points +=1>>
+        {$name}: Let me use the rangefinder.
+        {$borsalino}: Oh, of course...
+        The lens blurs, then focuses in a small shape in the distance.
+        Black sails...
+        -> Attack!
+            <<set $bod3_points +=1>>
+            <<jump date_borsalino_3_route1_attack>>
+        -> Don't attack.
+            <<set $bod3_points -=1>>
+            <<jump date_borsalino_3_route_1_notattack>>
+    -> Let Borsalino check first.
+        <<set $bod3_points -=1>>
+        {$borsalino}: Oh... Are you having second thoughts...?
+        {$borsalino}: You see, I can just listen in with Haki...
+        Despite that, Borsalino looks through the lens.
+        {$borsalino}: That seems... Like an enemy ship at a long range from here, dear {$name}...
+        -> Attack!
+            <<set $bod3_points +=1>>
+            <<jump date_borsalino_3_route1_attack>>
+        -> Don't attack.
+            <<set $bod3_points -=1>>
+            <<jump date_borsalino_3_route_1_notattack>>
+-> Wait, what are you getting at?
+    <<set $bod3_points -=1>>
+    {$borsalino}: You'll see, you'll see...
+    Huh?! He has disappeared...
+    You look around yourself on the empty deck, and squint toward the distance.
+    Is that... A pirate ship?
+    You're beginning to regret saying anything.
+    <<jump date_borsalino_3_route1_call>>
+===
+
+title: date_borsalino_3_route1_call
+location: day(ship)
+---
+
+Your transponder snail rings.
+*Berebereberebere...*
+-> Ignore the call.
+    <<set $bod3_points +=1>>
+    It stopped ringing...
+    Borsalino calls the ensign behind you instead.
+    {$borsalino}: Ah~ You're avoiding my calls, {$name}?
+    {$borsalino}: It's okay... I do that as well...
+-> Pick up the call... Pray to any deities that can hear you.
+{$borsalino}: Oh... Attention all soldiers, there's enemies on sight...
+{$borsalino}: We will be attacking them, *o~okay...?*
+{$borsalino}: Refer to {$name} for your orders...
+You can just imagine him giving you a wink and a thumbs-up...
+<<jump date_borsalino_3_route1_panic>>
+===
+
+title: date_borsalino_3_route1_attack
+location: day(ship)
+---
+
+{$name}: An enemy ship!
+{$name}: It's our duty to attack.
+Borsalino grins.
+{$borsalino}: Of course, of course it is...
+{$borsalino}: Listen, {$name}... I think these pirates must be lost, so close to Headquarters...
+{$borsalino}: This *wo~on't* be much of a challenge, will it...?
+-> I'll go first!
+    <<set $bod3_points +=1>>
+    Borsalino chuckles.
+    {$borsalino}: I'll be faster, believe me...
+-> You go first!
+    {$borsalino}: Gladly...
+{$borsalino}: The soldiers will listen to you, I bet...
+{$borsalino}: Please call all armed men on deck...
+{$borsalino}: Have the others ready the artillery...
+{$borsalino}: And approach the target as fast as you can...
+-> Got it!
+    <<set $bod3_points +=1>>
+-> Can you repeat?
+    Whoops! He's gone!
+You climb your way down as fast as you can. This is going to be fun.
+<<jump date_borsalino_3_route1_choose>>
+===
+
+title: date_borsalino_3_route1_panic
+location: day(ship)
+---
+
+Soldiers are gathering on deck, holding their weapons ready. They are looking at you for guidance!
+{$name}: Uh...
+-> The target is in that direction. Let's try to sail forward.
+    Ensign: What did you say?
+    Ensign: I can't hear you...
+    -> I SAID MOVE!!
+        Ensign: O-okay...
+        Ensign: Do you mean all five of us on deck, or...?
+        What? There are only five people on deck?
+        It seems like there are some steps you are missing...
+        <<jump date_borsalino_3_route1_secondchance>>
+    -> Cry quietly
+        Ensign: Oh no... We are doomed...
+        <<jump date_borsalino_3_route1_fail>>
+-> Call all armed men on deck!
+    {$name}: We need to prepare for an incursion!
+    You speak into the snail as your subordinates crowd the deck.
+    It's not going that bad!
+    <<jump date_borsalino_3_route1_success>>
+===
+
+title: date_borsalino_3_route1_secondchance
+location: day(ship)
+---
+
+{$name}: Okay. Let's try this again.
+-> Everyone prepare the artillery!
+    Ensign: Uh... I'm sorry, {$name}, but we are too far away from the target!
+    <<jump date_borsalino_3_route1_fail>>
+-> Everyone gather on deck first!
+    <<set $bod3_points +=1>>
+    Your unit breaks into formation. coordinate on deck.
+    -> Half of you, prepare the artillery!
+        <<set $bod3_points +=1>>
+        {$name}: The other half should stay on deck and get ready for the incursion.
+        {$name}: We sail forward! As fast as we can!
+        Determination replaces the confusion that was obvious in your subordinates' eyes. This is not going that bad!
+        <<jump date_borsalino_3_route1_success>>
+    -> Let's sail toward the enemy as fast as we can!
+        <<set $bod3_points -=1>>
+        Your men seem confused... This sounded much better in your head.
+        <<jump date_borsalino_3_route1_fail>>
+-> FIRE!!!
+    Ensign 1: Fire?! We haven't even prepared the cannons!!!
+    There is a distant explosion, its impact quaking through the sea and tumbling the warship.
+    Ensign 2: Oh no, oh no, oh no arewegonnadie?!
+    The men hug each other and cry.
+    <<jump date_borsalino_3_route1_fail>>
+===
+
+title: date_borsalino_3_route1_choose
+location: day(ship)
+---
+
+You meet a couple of soldiers on deck, holding their weapons ready. They are looking at you for guidance!
+Ensign: So... According to the Admiral, you're in charge now! What are your orders, {$name}??
+-> Let's attack immediately!
+    <<set $bod3_points -=1>>
+    Your men look at each other as if they are afraid.
+    Ensign: Uh... I'm sorry, {$name}, but what direction is the enemy again?
+    {$name}: Ugh...
+    You point out what you saw in the crow's nest. Keep a cool head while you think of the next step...
+    <<jump date_borsalino_3_route1_secondchance>>
+-> Everyone gather on deck first!
+    <<set $bod3_points +=1>>
+    Your unit breaks into formation.
+    -> Half of you, prepare the artillery!
+        <<set $bod3_points +=1>>
+        {$name}: The other half should stay on deck and get ready for the incursion.
+        {$name}: We sail forward! As fast as we can!
+        Determination replaces the confusion that was obvious in your subordinates' eyes. This is not going that bad!
+        <<jump date_borsalino_3_route1_success>>
+    -> I hope you are all okay that we are stopping the mission to go fight pirates...
+        <<set $bod3_points -=1>>
+        Your men look at each other as if they don't quite understand. You are unsure, and it's wearing off on them.
+        Ensign: Uh... Yes...?
+        Ensign: We are ready to heed your orders.
+        <<jump date_borsalino_3_route1_secondchance>>
+===
+
+title: date_borsalino_3_route1_success
+location: day(ship)
+---
+
+Your warship propels itself in the enemy ship's direction! You are on deck, the wind tousling your hair, your heart thumping wildly.
+Over a megaphone, you shout that the pirates should freeze, because they are surrounded and you're ready to attack!
+From the pirate ship's deck, Borsalino waves at you.
+{$borsalino}: Why... I already defeated and arrested them all, of course...
+{$borsalino}: Care to help me take them to the cells...?
+{$name}: Wha- What? Already??
+Around you, the rest of the crew seems unfazed.
+A few arrests and stacks of paperwork later...
+<<set_background office show>>
+You return to HQ and the familiarity of the office.
+{$borsalino}: Well... The mission got derailed...
+-> Let's never do that again?
+    {$borsalino}: Aww... {$name}... I thought being spontaneous was what you wanted.
+    {$borsalino}: *But...* at least you are honest...
+-> That was fun!
+    <<set $bod3_points +=1>>
+    {$borsalino}: Hmm... I thought so...
+    {$borsalino}: Variety is the spice of life, isn't it?
+His hand is quite close to yours... Almost brushing your fingers together.
+You put your hand on his. This time he doesn't vanish.
+Wow~
+===
+
+title: date_borsalino_3_route_1_notattack
+location: day(ship)
+---
+
+{$name}: Well... They are just minding their own business...
+{$name}: I don't think we should derail the mission.
+{$borsalino}: Oh, of course... Let's get back on deck, shall *we~e...?*
+Borsalino does look a little bit disappointed... or does he? It's hard to tell.
+<<jump date_borsalino_3_route1_earlyend>>
+===
+
+title: date_borsalino_3_route1_earlyend
+location: day(ship)
+---
+
+{$borsalino}: Oh... Well, I have some calls to make... Take care...
+Borsalino has vanished.
+You're about to get to the island and he will be busy the rest of the time...
+That didn't go too well!
+===
+
+title: date_borsalino_3_route1_fail
+location: day(ship)
+---
+
+This is going terribly. Call Borsalino for help?
+-> Yes.
+    You grab the den den mushi...
+    {$borsalino}: Hello... Who is this?
+    {$borsalino}: {$name}, you are still a little dot in the distance...
+    {$name}: Come back... I don't have a grip on this.
+    {$borsalino}: Oh... Is that so...?
+    <<jump date_borsalino_3_route1_end_bad>>
+-> No.
+    <<set $bod3_points -=1>>
+    You are pretty sure you can manage on your own...
+    ...Except someone else already called him for help.
+    {$borsalino}: Mmm... Hello~o?
+    {$borsalino}: Oh, is it that bad...?
+    This is even worse. The worst case scenario!
+    <<jump date_borsalino_3_route1_end_bad>>
+===
+
+title: date_borsalino_3_route1_end_bad
+---
+<<set_background day(ship) cross_fade "date_borsalino_3_route1_end_bad_fade">>
+===
+
+title: date_borsalino_3_route1_end_bad_fade
+---
+Back on deck...
+{$borsalino}: Well, I had to leave the prisoners unattended...
+{$borsalino}: Was that too much for you?
+-> I thought we were going on a diplomatic mission!!
+    <<set $bod3_points -=1>>
+    {$borsalino}: I'm sorry you feel this way...
+    {$borsalino}: I think a bit more flexibility wouldn't be bad for you...
+    {$borsalino}: ...and that you liked spontaneity...
+    {$borsalino}: *Oh!* All is well that ends well, hmm...?
+    {$name}: That's what you call well...?
+-> Ugh... I overestimated myself...
+    <<set $bod3_points +=1>>
+    {$borsalino}: Hmm...
+    {$borsalino}: Don't worry about it... This wasn't what we had planned, was it...?
+    {$borsalino}: Well... I am quite sure we will have many other opportunities to ah...
+    {$borsalino}: Make things more interesting...
+    {$name}: Hm...
+That certainly could have gone better. Ugh.
+===
+
+title: date_borsalino_3_route2
+location: day(ship)
+---
+
+{$borsalino}: We are almost there... I should call the base...
+{$borsalino}: So, see you when we dock...?
+-> I have a question about the mission.
+    <<set $bod3_points +=1>>
+    How come you are appointed to it?
+    {$name}: It seems something a Vice Admiral could do.
+    {$borsalino}: Oh, you are so sharp, {$name}.
+    {$borsalino}: The truth is... This base is close to the Sorbet Kingdom...
+    {$borsalino}: Does that ring a bell...?
+    -> I've heard that before.
+        <<set $bod3_points +=1>>
+        {$name}: They used to be our enemies, didn't they?
+        {$borsalino}: *Ve~ery* good...
+        {$borsalino}: And that is why the... Ah... *Decisions* we make in this base are important...
+        {$borsalino}: They could impact the world, at large...
+    -> Not really...
+        {$borsalino}: *O~okay,* well...
+        {$borsalino}: I'll put it like this... It's important to be on their good side...
+-> I will wait here.
+    Borsalino nods and smiles at you.
+    {$borsalino}: See you soon...
+    He disappears in a flash.
+-> I'll go below deck.
+    <<set $bod3_points -=1>>
+    {$borsalino}: Oh, as you please...
+    He disappears in a flash of light.
+    Uh... It seems like he didn't know that you meant *along* with him...
+     Or he wants space...
+You try to relax, feeling the salty wind on your face.
+The warship creaks around you...
+<<set_background day(town) cross_fade>>
+You have docked at the base. Much like Marineford, a town has grown around it.
+Civilians have gathered at the port to greet the Admiral's ship.
+As you step onto the wooden walkway, Borsalino suddenly taps your shoulder.
+{$borsalino}: Hello again...
+{$borsalino}: I hope I didn't startle you...
+-> Ask about the mission.
+    {$name}: Did you manage to contact the base?
+    {$borsalino}: Oh, I suppose I did?
+    {$borsalino}: Truth be told... There was not a lot of talking...
+    {$borsalino}: Only barking...
+     Borsalino shrugs a shoulder.
+-> Look around the port.
+    There are generic Marine ships here, but others are antique and luxurious.
+    {$borsalino}: Oh... Look at that...
+    {$borsalino}: Those ships look like royalty, don't they...?
+    {$borsalino}: Very nice...
+-> Pout because he keeps disappearing.
+    <<set $bod3_points -=1>>
+    {$borsalino}: Oh... {$name}...
+    {$borsalino}: Business before pleasure, *ye~es...?*
+{$borsalino}: What we need to do...
+{$borsalino}: Is to find out as much as we can about the **way things work** here... *Oka~ay?*
+In the crowd, a big dog with fluffy white hair approaches you. It's wearing a Navy hat.
+-> What the hell is that?
+    <<set $bod3_points +=1>>
+    Borsalino chuckles.
+    {$borsalino}: Oh, so how are we today, Vice Admiral?
+    He's addressing the dog...
+    {$name}: Um... Are you okay?
+    The dog suddenly turns into a tall woman clad in a Navy uniform!
+-> Awww! Floofy.
+    Borsalino takes a step back towards the dock.
+    {$borsalino}: All yours, {$name}...
+    You pet the doggo behind the ears.
+    {$name}: Who's a good girl? Who's a—
+    {$borsalino}: Oh... The dog?
+    {$borsalino}: That's a Vice Admiral.
+    You immediately stop petting the doggo.
+    It turns into a tall woman clad in a Navy uniform... stomping her foot against the dock.
+    ?: Woof! Oh, that was nice, I mean... Sorry!
+    <<set $bod3_points +=1>>
+    Dog: Vice Admiral Woof at your service!
+    {$borsalino}: This is Petty Officer {$name}... They're with me.
+    Dog: Pleased to meet you!
+    Dog: So, let's get down to business! Where should we start?
+    {$borsalino}: The newcomer's *cho~oice...*
+    <<jump date_borsalino_3_route2_choices>>
+===
+
+title: date_borsalino_3_route2_choices
+---
+<<if $bod3_investigation_good >= 2 || $bod3_investigation_bad >= 2>>
+    {$borsalino}: Ah, actually... I think we have seen enough...
+    <<if $bod3_investigation_good >= 2>>
+        <<jump date_borsalino_3_route2_good>>
+    <<else>>
+        <<jump date_borsalino_3_route2_good>>
+    <<endif>>
+<<else>>
+    -> Check the Navy offices <<if !visited("date_borsalino_3_route2_office")>>
+        <<jump date_borsalino_3_route2_office>>
+    -> Check the training grounds <<if !visited("date_borsalino_3_route2_training")>>
+        <<jump date_borsalino_3_route2_training>>
+    -> Have a look around the town <<if !visited("date_borsalino_3_route2_docks") && !visited("date_borsalino_3_route2_town")>>
+        Dog: Yes! A walk! A walk!
+        -> Go to the docks
+            <<jump date_borsalino_3_route2_docks>>
+        -> Go to the housing area
+            <<jump date_borsalino_3_route2_town>>
+    -> Go to the docks <<if visited("date_borsalino_3_route2_town") && !visited("date_borsalino_3_route2_docks")>>
+        <<jump date_borsalino_3_route2_docks>>
+    -> Go to the housing area <<if visited("date_borsalino_3_route2_docks") && !visited("date_borsalino_3_route2_town")>>
+        <<jump date_borsalino_3_route2_town>>
+<<endif>>
+===
+
+title: date_borsalino_3_route2_office
+location: office
+---
+
+You chose to check the offices.
+The Navy base is impersonal, as public buildings often are. A known smell of paper and coffee permeates the corridors.
+{$borsalino}: Well, well...
+{$borsalino}: I'll leave the questions to you, {$name}...
+-> Check if their paperwork is up to date!
+    Dog: Ha ha ha ha! Up to date? Not here!
+    {$borsalino}: O~oh, don't worry, Vice Admiral...
+    {$borsalino}: Our situation at HQ is similar.
+    It seems like Borsalino was expecting something else...
+-> Check that their arrest record is impeccable!
+    <<set $bod3_points -=1>>
+    <<set $bod3_investigation_bad += 1>>
+    Dog: Wow! You've really learned from the Fleet Admiral, huh?
+    {$borsalino} chuckles.
+    {$borsalino}: {$name} takes the job very seriously...
+    It seems like Borsalino was expecting something else...
+-> Ask about the structure and chain of command!
+    <<set $bod3_points +=1>>
+    <<set $bod3_investigation_good += 1>>
+    {$borsalino}: *Oh...?* That's an interesting question...
+    Dog: Well, the only real difference between us and most of the bases...
+    Dog: Is that we have a department dedicated to cooperating with the guards of the Sorbet Kingdom.
+    {$borsalino}: Is that so...?
+    -> Tell us more!
+        <<set $bod3_points +=1>>
+        <<set $bod3_investigation_good += 1>>
+        Dog: The tensions between the Government and the Kingdom is very recent!
+        Dog: So the monarchy wants to be present in the Navy's operations... This is the solution we found. And it works!
+    -> What? You let them control you?
+        <<set $bod3_points -=1>>
+        <<set $bod3_investigation_bad += 1>>
+        Woof tilts her head.
+        Dog: It's more like a partnership?
+        {$borsalino}: I see... I see...
+Dog: Nothing special, huh?
+Dog: Where would you like to go next?
+<<jump date_borsalino_3_route2_choices>>
+===
+
+title: date_borsalino_3_route2_training
+location: training grounds
+---
+
+You chose the training grounds.
+The island seems a lot older here than at the port. The hill this fortress is built on is ancient, with irregular stone peeking out from between the modern concrete.
+A unit is going through training drills.
+They are a bunch of scrawny girls and boys attempting to throw cannonballs at each other, struggling to even lift them up.
+Cadet A: This is the worst...
+Cadet B: My manicure!
+Cadet C: Pull through... Just... Gasp... One more throw...
+Cadet C faints.
+{$borsalino}: Hmm... We~ell, what do you think, {$name}?
+-> Ridiculous.
+    <<set $bod3_points -=1>>
+    <<set $bod3_investigation_bad += 1>>
+    {$name}: You need to be harder with them, Vice Admiral!
+    Dog: Oh...
+    Woof pouts, turning her head low.
+    {$borsalino}: Hmm... A word, {$name}?
+    {$borsalino}: We are trying to be diplomatic with our subordinates, *he~ere...*
+-> Well, um...they need a bit of work, don't they?
+    Woof nods energetically.
+    Dog: We're putting them through the Garp treatment! Heh!
+    {$borsalino}: Ooh, I see...
+    Borsalino nods, but it seems like he was expecting something else...
+-> Where do these cadets come from?
+    <<set $bod3_points +=1>>
+    <<set $bod3_investigation_good += 1>>
+    Dog: Ah...
+    Woof tilts her head.
+    Dog: This is our latest unit.
+    Dog: They're mostly young nobles? I suppose they send their kids here to straighten them u—
+    Dog: OMG BALL!
+    Dog: Sorry, sorry...
+{$borsalino}: Oh, Vice Admiral... That is all *ve~ery* interesting...
+Dog: So! What's the next stop, Name?
+<<jump date_borsalino_3_route2_choices>>
+===
+
+title: date_borsalino_3_route2_docks
+location: day(ship)
+---
+
+You chose to go back and have a closer look at those wonderful ships docked here.
+Rows and rows of them, their sails wine red and silver, their figureheads shaped like mermaids and fauns.
+{$borsalino}: Ooh... Shiny...
+-> They look expensive.
+    Dog: Royalty ships, woof!
+    {$borsalino}: I wonder if we'd have time to sail on one of these after the work is done...
+    You blush a little bit.
+-> Isn't that a waste of funds?
+    <<set $bod3_points -=1>>
+    <<set $bod3_investigation_bad += 1>>
+    Borsalino chuckles, but the way he looks is cryptic.
+    {$borsalino}: We are trying to stay *diplomatic*, dear {$name}...
+    Dog: U-uh...actually...some of these are gifts from the World Nobles!
+    Dog: Heh. No funds wasted here, right?
+-> I'd love to sail on one of these. So fancy.
+    <<set $bod3_points +=1>>
+    <<set $bod3_investigation_good += 1>>
+    Borsalino smiles and says nothing.
+    Dog: Aren't they?!
+    Dog: They are m-mostly gifts from the World Nobles...
+    Dog: That's how you know they're happy with us!
+    {$borsalino}: I see...
+Dog: So! What would you like to do next?
+<<jump date_borsalino_3_route2_choices>>
+===
+
+title: date_borsalino_3_route2_town
+location: town
+---
+
+You chose to get a feel for the town.
+The weather is warm, and the sun is heavy. Some Marines patrol in uniform, but otherwise, the civilians must be with their families.
+There's none of the pomp you saw back at the port.
+{$borsalino}: Hmm!
+{$borsalino}: Reminds me a little of old Marineford...
+Borsalino seems distracted, looking at the seafood restaurants. You catch a conversation between two of your colleagues.
+Marine A: Hey, {$name}!
+Marine A: Things are getting wild out there, with all that's happening...
+-> You are right! I'd prefer to be taking down bad guys. I'm so tired of following the Government.(-)
+    The two soldiers seem like they agree with you.
+    They look proud. They look inspired! They look like... Like they just saw a ghost.
+    Oh, he's right behind you, isn't he?
+    {$borsalino}: Oh... That was quite an outburst, {$name}...
+    -> I'm sorry!
+        {$borsalino}: You know... it's good to motivate your subordinates...
+        {$borsalino}: But there... Is a time and place, mmm...?
+    -> I'm just saying what I think is right!
+        <<set $bod3_points -=1>>
+        <<set $bod3_investigation_bad += 1>>
+        {$borsalino}: Oh, I see...
+        {$borsalino}: You could become a very influential person, {$name}.
+        {$borsalino}: But pick your battles...
+-> I think it depends...
+    <<set $bod3_points +=1>>
+    <<set $bod3_investigation_good += 1>>
+    {$name}: I agree with you. Action is important.
+    {$name}: But we are visiting a country which used to be our enemies too. If we are diplomatic once in a while, we can focus our efforts elsewhere.
+    Borsalino catches up with you and whispers into your ear.
+    {$borsalino}: Well done, {$name}... They'll listen to you. They like you.
+-> Not at all.
+    <<set $bod3_points -=1>>
+    <<set $bod3_investigation_bad += 1>>
+    {$name}: Go back to work!
+    {$borsalino}: ...
+    Borsalino is signaling at you to follow him.
+    {$borsalino}: You can be a little harsh, can't you...? Pick your battles...
+Dog: So! Where would you like to go next?
+<<jump date_borsalino_3_route2_choices>>
+===
+
+title: date_borsalino_3_route2_bad
+location: day(ship)
+---
+{$borsalino}: Ah... Name...
+{$borsalino}: Could we have a word...?
+{$borsalino}: I can tell you're tired, aren't *yo~ou...?* I will take over from here, if you will...?
+Huh? Did you do something wrong?
+It's hard to tell what he is thinking.
+{$borsalino}: It's *oka~ay...* I still like you...
+Borsalino winks at you, but waves you away.
+That seemed...to go not so well, you think as you return to the ship.
+===
+
+title: date_borsalino_3_route2_good
+location: town
+---
+Dog: Oh! Okay!
+Dog: I hope you had a good time! Let's meet up later and do the paperwork.
+{$borsalino}: Oh... Sure... Thank you for showing us around, dear Woof.
+Woof salutes.
+{$borsalino}: Well, well. What do you think?
+-> It's a total catastrophe around here.
+    <<set $bod3_points -=1>>
+    {$borsalino}: Oh, really?
+    {$borsalino}: Hmm...
+    {$borsalino}: I think this base might just serve its purpose... The, ah, you know... Public relations...? It's all good... The people are happy...
+    {$borsalino}: Well... We don't have to agree on everything.
+-> I think everything is working as it should.
+    <<set $bod3_points +=1>>
+    {$borsalino}: I'm glad you see it this way...
+-> I think I'm doing your job again!
+    <<set $bod3_points -=1>>
+    {$borsalino}: Oh. No, no. I want to know what your opinion is... But I do have mine...
+    {$borsalino}: It seems a bit... Chaotic... But replacing the Vice Admiral or sending more troops here, ah... It could do more harm than good...
+    -> I agree!
+        <<set $bod3_points +=1>>
+        {$borsalino}: Sometimes inaction is the best action... And not everything is what it seems.
+        He smiles. That absent, friendly smile with so much hidden beneath.
+    -> I don't see it.
+        {$borsalino}: Well... We don't have to agree on everything...
+        He smiles. That absent, friendly smile with so much hidden beneath.
+{$borsalino}: Let's go have lunch together... hmm?
+You smile, feeling like you have made a good impression.
+===

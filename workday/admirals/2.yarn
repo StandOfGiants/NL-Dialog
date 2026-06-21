@@ -874,7 +874,7 @@ else
         -> Run
             You run off yelling about paperwork, but get the feeling that Admiral Aokiji will get revenge, and it will be served cold.
         -> Scold Admiral Aokiji
-            'name': This is why you shouldn't sleep just anywhere, you could get eaten by something!
+            {$name}: This is why you shouldn't sleep just anywhere, you could get eaten by something!
             {$kuzan}: ...Arara maybe you're right, but uh, what's with all the rocks? Oh well.
             He falls back asleep. You give up and head back to the office.
     -> Carefully remove the rocks before leaving.

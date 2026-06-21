@@ -1,0 +1,155 @@
+title: borsalino_gift_hunt_intro
+location: town
+---
+At the weekly market, the atmosphere is chatty and warm. A perfect opportunity to browse for something that Borsalino might like!
+But wait...
+It's difficult to tell... what *does* he like? He always seems so neutral about everything!
+The possibilities overwhelm you... what stand would you like to explore first?
+-> A clothes stand, belonging to a local tailor.
+    <<jump borsalino_gift_hunt_Bors_gift_clothes>>
+-> A cosmetic stand offering soaps, fragrances, and other similar products.
+    <<jump borsalino_gift_hunt_bors_gift_cosmetic>>
+-> An antiquary full of books, decorations, and unusual gadgets.
+    <<jump borsalino_gift_hunt_bors_gift_antiquary>>
+===
+
+title: borsalino_gift_hunt_Bors_gift_clothes
+location: town
+---
+
+The stand is full of items ready to wear. So many dazzling options! Lines of coats hang along the long racks, new and crisp in all possible colours. On the main table, gentlemens' shirts are neatly displayed with some accessories arranged to the side.
+Vendor: Welcome! Have any of these pieces caught your attention?
+-> Ask the vendor for help!
+    {$name}: Well, I'm looking for a gift for somebody.
+    {$name}: His style is quite...
+    -> ...flashy.
+        Vendor: Flashy, you say? I've got exactly what you need.
+        Vendor: Just got this in!
+        The vendor gestures towards a pile of shoe boxes under the table. Opening one of them reveals... fine leather moccasins! And they're admiral size.
+        Vendor: But... wait for it–
+        The vendor shakes them gently and...
+        They flash with glittering light!
+        Vendor: Better not look at them for too long!
+        -> Wow, yeah, this seems like the perfect gift.
+             He'll be able to annoy Fleet Admiral Sakazuki to his *heart's desire* with these!!!
+            <<jump borsalino_gift_hunt_great_gift>>
+        -> Thank you, but I didn't mean *flashy* in such a literal way.
+            (=> loop back to question) //HOW DO??
+    -> ...classy.
+        Vendor: Oh, looking for something more traditional, I see? I've got exactly what you need.
+        The vendor points to you towards some sober socks with golden buttons shining at the seams.
+        Quite a standard gift, but... can you go wrong with that?
+        Not really!
+        -> Yes, I think this is what I'm looking for.
+            <<JUMP borsalino_gift_hunt_good_gift>>
+        -> Thank you, but I don't think that's what I'm looking for.
+            (=> loop back to question) //HOW DO??
+    -> ...tacky.
+        Vendor: Oh, a bit of the good old kitsch never hurts, huh?
+        Vendor: Well, why don't you take a look at this assortment of ties?
+        Ties! If there's one thing that you're sure about, it's that Borsalino loves wearing them, right?
+        The vendor pulls out a tie with mauve, red, and blue polka dots. Very... striking.
+        Difficult to forget.
+        The ones Borsalino usually wears do look a bit different...
+        -> Yes, I think he will like this!
+            <<JUMP borsalino_gift_hunt_bad_gift>>
+        -> Oh, I'm not really sure about this...
+            (=> loop back to question) //HOW DO??
+-> ...ah. Forget about it.
+    Vendor: Okay, maybe some other time!
+    <<jump borsalino_gift_hunt_intro>>
+===
+
+title: borsalino_gift_hunt_bors_gift_cosmetic
+location: town
+---
+
+What is this sweet fragrance in the air?
+You stop in front of a beautiful shop full of hand-crafted soap of all colours and sizes. Other perfumes, colognes, and cosmetics make for an interesting display for all senses.
+Vendor: Welcome! Has something caught your eye?
+{$name}: I'm looking for a gift...
+Vendor: Oh, I see! Is this for a soldier here at Marineford?
+The vendor pulls out a nicely packed set of bath related items. It seems perfect!
+Vendor: Just a thought, but our soap and deodorant packs are at half-price~
+-> These look great... that does sound like a good gift.
+    After all, who doesn't like to smell nice?
+    You hope he won't misinterpret it...
+    <<jump borsalino_gift_hunt_bad_gift>>
+-> That's not exactly what I'm looking for.
+    Vendor: Oh, I see... so your soldier doesn't need any motivation to shower. You're lucky! How about one of our perfumes or colognes, then? Feel free to try them on.
+    You take them up on the offer, pouring a few drops of cologne on your wrist and smelling different variants that tickle your nose.
+    They all seem nice. None of them strike you as particularly outstanding however.
+    -> Well, can't go wrong with one of these...
+        <<jump borsalino_gift_hunt_good_gift>>
+    -> I think I'll keep looking for something else.
+        <<jump borsalino_gift_hunt_intro>>
+===
+
+title: borsalino_gift_hunt_bors_gift_antiquary
+location: town
+---
+
+The sight of yellowing pergamins and interesting trinkets seems almost mysterious, but in a way, cozy too. Just like Borsalino's hidden depths...
+Vendor: Welcome, stranger! Are you interested in buying any of these?
+-> Ask them for help.
+    {$name}: I'm looking for a gift...
+    -> ... something to read.
+        Vendor: Aha! Can I interest you in these tomes about the world far and wide? Some of them are quite rare indeed!
+        {$name}: It does sound like something Borsalino would be interested in...
+        {$name}: After all, he mentioned that he used to love reading and was sad to lose the habit.
+        -> Yes! I'll take it!
+            <<jump borsalino_gift_hunt_great_gift>>
+        -> I don't think so — what would he do with them?
+            (=> loop back to question) //HOW DO??
+    -> ...something more decorative.
+        Vendor: At this moment, I'm sold out of almost any decorations... except for these figurines.
+        The vendor gestures to some Rococo porcelain animals: bunnies with chubby bellies and rosy cheeks.
+        It doesn't quite scream Borsalino to you, but... he's quite unpredictable, so maybe?
+        -> Why not? I'll take these.
+            <<jump borsalino_gift_hunt_bad_gift>>
+        -> No, I really don't think this is right.
+            Upon closer inspection, you notice that one of the figurines represents a cute little Momotaro with his monkey.
+            Hmm... on second thought...
+            -> Take it?
+                <<jump borsalino_gift_hunt_good_gift>>
+            -> Look for something else.
+                (=> loop back to the question) //HOW DO??
+    -> Nevermind.
+        Vendor: Oh. Well have a nice day!
+        <<jump borsalino_gift_hunt_intro>>
+-> Nevermind.
+    Vendor: Have a nice day!
+    <<jump borsalino_gift_hunt_intro>>
+===
+
+title: borsalino_gift_hunt_great_gift
+location: town
+---
+
+Vendor: Okay, it's a deal!
+Your gift has been packed in nice gold-black paper. It looks good!
+Vendor: Thank you for your purchase. I think you've made the right decision!
+As you move away from the busy atmosphere of the market, clutching the gift paper in your hands, you can't help but agree!
+===
+
+title: borsalino_gift_hunt_good_gift
+location: town
+---
+
+Vendor: Okay, it's a deal!
+Vendor: Have a nice rest of the day!
+As you move away from the stand, you can't help but notice that there are so many other shops.
+*Could* you have found something better...?
+Well, in any case, this will have to do.
+===
+
+title: borsalino_gift_hunt_bad_gift
+location: town
+---
+
+Vendor: Okay, it's a deal!
+Vendor: Have a nice rest of the day!
+As you move away from the stand, you feel uneasy.
+Hmm... was this the right call...?
+Well, you suppose only time will tell...
+===

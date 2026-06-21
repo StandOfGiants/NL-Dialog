@@ -2,9 +2,9 @@ title: workday_coby_crew_1_main
 location: day(office)
 characters: [coby, drake, helmeppo]
 ---
-// <<show_character coby left show>>
-// <<show_character drake center show>>
-// <<show_character helmeppo right show>>
+// <<show_characters coby>>
+// <<show_characters drake>>
+// <<show_characters helmeppo>>
 Your assignment is to work with Captain Coby and his group. Coby has seemed enthusiastic, but you can't get much of a read on Lieutenant Commander Helmeppo or Rear Admiral Drake.
 You remind yourself that they'll probably be glad of the help, and there's a lot of time to do that as you head through the maze of the filing room toward the back, in what you hope is the right direction.
 When you hear the sound of voices, you speed up, and there they are.
@@ -233,7 +233,7 @@ Coby: What about you, {$name}? You don't know the filing room that well—do you
 
 title: workday_coby_crew_1_Solo_start
 ---
-<<hide_characters hide>>
+<<show_characters>>
 The four of you head in opposite directions, in tacit agreement to spread your search wide. At least, you hope you're still going in an opposite direction from the other three... This place is like a maze. You don't see, hear, or smell anything for a while, and eventually you reach the end of your aisle and what looks like a solid wall.
 -> **Go back the way you came.**
     <<jump workday_coby_crew_1_Solo_back>>
@@ -271,7 +271,7 @@ You lean in; it's a comic book. The title reads, **Sora, Warrior of the Sea No. 
 title: workday_coby_crew_1_Solo_find_goat
 ---
 Suddenly, you stop. Is that a faint bleating you hear? You turn your head toward the source of the sound. Yes, that's definitely it. You set off at a quicker pace towards the other end of the aisle. The sound grows louder; you're definitely on the right track.
-<<show_character goat, center, show>>
+<<show_characters goat>>
 Goat: Maaaaa!
 It's chomping away at some files on a lower shelf; they look important. The contents of the shelf (well, what remains of it) are strewn around the goat.
 -> Naughty goat! Everyone's going to be so mad at you. I bet those papers are important.
@@ -370,7 +370,7 @@ You wait for someone to show up. It ought not to take too long, right? At least 
 
 title: workday_coby_crew_1_Solo_regroup_Drake
 ---
-<<show_character drake, center, show>>
+<<show_characters drake>>
 Drake: I thought I heard you, {$name}. Looks like you've found the goat. Good work.
 -> Thanks, but, well...
 -> Just lucky, I guess.
@@ -732,7 +732,7 @@ You follow Drake down the aisle, in the opposite direction from Helmeppo and Cob
 
 He seems to have a good idea of the layout of the room, and you're at the door sooner than you expected. On the floor, a trail of torn-up paper leads down a new aisle. Drake picks up the pace and so do you; every time you think you might be losing the trail, you see something promising—a dent shaped like a horn, another scrap of paper, the contents of a file strewn on the floor. Then you hear the faint sound of bleating.
 Drake: That must be it.
-<<show_character goat, center, show>>
+<<show_characters goat>>
 Drake: Oh, no—its front leg is stuck in that file drawer.
 Goat: [shake]Maaaaaaaaaa![/shake]
 Drake: It's OK... Here you go.
@@ -801,14 +801,14 @@ Drake: There, there... Let's see.
 title: workday_coby_crew_1_Drake_Sengoku
 ---
 Drake: I'll go fetch Sengoku-san. Stay with the goat.
-<<hide_characters hide>>
-<<show_character goat, center, show>>
+<<show_characters>>
+<<show_characters goat>>
 -> Well, I guess it's you and me, Goat...
   Goat: Maaa.
 -> Here, have some more paper. I don't think Rear Admiral Drake is going to use this file anyway. (+1 Goat)
 
 Drake is gone for a while, but in that time the goat seems to be calming down. It slows its chewing on the files and sits quietly. When Drake reappears, however, he is alone.
-<<show_character drake, center, show>>
+<<show_characters drake>>
 Drake: Sengoku-san said that since this room is in our jurisdiction, this is our problem to solve. So I think we'd better get the others...
 <<jump workday_coby_crew_1_Pre_regroup_without_goat>>
 ===
@@ -847,8 +847,8 @@ Drake: The goat seems a little calmer now. I think we can try freeing it.
 title: workday_coby_crew_1_Drake_goat_escape
 ---
 You pull out the drawer. The goat wiggles its foot, pulls it out and stands on all four legs. As Drake goes down to scoop it up, the goat darts between his legs and takes off down the aisle before the two of you can follow, the sounds of fluttering paper and hooves denting the cabinets echoing in its wake. (+1 Goat)
-<<hide_characters hide>>
-<<show_character drake, center, show>>
+<<show_characters>>
+<<show_characters drake>>
 Drake: We'll have to try again.
 <<jump workday_coby_crew_1_Pre_regroup_without_goat>>
 ===
@@ -886,5 +886,5 @@ GOAT 3 points
 Helmeppo 4 points
 Coby 3 points
 
-<<jump CobyCrewDatesOne>>
+<<jump main>>
 ===

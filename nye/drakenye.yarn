@@ -1,0 +1,210 @@
+title: drakenye_intro
+location: ballroom
+---
+
+Wow, it’s the end of the year already and HQ is throwing a grand old party! Just look at those decorations! Everyone is dressed to the nines, too! You are as well - you look good, if you don’t say so yourself. The best part is that your outfit seems to have a pocket that could just about fit anything and not ruin your look. Perfect for carrying around that gift you got for -insert character chosen for gift hunt-! Vegapunk really does make some incredible things.
+You glance at the clock, remembering your goal from a whole year ago. When it chimes midnight, you hope you have someone interested in kissing those lips of yours. Or holding your hand. Or liking you at all, really.
+Well, no way to go but forward. Though it couldn’t hurt to say hello to some familiar faces at the party, could it?
+-Pick character- //HOW DO??
+The New Year’s Party is a cacophony of sight and sound. Part of you is surprised Drake isn’t hugging a wall for dear life, but it’s easy to forget just how well he’s trained himself to endure people past his normal threshold. You spot him shoulder-deep in a pack of lower-ranking officers. Once you catch his eye, relief washes over him, and he politely excuses himself to join you.
+Drake: I admit, these always have an enjoyable element, but there’s only so many times you can retell a story–
+As he trails off with a quiet sigh, you muster up your courage and present your gift.
+His expression turns to muted shock, then briefly to confusion.
+Drake: This is…
+-> {$name}: (IF you reached date 4) For Jessica, clearly. //HOW DO??
+    He laughs warmly.
+    {$name}: I thought we–
+-> {$name}: All yours! I uh, I really like–
+    <<jump reject_friend_best_ultra>> //HOW DO??
+-> Wrong Gift!
+    <<jump drakenye_wrong>>
+===
+
+title: drakenye_reject
+location: ballroom
+---
+
+You trail off. His lips press together and his brows pinch as he receives the present. This… isn’t going to be pretty, is it?
+Drake: … I can’t accept this. It would be disingenuous.
+It feels like your stomach is a cannonball, fired and sinking fast into the sea.
+Drake: You should know by now that work relationships seldom blossom kindly into more private ones. You’ve got a lot of maturing and growing ahead of you, [rank, name]. You shouldn’t let a fixation on a man with a public wanted poster keep you from that.
+You try to collect your thoughts from the brutal put-down as he passes the gift back to you, looking equal parts disappointed and sympathetic.
+{$name}: So this is–
+Drake: –wishing you the best of luck in your career. I appreciate the gesture, but again, I cannot accept this.
+Ow.
+Bowing out, he makes himself surprisingly scarce for a man over seven feet tall.
+<<jump drakenye_other>> //HOW DO??
+===
+
+title: drakenye_friend
+location: ballroom
+---
+
+Drake clears his throat. Carefully, he turns the gift over in his hands several times before unwrapping it, then–
+{$name}: Do you like it?
+-> :badgift //HOW DO??
+    …Drake grimaces. Whoops.
+    Drake: It’s...certainly shaped like a gift.
+    Feigned, strained politeness is better than nothing and you’ve still got a shot to shoot.
+-> :goodgift //HOW DO??
+    Drake blinks in surprise, unprepared that someone might pay any attention to his interests.
+    Drake: I… Thank you.
+    <<jump drakenye_friend>>
+-> :bestgift //HOW DO??
+    He immediately lights up. You’ve never seen him quite so animated before.
+    Drake: I haven’t seen these in years! My father threw out the ones I had as a boy…
+    He quietly thumbs over the raised surface of one of the coins inserted into the book.
+    Drake: It wasn’t a good time, but little things like these made it easier for a span. Thank you.
+You creep in closer.
+{$name}: So about what I was trying to say before…
+He puts a hand between you.
+Drake: Before that—
+Oh no.
+Drake: I appreciate your… interest. I do. But I’m in no shape to chase any sort of relationship. I’m due to set sail within the week to return to an ongoing mission, under a complete communication blackout for its duration. It wouldn’t be right to keep you in the dark like that. Certainly you understand?
+{$name}: Unfortunately, yeah.
+Drake: If you’re still of the same mind after, find me then. We’ll talk. I… I think I’d welcome it.
+It’s not a total loss. You think. You’ll have to see whenever he pulls back into port.
+<<jump drakenye_end>>
+===
+
+title: drakenye_best
+location: ballroom
+---
+
+Drake: –I, ah. Let’s take a look, then. Or I will. Naturally.
+There it is again– the cute way he clams up. Frozen momentarily under your attention, he takes a moment to regain himself before carefully picking the wrapping apart.
+Drake’s expression softens.
+Drake: …It’s not often people reach out to me as you have.
+Tentatively, he eases in closer, a faint blush rising across his cheeks.
+{$name}: Do you like it?
+-> :badgift //HOW DO??
+    …Drake grimaces. Whoops.
+    Drake: It’s...certainly shaped like a gift.
+    Feigned, strained politeness is better than nothing and you’ve still got a shot to shoot.
+    But though it appears the gift is bad... he still looks happy to have gotten anything at all.
+-> :goodgift //HOW DO??
+    Drake blinks in surprise, unprepared that someone might pay any attention to his interests.
+    Drake: I… Thank you.
+-> :bestgift //HOW DO??
+    He immediately lights up. You’ve never seen him quite so animated before.
+    Drake: I haven’t seen these in years! My father threw out the ones I had as a boy…
+    He quietly thumbs over the raised surface of one of the coins inserted into the book.
+    Drake: It wasn’t a good time, but little things like these made it easier for a span. Thank you.
+
+That gentleness remains as he glances fondly at his present, but his expression falters.
+Drake: I appreciate every effort you’ve shown me. And I believe I understand where you’re going with this…
+Drake: …but I’m due to set sail within the week to return to an ongoing mission of mine, with a complete communication blackout for its duration. No matter how either of us feels, it wouldn’t be right to keep you in the dark while I’m gone. So unless you’re willing to lose a man you’ve only just…
+He glances aside, thick with disappointment.
+Drake: I’m sorry I can only accept your gift for now. After everything, If there’s anything left of me–
+{$name}: Oh c’mon. I think I’ve learned some patience from you.
+He goes scarlet throat to hairline. Casting off his final shred of self-doubt, he tugs you in for a searing kiss seconds before the countdown to midnight ends.
+There’s a hunger and fire in him you can taste even after you part.
+Drake: Mark my words, then, {$name}. I will return.
+Happy New Year, indeed.
+<<jump drakenye_end>>
+===
+
+title: drakenye_ultra
+location: ballroom
+---
+
+Drake: –I, ah. Let’s take a look, then. Or I will. Naturally.
+There it is again–the cute way he clams up. Frozen momentarily under your attention, he takes a moment to regain himself before carefully picking the wrapping apart.
+Drake’s expression softens.
+Drake: …It’s not often people reach out to me as you have.
+Tentatively, he eases in closer, a faint blush rising across his cheeks.
+{$name}: Do you like it?
+-> :bestgift //HOW DO??
+    He immediately lights up. You’ve never seen him quite so animated before.
+    Drake: I haven’t seen these in years!
+    He quietly thumbs over the raised surface of one of the coins inserted into the book.
+    Drake: I do like it, in fact. And I’m grateful. I… It’s embarrassing, but I had a rather robust set of these as a child. It wasn’t a good time, but little things like these made it easier for a span. Eventually, my father threw it all out—said I was too old for make-believe. Still, to return that tiny light to me… Thank you.
+{$name}: Are you ever going to let me finish what I started?
+He laughs, something a little warmer and bolder within him.
+Drake: I believe I understand where you’re going with this. Let me answer through a question of my own…
+Drake: I’m due to set sail within the week to return to an ongoing mission of mine. Until now, I’ve been alone in it. It’s fraught with danger with no hope for backup should things go poorly, but…
+{$name}: Keep going.
+He steels himself and gives you everything.
+Drake: Come with me to Wano. There’s no one else I’d rather have at my side. There’s so much we can accomplish together, so many people we can help. Would you sail with me?
+That’s an immensely tall order but…
+{$name}: [bold shake text] Of course! //HOW DO??
+It’s what any good Marine would choose. It doesn’t hurt that he’s the one asking.
+Relief floods him. He tugs you in for a searing kiss seconds before the countdown to midnight ends.
+There’s a hunger and fire in him you can taste even after you part. He smiles back, his teeth sharper than before.
+Drake: Pack your bags. Let’s turn the world upside down.
+Happy New Year, indeed.
+<<jump drakenye_end>>
+===
+
+title: drakenye_wrong
+location: ballroom
+---
+
+Drake: –a question, first.
+{$name}: Huh?
+He holds up the unwrapped gift, heavily concerned with your… consideration.
+Drake: Not to offend, but are you one hundred percent certain this is for me?
+{$name}: Of course it’s–
+You glance to the object in his hands.
+Oh no. Oh NO. That wasn’t what you’d picked out for him at all! Had you bumped someone in the market and swapped presents? Was it sabotage from an outside party?
+{$name}: …Allegedly. Yes.
+Fuck. You hold out your hand and Drake returns the gift with little fanfare, allowing you to slink off, tail between your legs.
+Time to go give this gift to the right person, oops!
+<<jump drakenye_intro>>
+===
+
+title: drakenye_confess
+location: ballroom
+---
+
+Just when you feel your lowest, Drake appears.
+Drake: Punch?
+{$name}: Yeah, I feel like I’ve gone a few rounds in the ring with Garp.
+He holds out a cup to clarify. You bury your face in it to dodge the embarrassment.
+Drake: I’m glad I found you. I’ve been looking for you all night.
+Taking a sip, he scowls upon realizing it’s been spiked.
+Drake: Gods, that’s disgusting. Let me replace these…
+-> {$name}: No way. I earned this. Now tell me what’s on your mind.
+	At your insistence, he gives up on his cup, allowing you to doublefist both.
+-> {$name}: Sure, but only if you tell me what you came for first.
+	He doesn’t speak frivolously. It must be important.
+Drake: In advance, I apologize— this is an incredibly inopportune time, but it’s the only moment I’ll have.
+…OK. Juicy. You let the man cook.
+He takes a deep breath and steels himself.
+Drake: I’m due to set sail within the week to return to an ongoing mission of mine. Unfortunately, I have no idea how long it will take, but I had to tell you before I left. —If you felt anything as well, then perhaps afterwards, we could…
+While not an unwanted turn of events, this… isn’t exactly something light-hearted.
+-> Still, getting a break to breathe, with someone who cares on the horizon… It’s nice.
+    <<jump drakenye_acceptdrake>>
+-> —but does he think he can just kiss and run?!
+    <<jump drakenye_rejectdrake>>
+===
+
+title: drakenye_acceptdrake
+location: ballroom
+---
+
+{$name}: …that doesn’t sound so bad, actually.
+Drake: Thank you. The moment things have calmed, I'll be back for you. I… I want to try this more than you know.
+Heartened, Drake smiles, cupping the side of your face.
+Drake: Happy New Year, [name].
+<<jump drakenye_end>>
+===
+
+title: drakenye_rejectdrake
+location: ballroom
+---
+{$name}: Honest, I’m interested, but not if you’re immediately gonna cut and run. You can’t lonewolf it forever. I learned that from you guys.
+Drake: I—
+He stops, silent, and nods.
+Drake: I understand. For what it’s worth, I’m proud of the progress you’ve made since we met. I believe you’ll go far. Happy New Year, [name].
+Happy New Year. Right…
+<<jump drakenye_end>>
+===
+
+title: drakenye_end
+location: ballroom
+---
+
+Wow what a crazy year its been. Who knows what next year will bring!
+You smile a little and watch the New Years Eve fireworks.
+===

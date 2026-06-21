@@ -1,0 +1,500 @@
+title: date_rosinante_3_main
+location: town
+---
+
+The cool morning air begins to warm up by the time you arrive at town center. You think it's a good idea that you decided to meet up so early; not only will you have time for more activities, but you will be able to enjoy some moments before the smothering heat sets in.
+You look around, equal parts nervous and excited, until you finally find the person you have been looking for.
+Rosinante is already waiting at the meeting spot, enjoying a cigarette. But, something else seems to be on his mind as smoke drifts up from his shirt. You quickly realize he's about to set himself on fire!
+You run up to him.
+{$name}: Rosinante, oh god! Are you alright??
+He startles, but before he can react, a flame bursts out from him smoking shoulder. Luckily, he manages to pat it out. His smile is sheepish as he glances back at you. You immediately notice he is wearing his face-paint, the design is similar to what you've done for him last time.
+Rosinante: {$name}, good morning.
+Rosinante: Wasn't that embarrassing? This is the first time you've witnessed it, right?
+{$name}: Were there other occurrences?
+Rosinante: Ah! I shouldn't have said that, ignore all that.
+-> Fine, fine, no more.
+    <<jump date_rosinante_3_main_Walking>>
+-> Now you've got to tell me more!
+    <<jump date_rosinante_3_Fire_Incidents>>
+-> Fine! I'll ignore it, but I've noticed you did your make-up again. =>
+    <<jump date_rosinante_3_Face_Paint>>
+===
+
+title: date_rosinante_3_Face_Paint
+location: town
+---
+
+He seems surprised.
+Rosinante: Oh, this? After last time, I thought, why not?
+Rosinante: Doing it with you made me realize how much I missed it.
+{$name}: I'm glad! It really suits you, I'm starting to forget what your face looks like underneath.
+He laughs heartily at your joke.
+Rosinante: Thank you. I really enjoyed the time I have spent with you lately.
+{$name}: I feel the same way. I'm happy you've started doing something you used to enjoy again.
+Rosinante: Like I said! It's all thanks to you. I was even thinking about getting some new colours soon.
+{$name}: Oh! Can I help pick some of them out?
+Rosinante: Definitely!
+Rosinante: What else were you thinking about doing today? =>
+<<jump date_rosinante_3_Activities>>
+===
+
+title: date_rosinante_3_Fire_Incidents
+location: town
+---
+
+His cheeks heat up in embarrassment.
+Rosinante: It's not as often as you think.
+He mumbles, clearly unwilling to admit just how often something like this happens.
+Rosinante: Law used to give me hell for it. Not letting you do the same!
+{$name}: I wouldn't dream of it.
+{$name}: Does he tease you a lot? You've mentioned it before, I think, but I wasn't sure who you were talking about.
+Rosinante: Hah! He always does, that brat. The nerve on him.
+There is nothing but fondness in his voice.
+Rosinante: But it's his own way of showing he cares. I never minded much.
+{$name}: I'm sure that's true. He doesn't sound so bad.
+Rosinante: I'm glad you think so! Maybe you can meet him one day.
+You'd rather not, but you can't bring yourself to say that. Instead you smile and nod hoping it's enough.
+{$name}: Why don't we talk while walking? We wouldn't want to catch the noon sun. =>
+<<jump date_rosinante_3_main_Walking>>
+===
+
+title: date_rosinante_3_main_Walking
+location: town
+---
+
+The two of you begin walking through the streets, not minding the busy people hurrying from shop to shop or the Marines on their patrol, although you both greet them politely when they pass by.
+Rosinante: What were you thinking of doing today? I must say, I didn't expect your invitation but it came at the right time. I thought I would go crazy, all cooped up in the office. I was just waiting for an excuse to take the day off.
+You hadn't expected to invite him either. You'd just happened to stumble upon him, or better said, Rosinante had stumbled upon *you* (literally) in the hallway a day prior, and you'd blurted it out before you could stop yourself. Thankfully, he'd seemed excited by the idea.
+<<jump date_rosinante_3_Activities>>
+===
+
+title: date_rosinante_3_Activities
+location: town
+---
+
+{$name}: Not sure! There are plenty of things to do in this town.
+Rosinante: Really? Other than some restaurants and shops, there isn't that much here.
+{$name}: Well, that's certainly a lot more than what my hometown had! I'm guessing you grew up in a bigger city.
+He laughs awkwardly.
+Rosinante: For a while. But then my circumstances changed... For a couple years, my family sort of just... drifted from place to place. Then Sengoku-san took me in and I was able to travel all over the place.
+{$name}: Must be nice. The world is so big there is still so much for me to see.
+Rosinante: For sure! All in due time.
+Rosinante: Why don't we go to the library? I'm sure we can find some maps to look over, if you're curious.
+<<jump date_rosinante_3_Library>>
+===
+
+title: date_rosinante_3_Library
+location: office
+---
+
+{$name}: I'd love that! You could tell me about all the places you've been.
+You speed up, and he smiles as he follows you.
+The library is nearby. In no time, the two of you are sitting on the floor in one of their smaller study rooms, surrounded by dozens of maps.
+{$name}: Wait. It doesn't snow all year round in North Blue, right?
+Rosinante: Of course not! There are some islands where that happens but the further south you are, the warmer it is. Although summers are a lot cooler than in the other Blues.
+A shiver runs down your spine.
+{$name}: I can't imagine that. Too cold!
+Rosinante: Then... You wouldn't want to visit with me? It's not much of a home to me, but I still have some fond memories.
+-> No way! Nothing is worth the cold.
+    <<jump date_rosinante_3_Not_Visits>>
+-> When you put it like that, how can I refuse? It will be worth it for sure.
+    <<jump date_rosinante_3_Visits>>
+===
+
+title: date_rosinante_3_Not_Visits
+location: office
+---
+
+He sits in silence for some time, surprised by your answer.
+Rosinante: No? Not even if I asked you nicely?
+{$name}: Hmm... No matter how cold it might be, I still wouldn't be able to refuse your requests.
+His face lights up.
+{$name}: You speak about North Blue so fondly. How could I not want to see it?
+{$name}: I'm sure it's a beautiful place.
+<<jump date_rosinante_3_Visits>>
+===
+
+title: date_rosinante_3_Visits
+location: office
+---
+
+Rosinante: You think so?
+He rummages through the maps of the northern sea until he finds the one he's looking for.
+Rosinante: Look! This is Spidermiles. The island where the Family had its Headquarters for a while. I met Law here.
+{$name}: How was your first meeting?
+Who wouldn't love to hear about the way such a notorious pirate had behaved as a child? Surprisingly, Rosinante pauses before his next words, hesitant, but also amused.
+Rosinante: I threw him off a building...
+-> He must have been insufferable.
+    <<jump date_rosinante_3_Visits_Bad1>>
+-> Oh no! What happened?
+    <<jump date_rosinante_3_Visits_Talk1>>
+-> Wasn't he just a child? How could you?
+    <<jump date_rosinante_3_Visits_Child>>
+===
+
+title: date_rosinante_3_Visits_Child
+location: office
+---
+
+He looks down, ashamed.
+Rosinante: I had no choice. It was the only way to drive him away without making my brother suspicious.
+{$name}: Still... It's an extreme method.
+Rosinante: I'm aware. He was just the sort of kid that wouldn't run away after a scary talk.
+{$name}: I understand.
+-> It probably wasn't so bad, though. Kids are awful sometimes, right?
+    <<jump date_rosinante_3_Visits_Bad2>>
+-> It probably wasn't pleasant. On both sides, I mean.
+    <<jump date_rosinante_3_Visits_Talk1>>
+===
+
+title: date_rosinante_3_Visits_Bad1
+location: office
+---
+
+He frowns.
+Rosinante: Of course not... He was just a kid.
+-> But kids are awful sometimes, right?
+    <<jump date_rosinante_3_Visits_Bad2>>
+-> Right... Sorry, I didn't think of that.
+    <<jump date_rosinante_3_Visits_Talk1>>
+===
+
+title: date_rosinante_3_Visits_Bad2
+location: office
+---
+
+Rosinante: What do you mean? They're just kids, that's it. That's how they are.
+{$name}: Still he must have been a menace. Look at the type of man he is now!
+His frown deepens. Why did you say that?
+Rosinante: You don't know what you're talking about. Don't judge someone you have never met.
+{$name}: It was just a joke...
+He's already getting up, picking up all the maps. He walks around the shelves to put them all back in their place.
+Rosinante: A joke in poor taste.
+Rosinante: I'll see you at the base.
+Rosinante leaves and you are left on the floor with nothing but your bad decisions to keep you company.
+<<jump date_rosinante_3_DATE_ENDS>>
+===
+
+title: date_rosinante_3_Visits_Talk1
+location: office
+---
+
+Rosinante: It wasn't anything he did wrong. I was just young and thought the best way to drive children away from the Family would be if I gave the impression that an executive hated them. Of course, it didn't work on him. Stubborn kid.
+{$name}: He probably didn't change much.
+Rosinante: Not at all! Still the same as ever, but I wouldn't have it any other way. I feel bad about the other kids, though.
+{$name}: The others?
+Sure, the Family had some younger members, but until now, it didn't occur to you that they'd joined as children.
+Rosinante: My brother wasn't cruel to them, but growing up as criminals... None of them deserved that. Some even ended up in Impel Down. I wish I could have done more for them.
+He looks down, regret clear in his eyes. Before you can say anything to cheer him up, however, he sighs and shakes his head as if to clear it. When he gazes back at you, there's a smile on his face. You can tell it's forced.
+Rosinante: Sorry about that! I guess I got carried away, I just never got to talk to anyone about this.
+-> It's alright. Don't feel guilty. They deserved what came their way.
+    <<jump date_rosinante_3_Kids_Bad>>
+-> It's alright. Don't feel guilty. You did what you could.
+    <<jump date_rosinante_3_Kids_Good>>
+-> Are you sure you tried everything to help them?
+    <<jump date_rosinante_3_Kids_Guilt>>
+===
+
+title: date_rosinante_3_Kids_Bad
+location: office
+---
+
+He frowns at your words.
+Rosinante: What do you mean?
+{$name}: Well, you tried to push them away, right? They could have walked away, but they didn't. They chose to live with a criminal.
+Rosinante: They were children with nowhere else to go. Children abandoned by their families, or who had none to begin with.
+{$name}: Still, they could have asked the Marines for help, instead of going to the first pirate they came upon.
+Rosinante: Most of them were in that position *because of* the World Government and the Marines.
+Rosinante: Just like Law, for example—
+He cuts himself off. You don't know whether it was because he said something he shouldn't or because he was too loud.
+{$name}: That can't be true...
+Rosinante: It's true! How could they trust us? They were just little kids...
+-> I'm sorry, I had no idea such things could happen.
+    <<jump date_rosinante_3_Kids_Bad1>>
+-> I don't believe it. They were lying.
+    <<jump date_rosinante_3_Kids_Bad2>>
+===
+
+title: date_rosinante_3_Kids_Bad1
+location: office
+---
+
+Rosinante: They do... I'm sure there are still records lying around if you need proof. That's why we need to lead by example and teach the next generations of Marines to do better.
+{$name}: You're already doing it. And doing a good job, too.
+Rosinante: Still, there is so much work to be done.
+{$name}: I'll help you. I know I tend to jump to conclusions sometimes, but you've helped me through it. I'm open to learning and to sharing what I learnt.
+Rosinante: I've noticed that about you.
+You pause for a moment.
+{$name}: About those who joined as children, is there anything you can do for them now? If you feel like you haven't done enough.
+Rosinante: I don't know. I haven't thought about it. =>
+    <<jump date_rosinante_3_Kids_Good1>>
+===
+
+title: date_rosinante_3_Kids_Bad2
+date: office
+---
+
+Rosinante: Lying? Why would they lie?
+{$name}: They were manipulated or just wanted attention, I don't know!
+Rosinante: You don't know what you're talking about.
+He looks around.
+Rosinante: This is the Marine Headquarters library. I'm sure you can find some records of the Government abandoning their people if you look around.
+Rosinante: ...Not that they would be easily accessible.
+Rosinante: See for yourself, and then we'll talk.
+He gets up, not even bothering to leave the library—or at least the room full of scattered, very flammable papers—before taking out a cigarette and lighting it. After he leaves the room without a word, you can only hear some muffled scolding form the library workers. And just like that, he's gone, and you couldn't get a word in to try and fix this.
+Looking around, you take in all the maps Rosinante's left with you on the floor, and you sigh deeply. As you begin to clean up, you wonder whether you should go look for some of the records Rosinante was talking about earlier once you're done.
+<<jump date_rosinante_3_DATE_ENDS>>
+===
+
+title: date_rosinante_3_Kids_Good
+location: office
+---
+
+Rosinante: You think so?
+{$name}: Of course. There weren't many ways you could help while keeping your cover, but weren't there kids you managed to drive away from that kind of life? Plus, for the rest of them, you were always there to keep an eye out and make sure they were alright.
+He ponders for a few moments in silence.
+Rosinante: I suppose...
+Rosinante: You always know what to say. Thank you.
+{$name}: It's just the truth! No need to thank me.
+<<jump date_rosinante_3_Kids_Good1>>
+===
+
+title: date_rosinante_3_Kids_Good1
+location: office
+---
+
+{$name}: You can always go and visit them, or now that you're a vice-admiral, see if you can recommend a parole for any of them. I can also take responsibility with you! Not that my word holds any weight yet, but I'll still be there! Especially after I grow in rank.
+Rosinante: That's not a bad idea. Although most of them are adults now. I'm not sure it will get accepted. It's still worth a shot.
+Rosinante: I'll think about it.
+{$name}: Great!
+<<jump date_rosinante_3_More_Maps>>
+===
+
+title: date_rosinante_3_More_Maps
+location: office
+---
+
+You look around for a bit at the spread out maps, eager to find a new topic of conversation.
+{$name}: What about the island you grew up on? The one with lots of things to do?
+He pauses. It's clear he's uncomfortable with the question.
+Rosinante: I don't think there are any maps for that place. It's quite remote...
+-> Keep it up. Maybe he just needs a little push.
+    <<jump date_rosinante_3_Home_Town>>
+-> Drop it. It's better to change the subject.
+    <<jump date_rosinante_3_Lunch_Time>>
+===
+
+title: date_rosinante_3_Home_Town
+location: office
+---
+
+{$name}: I'm sure we can find it somewhere! This library is very extensive. I'll help you look.
+Rosinante: No, that won't be necessary. It's not here.
+{$name}: Are you sure? We can definitely fin—
+Rosinante: Drop it, {$name}.
+-> Alright. We don't have to.
+    <<jump date_rosinante_3_Home_Town1>>
+-> Come on... Don't be like that. What could possibly be so bad about it?
+    <<jump date_rosinante_3_Home_Town2>>
+===
+
+title: date_rosinante_3_Lunch_Time
+location: office
+---
+
+{$name}: I understand. Maybe we'll find a map someday. It doesn't have to be now. And only if you want to, of course.
+Rosinante: I wouldn't mind looking for one... Maybe not right now but I'm sure we can find it one day.
+<<jump date_rosinante_3_Lunch_Time1>>
+===
+
+title: date_rosinante_3_Home_Town1
+location: office
+---
+
+Rosinante: Maybe I'll tell you another time. =>Lunch_Time1
+===
+
+title: date_rosinante_3_Lunch_Time1
+location: office
+---
+
+{$name}: I'd love that. You can trust me with anything.
+Rosinante: I know. Thank you for being my confidant.
+Those words fill you with joy.
+{$name}: You've helped me a lot as well. It's the least I can do.
+{$name}: You know... In this whole base, I trust you the most, I think. Your presence is calming, and I always feel safe. You're a great teacher as well.
+Rosinante: You think so?
+Rosinante: I feel the same... Other than Sengoku-san, there aren't many people I can talk to.
+{$name}: I'll always be here.
+The conversations dwindles after that, but the silence is pleasant. You're both thinking over what you said while reading maps of places you have never seen. The cool breeze blowing in from the open window only makes it better.
+It's all perfect, until...
+Your stomach growls.
+You look up, startled. Rosinante is way too amused by your situation.
+Rosinante: Hungry?
+{$name}: N-no!
+He laughs.
+Rosinante: Well, *I'm* hungry. Let's pack all of this up and go for some lunch. What do you say?
+{$name}: Fine...
+You're still slightly embarrassed, but the two of you put everything back in place and head outside.
+<<jump date_rosinante_3_Lunch>>
+===
+
+title: date_rosinante_3_Home_Town2
+location: office
+---
+
+Rosinante: I asked you to drop it.
+His tone is serious, but...
+{$name}: Why? Just explain it to me.
+Now you're curious. You don't understand why it's such a big deal.
+Rosinante: It's something personal. It's rude to insist.
+Rosinante: I thought you'd be more understanding...
+He looks disappointed and even somewhat sad. Without saying another word, he picks up the maps and returns them to their rightful places.
+Rosinante: I'll see you at the base.
+With that, he's gone, leaving you to think things over all by yourself on the library floor.
+<<jump date_rosinante_3_DATE_ENDS>>
+===
+
+title: date_rosinante_3_Kids_Guilt
+location: office
+---
+
+Rosinante: What do you mean?
+{$name}: I'm just saying... You were probably the only responsible adult there. I'm sure they needed someone to look up to. Not to kick them out by force.
+Rosinante: You're right, but it's not that simple.
+{$name}: Why wouldn't it be? If you'd talked to them and made them understand the World Government could take care of them, they might have not turned into criminals. But you chose to raise them into bloodthirsty pirates.
+He looks at you, a complicated expression on his face. You wonder whether your words hurt him...
+Rosinante: As much as it pains me to admit, those kids weren't my priority. I tried to get them out, and sometimes I succeeded. I counted that as a win, but getting them out wasn't my mission.
+Rosinante: I couldn't risk blowing my cover.
+-> Maybe so...
+    <<jump date_rosinante_3_Kids_Guilt_Fix>>
+-> That's no excuse.
+    <<jump date_rosinante_3_Kids_Guilt_Pain>>
+===
+
+title: date_rosinante_3_Kids_Guilt_Fix
+location: office
+---
+
+{$name}: I assumed helping them was part of your mission.
+He shakes his head regretfully.
+Rosinante: My mission was to blend in with the Family and report any and all information about their plans. If I'd helped the kids too much, I would have stood out and my brother would have gotten suspicious.
+{$name}: Forgive me... I didn't realize.
+Rosinante: You were right. Maybe I should have tried harder, but when I did try, I nearly lost both my cover and my life. I became more cautious after.
+{$name}: I understand.
+{$name}: But at least one person was saved thanks to your efforts. So it wasn't all in vain!
+Rosinante: You're right. Maybe I'll get more chances to help others.
+It warms your heart, hearing how much he wants to help other people. You smile earnestly.
+{$name}: I promise to help you however I can.
+Rosinante: I appreciate that, {$name}. We make a great team.
+<<jump date_rosinante_3_More_Maps>>
+===
+
+title: date_rosinante_3_Kids_Guilt_Pain
+location: office
+---
+
+{$name}: If you'd truly cared, you would have helped them right then. What's the use of lamenting about it now?
+Rosinante: I just explained it to you. It was more important that I kept my cover. Of course, I feel bad about it now, but I couldn't have risked everything like that.
+You huff, annoyed.
+{$name}: Why are we even Marines if we can't help those in need? Especially those who are powerless?
+The look on his face is unlike anything you've ever seen on him.
+Rosinante: We can't always make the best choices... I tried once and it almost...
+Rosinante: My mission's purpose was to protect powerless people from all over the world. They all counted on me. I did what I could.
+He shakes his head, almost as if to rid it off the bad thoughts.
+Rosinante: I need a cigarette. I'll see you at the base, {$name}.
+There is no warmth or familiarity in his voice anymore. He gets up and leaves you with the maps spread out around you. You're upset you couldn't get any more words in, but it is what it is. You pick up all the maps and return them to their rightful place.
+<<jump date_rosinante_3_DATE_ENDS>>
+===
+
+title: date_rosinante_3_Lunch
+location: bar
+---
+
+The two of you sit at a table on the terrace of a nice restaurant overlooking the sea. Despite the scorching sun, it's all very pleasant; the soft breeze and the iced lemonade in front of you cool you down considerably.
+{$name}: After all that, now I'm even more excited to travel the world.
+{$name}: There are so many things I still don't know.
+Rosinante enjoys a cigarette, relaxed.
+Rosinante: I still need a break before I'm ready to be on the move again.
+Rosinante: So, if you'll allow me, I'd like to join you on your travels one day.
+-> I'd love that!
+    <<jump date_rosinante_3_Travel_Together>>
+-> I was actually hoping to travel on my own, especially once I'm able to captain my own ship.
+    <<jump date_rosinante_3_Not_Travel_Together>>
+-> I was just about to ask you that!
+    <<jump date_rosinante_3_Twinsies_Travel>>
+===
+
+title: date_rosinante_3_Travel_Together
+location: bar
+---
+
+{$name}: I wouldn't even know where to start on my own.
+Rosinante: I'm sure you could handle it, but I would really like to see new islands with you.
+{$name}: Same here... I'll be honest, I don't want to be left behind, so I'm going to try harder and get better. One day, I'll be as knowledgeable as you!
+He seems embarrassed by the praise.
+Rosinante: There's many things about the world that I don't know. I want to learn as well. We can learn together.
+{$name}: Once you feel like you are ready again, we can talk to the higher ups about getting assigned a mission somewhere farther away. I'll be stronger by then.
+Rosinante: I'd love that, {$name}.
+He looks like he wants to say more, but he's interrupted when the waiter arrives with your food. You both thank him before immediately digging in, your hunger too great to allow for any more chatting.
+<<jump date_rosinante_3_GOOD_ENDING_1>>
+===
+
+title: date_rosinante_3_Not_Travel_Together
+location: bar
+---
+
+Rosinante: Oh?
+{$name}: Don't get me wrong. I would love to travel with you, but there are so many things I don't know yet.
+{$name}: I want to learn at my own pace...
+Rosinante: I understand. Don't take what I said too seriously.
+Despite his words, he seems disappointed.
+{$name}: Sometimes I think about becoming a captain and completing missions on my own ship. I'd like to work towards that. But I'm sure our roads will align at some point!
+Rosinante: You're right. I'd love to see you grow. Under Tsuru-san's guidance, you will become a great Marine.
+{$name}: Your guidance as well.
+He smiles, despite his clear disappointment. He looks like he wants to say more, but he's interrupted when the waiter arrives with your food.
+<<jump date_rosinante_3_BAD_ENDING>>
+===
+
+title: date_rosinante_3_Twinsies_Travel
+location: bar
+---
+
+Rosinante: Yeah?
+{$name}: Of course! There's nothing I would love more than traveling with you. It would be a great opportunity.
+Rosinante: I think so, too. Imagine all the missions we could complete.
+{$name}: Exactly! Sometimes I feel left behind, because I haven't seen as much of the world as everybody else but you've taught me so much. I'm excited about catching up to you!
+Rosinante: You're so talented you'll get there no time. I'll be here to help you along the way, if you need it.
+{$name}: I'll always need you.
+The earnest words take him by surprise. Maybe you didn't intend to say it so bluntly, but you definitely mean it.
+You want to say more, but you're interrupted when the waiter arrives with your food. You both thank him before immediately digging in, your hunger too great to allow for any more chatting.
+<<jump date_rosinante_3_GOOD_ENDING_2>>
+===
+
+title: date_rosinante_3_DATE_ENDS
+location: office
+---
+
+Well... that could have gone better. Hopefully it won't be too awkward in the office later.
+===
+
+title: date_rosinante_3_BAD_ENDING
+location: bar
+---
+
+You are hopeful about the future. Even though you didn't mean to hurt him, you stand by your decision. Until then, you decide to enjoy your time with Rosinante to the fullest.
+===
+
+title: date_rosinante_3_GOOD_ENDING_1
+location: bar
+---
+
+You started out nervous about this outing, but you have never felt closer to Rosinante, and he seems to feel the same way. Thankful and happy, you enjoy the food, excited about the many memories you will make together.
+===
+
+title: date_rosinante_3_GOOD_ENDING_2
+location: bar
+---
+
+You started out nervous about this outing, but you have never felt closer to Rosinante, and he seems to feel the same way. Thankful and happy, you enjoy the food, excited about the many memories you will make together.
+===

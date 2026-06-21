@@ -1,0 +1,331 @@
+title: date_tashigi_4_main
+location: Bar
+---
+
+{$name}: I don't see her yet... I'm a little early, though. I'm sure she'll show up soon.
+Tashigi: Oh, {$name}! There you are!
+{$name}: Ah! Hello Tash—
+[Tash on screen] // How do???
+(You're struck dumb for a moment. Tashigi looks absolutely breathtaking in her outfit; it looks wonderful on her.)
+Tashigi: Haha, I guess you like it.
+{$name}: Oh my goodness!
+-> What a beautiful dress! You have great taste, Tashigi.
+    <<set $td4_points +=1>>
+    Tashigi: Hehe, I appreciate it. It's a little different from my usual style, so I wasn't too sure, but I'm glad that you think it looks good.
+-> Well, don't you just look delicious! I could eat you up!
+    <<set $td3_points -=1>>
+    Tashigi: Um... thank you...?
+-> You look great!
+    Tashigi: Oh, thank you! I never wear this sort of thing, so I wasn't feeling too confident, but I'm very pleased that you like it.
+Tashigi: Also... you look really nice too. I barely see you out of uniform, so this is pretty special.
+-> Aw, thanks. I'm not used to fancy outfits, so...
+    Tashigi: Don't worry about it. Just tell me if you start feeling uncomfortable.
+    {$name}: Will do.
+-> I'm glad! I wasn't sure this old thing would fit.
+    <<set $td4_points -=1>>
+    Tashigi: Oh... well, even if it isn't new, it fits you well.
+        {$name}: Thanks!
+-> Haha, thank you! I tried my best.
+    <<set $td3_points +=1>>
+    (She doesn't say anything, but by the way her face lights up, it's clear that she really appreciates how much effort you put in.)
+{$name}: By the way, I see you have Shigure with you too.
+Tashigi: Of course! I wouldn't think of going anywhere without it, even to a place like this. It's important to always be prepared, you know?
+Tashigi: Besides, not having it just feels... kind of wrong. Like I've lost something important to me.
+-> Yeah, I get what you mean.
+    Tashigi: Mhmm.
+    Tashigi: Oh, it looks like our table's ready. I'm starving!
+-> I'm glad you brought it! It's part of who you are.
+    <<set $td4_points +=1>>
+    Tashigi: Hehe, I'm glad you think so. I was worried that you'd find it embarrassing or something...
+    {$name}: Never.
+    {$name}: Oh, the waiter's calling us over! Let's go.
+-> That's just like you.
+    <<set $td4_points -=1>>
+    Tashigi: ...What's that supposed to mean?
+    {$name}: N-nothing! I just... it suits you to always have your sword on hand. I couldn't imagine you without it.
+    Tashigi: So that's what you meant...
+    Tashigi: Oh, it looks like our table's ready. I'm starving!
+You're taken to your table, which is situated fairly close to a large window overlooking the docks. Ribbons of moonlight drape around the room, enhancing the many lit lamps adorning the walls. All in all, the atmosphere is perfectly inviting, and you try not to blush as you look at your date.
+Instead, you drag your eyes down to peruse the menu.
+{$name}: Oh man, everything looks so good... Do you know what you're having?
+Tashigi: No, not yet... Sorry, I've never been here before.
+{$name}: Oh, neither have I! I don't get to leave base that much, so even though getting here is a pretty short trip, this is my first time too.
+Tashigi: Haha, then we'll both be surprised!
+Tashigi: ...Hm? What's that?
+She's looking away from you and out the window, her attention captured by something in the distance. You follow her gaze, and despite the deep night, you can vaguely see the faint outline of a ship pulling into port.
+{$name}: A ship, huh?
+Tashigi: There's something about it... my intuition tells me something's wrong about that ship.
+{$name}: Hmmm...
+-> Let's not worry about it. Not tonight.
+    <<set $td4_points -=1>>
+    Tashigi: Look, {$name}, I'm as excited about this date as you are, but if there's a problem, we may need to go and deal with it.
+    Tashigi: Our duty is more important than our date.
+-> Is there anything in particular that's making you feel off?
+    Tashigi: There's... a few things. But I'd need to look closer.
+-> (I should look closer.)
+    <<set $td4_points +=1>>
+    You stand up from your seat and move toward the window, passing some oblivious patrons, and take a closer look. Immediately, you note that the ship is trying perhaps a little too hard to be subtle. You get the feeling that its crew is trying to lay low.
+    Tashigi: You can feel it too, can't you?
+    You resist the urge to jump; when had she gotten behind you?
+    Tashigi: Something is wrong with that ship, and we're the best ones to investigate.
+{$name}: I see... well...
+-> Let's take care of it after dinner.
+    {$name}: We shouldn't do an investigation on an empty stomach.
+    {$name}: We can have dinner, and then go look.
+    Tashigi: I appreciate the thought, but... if we wait, it may be too late.
+    {$name}: (This is really important to her...)
+-> Let's go together.
+    <<set $td4_points +=1>>
+    {$name}: I trust your judgment. This seems like a big deal, and we're the best ones to deal with it.
+    {$name}: It just means we'll have to make plans together again sometime!
+    Tashigi: Thank you, {$name}. This means more to me than you know.
+-> If it's so important, then go scout it out. If you need me, I'll come too.
+    <<set $td4_points -=1>>
+    Tashigi: ...You know what, {$name}? Don't bother. You don't want to come, and you've made that clear.
+    Tashigi: Enjoy your dinner.
+    Before you can say another word, she gathers her things and leaves the restaurant. You silently watch her go before sinking into your seat, staring bitterly at the menu.
+    Suddenly, you've lost your appetite.
+    <<jump date_tashigi_4_end>>
+{$name}: Alright, let's go, then! We'll get to the bottom of this mysterious ship and come back here some other time.
+Tashigi: Alright! Let's hurry!
+<<jump date_tashigi_4_route_a>>
+===
+
+title: date_tashigi_4_route_a
+location: ship
+---
+
+Tashigi: Alright, there's the ship, and it looks like most of her crew have already gone ashore. Keep your eyes open, {$name}.
+You shiver at the steel in her tone, but your heart beats a little faster at her words. This is a new side of Tashigi, one that you've heard of but haven't gotten to see until now. This isn't your clumsy coworker, or your caring friend.
+No, this is Captain Tashigi, wielder of the Meito sword Shigure, and as you look over to her, you can't help but stare. She looks beautiful in her dress, certainly, but it's her careful, focused expression that makes your heart race.
+Tashigi: Hm? You're staring... is something wrong?
+-> Tashigi... you're beautiful.
+    <<set $td4_points -=1>>
+    Tashigi: I...
+    {$name}: (She's blushing, but also frowning at the same time...)
+    Tashigi: T-thank you, {$name}. But now is not the time for that. Please be serious.
+-> Any further commands, Captain?
+    <<set $td4_points +=1>>
+    Tashigi blinks at you, then smiles, clearly pleased.
+    Tashigi: Not right now, Marine. Keep your eyes open, stay unobtrusive, and let's see if we can figure out what's going on with our visitor here.
+-> No, not at all.
+    Tashigi gives you a long, appraising look, then nods.
+    Tashigi: Right. Let's keep looking for anything suspicious.
+Tashigi: Wait, what's that? Do you hear something?
+{$name}: Um... wait, I think so! It sounds like... moaning?
+Tashigi: Blast... Someone may be hurt. We need to get in there. Alright, here's the plan.
+Tashigi: There's no way they didn't leave a watch. I'll go deal with them while you investigate the hold. Take a look, survey the area, and then report back to me in 10 minutes. Use the Marines Standard Call Sequence \#10 to contact me. Understood?
+{$name}: Understood!
+Tashigi: Alright, then our plan is set. Let's move.
+<<jump date_tashigi_4_route_b>>
+===
+
+title: date_tashigi_4_route_b
+location: ship
+---
+
+You head for the hold as Tashigi stalks her way to where she thinks the watch must be. You're both well aware that you don't have much time, and it goes without saying that being aboard this ship without a warrant is definitely against regulations.
+You hadn't really thought of Tashigi as being one to act outside the rules, but then again, if this ship is what you're slowly and worriedly thinking it is, this is certainly the more moral course of action.
+Even if it costs you both your jobs, perhaps you'll be able to save lives, and really, what better calling is there for a Marine, even someone who works the desk like you?
+You swallow, keeping your nerves at bay as you keep your steps light, unobtrusive, drawing little attention. Breathe in, breathe out. Minimize your presence so that not even those with haki can feel you. You are as the wind.
+You will meet Tashigi's seriousness and professionalism with your own best efforts, because she and whoever may need your help here deserve nothing less.
+Carefully, you creep your way to the hold. As you make your way inside through the only visible door, it's the smell that hits you first.
+The stench of unwashed bodies is in the air, and you swallow rapidly, willing your training to kick in. The darkness is thick and cloying, but as your eyes adjust, you can make out some vague shapes huddling together. Several pairs of dull eyes look towards you, and your fears are confirmed. Nobody says anything, but they don't have to.
+This is a slave ship, no doubt about it. You can't immediately tell who was moaning, but it doesn't matter—if they stay, they'll be sold. And in your gut, you already know that you can't let that happen.
+You swallow hard once again and are about to head out of the hold when you suddenly hear the sound of footsteps in the direction of the way you came. Your body tenses; you look around, but there's nowhere to hide. Your eyes do, however, settle on what looks like a discarded piece of pipe. As the footsteps get closer, you need to make a decision.
+-> Grab the pipe.
+    <<jump date_tashigi_4_pipe>> <<set $td4_points -=1>>
+-> Stick with your fists.
+    <<jump date_tashigi_4_fists>> <<set $td4_points +=1>>
+-> Try to make a break for it.
+    <<jump date_tashigi_4_run>>
+===
+
+title: date_tashigi_4_pipe
+location: ship
+---
+
+You quickly reach for the pipe, but it's heavier than you expect and you almost drop it. However, you manage to get a good grip on it just in time for two burly men to swagger inside. They're clearly drunk, but as you lock eyes with each other, the two slavers grab the swords dangling on their hips and lunge toward you, yelling all the while.
+You bring the pipe up into a clumsy block, but its weight is cumbersome and you're not used to it. One of the slavers manages to get a hit on you, causing you to cry out. Planting your feet, you try to hold your ground while your mind races to find a solution.
+However, you don't have to think for long as a woosh cuts through the air, and suddenly, Tashigi is there. Her sword flashes in the moonlight, and faster than your eyes can follow, the slavers are disarmed. Tashigi follows this up by delivering a sharp blow to the slavers' temples, causing them to slump down to the ground, comatose.
+Tashigi: {$name}! I heard fighting. Are you alright?
+She gives you an intense look, then her face softens at seeing that you're relatively unharmed except for the one slash from earlier. As she pokes at it, it's shallow, but it still hurts. However, her expression turns exasperated at seeing the improvised weapon you're still (somehow) holding.
+Tashigi: Really, {$name}... did you forget? You're better off using your fists than weapons you aren't skilled at!
+{$name}: Y-yeah... you're right. Still, thanks.
+Tashigi looks around, her expression becoming grim as her gaze settles on the slaves.
+Tashigi: No thanks needed. Right now, we need to figure out what to do next.
+<<jump date_tashigi_4_route_c>>
+===
+
+title: date_tashigi_4_fists
+location: ship
+---
+
+Although the pipe could make for a helpful weapon, you know better. You've never been good at improvised weapons, and it's far better to rely on a weapon you always carry that, as long as you train, will never betray you: your own body.
+Slowly, you take a deep breath and settle into a familiar stance that's been drilled into you far too many times now. All Marine recruits, no matter what weapon they eventually choose to pursue, are taught basic self-defense routines for subduing others. It's that familiar training that comes to your aid here.
+As you keep your gaze locked on the doorframe, two burly men swagger inside. They're clearly drunk, but as you lock eyes with each other, the two slavers grab the swords dangling on their hips and lunge toward you, yelling all the while.
+It's just what you were hoping for. You sidestep one slaver's clumsy slash and deliver a heavy body blow, causing him to double over in shock and pain. His buddy tries for an overhead slash, but you bring your arm up and knock his swing wide, sending him off balance.
+Reaching out, you grab for his wrist and disarm him, then quickly do the same for the other slaver before he recovers from your earlier blow. You then manage to deliver a decisive blow to each of their temples, causing them to slump down to the ground, comatose.
+Suddenly, there's another set of footsteps, and Tashigi runs in, glasses slightly askew, as she takes in the scene before her.
+Tashigi: {$name}! I heard fighting. Are you alright?
+Her fatigue is quickly replaced by a bright grin, and as she steps into the hold, she nods approvingly at you.
+Tashigi: Well done, {$name}!
+{$name}: Thanks! But you were right; we need to do something about this ship.
+Tashigi looks around, her expression becoming grim as her gaze settles on the slaves.
+Tashigi: You're right. Hm... what to do now...
+<<jump date_tashigi_4_route_c>>
+===
+
+title: date_tashigi_4_run
+location: ship
+---
+
+You shake your head, banishing the thought of grabbing the pipe. You've never been good at improvised weapons, and frankly, you have a better idea. If you run, you can try to meet up with Tashigi and take care of this together. There shouldn't be too many people left on this boat, so it's a safer bet than just waiting here.
+You kick your brain into gear and take off running. You clear the doorframe just in time, briefly meeting the eyes of two burly slavers as they stare dumbly at you. They're clearly drunk, but as you lock eyes with each other, the two slavers grab the swords dangling on their hips and lunge toward you, yelling all the while.
+You break into a sprint, hurtling yourself past other cabins as you race toward the deck. With all pretense of stealth abandoned, you hope and pray that Tashigi's analysis was right and that there's only a skeleton crew aboard to keep an eye on the slaves.
+Your feet barely touch the deck when suddenly, a woosh cuts through the air, and suddenly, Tashigi is there. Her sword flashes in the moonlight, and faster than your eyes can follow, the slavers are disarmed. Tashigi follows this up by delivering a sharp blow to the slavers' temples, causing them to slump down to the ground, comatose.
+Tashigi: {$name}! Are you alright?
+She gives you an intense look, then her face softens at seeing that you're relatively unharmed.
+Tashigi: Well, we've lost the element of surprise, but I think I've taken care of everyone else who's still around. What did you find?
+{$name}: You were right; this boat is bad news. They've got slaves in the hold.
+Tashigi's eyes widen, her expression becoming grim as her gaze settles on the slavers.
+Tashigi: I see. Then we need to determine what's next.
+<<jump date_tashigi_4_route_c>>
+===
+
+title: date_tashigi_4_route_c
+location: ship
+---
+
+Tashigi: Alright, I have a few ideas, but I'd like to hear your thoughts, {$name}. What do you think we should do?
+{$name}: M-me? Um, ok. I think...
+-> Honestly, I don't know! What do you think?
+    Tashigi: ...
+    Tashigi: I have an idea, but we'll need to be quick about it.
+    <<jump date_tashigi_4_tashigi_presents>>
+-> We should let all the prisoners loose.
+    <<set $td4_points +=1>>
+    Tashigi: ...
+    Tashigi: Just... set them free? {$name}, their captors are here! They could easily be found!
+    {$name}: No no, I didn't mean set them free on the island.
+    {$name}: We should set them free, find where these jerks are keeping their loot and log poses, and then have them sail themselves away from here. We can make it seem like they dealt with the guards and then escaped.
+    Tashigi: ...I see! And then they would have enough time to actually escape, and our involvement would be fairly minimal.
+    Tashigi: I wish we had a way to guarantee that they could get back to their home islands, but...
+    Tashigi: This is probably the best we can do. Good thinking, {$name}!
+    <<jump date_tashigi_4_speak_to_prisoners>>
+-> We should report this.
+    Tashigi: ...
+    Tashigi: We can't.
+    {$name}: Why not?
+    Tashigi: ...
+    Tashigi: It pains me to say it, but slavery is endorsed by the Celestial Dragons. Thus, the Marines aren't generally willing to interfere in the slave trade.
+    Tashigi: If we report this, it'll get swept under the rug.
+    {$name}: Oh...
+    Tashigi: Don't worry. I have a plan.
+    <<jump date_tashigi_4_tashigi_presents>>
+===
+
+title: date_tashigi_4_tashigi_presents
+location: ship
+---
+
+Tashigi: Alright, here's my plan.
+Tashigi: First, we'll restrain these guards. Then, we'll go to the prisoners and set them free. We'll have to see if any of them can sail.
+Tashigi: Once we do that, we'll find where these terrible slavers are hiding their loot and log pose, and then send these poor people off. It's hardly an ideal plan, I know, but I think it's the only thing we can do.
+{$name}: Yeah, but it's probably our best shot. Let's go!
+<<jump date_tashigi_4_route_d>>
+===
+
+title: date_tashigi_4_route_d
+location: ship
+---
+
+In the hold, you quickly restrain and gag the guards, who are still out cold. You and Tashigi then free the slaves, who look at you, seemingly confused.
+Slave 1: Um... thank you...
+Slave 2: You're... Marines...?
+Tashigi: Yes, we are! We're going to help you as best we can, alright?
+{$name}: Um, yeah!
+-> We'll take care of everything!
+    <<set $td4_points -=1>>
+    Tashigi: {$name}! That's not... ugh.
+    Tashigi: What my fellow Marine means to say is that we can't help you directly, but if any of you can sail a ship, we can make sure that you can escape!
+-> You can trust us!
+    Slave 3: Can we? We all know you Marines don't care...
+    Tashigi: ...
+    Tashigi: I'm sorry that you all have had bad experiences with Marines before, but...
+    Tashigi: I swear on this blade that I will get you out of here.
+-> We're going to help you get out of here!
+    <<set $td4_points +=1>>
+    Tashigi: That's right!
+    Tashigi: I know you're all frightened and exhausted, but you need to get away from this island, and we're going to help you.
+Tashigi: Alright, is there anyone here with sailing experience?
+Slave 4: Um... I can sail...
+Slave 5: I've gone fishing before. I can help.
+Slave 6: So can I!
+Tashigi: Oh, yay! Alright, my fellow Marine and I are going to find where they're keeping the supplies.
+Tashigi: Let's go, {$name}!
+{$name}: Right!
+<<jump date_tashigi_4_route_e>>
+===
+
+title: date_tashigi_4_route_e
+location: ship
+---
+
+{$name}: The sun's coming up... but we did it.
+Tashigi: We did... how far away do you think they are by now?
+{$name}: I don't know... but we gave them pretty clear instructions, and I doubt the Navy will try that hard to find them.
+Tashigi: I think so too. The Navy may turn a blind eye to slavery, but they also won't try that hard for a group of prisoners that aren't... well... terribly exotic.
+{$name}: Yeah...
+{$name}: ...
+{$name}: Hey, Tashigi?
+Tashigi: Yes, {$name}?
+{$name}: We... we did the right thing, didn't we? I know it was technically against what upper management wants, but...
+Tashigi: ...
+Tashigi: Yes. We did do the right thing. I used to do whatever I was told without thinking too hard about it, but... I am a better Marine, and a better person, because I do what's right, not just what I'm told.
+Tashigi: If I hadn't done anything... I would have regretted it. And I don't want to have regrets anymore.
+{$name}: Yeah... you're right.
+{$name}: (I know I've said it before, but... she really is amazing...)
+Tashigi: Oh, but... I never really thanked you, {$name}. I couldn't have pulled this off half as well without you.
+{$name}: Oh! Um, yeah! Happy to help. Like you said, it was the right thing to do. And...
+-> You're worth it.
+    <<set $td4_points -=1>>
+    Tashigi: ...
+    Tashigi: That's flattering, but I hope that you didn't do all of this just for me.
+-> This is what being a Marine is all about.
+    {$name}: I never would have imagined that I'd actually get to save people one day.
+    {$name}: It's really rewarding!
+    Tashigi: Well, you'll still need to be careful. But... I have to agree.
+-> That could have been one of my family members.
+    <<set $td4_points +=1>>
+    {$name}: Those were just ordinary people.
+    {$name}: If one of my family was there, I'd hope that someone would help them the way we helped those people.
+    Tashigi: I couldn't agree more, {$name}.
+Tashigi: Anyway, I'll get back to you about rescheduling that dinner date. This dress is ruined and I'm exhausted, but...
+Tashigi: I wouldn't trade tonight for anything.
+Tashigi: Thanks again, {$name}.
+{$name}: Me either, Tashigi. I'm glad we did this.
+{$name}: And hey, whenever you're free, we can actually have a meal next time!
+Tashigi: I'd like that.
+Tashigi: I'd like that a lot.
+<<jump date_tashigi_4_trueend>>
+===
+
+title: date_tashigi_4_speak_to_prisoners
+---
+TODO: SPEAK TO PRISONERS??
+===
+
+title: date_tashigi_4_end
+location: quarters
+---
+
+That could have gone better. A lot better. You dread work the next day.
+===
+
+title: date_tashigi_4_trueend
+location: quarters
+---
+
+You sigh dreamily as you close your door and flop onto your bed. What a night! Captain Tashigi sure is something~
+===

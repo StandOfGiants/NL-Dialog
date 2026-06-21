@@ -1,0 +1,143 @@
+title: tsuru_gift_hunt_intro
+location: town
+---
+
+The atmosphere at the weekly market is warm and chatty. The perfect opportunity to look for a gift that Tsuru might like!
+What kind of item are you looking for? There's so many possibilities, and a stand for each of them.
+{$name}: I would like to browse...
+-> ...a jeweller's stand, full of unique earrings and necklaces decorated with precious stones.
+    <<jump tsuru_gift_hunt_tsuru_gift_jewel>>
+-> ...a gardening stand, full of beautiful pots overflowing with green plants.
+    <<jump tsuru_gift_hunt_tsuru_gift_plants>>
+-> ...an antiquary, full of unusual gadgets, books, and decorations.
+    <<jump tsuru_gift_hunt_tsuru_gift_antiquary>>
+===
+
+title: tsuru_gift_hunt_tsuru_gift_jewel
+location: town
+---
+
+A multitude of shiny shapes form a beautiful arrangement on the jewellery stand. Necklaces hang like costly fruit from metallic branches.
+Vendor: Welcome! Has something caught your eye?
+-> Ask for help.
+    {$name}: I was looking for a gift...
+    Vendor: Well, how about our assortment of necklaces?
+    With an open hand, the vendor gestures to the many silver and golden chains with their pendants of polished precious stones. There's all kinds of colors and forms to choose from. None of them particularly scream Tsuru to you, but they look nice enough.
+    -> Choose one of them
+        You choose a blue one shaped like a half-moon, an elegant and feminine shape.
+        <<jump tsuru_gift_hunt_tsuru_good_gift>>
+    -> Choose none of them.
+        {$name}: These are nice, but...
+        {$name}: I don't think any of them particularly suit the person I'm buying them for.
+        Vendor: I see!
+        Vendor: See if you like any of our earrings, then.
+        You take a look at the selection. Many of them are bird-shaped.
+        There's one, in fact, with two stylized silver cranes.
+        -> Yes, this will work!
+            <<jump tsuru_gift_hunt_tsuru_great_gift>>
+        -> No, this isn't what I'm looking for.
+            Vendor: I see! Well, hope you find something else.
+            <<jump tsuru_gift_hunt_intro>>
+-> Look somewhere else.
+    {$name}: Sorry, not this time, thanks.
+    Vendor: As you please!
+    <<jump tsuru_gift_hunt_intro>>
+===
+
+title: tsuru_gift_hunt_tsuru_gift_plants
+location: town
+---
+
+Skillfully crafted pottery and many small plants fill the gardening stand.
+Vendor: Welcome! Do you need any help?
+{$name}: I'm looking for a gift, maybe...
+-> ... a plant.
+    Vendor: Ah! You're from the Navy, aren't you?
+    Vendor: Many of these are really difficult to take care of... so, depending on your level of expertise, I would recommend something low maintenance, like a cactus.
+    {$name}: That sounds good!
+    After all, like all Navy folks, Tsuru is quite a busy woman...
+    (And has her thorns...)
+    <<jump tsuru_gift_hunt_tsuru_good_gift>>
+-> ... some decorations.
+    Vendor: Of course! We have a nice assortment of figurines for your garden.
+    The vendor gestures in the direction of garden gnomes and lawn flamingos.
+    {$name}: Oh, a flamingo. That is perfect.
+    A woman of Tsuru's age and tastes *has* to like this.
+    <<jump tsuru_gift_hunt_tsuru_bad_gift>>
+-> ... a nice pot.
+    Vendor: Of course! Please, take a look at these lovely ceramics.
+    The vendor's voice drops to a mutter.
+    Vendor: Plants are sold separately.
+    -> Choose a pot and a plant.
+        You choose a nice poinsettia. A vibrant colour, perfect for this time of the year.
+        <<jump tsuru_gift_hunt_tsuru_good_gift>>
+    -> Choose a pot only.
+        You choose a plain model, since Tsuru doesn't seem to like very gaudy things. There is only a little bit of dirt inside.
+        <<jump tsuru_gift_hunt_tsuru_bad_gift>>
+-> Nevermind.
+    Vendor: Well, perhaps some other time!
+    <<jump tsuru_gift_hunt_intro>>
+===
+
+title: tsuru_gift_hunt_tsuru_gift_antiquary
+location: town
+---
+
+You approach the antiquary stand. Yellowing tomes and faded silver objects make for a cozy, if mysterious, atmosphere. Perhaps you'd find something nice for Tsuru here?
+Vendor: Welcome! Has anything caught your eye today?
+{$name}: I'm looking for a gift...
+-> ... something practical.
+    Vendor: Something practical, you say?
+    Vendor: How about this lovely tea set?
+    The delicate porcelain is decorated with blue floral motifs.
+    Maybe a bit typical, but you could see Tsuru enjoying this.
+    -> Yes, this will work!
+        <<jump tsuru_gift_hunt_tsuru_good_gift>>
+    -> No, this isn't what I'm looking for.
+        Vendor: I see! Can I interest you in something else?
+        (=> loop back to question) //HOW DO??
+-> ... something decorative.
+    Vendor: Something decorative, you say?
+    Vendor: Well, if the person you have in mind has memories they treasure, perhaps a nice photo frame would do...
+    You're shown a nice, simple photo frame with a silver bird motif.
+    -> Yes! This seems like a good idea.
+        Maybe you could even frame a photo of Kujaku and Drake... Tsuru is so fond of her family.
+        <<jump tsuru_gift_hunt_tsuru_great_gift>>
+    -> I'm not quite sure about this...
+        (=> loop back to question) //HOW DO??
+-> Nevermind.
+    Vendor: A pity! Well, good luck still!
+    <<jump tsuru_gift_hunt_intro>>
+===
+
+title: tsuru_gift_hunt_tsuru_great_gift
+location: town
+---
+
+Vendor: Okay, it's a deal!
+Packed in a salmon-pink box with a delicate ribbon, your gift looks great.
+Vendor: Thank you for your purchase. I think you've made the right decision!
+As you move away from the busy atmosphere of the market, clutching the gift in your hands, you can't help but agree.
+===
+
+title: tsuru_gift_hunt_tsuru_good_gift
+location: town
+---
+
+Vendor: Okay, it's a deal!
+Vendor: Have a nice rest of the day!
+As you move away from the stand, you can't help but notice that there are many other shops.
+*Could* you have found something better...?
+Well, in any case, this will do.
+===
+
+title: tsuru_gift_hunt_tsuru_bad_gift
+location: town
+---
+
+Vendor: Okay, it's a deal!
+Vendor: Have a nice rest of the day!
+As you move away from the stand, you feel uneasy.
+{$name}: Hmm... Was this the right call...?
+Well, you suppose only time will tell.
+===

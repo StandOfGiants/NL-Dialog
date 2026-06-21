@@ -1,0 +1,141 @@
+title: Drake_Gift_Hunt_intro
+location: town
+---
+
+What a lovely winter day — crisp blue skies, and the cadets have been hard at work clearing snow away from the streets (and the rooftops, too!). It feels great to wander the streets on your day off... until suddenly, you hear a lot of commotion coming from the central plaza.
+Rounding the corner, you see that the main thoroughfare is packed with people and merchant stalls hawking wares. What is all this? A banner overhead answers your question: END OF YEAR SELLOUT
+Oh. That's right, the end of the year holidays are coming up... and New Years. A certain someone crosses your mind... will you perhaps achieve your goal of being kissed at midnight on New Years Eve? A woman rushes by with brightly colored wrapped gifts and something occurs to you. A gift. You should give them a gift! Can't hurt, certainly (hopefully...)!
+And where else to search for a gift but here, at this conveniently timed market?
+First though, who the heck are you shopping for?
+-character selection- //HOW DO??
+Wait...
+[SHAKE TEXT] What on earth do you get a man like Diez Drake??? //HOW DO??
+You're not sure you've ever even heard him speak of something he needed, let alone something he wanted.
+Still, you feel compelled to try. After all, what good Marine just rolls over and gives up?
+Eventually, you settle on two to sort through. You decide to start at the–
+<<jump Drake_Gift_Hunt_SelectStall>>
+===
+
+title: Drake_Gift_Hunt_SelectStall
+location: town
+---
+
+-> Book store
+    Drake's very well-studied, so maybe there's something he'd like there.
+    <<jump Drake_Gift_Hunt_d_bookstore>>
+-> Toy store
+    To hell with the practical. He needs to have fun.
+    <<jump Drake_Gift_Hunt_d_toystore>>
+===
+
+title: Drake_Gift_Hunt_d_bookstore
+location: town
+---
+
+The shopkeep's a wizened little thing and looks as dusty and leathery as some of the books in the store. He shuffles out from behind his massive stack of to-be-sorted tomes to greet you.
+Shopkeep: How can I help you?
+<<jump Drake_Gift_Hunt_d_bookstore_choices>>
+===
+
+title: Drake_Gift_Hunt_d_bookstore_choices
+location: town
+---
+
+{$name}: I need to buy a gift for someone. He's–
+-> A huge nerd. You know. A dinosaur guy.
+    <<jump Drake_Gift_Hunt_dinobook>>
+-> Constantly on the move, but constantly running into severely weird shit...
+    <<jump Drake_Gift_Hunt_survivalguide>>
+===
+
+title: Drake_Gift_Hunt_dinobook
+location: town
+---
+
+Shopkeep: Ah, one of those.
+You're not sure what they mean with the emphasis, but after a quick loop around the store, he returns and presses a book into your hand. It's... oh man, your grandparents would have been reared on this...
+Shopkeep: It's outdated, but that doesn't mean it's bad. Never going to understand you youngsters and your newfangled obsession with sticking feathers on perfectly good killing machines... So do you want it?
+-> Hand it over!
+    It's old, but it's fine. Sure, it probably doesn't even have an allosaurus in it, but it's important to learn from the past, right?
+    <<jump Drake_Gift_Hunt_badgift>>
+-> Mm... maybe something more err... survival-based would be better.
+    <<jump Drake_Gift_Hunt_survivalguide>>
+-> I need some time to think...
+    You head back out and go to scope out the toy store.
+    <<jump Drake_Gift_Hunt_d_toystore>>
+===
+
+title: Drake_Gift_Hunt_survivalguide
+location: town
+---
+
+Shopkeep: Ah, I have just the thing...
+After a quick loop around the store, he returns and presses a book into your hand.
+Shoopkeep: A handbook of worst-case scenarios! It's got step-by-step diagrams on how to come out swinging— all free of fluff and filler. It's the best for someone with a good baseline knowledge... though it's probably also good for anxious weirdos too. You want it?
+-> Hell yeah!
+    Solid pre-planning is absolutely up his alley!
+    <<jump Drake_Gift_Hunt_goodgift>>
+-> Mm... maybe something for... you know, one of those dinosaur guys instead?
+    <<jump Drake_Gift_Hunt_dinobook>>
+-> I need some time to think...
+    You head back out and go to scope out the toy store.
+    <<jump Drake_Gift_Hunt_d_toystore>>
+===
+
+title: Drake_Gift_Hunt_d_toystore
+location: town
+---
+
+Inside the toy store, you're bowled over by how much the place looks like a bomb went off inside. Many major winter holidays have already passed, so this must be the aftermath. Adding in the end-of-year sale— well, no wonder it's a mess.
+You let the poor workers tidy and go snooping solo...
+After a hefty amount of digging through misplaced items, you find some real winners.
+<<jump Drake_Gift_Hunt_toystore_choices>>
+===
+
+title: Drake_Gift_Hunt_toystore_choices
+location: town
+---
+
+-> Investigate the starter set of Sora: Warrior of the Sea collectible coins.
+    You don't think he collects coins—it seems a little too nerdy even for Drake, but it's not just Sora merch. Its case is compact, the packaging is subtle, it's easy to display, and it has a medallion-style coin for each of the main characters. Checking the year listed on the package, it looks fairly old too. Judging by that, there's even a chance he had some as a child. You daydream about him keeping one in his pocket, thinking of you...
+    -> Buy the starter set of collectible coins.
+        <<jump Drake_Gift_Hunt_perfectgift>>
+    -> Check the rest of the toys.
+        <<jump Drake_Gift_Hunt_toystore_choices>>
+-> Investigate the Poison Pink statue.
+    It's a shame they're out of Sora, but the Germa characters are cool, too! She's posed a little provocatively, but that's no big deal. She does feel a tacky to the touch, which is strange for a recent release. The paint shouldn't be bad yet...
+    ...You shut your brain down at that point and vow not to overthink it.
+    -> Buy the sticky figurine.
+        <<jump Drake_Gift_Hunt_badgift>>
+    -> Check the rest of the toys.
+        <<jump Drake_Gift_Hunt_toystore_choices>>
+[If you made it to date 3] //HOW DO??
+-> Investigate the small set of turtle figures.
+    Helping look after island animals is a good memory for Drake. With each tiny enough to fit in your palm, they're small enough not to be ostentatious wherever he puts them. They're not practical, but they're definitely nostalgic.
+    -> Buy the cute little turtle family.
+        <<jump Drake_Gift_Hunt_goodgift>>
+    -> Check the rest of the toys.
+        <<jump Drake_Gift_Hunt_toystore_choices>>
+-> Head over to the bookshop.
+    <<jump Drake_Gift_Hunt_d_bookstore>>
+===
+
+title: Drake_Gift_Hunt_perfectgift
+location: town
+---
+
+Once you checkout, your heart positively pounds as you carry off your gift for him. You can't remember the last time you felt so sure of something. He's going to love it.
+===
+
+title: Drake_Gift_Hunt_goodgift
+location: town
+---
+
+It's a nice warm feeling that takes you as you head to the checkout. You don't have to hope he'll like it— you know he will...
+===
+
+title: Drake_Gift_Hunt_badgift
+location: town
+---
+You head back. While you're not convinced your choice will be a smash hit, the thought must count for something, right?
+===

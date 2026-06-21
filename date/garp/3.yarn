@@ -1,0 +1,521 @@
+title: date_garp_3_main
+location: office
+---
+<<declare $gd3_points = 0>>
+
+{$name}: Ugh, finally! I'm all caught up! There sure was a lot to do this time. I feel like I'm forgetting something, though...
+Garp: Alright, Tsuru, I'm back! Supplies successfully delivered!
+Tsuru: Oh, thank you, Garp.
+{$name}: Oh, right! It's supply day! Tsuru-san, if you don't mind, could I head down to the mailroom? I'm all caught up on my work!
+Tsuru: Go ahead, {$name}. Get yourself some lunch while you're at it.
+Garp: You know what, I'll come with you. I've got nothing better to do, and I bet you'll need some help finding your mail!
+-> Aw, thanks! I'd really appreciate the help.
+    <<set $gd3_points +=1>>
+    Garp: Bwahahaha! Sure thing!
+-> Ah, that's not necessary... I wouldn't want to bother you.
+    <<set $gd3_points -=1>>
+    Garp: What're you talking about?! I offered, didn't I?!
+    {$name}: Well, I guess that's true...
+-> Eh, if you want.
+    Garp: Trust me, I'd rather look for mail than hang around here!
+{$name}: Alright, then! Let's go!
+<<set_background day(town) show>>
+Garp: Well, that took a while, but I'm glad you found it! Anything good in there?
+{$name}: Well, my mom finally sent a reply to the last letter I sent. Apparently, my dad's started some new project at home, but otherwise, everything's pretty normal.
+{$name}: I'm glad, though; sometimes, no news is good news, y'know?
+Garp: ...
+Garp: Yeah, I get that. I really do.
+{$name}: (Hm... He seems a little down...)
+-> Did you get any mail, Garp?
+    Garp: ...No. Didn't really expect to, though, so it doesn't really matter.
+    {$name}: (Does he not have anyone to write to...? Or anybody to write back to him? That sounds... kinda lonely.)
+-> Something the matter?
+    <<set $gd3_points +=1>>
+    Garp: Huh? No, I'm alright. But thanks.
+    {$name}: (I don't think he got any mail... does he not have anyone to write to, or anyone who writes back to him?)
+-> Should we head back?
+    <<set $gd3_points -=1>>
+    Garp: What? No! I don't wanna go back to that stuffy office. I'm fine. Let's just...go.
+    {$name}: (I wonder... is he feeling down because he didn't get any mail?)
+{$name}: Alright... Well, should we get some lunch, then? I don't have to be back for a while, and it's fun to get food off base sometimes.
+Garp: Yeah, good idea! In fact, I know just the place.
+<<set_background day(park) show>>
+Garp leads you over to a small yet peaceful park. Near the entrance is a small stall selling sandwiches. At first, you're a little surprised, but Garp grins at you, promising that it'll be worth it.
+You look over the menu, then approach the cashier to place your order. Before you can pay, however, Garp presses some cash down on the counter and gives his order as well.
+Soon, the two of you have freshly-made sandwiches in your hands. You find a bench, take a seat, and dig in. They're absolutely delicious, with fresh ingredients, and in moments, you're both finished.
+{$name}: Mmmmm! Wow, I can't believe how good that was!
+Garp: Bwahaha! I know all the best spots around here!
+{$name}: I'll say! I had no idea that a random little food stall could make such amazing sandwiches. That hit the spot... and this park is lovely.
+Garp: Heh, this is one of my favorite places on the island. It's nice to come here when you need a moment to think.
+-> I guess so.
+    <<set $gd3_points -=1>>
+    Garp: If you can't appreciate the beauty of nature, then you need to get out more!
+-> Yeah, I know what you mean. The base is nice, but it's good to get out once in a while.
+    Garp: Everyone should do themselves a favor and get off base every so often. If you don't give yourself a break, then you'll be the one to break!
+-> So even you need some peace and quiet sometimes? <set $gd3_points +=1>>
+    Garp: Bwahaha! Doesn't everyone? Breaks are good for you, and there's no better place to be than out here!
+{$name}: (...)
+{$name}: It really is nice out, but... you kinda wanna ask him about something.
+{$name}: (Let's see...)
+-> Hey, Garp. Do you wish people wrote to you more?
+    Garp: ...Well. That's a loaded question.
+    <<jump date_garp_3_route_a>>
+-> Um, Garp, what's your family like?
+    Garp: ...My family? Erm... Well...
+    <<jump date_garp_3_route_b>>
+-> (...Ugh, I shouldn't pry. I'll just leave it.)
+    Garp: ...
+    <<jump date_garp_3_route_c>>
+===
+
+title: date_garp_3_route_a
+location: park
+---
+
+Garp: I don't really need people to write to me. With the exception of the folks on my home island, I tend to know how the people I'm keeping tabs on are doing through... other means.
+{$name}: Other means?
+Garp: ...
+Garp: You're not a fool, {$name}. I'm sure that you've put two and two together, especially regarding Strawhat Luffy. I'm not so foolish as to think that you haven't made the connection.
+{$name}: ...
+-> Truthfully, I had been wondering.
+    <<set $gd3_points +=1>>
+    Garp: I'm not surprised. After the battle at Marineford, when Luffy's parentage was announced to the world and it became clear what our relationship was, it suddenly felt like everyone knew. Like everyone knew the secret I'd been trying so hard to hide.
+    {$name}: I... I'm sorry.
+    Garp: Don't be. It was bound to come out sooner or later.
+    Garp: I just... Sengoku is one of my closest friends, but I was ready to kill him in that moment. I'm glad I didn't, but I was close. Too close.
+    Garp: ...
+    <<jump date_garp_3_route_d>>
+-> Yeah, I figured it out a while ago, but I wasn't sure I should ask.
+    Garp: Heh, well, that's real polite of you, {$name}. But the cat's been out of the bag for more than two years now, so I guess there's no point in being cagey about it anymore.
+    {$name}: Has it been hard?
+    Garp: Hah, no. Nobody's dared to pry, and the only ones who would already knew. It is what it is, so I guess I just have to roll with it. That's all I can do.
+    {$name}: ...
+    <<jump date_garp_3_route_d>>
+-> ...Wait, are you serious? I hadn't even noticed!
+    <<set $gd3_points -=1>>
+    Garp: ...I can't tell if you're lying to me or if you're really just that unobservant.
+    Garp: ...
+    <<jump date_garp_3_route_d>>
+===
+
+title: date_garp_3_route_b
+location: park
+---
+
+Garp: My family is... unusual. I wish that they could live quiet lives like most people, but I guess that's a pretty worthless wish—it's not in our nature. We cause storms wherever we go.
+{$name}: Storms? What do you mean?
+Garp: It's an old legend, {$name}. I'm not surprised that you haven't heard about it.
+{$name}: An old legend, huh...?
+-> That's pretty neat.
+    Garp: ...Depends on who you ask.
+    Garp: ...
+    <<jump date_garp_3_route_d>>
+-> There's not much room for legends left in the world, is there?
+    <<set $gd3_points -=1>>
+    Garp: Is that what you think? There's still a lotta mystery left in the world, {$name}. And for many of those legends, it's more convenient for the powers that be if you don't know about ‘em.
+    {$name}: ...
+    <<jump date_garp_3_route_d>>
+-> Could you tell me about it?
+    Garp: ...As much as I want to, it's pretty sensitive information. It's really not something I should be talkin' about or sharing. Are you sure you wanna hear it?
+    -> Mmm, on second thought, maybe it's best if I don't.
+        Garp: I don't blame you.
+        {$name}: ...
+        <<jump date_garp_3_route_d>>
+    -> Yeah. I'm sure.
+        <<set $gd3_points +=1>>
+        Garp: Have you ever heard the legend of the D. clan? It's said that they've existed since the Void Century. Supposedly, they bring the storm. They're the embodiments of chaos. They possess unshakable wills.
+        {$name}: I see... that does sound like you, and the other D.'s I've heard of.
+        Garp: D.'s are pretty infamous. The World Government would prefer to have them under their thumb or dead.
+        {$name}: Oh...
+        <<jump date_garp_3_route_d>>
+===
+
+title: date_garp_3_route_c
+location: park
+---
+
+Garp: You're fidgeting, {$name}. I bet I know what you wanna ask.
+Garp: “How did you become the Hero of the Marines, Mr. Garp?”
+Garp: Something like that. Am I right?
+{$name}: Huh?
+-> How'd you guess? <set $gd3_points +=1>>
+    Garp: Bwahaha! You're not the first person I've seen with that expression! Listen up and I'll tell you about it.
+    Garp: Have you ever heard of God Valley?
+    Garp: What am I saying. Of course you haven't. But back then, I fought off one of the greatest pirate crews on the seas with the help of a pretty influential figure.
+    Garp: That person... was the former Pirate King, Gol D. Roger.
+    {$name}: What?!
+    -> Are you serious?! That's amazing!
+        Garp: Isn't it? That incident is what made me the Hero of the Marines. I can't take all the credit, and it was the last time that the two of us fought side by side, but... don't believe everything that you hear about Roger, {$name}. He was a pirate, sure, but he wasn't a bad man.
+        {$name}: That's honestly kinda strange to hear, especially coming from you, but... I guess out of everyone in the Marines, you knew him best, huh?
+        Garp: ...
+        <<jump date_garp_3_route_d>>
+    -> Wait... Gol D. Roger?
+        Garp: That's what I said.
+        {$name}: But I thought his name was Gold Roger.
+        Garp: That's what the government would like you to believe, but no. He was a D., and that's just the truth.
+        {$name}: A D., huh... does that mean something?
+        Garp: More than you think it does.
+        {$name}: ...
+        {$name}: Why are you telling me this?
+        Garp: ...
+        Garp: Because maybe I can trust you.
+        {$name}: ...
+        <<jump date_garp_3_route_d>>
+    -> But I thought you hated each other...
+        Garp: Heh, no. If anything, we respected each other. Quite a bit, actually.
+        Garp: He was one of the few who could actually give me a challenge. Back in his prime, there was nobody like him.
+        Garp: He was great with haki and had a smile that could draw people to him. Fighting him, fighting with him... those were the days, {$name}. Those were the days.
+        {$name}: ...
+        <<jump date_garp_3_route_d>>
+-> No, actually, but I AM curious about that too.
+    Garp: Well, listen closely! It was a fierce battle between myself and Rocks D. Xebec and his crew. The Rocks pirates were infamous back in the day! They were on par with any of today's Yonko; hell, Big Mom and Kaido were both on that crew!
+    -> That sounds terrifying.
+        Garp: Bwahahaha! Maybe, but it was a challenge that made my blood boil. What I wouldn't give to relive those days, back when I was in my prime!
+        {$name}: I can hardly imagine you being stronger then than you are now...
+        Garp: Heh, well... I guess I should just be glad that I haven't lost my touch.
+        Garp: ...
+        <<jump date_garp_3_route_d>>
+    -> And you fought those incredible pirates by yourself?
+        Garp: By myself? Of course not! I was damn strong, but even I couldn't thrash ‘em singlehandedly. No, the one who came to help me was none other than the former Pirate King, Gol D. Roger.
+        {$name}: What?! Are you serious?!
+        Garp: Of course I am! The man's not at all like the rumors and stories make him out to be.
+        Garp: He was a bastard, sure, but he and I... we respected each other. He was a worthy opponent. No matter what the World Government would like you to believe, Gol D. Roger wasn't a bad man.
+        {$name}: ...
+        <<jump date_garp_3_route_d>>
+    -> But I've never heard of them before!
+        Garp: Of course not! Not only were they before your time, but they were also a huge threat to the World Government! Of course they'd wanna cover those guys up!
+        {$name}: Uh, but two of “those guys” were Big Mom and Kaido, of all people...
+        Garp: Psh. Doesn't matter. As long as Xebec's name was lost to history, that's really what they cared about. The man was just too dangerous, and they didn't want anybody trying to follow in his footsteps.
+        Garp: ...
+        <<jump date_garp_3_route_d>>
+-> Uh, no.
+    <<set $gd3_points -=1>>
+    Garp: ...Oh.
+    <<jump date_garp_3_route_d>>
+===
+
+title: date_garp_3_route_d
+location: park
+---
+
+Garp: So, {$name}, I've been wondering—what's your family like?
+{$name}: (He's trying to change the subject...)
+-> (Fine. I'll let it slide.)
+    <<set $gd3_points +=1>>
+    {$name}: Oh boy, we'd be here all day if I went into that! I'll just give you the highlights.
+    <<jump date_garp_3_route_d_continue>>
+-> (No, wait! I still have questions!)
+    <<set $gd3_points -=1>>
+    {$name}: Wait a minute! I've got more questions...
+    Garp: What, am I obligated to tell you everything?!
+    {$name}: (Oops. Looks like I might be pushing a little too hard...)
+    -> (I should let it go.)
+        {$name}: No, you're not. I'm sorry.
+        Garp: ...It's fine. I'm sorry for shouting.
+        {$name}: It's alright. Anyway, as for my family...
+        <<jump date_garp_3_route_d_continue>>
+    -> (I'm going to power through.)
+        <<set $gd3_points -=1>>
+        {$name}: No, but I want to know more about you! Avoiding things isn't like you!
+        Garp: ...What do you know about me, rookie?
+        {$name}: Wha... why are you standing up? Where are you going?
+        Garp: Back to the office. There's work to be done.
+        {$name}: ...I've really screwed up, haven't I?
+        <<jump date_garp_3_badend>>
+===
+
+title: date_garp_3_route_d_continue
+location: day(park)
+characters: [garp]
+---
+<<declare $gd3_family_choices = 0>>
+<<jump date_garp_3_family_choice>>
+===
+
+title: date_garp_3_family_choice
+---
+<<declare $gd3_choice_msg = "">>
+<<set $gd3_family_choices += 1>>
+<<if $gd3_family_choices == 1>>
+    <<set $gd3_choice_msg = "Let's see... Who should I start with...">>
+<<elseif $gd3_family_choices == 2>>
+    <<set $gd3_choice_msg = "Ok, who's next?">>
+<<elseif $gd3_family_choices == 3>>
+    <<set $gd3_choice_msg = "Alright, lemme think...">>
+<<elseif $gd3_family_choices == 4>>
+    <<set $gd3_choice_msg = "Hmmm...">>
+<<else>>
+    <<set $gd3_choice_msg = "Sooooo...">>
+<<endif>>
+
+{$gd3_choice_msg}
+-> Oh, I should talk about my mom! She's a great baker. <<if !visited("date_garp_3_route_d_mom")>>
+    <<jump date_garp_3_route_d_mom>>
+-> Lemme tell you about my dad. He's big on do-it-yourself projects. <<if !visited("date_garp_3_route_d_dad")>>
+    <<jump date_garp_3_route_d_dad>>
+-> You know what, I wanna talk about my siblings. They're a handful! <<if !visited("date_garp_3_route_d_siblings")>>
+    <<jump date_garp_3_route_d_siblings>>
+-> I have a lot to say about my brother. <<if !visited("date_garp_3_route_d_brother") && visited("date_garp_3_route_d_siblings")>>
+    <<jump date_garp_3_route_d_brother>>
+-> I've gotta talk about my sister. <<if !visited("date_garp_3_route_d_sister") && visited("date_garp_3_route_d_siblings")>>
+    <<jump date_garp_3_route_d_sister>>
+-> That's everybody. <<if $gd3_family_choices > 1>>
+    <<jump date_garp_3_route_e>>
+-> I don't really want to talk about them <<if $gd3_family_choices <= 1>>
+    <<jump date_garp_3_route_e>>
+===
+
+title: date_garp_3_route_d_siblings
+location: park
+---
+{$name}: I'm the middle child in my family—my brother is older than me and my sister is younger. We get along, or about as well as siblings can, but...
+-> I have a lot to say about my brother. <<if !visited("date_garp_3_route_d_brother")>>
+    <<jump date_garp_3_route_d_brother>>
+-> I've gotta talk about my sister. <<if !visited("date_garp_3_route_d_sister")>>
+    <<jump date_garp_3_route_d_sister>>
+===
+
+title: date_garp_3_route_d_mom
+location: park
+---
+<<if visited("date_garp_2_route_h")>>
+    {$name}: I think I mentioned her before, back when we were making rice crackers.
+    <<if visited("date_garp_2_route_i")>>
+        {$name}: It's because of her that I learned to bake, y'know!
+    <<else>>
+        {$name}: I never really picked up on how to bake, but I loved watching her.
+    <<endif>>
+<<else>>
+    {$name}: I used to sit in the kitchen and help her out. I was even her taste-tester sometimes!
+<<endif>>
+<<jump date_garp_3_route_d_mom2>>
+===
+
+title: date_garp_3_route_d_mom2
+location: park
+---
+
+{$name}: Honestly though, my mom and I...
+-> We have a really good relationship.
+    <<jump date_garp_3_mom_good>>
+-> We don't always get along.
+    <<jump date_garp_3_mom_bad>>
+===
+
+title: date_garp_3_mom_good
+location: park
+---
+
+{$name}: When I think about it, she's been my biggest inspiration. She brought us all together. She's always so funny in the kitchen; she loves cracking jokes and making us laugh. And when things were tough, she always knew just what to say. I miss her, but everyone here has been so kind and every day has been so busy that it hasn't been so bad.
+Garp: I see, I see. That's good...
+Garp: You should always value your family, {$name}. Whether they're the family you were born with or the family that you've found, everybody needs people that they can rely on. You can't make it in this world on your own.
+{$name}: ...Yeah. I don't know where I'd be without them.
+<<jump date_garp_3_family_choice>>
+===
+
+title: date_garp_3_mom_bad
+location: park
+---
+
+{$name}: My mom's great at baking, but... she's honestly pretty flighty. She has a tendency to forget stuff easily and she's always changing her mind about every little thing. She's also not the best at time management. It sometimes feels like she's off in the clouds, and I just... it's been tough to work with that.
+Garp: Mmhmm. I understand.
+Garp: I know it can be frustrating when your family doesn't live how you want them to. But at the end of the day, everyone's gotta make the choice of how they wanna live. You can try to influence them or show them the way, but... well, you've gotta choose to accept them as they are, or find people that can treat you the way you want.
+{$name}: ...Yeah.
+<<jump date_garp_3_family_choice>>
+===
+
+title: date_garp_3_route_d_dad
+location: park
+---
+
+{$name}: My dad's always been the hands-on type. He taught me so much about things like navigating, fishing, and how to fix stuff. He spends his time working on projects around the house, and he'd rope me or my siblings into helping him whenever he could.
+{$name}: Y'know, my dad and I...
+-> We get along well!
+    <<jump date_garp_3_dad_good>>
+-> We don't have that great of a relationship.
+    <<jump date_garp_3_dad_bad>>
+===
+
+title: date_garp_3_dad_good
+location: park
+---
+
+{$name}: My dad's brilliant, honestly. Whenever it comes to doing things with his hands, he's the guy to ask. And he's so knowledgeable, too! My home island is pretty normal, all things considered, but it isn't that big. There's only about two or three villages there, and one school. My dad, though... I think he must have come from another island or something because he's smarter than anyone else I knew there.
+Garp: Bwahaha! Sounds like you really respect ‘im.
+Garp: Good! Havin' a mentor's real important, {$name}. Someone to guide you, someone to look up to... and the same holds true the other way, too. With all the brats I've mentored, I'm pretty sure I've learned as much from them as they've learned from me.
+Garp: Knowing you, I'm sure you've done your dad proud.
+{$name}: ...Thanks, Garp. That really means a lot.
+<<jump date_garp_3_family_choice>>
+===
+
+title: date_garp_3_dad_bad
+location: park
+---
+
+{$name}: My dad's really talented at anything hands-on, but... he's not a great communicator. He's the stern, silent type, and while I guess that works for some people, I can never really tell what he's thinking. It's like he's in his own little world half the time. It's only when he's working on something that he opens up, but if you're not the one he's working with, he pretty much ignores you. I just... it's tough to deal with sometimes.
+Garp: That's understandable.
+Garp: Unfortunate, but understandable. Communication's difficult sometimes, even for parents and children. Sometimes as a parent, you think you're doin' your best, or doin' enough, but to your kids, maybe it's not enough. Maybe it never was, but they just didn't or couldn't tell you that...
+Garp: ...
+Garp: You know, {$name}, if ya ever feel like it or get the chance, maybe you should try talkin' to ‘im one more time. See if you can get your feelings across. If he really loves and cares about ya, then I think he'll listen. If you've got any good memories with him, then maybe it's worth a try. After all, even though it's less likely for you since you're takin' on an admin job, you never quite know when each day on the seas will be your last.
+{$name}: ...Maybe.
+<<jump date_garp_3_family_choice>>
+===
+
+
+title: date_garp_3_route_d_brother
+location: park
+---
+
+{$name}: My parents loved all of us, of course, but my brother... well, since he's the oldest, my parents expected a lot from him. He's been pretty indecisive ever since we were kids, but I think all the pressure of figuring out what to do with his life got to him a little bit.
+{$name}: That said...
+-> We're still close.
+    <<jump date_garp_3_brother_good>>
+-> We've drifted apart.
+    <<jump date_garp_3_brother_bad>>
+===
+
+title: date_garp_3_brother_good
+location: park
+---
+
+{$name}: He's the one who writes to me the most, actually. Right now, he's helping dad with home improvement projects, but he seems to have fun trying out a lot of different stuff—about two months ago, he was trying his hand at being a fisherman. It bums him out to think that he might never hold a job, and my parents are always on his case about it, but he's doing his best. I think he was surprised when I decided to join the Navy and leave home, but he's always been supportive of me.
+Garp: Bwahaha! What more could you ask for? A big sibling who looks out for you is a real gift, {$name}. For both of you.
+Garp: Even if he doesn't quite know what to do with himself, that's alright too. There's no rush. I'll be honest with ya, {$name}—even if he tries a hundred different things, if he's making his life or other peoples' lives better, then that's time well spent. He could always do worse; if he had a nice job but did nothing to help people, then that's way worse than what he's doing now.
+{$name}: Huh... I never thought about it like that. Maybe I'll tell him that in my next letter.
+<<jump date_garp_3_family_choice>>
+===
+
+title: date_garp_3_brother_bad
+location: park
+---
+
+{$name}: We hung out a lot when I was younger, but it's been tough for the past few years. Mom and Dad have pushed him into trying to get jobs, but he hates doing the same thing for too long. Once he gets bored, he decides to quit and try something new. He's done that in relationships, too. I'm not trying to judge him, but... I don't know. I don't know if it's just boredom or something else.
+Garp: ...Y'know, {$name}, I once had a Marine serve under me who was a lot like your brother.
+{$name}: ...Really?
+Garp: Yeah. His name was Sheldon, so they called him Unsure Sheldon. He was good at his work, but you couldn't assign him the same task two days in a row; he'd kick up such a fuss that it wasn't even worth it. The man had flings all over the seas, too.
+Garp: One day, I sat him down and asked him about it, and y'know what he told me? He told me he was scared. Scared of people's expectations. Scared of letting folks down. Just... scared.
+{$name}: ...
+Garp: It took a long time, but he finally found somethin' that he loved doing. Something that made him want to try and get over his fear. And you know what? That thing he loved most was cooking, and right now, he's the head chef for G-4.
+Garp: As for your brother... your parents have been pressuring him, right? I'm not saying that they're wrong, but it might not be boredom that's makin' him act like this. Could be fear.
+{$name}: Fear, huh...
+Garp: Well, who can say. But you never really know what people are going through. Haki helps, but it's not perfect. Maybe not even he knows why he's like that.
+{$name}: Maybe... I could try talking to him about it. A little support might go a long way.
+Garp: That's the spirit.
+<<jump date_garp_3_family_choice>>
+===
+
+
+title: date_garp_3_route_d_sister
+location: park
+---
+
+{$name}: My sister's really sweet. She was a little spoiled when she was younger, but she grew out of it, and she's about to finish her time at school. Last we talked, she was hoping to go to one of the more famous islands in North Blue and become a doctor. She'll be far away from home, though. Who knows if she'll come back once she's gotten her license.
+{$name}: Honestly, though...
+-> I just want her to be happy.
+    <<jump date_garp_3_sister_good>>
+-> I wish she'd think of us more.
+    <<jump date_garp_3_sister_bad>>
+===
+
+title: date_garp_3_sister_good
+location: park
+---
+
+{$name}: She's worked super hard to get to where she is, and she's always been smart. I've found her studying long into the night, trying to memorize stuff from these crazy anatomy books. She's so driven and dedicated... it's honestly amazing.
+Garp: Bwahahaha! Sounds like she has drive, then! That's good!
+{$name}: Yeah... I'm just worried about her. North Blue is usually pretty calm, but if things go south... I don't know if I'd be able to help her.
+Garp: ...
+Garp: {$name}. I know—believe me, I know—how hard it is to let people go, especially when you care about them. But you can't smother them, y'know? You just have to let them grow up. Just see who they become, and try to support them as best you can. It's hard, but that's life.
+Garp: And hey, think about it. You're in a better position than most to get her help if she needs it! After all, you just so happen to know a real powerful guy in the Marines!
+{$name}: Now that you mention it...
+-> Yeah! I could always ask Sengoku for help!
+    <<set $gd3_points -=1>>
+    Garp: Then what am I?! Chopped liver?!
+-> The Hero of the Marines IS sitting right next to me.
+    <<set $gd3_points +=1>>
+    Garp: And don't you forget it!
+Garp: But I'm serious, {$name}. If your sister's that committed to doin' the world some good, then there's plenty of people who're gonna be lookin' out for her. And I'm one of them. I swear.
+{$name}: ...Thank you, Garp. I'll hold you to that.
+<<jump date_garp_3_family_choice>>
+===
+
+title: date_garp_3_sister_bad
+location: park
+---
+
+{$name}: She has all these big plans and aspirations to leave the island, but it's like she hasn't even considered everything that goes into that. She has tunnel vision—it's as if she wants to leave so badly that she can't or won't consider anything else.
+{$name}: It takes a lot of money to become a doctor, and it's not like she'll have time for a job to help with expenses. She's going to be leaving alone, meaning that we'll need to hire passage for her and possibly an escort. And even though she's been offered work at the clinic on the island, she totally rejected it. It's fine to have big dreams, but it's like she doesn't care about how her dreams affect the people around her.
+Garp: Believe it or not, {$name}, I understand how you feel. I understand that frustration when people don't act the way you want them to. When their dreams put them at odds with you and you wish they could just stop and think ‘bout how you feel.
+Garp: But it's not like I don't get your sister's feelings either. There's a bright, big, beautiful world out there, and sometimes, home can just feel too stifling. She wants to get out there and help people and see what life is like away from home, and I can't fault her for that.
+Garp: I wish I knew what to say about the money thing, but if she does go through with it, I hope you can work it out. Maybe I could...
+{$name}: Don't. We're not rich, but we're not poor, either. We can send her to become a doctor if that's what she really wants, but...
+{$name}: I dunno. I guess... I get it too. Part of the reason why I joined the Navy in the first place was to travel, so I get where she's coming from on that front. I just...
+{$name}: She doesn't know martial arts or how to fight. She doesn't know how to wield a knife or a gun, either. She just expects that things will be OK. What if something happens to her?
+Garp: Based on what you've told me, I think she knows about all that and still wants to take the chance. You were going on about how smart she is, so I'm sure she's already thought about all that. Be careful not to let your own worries get in the way of supporting her, you know?
+{$name}: ...Yeah.
+<<jump date_garp_3_family_choice>>
+===
+
+title: date_garp_3_route_e
+location: park
+---
+
+{$name}: ...And that's my whole family.
+<<if $gd3_family_choices >= 4>>
+    <<set $gd3_points +=2>>
+    Garp: ...Thanks for telling me about ‘em, {$name}. And hell, I feel like I've learned a lot about you too!
+    {$name}: Haha, well, thanks for listening! I don't think I've ever talked about myself this much before. It was... pretty nice, actually.
+    Garp: Bwahaha! Good to hear it! After all... you're a real interesting person yourself.
+    {$name}: What was that?
+    Garp: Uh, nothing. Say, it's gotten pretty late. We should head back.
+    {$name}: Oh, yeah...
+    Garp: But, {$name}... I haven't forgotten.
+    {$name}: Forgotten what?
+    Garp: Heh! Next time... next time, I'll tell you about my family. That's a promise.
+    {$name}: (Finally! I'm so curious!)
+    {$name}: Alright! Next time it is!
+    <<jump date_garp_3_end>>
+<<elseif $gd3_family_choices >= 3>>
+    <<set $gd3_points +=1>>
+    Garp: Bwahaha! They really do sound interesting!
+    {$name}: Yeah, they're really something. I can't believe it's already this late, though! Who would've thought?
+    Garp: Time flies when you're havin' fun, I guess.
+    Garp: But thanks, {$name}. I liked hearin' about your family. And...
+    Garp: Maybe next time, I'll finally be able to talk about mine.
+    {$name}: Uh, yeah! Next time, then!
+    {$name}: (I wonder what he means by that...)
+    <<jump date_garp_3_end>>
+<<elseif $gd3_family_choices >= 2>>
+    Garp: Heh, they're an interesting bunch. Hope one day you can tell me about the others too.
+    {$name}: Ah, it's not that I didn't want to, just...
+    Garp: I get it. It's hard to talk about this kind of personal stuff sometimes.
+    Garp: Still, thanks. It was nice to catch a break.
+    {$name}: ...Yeah.
+    <<jump date_garp_3_end>>
+<<else>>
+    <<set $gd3_points -=1>>
+    Garp: ...So you still don't really trust me that much, huh.
+    {$name}: ...It's not that. It's just... I don't like talking about my family that much.
+    Garp: Any particular reason why?
+    {$name}: ...
+    {$name}: Sorry.
+    Garp: Mmm. Guess we'll leave it there, then.
+    Garp: Let's go back. We have work to do.
+    <<jump date_garp_3_end>>
+<<endif>>
+===
+
+title: date_garp_3_badend
+location: park
+---
+
+That could have gone better. Hopefully Vice Admiral Garp won't put you on latrine duty or worse, have you do some personal training later.
+===
+
+title: date_garp_3_end
+location: quarters
+---
+
+You smile when you get back to your quarters later, remembering lunch. It felt good to talk about the people you love with someone you-
+Enjoy. Yeah. Enjoy. Not love. Totally. Toooootally.
+===

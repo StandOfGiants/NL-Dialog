@@ -1,0 +1,662 @@
+title: date_kuzan_2_main
+location: night(bedroom)
+---
+<<declare $kd2_points = 0>>
+You are awake when you should be sleeping. Why?
+-> Too much coffee before bed
+    Ugh, you're all jittery and can't get comfortable.
+-> Can't stop thinking about embarrassing moments from your past
+    That one time you said butthole instead of porthole in front of Vice Admiral Cancer will never leave you be.
+-> The bed sucks
+    Why are all Navy issue beds just the worst?!
+Do you continue trying to sleep or give up and go for a walk?
+-> Yes, anything but the tossing and turning
+    You sigh and roll out of bed, putting on a coat and shoes before heading out.
+    <<jump date_kuzan_2_GetUp>>
+-> No. You must beat your brain into submission
+    <<jump date_kuzan_2_OPIkea>>
+===
+
+title: date_kuzan_2_GetUp
+location: night(town)
+---
+The streets are quieter and emptier than during the day, but this is a place that always has some activity. Still, you find the docks to be empty with just the sound of the water. The stars stretch out high above you, the ocean waves flowing in and bumping against the pier. How pret—!
+!!You trip over something!! #shake
+
+You just barely keep your footing, hearing a grunt from below as you steady yourself. You look down at your feet.
+<<jump date_kuzan_2_GetUp2>>
+===
+
+title: date_kuzan_2_GetUp2
+characters: [kuzan]
+---
+Vice Admiral Kuzan lifts his sleeping mask to stare at you blearily.
+-> Oh no! I'm sorry sir, I didn't see you there!
+    <<set $kd2_points += 2>>
+    {$kuzan}: Oh {$name}, what are you doing here?
+-> Watch where you're sleeping, I nearly broke my neck!
+    <<set $kd2_points -= 1>>
+    {$kuzan}: Arara, you're the one who stepped on me.
+    {$kuzan}: Anyway, what are you doing here?
+-> Uh... good evening...?
+    <<set $kd2_points += 1>>
+    {$kuzan}: It was, until you stepped on me. I was having a nice dream, too...
+    {$kuzan}: Anyway, what are you doing here?
+-> Phew, I'm glad you're not a giant seagull! <<if visited("date_kuzan_2_OPIkea")>>
+    {$kuzan}: Uh... me too I guess?
+    {$kuzan}: ... Anyway, what are you doing here?
+
+{$name}:
+-> Couldn't sleep. <<if !visited("date_kuzan_2_OPIkea")>>
+    {$kuzan}: Ah. Yeah. Same boat. Watching the waves helps. Here, take a seat.
+    -> Oh, thanks.
+        <<jump date_kuzan_2_SitAndChat>>
+    -> Nah, I'm good, see ya around.
+        <<jump date_kuzan_2_End>>
+-> I was fleeing from my nightmares. <<if visited("date_kuzan_2_OPIkea")>>
+    {$kuzan}: Ah. Yeah. Same boat. Watching the waves helps. Here, take a seat.
+    -> Oh, thanks.
+        <<jump date_kuzan_2_SitAndChat>>
+    -> Nah, I'm good, see ya around.
+        <<jump date_kuzan_2_End>>
+-> Walking around, looking for my missing sleep.
+    {$kuzan}: *laughs* Alright, want some company?
+    -> Oh, uh, sure.
+        <<jump date_kuzan_2_WalkKaraoke>>
+    -> Nah, I'm good, see ya around.
+        <<jump date_kuzan_2_End>>
+===
+
+title: date_kuzan_2_SitAndChat
+---
+You sit down next to the Admiral, looking out at the waves. A few lonely street lights reflect off the water, and farther out, stars. A wisp of cloud drifts over the moon. It's soothing in its infinity, though it leaves you feeling... some kind of way.
+{$kuzan}: Nice, huh?
+-> Yeah, makes me feel small
+    {$kuzan}: Me too, that's what I like about it. But in your case, I'd be worried about you getting much smaller.
+    {$name}:
+        -> Hey, size isn't what matters!
+            {$kuzan}: Hm, that's what they all say.
+            {$name}: ...
+            {$kuzan}: ...
+            {$name}: Walked into that one huh?
+            {$kuzan}: It's because I'm so big, hard to miss.
+            {$name}:
+                -> You are pretty tall.
+                    {$kuzan}: -smile- Emphasis on the pretty or the tall?
+                    {$name}: ... So how about that ocean, huh?!
+                    {$kuzan}: -laugh- Nice dodge. Thanks for the laugh, it's been a while.
+                    {$name}: I'm here all night! So... what are you doing out here, really?
+                    {$kuzan}: Thinking. How are you doing anyway, the job treating you okay? Wouldn't want to be in your shoes, trying to get us not to kill each other.
+                    <<jump date_kuzan_2_HowJob>>
+                -> Eh, I've seen bigger.
+                    {$kuzan}: What are we talking about now? Or who?
+                    {$name}: The size of the ocean, obviously.
+                    {$kuzan}: -laugh- Obviously. Thanks for the laugh, I needed that.
+                    {$name}: I'm here all night! So... what are you doing out here, really?
+                    {$kuzan}: Thinking. How are you doing anyway, the job treating you okay? Wouldn't want to be in your shoes, trying to get us not to kill each other.
+                    <<jump date_kuzan_2_HowJob>>
+                -> SO ANYWAY, look at that ocean. Sure is, uh... wet, huh?
+                    {$kuzan}: -laugh- Thanks, I needed that.
+                    {$name}: I'm here all night! So... what are you doing out here, really?
+                    {$kuzan}: Thinking. How are you doing anyway, the job treating you okay? Wouldn't want to be in your shoes, trying to get us not to kill each other.
+                    <<jump date_kuzan_2_HowJob>>
+        -> Oh a funny guy huh? Wanna hear a joke?
+            <<set $kd2_points += 1>>
+            {$kuzan}: Alright, what?
+            {$name}: You.
+            {$kuzan}: ...Ouch. You bite huh?
+            {$name}: You bit first!
+            {$kuzan}: -laugh- Man it's been a while since I had someone rib me. Thanks, I needed that.
+            {$name}: I'm here all night! So...what are you doing out here, really?
+            {$kuzan}: Thinking. How are you doing anyway, the job treating you okay? Wouldn't want to be in your shoes, trying to get us not to kill each other.
+            <<jump date_kuzan_2_HowJob>>
+        -> I also like how it makes me remember that there is more than just...my everyday routine out there.
+            <<set $kd2_points += 2>>
+            {$kuzan}: Ah yeah. How are you doing, the job treating you okay? Wouldn't want to be in your shoes, trying to get us not to kill each other.
+            <<jump date_kuzan_2_HowJob>>
+
+-> Feel like HQ is lacking a pier with a ferris wheel
+    {$kuzan}: Tourists at HQ? -grimace- Eh...
+    {$name}: Could be nice! Music, dancing, popcorn!
+    {$kuzan}: That's what Saobaody is for.
+    {$name}: Okay, that's... true. So anyway... what are you doing out here, really?
+    {$kuzan}: Thinking. How are you doing anyway, the job treating you okay? Wouldn't want to be in your shoes, trying to get us to not kill each other.
+    <<jump date_kuzan_2_HowJob>>
+
+-> As long as a kaiju sized sea king doesn't suddenly emerge, yeah, it's nice
+    {$kuzan}: Arara... be pretty bold of it with me here.
+    {$name}: Yeah, that's true. You could just freeze it and make it a giant sculpture, huh?
+    {$kuzan}: Yeah, done that before.
+    {$name}: Whoa, really?!
+    {$kuzan}: Yep. -He looks unhappy for a moment.-
+    {$name}: So... what are you doing out here, really?
+    {$kuzan}: Thinking. How are you doing anyway, the job treating you okay? Wouldn't want to be in your shoes, trying to get us to not kill each other.
+    <<jump date_kuzan_2_HowJob>>
+===
+
+title: date_kuzan_2_HowJob
+---
+-> It's great!
+    <<set $kd2_points -= 1>>
+    <<jump date_kuzan_2_Great>>
+-> It's... not without its ups and downs.
+    <<set $kd2_points += 2>>
+    <<jump date_kuzan_2_EH>>
+-> It could be better.
+    <<set $kd2_points += 1>>
+    <<jump date_kuzan_2_Bad>>
+===
+
+title: date_kuzan_2_Great
+---
+{$kuzan}: Really? Weird.
+{$name}: Uh... what's that supposed to mean?
+{$kuzan}: Just expected you to be... what's the word, uh...
+{$name}: Struggling, flailing, miserable?
+{$kuzan}: Ah yeah, that first one. Though you're the one who said miserable, not me.
+{$name}: Well I'm not. Though you and the Fleet Admiral don't always make it easy, but I'm up to the challenge!
+{$kuzan}: ...
+{$kuzan}: That makes one of us.
+The two of you drift off into silence, a difficult expression on Kuzan's face. A breeze blows across your shoulders, the Admiral continuing to stare moodily at the horizon. It takes you a moment to notice that he's doing something with his gloved hand. You squint. Is that... is that a flower made of ice?
+<<jump date_kuzan_2_Flower>>
+===
+
+title: date_kuzan_2_EH
+---
+{$kuzan}: Yeah, the idiot and I aren't making it easy, huh?
+-> Which idiot?
+    {$kuzan}: -laugh- Fair. Though Issho might be a little smarter than the rest of us. But it's Sakazuki. That bastard.
+    {$name}: Be nice.
+    {$kuzan}: No. Those days are long past...
+    The two of you drift off into silence, a difficult expression on Kuzan's face. A breeze blows across your shoulders, the Admiral continuing to stare moodily at the horizon. It takes you a moment to notice that he's doing something with his gloved hand. You squint. Is that... is that a flower made of ice?
+    // <<jump  TODO: Fix jump target
+
+-> Well... yeah. The Fleet Admiral can be very strict, I see why you clash so much.
+    {$kuzan}: Tch. Stupid bastard.
+    {$name}: Be nice.
+    {$kuzan}: No. Those days are long past...
+    The two of you drift off into silence, a difficult expression on Kuzan's face. A breeze blows across your shoulders, the Admiral continuing to stare moodily at the horizon. It takes you a moment to notice that he's doing something with his gloved hand. You squint. Is that...is that a flower made of ice?
+<<jump date_kuzan_2_Flower>>
+===
+
+title: date_kuzan_2_Flower
+---
+-> Oh, that's pretty.
+    {$kuzan}: Thanks. You want it?
+        -> Yes
+        <<set $kd2_points += 2>>
+            He hands you the flower. It's cold as expected, but the petals are so delicate looking! It appears to be some kind of chrysanthemum.
+            {$name}: Wow! What else can you make? GO TO 2eii1
+        -> No
+        <<set $kd2_points -= 1>>
+            He tosses the flower into the ocean, leaning back on his hands. It doesn't seem to have made him feel better.
+            {$name}: So... uh, what else can you make? GO TO 2eii1
+-> What other stuff can you make?
+    {$kuzan}: What do you want?
+        -> A bear
+            {$kuzan}: A bear?
+            {$name}: Yeah!
+            {$kuzan}: ...Okay then.
+            With a flourish, ice sprouts from his hands into the shape of a huge bear. Well. More like the rounded body of a real bear but the head of a teddy bear. You can't decide if it's cute or creepy.
+            {$name}: Well, it's a bear.
+            {$kuzan}: Yep. LOOP to ii2
+        -> Ice brass knuckles
+            {$kuzan}: That sounds dumb, but guess I offered. -He takes less than a second to make them. You put them on. They are freezing and look cool for about 3 seconds before you have to take them off because duh, ice. -
+            {$name}: Yeah, that was dumb. Can I try again? LOOP to ii2
+        -> Go big or go home, an ice rink!
+            {$kuzan}: Arara, back up then.
+            You do as he says and watch, mouth a little open as he steps forward, pressing his hand to the ground. Ice blooms outward, glimmering in the light. In just a few moments, there's a small, but proper circular ice rink.
+            {$kuzan}: Alright, there.
+            <<jump date_kuzan_2_Skate>>
+        -> IF OP_IKEA: A seagull
+            {$kuzan}: A seagull? Don't you see those everyday?
+            {$name}: Can you make it or not?
+            {$kuzan}: Yeah yeah.
+            Ice erupts from his hands, forming wings and a pointed beak. It's actually pretty well done.
+            -> Smash it
+                {$kuzan}: ...?
+                {$name}: That's for chasing me.
+                {$kuzan}: You got chased by seagulls?
+                {$name}: No just... in my dream, a really big seagull attacked me in a store.
+                {$kuzan}: -laugh- Your nightmare was a giant seagull, huh? Symbolism much?
+                {$name}: Huh?
+                {$kuzan}: The symbol of the Navy. A seagull.
+                {$name}: Oh. Not sure I've thought about it that way...
+                {$kuzan}: ...Wouldn't blame you if you did.
+                {$name}: ...So what else can you make? LOOP to ii2
+            -> Set it into the water and salute it as it slowly sets out to sea
+                {$kuzan}: Brave soldier taking flight.
+                {$name}: May he find a place to roost.
+                {$kuzan}: This a uh... a thing?
+                {$name}: What?
+                {$kuzan}: A... meta? Meta-thing?
+                {$name}:...Metaphor?
+                {$kuzan}: That.
+                {$name}: I'm not sure. I just hope it means I won't dream of a seagull coming after me again.
+                {$kuzan}: Hm. Yeah. Me too.
+                {$name}: You give him a quizzical look and raise an eyebrow. He looks far away again.
+                {$name}: So... what else can you make? LOOP to ii2
+===
+
+title: date_kuzan_2_Bad
+---
+{$kuzan}: Yeah... sorry about him.
+{$name}: ...Wait who?
+{$kuzan}: Sakazuki. -Grimace-
+    -> Oh. Yeah he's um... a bit... (++)
+    <<set $kd2_points += 2>>
+        <<jump date_kuzan_2_EH>>
+    -> Have you considered that you're the difficult one? (--)
+    <<set $kd2_points -= 2>>
+        {$kuzan}: ...Hm, maybe that's a sign.
+        {$name}: A sign? Of what?
+        {$kuzan}: Don't worry about it. But Sakazuki is an idiot, and if you don't see that, well, that's on you.
+        The two of you drift off into silence, a difficult expression on Kuzan's face. A breeze blows across your shoulders, the Admiral continuing to stare moodily at the horizon. It takes you a moment to notice that he's doing something with his gloved hand. You squint. Is that... is that a flower made of ice?
+        {$kuzan}: Well. I should go find somewhere else to sleep. I'll see you around, {$name}. -He leaves the flower behind him on the sand.- DATE END
+    -> You're all a pain in the ass. (+)
+    <<set $kd2_points += 1>>
+        {$kuzan}: Arara, we're your superior officers, better be careful.
+        {$name}: Doesn't stop it from being true, sir.
+        {$kuzan}: -laugh- Fair, though maybe not to Issho. Sakazuki is a bastard though. LOOP to EH 3 ROUTE
+===
+
+title: date_kuzan_2_Skate
+---
+
+{$name}: Wow! Hey, I've got an idea!
+{$kuzan}: Arara... let me guess, you want to skate?
+-> Yes (+)
+<<set $kd2_points += 1>>
+    {$kuzan}: Have at it.
+    {$name}: I don't have skates on, though.
+    He waves his hand and much to your joy (and terror), ice as sharp as metal sprouts under your shoes. It is by sheer luck skill that you don't fall over.
+    {$name}: Uh, will this ice hold up?
+    {$kuzan}: Dunno.
+    {$name}: ...
+    {$kuzan}: What?
+    {$name}: Wanna join me?
+    You hold your hand out. He shrugs, but reaches out and takes it. Unlike you, he doesn't need skates to skate apparently. The benefits of being an Ice Man, you guess. The ice is smooth under your feet as you step onto the rink.
+    Kuzan looks at you expectantly now that you're on the ice. So how do you want to play this, champ? GO TO 3M
+-> No (-)
+<<set $kd2_points -= 1>>
+    {$kuzan}: -laugh- Alright.
+    {$name}: I just wanted to see if you would do it.
+    {$kuzan}: ...
+    {$kuzan}: And your idea was?
+    {$name}: ...
+    {$name}: ...
+    {$name}: ...
+    {$name}: I forgot.
+    {$kuzan}: ...Well, I'm gonna go find somewhere else to nap, thanks for the... whatever this is called. You know. See you around {$name}. He leaves, the ice rink slowly melting into the sand. DATE ENDS
+-> Maybe...(++)
+<<set $kd2_points += 2>>
+    {$kuzan}: What's stopping you?
+    {$name}: I, um, well... I don't have skates, but also, um... ugh, this is embarrassing! Why did I even ask for this!
+    {$kuzan}: Here, skates. He waves his hand and, much to your dismay, ice as sharp as metal sprouts under your shoes. Unfortunately, it reveals the real issue. You wobble and fall backward on your butt. Yep, that's right. You, a Marine who attends and caters to some of the strongest men in the world, cannot skate.
+    {$kuzan}: ...Can't skate?
+    {$name}: ...I don't know how. Your face feels so hot it could melt the ice rink.
+    YK: I'll teach you. He holds out his hand. Your heart suddenly beats a little faster. From the nerves. Obviously. His hand is surprisingly warm, and he gives you a little grin as he pulls you off the ground.
+    {$name}: Slow! Oh jeez! Sand is so much harder to walk ooooOOOooon! Your sense of balance is totally off, oh god you're gonna fall again! But then—! You don't. Because the Admiral holds you steady.
+    He chuckles as he finally gets you onto the ice. Your breath fogs in the air.
+    {$kuzan}: Okay, hold on. He grasps your hands tighter, leading you around the edge of the rink very slowly.
+    {$kuzan}: Don't lock your knees. And breathe. You're doing fine.
+    {$name}: He must be blind, you've moved just a few feet and nearly fallen three times! The Admiral lets go of your hand to poke you in the forehead. You blink, startled.
+    {$kuzan}: C'mon, if you can handle Sakazuki, you can do this.
+        -> Give up (--)
+        <<set $kd2_points -= 2>>
+            {$name}: I don't think this was a good idea! I don't want to fall, please help me get off this, sorry!
+            {$kuzan}: ...You sure?
+            {$name}: LOOP to 3mii WITH additional Yes option.
+            IF YES: Yes, sorry. He helps you off the ice. The sand makes quick work of the ice on the soles of your shoes.
+                {$name}: Sorry about all that. Whew. You know, I'm wiped. I think I'm going to head home. Thanks for the... all this. Goodnight. Kuzan gives you a little wave as you return home. DATE ENDS
+        -> Keep going slow (+)
+        <<set $kd2_points += 1>>
+            Okay, okay. You can do this! You continue inching around the rink, slowly getting steadier on your feet. You're not graceful, or good by any means. BUT you stop trembling and, AND, you can let go of Kuzan's hand. If you want. Totally.
+            You don't drop his hand.
+            The two of you continue going around the rink, him never leaving your side. It's fun! Slow, but fun!
+            After a while, you get a bit tired and yawn.
+            {$kuzan}: -Yawn- Arara, it's getting late. Or early? Whatever. We should go home and get some shut eye. He leads you off the ice and helps you smack the ice off your shoes.
+            {$kuzan}: This was fun, we should do it again sometime. Night, {$name}. You go your separate ways, but you can't help looking back. All you see is the ice rink slowly melting into the sand. Man, he's fast when he wants to be! DATE ENDS
+        -> Gotta go fast! (++)
+        <<set $kd2_points += 2>>
+            You take a deep breath. Screw it! You suddenly launch yourself forward on the ice! It is not at all graceful, you are a flailing, wild, multi-limbed creature but—! You are doing it! You are learning to swim in the deep end!
+            {$kuzan}: -laugh- That's it, {$name}. He follows after you, keeping out of the way of your wild movements, but eventually you get yourself under control.
+            {$name}: Hey, this is fun! You do a quick loop around the rink, Kuzan watching you with a small smile on his face. It's very... distracting. Uh oh! You mistime moving your leg forward and yelp as your feet slip out underneath you! Your marine training kicks in, your body going limp in the free fall.
+            But the fall never comes. A hand has slipped under your back, the other grasping your hand.
+            Admiral Kuzan looks down at you, face far closer than you were expecting. Arara, careful.
+                -> Thank him. (+)
+                <<set $kd2_points += 1>>
+                    {$name}: Oh, thanks. That would have really hurt!
+                    {$kuzan}: I'd never let you fall, {$name}. But it is getting late. He helps steady you, and leads you by the hand off the ice.
+                    {$kuzan}: This was fun, let's do it again some time. Goodnight, {$name}. He smiles and you part ways. But your hand is still warm from his, and the feeling stays with you all the way home. DATE ENDS
+                -> Make a bad joke (++)
+                <<set $kd2_points += 2>>
+                    {$name}: My guardian angel.
+                    {$kuzan}: Uh... He coughs and steadies you back on your feet. Huh, what time is it? He is staring eastward where the sky is getting lighter. Man, we should get some shut eye. He escorts you off the ice.
+                    {$kuzan}: Thanks for the chat, {$name}. See you later. He gives you a wave. It's only once you get home that you notice there is a tiny ice flower tucked in your coat pocket. DATE ENDS
+===
+
+title: date_kuzan_2_WalkKaraoke
+location:
+---
+
+The two of you set off down the path that skims the beach. Kuzan walks next to you, hands shoved in his pockets, moonlight glinting in his dark eyes.
+-> So, what were you sleeping on the ground for?
+    {$kuzan}: Seemed like a good spot. Last time, I was interrupted at the park...
+    {$name}: Hm, two for two.
+    {$kuzan}: Maybe I'll pick a roof next time.
+    {$name}: Guess I'll need to find a reason to visit a roof then. Don't want to break my streak.
+    {$kuzan}: -laugh- Careful, you might make me go sleep in my bed.
+    {$name}: That's a good thing, that's where you're supposed to sleep!
+    {$kuzan}: You haven't seen my apartment.
+    {$name}: That bad? I'd believe it with your desk...
+    {$kuzan}: Arara the disrespect.
+    You continue walking, pointing out the occasional shell or unexpected night lizard before the path starts meeting back up with the town again. The lights of the street are warm and inviting.
+    {$kuzan}: So what's the plan?
+        -> I think I'm tired enough now.
+            {$kuzan}: Alright, this was something. See you around, {$name}. DATE ENDS
+        -> Let's find a bar or something.
+        <<set $kd2_points += 2>>
+        <<jump date_kuzan_2_Karaoke>>
+-> How about work huh?
+    {$kuzan}: Eurgh, I'm off duty.
+    {$name}: ...You pick a topic then?
+    {$kuzan}: -sigh- Uh, what's your favorite color?
+    -> Red (--)
+    <<set $kd2_points -= 2>>
+        {$kuzan}: You've got bad taste.
+        {$name}: You don't like red?
+        {$kuzan}: No.
+        {$name}: What's wrong with red?
+        {$kuzan}: A lot.
+        {$kuzan}: It's the color of fire, blood and rage.
+        {$name}: ...Roses are red, so are apples. And sunsets.
+        {$kuzan}: ...
+        {$name}: ...
+        {$kuzan}: Just remembered something I gotta do. See you around {$name}. DATE ENDS
+    -> Yellow
+        {$kuzan}: Eh.
+        {$name}: Eh?
+        {$kuzan}: What?
+        {$name}: You're kinda bad at this.
+        {$kuzan}: -laugh- You're the one who picked work. Pretty lame, {$name}.
+        {$name}: This is even lamer!
+        {$kuzan}: Yeah, yeah, okay. You continue walking, pointing out the occasional shell or unexpected night lizard before the path starts meeting back up with the town again. The lights of the street are warm and inviting.
+        {$kuzan}: Wanna get a drink somewhere?
+        -> Yes
+            <<jump date_kuzan_2_Karaoke>>
+        -> No LOOP to 1li
+    -> Blue
+    <<set $kd2_points += 2>>
+        {$kuzan}: Good choice. That's mine, too.
+        {$name}: It's calming, and there's nothing better than a bright blue sky.
+        {$kuzan}: Yeah, water is blue too. Like the sea.
+        {$name}: Technically, water is clear.
+        {$kuzan}: Technically you should be sleeping.
+        {$name}: Okay, fair. I always like your blue shirts.
+        {$kuzan}: ...I'll keep that in mind.
+        You continue walking, pointing out the occasional shell or unexpected night lizard before the path starts meeting back up with the town again. The lights of the street are warm and inviting.
+        GO TO 1L
+    -> Purple
+    <<set $kd2_points += 1>>
+        {$kuzan}: Not a bad color. Isn't it for royals or something?
+        {$name}: Yeah, it is.
+        {$kuzan}: You a royal?
+        {$name}: What? No. Just a regular family for me.
+        {$kuzan}: Sounds nice. What's that like?
+        {$name}: You want to know what it's like to... have a regular family?
+        {$kuzan}: Yeah. Never experienced it.
+        {$name}: Well, it's... You tell him about your parents and your younger sibling. About growing up on your home island, and a few silly stories involving embarrassing mishaps and shenanigans. Before you know it, the path leads back into the busier part of town. The street lights look warm and inviting.
+        {$kuzan}: Wanna get a drink somewhere?
+        -> Yes
+            <<jump date_kuzan_2_Karaoke>>
+        -> No LOOP to 1li
+    -> Green
+        {$kuzan}: Like vegetables? Gross.
+        {$name}: Vegetables are good for you.
+        {$kuzan}: Yuck. I'll stick with alcohol instead.
+        {$name}: ... Alcohol comes from plants.
+        {$kuzan}: Yeah, but not green ones.
+        {$name}: ... Now I need a drink.
+        {$kuzan}: Great, let's go find a place.
+        <<jump date_kuzan_2_Karaoke>>
+-> Do you think mankind will ever achieve peace?
+    {$kuzan}: ... Arara, that's a doozy, {$name}. It's one in the morning.
+    {$name}: Yes or no, though?
+    {$kuzan}: -sigh- Define peace.
+    {$name}: Uh...you know, no wars, no fighting, no bloodshed.
+    {$kuzan}: Not all fighting is bad.
+    {$name}: So you're saying war can be a good thing?
+    {$kuzan}: Depends on the cause.
+    {$name}: What about the Paramount War? Was that a good thing?
+    {$kuzan}: ... Like I said, depends on the cause. Do you think it was a good thing?
+        -> Yes
+            Despite our losses, the Navy gained a lot of new recruits and the public regained their faith in us after those dirty betrayals from Blackbeard and Crocodile. We have to be a strong front against piracy.
+            {$kuzan}: At all costs?
+            {$name}: Our creed is absolute, isn't it?
+            {$kuzan}: I need a drink.
+            {$name}: It's one in the morning, aren't most places closing?
+            {$kuzan}: Not for me they aren't.
+            {$name}: Is that abuse of power?
+            {$kuzan}: ...-sigh-.
+            {$name}: So where are we going?
+            {$kuzan}: Home. I'm heading home. You should too. See you around, {$name}. DATE ENDS
+        -> No
+            {$name}: We lost a lot of good soldiers... and I'm not sure what we gained. Whitebeard was old anyway, wasn't he? And we didn't bring his territories into the World Government, Blackbeard just took them, didn't he?
+            {$kuzan}: ...We gained a lot of people's faith in the strength of the Navy, and we dealt with a threat, is what I'm supposed to say.
+            {$name}: What do you really think?
+            {$kuzan}: ...I think I need a drink. You too. C'mon, I know a place.
+            <<jump date_kuzan_2_Karaoke>>
+-> IF OP_IKEA: Have you ever seen a giant seagull?
+    {$kuzan}: ...Uh. Saw a sea king like that once. Had a tail like a scorpion, though. Why?
+    {$name}: Uh... no reason. LOOP BACK to selection
+===
+
+title: date_kuzan_2_Karaoke
+---
+
+The two of you wander the streets of HQ, eventually ending up in front of a bar. The Admiral holds the door open for you. It's warm and smells of bar food and cigars. There are a few people still drinking, a loud couple in the corner. There's a stage with an open mic and a jukebox Den Den Mushi. A neon sign reads KARAOKE above the stage. Is this a karaoke bar?!
+{$kuzan}: You want anything? The two of you grab seats near the currently dozing Den Den Mushi.
+-> Yes
+<<set $kd2_points += 1>>
+    {$kuzan}: They make a mean North Blue Classic here if you're looking for something that'll hit the spot.
+    {$name}: North Blue Classic?
+    {$kuzan}: Whiskey, sugar, coffee, and that, uh... the white stuff.
+    {$name}: White stuff?
+    {$kuzan}: The... you know. You put it on a pie.
+    {$name}: Whipped cream?
+    {$kuzan}: Yeah, that. You want one?
+    {$name}:
+        -> Yes
+        <<set $kd2_points += 1>>
+            You order a North Blue Classic. Kuzan gets the same thing, but without the whipped cream and sugar. He also gets a glass of milk. You watch as he pours milk into his whiskey coffee and begin to understand why his sleep schedule is a mess.
+        -> No, it's a bit late to drink coffee
+            {$kuzan}: Smart. Not for me though. Kuzan orders the North Blue Classic but without the whipped cream and sugar. He also gets a glass of milk. You watch as he pours milk into his whiskey coffee and begin to understand why his sleep schedule is a mess. Your basic beer is decent, and warms you right up.
+-> No
+    {$kuzan}: Suit yourself. Kuzan orders whiskey, coffee, and also gets a glass of milk. You watch as he pours milk into his whiskey coffee combo and begin to understand why his sleep schedule is a mess.
+
+Maybe it's because it's nearing 2 in the morning, but an idea enters your head. You're in a karaoke bar with an Admiral. This is an opportunity you never would have expected. A once in a lifetime opportunity, even.
+-> Casually bring up the mere concept of Karaoke to Kuzan
+<<set $kd2_points += 1>>
+    {$name}: So, a karaoke bar, huh? Get a load of that jukebox snail. Wonder what's on it...
+    {$kuzan}: You wanna find out?
+        -> Yes
+            {$kuzan}: Have at it then.
+            You hop out of your seat and tap the snail. It opens its eyes as you flip through the song booklet. There are a few decent choices in here! But which should you choose?
+                -> A holiday crooner
+                -> Something jazzy and classy
+                -> The Marines anthem
+        -> Maybe
+            {$kuzan}: You like singing?
+            {$name}: Do you?
+            {$kuzan}: I asked you first.
+            {$name}: Ugh. Yes, but that doesn't mean the people around me do.
+            {$kuzan}: Arara, now I have to hear you sing. Go on, pick a song.
+            {$name}: What?!
+            {$kuzan}: You heard me, go sing.
+            {$name}: No way!
+            {$kuzan}: -sigh- You need me to do it with you?
+                -> Yes DUET
+                    {$kuzan}: Alright alright, let's go. He walks over to the Den Den mushi. It opens its eyes as you two flip through the song booklet. There are a few decent choices in here! But which should you choose?
+                        -> A holiday crooner
+                        -> Something jazzy and classy
+                        -> The Marines anthem
+                -> I'm not singing.
+                    {$kuzan}: Aw. He shakes his head in disappointment and takes a long, long swig of his alcoholic coffee.
+                    {$kuzan}: I'm gonna head out after this. I had a nice night though, trip over me again some time. He pays for the drinks, and heads out. DATE ENDS
+            -> Wait, really?
+                {$kuzan}: Yeah. Karaoke is cool.
+                {$name}: That's surprising.
+                {$kuzan}: There's more to me than being an Admiral. So, you gonna sing? LOOP back to Bi
+-> Ask Kuzan to do karaoke with you
+<<set $kd2_points += 1>>
+    {$name}: They've got a jukebox snail here! I love singing, do you?
+    {$kuzan}: Music is pretty cool, yeah.
+    {$name}: Do karaoke with me!
+    {$kuzan}: That sounds like effort...
+    {$name}: Come on! It's a karaoke bar, you have to sing at a karaoke bar. Those are the rules.
+    {$kuzan}: The rules, huh?
+    {$name}: Yep!
+    {$kuzan}: Arara, alright, let's see what they've got for songs. LOOP TO Bi
+-> Get up and go start singing.
+<<set $kd2_points += 2>>
+    You hop out of your seat and tap the snail. It opens its eyes as you flip through the song booklet. Kuzan is watching you with a curious expression on his face. There are a few decent song choices in the song list! But which should you choose?
+        -> A holiday crooner
+        <<set $kd2_points += 1>>
+        -> Something jazzy and classy
+        <<set $kd2_points += 2>>
+        -> The Marines anthem
+        <<set $kd2_points -= 1>>
+===
+
+title: date_kuzan_2_DuetCroon
+---
+
+Holiday Crooner
+{$name}: How about this one?
+{$kuzan}: The holidays aren't for another six months.
+{$name}: Wow, you know what month it is!
+{$kuzan}: Oi. That's when we get time off, duh.
+{$name}: ...Yeah that sounds like you. Anyway, let's do this one!
+You select the song and the music starts! He gives you the most put upon sigh you've ever heard, but launches in. Uh oh, he's actually pretty good!
+    -> Sing the chorus and let Kuzan's voice shine
+    <<set $kd2_points -= 1>>
+        You give your all on singing the chorus, though Kuzan keeps giving you the side eye. When the song ends, a couple bar patrons clap.
+        {$kuzan}: Man I'm so rusty, that was pretty lame. I'm gonna get another drink.
+            -> Compliment his singing.
+                {$name}: You've got a great voice.
+                {$kuzan}: Yeah, I guess...
+                {$kuzan}: Listen, {$name} I'm gonna get outta here. All that singing made me sleepy. I'll see you around, this was fun. DATE ENDS
+            -> Ask for another song.
+                {$kuzan}: Nah, I'm not really up for it... all that singing made me sleepy. I'm gonna head out. I'll see you around, this was fun. He leaves after downing the rest of his drink and paying the tab. IF DRINK: Even yours! Yay, free drink! You head home later, finally feeling tired. Thanks, karaoke! DATE ENDS
+    -> Be the main singer and show off!
+    <<set $kd2_points += 1>>
+        You jump in immediately, holding the mic close to your mouth, taking deep breaths to sing the long notes just right. You were born for this song. You love to sing and want to show it! As the song ends, Kuzan claps and gives you a grin.
+        {$kuzan}: Nice job, {$name}, that was pretty okay. I'm gonna grab another beer.
+            -> Thank him for singing with you.
+                {$name}: That was fun! Thanks for joining me!
+                {$kuzan}: You're not bad, should sing more often. Anyway, all that singing made me sleepy. I'll see you around, this was fun. He leaves after downing the rest of his drink and paying the tab. IF DRINK: Even yours! Yay free drink! You head home later, finally feeling tired. Thanks karaoke! DATE ENDS
+            -> Ask for another song.
+                {$kuzan}: Nah, I'm not really up for it... all that singing made me sleepy. I'm gonna head out. I'll see you around, this was fun. He leaves after downing the rest of his drink and paying the tab. IF DRINK: Even yours! Yay free drink! You head home later, finally feeling tired. Thanks karaoke! DATE ENDS
+    -> Try to do the whole song and harmonize if you can.
+    <<set $kd2_points += 2>>
+        It takes you through the first chorus, but once Kuzan figures out what you're trying to do, he starts trying to moderate his voice so the two of you end up in sync! You end the song, faces close, a silly grin breaking out across your lips.
+        {$kuzan}: I don't remember the last time I did a proper duet. You're a pretty good partner.
+            -> You're not so bad yourself!
+                {$kuzan}: Wanna do another one? See if we can nail that harmony. REPEAT FOR JAZZ
+            -> Careful or I'd think you're flirting with me~
+                {$kuzan}: -blush- Arara... flirting, huh? Been a while since I've done that...
+                {$kuzan}: Anyway, wanna do another one? See if we can nail that harmony. REPEAT FOR JAZZ
+===
+
+title: date_kuzan_2_DuetJazz
+---
+JAZZ
+{$name}: How about this one?
+{$kuzan}: That's a good one, nice low notes.
+{$name}: You like jazz?
+{$kuzan}: Do birds fly?
+{$name}: I mean penguins and ostriches exis– He gives you a put upon look.
+{$name}: Alright, alright, let's do it!
+You select the song and the music starts! He gives you a lopsided grin and launches in. Oh man, he can do those low notes so well!
+    -> Sing the chorus and let Kuzan's voice shine
+    <<set $kd2_points -= 1>>
+        You give your all on singing the chorus, enjoying Kuzan's low britone and smoky notes. The bar patrons don't seem to know crap about jazz so don't clap when it's over, but Kuzan doesn't seem to care.
+        {$kuzan}: Sounds a lot better when a pretty lady sings it.
+        {$name}: I dunno, think I like your voice better.
+        {$kuzan}: ...Thanks, {$name}.
+        {$kuzan}: Listen, {$name} I'm gonna get outta here. All that singing made me sleepy. I'll see you around, this was fun, we should do it again soon. He pays his tab (and yours!) and gives you a clap on the shoulder when he heads out. Man, what a night!
+    -> Be the main singer and show off!
+    <<set $kd2_points += 1>>
+        You jump in immediately, holding the mic close to your mouth, taking deep breaths to sing the long notes just right. You feel this song in your bones, only wishing this were a live band instead of a recording. As the song ends, Kuzan claps and gives you a grin.
+        {$kuzan}: Think you'd make it as a singer if you ever quit the Navy.
+        {$name}: Wow, thank you. And thanks for letting me have the limelight.
+        {$kuzan}: You light up when you're really going for it. Sing more often, {$name}.  Anyway, all this made me sleepy. I'll see you around, this was fun. He leaves after downing the rest of his drink and paying the tab. IF DRINK: Even yours! Yay free drink! You head home later, finally feeling tired. Thanks karaoke!
+    -> Try to do the whole song and harmonize if you can.
+    <<set $kd2_points += 2>>
+        Harmonizing with him takes a moment, but you settle in pretty quickly. As the song comes to an end, the two of you are leaning into the mic, looking at one another. Is that... is that a blush on his cheeks, or is it the warmth of the stage?
+        IF SECOND SONG: You find harmonizing with him to be almost a breeze. You relax into the song, echoing one another, gravitating close enough to touch... Is that... is that a blush on his cheeks, or is it the warmth of the stage? The song comes to an end all too soon.
+        {$kuzan}: This was just what I needed. Thanks, {$name}. Listen, uh, if you ever need a karaoke partner, or someone to keep you company late at night, take this.
+        He hands you a baby Den Den Mushi. Holy cow, he's giving you his direct line?!
+        {$name}: Whoa, thanks! You're uh, great too.
+        {$kuzan}: Arara, that remains to be seen...
+        {$kuzan}: Anyway, I'm gonna get outta here. He turns away, paying the tab and leaving.
+        You place the snail on your desk in your quarters when you get home and picture his flushed face so close to yours as you finally close your eyes to sleep. DATE ENDS
+===
+
+title: date_kuzan_2_DuetAnthem
+---
+
+ANTHEM
+{$name}: Ah, here's one that's sure to bring the bar to their feet
+{$kuzan}: ...You really wanna do this one?
+{$name}: Yeah, love something that makes me feel connected to something greater.
+{$kuzan}: ...
+{$name}: Let's get to it!
+You select the song and the music starts! He frowns, and misses the first bit so you have to start it yourself. The couple of folks in the bar start singing along, Kuzan finally joining in mid way. He sings low and slow. There's something solemn about it. The other patrons salute him at the end of the song. He gets off the stage, going to the bar. You follow after him, raising an eyebrow when he orders an entire bottle of whiskey.
+    -> That was intense
+        {$kuzan}: ... So is being a marine. Listen, {$name}, I'm gonna get outta here. I've got something to do. See ya around. He pays the tab and takes his bottle with him when he leaves. He seemed upset, and you keep picturing his sad eyes all the way back to your quarters. DATE ENDS
+    -> Want to do another song?
+    <<set $kd2_points -= 1>>
+        {$kuzan}: No. I think I'm good on Karaoke for a while. Listen, {$name}, I'm gonna get outta here. I've got something to do. See ya around. He pays the tab and takes his bottle with him when he leaves. He seemed upset, and you keep picturing his sad eyes all the way back to your quarters. DATE ENDS
+===
+
+title: date_kuzan_2_OPIkea
+---
+
+You toss and turn until finally on a toss, you find yourself standing outside a building the size of Marine HQ. There is a sign that reads WAPOL EMPORIUM on the front. Do you go inside?
+    -> Yes
+        You enter the giant door shaped like a mouth. It's devoid of people and your footsteps echo off the walls, which are lined with all sorts of objects.
+            -> Look at a tower of dice
+                The dice are swirling, like little nebulas. Suns, moons, stars. Wow...
+                There is a noise behind you.
+            -> Look at a lamp
+                It's one of those novelty lamps. This one is in the shape of a light bulb. It glows when you touch it but it isn't plugged in. Odd...
+                There is a noise behind you.
+            -> Look at an ice tray
+                It's in the shape of bicycles! Neat!
+                There is a strange noise behind you.
+            -> Look closer at the shelf itself
+                You peer at the shelf. Is... is it moving? Right before your eyes, it begins dripping like it's melting! Gross!
+                You jump back and bump into something.
+        You turn around slowly. The room elongates as before you is the largest seagull you have ever seen, staring at you with eyes as black as coal. This bird is larger than you. Larger than a bear! And with a sharp orange beak... you swallow as it tilts its head, your reflection staring back at you in its soulless gaze.
+            -> Run
+                All your instincts scream at you to run! So, you do, and it seems like you made the right choice because with an unholy screech the seagull chases after you! You bolt down aisle after aisle, papers, basketballs, chairs, and all manner of consumer goods flying past you! But it's getting closer! It's gaining on you! You keep running and turning and it keeps coming and coming! You feel its hot seagull fish breath on the back of your neck and-!
+
+                You wake up. You're in your bed. There is no seagull. No giant unending store. You look over at the clock. Only a few minutes have passed. Yep, no more sleep for you.
+            -> Back away slowly
+                You try to back away but the shelf is behind you, blocking your way > LOOP back a & c
+            -> Prepare to fight
+                You put your fists up, staring the seagull down. It senses your challenge and lets out an unholy screech that makes the floor beneath your feet tremble! The seagull charges, opening its mouth wide, wider, impossibly wide! It's all you can see! Suddenly the floor disappears and you're falling falling fall—!
+
+                You wake up. You're in your bed. There is no seagull. No giant store. You look over at the clock. Only a few minutes have passed. Yep, no more sleep for you.
+    -> No
+        You turn away from the store and find yourself facing another store. However... looking closely, you see it says WAPOL EMPORIUM. Do you go inside?
+            -> Yes
+            -> LOOP
+===
+
+title: date_kuzan_2_End
+---
+DATE WITH KUZAN ENDS
+===

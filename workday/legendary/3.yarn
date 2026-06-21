@@ -1,0 +1,447 @@
+title: workday_legendary_3_main
+location: day(ship)
+---
+<<declare $lwd3S_points = 0>>
+<<declare $lwd3T_points = 0>>
+<<declare $lwd3R_points = 0>>
+<<declare $lwd3G_points = 0>>
+
+{$name}: Whew, the sea breeze is so fresh! It's been too long since I've been out at sea!
+{$name}: Too bad it's for training purposes...
+Random Marine: {$name}! The briefing is starting!
+{$name}: Alright! Coming!
+You walk over to the conference room where the briefing is being held. Many of your fellow marines are already inside, and you wave at a few as you find a seat. At the front of the room, Tsuru, Sengoku, Garp, and Rosinante are standing next to a projector screen, and in the middle of the room, a den-den mushi has been set up to project images onto the screen. After a few more minutes, the last few marines file in, and Rosinante goes to close the door before almost crashing into the carpet as he heads back to his spot.
+Sengoku: Welcome, everyone. As you already know, the four of us will be leading you through a special training exercise that's been set up on one of the islands completely controlled by the Navy, Gaol Island.
+Sengoku: Vice Admiral Tsuru will explain the exercise in more detail.
+Tsuru: Thank you, Inspector. Now, a base has been constructed on this island. It has been renovated to resemble a pirate fleet's base, with several Marines who will be playing the role of pirates. You all must come up with a plan regarding how you're going to take down these pirates. Is that understood?
+Marines: YES MA'AM!
+Tsuru: Good. The relevant information is as follows:
+Tsuru: This is a group of pirates known as the Legendary Pirates. They are veteran plunderers who have sailed the seas for many years, and the Navy has cornered them here, in their final stronghold. These pirates are smart, quick-witted, and know when to retreat when necessary.
+Tsuru: There are about 30 of them in total. You must determine the best way to capture or kill these veteran pirates.
+Tsuru: Naturally, the four of us will help guide your planning and provide input. Now, to start, you should focus on your method of approach—
+Garp: BWAHAHAHA! That's a whole lotta words for just saying that they need to figure out how to storm the place!
+Sengoku: Actually, Garp, what they need to do is gather intelligence first and understand what they're working with. Right, Tsuru?
+Tsuru: ...Well. I have to say that while gathering intelligence is key, in this particular situation, taking a more straightforward approach and launching a full-on offensive may be more effective. Once the ship or any spies are spotted, any chance of surprise will be lost and we'll lose the upper hand.
+Rosinante: Ah, but... if we truly want to have the upper hand, we would need to conduct surveillance to understand gaps in their defenses or anybody who could be bribed...
+Sengoku: See? Rosi knows what to do!
+Garp: Aw, c'mon, Senny! Getting it done quickly is the best way to catch ‘em all!
+Tsuru: Enough. Marines, we will, ah, adjourn for 10 minutes while the other instructors and I finish finalizing the details of this mission. You are dismissed.
+Everybody eagerly files out of the room, leaving you behind with a few stragglers.
+{$name}: Ooookay, then... Well, guess I'll go and—
+Tsuru: A moment please, {$name}. I would appreciate it if you would stay behind and take notes on what we decide.
+-> Sure, I can do that!
+    <<set $lwd3S_points +=1>>
+    <<set $lwd3T_points +=1>>
+    Sengoku: Excellent. Time to design an old fashioned recon mission.
+    Garp: Whaaaa? Nah. Let's go in fists flying. Recruits learn better on their feet!
+    Tsuru: There is something to be said for training our soldiers to handle today's more direct confrontations.
+    Rosinante: I've been in the field most recently, and a lot more lives can be saved with a little extra planning!
+-> Um... Do I have to?
+    <<set $lwd3G_points +=1>>
+    <<set $lwd3S_points -=1>>
+    <<set $lwd3T_points -=1>>
+    Garp: Bwahaha! Nah, you can go. We're just gonna go in and beat ‘em up anyway!
+    Sengoku: No, we are not.
+    Tsuru: Direct confrontation is a good learning opportunity.
+    Sengoku: Being able to follow a plan is also a good learning opportunity.
+    Tsuru: Anyway, come along and listen closely, {$name}.
+{$name}: Well, let's get to it, then. My pen is ready!
+Tsuru: Excellent. It seems that surprisingly, Garp and I are in agreement for once. I believe that we should have the men take a more head-on approach to attacking the pirate base, as a well-timed attack has proven to be effective in the past and overwhelming might increases morale.
+Sengoku: Don't get ahead of yourself, Tsuru. In the field, we need all the intelligence we can get before commencing a large-scale pirate subjugation operation. Teaching the recruits that all they need are their fists is wrong at best and dangerous at worst.
+Garp: Bwahahaha! Their fists and quick wits are what they need to rely on most! If all they do is plan, then when things go south, they'll have no clue what to do!
+Tsuru: Exactly.
+Rosinante: But if they're not totally prepared, then not only will the attack fail, it'll let the targets escape...
+{$name}: (This is going nowhere, and their time is almost up. Maybe I should...)
+-> Say something.
+    <<set $lwd3G_points +=1>>
+    <<set $lwd3S_points +=1>>
+    {$name}: It's decision time, everyone!
+-> Stay silent.
+    <<set $lwd3T_points +=1>>
+    <<set $lwd3R_points +=1>>
+    {$name}: (Nah, I don't want to get in the middle of this.)
+-> Try to make some subtle hand gestures to get your point across.
+    <<set $lwd3T_points -=1>>
+    <<set $lwd3S_points -=1>>
+    <<set $lwd3G_points -=1>>
+    <<set $lwd3R_points -=1>>
+    You make a “speed up” motion with your hands. Uh oh. Sengoku is giving you the stink eye, and none of the others look too pleased with you either.
+Tsuru: Right. We need to figure out what to do and this is going in circles... {$name}, I would like to ask for your input. What do you think?
+-> We should all focus on offense.
+    <<set $lwd3T_points +=1>>
+    <<set $lwd3G_points +=1>>
+    Garp: Heh! Told ya!
+-> We should all focus on gathering intel first.
+    <<set $lwd3S_points +=1>>
+    <<set $lwd3R_points +=1>>
+    Sengoku: Thank you, {$name}.
+-> We should split into teams.
+    <<set $lwd3T_points +=1>>
+    <<set $lwd3S_points +=1>>
+    <<set $lwd3G_points +=1>>
+    <<set $lwd3R_points +=1>>
+    Rosinante: Oh, that's a nice idea!
+    Garp: I call the cannons!
+Sengoku: Now that we've heard from everyone here, I think that splitting the men into teams may be the best idea.
+Sengoku: The men should choose which team they would like to join, and one team will focus on enacting a full-on offensive while the other focuses on gathering intelligence and then striking.
+Rosinante: Hm, that could work. And then we would know which ones prefer to be direct and which ones are more suited for espionage.
+Tsuru: I agree. Including today, we have three days until we reach Gaol Island. They can have that time for planning, and we can give them a week to execute their plans.
+Rosinante: And while you and Instructor Garp mentor the surprise group, Inspector Sengoku and I can help guide the surveillance group.
+Garp: BWAHAHAHA! Works for me! Oh, and we should give the winning team a prize!
+Tsuru: Garp, we hardly have the budget for a prize...
+Garp: C'mon! We can give them a... I dunno. A special meal? An extra day off? They'll really put their backs into it if there's a reward!
+-> Aw, a reward's not necessary...
+    <<set $lwd3T_points +=1>>
+    <<set $lwd3S_points -=1>>
+    <<set $lwd3G_points -=1>>
+    Garp: Lame! Our boys should get stuff, or else they'll think pirating's cooler!
+    Sengoku: That's–! A good leader should reward their people for good work, and not because of Garp's nonsense.
+-> I definitely will!
+    <<set $lwd3T_points -=1>>
+    <<set $lwd3G_points +=1>>
+    Garp: Ha! See?
+    Tsuru: You just want the food, Garp.
+-> I can confidently say that everyone will try harder if there's a reward.
+    <<set $lwd3S_points +=1>>
+    <<set $lwd3R_points +=1>>
+    Rosinante: I suppose it does work with sports games...
+    Tsuru: Sports and duty are not the same.
+    Sengoku: True, duty is more important. Thus, the rewards should be better.
+    Garp: Yeah! Like... meat!
+Sengoku: We'll figure out some kind of reward. Anyway, I believe that concludes our discussion. The men should be here any second; {$name}, please leave me the notes and take your seat.
+...
+{$name}: (Alright, looks like we're all back.)
+Tsuru: Welcome back. We have finalized the plans for this mission, so listen closely.
+Sengoku: There will be two teams. One team will focus on planning a full-on offensive attack on the pirates, while the other will gather information and then strike. Vice Admiral Rosinante and myself will lead the surveillance team, while Vice Admiral Tsuru and Instructor Garp will advise the offensive team.
+Tsuru: Each team will have three days to finish planning and up to a week once we dock on the island to execute their plans. The team that achieves the best results will receive a reward!
+Marines: WHOOOOOOOOOO!
+Sengoku: SETTLE DOWN!
+Sengoku: ...Good. Now, then—you have five minutes to split yourselves into teams! Surveillance team on the port side, and offensive team on the starboard side! GO!
+-> (Hm, I think I want to go with the surveillance team.)
+    <<jump workday_legendary_3_Sengoku_Rosi_Route>>
+-> (Alright! Let's go with the offensive team.)
+    <<jump workday_legendary_3_Garp_Tsuru_Route>>
+===
+
+title: workday_legendary_3_Garp_Tsuru_Route
+location: day(ship)
+---
+
+{$name}: (OK! It's planning time. It looks like there's quite a few people here, so hopefully we get some good ideas down...)
+Tsuru: Right! It's time to get to work. Share your ideas and make your decisions as a team!
+You watch as Tsuru passes around pens and paper so that everyone can list some ideas.
+Random Marine 1: Right, so... Can we just take some dynamite and blow the place up?
+Random Marine 2: No way! They'll see that coming from a mile away!
+Random Marine 1: Not if we're sneaky about it!
+Random Marine 3: If you wanted to be sneaky, you should've joined the other team!
+Tsuru: ...Right. Let's start with this: would you all prefer to group yourselves into teams or work solo?
+Marine 1: Huh... well... huh...
+Marine 2 scratches at his cap, pondering...
+{$name}: (They need a bit of help... Or are a little scared.)
+-> I think breaking their defenses with our strongest fighters would be the best idea!
+    <<set $lwd3G_points +=1>>
+    Garp: Ha ha! Gotta say that you've guts, {$name}!
+    Tsuru: Some soldiers could probably perform well on their own, but that isn't the point of this exercise.
+-> I think dividing into groups with mixed abilities would be the best idea!
+    <<set $lwd3T_points +=1>>
+    Tsuru: Good point, {$name}. That should allow everyone's strengths to shine.
+Garp: So! Let's get to planning this operation!
+Tsuru: As if you truly ever do much in the way of planning...
+Marine 3: Sir! I think it would be irresponsible to break in without some observation!
+Marine 4: Huh...? But, like, we do get memos, right...?
+Marine 4: Seems like a waste of time to repeat what we already know...
+Who do you agree with?
+-> We already have all the information we need. Let's use it to ambush them!
+    <<set $lwd3G_points +=1>>
+    Tsuru: I see that you are a risk-taker.
+    Garp: That'll be good motivation!!
+-> Some reconnaissance couldn't hurt.
+    <<set $lwd3T_points +=1>>
+    {$name}: I've heard of missions failing because of outdated data.
+    Tsuru: A valid point...
+    Tsuru: However, in this case, if you look at the documents and their dates... you can trust that the intel is complete.
+-> We need to do extensive reconnaissance and fact-checking!
+    <<set $lwd3T_points -=1>>
+    <<set $lwd3G_points -=1>>
+    Garp: Bwahahah! What does that mean, Name? You don't trust the Navy?
+    Tsuru: Ideally, the information you have is to be trusted. But remember. Time is ticking!
+Chatter splits the group, with everyone talking over each other.
+Garp: Hey! Hey! Calm down, all of you!
+Garp: Did somebody say *ambush?* That's not a bad idea!
+Tsuru: Hmm. I agree.
+Tsuru: Let's do some brainstorming!
+{$name}: Maybe we could start by...
+-> ...cutting and intercepting their communications.
+    <<set $lwd3T_points -=1>>
+    <<set $lwd3G_points -=1>>
+    Garp: Huh! Cutting, yes. But listening in is something Senny and Rosinante would do.
+    Tsuru: This sounds like a suggestion we should ideally combine with something else.
+-> ...attacking their patrolling forces, if they have any.
+    <<set $lwd3G_points +=1>>
+    Garp: Good idea!
+    Garp: Though the key word is *if!* Be careful not to bet on it!
+-> ...setting up a distraction or dummy attack to direct their forces.
+    <<set $lwd3T_points +=1>>
+    Tsuru: Very thoughtful, {$name}.
+    Tsuru: That would keep them busy while other troops break into the base.
+Marine 2: Hm, OK, OK... So if everything goes according to plan...
+Marine 2: How do you guys think we should face the actual, uhh... fighting??
+Garp: Hah! Now we're talking!
+Tsuru: What would *your* suggestion be, officers?
+Marine 1: We should send the strongest of us to take down the leaders, of course!!
+-> Reduce their numbers ASAP. It doesn't matter what kind of enemies you defeat.
+    <<set $lwd3T_points -=1>>
+    <<set $lwd3G_points -=1>>
+    Garp: Whoa! A whole lotta things could go wrong there!
+    Tsuru: Quite a chaotic approach, {$name}.
+-> Focus on gaining territory and taking prisoners.
+    <<set $lwd3T_points +=1>>
+    Garp: What?! Why would you waste time like that?
+    Tsuru: A half victory is better than a complete defeat.
+-> Target the leader and their strongest members. If they fall, the others will soon follow.
+    <<set $lwd3G_points +=1>>
+    Tsuru: Assuming that we win those confrontations.
+    Garp: Of course we will!!
+Tsuru: But... Fighting in general is quite broad, don't you think?
+Garp: True! Let's get to the point!
+Marine 1: What's the best way to beat some *veteran* enemies?
+Marine 2: Umm... Do we need to account for Devil's Fruits?
+Marine 4: No worries! We've got fruit users on our side, too!!
+The question is not easy! What do you think?
+-> Have our Devil's Fruit users lead the offense to cause chaos and confusion!
+    <<set $lwd3T_points -=1>>
+    <<set $lwd3G_points -=1>>
+    Garp: Never rely on a Devil Fruit alone!
+    Tsuru: That is true. Devil Fruits can be countered fast, and veteran enemies have experience with them.
+    Garp: Quite the rookie mistake, {$name}!
+-> Have our strongest, most renowned fighters lead the offense to demotivate the enemy!
+    <<set $lwd3G_points +=1>>
+    Garp: Hah, I know firsthand that that can work!
+    Tsuru: Hmm... It can, but it truly depends on who you have on your team.
+-> Look weak at first to take them by surprise!
+    <<set $lwd3T_points +=1>>
+    Tsuru: I agree. Although only if it fits the general strategy.
+    Garp: I guess it could work!!
+Garp: Whatcha think?! Do we have enough material to make a whole plan?
+Tsuru: I suppose so.
+{$name}: It's going to be an intense week of training.
+{$name}: I hope I've made the right choices...
+if player made 3 right choices //HOW DO??
+    <<jump workday_legendary_3_tsuru_garp_good_end>>
+or
+    <<jump workday_legendary_3_tsuru_garp_bad_end>>
+===
+
+title: workday_legendary_3_tsuru_garp_good_end
+location: day(ship)
+---
+
+The days of training go by...
+An intense week! Perhaps more than you'd expected...
+...but, having made solid decisions and sketched out a coordinated attack plan, the takeover is a &&success&&!!!
+You find yourself on deck, heading back to base.
+Now all that's left is the wrap-up meeting, and then you can go back to the comfort of your room!
+Tsuru: Name. That was some very valuable input you gave.
+Garp: Sure was! You made the whole operation work!
+Rosinante: Aww, congratulations to the winners!
+Sengoku: Good effort has to be rewarded!
+-> Actually, why don't we share the prize?
+    Garp: Good thinking, {$name}! Wait a second...
+    Garp: You mean share the *meat*??
+    Sengoku: That might defeat the purpose... But I understand the idea.
+    Rosinante: Aw, don't be so strict.
+-> Hooray! And we get the reward.
+    Tsuru: Fair is fair...
+    Sengoku: I had the feeling we wouldn't hear the end of it...
+    Garp: Last one there misses the meat!
+Tsuru: Well! The rest will be well-deserved.
+Garp: Looking forward to seeing what you come up with next!
+You can feel proud of yourself!
+===
+
+title: workday_legendary_3_tsuru_garp_bad_end
+location: day(ship)
+---
+
+The days of training go by...
+An intense week! Perhaps more than you'd expected...
+The officers find out that, in practice, many of the decisions you'd made together didn't amount to a coherent strategy...
+The takeover **failed**!
+You find yourself on your way back to base. Only the wrap-up meeting is left.
+Garp: We lost! What a shame.
+Tsuru: Ah, well... The other team claims the victory.
+-> Ugh! That stings!
+    Garp: You're telling me!
+    Sengoku: Come on, Garp, be a good sport about it.
+    Rosinante: Can't do perfectly on your first intensive training, {$name}!
+-> Well, we'll do better next time.
+    Tsuru: Ah, that is quite true...
+    Rosinante: The most important thing is to learn from it!
+Oh well... At least they don't hold it against you...
+===
+
+title: workday_legendary_3_Sengoku_Rosi_Route
+location: day(ship)
+---
+
+{$name}: (Neat, time to get down to the nitty gritty of planning!)
+Sengoku: Listen closely, men. We have many decisions to make. Write your ideas down and we'll start hashing this out.
+Rosinante: Remember, we're attempting to achieve our goal stealthily.
+Papers are passed around, lots of scratching pens and pencils. One guy in the back drops his pencil repeatedly. Stealthy, he is not. Oh wait. No, that's Rosinante wandering around the group.
+Sengoku: Alright, let's begin. You, on the right, what have you got?
+Random Marine: SIR YES SIR! I RECOMMEND A SILENT STRIKE TEAM SIR!
+Sengoku: Shouting is not necessary.
+Random Marine: SIR YES SIR I APOLOGIZE SIR.
+Sengoku pinches the bridge of his nose.
+Rosinante: A separate silent strike team is an option, though moving as one unit to achieve a goal is another.
+Sengoku: Excellent point, Rosinante. Let us define our first goal. You, on the left, what do you recommend?
+Random Marine 2: Ummmmmmmmmm....... We could uhhhh....
+{$name}: (Why did this guy join this team?)
+-> Suggest taking out the leader
+    <<set $lwd3S_points +=1>>
+    <<set $lwd3R_points +=1>>
+    {$name}: Perhaps we could focus on destabilizing the base by taking out their leader?
+    Rosinante: That's a good idea {$name}, though it does require a tight plan and a lot of insider information.
+    Sengoku: A tried and true strategy, though to succeed, it must be one of our final objectives.
+-> Suggest doing recon
+    <<set $lwd3S_points +=1>>
+    <<set $lwd3R_points +=1>>
+    {$name}: Let's start with scouting out the base?
+    Sengoku: Always the best step.
+    Rosinante: It will take some time, but we do have a week!
+Sengoku: Who else has some ideas?
+Random Marine 2: Money! Pirates like money!
+Rosinante: That's true...?
+Sengoku: Care to elaborate, soldier?
+Random Marine 2: We could bribe ‘em! Bribe ‘em ‘n get info!
+-> That's a surprisingly good idea!
+    <<set $lwd3R_points +=1>>
+    Rosinante: A little bribery can go a long way.
+    Sengoku: It's coming out of your paycheck, then.
+    Rosinante: That's OK, I send it to a pirate anyway. I MEAN. UH.
+    Sengoku: ...We will speak later.
+-> Bribe them with what money? Wasn't Tsuru-san saying something about the budget?
+    <<set $lwd3S_points +=1>>
+    Sengoku: In the field, we often have to work with a limited budget, so this is good practice.
+    Rosinante: You just don't want to argue with Tsuru-san.
+    Sengoku: I can have multiple reasons.
+Rosinante: Well who else has ideas? Don't be shy!
+Random Marine 3: We could do something unexpected!
+Sengoku: For example?
+Random Marine 3: Uh... Get the pirates to let us in and then attack?
+Sengoku: ...And the pirates would let us in to attack them because...?
+Rosinante: Perhaps if they don't know it's us?
+-> Like a Trojan horse!
+    <<set $lwd3S_points -=1>>
+    <<set $lwd3R_points +=1>>
+    {$name}: Oh, a Trojan horse! But a Trojan goat! Because the goat? Sengoku-san's goat. Get it?
+    Sengoku covers his face with his hand.
+    Rosinante: I get it! That's creative!
+-> Wouldn't they recognize people that aren't their own?
+    <<set $lwd3S_points +=1>>
+    <<set $lwd3R_points -=1>>
+    Sengoku: This tactic almost never works in the field. Not if you intend to take over a base anyway.
+    Rosinante: ...Have you tried it before?
+    Sengoku: Talk to Vice Admiral Jonathan about foiling infiltration by pirates sometime.
+Random Marine 1: WHAT ABOUT A DISTRACTION, SIR?
+Sengoku: Inside voices!
+Rosinante: A distraction?
+Random Marine 1: YES SIR! A DISTRACTION WHILE SOMEONE ELSE SNEAKS INSIDE?
+-> They'd have to be really sneaky and quiet to slip in...
+    <<set $lwd3R_points +=1>>
+    Rosinante: I have that covered.
+    Sengoku: I'd rather you didn't.
+-> Sounds like we'll just wind up in an all out brawl...
+    <<set $lwd3R_points -=1>>
+    Sengoku: With the pirates having the advantage.
+    Rosinante: And possibly an operative stranded alone in enemy territory...
+    Sengoku: Agreed. Let's move on.
+Sengoku: We have a solid collection of options, but there is always a final decent idea to consider.
+Rosinante: Something about the last chance feeling jarring the brain?
+He drops his clipboard all over the floor, papers scattering. You can't help but be impressed.
+Sengoku: Something like that. Well, anyone?
+Random Marine 4: ...There is always something more drastic.
+Sengoku: Like?
+Random Marine 4: Environmental warfare.
+-> Like poisoning their water supplies?
+    <<set $lwd3S_points -=1>>
+    Sengoku: This is a training exercise. We will not be engaging in unauthorized force.
+    Rosinante: Aren't you high enough rank to authorize that?
+    Sengoku: Not any more and I prefer it that way.
+-> Like setting their base on fire?
+    <<set $lwd3S_points -=1>>
+    Rosinante: That would be quick and effective.
+    Sengoku: Too many chances for unwarranted casualties.
+    Rosinante: In a true fight, there are always unwarranted casualties.
+    Sengoku: ...We should strive for the ideal, or we have nothing.
+-> That's not very humane...
+    <<set $lwd3S_points +=1>>
+    Sengoku: We won't be engaging in unauthorized force.
+    Rosinante: No being judge, jury, and executioner?
+    Sengoku: We are not gods.
+    Rosinante: Just their enforcers.
+    Sengoku: ...
+    Rosinante: ...
+    Sengoku: We won't be engaging in excessive force. That's final.
+    Suddenly, the air between Sengoku-san and Vice Admiral Rosinante seems tense.
+Sengoku: Alright, that's enough planning. Let's get to implementing.
+<<jump workday_legendary_3_good_sen_rosi_end>>
+<<jump workday_legendary_3_bad_sen_rosi_end>> //HOW DO??
+===
+
+title: workday_legendary_3_good_sen_rosi_end
+location: day(ship)
+---
+
+// {If PC made 3 correct choices} //HOW DO??
+The week passes in what feels like no time at all! You suppose that's how it goes when you are busy getting to it. Now all that's left is this wrap up meeting, and you can head home to your nice warm bed!
+Sengoku: Well that was a success! Our men were able to follow a proper plan and reach the goal in time.
+Garp: You're gonna share the meat with us all, right?
+Tsuru sighs.
+Rosinante: What do you think, {$name}? Should we share with the other team?
+-> Yes
+    <<set $lwd3G_points +=1>>
+    {$name}: Really, we're all on the same team so...
+    Garp: BWHAHA, let's eat!
+    Sengoku: This was not about the prize, Garp!
+    Tsuru: There goes the budget.
+    Rosinante: Quick, let's go before he eats it all!
+    What a fun way to end a week, though you can't wait to get back to the base and have a real shower.
+-> No
+    <<set $lwd3G_points -=1>>
+    <<set $lwd3S_points -=1>>
+    Our men worked really hard to achieve their success. It would cheapen their victory.
+    Tsuru: That's fair. It encourages healthy competition, and a desire to work harder in the future.
+    Garp: Huh, guess this really isn't the Navy I joined up with.
+    Sengoku: Garp. It's just meat.
+    Rosinante: Think that's why he's taking it so personally.
+    Tsuru: No matter. Let's set sail for HQ.
+    Phew, what a week!
+===
+
+title: workday_legendary_3_bad_sen_rosi_end
+location: day(ship)
+---
+
+The week passes in what feels like no time at all! You suppose that's how it goes when you are busy getting to it. Now all that's left is this wrap up meeting, and then you can head home to your nice warm bed!
+Rosinante: Well, that was—
+Sengoku: A disaster. I am never going to hear the end of this from Garp. Or worse, from Tsuru.
+Rosinante: It won't be that bad.
+Sengoku: As the former Fleet Admiral, yes, it will be.
+-> It will be OK.
+    <<set $lwd3R_points +=1>>
+    Rosinante: See?
+    Sengoku: You haven't spent sixty years with them.
+    Rosinante: They rarely get one over on you. They can have this.
+    Sengoku: I suppose you're right.
+    {$name}: Well let's go greet the winners, shall we?
+    <<jump workday_legendary_3_tsuru_garp_good_end>>
+-> Yeah, them rubbing it in our faces will sting.
+    <<set $lwd3S_points +=1>>
+    Sengoku: I did retire for a reason...
+    Rosinante: At least this way Garp will be in a good mood about the meat.
+    Sengoku: Perhaps he'll even do his paperwork.
+    Rosinante: I... wouldn't go that far.
+    Sengoku: True! Hahaha! Well, let's go greet the winners shall we?
+    <<jump workday_legendary_3_tsuru_garp_good_end>>
+===

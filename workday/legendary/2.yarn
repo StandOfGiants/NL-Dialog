@@ -1,0 +1,531 @@
+title: workday_legendary_2_main
+location: office
+---
+<<declare $lwd2R_points = 0>>
+<<declare $lwd2T_points = 0>>
+<<declare $lwd2S_points = 0>>
+<<declare $lwd2G_points = 0>>
+
+You arrive at Tsuru's office. The door is open, and everyone is already inside.
+{$name}: Good morning! {$name}, reporting for duty!
+Tsuru: Welcome, dear. Today is quite a special day. How are you feeling about your promotion, Rosinante?
+Rosinante: Can we just skip the ceremony part? I feel like I'm going to mess up, talking in front of all those people...
+Garp: Bwahahaha! You'll be fine, Rosi! You did a great job on your mission, so you should just go out there with your head held high!
+Sengoku: For once, Garp is right. You did well, befitting of your promotion.
+{$name}: Wow, Rosinante must have really done something special if they're talking about him like this...
+-> Congratulations on your promotion!
+    <<set $lwd2R_points +=1>>
+    <<set $lwd2T_points +=1>>
+    Rosinante: Thank you. It still feels weird, though...
+    Tsuru: Don't be humble. It is well-deserved.
+-> So, what exactly was your assignment?
+    <<set $lwd2G_points +=1>>
+    <<set $lwd2S_points -=1>>
+    Rosinante: Oh. Uhm, well—I was—
+    Sengoku: That's classified, but it was difficult and dangerous, as all high-level assignments are.
+    Garp: Eh, don't worry about it. I can tell you more later!
+    Sengoku: Don't you dare, Garp!
+-> You deserve it, sir.
+    <<set $lwd2S_points +=1>>
+    Sengoku: Rosinante has accomplished something that very few have, and brought peace to many. It is a shame most will never know of his sacrifices.
+    Rosinante: I just did what was right...
+Rosinante: Really, I'm just happy to be here today.
+Sengoku: I am as well. To think you were once a boy barely up to my knee...
+Rosinante: Well, I'm taller now.
+Sengoku: But no less clumsy. Or good-hearted.
+Rosinante: Not sure the North Blue Health Organisation would agree.
+Tsuru: Still, we cannot thank you enough for what you've done.
+Tsuru: It is admirable to put your life on the line to fulfill your duty.
+{$name}: Being a top Marine really is tough, isn't it? It's not all about paperwork and promotions. You really could die.
+{$name}: Wow...
+-> Truthfully, I don't know if I could do something like that. My fighting skills aren't the best, but I know where I'm meant to contribute—by supporting the heroes.
+    <<set $lwd2T_points +=1>>
+    <<set $lwd2G_points -=1>>
+    Tsuru: That's a noble attitude, {$name}.
+    Garp: Tch. Not everyone needs to be a hero, but it sounds like you're giving up on yourself. Maybe I should help whip you into shape...
+-> I hope that I can go on a mission like that soon. I would love to be out there, making things better for all the people who need my help.
+    <<set $lwd2S_points +=1>>
+    <<set $lwd2R_points -=1>>
+    Sengoku: The Navy always has a need for those with good intentions.
+    Rosinante: Maybe, but also, don't throw yourself out there completely blind. That's not helping anyone, no matter how good your intentions are...
+-> I have a long way to go before I can get there, but I don't want to give up. I'd like to work toward the day when I can go on a mission like this.
+    <<set $lwd2G_points +=1>>
+    <<set $lwd2T_points -=1>>
+    Garp: That's a good outlook, {$name}! Keep training and don't rush it. You have potential!
+    Tsuru: It's good to have priorities, but remember to work on yourself and don't get caught in the glamor.
+-> Honestly, I don't know yet. I'm taking things one day at a time, seeing what I'm good at and letting the pieces fall where they may.
+    <<set $lwd2R_points +=1>>
+    Rosinante: Good! It's always better to take your time rather than rush forward and then crash into a wall.
+Tsuru: Well, enough chit-chat. The ceremony is going to start soon.
+[fade out] //HOW DO??
+[fade back in; scene change to Auditorium or equivalent set] //HOW DO??
+Tsuru: {$name}, can I speak to you for a second?
+Tsuru: It seems that I might have forgotten my gift for Rocinante in the office. It's in my desk, right side, bottom drawer.
+Tsuru: Could you please run and get it for me?
+-> Sure thing! I'll be right back.
+    Tsuru: Very well. I'm counting on you.
+    <<jump workday_legendary_2_rositsuru_path>>
+-> I'm sorry, but Sengoku and Garp insisted that I save seats for us...  (Begin Sengoku and Garp's path.)
+    Tsuru: Fine, fine. I understand.
+    <<jump workday_legendary_2_sengarp_path>>
+===
+
+title: workday_legendary_2_sengarp_path
+location: mess hall
+---
+
+{$name}: OK, I got us seats! I'm not used to sitting in the front row; being Tsuru's direct subordinate has its perks!
+Garp: Hey, these are good spots, {$name}!
+Sengoku: Well done.
+{$name}: Happy to help! But, uh, why did you ask for four seats? Who else is joining us?
+Sengoku: Oh, that's for him.
+{$name}: (Wait, who... Wait, why is the goat climbing into the chair? Ah, never mind. Why do I question anything around here anymore.)
+Sengoku: Alright, look sharp. The ceremony is starting.
+{$name}: (Huh, he's fiddling with some papers... I wonder what those are for...)
+{$name}: (Well. I doubt it's any of my business. Good luck, Rosinante!)
+[fade out] //HOW DO??
+[fade back in] //HOW DO??
+Rosinante: And so, I would like to thank...
+{$name}: (Well, he sounds a little nervous, but it's not a bad speech... I really wish whoever was snoring would knock it off, though.)
+Sengoku: ...Name.
+{$name}: Huh?! Er... huh?
+Sengoku: Quiet! As I'm sure you've noticed, Garp has fallen asleep. Again.
+{$name}: Ohhh, is that who's making so much noise? Yeah, it's kind of hard to miss...
+Sengoku: As usual, he's setting a terrible example. Go get some coffee, won't you?
+{$name}: Oh, um, sure!
+[fade out]
+[fade in, Mess Hall]
+{$name}: Ok, coffee... coffee... Oh, here we go. Nice, it's hot too! Ok, now the question is... how many cups should I get?
+-> One.
+    {$name}: Yeah, let's just get one for Garp and be done with it.
+    <<jump workday_legendary_2_one_cup>>
+-> Two.
+    {$name}: Alright, let me get a cup for Garp and a cup for Sengoku. I'm sure he'll appreciate it.
+    <<jump workday_legendary_2_two_cups>>
+===
+
+title: workday_legendary_2_one_cup
+location: mess hall
+---
+
+[fade out]
+[fade in, Auditorium or equivalent set] //HOW DO??
+{$name}: Ok, got the coffee! Here you go, Sen... uh, sir.
+Sengoku: Good work, {$name}. Alright, I'll take that, and... no, wait! Don't let go yet—
+{$name}: (...Oooooh, that can't be good.)
+Garp: Bwah! What's all this?! I'm covered in coffee!
+Sengoku: Shhhhh! Keep your voice down, Garp!
+Sengoku: At least the coffee did its job and woke you up. Now, I... no. Oh no.
+Garp: What's eatin' you, Senny?
+Sengoku: Rosinante's promotion certificate is ruined, that's what! Now what am I supposed to do?!
+{$name}: (I should...)
+-> (... Suggest that they just sign the coffee-stained papers.)
+    <<set $lwd2G_points +=1>>
+    <<set $lwd2S_points -=1>>
+    {$name}: Sengoku... uh, sir... the papers look fine. There's only a little bit of coffee on them. They're still usable.
+    Garp: There you go! {$name}'s got the right idea!
+    Sengoku: Why in the world would I give Rosi coffee-stained papers to commemorate the biggest promotion of his career?!
+    <<jump workday_legendary_2_continue_1>>
+-> (...Suggest that he make up a reason for Rocinante to sign the papers in his office later.)
+    <<set $lwd2G_points -=1>>
+    <<set $lwd2S_points +=1>>
+    {$name}: Um, sir, you could always say that you'll have him sign the papers in your office later. It may be a little unusual, but better that than a stained certificate, right?
+    Sengoku: ...Right. Yes. Good thinking, {$name}. I can certainly think of something like that.
+    Garp: Tch, are you really going to just go up there and make excuses, Senny?
+    Sengoku: I will do what I must. I don't want anything else to go wrong while he is receiving his honors.
+    <<jump workday_legendary_2_continue_1>>
+-> (...Feed the papers to the goat.)
+    <<set $lwd2G_points +=1>>
+    <<set $lwd2S_points +=1>>
+    {$name}: Oy, goat. Here. Eat up.
+    Goat: Bahhhhh!
+    Sengoku: No, wait... and they're gone. I... Well, I guess that solves that problem.
+    Garp: Bwahahahaha! Now that was some quick thinking, {$name}!
+    <<jump workday_legendary_2_continue_1>>
+-> (...Go get paper towels)
+    <<set $lwd2G_points -=1>>
+    <<set $lwd2S_points -=1>>
+    {$name}: Oh no. I'll go get napkins!
+    Sengoku: That would have been smart to bring the first time.
+    Garp: The napkins will just fall apart anyway; the Navy always cheaps out on what's important.
+    Sengoku: Excuse me?
+    Garp: What?
+    He accidentally elbows the goat as he's shifting his now stained coat around.
+    Goat: -BLEAT-
+    Sengoku: You clumsy fool.
+    Garp: You're the one who dropped the coffee!
+    Sengoku: That was {$name}!
+    They both give you a look. Oops.
+    <<jump workday_legendary_2_continue_1>>
+===
+
+title: workday_legendary_2_continue_1
+location: mess hall
+---
+
+Sengoku: Anyway, it's my turn now.
+He makes his way up to the stage.
+{$name}: (Look at him go... Despite the craziness, he's so calm and collected. I don't know how he does it.)
+Sengoku: To all who are assembled here, thank you for attending. It is my great honor to present this Marine with the great honor and rank of Vice Admiral.
+[applause noise] //HOW DO??
+{$name}: (Wow, it's so loud! But so well-deserved!)
+{$name}: Congratulations, Vice Admiral!!
+<<jump workday_legendary_2_outro_good>>
+===
+
+title: workday_legendary_2_two_cups
+location: mess hall
+---
+
+[fade out]
+[fade in, Auditorium or equivalent set] //HOW DO??
+{$name}: Ok, got the coffee! Here you go, Sen... uh, sir.
+Sengoku: Good work, {$name}. Alright, I'll take that, and... no, wait! Don't let go yet—
+{$name}: (...Oooooh, that can't be good.)
+Garp: Bwah! What's all this?! I'm covered in coffee!
+Sengoku: Shhhhh! Keep your voice down, Garp!
+Sengoku: At least the coffee did its job and woke you up. Now, I... no. Oh no.
+Garp: What's eatin' you, Senny?
+Sengoku: There's coffee all over the shoulder of my coat! I can't possibly wear this onstage!
+{$name}: (I should...)
+-> (... Suggest that he borrow Garp's coat. It has miraculously avoided the coffee spill.)
+    <<set $lwd2G_points -=1>>
+    <<set $lwd2S_points +=1>>
+    {$name}: Um, maybe you could borrow Garp's coat?
+    Sengoku: Well, we are about the same size... Fine. It'll do.
+    Garp: Wait a minute! Don't I get a say in this?!
+    Sengoku: Hand it over, Garp!
+    <<jump workday_legendary_2_continue_2>>
+-> (... Suggest that he just wear the coat as-is.)
+    <<set $lwd2G_points +=1>>
+    <<set $lwd2S_points -=1>>
+    {$name}: It's not a very noticeable stain, sir. You could probably just wear it as-is.
+    Garp: {$name}'s right! Besides, Marines shouldn't be so bothered over little things like this!
+    Sengoku: Speak for yourself, Garp!
+    <<jump workday_legendary_2_continue_2>>
+-> (... Suggest that he wear the goat like a scarf to hide the stain.)
+    <<set $lwd2G_points +=1>>
+    <<set $lwd2S_points +=1>>
+    {$name}: Hmmm... well, sir. You could always hide it.
+    Sengoku: Is that so? Enlighten me.
+    {$name}: You have the greatest fashion accessory of all right there.
+    Sengoku: What are you... no. You mean... my goat?!
+    {$name}: Why not? Everyone will be way too busy looking at your goat to notice the stain. Just wear it like a scarf and the rest will be fine.
+    Sengoku: It's been a long time since I've heard such an insane, bizarre, alien idea, {$name}. Part of me wants to commend you.
+    Garp: It's not like we have any better ideas. Go for it, Senny!
+    Sengoku: ... If I must, I must.
+    <<jump workday_legendary_2_continue_2>>
+-> (... Suggest that he not go up on stage.)
+    <<set $lwd2G_points -=1>>
+    <<set $lwd2S_points -=1>>
+    {$name}: If you're that worried, then don't go up there. You can congratulate him in private later!
+    Garp: That's cowardly. It's just a stain.
+    Sengoku: And embarrass Rosinante even more by not showing up? Tch.
+    They both glower at you. Oops.
+    <<jump workday_legendary_2_continue_2>>
+===
+
+title: workday_legendary_2_continue_2
+location: mess hall
+---
+
+Sengoku: Anyway... it's my turn now.
+He gets up and approaches the stage.
+{$name}: (Look at him go... Despite the craziness, he's so calm and collected. I don't know how he does it.)
+Sengoku: To all who are assembled here, thank you for attending. It is my great honor to present this Marine with the great honor and rank of Vice Admiral.
+[applause noise] //HOW DO??
+{$name}: (Wow, it's so loud! But so well-deserved!)
+{$name}: Congratulations, Vice Admiral!!
+<<jump workday_legendary_2_outro_good>>
+===
+
+title: workday_legendary_2_rositsuru_path
+location: office
+---
+
+You hurry towards the office. You can't afford to waste too much time since the ceremony is scheduled to start soon. Once you enter, you are surprised to see Rosinante already in the office, rummaging through all of the drawers and cabinets.
+{$name}: Uhm, Rosinante, sir?
+{$name}: What are you doing here? Aren't you supposed to be at your promotion ceremony?
+He flinches, startled, and turns towards you with a guilty smile.
+Rosinante: I, um...
+Rosinante: *cough*
+Rosinante: I lost something!
+He scratches the back of his neck sheepishly.
+{$name}: What did you lose?
+He seems hesitant to tell you, but sighs in resignation.
+Rosinante: It's my speech!
+Rosinante: I might have lost the notecards that have my speech.
+He avoids your gaze and returns to his crazed search of the cabinets.
+-> How did you lose your speech?
+    <<set $lwd2R_points +=1>>
+    Rosinante: I don't know! I was sure I left my notes here, but I can't find them anywhere.
+    {$name}: What if they fell out of your pocket? Did you look everywhere you were today?
+    He nods frantically.
+    Rosinante: This is the only place I haven't checked yet.
+    {$name}: OK, I'll help you look.
+    <<jump workday_legendary_2_help_find_1A>>
+-> (This is your chance! Grab the gift while he's not looking.)
+    <<set $lwd2T_points +=1>>
+    You're not sure if the gift is meant to be a surprise, but you don't want to take any chances. While Rosinante has his back turned, you take the gift from the drawer Tsuru specified.
+    You stuff it under your shirt at the last moment, just as Rosinante turns to face you.
+    Rosinante: What do I do? I need those notes.
+    {$name}: OK, OK, let's stay calm. I'll help you look, alright?
+    <<jump workday_legendary_2_help_find_1B>>
+===
+
+title: workday_legendary_2_help_find_1A
+location: office
+---
+
+You help him rummage through the drawers and cabinets, but the two of you find no trace of those accursed notes. Just as you are about to give up and propose that Rosinante rewrite the notes, the door bursts open.
+Tsuru stands in the hallway, sending a terrifying glare your way.
+Tsuru: What is taking so long, {$name}? There are people waiting.
+{$name}: I'm sorry... I haven't gotten it yet. We've been looking for something else.
+<<jump workday_legendary_2_find_notes>>
+===
+
+title: workday_legendary_2_help_find_1B
+location: office
+---
+
+You help him rummage through the drawers and cabinets, but the two of you find no trace of those accursed notes. Just as you are about to give up and propose that Rosinante rewrite the notes, the door bursts open.
+Tsuru stands in the hallway, sending a terrifying glare your way.
+Tsuru: What is taking so long, {$name}? There are people waiting.
+You run up to her and hand her the promised object, keeping your back to Rosinante in order to hide the gift.
+{$name}: I got what you asked for, but we're looking for something else now...
+<<jump workday_legendary_2_find_notes>>
+===
+
+title: workday_legendary_2_find_notes
+location: office
+---
+
+Tsuru: And what is that, exactly?
+You glance at Rosinante. For a man of his stature, he really knows how to make himself small, although you can understand his reaction, given the circumstances.
+Tsuru: Well?
+Rosinante: I can't seem to find my speech notes, m'am.
+Tsuru: The ceremony is starting in ten minutes!
+Tsuru pinches the bridge of her nose, letting out a deep sigh. You have the feeling that she is thinking seriously about retiring, and frankly, you can't blame her.
+Tsuru: Well? What are the two of you waiting around for? Look for them!
+As if her voice had snapped you out of a trance, the two of you go back to searching, this time with the help of Vice Admiral Tsuru.
+Some minutes pass...
+The office isn't that large. At this point, you're sure you've looked everywhere, but you don't have the courage to bring it up. Suddenly, you hear a strange sound behind you... it sounds almost like a goat.
+-> Turn around. What is the goat doing in the office again?
+    ...
+    {$name}: Uhm... I found the notes.
+    At your words, they both rush up to you, their faces portraying the same shock as yours.
+    The goat is eating the notes.
+    Rosinante: What! Spit those out, you dumb goat! Spit!
+    However, the damage has already been done. Out of the dozen or so cards, only half remain.
+    Tsuru checks her watch.
+    Tsuru: Five minutes left. Think we can rewrite the rest of the cards?
+    {$name}: It's worth a try...
+    In the background, Rosinante is still panicking over the goat.
+    Tsuru: Rosinante! We don't have time for this. We need you to think about your speech.
+    Rosinante: I hardly remember any of it...
+    -> Tsuru-san is right. We don't have time anymore.
+        <<set $lwd2T_points +=1>>
+        Tsuru: We can write a basic speech. You'll be done quickly. Just remember the general ideas.
+        Rosinante: It's not that easy. There were some key moments Dad prepared for me to inspire the new recruits.
+        Rosinante: He's way better at this than I am. Most of my cover relied on people thinking I'm mute. I'm not used to giving speeches!
+        Despite the chaos, Tsuru remains calm.
+        Tsuru: You're more than capable. We can write down what you remember and you can improvise the rest.
+        {$name}: Exactly! If you want to inspire, it needs to be from the heart anyway.
+        He thinks it over for a few moments before nodding.
+        Rosinante: Alright. Let's do it.
+        <<jump workday_legendary_2_write_speech>>
+    -> (You put a hand on his shoulder in order to reassure him.)
+        <<set $lwd2R_points +=1>>
+        {$name}: We'll help you. Five minutes is plenty of time. You've gone through things far scarier than this. You can pull through.
+        He calms down a bit at the reassurance.
+        Rosinante: I just wish I could remember... Dad helped me with some parts. He said I should inspire the new recruits.
+        {$name}: You're more than inspiring already. Whatever you say will be well-received.
+        Tsuru: {$name} is right. Give yourself more credit. With a little bit of focus, you'll do well.
+        Rosinante: Very well. I'll do my best.
+        <<jump workday_legendary_2_write_speech>>
+-> Leave it be! You're far too busy for this.
+    You ignore the goat as you continue turning over every single paper that you find in search of the notes.
+    A surprised yelp gets your attention.
+    You turn and see Rosinante wrestling the goat. Finally, you realize where his speech went.
+    Rosinante: Spit those out, you dumb goat! Spit!
+    It was pointless. All of the cards had been chewed through. If only you'd noticed sooner.
+    {$name}: I'm sorry. I heard the goat making noise before but didn't think to check...
+    They both stare at you in disbelief.
+    Tsuru: Forget it! What's done is done.
+    Tsuru: Five minutes! We have to rewrite it.
+    Rosinante shakes his head.
+    Rosinante: It's impossible. I'll just wing it.
+    Tsuru: Do you remember any of it? We can write down what you remember.
+    Rosinante: Hardly...
+    How can you fix this?
+    -> In three minutes, we can think of something! I'm sure Garp can stall for time.
+        <<set $lwd2R_points +=1>>
+        <<set $lwd2T_points -=1>>
+        Tsuru: I'd rather you go there unprepared than have him up on stage for that long...
+        {$name}: Then let's hurry, and we can rewrite it in time.
+        <<jump workday_legendary_2_write_speech>>
+    -> Try to remember! We're out of time.
+        <<set $lwd2T_points +=1>>
+        <<set $lwd2R_points -=1>>
+        {$name}: Here!
+        You take out a piece of paper, ready to write down what Rosinante will say.
+        <<jump workday_legendary_2_write_speech>>
+===
+
+title: workday_legendary_2_write_speech
+location: office
+---
+
+The time limit is stressful, but eventually the three of you figure out a good pattern and finish with little bit of time to spare.
+As it turns out, you make a really good team!
+Rosinante: Thank you for your help.
+Tsuru: Of course. That said, you should run ahead now.
+She checks her watch.
+Tsuru: You might make it on time.
+He nods, determined, and runs ahead. You half-expect him to trip, but he is really focused on what he has to do. You wonder if that's how he is on his missions as well.
+Tsuru: Good work, {$name}. You work well under pressure.
+The praise takes you by surprise.
+{$name}: Ah... Thank you.
+Tsuru: Let's go now. We wouldn't want to miss the speech we worked so hard on.
+===
+
+title: workday_legendary_2_write_speech_2
+location: office
+---
+ALTERNATE ENDING (in case, PC picked help_find_1A) //HOW DO?
+
+The time limit is stressful, but eventually the three of you figure out a good pattern.
+As it turns out, you make a really good team!
+Rosinante: Thank you for your help.
+Tsuru: Of course. That said, you should run ahead now.
+She checks her watch.
+Tsuru: You might make it on time.
+He nods with a determined look in his eyes. He hurries ahead. You half-expect him to trip, but he is really focused on what he has to do. You wonder if that's how he is on his missions as well.
+Tsuru: Good work, {$name}. You work well under pressure.
+The praise takes you by surprise. Before you can reply, however...
+Tsuru: That said, it seems that you tend to miss out on some details while stressed.
+{$name}: What do you mean?
+Tsuru: I sent you here for a gift, {$name}, remember?
+{$name}: OH!
+You finally remember. You run over to the drawer, take out the gift, and hand it to her. You're embarrassed about forgetting, but Tsuru doesn't seem that upset.
+Tsuru: Thank you.
+Tsuru: Let's head to the ceremony. We wouldn't want to miss the speech we worked so hard on.
+===
+
+title: workday_legendary_2_outro_bad_sengarp
+location: office
+---
+//HOW DO?? dependent on choices
+
+Rosinante: [laughs] Well, that was...
+Tsuru: *Terrible...*
+Garp: Bwah hah hah hah!
+Tsuru: Garp! Behave!
+Tsuru: Will you two fools ever take anything seriously?!
+Sengoku: It's easy to complain! We tried our best!
+-> Take Sengoku's side.
+    <<set $lwd2T_points -=1>>
+    <<set $lwd2S_points +=1>>
+    <<set $lwd2G_points -=1>>
+    {$name}: I was there! I saw it.
+    Tsuru: And you were of no help!
+    Garp: Geez, aren't you all fun at parties!
+    Rosinante: It was fun, though, wasn't it? A little?
+    Sengoku: At least it's over...
+-> Take Tsuru's side.
+    <<set $lwd2T_points +=1>>
+    <<set $lwd2S_points -=1>>
+    <<set $lwd2R_points -=1>>
+    {$name}: Yes! We need some discipline around here!
+    Sengoku: What a thing to say after all we have been through...
+    Garp: What we need is a drink!
+    Rosinante: Poor dad and Garp. I know you tried.
+-> Laugh at them both.
+    <<set $lwd2G_points +=1>>
+    <<set $lwd2R_points +=1>>
+    <<set $lwd2S_points -=1>>
+    <<set $lwd2T_points -=1>>
+      {$name}: You're all taking this way too seriously!
+    Sengoku, Tsuru: What?!
+    Tsuru: We'll have a word after this, {$name}.
+    Garp: Bwahahahah! You're right, {$name}.
+    Rosinante: If anybody's interested, I had a good time!
+    Sengoku: That's the most important thing...
+Rosinante: Well...
+Rosinante: Thank you all for being here!
+-> Tomorrow will be another day...
+    <<set $lwd2S_points +=1>>
+    <<set $lwd2T_points +=1>>
+    Garp: What? No afterparty?
+    Tsuru: I hope you're joking.
+-> The mood is a bit down... Hey, wanna hear a joke?
+    <<set $lwd2G_points +=1>>
+    <<set $lwd2R_points +=1>>
+    Garp: I do!
+    Tsuru: Not the best timing, is it?!
+    Rosinante: Aww... I'll hear your joke.
+    Sengoku: At least he's happy...
+===
+
+title: workday_legendary_2_outro_bad_rositsuru
+location: office
+---
+//HOW DO?? Based on total negative points??
+Rosinante: [laughs] Well, that was...
+Tsuru: *Terrible...*
+Garp: Bwah hah hah hah!
+Tsuru: This is no laughing matter!
+Garp: Lighten up a little!
+-> Take Garp's side.
+    <<set $lwd2G_points +=1>>
+    <<set $lwd2S_points -=1>>
+    <<set $lwd2T_points -=1>>
+    {$name}: It's true, we couldn't do much to prevent what happened!
+    Tsuru: If we had been better organized...
+    Sengoku pinches his nose.
+    Sengoku: No one should ever find out about the chaos behind the scenes.
+-> Take Tsuru's side.
+    <<set $lwd2G_points -=1>>
+    <<set $lwd2R_points -=1>>
+    <<set $lwd2T_points +=1>>
+    {$name}: We really should have accounted for this...
+    Rosinante: Aw, let's stop focusing on the negatives, shall we?
+    Rosinante: It's all water under the bridge.
+    Tsuru: It certainly doesn't help that someone fell asleep.
+    Garp: Huh?! Really?! Not like you didn't make any mistakes.
+    Sengoku: Enough fighting.
+Rosinante: Well...
+Rosinante: Thank you all for being here!
+-> Tomorrow will be another day...
+    <<set $lwd2S_points +=1>>
+    <<set $lwd2T_points +=1>>
+    Garp: What? No afterparty?
+    Tsuru: I hope you're joking.
+-> The mood is a bit down... Hey, wanna hear a joke?
+    <<set $lwd2G_points +=1>>
+    <<set $lwd2R_points +=1>>
+    Garp: I do!
+    Tsuru: Not the best timing, is it?!
+    Rosinante: Aww... I'll hear your joke.
+    Sengoku: At least he's happy...
+===
+
+title: workday_legendary_2_outro_good
+location: office
+---
+Rosinante: [laughs] Well, that was...
+Tsuru: *Terrible...*
+Rosinante: I was going to say memorable!
+-> Yes, I agree!
+    Rosinante: That's the spirit!
+    Garp: Let's do it again!
+    Tsuru: Now Garp, behave...
+    Tsuru: You might have a point with memorable, though... I do not remember my own promotion to Vice Admiral.
+    Rosinante: Let's call it a day!
+-> I'm exhausted...
+    Tsuru: I won't see promotions quite the same way anymore...
+    Rosinante: I'm happy you all were here to support me!
+    Sengoku: But of course!
+    Garp: Always!
+The promotion ceremony might not have been a perfect success, but it seems like it's brought everyone closer together.
+===

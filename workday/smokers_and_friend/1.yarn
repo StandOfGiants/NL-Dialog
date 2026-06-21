@@ -8,10 +8,10 @@ characters: [bellemere, tashigi, hina, smoker]
 <<declare $wd1_smoker = 0>>
 
 It's orientation day in your new assignment with Vice Admiral Smoker and his group. You gulp, entering the mess hall- no need to be nervous, right? You should just do your best to get to know them. You can trust your training group to prepare you for your role in the Marines.
-<<show_character bellemere a show>>
-<<show_character tashigi b show>>
-<<show_character hina c show>>
-<<show_character smoker d show>>
+<<show_characters bellemere>>
+<<show_characters tashigi>>
+<<show_characters hina>>
+<<show_characters smoker>>
     // need to specify sprite no. & placement
 On that note, you sit down next to the group of four, all of them eating in relative silence despite the loud cacophony of voices echoing in the busy space.
 Bellemere: Hey look! The newbie finally showed! Don't worry kid, I hate getting up at the crack of dawn, too.
@@ -101,10 +101,8 @@ Smoker: We've got the first plan, naval drills with me and Hina. Tashigi and her
 
 title: workday_smokers_and_friend_1_Part_2A
 location: day(ship)
+characters: [hina, smoker]
 ---
-<<hide_characters hide>>
-<<show_character hina left fade>>
-<<show_character smoker right fade>>
 // going with smoker and hina doesn't give PC an item - unlike with bellemere. oversight?
 Smoker and Hina lead the way to the docks, keeping a quick pace with each other. The three of you arrive at a large warship. Several unfamiliar people who look to be trainees look as if they're expecting Smoker and Hina. Once you board the deck, they motion for everyone to gather around.
     // description a little confusing
@@ -203,8 +201,8 @@ location: day(garden)
 ---
 <<declare $went_with_bellemere = false>>
 <<set $went_with_bellemere to true>>
-<<hide_characters hide>>
-<<show_character bellemere center show>>
+<<show_characters>>
+<<show_characters bellemere>>
 You follow the red-haired woman out of the mess hall and down a nearby path. She moves with purpose, and you wonder what she has in mind for your first day of training.
 -> Where are we going?
     <<jump workday_smokers_and_friend_1_Part_2C1>>
@@ -263,9 +261,9 @@ Bellemere: Well, too bad for you! I brought a couple trees from my family orchar
 
 title: workday_smokers_and_friend_1_tash_transition
 ---
-<<hide_characters hide>>
+<<show_characters>>
 It's not long before you spot Captain Tashigi in a secluded corner of the garden.
-<<show_character tashigi center show>>
+<<show_characters tashigi>>
 Tashigi: Petty Officer {$name}, aren't you supposed to be with Commodore Bellemere?
 {$name}: Erm...
 Tashigi: Never mind, I can imagine what happened.
@@ -278,7 +276,7 @@ Tashigi: Sure thing. Grab one of those wooden swords.
 title: workday_smokers_and_friend_1_Mikan
 ---
 There are three trees down the path, deep emerald and dotted with small unripened fruit, and you settle in a bench beneath their shade.
-PC: How long until the mikans ripen?
+{$name}: How long until the mikans ripen?
 Bellemere: Hmm... I'd say a couple more months, at least. On a day as hot as this, it's important to take care of yourself. I like to sit here and think sometimes...
 {$name}: ...like meditation?
 Bellemere: Yeah? Yeah! That sounds more productive, doesn't it? I mean, I train when I need to, but I think some people around here just don't know how to enjoy life.
@@ -339,17 +337,17 @@ Bellemere: Bring it here and plant it. And don't you use a wheelbarrow and risk 
 {$name}: W-why should I be responsible for-
 Bellemere: Hey now- do I look like I have big beefy arms? No? Well, I planted all of these. Just [i]one[/i] should be no trouble for a marine that values strength so much.
 She has you there.
-<<hide_character bellemere fade>>
+<<hide_character bellemere cross_fade>>
 You work the better part of an hour away sweating in the sweltering sun, lifting and walking and digging until your limbs feel like noodles... How did she get such a huge sapling to this island in the first place!? It's practically a full-grown tree!
 -> Complain: You're the commanding officer, here. You could have pulled your weight!
-    <<show_character bellemere center show>>
+    <<show_characters bellemere>>
     <<lock_out_date bellemere>>
     Bellemere: If I'm your commanding officer, maybe you should cool it with your snark, huh? I'm kind of tired of talking- I think you should go give that obstacle course a try.
     You're pretty sure you've offended her, but there's not much you can do about it now!
     END WORK DAY
     <<jump main>>
 -> Joke: Well, I learned a valuable lesson about priorities, huh?
-    <<show_character bellemere center show>>
+    <<show_characters bellemere>>
     <<set $wd1_bellemere += 1>>
     She laughs, patting your back.
     <<jump workday_smokers_and_friend_1_Walk>>

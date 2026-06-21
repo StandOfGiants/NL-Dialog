@@ -1,0 +1,840 @@
+title: workday_coby_crew_2_main
+location: town
+---
+
+Sengoku's office is a little out of the way for a meeting place, but you manage to round the last corner with a little bit of time to spare before your planned rendezvous with the rest of the group. They've beat you there, already leaving the office as you approach. Drake holds the end of a rope in his hand, attached to the goat's collar. The door shuts behind them with a click.
+-> Why do you have the goat?
+-> Uh... Is everything okay?
+Drake: Put simply, Sengoku-san has tasked us with setting up for the sports festival.
+Helmeppo: We're always the ones stuck with the grunt work...
+Coby: But someone has to do it, and Sengoku-san and Garp-san think we're capable! We just have a little helper with us today is all.
+Helmeppo: Babysitting duty on top of assigned work, basically.
+Goat: Maaaa!
+{$name}: Er... Do you think it'll be helpful? Won't it just eat the decorations?
+Coby: I'm sure the four of us can keep watch well enough.
+-> Aww, we get to have a little friend help us the whole day.
+    <<set $ccwd2C_points +=1>>
+    <<set $ccwd2D_points +=1>>
+    Drake: He's good company if you keep your eyes on him.
+    Coby: Hopefully we can keep him out of anything too important.
+-> Nice. All that on top of our usual assigned work, though...
+    <<set $ccwd2H_points +=1>>
+    Helmeppo: Yeah. I don't see why someone else couldn't goat-sit.
+    Coby: Because he trusts us to get this done. The bigger projects we can work as a team, then split off as we need to. We'll get it done in no time.
+Coby claps his hands together to get the group's attention. The goat startles a little from the sound but soon goes back to chewing on some paper it managed to get a hold of in the office.
+Coby: Drake-san, could you read off the assignments please?
+With some gentle coaxing, Drake tugs the paper from the goat's mouth.
+Drake: It's a sizeable list for one afternoon, but not impossible. On the field, we have to set up for the relay races and fencing. Off-field, we have the space for the judges and all of the bleachers. There's... Also a maid cafe.
+-> Well, we'd better get to it then. Even with the extra little helper, that's a lot to do.
+    <<set $ccwd2D_points +=1>>
+-> It's a lot to do but with the four of us it'll be easy.
+    <<set $ccwd2C_points +=1>>
+-> That is a lot of grunt work for the four of us to do, along with wrangling the goat.
+    <<set $ccwd2H_points +=1>>
+<<jump workday_coby_crew_2_setup_start>>
+===
+
+title: workday_coby_crew_2_setup_start
+location: training grounds
+---
+
+Coby: So I thought we could all do the main setup together while people individually go off and do tasks instead of trying to split off and meet up later, because we'll all work at different paces.
+Drake: That makes sense. Some setup is better suited to larger groups than others. Does anyone have any preference for what to work on?
+Helmeppo: I guess I'll do the maid cafe. Should be easy.
+Coby: Okay by me. That leaves... The medical tent, bleachers, information booth, judging area, fencing, and relays. Shall we set up the medical tent first?
+Drake: Yes, that sounds good, in case someone gets hurt.
+Helmeppo: I guess I'll be working alone then.
+-> I can help you with it!
+    <<jump workday_coby_crew_2_Helmeppo_setup>>
+-> Well, good luck getting it set up.
+    <<jump workday_coby_crew_2_Group_setup_1>>
+===
+
+title: workday_coby_crew_2_Group_setup_1
+location: training grounds
+---
+
+You follow Coby and Drake to an area with a large tarp and a few oddly shaped bags, leaving the goat to graze.
+Coby: Looks like someone got out the tent stuff already! Hopefully all the medical supplies are there too.
+Drake: We should check to make sure the first-aid kits are still stocked and that nothing's expired.
+Coby: Good thinking.
+Coby hands you a first-aid kit from the nearest bag as Drake begins to unpack some of the others, revealing tent poles and pieces of cloth. You look into the kit. It seems pretty stuffed. There are plenty of bandages and the bottle of antiseptic looks full. The thermometer looks fine, and the bottles of pills rattle with the sound of contents.
+Coby: Oh, man, all those bandages... Takes me back...
+-> *Bandages* make you feel nostalgic?
+    <<set $ccwd2C_points -=1>>
+    Coby: You could say that yes...
+    Coby: Good marines get injured.
+-> More misadventures from your earlier days?
+    <<set $ccwd2C_points +=1>>
+    Coby: Something like that, I get hurt a lot because I try to put my all into what I do. That's what a good marine should do right, Drake-san?
+Drake: A good marine shouldn't charge in looking for harm, but planning for it doesn't hurt. The Grand Line throws a lot of unexpected obstacles at you, so learning and training for as many scenarios as possible is your best bet.
+Coby: I don't think the festival will be throwing anyone through walls-
+Drake: -or warranting any wild animal attacks...
+Coby: -or rogue waves...
+Drake: -or explosions...
+Coby: -so we should be set with what we've got here!
+-> The Grand Line is really that crazy, huh?
+    Drake: Take a step off-base when you have time. *Surprise* doesn't begin to cover how you'll feel about some of the things you'll see.
+-> Are the two of you really okay with heading out into stuff like that??
+     Coby: Like Drake-san said! It's all about practice and having a good head on your shoulders!
+Coby seems satisfied with the other two first aid kits, so the two of you move on to helping Drake with the tent poles. They snap together well, but bending them in the right shape through the holes in the fabric is a bit of a challenge.
+Drake: Coby, did they make you do the weeklong camping trip as part of officer training?
+Coby: They were going to, but because we'd been losing so many officers, they just promoted me and several others without it.
+Drake: I'm sure Vice Admiral Tsuru had some choice words about that.
+Coby: Oh no, does she think it makes me an incompetent officer?
+Drake: No, not about you in particular, but about cutting corners.
+-> Uh, what about me? Not that I'm an officer, but that my training might have been subpar...
+    Coby: Oh, I think Basic is still the same! Though I didn't really go the typical route there either...
+    Coby: But if you ever feel like you need help I'd love to give you a hand.
+-> Are we having that much trouble with recruitment?
+    Drake: I don't know. I'm not privy to that information – this is all speculation.
+    Coby: But even if recruitment's not down, with everything going on, it feels like we're still losing more people than we're gaining.
+-> So, what's this weeklong camping trip?
+    <<set $ccwd2D_points +=1>>
+    Drake: For officer training, they sent us out on individual rowboats with a compass and a tent. We had to make it to the island, set up a tent, and command a squadron back at base remotely via den den mushi while also surviving the week on the island. It's to test our command skills under stress.
+    -> Whoa, that's hardcore.
+    -> I guess I can see how that's practical...
+    -> Well, I bet Captain Coby would have aced it if he had to do it!
+        <<set $ccwd2C_points +=1>>
+        Coby: I'm not so sure about that. I'm lacking in the experience Drake-san has. Plus being on your own is much harder than you think.
+You get the tent all set up. It looks bigger than you expected.
+Drake: We still need to get the chairs set up. And the table for the first aid kits.
+-> Ugh, this is so much work.
+    <<set $ccwd2D_points -=1>>
+-> OK, let's do it!
+-> Not too much left, then.
+The furniture is compact and unfolds easily, and before you know it, everything is set up. As you survey your handiwork, Helmeppo comes walking over toward the three of you.
+<<jump workday_coby_crew_2_Regroup_1>>
+===
+
+title: workday_coby_crew_2_Helmeppo_setup
+location: training grounds
+---
+
+You follow Helmeppo to an auxiliary building not too far from the training grounds. You hadn't even noticed this was here despite being no stranger to the training grounds. Inside is an open area with a door and a counter with a metal shutter on one wall.
+-> Huh. I had no idea this was here.
+-> This is certainly an... Interesting space.
+Helmeppo: Yeah. It doesn't really get much use.
+Helmeppo: Captains usually use it for crew events, but with everything going on, there haven't been many of those.
+-> What a shame. That sounds fun.
+    Helmeppo: I'm sure it can be with the right crew. I hear those two guys on Hina's crew know how to throw a party...
+    <<jump workday_coby_crew_2_Maid_Cafe2>>
+-> Has Coby ever done a crew event?
+    Helmeppo: Only once.
+    -> Um. Care to elaborate on that?
+        <<jump workday_coby_crew_2_Helmeppo_party>>
+    -> Well that's not ominous at all.
+        <<jump workday_coby_crew_2_Helmeppo_party>>
+    -> Well, glad it was just the once.
+        <<jump workday_coby_crew_2_Maid_Cafe2>>
+-> Well, we're going to get plenty of use out of it.
+    Helmeppo: That's the plan.
+    <<jump workday_coby_crew_2_Maid_Cafe2>>
+===
+
+title: workday_coby_crew_2_Helmeppo_party
+location: training grounds
+---
+
+Helmeppo sighs.
+Helmeppo: He threw me a birthday party once. I tried, but everyone realized pretty quickly I wasn't having fun.
+-> Oh, so you're just a killjoy then.
+    <<set $ccwd2H_points -=1>>
+    Helmeppo: You think I didn't want to be able to enjoy it? Sorry, you can lie to people about what you like if you want, but I'm not that dedicated an actor.
+    <<jump workday_coby_crew_2_Maid_Cafe2>>
+-> Yikes. That must've been awkward.
+    <<set $ccwd2H_points +=1>>
+    Helmeppo: It was. Thankfully Coby apologized after and hasn't tried it again.
+    <<jump workday_coby_crew_2_Maid_Cafe2>>
+-> You'd think he'd have known if you hid your birthday that long...
+    Helmeppo: Yeah. He didn't find out until he became Captain and could directly access that information. Since, you know, I'm on his crew.
+    <<jump workday_coby_crew_2_Maid_Cafe2>>
+===
+
+title: workday_coby_crew_2_Maid_Cafe2
+location: training grounds
+---
+
+Helmeppo: Alright. We've got a couple things to do here. We need to get the tables set up, decorate, and take care of the kitchen stuff.
+{$name}: That's certainly a lot. Where do we start?
+Helmeppo: Doesn't matter to me. Pick your poison.
+-> Let's set up the tables.
+    <<jump workday_coby_crew_2_Cafe_Tables1>>
+-> Let's decorate first.
+    <<jump workday_coby_crew_2_Cafe_Decor1>>
+-> Let's get the kitchen ready.
+    <<jump workday_coby_crew_2_Cafe_Kitchen1>>
+===
+
+title: workday_coby_crew_2_WhatNext
+location: training grounds
+---
+
+Helmeppo: Well, where to next?
+-> Let's get the tables set up.
+    Helmeppo: Sounds good to me.
+    <<jump workday_coby_crew_2_Cafe_Tables1>>
+-> I think it's time for decorations!
+    Helmeppo: Alright, let's go.
+    <<jump workday_coby_crew_2_Cafe_Decor1>>
+-> We should go get the kitchen ready now.
+    Helmeppo: Probably a good idea.
+    <<jump workday_coby_crew_2_Cafe_Kitchen1>>
+-> Looks like we're done with everything.
+    (If all 3 done) //HOW DO??
+    Helmeppo: Looks like. Thanks for the help.
+    <<jump workday_coby_crew_2_Regroup_1>>
+    (otherwise) //HOW DO??
+    You can't go back yet. You forgot something here.
+    <<jump workday_coby_crew_2_WhatNext>>
+===
+
+title: workday_coby_crew_2_Cafe_Tables1
+location: training grounds
+---
+
+You follow Helmeppo to a set of doors along one of the walls. He opens them, revealing a large closet full of folding tables and chairs. They're crowded in so close that you can't really count them all but it looks like they come in two different sizes.
+Helmeppo: Alright. Let's get these out. We can adjust the layout later.
+-> I'm glad I came to help. That's a lot of tables...
+    <<set $ccwd2H_points +=1>>
+    Helmeppo: I'm glad you're here too. Doing this alone would suck.
+    <<jump workday_coby_crew_2_Cafe_Tables2>>
+-> Right. Let's do this!
+    Helmeppo: That's the spirit.
+    <<jump workday_coby_crew_2_Cafe_Tables2>>
+-> Yikes. Is it too late to go help with the medical tent?
+    <<set $ccwd2H_points -=1>>
+    Helmeppo: Yes. Now grab a table.
+    <<jump workday_coby_crew_2_Cafe_Tables2>>
+===
+
+title: workday_coby_crew_2_Cafe_Tables2
+location: training grounds
+---
+
+You and Helmeppo pull the chairs and tables out and start setting them up. It takes a while to get them all unfolded and arranged, but eventually you get there. On one side of the room, you put the larger tables in rows, and on the other side, you space out the smaller ones, with some partitions you found in between them.
+Helmeppo: I think that looks good. We don't have anything to set the tables with yet, so this is about as much as we can do.
+-> Alright! Let's keep this ball rolling.
+    <<set $ccwd2H_points +=1>>
+    <<jump workday_coby_crew_2_WhatNext>>
+-> I guess it's onto the next thing.
+    <<jump workday_coby_crew_2_WhatNext>>
+-> Finally! I can't wait to be done with this bullshit.
+    <<set $ccwd2H_points -=1>>
+    <<jump workday_coby_crew_2_WhatNext>>
+===
+
+title: workday_coby_crew_2_Cafe_Decor1
+location: training grounds
+---
+
+You and Helmeppo walk over to a row of boxes that sit along one wall. He starts digging through them, pulling out masses of fabric and bundles of metal poles and connectors.
+-> Are those curtains?
+    Helmeppo: Yeah. They'll block the kitchen door so people won't be able to see in.
+    Helmeppo: Want me to show you how to set it up?
+    -> No, I think I can figure it out.
+        <<jump workday_coby_crew_2_Cafe_Decor3>>
+    -> Sure. I could use some help.
+        <<jump workday_coby_crew_2_Cafe_Decor2>>
+-> That's going to be a headache to set up.
+    Helmeppo: If you think this is a pain, wait until you see the signs we need to set up.
+    Helmeppo: We can do the first one together if you need help.
+    -> I'm good. There can't be that many ways to mess it up.
+        <<jump workday_coby_crew_2_Cafe_Decor3>>
+    -> Yes, please. I can't imagine how it goes together.
+        <<jump workday_coby_crew_2_Cafe_Decor2>>
+-> So. How do we put those together?
+    Helmeppo: It's actually easier than it looks. Here, let me show you.
+    <<jump workday_coby_crew_2_Cafe_Decor2>>
+===
+
+title: workday_coby_crew_2_Cafe_Decor2
+location: training grounds
+---
+
+He guides you through how to set up the frame and hang the curtain. Luckily, it is fairly simple once you learn where everything is supposed to go.
+-> Thanks for showing me. It makes a lot more sense now.
+    <<set $ccwd2H_points +=1>>
+    Helmeppo: Yeah. Uh... Glad I could help.
+    <<jump workday_coby_crew_2_Cafe_Decor3>>
+-> Alright. Time to do the rest.
+    Helmeppo: Should go quick, if nothing goes wrong...
+    <<jump workday_coby_crew_2_Cafe_Decor3>>
+-> That's it? I could've figured that out myself.
+    <<set $ccwd2H_points -=1>>
+    Helmeppo: A simple thank you would've been fine.
+    <<jump workday_coby_crew_2_Cafe_Decor3>>
+===
+
+title: workday_coby_crew_2_Cafe_Decor3
+location: training grounds
+---
+
+You make quick work of the curtains, using them to hide the kitchen entrance from the main area. You both walk around it, making sure there are no large gaps.
+Helmeppo: Well at least that part's done.
+{$name}: I think we did a pretty good job!
+Helmeppo: I suppose so. Excellent curtain hanging. Truly masterful.
+-> Your sarcasm is duly noted. So what else needs to be done?
+    <<set $ccwd2H_points +=1>>
+    <<jump workday_coby_crew_2_WhatNext>>
+-> Yes. What else do we have to do?
+    <<jump workday_coby_crew_2_WhatNext>>
+-> You don't have to be rude. Nevermind, let's do something else.
+    <<set $ccwd2H_points -=1>>
+    <<jump workday_coby_crew_2_WhatNext>>
+===
+
+title: workday_coby_crew_2_Cafe_Kitchen1
+location: mess hall
+---
+
+The kitchen is awash in storage – refrigerators, barrels, cupboards and boxes are all around. There's even an open door leading to a sizable pantry. Not surprising, if this place is meant to cook food for entire crews.
+{$name}: What do we need to do in here?
+Helmeppo: Just make sure there's enough of all the ingredients to make about a million of each item.
+{$name}: A million?
+Helmeppo: More or less.
+While Helmeppo checks in the fridge, you look at the papers on one counter. There's a menu with some instructions on how to make each item, but that's it.
+{$name}: There's no list of ingredients here.
+Helmeppo: There's not?
+-> Let's just make a list from the menu.
+    Helmeppo: Uh... Well, if they really didn't leave us anything I guess that's the only way. You need help?
+    -> I'm fine.
+        You go through each of the items on the menu and list out their ingredients. There's coffee, tea, juice, chocolate and strawberry cakes, and vanilla cupcakes with seagulls drawn on in icing.
+        Once you have a list, you double check it before letting Helmeppo know you're finished.
+        <<jump workday_coby_crew_2_KitchenDone>>
+    -> How would this possibly be a two-person job?
+        <<set $ccwd2H_points -=1>>
+        Helmeppo: Fine, just don't complain if you get bored.
+        You go through each of the items on the menu and list out their ingredients. There's coffee, tea, juice, chocolate and strawberry cakes, and vanilla cupcakes with seagulls drawn on in icing.
+        Once you have a list, you double check it before letting Helmeppo know you're finished.
+        <<jump workday_coby_crew_2_KitchenDone>>
+    -> Yeah, it'll go faster with two.
+        <<set $ccwd2H_points +=1>>
+        You read out the ingredients for each item on the menu: coffee, tea, juice, chocolate and strawberry cakes and vanilla cupcakes with seagulls drawn on in icing. He writes them down, then reads them back to you. The whole thing takes a couple minutes.
+        <<jump workday_coby_crew_2_KitchenDone>>
+-> Let's try making everything and see what we need.
+    At first you're sure he's going to argue, but then crosses his arms.
+    Helmeppo: I can't believe I'm saying this, but fine. It'll help us make sure the instructions are right.
+    The items are easy enough. The coffee and tea are simple and the two of you split the cakes and collaborate on the cupcakes. There are enough ovens to bake everything at once.
+    You don't bother with the decorations, except the cupcakes. It takes a lot of different frostings to make the seagull so you decide to each try your hand at it. Do you:
+    -> Follow the directions.
+        It's not nearly as difficult as you expect and you manage to make a cutesy seagull. Once you're done, you hand it to Helmeppo.
+        Helmeppo: Not bad! You have an artistic flair.
+    -> Wing it.
+        You've seen seagulls all your life. You don't think you need instructions to draw one in icing.
+        You are wrong.
+        The unholy creature your hands have wrought has one oversized, bulbous eye and another that's a tiny, smeared dot. It's mouth hangs open in an eternal scream.
+        You hand the abomination to Helmeppo.
+        Helmeppo: It has ... Personality.
+Having seen yours, Helmeppo guiltily hands you his.
+If you didn't know it was supposed to be a seagull, you'd think it was some sort of sea monster.
+The red intended for its tongue has bled down to the neckline, making it look like someone decapitated the creature and put it out of its misery.
+-> It looks OK...
+    <<set $ccwd2H_points -=1>>
+    Helmeppo: You don't have to lie. Let's just finish up and get out of here.
+    <<jump workday_coby_crew_2_KitchenDone>>
+-> Wow.
+    Helmeppo: Yeah. Let's just forget about this and get back to work, OK?
+    <<jump workday_coby_crew_2_KitchenDone>>
+-> I think some Marines would probably prefer one like that.
+    <<set $ccwd2H_points +=1>>
+    He chuckles.
+    Helmeppo: Decapitated and dying? Yeah, I can see that.
+    <<jump workday_coby_crew_2_KitchenDone>>
+===
+
+title: workday_coby_crew_2_KitchenDone
+location: mess hall
+---
+
+Once you have a list, the two of you check through storage. There are plenty of every ingredient you'd need, so it looks like this part of the setup is done.
+Helmeppo: All right, that's finally done. Let's see, what else...
+<<jump workday_coby_crew_2_WhatNext>>
+===
+
+title: workday_coby_crew_2_Regroup_1
+location: training grounds
+---
+
+Helmeppo: The maid cafe is all ready and the cupboards have everything they need.
+Drake: And we've got the medical tent all set up. I'd like to do the bleachers next.
+Coby: Helmeppo-san and I will handle the judging area.
+Drake turns to you.
+Drake: I can handle that myself, though I wouldn't object to a second pair of hands.
+-> I can help you!
+    <<jump workday_coby_crew_2_Drake_setup>>
+-> I'll go with Helmeppo and Coby.
+    <<jump workday_coby_crew_2_Group_setup_2>>
+===
+
+title: workday_coby_crew_2_Group_setup_2
+location: training grounds
+---
+
+You follow Coby and Helmeppo over to the judging zone. It doesn't look too complicated to set up a few tables and chairs, along with placards for whoever is judging to put their name plates and a few basic decorations.
+Coby: This should be one of the least difficult to set up. We're not making it flashy, just presentable. Better than fist fighting the bleachers.
+Helmeppo: Absolutely. Knowing our luck, we'd lose to them.
+The three of you busy yourselves with setting up the tables. They very much look like they have seen better days, but for the most part they seem to be cooperating. The plastic tops are in need of a deep clean by the looks of it, and your hands are left grimey as you unfold yours and put it into place
+-> Will Drake be okay by himself?
+    Coby: Oh yeah. He has an ancient zoan devil fruit. I've only seen it a handful of times but it's pretty impressive.
+Coby seems to struggle with his table, until there is a loud CRACK and the color drains from his face. The plastic top of the table has split, and Coby looks for a moment like he is both sick and embarrassed at the same time.
+Coby: Helmeppo-San, I broke the table again...
+Helmeppo pulls his visor down, staring in flat disbelief at the cracked furniture before sighing.
+Helmeppo: It's lucky the higher ups mostly like you. If they ran a tab of everything you wrecked, you'd never pay it back.
+Coby sighs, letting the table drop. You can see now the fissure in the plastic where it had given up the ghost.
+Coby: You're right. At this rate I'm going to be the first Marine who owes more than he makes...
+-> Well it looks kind of old, maybe it was on its way out?
+    <<set $ccwd2C_points +=1>>
+    Coby: Hopefully...
+-> They're gonna use you to pull ships if you keep that up.
+    <<set $ccwd2H_points +=1>>
+    Helmeppo: I can just see it. Paddling across the Grand Line with an anchor chain in your teeth.
+    Coby: I don't want to think about it, I'll look like a swimming ox.
+-> You are a swimming ox...
+    Coby: Ugh now I see why you two get along so well.
+-> Don't worry, we'll cheer you on from the ship.
+    Coby: I'll believe it when I hear it.
+You set the broken table aside and make a note on the building's inventory sheet so they can get a replacement. Then you return to help Helmeppo and a sheepish Coby finish with the tables.
+That just leaves a couple odds and ends.
+-> Join Coby in putting the chairs out.
+    To keep Coby from breaking anymore furniture you opt to help him set up the chairs. Each of you gather up two at a time, setting them up into a neat line in front of the surviving tables. The work isn't difficult, just a matter of making sure everything is neat and orderly.
+    {$name}: Does the breaking things thing happen a lot?
+    Coby: A little. I have a pretty impressive tab due to either sheer dumb luck or the fact I'm still not used to how strong I am.
+    {$name}: How bad really is the tab?
+    Coby: Let's just say I'm not going to retire early. Drake-san says I'm just coming into myself, but I think he's being polite.
+    Coby is more careful as he opens up the chairs. With his two down you follow suit and make sure everything is neat and orderly for both the judges and whatever Helmeppo has planned with the decorations.
+    {$name}: Looks good!
+    Coby: Looks great. Let's catch back up with the others.
+    <<jump workday_coby_crew_2_Regroup1_finish>>
+-> Join Helmeppo in setting up some decorations.
+    (If set up the cafe) //HOW DO??
+    As you pull out the decorations you notice there aren't anywhere near as many as for the maid cafe.
+    (Otherwise) //HOW DO??
+    The box of decorations is surprisingly small.
+    Helmeppo: So, some bunting for the main tables. Some poles to string strands of those weird triangle flags from. We're going full high school fair with this one.
+    -> Hey, I *like* the bunting and the weird little flags. They're cool.
+        Helmeppo: I question your definition of cool.
+    -> Are you saying we should ditch and go smoke under the bleachers like the cool kids in school?
+        Helmeppo: If we tried, I think Professor Triassic would get on our case.
+    -> Let's just get this over with.
+        Helmeppo: Sounds perfect to me.
+    Together, you tack the bunting to the table with enough ... Well, tacks, to withstand anything the New World can throw at it.
+    The poles are quick to set up, and the little flags *do* make the area seem more festive.
+    <<jump workday_coby_crew_2_Regroup1_finish>>
+===
+
+title: workday_coby_crew_2_Regroup1_finish
+location: training grounds
+---
+
+Finally, everything is all set up and in its rightful place. It actually looks pretty good if you do say so yourself. Time to catch back up with Drake.
+<<jump workday_coby_crew_2_Regroup_2>>
+===
+
+title: workday_coby_crew_2_Drake_setup
+location: training grounds
+---
+
+As Drake walks away from the group, seemingly toward nothing in particular, you follow him, though you don't see anything to indicate the presence of the bleachers... Are they invisible? Do they fold up into the wall?
+Drake: Thank you for agreeing to help me with this. It's tedious work, but it goes much faster with more people.
+-> Uh, I'm not sure what exactly the work entails.
+Drake: They're standard aluminum bleachers. We have to get out the frames, the seats, and the tools, and put them all together.
+-> Ooh, lots of screwing, eh? **wink**
+    <<set $ccwd2D_points -=1>>
+-> That doesn't sound too bad.
+-> Great, so... Where's all the stuff?
+    Drake: It's in that storage shed.
+-> No problem! I wouldn't want you to have to do this all by yourself.
+    Drake: I'm used to it.
+-> Tedious? I mean, damn. I can't believe we got stuck with boring work again.
+    <<set $ccwd2D_points -=1>>
+    Drake: This is something we agreed to do – something you could have contested had you met up on time. And doing it helps ensure the sports festival goes well.
+You reach your destination, a storage shed by the side of the main building. Drake takes out a key from his pocket and unlocks the padlock on the shed. The double doors swing open readily, revealing a big metal... Thing.
+Drake: That'll be the first piece of frame. We should probably take everything out before we start putting it together.
+-> Wouldn't it be faster if one of us did the moving and one of us started assembly?
+    Drake: That might work if we had three people, but this way will be easier with just us two. They're relatively light pieces, but their size makes everything unwieldy.
+-> Okay, do you want me to grab it from behind?
+    Drake: That would be great, thank you.
+    <<set $ccwd2D_points +=1>>
+-> What do I do?
+    Drake: Can you go into the shed and grab it from the back? I'll pull it from this side.
+The two of you position yourselves one at each end of the frame and lift. It's even lighter than you expected, or maybe Drake is just really strong. Either way, you're fine with it. You haul the frame maybe a third of the way to where the others are setting up the judging zone.
+Drake: I think this is where they were last time.
+-> Seems reasonable to put them there again.
+-> Well, routine is how we do things in the Marines, I guess.
+-> We've definitely dragged this thing far enough.
+You return to the shed to grab the next piece of the frame, then the next, and soon you've moved on to hauling stacks of metal beams that you assume make up the seats. These are a bit heavier, but with the two of you, it's still no problem, and you're actually falling into a decent rhythm. Drake doesn't force you into small talk or ask you to lift more than you're comfortable with, and soon you've cleared out everything.
+Drake: There's one more thing – I'll have to go back and get the toolbox so we can tighten the bolts on these. But first, let's move the frames into formation.
+Even though your arms are getting a little tired, the frames still seem pretty light, and you bring them together and lock them in place quickly and easily.
+do hide_character(Fade) //HOW DO??
+While he's off to get the tools, you survey the area. When all the parts are set out like this, the area doesn't look too bad.
+do show_character("drake", Show) //HOW DO??
+Drake returns with the toolbox in one hand, opens it, and hands you a wrench.
+Drake: It should be pretty intuitive, but I've done this a few times in the past. Let me know if you need any help.
+-> Well, if there's only one type of bolt, I think I'll get the hang of it.
+    <<jump workday_coby_crew_2_Drake_put_together>>
+-> Sure thing.
+    <<jump workday_coby_crew_2_Drake_put_together>>
+-> Thanks! Can you demonstrate one for me anyway? Better do it now than have to redo.
+    Drake: Absolutely. Here, let's start with one near the top.
+    <<jump workday_coby_crew_2_Drake_demo>>
+===
+
+title: workday_coby_crew_2_Drake_demo
+location: training grounds
+---
+
+He picks up a plank effortlessly (so those muscles really aren't just for show) and slides it into place on the top row, motioning for you to come around the back. You can get a clear view of the boltholes from the bottom, and with the sun above, the shadow of the plank looms. You've heard about what goes on beneath the bleachers before...
+-> So, at sporting events, are you one of the ones who hangs out under the bleachers?
+    Drake: Not exactly.
+    -> What do you mean?
+        Drake: It's... Not exactly quiet, but it's a place to breathe. I find most public events mentally taxing.
+    -> If I find you hiding when *we* have to be out there, I'm ratting you out.
+        <<set $ccwd2D_points -=1>>
+        Drake: Of course... Where were we?
+    -> I didn't know that was a problem. If I see you down here later, I'll let you have the space.
+        Drake: Thank you. It's not something I enjoy giving into, but I'd appreciate it. Now let's continue.
+        <<set $ccwd2D_points +=1>>
+-> Wow, I thought your answer would be “never”... So you've got a bit of a rulebreaker streak in you.
+    Drake: It's really not like that. Let's move along.
+-> Aw, I already feel like a troublemaker down here, even if I'm being helpful.
+    Drake: I suppose this angle does tend to have that effect. But it's easier to see the boltholes.
+-> Show me how it's done.
+Drake: Okay. So you see these four points? That's where you put the bolts. And you put the nut on the other side, screw it in with your hand until you can't make it tighter, and then use the wrench.
+He demonstrates with the first of the four, doing just as he'd said.
+-> Wow, that does look easy.
+-> Let me try it.
+    You slide in the bolt and spin the nut, tightening it all the way down. Adjusting the wrench takes a little time, but you can get a good grip on the nut and twist quite easily.
+-> You're pretty good at this!
+Drake: So let's get to it.
+You circle back around to the front and pick up a beam. Now you know what you're doing, so it should be a cinch. You get it in and all the bolts tightened pretty quickly, and then you're done and onto the next one. Not bad.
+<<jump workday_coby_crew_2_Drake_goat>>
+===
+
+title: workday_coby_crew_2_Drake_put_together
+location: training grounds
+---
+
+You grab a beam and shove a handful of nuts and bolts into your pocket. The beam is pretty unwieldy, but you get it over to the bleacher without issue and lock it into place. It's easy to see where to put the bolts, and just as Drake said, it is pretty intuitive. Just like with the carrying, it's easy to get into a rhythm.
+<<jump workday_coby_crew_2_Drake_goat>>
+===
+
+title: workday_coby_crew_2_Drake_goat
+location: training grounds
+---
+
+Goat: [shake]Maaaaa![/shake]
+You look up from your latest beam. The goat is trotting up the bleachers with a familiar gleam in its eyes.
+-> Oh, no...
+-> Uh, Rear Admiral Drake?
+    Drake: Yes, I see him.
+-> Hey! Stop it!
+    The goat ignores you, stomping quite loudly on the metal.
+Drake: Don't worry. Everything we've set up so far is nice and sturdy. He'll get bored and go somewhere else eventually.
+-> It's making a lot of noise... Can't we just pick it up and move it?
+    Drake: Is it that worrying? They're good climbers – up and down.
+    -> Well, I'm going to move it.
+        <<jump workday_coby_crew_2_Drake_move_goat>>
+    -> But what if it slips? It's metal, not a mountainside.
+        Drake: Fair enough.
+        <<jump workday_coby_crew_2_Drake_goat_rescue>>
+-> Maybe it's time for a break, then?
+    <<jump workday_coby_crew_2_Drake_goat_break>>
+-> OK by me. It's nice to have company.
+    <<jump workday_coby_crew_2_Drake_goat_rescue>>
+-> What if we try to coax it down? Maybe it can carry the toolbox in its mouth.
+    Drake: Are you worried for his safety or just concerned if he's going to pull his weight here too?
+    Drake: You know what, I'll see what I can do.
+    <<jump workday_coby_crew_2_Drake_goat_rescue>>
+===
+
+title: workday_coby_crew_2_Drake_move_goat
+location: training grounds
+---
+
+The goat pauses near the top of the bleachers, and you begin to climb after it. It turns, looks at you, and scampers off the other way. You give chase, but climbing up and down is hard work, especially with the gaps where you haven't installed all of the beams yet. The goat heads for the high corner, and you wonder if you can hem it in... This time, it pauses, as if waiting.
+-> Uh, nice goat, come here...
+-> Quit bothering us!
+    <<set $ccwd2D_points -=1>>
+-> OK... I'm coming closer... Just to meet you and we'll go for a nice walk off the bleachers...
+And just as you reach the goat, it jumps over your head, landing with a resounding clang of hooves against metal. At this point, you might as well give up. You sit down and catch your breath as it runs off.
+<<jump workday_coby_crew_2_Drake_goat_rescue>>
+===
+
+title: workday_coby_crew_2_Drake_goat_break
+location: training grounds
+---
+
+Drake: Yeah, we've made quite a bit of progress.
+You survey the state of the bleachers. You haven't put in as many benches as Drake, but you're not working that much slower than him.
+{$name}: Huh, not too shabby! You were right, it's pretty easy.
+Drake: It's going better than I expected.
+-> Me too. The company's been good.
+    <<set $ccwd2D_points +=1>>
+    Drake: I could say the same.
+-> So you'd thought I would suck?
+    Drake: I have a tendency to over-anticipate group work as worse than it usually turns out.
+{$name}: Is the goat... Inspecting our handiwork?
+Drake: Hm... I can't say that he's *not*.
+The goat is pausing to sniff and nudge at each beam, tapping some with its hooves.
+{$name}: What do you suppose we'll set up next with the others?
+Drake: If they finish with the judging zone, then maybe... The fencing and relays? I think Coby said he'd do the information booth.
+<<jump workday_coby_crew_2_Drake_goat_rescue>>
+===
+
+title: workday_coby_crew_2_Drake_goat_rescue
+location: training grounds
+---
+
+You hear a creak from the far side of the bleachers.
+Goat: Maaaa!
+The goat bleats frantically, one of its legs stuck in an open spot near the top where the seat has yet to be placed. It teeters, scrambling for balance. Drake is already up and running over toward it, and you're too far away to catch it if it falls—
+Drake: Hold on!
+The goat slips and begins to tumble just as Drake, standing under the bleachers, reaches it. He holds up his arms as his body swiftly changes—deep green scales creeping out from beneath his cuffs and collar as he swells in scale and height. Could this be–?
+Drake: Here, I've got you...
+His voice still sounds the same. His hands, though clawed, gently catch the goat and he pulls it down, cradling it in his arms and returning to his usual form.
+Goat: Maaaa...
+Drake: There, there... That must have been so scary.
+The goat nuzzles him.
+{$name}: Oh, you saved it! Poor thing... Little guy's super lucky you can do... Wow, *whatever that was*.
+Goat: Maaa...
+Drake: You'll be careful next time, won't you?
+Goat: Maa!
+<<jump workday_coby_crew_2_Drake_goat_explain>>
+===
+
+title: workday_coby_crew_2_Drake_goat_explain
+location: training grounds
+---
+
+{$name}: So, uh... What was that all about? Like, are you a fruit user?
+Drake: Yes, actually. An ancient zoan. Did no one tell you?
+-> Uh... No?
+-> Well, I mean, I kinda guessed you might have one.
+    {$name}: You're a pretty high rank and all that, so the odds are you would have those kinds of powers, right?
+    Drake: That's good reasoning, though that's not always the case.
+-> I hope I didn't seem like I reacted negatively.
+    {$name}: It was a surprise, but it was more cool than scary! But you can partially transform? Sorry, I haven't met too many fruit users before...
+    Drake: I can. I've found some aspects can be more difficult to control than others in a partial shift, though I suppose everyone is different.
+-> I guess it's good there's no swimming competition in this festival, huh?
+    Drake: I think quite a few of us would be unable to compete.
+Drake: Well, it's no secret. It's just not something I talk about much.
+-> It's cool! Definitely came in handy here!
+    {$name}: I just hope the goat doesn't try doing that again. It was a close call!
+    Drake: I don't think it will, though thankfully he doesn't seem to be too shaken up.
+    -> Oh, that's good!
+    -> Nerves of steel, eh?
+    -> Well, should we tie it up or something?
+        <<set $ccwd2D_points -=1>>
+        Drake: With the rate it chews, I don't think that will work.
+-> Well, you can talk about it with me!
+    <<set $ccwd2D_points +=1>>
+    {$name}: Not that I'm a fruit user myself, but I'm willing to listen.
+    Drake: Thank you. I'll try not to talk your ear off. Its species is a special interest of mine.
+-> Oh, OK. I won't bug you about it then.
+-> Well, what is there to say, right? Zoan's are a dime a dozen. (-1 Drake)
+<<jump workday_coby_crew_2_Drake_finish_setup>>
+===
+
+title: workday_coby_crew_2_Drake_finish_setup
+location: training grounds
+---
+
+Drake sets the goat down and it wanders off to graze on some weeds, sticking close to the ground instead of romping on the bleachers. You install the rest of the seats without incident.
+The two of you make your way over to the judging zone, which looks almost done.
+<<jump workday_coby_crew_2_Regroup_2>>
+===
+
+title: workday_coby_crew_2_Regroup_2
+location: training grounds
+---
+
+Drake: Looks like we've finished at about the same time.
+Helmeppo: I guess the fencing and relay areas are next?
+Coby: I'm going to check and see what needs to be done about the information booth.
+-> I'll go with you, Captain Coby.
+    <<jump workday_coby_crew_2_Coby_setup>>
+-> I'll stay and help set up the fencing and relay.
+    <<jump workday_coby_crew_2_Group_setup_3>>
+===
+
+title: workday_coby_crew_2_Group_setup_3
+location: training grounds
+---
+
+Drake: If you don't mind, I'd like to work on the fencing area as well.
+Helmeppo: I can work on the relay space then. Do you think there's enough room here to keep the fencers from putting holes in the runners?
+Drake: Yes, I think there's enough space to keep them separate. But we should get the equipment first.
+Helmeppo: Ugh, it's in that nasty closet too.
+-> Come on, the closet can't be that bad!
+    Helmeppo: Oh, it is.
+-> Uh... Nasty in what way?
+    Helmeppo: Dust. Bugs. Smells like mold.
+-> The sooner we get in, the sooner we get out?
+    Helmeppo: Good point.
+Helmeppo shoves open the door to the storage closet. The faint scent of mildew greets you and Drake sneezes.
+Drake: Let's see, what do we need? The fencing swords, the relay batons... Helmeppo, do you need anything to set up the track?
+Helmeppo: Some chalk for the start line, I suppose, if we have any. And a drink.
+Goat: Maaa!
+-> Where'd you come from?
+    Goat: Maa.
+-> I don't think there's room for all of us and a goat in there.
+    Helmeppo: Guess that means I need to stay out here. Terrible shame.
+-> Well, if we need to **eat** our way through the closet...
+    Drake: True, the goat's an expert.
+Drake: I think it'll be fine. Let's just go and get what we need.
+Inside the closet is an array of storage lockers. Some of them are bent, while others hang half open. Better start looking.
+The three of you divide and conquer, pulling and pushing at the various doors.
+Helmeppo: Here's some fencing helmets.
+Drake: Oh, the swords should be nearby, then.
+The two of them open and close several lockers. You, meanwhile, are stuck with one door that refuses to budge.
+-> **Kick the door.**
+    You rear your leg back and kick. The sound is loud, but the door doesn't open.
+-> **Move on to the next locker.**
+    You go to the next one, which opens quickly and appears to be full of instruction manuals.
+-> **Pull again.**
+    You pull as hard as you can, but the door still won't budge...
+As you move on towards the other end, the sound of hooves makes you turn around. The goat is running straight toward the locker you couldn't open!
+[shake]CRASH[/shake]
+The locker door opens.
+-> Ooh, what's inside?
+-> Oh, no, goat, are you okay?
+    <<set $ccwd2D_points +=1>> // (+1 Goat) //HOW DO?? are we doing points for goat?
+    Goat: Maaa!
+    It looks no worse for wear, as if it had fun doing that.
+-> ... Should we have just let the goat open all of these?
+Helmeppo: Hey, looks like the batons are there. I think that's everything.
+Drake: I've got the helmets and swords. Let's get out of here.
+Shooing the goat out, you all exit the closet quickly, spoils in tow. The goat wanders off again, content with having helped.
+Drake: Can you help me with the fencing setup, {$name}?
+-> Sure!
+    <<set $ccwd2D_points +=1>>
+    <<jump workday_coby_crew_2_Group_setup_3_fencing>>
+-> Actually, I think Lieutenant Commander Helmeppo needs more help with the track.
+    <<jump workday_coby_crew_2_Group_setup_3_relay>>
+===
+
+title: workday_coby_crew_2_Group_setup_3_fencing
+location: training grounds
+---
+
+Drake: We should place the helmets somewhere to the side, and then divide up the swords by type.
+-> How can I tell the differences?
+    Drake: You can put them with the other swords you think they look most like.
+-> Sure.
+-> Anything else we need to do?
+    Drake: Nothing I can think of, but let me know if you see anything.
+You divide up the swords in a pleasant silence, and you're just finishing up when you see Coby coming over to rejoin you, and Helmeppo finishing his part.
+<<jump workday_coby_crew_2_Group_setup_finish>>
+===
+
+title: workday_coby_crew_2_Group_setup_3_relay
+location: training grounds
+---
+As you and Helmeppo walk to the area designated for the relay race and set the box of batons down, you discuss the starting line.
+Helmeppo: I don't think there's any way we can just tell people to play nice. We need an actual starting line.
+Helmeppo: What do you think?
+-> Honestly, yeah. We need *something*.
+-> Nah, I think we could go on the honor system.
+    Helmeppo: Sorry. That's not convincing me.
+Helmeppo: But what can we do to make this start line?
+-> Pull up the grass and make a line of dirt?
+    <<set $ccwd2H_points +=1>>
+    You can sense a smart-alec answer building up... But then Helmeppo pauses, then nods.
+    Helmeppo: That's a pretty good idea actually. Here.
+    He hands you one of his kukri and keeps the other himself.
+    {$name}: Should we be using these for this?
+    Helmeppo: Grass is probably the nicest thing they've ever been asked to cut. They're fine.
+    You scrape a remarkably decent line in the grass, wide enough to be clearly visible.
+-> Burn the grass?
+    <<set $ccwd2H_points +=1>>
+    He starts to retort, then just shakes his head.
+    Helmeppo: If you want to, be my guest.
+    Helmeppo: This should be amusing at least.
+    {$name}: Amusing huh?
+    Helmeppo: I predict you set fire to this entire area.
+    {$name}: Bet.
+    It takes a little longer than you like, but with short, careful burnings with a lighter borrowed from Helmeppo, you make a passable line.
+    Helmeppo: You win. I'm impressed.
+-> Make the goat help?
+    <<set $ccwd2H_points +=1>>
+    Helmeppo: Why is everyone so invested in involving the goat?
+    {$name}: I think it's important that the goat pulls its weight too.
+    Helmeppo: Fine, fine. Let's go get the goat.
+    It takes some wrangling, but lucky for you, the goat actually is interested in helping once it realizes it's being expected to crop grass. The result isn't very clear or even, but it is a start line, more or less.
+-> I really think it's fine without.
+    <<set $ccwd2H_points -=1>>
+    He doesn't answer, and after a short pause, pulls one of his weapons and uses it to cut away the grass for a start line.
+With the start line set up, you survey the field. The race will have the runners take laps around the fencing area, so you don't need to mark out any other parts of the course. Finished, you rejoin the rest of the group.
+<<jump workday_coby_crew_2_Group_setup_finish>>
+===
+
+title: workday_coby_crew_2_Coby_setup
+location: training grounds
+---
+
+You walk over with Coby to where the information booth is going to be. It was nothing complex, looking more like a toll booth that had been set up along with a fold out chair for whoever would be manning the booth during the event. There are stacks of bound papers, flyers with advertisements for local shops, and what look like poorly drawn maps of the layout that have been photocopied into oblivion.
+Coby: I know they don't change it, but they really need to make nicer maps...
+-> Maybe they do it to save money.
+    Coby: True. I can easily imagine seacow that would be had over that budget.
+-> They likely won't change it because they have so many...
+    Coby: And because it doesn't change we have more maps... So the cycle continues.
+It's a setup so simple even a pirate could do it. You take turns freeing the stacks of flyers and when you get to one you pause and grimace a bit. Seems someone has vandalized one of the flyers ‒ or, more likely, whoever had to do the tedious work was getting some small petty comeuppance. The image on the front is the current fleet admiral but bedazzled with stink lines amongst other things.
+{$name}: Hmmm Coby, you should see this...
+Coby: What... Oh no.
+He grabs one of the flyers, and mouths the words quietly. For a moment he sighs, looking up at the ceiling before looking down again. You raise a curious eyebrow, unsure if he's about to cry or perhaps it's more of a case of hysterical tired laughter.
+{$name}: So... What do we do? We can't exactly pass out a flier that says Fleet Admiral Akainu smells like farts...
+Coby: Yeah, just...
+He leans in almost conspiratorially for a moment, and you lean in closer to listen. Coby looks around quickly before whispering...
+Coby: Problem is he kind of does. Logia can give off smells, which is why you know when Smoker-san is in a room before you see him, and well...
+-> Volcanoes smell bad because of the sulfur so...
+    Coby: Yup. We don't talk about it for obvious reasons... I really don't want to be court-martialed or worse because well...
+-> He smells like the world's largest cabbage cook-off.
+    Coby: It's rude and you shouldn't say it.
+-> Something about if you can't say anything nice?
+    <<set $ccwd2C_points +=1>>
+    Coby: Pretty much, now we have to get rid of these... I guess we'll see what Drake-san and Meppo-san have to say.
+-> Got it. If it's true though...
+    Coby: Still shouldn't say it especially if you want to keep your job. Now we have to get rid of these... I guess we'll see what Drake-san and Meppo-san have to say.
+The offending fliers are put to the side for now as you continue to work to set up the information booth. Everything is sorted into its proper spots and piles all ready for the big day. When you are done, you grab the stack of offensive anti-Marine propaganda and hide it in the booth.
+===
+
+title: workday_coby_crew_2_Group_setup_finish
+location: training grounds
+---
+
+Coby: OK, how are we looking?
+Drake: We've just gotten done now. I believe that's everything?
+Coby: For the most part. We have some questionable fliers we need to get rid of before the big day, but otherwise I think we're solid.
+Helmeppo: We should still have another look around to be sure...
+-> Sure, let's start here!
+    <<jump workday_coby_crew_2_Group_recap>>
+-> Let's go back from the beginning and work our way up.
+    <<jump workday_coby_crew_2_Group_recap>>
+-> Eh, I think we're done. Let's call it a day.
+    <<jump workday_coby_crew_2_Ending>>
+===
+
+title: workday_coby_crew_2_Group_recap
+location: training grounds
+---
+
+You go through all the different areas, but nothing looks amiss. Everything seems to be in place, and none of it's falling down, despite the goat's determination to trample and snack on things as you go.
+-> I'm actually getting pretty excited for the festival now!
+    Coby: So am I. It's one of my favorite times of the year.
+-> Great job, everyone. It all looks pretty solid. Hopefully we didn't do such a good job that we get stuck doing the next set of dirty work...
+    Helmeppo: Oh that will still likely happen. It's our lot in life.
+-> Couldn't have done it without your help, goatie!
+    Goat: Maaa!
+    It seems to know you're talking to it.
+<<jump workday_coby_crew_2_Ending>>
+===
+
+title: workday_coby_crew_2_Ending
+location: training grounds
+---
+
+Coby: I'm really looking forward to the festival this year. Hopefully all our hard work pays off and someone remembers to get rid of those fliers...
+Drake: We accomplished a lot in a limited amount of time. Thank you all for your hard work.
+Helmeppo: Well, that was a pain, but with your help it went a lot quicker than last time. Thanks for that.
+===

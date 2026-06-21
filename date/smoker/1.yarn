@@ -61,9 +61,9 @@ Smoker: I could show you my rocks sometime if you want.
 title: date_smoker_1_Part_2C
 ---
 Smoker: ...
-<<hide_characters hide>>
+<<show_characters>>
 You look around, desperate to break the awkward silence. Smoker puffs on his cigars. You see more rocks, more trees, and a small pond with lily pads on it. With the sound of a splash, a [shake]ripple[/shake] breaks on the surface.
-<<show_character smoker center show>>
+<<show_characters smoker>>
 -> Do you think that was a frog?
   Smoker: I don't know. Why, you like frogs? I think Drake does too.
 -> So...you like water?
@@ -180,9 +180,9 @@ Smoker: So I was thinking. We're not really doing much here and I got a shit-ton
 
 
 <<set_background "mess-hall" show>>
-<<hide_characters hide>>
+<<show_characters>>
 You follow Smoker back to the mess hall where you started your day. The lunch dishes are cleared but they have some cup noodles and containers of yogurt available, and the coffee carafes are steaming.
-<<show_character smoker center show>>
+<<show_characters smoker>>
 Smoker: Well, here we are.
 -> You want some coffee?
   Smoker: Sure. Three packets of sugar.
@@ -237,9 +237,9 @@ Smoker has you by the shoulder, his other arm snaking around your chest to bring
 
 
 
-<<hide_characters fade>>
+<<show_characters>>
 You sit down on the bank, far enough from the edge of the pond that you're no longer in any danger of falling in. Smoker, though, is close enough that you think he might not mind grabbing you again.
-<<show_character smoker center show>>
+<<show_characters smoker>>
 <<jump date_smoker_1_Two_point_end>>
 ===
 

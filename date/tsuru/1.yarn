@@ -1,11 +1,12 @@
 title: date_tsuru_1_main
 location: day(park)
+characters: []
 ---
 It is the start of another workday. You decide to get to HQ early.
 On the way there, you check your notes for today.
 {$name}: Tsuru's subordinates on duty today are...
 {$name}: Captain Mei for reconnaissance... Ensign Malina... for guarding duty...
-<<show_character tsuru center show>>
+<<show_characters tsuru>>
 You notice that Lady Tsuru is already there. Is she meditating?
 Tsuru: ...
 Tsuru: Good morning, {$name}. I see you're early.
@@ -44,8 +45,7 @@ title: date_tsuru_1_route1_interruption
 ---
 Before you are able to say anything, you hear the sound of boots storming toward the garden.
 It's two of Tsuru's subordinates.
-<<show_character placeholder("Marine1">>, left, show)
-<<show_character placeholder("Marine2">>, right, show)
+<<show_characters Marine1 tsuru Marine2>>
 Marine1: Lady Tsuru! {$name}!
 Marine2: Sorry for the interruption, ma'am, but we have a problem!
 -> What's the matter? (+)

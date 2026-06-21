@@ -1,0 +1,720 @@
+title: date_tsuru_4_main
+location: office
+---
+
+The end of another shift at Marine Headquarters...
+You sigh in relief. Now it's time to go back to your room and chill, except... Vice Admiral Tsuru is waiting for you right outside the office, a fond smile on her lips.
+Tsuru: Ah... Hello, {$name}.
+Tsuru: I have a... Well, proposition for you.
+-> Would you like to train together again?
+    <<set $td4_points +=1>>
+    Tsuru laughs.
+    Tsuru: It's quite good to hear you are this motivated.
+    Tsuru: No, I had something different in mind.
+    -> Are you... Going out somewhere?
+        Tsuru: As sharp as always, {$name}.
+    -> If this is about work, I'm not interested.
+        <<set $td4_points -=1>>
+        Tsuru: ...
+        Tsuru: Luckily for you, it isn't.
+Tsuru: This is quite unusual however... we haven't seen each other much outside of Headquarters, but...
+Tsuru: ...Well, perhaps that could change?
+{$name}: (!) (I think she's asking me out on a date...)
+-> Keep it cool
+    {$name}: Um, sure, why not?
+    Tsuru: OK!
+-> Panic
+    {$name} Outside of Headquarters? I think we have seen each other a lot outside of this building actually...
+    Tsuru cocks her head to the side.
+    Tsuru: Um... *Technically*, I suppose...
+    Tsuru: I was thinking of something more along the lines of doing something together...?
+    -> YES, yes I want to go on a date with you!
+        <<set $td4_points +=1>>
+        Tsuru seems quite surprised.
+        ...but pleasantly so.
+        Tsuru: That's... straightforward!
+        Tsuru: But maybe you'd like to hear my... *suggestion* first?
+    -> What? Um...
+        <<set $td4_points -=1>>
+        <<jump date_tsuru_4_early_end0>>
+Tsuru: Some time ago, Gion and I planned to go to the theater tonight, but she is out on duty and would like me to go on my own.
+Tsuru: Well, not on my own... She gave me permission to invite you.
+-> I'd love to!
+    <<set $td4_points -=1>>
+    Tsuru: Wonderful!
+    Tsuru: It's at the New Marineford Hall. *A Midsummer's Night Dream*, what do you think?
+    Tsuru: I am actually not that versed in theater...
+    -> It will be a good time anyway!
+        <<set $td4_points +=1>>
+        Tsuru: I'm sure it will.
+    -> Oh I don't care for it either!
+        <<set $td4_points -=1>>
+        Tsuru: OK... Well, think about it...
+-> Erm no, I already have other plans...
+    <<set $td4_points -=1>>
+    <<jump date_tsuru_4_early_end0>>
+-> Wait, *me* especially? What *exactly* does she know about me?!
+    <<set $td4_points -=1>>
+    Tsuru: Whatever I discuss with her is our business only!
+    Tsuru is blushing a little bit, though.
+Tsuru: I'm leaving you a note with the time and place we'll meet.
+Tsuru: I will see you later!
+<<jump date_tsuru_4_room>>
+===
+
+title: date_tsuru_4_early_end0
+location: office
+---
+
+Tsuru: Ah... OK. I will take that as a no.
+Tsuru: Well, no harm in keeping things strictly professional.
+Tsuru: Have a nice evening, {$name}.
+Tsuru leaves.
+{$name}: Wait...
+{$name}: What the hell just happened?
+===
+
+title: date_tsuru_4_room
+location: quarters
+---
+
+You are back in your room, getting ready for tonight's date.
+{$name}: What should I wear? Something...
+-> ...classy and nice.
+    <<set $td4_points +=1>>
+    You imagine Tsuru's reaction. She's rarely seen you made up...
+    Yes... This will work to impress her!
+-> ...sexy and adventurous.
+    <<set $td4_points -=1>>
+    You imagine Tsuru's reaction.
+    Ugh... You don't think she will like this.
+    You're having an evening at the opera! This is for sure too much.
+    You will have to wear something that doesn't match your personality to that extent.
+-> ...casual and informal.
+    <<set $td4_points -=1>>
+    You imagine Tsuru's reaction.
+    You don't think she will like this. For sure, she expects you to dress up, even if you're comfortable in jeans and sneakers.
+    You will have to wear something that doesn't match your personality that much.
+{$name}: How about accessories? I could wear...
+-> ...a tie!
+    <<set $td4_points +=1>>
+    {$name}: This will look great on me. And Tsuru will like it if I dress formally. It's a way of showing her that I appreciate our time together.
+    {$name}: I hope we don't show up wearing the same thing. That would be funny.
+-> ...simple earrings!
+    <<set $td4_points +=1>>
+    {$name}: This will look great on me, and it's fitting for the evening out.
+    {$name}: I hope we don't show up wearing the same earrings. That would be funny.
+-> ...high-heeled boots!
+    <<set $td4_points -=1>>
+    {$name}: I like these boots, but they're not very practical.
+    {$name}: I can't see her liking this. I won't wear it.
+-> ...bright red lipstick!
+    <<set $td4_points -=1>>
+    {$name}: I think bright red lipstick looks great on me, but it's a bit flashy.
+    {$name}: I can't see her liking this. I won't wear it.
+-> ...no accessories at all!
+    {$name}: Can't go wrong this way!
+{$name}: Oh! There's something else.
+{$name}: My transponder snail...
+{$name}: If I don't take it, and there are any calls from work, I'll miss them.
+-> I should probably keep it.
+    Duty is duty. You put the snail in your pocket.
+    You're ready to go!
+    <<jump date_tsuru_4_with_snail>>
+-> I should probably leave it here. It's my day off, anyway.
+    It's your night off. You're entitled to it. You leave the snail in your room.
+    You're ready to go!
+    <<jump date_tsuru_4_no_snail>>
+===
+
+title: date_tsuru_4_with_snail
+location: town
+---
+
+You make your way to the New Marineford town. It's Friday, and the night is warm and breezy. The night lights and busy streets make for a comfortable atmosphere.
+*Bere-bere-bere-bere!*
+{$name}: Hello, this is {$name}.
+Tsuru: Hello! How are you, dear {$name}?
+Tsuru: I'm ready, a bit earlier than expected... Would you like to come pick me up?
+Tsuru: Or should we meet there earlier?
+-> I'd like to visit you!
+    Tsuru: Very well. I'll wait for you, {$name}.
+    <<jump date_tsuru_4_with_snail_home>>
+-> Let's meet earlier!
+    Tsuru: Very well.
+    <<jump date_tsuru_4_with_snail_queue>>
+===
+
+title: date_tsuru_4_with_snail_home
+location: town
+---
+
+It takes a few minutes to get there on foot. Tsuru lives in a nice, quaint house in a quiet corner of town. It is surrounded by a gate, thick with ivy; there is a pond, a birdhouse, and a few plants in beautiful pots. Warm light pours out through the patterned window curtains.
+She has obviously put care into making her home cozy. You ring the bell.
+Tsuru answers the door, nicely dressed.
+Tsuru: Ah! {$name}. I am so glad you came here.
+You look down, where something *fuzzy*...? brushes against your legs.
+A cat!
+-> Oh! Kitty kitty~
+    Tsuru: That's Yuki. She seems to like you...
+    Tsuru: But please don't pet her! She gets scared easily.
+-> Can I pet it?
+    Tsuru: Oh! Well, Yuki seems to like you.
+    Tsuru: Let her get comfortable and approach you first, please.
+-> Get it away from me!
+    <<set $td4_points -=1>>
+    Tsuru: I didn't realize you don't like cats.
+    Tsuru: It seemed like something important to note...
+    Well, that sounded ominous. Tsuru places the cat somewhere inside the house, and then comes back to greet you.
+Tsuru: Please, come in, {$name}. I have fixed a tea for us before we get going.
+-> Compliment her
+    <<set $td4_points +=1>>
+    {$name}: You look beautiful!
+    Tsuru blushes slightly.
+    Tsuru: Ah... Well, thank you, {$name}.
+-> Serve her tea first
+    <<set $td4_points -=1>>
+    You take the teapot.
+    Tsuru: {$name}, I'd rather you...
+    ...You spill a few drops on the coffee table.
+    Tsuru: ...Be careful.... And besides, you're my guest! You shouldn't be the one to serve me tea. Sit down!
+The two of you sit together around her table, cat purring on the cozy carpet.
+Tsuru serves herbal tea for you both and a few pastries in the shape of flowers.
+-> Make small talk about work.
+    <<set $td4_points +=1>>
+    Tsuru: I see that you have brought your transponder with you.
+    Tsuru: I, too, am technically on duty all night, since Gion is gone.
+    Tsuru: Well... That's how things are in our line of duty, isn't it?
+    Tsuru: But I digress...
+-> Ask about the theater.
+    {$name}: Have you gone to see a lot of plays like this before?
+    Tsuru chuckles.
+    Tsuru: Not really, no. It's rare. But I am happy that New Marineford has grown enough that there's an opera, and concerts.
+    -> I'm not sure I like the idea, going to see some play while there's work to do. (-)
+        Tsuru: I don't think there is any harm in escapism.
+    -> I love it! I'd go to watch all kinds of opera and musicals if I could! (+)
+        Tsuru: I like your enthusiasm! Maybe you can teach me a few things about it, then...
+    -> I have no idea about the play.
+        Tsuru laughs.
+        Tsuru: We are both quite green, then.
+-> Ask about her family.
+    {$name}: Do you and Gion usually do a lot of things together in your free time?         Tsuru: Yes, indeed! As you know, she used to be one of my cadets. She is like a sister to me!
+    -> She seems very nice...
+        <<set $td4_points +=1>>
+        Tsuru: I think we should all gather together sometime.
+    -> And now she's surpassed you, eh?
+        Tsuru chuckles.
+        Tsuru: Often, a disciple will grow more than the master...
+    -> She really should have gotten that Admiral position, huh?
+        <<set $td4_points -=1>>
+        Tsuru sighs.
+        Tsuru: Ah... I've discussed this at length with her.
+        Tsuru: I would rather not talk about politics now, if you don't mind.
+-> Comment on the tea.
+    {$name}: This is delicious!
+    Tsuru: Thank you. These are cherry blossom biscuits.
+    {$name}: I know I've seen these pastries somewhere before...
+    Tsuru smiles slightly.
+    Tsuru: The Fleet Admiral favors them. He used to be my disciple, too.
+    -> {$name} Fleet Admiral Sakazuki, that psychopath?!
+        <<set $td4_points -=1>>
+        Tsuru: I wouldn't say that about my boss if I were you...
+    -> {$name} Um... I wasn't expecting that.
+        <<set $td4_points +=1>>
+        {$name}: You have some odd friends, Tsuru.
+        Tsuru chuckles.
+        Tsuru: That might be true.
+        Tsuru: Sakazuki is not the only one—it is surprising the things some of the most feared people in the world have to say, when one listens.
+        Tsuru: Perhaps you have heard of a certain Warlord, Donquixote Doflamingo... Well, that's a topic for another day.
+Your conversation continues until it is almost time to go.
+Tsuru: Ah! Time flies when you have good company...
+But!
+A sudden ring cuts through her words!
+Snail: *Bere-bere-bere-bere!*
+You and Tsuru exchange glances.
+Tsuru: Hm. I'll get that.
+Tsuru: Tsuru here.
+Officer: Lady Tsuru! I didn't want to interrupt you, but Vice Admiral Gion is on the other side of the Grand Line and... We have a situation over here!
+Tsuru: A situation?
+-> What is their location? Can we help them?
+    <<set $td4_points +=1>>
+    Tsuru: Let me ask.
+    Tsuru: How serious is the problem?
+-> Oh, great. Can we ever have one day off?
+    <<set $td4_points -=1>>
+    Tsuru signals at you to stop.
+    Tsuru: This sounds serious, {$name}. Let me talk.
+-> You feel disappointed but say nothing.
+    Tsuru: How serious is the problem?
+Officer: Well... We are trying to return to HQ with some captures we made. But three pirate vessels are blocking us and keeping us from leaving!
+Officer: We have sent a distress signal to all officers of your division. But our communications could break off at any moment.
+-> Blocking? Are they trying to save the captured pirates?
+    <<set $td4_points +=1>>
+    Tsuru: Good question.
+    Officer: They haven't made any demands yet.
+-> We have to go help them.
+    Tsuru: Yes. We do.
+    Tsuru: At the bare minimum, we'll have to inform the higher command and dispatch some officers.
+    Tsuru: Three ships...
+-> Sulk
+    <<set $td4_points -=1>>
+    Tsuru: Understood.
+    Tsuru: {$name}. We have to help.
+    Tsuru: I understand if you don't want to come with me, but our plans will have to wait.
+    <<jump date_tsuru_4_end00>>
+Tsuru: Come, {$name}. There is no time to lose.
+You gather your Marine coats in a rush and make your way toward the docks...
+<<jump date_tsuru_4_on_ship>>
+===
+
+title: date_tsuru_4_with_snail_queue
+location: town
+---
+
+You make your way to the theater.
+A very nice, old building, with patterns sculpted on its facade. A sharply dressed public is already gathering outside.
+A few minutes later, Tsuru waves to you. She is so nicely dressed!
+Tsuru: Ah! Hello, {$name}. I hope I didn't keep you waiting.
+-> Compliment her
+    <<set $td4_points +=1>>
+    {$name}: You look beautiful!
+    Tsuru blushes slightly.
+    Tsuru: Ah... Well, thank you, {$name}.
+-> Well, you did! But no hard feelings.
+    <<set $td4_points -=1>>
+    Tsuru: I did? Ahem...
+    Tsuru clearly wasn't expecting this response.
+    Tsuru: Sorry for the inconvenience, I suppose.
+The two of you could enter the theater... But there's still some time left until the show begins and it's nice outside.
+// {It's possible to pick 2 of the following options:} //HOW DO??
+-> Make small talk about work
+    <<set $td4_points +=1>>
+    Tsuru: I see that you have brought your transponder with you.
+    Tsuru: I, too, am technically on call all night, since Gion is gone.
+    Tsuru: Well... That's how things are in our line of duty, isn't it?
+    Tsuru: But I digress...
+-> Ask about the theater
+    {$name}: Have you ever watched a play here before?
+    Tsuru chuckles.
+    Tsuru: I don't have much time anymore, but I did like investing some time in... Well, culture, in old Marineford.
+    -> I'm not sure I like the atmosphere here.
+        <<set $td4_points -=1>>
+        {$name}: It seems so stuck-up! And we are Marines!
+        Tsuru: Well... I don't know if I agree with that.
+        Tsuru: Can it really hurt to try something new?
+    -> I'm sure we're going to love it! I love Shakespeare.
+        <<set $td4_points +=1>>
+        Tsuru: Oh, you do?
+        Tsuru: It seems like I could learn a thing or two from you.
+    -> To be honest... I have no idea about this play.
+        Tsuru laughs.
+        Tsuru: We are both quite green, then.
+-> Ask about her family.
+    {$name}: Do you also meet up with Kujaku sometimes?
+    Tsuru: I used to do that more when she was younger. She spends more time with her friends in the G-7 now...
+    -> I'd love to meet her!
+        <<set $td4_points +=1>>
+        Tsuru: Of course! I think she would like you, too.
+    -> Pretty rebellious, huh?
+        <<set $td4_points -=2>>
+        Tsuru sighs.
+        Tsuru: I didn't think you were the type to judge the SWORD youngsters...
+        Tsuru: I prefer not to discuss this right now.
+-> Poke fun at the people around here.
+    <<set $td4_points -=1>>
+    {$name}: The crowd around here is a bit stuck-up, isn't it?
+    Tsuru: Excuse me?!
+    Tsuru: Aren't we part of the ‘crowd' around here, {$name}?!
+A sudden ring cuts through her words!
+Snail: *Bere-bere-bere-bere!*
+You and Tsuru exchange glances.
+Tsuru: Hm. I'll get that.
+Tsuru: Tsuru here.
+Officer: Lady Tsuru! I didn't want to interrupt you, but Vice Admiral Gion is on the other side of the Grand Line and... We have a situation over here!
+Tsuru: A situation?
+-> What is their location? Can we help them?
+    <<set $td4_points +=1>>
+    Tsuru: Let me ask about it.
+    Tsuru: How serious is the problem?
+-> Oh, great. Can't we ever have one day off?
+    <<set $td4_points -=1>>
+    Tsuru signals at you to stop.
+    Tsuru: This sounds serious, {$name}. Let me talk.
+-> You feel disappointed but say nothing.
+    Tsuru: How serious is the problem?
+Officer: Well... We are trying to return to HQ with some captures we made. But three pirate vessels are blocking us and keeping us from leaving!
+Officer: We have sent a distress signal to all officers of your division. But our communications could break off at any moment.
+-> Blocking? Are they trying to save the captured pirates?
+    <<set $td4_points +=1>>
+    Tsuru: Good question.
+    Officer: They haven't made any demands yet.
+-> We have to go help them
+    Tsuru: Yes. We do.
+    Tsuru: At the bare minimum, we'll have to inform the higher command and dispatch some officers.
+    Tsuru: Three ships...
+-> Sulk
+    <<set $td4_points -=1>>
+    Tsuru: Understood.
+    Tsuru: {$name}. We have to help.
+    Tsuru: I understand if you don't want to come with me, but our plans will have to wait.
+    <<jump date_tsuru_4_end00>>
+Tsuru: Come, {$name}. There is no time to lose.
+<<jump date_tsuru_4_on_ship>>
+===
+
+title: date_tsuru_4_on_ship
+location: day(ship)
+---
+
+Tsuru has coordinated two teams of officers to set sail on her pink-sailed warship.
+On deck, you discuss the strategy with her.
+-> I don't think that we will make it on time.
+    <<set $td4_points -=1>>
+    Tsuru: Don't you trust me, {$name}?
+    Tsuru: We will sail over a very fast current that runs parallel to the Red Line.
+    Tsuru: The pirates won't know we are coming.
+-> What do we know about the pirates until now?
+    <<set $td4_points +=1>>
+    Tsuru: Very good question.
+    Tsuru: These are the Nemo Pirates. A crew powerful enough to have multiple ships under their command.
+-> I'll await your orders!
+    Tsuru: Thank you, {$name}. Let me think.
+Tsuru: They might be looking for ransom...
+Tsuru: All men to their positions!
+Tsuru's ship creaks and groans in the current. A cutting wind hits the sails while, all around you, boots storm around the ship. The open sea at your left, Red Line on the right side. This is going faster than you imagined.
+You glance at Tsuru. Arms crossed, coat waving in the wind, nothing can rattle her. She's incredible!
+Tsuru: We are getting closer to—
+Tsuru: I need to know that you are OK with this, {$name}. We have two warships, so I won't involve you in the fighting unless it's absolutely necessary... If you don't want to, that is.
+-> No, we should go ahead and attack them all-out!
+    <<set $td4_points -=1>>
+    Tsuru: Don't be irresponsible! We still know too little about the situation.
+    Tsuru: You're sounding like Garp...
+-> I think we should approach the enemy carefully. Let's send only one of the ships first.
+    <<set $td4_points +=1>>
+    Tsuru: That is a good idea... That way, the enemy will think that we only dispatched one ship.
+    Tsuru: That is assuming none of them use Haki.
+    -> I'll fetch that information for you!
+        <<set $td4_points +=1>>
+        Tsuru: Thank you, {$name}.
+    -> Oh, I'm sure they don't!
+        Tsuru: I'll find out for sure.
+    -> I'm fine with going or with staying here. Whatever we need!
+        Tsuru: Very well.
+You see lights and hear swords clashing in the distance. Or is it a trick of the wind?
+Tsuru speaks into her transponder snail.
+Tsuru: Go ahead and speed ahead of us!
+Tsuru: Do you see those lights in the distance, {$name}?
+-> Let's go after them immediately! What if it's a distress signal from our men?
+    <<set $td4_points -=1>>
+    Tsuru: Don't act on an impulse.
+    Tsuru: It might be the pirates communicating with each other... Or trying to trick us.
+-> It seems like a Navy signal, but it's hard to tell.
+    <<set $td4_points +=1>>
+    Tsuru: Very true.
+    Tsuru: It might be a trick, or the pirates communicating with each other... Let's wait for our officers to assess the attack.
+In the distance, cannons thunder.
+Snail: Some pirates are aboard the Navy vessel and attempting to take control! The other pirates are trying to flee.
+-> How are the officers holding up?
+    <<set $td4_points +=1>>
+    Tsuru: That is the right question.
+    Tsuru repeats it into the snail.
+    Snail: With a few reinforcements, it should be possible to win control over the vessel!
+    Tsuru: That is fine. We have sent a ship in their direction already.
+-> We must help the officers! Let's sail directly into the battle.
+    <<set $td4_points -=1>>
+    Tsuru: {$name}, our officers should be able to hold a grip on their ship.
+    Tsuru: In case they don't, we have already sent reinforcements.
+-> The officers should be fine. Let's circle the battle and capture all the remaining pirates.
+    Tsuru: That is quite the bold thing to say, {$name}.
+    Tsuru speaks into the snail.
+    Tsuru: How are the officers holding up?
+    Snail: With a few reinforcements, it should be possible to win control over the vessel!
+Tsuru: OK, this is the time to decide.
+Tsuru: Should we barge into the battle, or circle it and make more captures?
+-> Into the battle!
+    <<jump date_tsuru_4_ship_end_neutral>>
+-> Make captures!
+    <<set $td4_points +=2>>
+    <<jump date_tsuru_4_ship_end_good>>
+===
+
+title: date_tsuru_4_ship_end_neutral
+location: day(ship)
+---
+
+Tsuru's ship thumps forward with a roar of its Dial system, and the ships — enemy and Navy — grow in the distance! Officers scramble to the cannons, landing a few shots around the enemy vessel that is attempting to flee. It's all very confusing in this cloud of smoke.
+Tsuru: Now. We're reclaiming our own ship!
+Once you're close enough, Tsuru intercepts the Navy ship and boards it, taking the pirates by surprise.
+There's a crowd of pirates shouting about how *pure and cleansed* they now feel after Tsuru's intervention! But the rest have fled...
+Once the fight has settled down and arrests have been made, Tsuru turns to you.
+Tsuru: Well... It was worth a try, {$name}. But there were no big losses.
+Tsuru: Thank you for your help.
+-> You're welcome!
+    Tsuru: And... Thanks for your understanding, too.
+-> Are we going to pick up where we left it off sometime?
+    <<set $td4_points +=1>>
+    Tsuru chuckles.
+    Tsuru: I'd love to.
+    Tsuru smiles and holds your hand.
+    <<jump date_tsuru_4_Date_Ends>>
+===
+
+title: date_tsuru_4_ship_end_good
+location: day(ship)
+---
+
+With a roar of the Dial system and a mighty creak, Tsuru's warship turns forward, making a long ‘U' around the battlezone.
+Officers scramble to the cannons and shoot. A cloud of gunpowder and smoke thickens the air, confusing the enemy.
+Once you're close enough, Tsuru intercepts the fleeing pirate ship.
+From the Navy deck, officers shoot at the unprepared crew.
+Tsuru can repel any attacks that come her way with Haki. Unafraid, she orders her crew to get closer until she can board the enemy ship.
+It's a victory!
+Once the battle has settled down and arrests have been made, Tsuru turns to you.
+Tsuru: Well, this was an unexpected end to the evening.
+-> It was awesome!
+    <<set $td4_points -=1>>
+    Tsuru: Well... That's a strange way to talk about battle...
+    Tsuru: I suppose I'm glad you had fun...
+-> Well, not what we were expecting, but it was OK...
+    Tsuru: And... Thanks for your understanding, too.
+-> {$name} Are we going to pick up where we left it off sometime?
+    <<set $td4_points +=1>>
+    Tsuru chuckles.
+    Tsuru: I'd love to.
+She smiles, holding your hand in hers.
+<<jump date_tsuru_4_Date_Ends>>
+===
+
+title: date_tsuru_4_no_snail
+location: town
+---
+
+You make your way to the New Marineford town. It's Friday, and the night is warm and breezy. The night lights and busy streets make for a comfortable atmosphere.
+There's still a little bit of time left.
+{$name}: Hmmm... Should I pick Tsuru up close to her home?
+{$name}: I can't make any calls, so I can't ask if that is OK with her.
+-> Pick her up
+    <<jump date_tsuru_4_no_snail_home>>
+-> Go to the theater directly
+    <<jump date_tsuru_4_no_snail_queue>>
+===
+
+title: date_tsuru_4_no_snail_home
+location: town
+---
+
+It takes a few minutes to get there on foot. Tsuru lives in a nice, quaint house in a quiet corner of town. It is surrounded by a gate, thick with ivy; there is a pond, a birdhouse, and a few plants in beautiful pots. Warm light pours out through the patterned window curtains.
+She has obviously put care into making her home cozy. You ring the bell...
+Tsuru answers, nicely dressed.
+Tsuru: Ah! {$name}.
+-> You look beautiful!
+    <<set $td4_points -=1>>
+    Tsuru: Thank you, but...
+    Tsuru: I wish you had called earlier.
+    -> I'm sorry, I couldn't wait.
+        <<set $td4_points +=1>>
+        Tsuru: I understand.
+        Tsuru: Well, then. Please come in. And excuse the mess!
+    -> Oh, I'll just wait outside, then!
+        Tsuru: I know you're not serious about that, {$name}.
+        Tsuru: Please, come in. And excuse the mess!
+-> I hope it's OK that I came here first!
+    <<set $td4_points +=1>>
+    Tsuru: ...Well, I do wish you had called, {$name}. I find it easier to plan in advance.
+    Tsuru: Ah... It's not a big issue.
+    Tsuru: Please, come in. And excuse the mess.
+You accept her invitation, although you struggle to get what she means by “mess”! The entrance looks quite traditional, with a small pond and few plants in beautiful pots. She obviously puts care into making a warm impression.
+There's a white cat in the corner, meowing at you. It has a purple star-shaped mark over its eye.
+Tsuru: Oh, that's Yuki.
+-> Here, kitty kitty...
+    <<set $td4_points -=1>>
+    You try to approach, but the cat hisses at you.
+    Tsuru: Ah, excuse her, {$name}... Sometimes she is afraid of new faces.
+    Yuki's tail sways in the air.
+    -> This must mean she likes me!
+        <<set $td4_points -=1>>
+    -> I think she's still undecided...
+-> Can I pet her?
+    <<set $td4_points +=1>>
+    The cat meows, but looks at you warily.
+    Tsuru: Ah... Maybe let her approach you first, {$name}.
+    Yuki's tail sways.
+    -> Maybe she likes me!
+    -> Seems that she is still undecided...
+-> I don't like animals at all!
+    <<set $td4_points -=1>>
+    The cat hisses at you and darts away.
+    Tsuru: You don't? Well... That seems like something important to note.
+    That... Sounded quite ominous...
+Tsuru: Well, we will be leaving soon anyway.
+Tsuru: You are welcome to wait here, make yourself comfortable.
+There is a sudden ring, cutting through your silence.
+Snail: *Bere-bere-bere-bere!*
+Tsuru: Hm. I'll get that.
+Tsuru: Tsuru here.
+Officer: Lady Tsuru! I didn't want to interrupt you, but... We have a situation over here!
+Tsuru: A situation?
+-> What is their location? Can we help them?
+    <<set $td4_points +=1>>
+    Tsuru: Let me ask.
+    Tsuru: How serious is the problem?
+-> Can't you even have one day off, Tsuru?
+    <<set $td4_points -=1>>
+    Tsuru: This sounds serious, {$name}. Let me talk.
+-> You feel disappointed but say nothing.
+    Tsuru: How serious is the problem?
+Officer: Well... We are trying to return to HQ with some captures we made. But three pirate vessels are blocking us and keeping us from leaving!
+Officer: We have sent a distress signal to all officers of your division. But our communications could break off at any moment.
+-> Blocking? Are they trying to save the captured pirates?
+    <<set $td4_points +=1>>
+    Tsuru: Good question.
+    Officer: They haven't made any demands yet!
+-> We have to go help them.
+    Tsuru: Yes. Well, at least I do.
+    Tsuru: At the bare minimum, I'll have to inform the higher command and dispatch some officers.
+    Tsuru: Three ships...
+-> Sulk
+    <<set $td4_points -=1>>
+    Tsuru: Understood.
+Tsuru: {$name}. I am taking this into my own hands.
+Tsuru: I'm sorry, but we will need to meet another day.
+-> Let me come with you!
+    <<set $td4_points +=1>>
+    Tsuru:...
+    Tsuru: I don't think that is a good idea. I noticed you were planning on having a quiet night and didn't hear the distress call.
+    Tsuru: I cannot blame you, since you're not on active duty anymore...
+    Tsuru: But I cannot afford to do the same.
+    -> Insist!
+        <<set $td4_points +=1>>
+        Tsuru: ...
+        Tsuru: Do you truly care that much?
+        Tsuru: Well, I won't keep you from doing what you must.
+        Tsuru: Take your coat, {$name}. We have no time to lose.
+        <<jump date_tsuru_4_on_ship>>
+    -> Don't insist.
+        Tsuru: Fine.
+-> Say nothing.
+    Tsuru: I understand it's disappointing, but...
+    Tsuru: I'm afraid this can happen at any time in the Navy.
+-> I guess I'll have to go with you, then...
+    <<set $td4_points -=1>>
+    Tsuru: No. Not with that attitude.
+    Tsuru: Lives are on the line, {$name}.
+Tsuru: I apologize again, and will see you soon.
+Tsuru leaves.
+Well, that didn't go as you were expecting...
+<<jump date_tsuru_4_Date_Ends_Bad>>
+===
+
+title: date_tsuru_4_no_snail_queue
+location: town
+---
+
+You make your way to the theater.
+A very nice, old building, with patterns sculpted on its facade. A sharply dressed public is already gathering outside.
+{$name}: Well, now I just have to wait for Tsuru to arrive.
+{$name}: She has the tickets, after all...
+...
+...
+The doors are opening...
+-> Wait for some more time
+    {$name}: Madam Tsuru is very reliable. I'm sure she is going to be here soon...
+    {$name}: Unless something happened...
+    -> Wait for longer
+        <<jump date_tsuru_4_more_waiting>>
+    -> Go to Tsuru's house
+        <<set $td4_points -=1>>
+        <<jump date_tsuru_4_earlyend_nosnail_home>>
+    -> Leave
+        <<set $td4_points -=2>>
+        <<jump date_tsuru_4_earlyend_nosnail_bad>>
+-> Leave
+    {$name}: Did she leave me hanging?! Unless something happened...
+    {$name}: I have no way to find out unless I go to her place.
+    -> Go pick Tsuru up
+        <<set $td4_points -=1>>
+        <<jump date_tsuru_4_earlyend_nosnail_home>>
+    -> Leave
+        <<set $td4_points -=2>>
+        <<jump date_tsuru_4_earlyend_nosnail_bad>>
+===
+
+title: date_tsuru_4_more_waiting
+location: town
+---
+
+You're starting to worry she might've stood you up?
+-> This can't be... It's not like Tsuru at all.
+    Something's wrong.
+    {$name}: I better check on her.
+    <<set $td4_points -=1>>
+    <<jump date_tsuru_4_earlyend_nosnail_home>>
+-> I'm starting to think she stood me up!
+    <<set $td4_points -=2>>
+    <<jump date_tsuru_4_earlyend_nosnail_bad>>
+===
+
+title: date_tsuru_4_earlyend_nosnail_home
+location: town
+---
+
+You make your way to Tsuru's place, but it seems like no one is home...
+{$name}: ...
+A day later, you are back in the office and run into Tsuru. //HOW DO?? Location change
+Tsuru: {$name}! I wanted to see you.
+Tsuru: I am very sorry. I couldn't reach you.
+Tsuru: Something took place that required my attention.
+Tsuru: I hope you will be able to forgive me, but... Duty is duty.
+<<jump date_Tsuru_4_Date_Ends_Oops>>
+===
+
+title: date_tsuru_4_earlyend_nosnail_bad
+location: quarters
+---
+
+The more you wait, the angrier you get.
+You storm your way back home and hope she has a really good excuse for this!
+A day later, you are back in the office and run into Tsuru. //HOW DO?? Location change
+Tsuru: {$name}! I wanted to see you.
+Tsuru: I am very sorry. I couldn't reach you.
+Tsuru: Something took place that required my attention.
+Tsuru: I hope you will be able to forgive me, but... Duty is duty.
+<<jump date_Tsuru_4_Date_Ends_Oops>>
+===
+
+title: date_tsuru_4_Date_Ends
+location: quarters
+---
+
+When you finally return home, the world feels bright and your hand still tingles with warmth. Wow...what a dame...
+You can't wait to see her tomorrow though your stomach is full of butterflies. What a great feeling this is!
+===
+
+title: date_tsuru_4_Date_Ends_Bad
+location: quarters
+---
+
+Man, talk about putting your foot in your mouth. And that's what you did. Hopefully she forgives you but... you may have struck out. That's a rough one buddy. BUT perhaps you can still salvage something!
+You vow not to give up!
+===
+
+// title: date_tsuru_4_Date_Ends_Bad
+// location: office
+// ---
+
+// If they looked up the definition of "That went badly", they would find exactly what you just experienced. Rough one buddy. Hopefully you can salvage it!
+// ===
+
+title: date_tsuru_4_end00
+location: quarters
+---
+
+That could have gone better. Welp, nothing to do about it now!
+===
+
+title: date_Tsuru_4_Date_Ends_Oops
+location: office
+---
+
+Oh so something did come up! Guess you've learned a valuable lesson called "Always have your snail!"
+===

@@ -3,14 +3,15 @@ location: day(training_grounds)
 ---
 <<declare $gd1_correct_answers = 0>>
 
-PC: Huh, this must be the training grounds! Garp should be here... I hope.
-PC: Hey... what's that?!
-<<show_character garp d show>>
+{$name}: Huh, this must be the training grounds! Garp should be here... I hope.
+{$name}: Hey... what's that?!
+<<show_characters  garp>>
 Garp: WATCH OUT!
 <<start_effect shake>>
-[shake]A cannonball hurtles towards your head!!![/shake]
-<<hide_character garp fade>>
-<<show_character garp center fade>>
+A cannonball hurtles towards your head!!! #shake
+<<show_characters>>
+<<wait 1>>
+<<show_characters garp>>
 Garp: Are you alright?
 -> Ha! That was nothing.
     <<jump date_garp_1_route_a>>

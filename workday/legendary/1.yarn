@@ -43,7 +43,7 @@ Tsuru: We could use your help with the final touches. There are a lot of... conf
     Tsuru: We already have a demonstration, Garp - not everything can be accomplished by throwing punches!
 -> You said you, Garp, and Sengoku will be performing the speech - what about Rosinante?
     Sengoku: Inspiration! Rosi here is a shining example of what a Marine can be. #expression:smile
-    Rosi: I completed a mission a short while ago, something extremely dangerous. The higher ups decided I should get promoted for that... and get some recognition.
+    Rosinante: I completed a mission a short while ago, something extremely dangerous. The higher ups decided I should get promoted for that... and get some recognition.
     Sengoku: As you deserve. We need to put the finishing touches on your promotion speech as well...
     Tsuru: Let's focus on this speech first, gentlemen.
 Tsuru: Now, our first decision is about how we should address the recent rise in piracy...
@@ -394,5 +394,5 @@ They bid their farewell to you and you leave, your mood lifting considerably aft
 
 title: workday_legendary_1_EndOfWorkday
 ---
-<<jump LegendaryDatesOne>>
+<<jump main>>
 ===
