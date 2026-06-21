@@ -5,7 +5,7 @@ It's late at night. You are planning on sleeping soon, but the idea of a midnigh
 You pick up the bag full of snacks just as you hear a powerful crashing sound right outside the door. You tense up. Did enemies infiltrate?
 You don't have any weapons on you but you still decide to investigate. You peek outside the door only to see...
 [i]Rosinante?[/i]
-<<show_character rosinante center show>>
+<<show_characters rosinante>>
 He's lying on the floor, fallen over, with many cardboard boxes spread out around him. You run to help.
 {$name}: Sir! Are you alright? What happened?
 Rosinante: No need to worry, {$name}.

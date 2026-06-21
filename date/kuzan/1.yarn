@@ -6,7 +6,7 @@ You decide to go for a walk in the park on your day off. It's too lovely out to 
 // Feels like a rather jarring and telly introduction. Alternative suggestion provided.
 {$name}: "Is that Admiral Aokiji?”
 // Adjusted to fit alternate intro suggestion
-<<show_character kuzan center fade>>
+<<show_characters kuzan>>
 The Admiral lifts his sleeping mask to eye the PC.
 {$kuzan}: Arara, it's {$name}.
 -> Good afternoon sir! (2)

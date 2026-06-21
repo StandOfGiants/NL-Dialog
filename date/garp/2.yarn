@@ -1,6 +1,7 @@
 title: date_garp_2_main
 location: Mess Hall
 ---
+<<declare $gd2_points = 0>>
 
 {$name}: Ugh, I'm starving. It wouldn't be a bad idea to grab some food before I go look for Garp...
 {$name}: Finally here. Mmm, something smells good! I should hop in line...
@@ -303,13 +304,14 @@ Garp: Let's see you put your money where your mouth is! Why don't you cook somet
 title: date_garp_2_game_sequence1
 location: mess hall
 ---
-
+<<declare $gd2_right_order = 0>>
 Garp: So! What will you cook?
-{$name}: (Hmmm... That's a good question...)
-{$name}: You know what? I'll make rice crackers!
+Hmmm... That's a good question...
+-> You know what? I'll make rice crackers!
 Garp: Bwahahaha! Alright, then! Give it your best shot!
-{$name}: (Ok! Let's think through this. What's the first ingredient?)
+Ok! Let's think through this. What's the first ingredient?
 -> Flour!
+    <<set $gd2_right_order += 1>>
     Garp: Good!
     <<jump date_garp_2_game_sequence2>>
 -> Sugar!
@@ -324,7 +326,7 @@ title: date_garp_2_game_sequence2
 location: mess hall
 ---
 
-{$name}: (Ok, got that... and the rest of the ingredients! This kitchen has everything. Alright, up to seasonings. What should I go with?)
+Ok, got that... and the rest of the ingredients! This kitchen has everything. Alright, up to seasonings. What should I go with?
 -> Sugar!
     Garp: Ick.
     <<jump date_garp_2_wrong_order>>
@@ -332,6 +334,7 @@ location: mess hall
     Garp: Urgh....
     <<jump date_garp_2_wrong_order>>
 -> Salt!
+    <<set $gd2_right_order += 1>>
     Garp: Yeah, that's perfect!
     <<jump date_garp_2_game_sequence3>>
 ===
@@ -340,12 +343,13 @@ title: date_garp_2_game_sequence3
 location: mess hall
 ---
 
-{$name}: (Alright, they're ready to go in the oven! How should I cook them...)
+Alright, they're ready to go in the oven! How should I cook them...
 -> Make ‘em soft!
     {$name}: ...
     Garp: Aw, no!
     <<jump date_garp_2_wrong_order>>
 -> Make ‘em crispy!
+    <<set $gd2_right_order += 1>>
     {$name}: ...
     Garp: As far as I'm concerned, they're perfect!
     <<jump date_garp_2_right_order>>
@@ -397,24 +401,22 @@ location: mess hall
 ---
 
 Garp: Alright, {$name}, I'm sure Tsuru's missing you by now.
-IF right_ORDER = 3//HOW DO??
-Garp: Thanks for the great meal, {$name}. You clearly know what you're doing in the kitchen, so if you ever get bored of getting paper cuts, just let me know! I'd love to eat a meal of yours again!
-<<set $gd2_points +=2>>
-<<jump date_garp_2_bestend>>
-
-IF right_order = 2 //HOW DO??
-Garp: That wasn't too shabby, {$name}! Thanks for the treat. Let me know if you're up for cooking something again or if you just want to grab a meal—either one's fine with me.
-<<set $gd2_points +=1>>
-<<jump date_garp_2_goodend>>
-
-IF Right_order =1 //HOW DO??
-Garp: Keep practicing your cooking, and maybe next time you'll finish strong. Still, that was pretty fun! Come sit with me again some time!
-<<jump date_garp_2_neutralend>>
-
-IF None right_Order //HOW DO??
-Garp: Eh, the crackers didn't turn out that great, but the company was nice. Go ahead and get back; I'll be around soon. I'm still pretty hungry, and those rice crackers weren't exactly edible...
-<<set $gd2_points -=1>>
-<<jump date_garp_2_neutralend>>
+<<if $gd2_right_order >= 3>>
+    Garp: Thanks for the great meal, {$name}. You clearly know what you're doing in the kitchen, so if you ever get bored of getting paper cuts, just let me know! I'd love to eat a meal of yours again!
+    <<set $gd2_points +=2>>
+    <<jump date_garp_2_bestend>>
+<<elseif $gd2_right_order >= 2>>
+    Garp: That wasn't too shabby, {$name}! Thanks for the treat. Let me know if you're up for cooking something again or if you just want to grab a meal—either one's fine with me.
+    <<set $gd2_points +=1>>
+    <<jump date_garp_2_goodend>>
+<<elseif $gd2_right_order >= 1>>
+    Garp: Keep practicing your cooking, and maybe next time you'll finish strong. Still, that was pretty fun! Come sit with me again some time!
+    <<jump date_garp_2_neutralend>>
+<<else>>
+    Garp: Eh, the crackers didn't turn out that great, but the company was nice. Go ahead and get back; I'll be around soon. I'm still pretty hungry, and those rice crackers weren't exactly edible...
+    <<set $gd2_points -=1>>
+    <<jump date_garp_2_neutralend>>
+<<endif>>
 ===
 
 title: date_garp_2_route_j

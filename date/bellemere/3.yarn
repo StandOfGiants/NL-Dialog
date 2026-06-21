@@ -3,6 +3,7 @@ location: docks
 characters: [bellemere]
 ---
 <<declare $bed3_points = 0>>
+<<declare $bed3_mikan = false>>
 
 Bellemere: Hey, {$name}, let's bar!
 {$name}: Let's... what?
@@ -289,8 +290,7 @@ Bellemere: WOOO! In your FACE, {$name}!
 She is not a very gracious winner.
 Bellemere: Don't look so down! Hell, I'll still share my mikans with you. You can have a bushel to keep, too. But keep in mind it's a gift out of the goodness of my heart, alright? I totally destroyed you at this game!
 Well... she wasn't wrong.
-
-SET CONDITION: MIKANS EARNED //HOW??
+<<set $bed3_mikan = true>>
 
 <<jump date_bellemere_3_dance>>
 ===

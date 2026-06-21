@@ -56,32 +56,29 @@ Now, to find something to wear...
 title: date_borsalino_4_gettingready
 location: quarters
 ---
+<<declare $bod4_dressing_points = 0>>
 
-// {Depending on the amount of positives you get in the next questions, Borsalino will have one of three reactions.} //HOW DO??
 You stare into your closet. Are you going to be dressing up?
 -> You'd rather do casual and comfy, don't think this date will be anything fancy. (-)
     Oh, of course! The bakery trip on a lazy Sunday look...what's not to love about joggers anyway?
 -> Not TOO much... Don't want to look too interested.
-    <<set $bod4_points -=1>>
     Business casual it is! Maybe he'll appreciate the intentional lack of effort!
 -> Yes, you'll wear something that you really shine in!
-    <<set $bod4_points +=1>>
+    <<set $bod4_dressing_points +=1>>
     Bring on that glamour! Borsalino loves to dazzle, after all...
 How about accessories?
 -> Nothing exaggerated, but all planned to match!
     Sounds good! At the end of the day, you've won him over by being yourself.
 -> Sure, really glamorous and SHINY! Bring it on!
-    <<set $bod4_points +=1>>
+    <<set $bod4_dressing_points +=1>>
     You're pretty sure the Admiral has found his match in you. You'll make a great couple. Blinding, almost.
 -> No, that's not really my thing, I'll just throw my work boots on and call it a day.
-    <<set $bod4_points -=1>>
     ...Well, that's a decision!
 Hair gel, makeup, cologne, perfume?
 -> Just a touch, be seductive. Nothing wrong with spicing things up.
-    <<set $bod4_points +=1>>
+    <<set $bod4_dressing_points +=1>>
     Very good! Bring on the glamour!
 -> I'll just BATHE in the best perfume I can find.
-    <<set $bod4_points -=1>>
     You proceed to cough at yourself... well, you certainly have an *aura* now!
 -> I think I look the best when I'm being myself, so I won't do more or less than I usually do.
     That's a very good point!
@@ -89,25 +86,26 @@ Looking good!
 -> Yes!
 -> Still panicking!
 -> Scratch all this, I'll just get a pinstriped suit and aviators!
-    <<set $bod4_points +=2>>
+    <<set $bod4_dressing_points +=2>>
 There's a knock at the door...
 Well, that was fast! You were half-expecting him to be an hour late, as usual.
 But of course, he can teleport.
 {$borsalino}: Hello, dear {$name}...
-// {If 0, 1 positives in the previous interaction} //HOW DO??
-{$borsalino}: Oh, dear, did I forget to tell you we were going for dinner together...? My~y bad...
-You feel your face burning. So this WAS a fancy date!
-This airheaded old man.
-Oh, well.
-// {If 2 positives in the previous interaction} //HOW DO??
-{$borsalino}: Hello~o, dear {$name}.
-{$borsalino}: You look very nice...
-{$borsalino}: ...Let's go, shall we...?
-// {If 3, 4 positives in the previous interaction} //HOW DO??
-{$borsalino}: Ah! {$name}! You look radiant. It's good that I have my sunglasses on.
-{$borsalino}: Let's go, my dear~...
-You cling to his arm as he guides you downstairs, quite proud of his date.
-He will definitely boast about this at any chance he gets.
+<<if $bod4_dressing_points >= 3>>
+    {$borsalino}: Ah! {$name}! You look radiant. It's good that I have my sunglasses on.
+    {$borsalino}: Let's go, my dear~...
+    You cling to his arm as he guides you downstairs, quite proud of his date.
+    He will definitely boast about this at any chance he gets.
+<<elseif $bod4_dressing_points >= 2>>
+    {$borsalino}: Hello~o, dear {$name}.
+    {$borsalino}: You look very nice...
+    {$borsalino}: ...Let's go, shall we...?
+<<else>>
+    {$borsalino}: Oh, dear, did I forget to tell you we were going for dinner together...? My~y bad...
+    You feel your face burning. So this WAS a fancy date!
+    This airheaded old man.
+    Oh, well.
+<<endif>>
 <<jump date_borsalino_4_dinner_date_intro>>
 ===
 
@@ -155,7 +153,7 @@ Borsalino walks you along the side of the ship, its sides sculpted like vines, t
 ===
 
 title: date_borsalino_4_dinner_date_onboard
-location: ship deck
+location: day(ship)
 ---
 
 You approach the side of the ship, hull standing tall even in comparison to Borsalino.
@@ -176,7 +174,8 @@ There's a tent there, very tastefully decorated, candlelight painting soft shado
     {$name}: I'd much rather walk anywhere.
     {$borsalino}: Aww, but where's the fun in that...?
 You follow him down elaborate staircases to a tastefully decorated dining room. Paper lamps hang from the walls like colorful fireflies, making for a cozy, playful atmosphere. Candles illuminate a table for two, casting reflections on the wine glasses.
-You sit down. He still looks as unfazed as ever, always with that half-smile, but the candlelight does make him seem a bit gentler. //HOW DO?? Location change to bar
+<<set_background night(bar) cross_fade>>
+You sit down. He still looks as unfazed as ever, always with that half-smile, but the candlelight does make him seem a bit gentler.
 In a flash, he produces a bottle of wine and serves you first.
 {$borsalino}: South Blue dry~... one of my favorites.
 {$borsalino}: And, thanks to my dear friends in the New Marineford kitchen, I had your favorite meal prepared, you see...?
@@ -370,7 +369,7 @@ And it's burning a nice black stain into the tablecloth!
 ===
 
 title: date_borsalino_4_route_bad_fire
-location: bar
+location: night(restaurant)
 ---
 
 The wine must be pretty strong...
@@ -407,7 +406,13 @@ You... happen to be in the way.
     He does not seem sorry.
 As you watch, the fire grows bigger, and it's starting to scorch the insides of the ship!
 Oh, all these fancy wooden carvings...
-[Fade to black] //HOW DO??
+<<show_characters>>
+<<set_background night(restaurant) fade_to_black(2.0) "date_borsalino_4_route_bad_fire_part2">>
+===
+
+title: date_borsalino_4_route_bad_fire_part2
+characters: [borsalino]
+---
 One emergency intervention later...
 {$borsalino}: Ah... working hazards, my dear...
 -> I'm so sorry!
@@ -517,7 +522,7 @@ You pause, trying to gather your thoughts.
 ===
 
 title: date_borsalino_4_good_route_cont
-location: ship deck
+location: day(ship)
 ---
 
 You follow Borsalino outside, where the ship creaks under the both of you.
@@ -630,7 +635,7 @@ Nice!
 ===
 
 title: date_borsalino_4_neutral_end
-location: ship deck
+location: day(ship)
 ---
 
 As a dessert, you get banana ice cream. Not bad!
@@ -676,7 +681,7 @@ It's probably just a Borsalino thing.
 ===
 
 title: date_borsalino_4_good_route_end
-location: ship deck
+location: day(ship)
 ---
 
 {$borsalino}: Well, enough talk for today...

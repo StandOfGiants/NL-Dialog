@@ -1,6 +1,7 @@
 title: date_garp_3_main
 location: office
 ---
+<<declare $gd3_points = 0>>
 
 {$name}: Ugh, finally! I'm all caught up! There sure was a lot to do this time. I feel like I'm forgetting something, though...
 Garp: Alright, Tsuru, I'm back! Supplies successfully delivered!
@@ -18,7 +19,7 @@ Garp: You know what, I'll come with you. I've got nothing better to do, and I be
 -> Eh, if you want.
     Garp: Trust me, I'd rather look for mail than hang around here!
 {$name}: Alright, then! Let's go!
-set_background(“town”, Show) //HOW DO??
+<<set_background day(town) show>>
 Garp: Well, that took a while, but I'm glad you found it! Anything good in there?
 {$name}: Well, my mom finally sent a reply to the last letter I sent. Apparently, my dad's started some new project at home, but otherwise, everything's pretty normal.
 {$name}: I'm glad, though; sometimes, no news is good news, y'know?
@@ -38,7 +39,7 @@ Garp: Yeah, I get that. I really do.
     {$name}: (I wonder... is he feeling down because he didn't get any mail?)
 {$name}: Alright... Well, should we get some lunch, then? I don't have to be back for a while, and it's fun to get food off base sometimes.
 Garp: Yeah, good idea! In fact, I know just the place.
-set_background(“park”, Show) //HOW DO??
+<<set_background day(park) show>>
 Garp leads you over to a small yet peaceful park. Near the entrance is a small stall selling sandwiches. At first, you're a little surprised, but Garp grins at you, promising that it'll be worth it.
 You look over the menu, then approach the cashier to place your order. Before you can pay, however, Garp presses some cash down on the counter and gives his order as well.
 Soon, the two of you have freshly-made sandwiches in your hands. You find a bench, take a seat, and dig in. They're absolutely delicious, with fresh ingredients, and in moments, you're both finished.
@@ -224,35 +225,69 @@ Garp: So, {$name}, I've been wondering—what's your family like?
 ===
 
 title: date_garp_3_route_d_continue
+location: day(park)
+characters: [garp]
+---
+<<declare $gd3_family_choices = 0>>
+<<jump date_garp_3_family_choice>>
+===
+
+title: date_garp_3_family_choice
+---
+<<declare $gd3_choice_msg = "">>
+<<set $gd3_family_choices += 1>>
+<<if $gd3_family_choices == 1>>
+    <<set $gd3_choice_msg = "Let's see... Who should I start with...">>
+<<elseif $gd3_family_choices == 2>>
+    <<set $gd3_choice_msg = "Ok, who's next?">>
+<<elseif $gd3_family_choices == 3>>
+    <<set $gd3_choice_msg = "Alright, lemme think...">>
+<<elseif $gd3_family_choices == 4>>
+    <<set $gd3_choice_msg = "Hmmm...">>
+<<else>>
+    <<set $gd3_choice_msg = "Sooooo...">>
+<<endif>>
+
+{$gd3_choice_msg}
+-> Oh, I should talk about my mom! She's a great baker. <<if !visited("date_garp_3_route_d_mom")>>
+    <<jump date_garp_3_route_d_mom>>
+-> Lemme tell you about my dad. He's big on do-it-yourself projects. <<if !visited("date_garp_3_route_d_dad")>>
+    <<jump date_garp_3_route_d_dad>>
+-> You know what, I wanna talk about my siblings. They're a handful! <<if !visited("date_garp_3_route_d_siblings")>>
+    <<jump date_garp_3_route_d_siblings>>
+-> I have a lot to say about my brother. <<if !visited("date_garp_3_route_d_brother") && visited("date_garp_3_route_d_siblings")>>
+    <<jump date_garp_3_route_d_brother>>
+-> I've gotta talk about my sister. <<if !visited("date_garp_3_route_d_sister") && visited("date_garp_3_route_d_siblings")>>
+    <<jump date_garp_3_route_d_sister>>
+-> That's everybody. <<if $gd3_family_choices > 1>>
+    <<jump date_garp_3_route_e>>
+-> I don't really want to talk about them <<if $gd3_family_choices <= 1>>
+    <<jump date_garp_3_route_e>>
+===
+
+title: date_garp_3_route_d_siblings
 location: park
 ---
-
-{$name}: Let's see... who should I start with...
--> Oh, I should talk about my mom! She's a great baker.
-    <<jump date_garp_3_route_d_mom>>
--> Lemme tell you about my dad. He's big on do-it-yourself projects.
-    <<jump date_garp_3_route_d_dad>>
--> You know what, I wanna talk about my siblings. They're a handful!
-    <<jump date_garp_3_route_d_siblings>>
+{$name}: I'm the middle child in my family—my brother is older than me and my sister is younger. We get along, or about as well as siblings can, but...
+-> I have a lot to say about my brother. <<if !visited("date_garp_3_route_d_brother")>>
+    <<jump date_garp_3_route_d_brother>>
+-> I've gotta talk about my sister. <<if !visited("date_garp_3_route_d_sister")>>
+    <<jump date_garp_3_route_d_sister>>
 ===
 
 title: date_garp_3_route_d_mom
 location: park
 ---
-
-—(If the player initiated ::route_h during Date 2:)--- //HOW DO??
-
-{$name}: I think I mentioned her before, back when we were making rice crackers.
--> (If the player initiated ::route_i during Date 2:) //HOW DO??
-    {$name}: It's because of her that I learned to bake, y'know!
-    <<jump date_garp_3_route_d_mom2>>
--> (If the player initiated ::route_ j during Date 2:) //HOW DO??
-    {$name}: I never really picked up on how to bake, but I loved watching her.
-    <<jump date_garp_3_route_d_mom2>>
-
-—(If the player DID NOT initiate ::route_h during Date 2:)--- //HOW DO??
-
-{$name}: I used to sit in the kitchen and help her out. I was even her taste-tester sometimes!
+<<if visited("date_garp_2_route_h")>>
+    {$name}: I think I mentioned her before, back when we were making rice crackers.
+    <<if visited("date_garp_2_route_i")>>
+        {$name}: It's because of her that I learned to bake, y'know!
+    <<else>>
+        {$name}: I never really picked up on how to bake, but I loved watching her.
+    <<endif>>
+<<else>>
+    {$name}: I used to sit in the kitchen and help her out. I was even her taste-tester sometimes!
+<<endif>>
 <<jump date_garp_3_route_d_mom2>>
 ===
 
@@ -275,7 +310,7 @@ location: park
 Garp: I see, I see. That's good...
 Garp: You should always value your family, {$name}. Whether they're the family you were born with or the family that you've found, everybody needs people that they can rely on. You can't make it in this world on your own.
 {$name}: ...Yeah. I don't know where I'd be without them.
-<<jump date_garp_3_mom_family_choice>>
+<<jump date_garp_3_family_choice>>
 ===
 
 title: date_garp_3_mom_bad
@@ -286,20 +321,7 @@ location: park
 Garp: Mmhmm. I understand.
 Garp: I know it can be frustrating when your family doesn't live how you want them to. But at the end of the day, everyone's gotta make the choice of how they wanna live. You can try to influence them or show them the way, but... well, you've gotta choose to accept them as they are, or find people that can treat you the way you want.
 {$name}: ...Yeah.
-<<jump date_garp_3_mom_family_choice>>
-===
-
-title: date_garp_3_mom_family_choice
-location: park
----
-
-{$name}: (Ok, who's next?) //HOW DO?? Note previous choice removed from selection.
--> Lemme tell you about my dad. He's big on do-it-yourself projects.
-    <<jump date_garp_3_route_d_dad>>
--> You know what, I wanna talk about my siblings. They're a handful!
-    <<jump date_garp_3_route_d_siblings>>
--> That's everybody.
-    <<jump date_garp_3_route_e>>
+<<jump date_garp_3_family_choice>>
 ===
 
 title: date_garp_3_route_d_dad
@@ -323,7 +345,7 @@ Garp: Bwahaha! Sounds like you really respect ‘im.
 Garp: Good! Havin' a mentor's real important, {$name}. Someone to guide you, someone to look up to... and the same holds true the other way, too. With all the brats I've mentored, I'm pretty sure I've learned as much from them as they've learned from me.
 Garp: Knowing you, I'm sure you've done your dad proud.
 {$name}: ...Thanks, Garp. That really means a lot.
-<<jump date_garp_3_dad_family_choice>>
+<<jump date_garp_3_family_choice>>
 ===
 
 title: date_garp_3_dad_bad
@@ -336,32 +358,9 @@ Garp: Unfortunate, but understandable. Communication's difficult sometimes, even
 Garp: ...
 Garp: You know, {$name}, if ya ever feel like it or get the chance, maybe you should try talkin' to ‘im one more time. See if you can get your feelings across. If he really loves and cares about ya, then I think he'll listen. If you've got any good memories with him, then maybe it's worth a try. After all, even though it's less likely for you since you're takin' on an admin job, you never quite know when each day on the seas will be your last.
 {$name}: ...Maybe.
-<<jump date_garp_3_dad_family_choice>>
+<<jump date_garp_3_family_choice>>
 ===
 
-title: date_garp_3_dad_family_choice
-location: park
----
-
-{$name}: (Alright, lemme think...)
--> Oh, I should talk about my mom! She's a great baker.
-    <<jump date_garp_3_route_d_mom>>
--> You know what, I wanna talk about my siblings. They're a handful!
-    <<jump date_garp_3_route_d_siblings>>
--> That's everybody.
-    <<jump date_garp_3_route_e>>
-===
-
-title: date_garp_3_route_d_siblings
-location: park
----
-
-{$name}: I'm the middle child in my family—my brother is older than me and my sister is younger. We get along, or about as well as siblings can, but...
--> I have a lot to say about my brother.
-    <<jump date_garp_3_route_d_brother>>
--> I've gotta talk about my sister.
-    <<jump date_garp_3_route_d_sister>>
-===
 
 title: date_garp_3_route_d_brother
 location: park
@@ -383,7 +382,7 @@ location: park
 Garp: Bwahaha! What more could you ask for? A big sibling who looks out for you is a real gift, {$name}. For both of you.
 Garp: Even if he doesn't quite know what to do with himself, that's alright too. There's no rush. I'll be honest with ya, {$name}—even if he tries a hundred different things, if he's making his life or other peoples' lives better, then that's time well spent. He could always do worse; if he had a nice job but did nothing to help people, then that's way worse than what he's doing now.
 {$name}: Huh... I never thought about it like that. Maybe I'll tell him that in my next letter.
-<<jump date_garp_3_brother_family_choice>>
+<<jump date_garp_3_family_choice>>
 ===
 
 title: date_garp_3_brother_bad
@@ -402,23 +401,9 @@ Garp: As for your brother... your parents have been pressuring him, right? I'm n
 Garp: Well, who can say. But you never really know what people are going through. Haki helps, but it's not perfect. Maybe not even he knows why he's like that.
 {$name}: Maybe... I could try talking to him about it. A little support might go a long way.
 Garp: That's the spirit.
-<<jump date_garp_3_brother_family_choice>>
+<<jump date_garp_3_family_choice>>
 ===
 
-title: date_garp_3_brother_family_choice
-location: park
----
-
-{$name}: (Hmmm...)
--> Oh, I should talk about my mom! She's a great baker.
-    <<jump date_garp_3_route_d_mom>>
--> Lemme tell you about my dad. He's big on do-it-yourself projects.
-    <<jump date_garp_3_route_d_dad>>
--> I've gotta talk about my sister.
-    <<jump date_garp_3_route_d_sister>>
--> That's everybody.
-    <<jump date_garp_3_route_e>>
-===
 
 title: date_garp_3_route_d_sister
 location: park
@@ -451,7 +436,7 @@ Garp: And hey, think about it. You're in a better position than most to get her 
     Garp: And don't you forget it!
 Garp: But I'm serious, {$name}. If your sister's that committed to doin' the world some good, then there's plenty of people who're gonna be lookin' out for her. And I'm one of them. I swear.
 {$name}: ...Thank you, Garp. I'll hold you to that.
-<<jump date_garp_3_sister_family_choice>>
+<<jump date_garp_3_family_choice>>
 ===
 
 title: date_garp_3_sister_bad
@@ -468,22 +453,7 @@ Garp: I wish I knew what to say about the money thing, but if she does go throug
 {$name}: She doesn't know martial arts or how to fight. She doesn't know how to wield a knife or a gun, either. She just expects that things will be OK. What if something happens to her?
 Garp: Based on what you've told me, I think she knows about all that and still wants to take the chance. You were going on about how smart she is, so I'm sure she's already thought about all that. Be careful not to let your own worries get in the way of supporting her, you know?
 {$name}: ...Yeah.
-<<jump date_garp_3_sister_family_choice>>
-===
-
-title: date_garp_3_sister_family_choice
-location: park
----
-
-{$name}: (Sooooo...)
--> Oh, I should talk about my mom! She's a great baker.
-    <<jump date_garp_3_route_d_mom>>
--> Lemme tell you about my dad. He's big on do-it-yourself projects.
-    <<date_garp_3_route_d_dad>>
--> I have a lot to say about my brother.
-    <<date_garp_3_route_d_brother>>
--> That's everybody.
-    <<jump date_garp_3_route_e>>
+<<jump date_garp_3_family_choice>>
 ===
 
 title: date_garp_3_route_e
@@ -491,50 +461,48 @@ location: park
 ---
 
 {$name}: ...And that's my whole family.
-(IF PC TALKED ABOUT ALL FOUR FAMILY MEMBERS)
-<<set $gd3_points +=2>> //HOW DO??
-Garp: ...Thanks for telling me about ‘em, {$name}. And hell, I feel like I've learned a lot about you too!
-{$name}: Haha, well, thanks for listening! I don't think I've ever talked about myself this much before. It was... pretty nice, actually.
-Garp: Bwahaha! Good to hear it! After all... you're a real interesting person yourself.
-{$name}: What was that?
-Garp: Uh, nothing. Say, it's gotten pretty late. We should head back.
-{$name}: Oh, yeah...
-Garp: But, {$name}... I haven't forgotten.
-{$name}: Forgotten what?
-Garp: Heh! Next time... next time, I'll tell you about my family. That's a promise.
-{$name}: (Finally! I'm so curious!)
-{$name}: Alright! Next time it is!
-<<jump date_garp_3_end>>
-
-(IF PC TALKED ABOUT THREE FAMILY MEMBERS)
-<<set $gd3_points +=1>> //HOW DO??
-Garp: Bwahaha! They really do sound interesting!
-{$name}: Yeah, they're really something. I can't believe it's already this late, though! Who would've thought?
-Garp: Time flies when you're havin' fun, I guess.
-Garp: But thanks, {$name}. I liked hearin' about your family. And...
-Garp: Maybe next time, I'll finally be able to talk about mine.
-{$name}: Uh, yeah! Next time, then!
-{$name}: (I wonder what he means by that...)
-<<jump date_garp_3_end>>
-
-(IF PC TALKED ABOUT TWO FAMILY MEMBERS) //HOW DO??
-Garp: Heh, they're an interesting bunch. Hope one day you can tell me about the others too.
-{$name}: Ah, it's not that I didn't want to, just...
-Garp: I get it. It's hard to talk about this kind of personal stuff sometimes.
-Garp: Still, thanks. It was nice to catch a break.
-{$name}: ...Yeah.
-<<jump date_garp_3_end>>
-
-(IF PC TALKED ABOUT ONE FAMILY MEMBER)
-<<set $gd3_points -=1>> //HOW DO??
-Garp: ...So you still don't really trust me that much, huh.
-{$name}: ...It's not that. It's just... I don't like talking about my family that much.
-Garp: Any particular reason why?
-{$name}: ...
-{$name}: Sorry.
-Garp: Mmm. Guess we'll leave it there, then.
-Garp: Let's go back. We have work to do.
-<<jump date_garp_3_end>>
+<<if $gd3_family_choices >= 4>>
+    <<set $gd3_points +=2>>
+    Garp: ...Thanks for telling me about ‘em, {$name}. And hell, I feel like I've learned a lot about you too!
+    {$name}: Haha, well, thanks for listening! I don't think I've ever talked about myself this much before. It was... pretty nice, actually.
+    Garp: Bwahaha! Good to hear it! After all... you're a real interesting person yourself.
+    {$name}: What was that?
+    Garp: Uh, nothing. Say, it's gotten pretty late. We should head back.
+    {$name}: Oh, yeah...
+    Garp: But, {$name}... I haven't forgotten.
+    {$name}: Forgotten what?
+    Garp: Heh! Next time... next time, I'll tell you about my family. That's a promise.
+    {$name}: (Finally! I'm so curious!)
+    {$name}: Alright! Next time it is!
+    <<jump date_garp_3_end>>
+<<elseif $gd3_family_choices >= 3>>
+    <<set $gd3_points +=1>>
+    Garp: Bwahaha! They really do sound interesting!
+    {$name}: Yeah, they're really something. I can't believe it's already this late, though! Who would've thought?
+    Garp: Time flies when you're havin' fun, I guess.
+    Garp: But thanks, {$name}. I liked hearin' about your family. And...
+    Garp: Maybe next time, I'll finally be able to talk about mine.
+    {$name}: Uh, yeah! Next time, then!
+    {$name}: (I wonder what he means by that...)
+    <<jump date_garp_3_end>>
+<<elseif $gd3_family_choices >= 2>>
+    Garp: Heh, they're an interesting bunch. Hope one day you can tell me about the others too.
+    {$name}: Ah, it's not that I didn't want to, just...
+    Garp: I get it. It's hard to talk about this kind of personal stuff sometimes.
+    Garp: Still, thanks. It was nice to catch a break.
+    {$name}: ...Yeah.
+    <<jump date_garp_3_end>>
+<<else>>
+    <<set $gd3_points -=1>>
+    Garp: ...So you still don't really trust me that much, huh.
+    {$name}: ...It's not that. It's just... I don't like talking about my family that much.
+    Garp: Any particular reason why?
+    {$name}: ...
+    {$name}: Sorry.
+    Garp: Mmm. Guess we'll leave it there, then.
+    Garp: Let's go back. We have work to do.
+    <<jump date_garp_3_end>>
+<<endif>>
 ===
 
 title: date_garp_3_badend

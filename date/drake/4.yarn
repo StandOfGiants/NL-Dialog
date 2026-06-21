@@ -1,6 +1,7 @@
 title: date_drake_4_main
 location: office
 ---
+<<declare $dd4_points = 0>>
 
 You arrive fashionably early to Drake's office, ready to use the last minutes before he appears to mentally prepare for the worst. The last time you were here, he had you sorting paperwork...
 At the very least, it had been balmy then, both inside and out. Now midwinter, there's hardly any place on base that doesn't send chills down your spine.
@@ -30,7 +31,7 @@ Grunt: A little earlier, yeah, but not recently. About ten minutes ago, I passed
 Grunt: Do I look dumb enough to get in the way of a guy who can bite me in half?
 Grunt: Anyway, I think I heard him yelling for a woman. I don't remember her name, but he was really whipped up about it. I wasn't going to stick around to see what he planned to do when he found her.
 Unsure what to make of the information, you return to your post. Drake is way serious about his work and he's a little stuffy, but he's not cruel. Something in the grunt's story feels off.
-do show_character("drake", Show) //HOW DO??
+<<show_characters drake>>
 Soon enough, Drake shows, hurrying along briskly. Wearing the most distressed expression you've seen on him, he clutches his coat tightly around him—which is odd, because you've never seen him complain about the cold before, even during the winter training lecture.
 It looks a little like he's shielding something in his coat...
 -> You're late. That's a first!
@@ -127,8 +128,8 @@ Officer housing is...
     Drake: T-that won't be necessary.
 Together, you both rush out into the cold in a brisk hustle...
 Reaching your dormitory building, you hurry inside. He drops back, falling in step behind you. Unlocking your door, you swing it open to let him in, and quietly shut it behind you both.
-do show_character("drake", Show) //HOW DO??
-do set_background("bedroom") //HOW DO?
+<<set_background  day(bedroom) show>>
+<<show_characters drake>>
 Drake: Alright, then. We'll need anything that can generate heat.
 You think for a second.
 {$name}: I've got—

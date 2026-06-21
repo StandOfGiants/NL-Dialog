@@ -1,6 +1,7 @@
 title: date_garp_4_main
-location: ship Deck
+location: day(ship)
 ---
+<<declare $gd4_points = 0>>
 
 {$name}: Oh man, it's beautiful out here! I'm really glad that I managed to convince Tsuru to let me out of the office for once.
 ???: Bwahahahaha! So, taking my advice, are you?
@@ -45,7 +46,7 @@ Garp: Can I trust you, {$name}? Can I trust you with all of this?
 ===
 
 title: date_garp_4_route_a
-location: ship Deck
+location: day(ship)
 ---
 
 Garp: Let's see, where to start...
@@ -78,7 +79,7 @@ Garp: Heh, it's still hard to talk about even now, despite the fact that so much
 ===
 
 title: date_garp_4_route_b
-location: ship Deck
+location: day(ship)
 ---
 
 Garp: Ace was... well, he was the child of Portgas D. Rouge and Gol D. Roger. Now, Rouge was a real spitfire of a woman! She was probably the only one who could keep Roger in line. She and the old queen of Amazon Lily got along well... maybe a little too well.
@@ -134,7 +135,7 @@ Garp: ...Heh. I can't believe I'm shedding more tears for Ace now than when he d
 ===
 
 title: date_garp_4_route_c
-location: ship Deck
+location: day(ship)
 ---
 
 Garp: Alright, where was I...?
@@ -153,7 +154,7 @@ Garp: Heh, yeah. Monkey D. Dragon, the very same man leading the Revolutionary A
 ===
 
 title: date_garp_4_route_d
-location: ship Deck
+location: day(ship)
 ---
 
 Garp: Dragon was... a lonely kid. I didn't want him to be, but he was anyway. His mother didn't want him, so I took him. Instead of leaving him by himself, I took him on the seas and kept him with me, just raising him on the ship.
@@ -206,7 +207,7 @@ Garp: There's nothing I can do for them now. Just like with Ace, all I can do is
 ===
 
 title: date_garp_4_route_e
-location: ship Deck
+location: day(ship)
 ---
 
 {$name}: (In thinking about it...)
@@ -279,7 +280,7 @@ Garp: I... I'm terrified, {$name}. I've already come face to face with him twice
 ===
 
 title: date_garp_4_route_f
-location: ship Deck
+location: day(ship)
 ---
 
 {$name}: Garp, have you...
@@ -303,7 +304,7 @@ location: ship Deck
 ===
 
 title: date_garp_4_route_g
-location: ship Deck
+location: day(ship)
 ---
 
 Garp: You know... you really are something special.
@@ -350,7 +351,7 @@ Garp: Don't. Don't say anything. It's just the silly wish of an old man. I don't
 ===
 
 title: date_garp_4_route_h
-location: ship Deck
+location: day(ship)
 ---
 
 Garp: Anyway, we should get back to work. I think I've said everything that I can for now.
@@ -364,7 +365,7 @@ Garp: Bwahahaha! Count on it!
 ===
 
 title: date_garp_4_route_silence
-location: ship Deck
+location: day(ship)
 ---
 
 {$name}: (I wish I knew what to say... C'mon, {$name}!)
