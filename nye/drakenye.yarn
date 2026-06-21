@@ -2,7 +2,7 @@ title: drakenye_intro
 location: ballroom
 ---
 
-Wow, it’s the end of the year already and HQ is throwing a grand old party! Just look at those decorations! Everyone is dressed to the nines, too! You are as well - you look good, if you don’t say so yourself. The best part is that your outfit seems to have a pocket that could just about fit anything and not ruin your look. Perfect for carrying around that gift you got for -insert character chosen for gift hunt-! Vegapunk really does make some incredible things. 
+Wow, it’s the end of the year already and HQ is throwing a grand old party! Just look at those decorations! Everyone is dressed to the nines, too! You are as well - you look good, if you don’t say so yourself. The best part is that your outfit seems to have a pocket that could just about fit anything and not ruin your look. Perfect for carrying around that gift you got for -insert character chosen for gift hunt-! Vegapunk really does make some incredible things.
 You glance at the clock, remembering your goal from a whole year ago. When it chimes midnight, you hope you have someone interested in kissing those lips of yours. Or holding your hand. Or liking you at all, really.
 Well, no way to go but forward. Though it couldn’t hurt to say hello to some familiar faces at the party, could it?
 -Pick character- //HOW DO??
@@ -15,7 +15,7 @@ Drake: This is…
     He laughs warmly.
     {$name}: I thought we–
 -> {$name}: All yours! I uh, I really like–
-    <<jump reject/friend/best/ultra>> //HOW DO??
+    <<jump reject_friend_best_ultra>> //HOW DO??
 -> Wrong Gift!
     <<jump drakenye_wrong>>
 ===
@@ -48,7 +48,7 @@ Drake clears his throat. Carefully, he turns the gift over in his hands several 
     Feigned, strained politeness is better than nothing and you’ve still got a shot to shoot.
 -> :goodgift //HOW DO??
     Drake blinks in surprise, unprepared that someone might pay any attention to his interests.
-    Drake: I… Thank you. 
+    Drake: I… Thank you.
     <<jump drakenye_friend>>
 -> :bestgift //HOW DO??
     He immediately lights up. You’ve never seen him quite so animated before.
@@ -84,7 +84,7 @@ Tentatively, he eases in closer, a faint blush rising across his cheeks.
     But though it appears the gift is bad... he still looks happy to have gotten anything at all.
 -> :goodgift //HOW DO??
     Drake blinks in surprise, unprepared that someone might pay any attention to his interests.
-    Drake: I… Thank you. 
+    Drake: I… Thank you.
 -> :bestgift //HOW DO??
     He immediately lights up. You’ve never seen him quite so animated before.
     Drake: I haven’t seen these in years! My father threw out the ones I had as a boy…
@@ -147,7 +147,7 @@ Drake: Not to offend, but are you one hundred percent certain this is for me?
 {$name}: Of course it’s–
 You glance to the object in his hands.
 Oh no. Oh NO. That wasn’t what you’d picked out for him at all! Had you bumped someone in the market and swapped presents? Was it sabotage from an outside party?
-{$name}: …Allegedly. Yes. 
+{$name}: …Allegedly. Yes.
 Fuck. You hold out your hand and Drake returns the gift with little fanfare, allowing you to slink off, tail between your legs.
 Time to go give this gift to the right person, oops!
 <<jump drakenye_intro>>
@@ -173,9 +173,9 @@ Drake: In advance, I apologize— this is an incredibly inopportune time, but it
 He takes a deep breath and steels himself.
 Drake: I’m due to set sail within the week to return to an ongoing mission of mine. Unfortunately, I have no idea how long it will take, but I had to tell you before I left. —If you felt anything as well, then perhaps afterwards, we could…
 While not an unwanted turn of events, this… isn’t exactly something light-hearted.
--> Still, getting a break to breathe, with someone who cares on the horizon… It’s nice. 
+-> Still, getting a break to breathe, with someone who cares on the horizon… It’s nice.
     <<jump drakenye_acceptdrake>>
--> —but does he think he can just kiss and run?!  
+-> —but does he think he can just kiss and run?!
     <<jump drakenye_rejectdrake>>
 ===
 

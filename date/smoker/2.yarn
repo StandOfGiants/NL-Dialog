@@ -1,7 +1,7 @@
 title: date_smoker_2_main
 location: day(training_grounds)
 ---
-<<show_character smoker center show>>
+<<show_characters smoker>>
 Smoker: Oh, you showed up. Good, I was just stretching.
 -> That's always important!
 -> Ah, yeah, I guess I should get on that.

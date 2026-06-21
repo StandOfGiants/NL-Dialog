@@ -85,10 +85,11 @@ location: park
 ---
 
 {$name}: Not profitable?
--> If // CONDITION: MIKAN set in Date \#3 //HOW DO???
+<<if $bed3_mikan>>
     <<jump date_bellemere_4_fullstory>>
--> No Condition set
+<<else>>
     <<jump date_bellemere_4_brushoff>>
+<<endif>>
 ===
 
 title: date_bellemere_4_fullstory

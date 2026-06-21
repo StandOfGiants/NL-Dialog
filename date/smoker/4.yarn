@@ -1,10 +1,13 @@
 title: date_smoker_4_main
 location: town
 ---
+<<declare $sd4_points = 0>>
+<<declare $sd4_figure_repaired = false>>
+<<declare $sd4_figure_destroyed = false>>
 
 It's been a hot minute since you and Smoker have had time to see each other, just the two of you. He's told you to meet him by the town square at noon, wearing casual clothing that you won't mind getting dirty. You're not quite sure what to expect.
 Smoker: Hey! Over here!
-do show_character(smoker, center, show) //HOW DO??
+<<show_characters smoker>>
 Smoker is sitting on a bench, an arm slung over the back of it and with his legs spread wide. One hand is raised in greeting, waving at you. You jog over, close enough to spot a tote bag sitting by Smoker's feet. He follows your gaze and grins.
 Smoker: Oh, this?
 -> What's inside?
@@ -19,9 +22,9 @@ Smoker stands up from the bench and grabs the bag. He slings it over his shoulde
 Smoker: Come on, we don't want to be late.
 -> Late for what?
 -> Wait for me!
-do hide_character(smoker, fade) //HOW DO??
+<<show_characters>>
 You hurry along after him and Smoker stops in front of “Grus' Pottery Shop”. The bell rings above your heads as you walk in. It is a quaint little place with potted plants lining the window sills and sunlight coming in through the windows. Expertly crafted cups, plates and bowls take up the shelves.
-do show_character("smoker", Show)
+<<show_characters smoker>>
 Smoker: So, got any clue why we're here?
 -> To... make some pottery?
     <<jump date_smoker_4_Right_guess>>
@@ -103,7 +106,7 @@ Smoker: See anything you like?
 title: date_smoker_4_Shop_show
 location: town
 ---
-
+<<declare $sd4_has_lapin_fig = false>>
 He nods at the top shelf, where a fine layer of dust coats just about everything. There are quite a few things there. Something that might be a teapot, or a cup holder, or a... you're not sure what any of it is supposed to be, actually.
 -> They're certainly... something.
     Smoker: No need to beat around the bush, I know they're awful.
@@ -121,7 +124,7 @@ Stretching up, Smoker grabs a clay piece and brings it down for you to look at. 
 -> It's a lapin!
     Smoker: Not a very good one, but yeah. It was the first piece I ever made here in this shop. But it's about time for it to have a new home. You should take it. For good luck.
     Your cheeks are warm, and without a doubt flushed beyond belief as you stutter a thanks and put the lapin figure into your pocket.
-    do get("lapin_fig") //HOW DO??
+    <<set $sd4_has_lapin_fig = true>>
 -> Is that a paperweight for all of the paperwork Tashigi is making you do?
     Smoker: That might be a better use for it. I know it ain't pretty to look at, but someone once told me it would be a shame to throw away your old pieces. They're a benchmark for progress, in a way.
     {$name}: It's still cute, if you sort of squint your eyes.
@@ -214,7 +217,7 @@ Smoker sits next to you, hands shaping his own creation. Gosh, those fingers of 
     <<jump date_smoker_4_Pottery_vase>>
 -> An Elephant Tuna!
     <<jump date_smoker_4_Pottery_tuna>>
--> A lapin! if has_item("lapin_fig") //HOW DO??
+-> A lapin! <<if $sd4_has_lapin_fig>>
     <<jump date_smoker_4_Pottery_lapin>>
 ===
 
@@ -272,7 +275,7 @@ He guides your hands up and down the length of the vase and then at one point, h
     Smoker lets go of your hands, but there are smears of clay left behind on your skin where he touched you.
     Smoker: You've got the hands for it. They're steady and you take directions well.
     There is a giddiness in your body that you are unable to shake, and in the spur of the moment you pull Smoker into a brief hug that leaves him gaping, mouth wide open. You're too busy celebrating to take note. You finished the &&vase&&!
-    do get("P_fig") //HOW DO??
+    <<set $sd4_figure_repaired = true>>
 -> I can do the rest myself.
     <<set $sd4_points -=1>>
     <<jump date_smoker_4_Pottery_fail>>
@@ -281,7 +284,7 @@ He guides your hands up and down the length of the vase and then at one point, h
     Smoker opens his mouth, but snaps it shut just as quickly. He leans in close to look at the finished clay sculpture. He hums, and a hand lands on your shoulder. It stays there.
     Smoker: You did good, {$name}. If I saw this in a store, I'd buy it in a heartbeat.
     You lean into his touch, both of you staring at what you have accomplished. You finished the &&vase&&!
-    do get("P_fig") //HOW DO??
+    <<set $sd4_figure_repaired = true>>
 <<jump date_smoker_4_Pottery_join>>
 ===
 
@@ -323,11 +326,11 @@ Time goes by fast as you chat, and before you know it, your piece is finished. I
 -> **Show it to Smoker**
     <<set $sd4_points +=1>>
     Smoker smiles at it like it is the sort of ugly that someone wants to both kick and cuddle. That is probably a good sign. You made an &&Elephant Tuna&&!
-    do get("P_fig") //HOW DO??
+    <<set $sd4_figure_repaired = true>>
 -> It's finished!
     Smoker: If you're sure...
     Well, it probably won't get any prettier than this. You made an &&Elephant Tuna&&!
-    do get("P_fig") //HOW DO??
+    <<set $sd4_figure_repaired = true>>
 <<jump date_smoker_4_Pottery_join>>
 ===
 
@@ -376,12 +379,12 @@ You grin and jerk your head for him to come and join you. In three steps, Smoker
 -> Does it even look like a lapin?
     Smoker: It might be a little... round, but honestly, it's better than my attempt. There's a certain charm to it, and the fact that you made it is even better.
     The long, overly stretched ears, or the strangely hollowed eyes of what seems to look more like a blob-fish than a lapin isn't exactly what you'd call charming, but Smoker's leg bumping against yours is totally worth it. You made a &&lapin&&!
-    do get("P_fig") //HOW DO??
+    <<set $sd4_figure_repaired = true>>
 -> Can you guess where I got the inspiration?
     <<set $sd4_points +=1>>
     Smoker: I think I can.
     Smoker's hand finds its way to the pocket of your trousers and his thumb rubs over the small figure you hid there. A lapin to match the one you've just made. Smoker doesn't remove his hand, even as you put finishing touches on it. You made a &&lapin&&!
-    do get("P_fig") //HOW DO??
+    <<set $sd4_figure_repaired = true>>
 <<jump date_smoker_4_Pottery_join>>
 ===
 
@@ -400,11 +403,11 @@ You keep working, unable to wipe the smile from your face. Smoker, too, is havin
 Smoker: You're a lot better at this than I thought. A lapin is never anyone's first choice.
 - {$name}: Well, I *have* taken some artistic liberties.
     More than a few, actually. Most of the clay has gone to the abs, and what should have been long ears are more rounded. Actually, it might be more like a Hiking Bear, but oh well. Smoker seems impressed, and you made a &&lapin&&!
-    do get("P_fig") //HOW DO??
+    <<set $sd4_figure_repaired = true>>
 - {$name}: You're absolutely right, would you mind posing?
     <<set $sd4_points +=1>>
     Maybe because you've been openly ogling him for the past hour and have clearly liked what you've seen, Smoker shrugs off his coat and puts a foot on his chair. He poses there like a half-naked statue while you put the finishing touches on your sculpture. You made a very jacked &&lapin&&!
-    do get("P_fig") //HOW DO??
+    <<set $sd4_figure_repaired = true>>
 <<jump date_smoker_4_Pottery_join>>
 ===
 
@@ -425,16 +428,16 @@ There's clay on the floor, on the back of Smoker's chair, the shelves, and oh no
 Smoker: So... I guess what you ended up going for was something abstract, huh?
 -> That was the plan all along!
     Even as you say it, your ears burn. It makes Smoker laugh, but it is clear that he doesn't believe a word you're saying. Gosh, what a disaster!
-    do get("Ruined_fig") //HOW DO??
+    <<set $sd4_figure_destroyed = true>>
 -> Pottery is a stupid hobby, anyway.
     <<set $sd4_points -=1>>
     Smoker: Come on, one bad sculpture isn't the end of the world, {$name}. Though the term ‘sculpture' might be a tad generous in this case.
-    do get("Ruined_fig") //HOW DO??
+    <<set $sd4_figure_destroyed = true>>
 -> I might need some tutoring.
     <<set $sd4_points +=1>>
     Smoker: If you promise not to fling clay near me again, I'll think about it.
     You bark a laugh, almost involuntarily, but the mood feels a lot lighter now.
-    do get("Ruined_fig") //HOW DO??
+    <<set $sd4_figure_destroyed = true>>
 <<jump date_smoker_4_Pottery_join>>
 ===
 
@@ -442,26 +445,27 @@ title: date_smoker_4_Pottery_join
 location: town
 ---
 
-if has_item("P_fig") //HOW DO??
-The sun has crawled its way across the horizon, and the light streaming through the window shutters is a hazy scarlet. You scrub down the used pottery wheels while Smoker retreats to the back. When he emerges again as you wipe down the last of the chairs, he has your finished figure in hand.
--> Better than anything you've ever made, isn't it?
-    <<set $sd4_points -=1>>
-    Smoker: Bold words for a newbie. I'm more surprised you managed to finish it despite being... distracted.
--> I can't believe I made that.
-    Smoker: You best believe it. In fact, I think you've won our bet, so I guess I'll have to find a worthy prize now.
--> Did it knock your socks off?
-    <<set $sd4_points +=1>>
-    Smoker: Consider my socks gone. You won that bet fair and square. Though I'll have a think on what your prize should be...
-if has_item("Ruined_fig") //HOW DO??
-The sun has crawled its way across the horizon, and the light streaming through the window shutters is a hazy scarlet. You scrub down the used pottery wheels while Smoker turns his arms into a wisp of smoke to get the clay stains off the ceiling.
--> Pottery is a lot harder than it looks.
-    <<set $sd4_points +=1>>
-    Smoker: It can take a while to get the hang of it. I can't say I've gotten it on the ceiling, but I've had to wipe down the windows more often than I'd like to admit.
--> I really don't know how that got up there...
-    <<set $sd4_points -=1>>
-    Smoker: I'd almost call it impressive if it weren't for the fact that I'm the one having to clean it up.
--> Maybe I can call my art &&explosively&& good.
-    Smoker: It definitely has far-reaching consequences. I'm tempted to leave it here and see how long it'll take Grus to notice.
+<<if $sd4_figure_repaired>>
+    The sun has crawled its way across the horizon, and the light streaming through the window shutters is a hazy scarlet. You scrub down the used pottery wheels while Smoker retreats to the back. When he emerges again as you wipe down the last of the chairs, he has your finished figure in hand.
+    -> Better than anything you've ever made, isn't it?
+        <<set $sd4_points -=1>>
+        Smoker: Bold words for a newbie. I'm more surprised you managed to finish it despite being... distracted.
+    -> I can't believe I made that.
+        Smoker: You best believe it. In fact, I think you've won our bet, so I guess I'll have to find a worthy prize now.
+    -> Did it knock your socks off?
+        <<set $sd4_points +=1>>
+        Smoker: Consider my socks gone. You won that bet fair and square. Though I'll have a think on what your prize should be...
+<<elseif $sd4_figure_destroyed>>
+    The sun has crawled its way across the horizon, and the light streaming through the window shutters is a hazy scarlet. You scrub down the used pottery wheels while Smoker turns his arms into a wisp of smoke to get the clay stains off the ceiling.
+    -> Pottery is a lot harder than it looks.
+        <<set $sd4_points +=1>>
+        Smoker: It can take a while to get the hang of it. I can't say I've gotten it on the ceiling, but I've had to wipe down the windows more often than I'd like to admit.
+    -> I really don't know how that got up there...
+        <<set $sd4_points -=1>>
+        Smoker: I'd almost call it impressive if it weren't for the fact that I'm the one having to clean it up.
+    -> Maybe I can call my art &&explosively&& good.
+        Smoker: It definitely has far-reaching consequences. I'm tempted to leave it here and see how long it'll take Grus to notice.
+<<endif>>
 The two of you lock up shop, Smoker finally grabbing a new cigar and stuffing it in his mouth. He lights it and blows out a thin wisp of smoke in your direction.
 <<jump date_smoker_4_End_date>>
 ===
@@ -470,12 +474,13 @@ title: date_smoker_4_End_date
 location: town
 ---
 
-(If the player got 4+ points)
-    <<jump date_smoker_4_Two_point_end>> //HOW DO??
-(If the player got 0-3 points)
-    <<jump date_smoker_4_One_point_end>> //HOW DO??
-(If the player got <0 points)
-    <<jump date_smoker_4_Zero_point_end>> //HOW DO??
+<<if $sd4_points >= 4>>
+    <<jump date_smoker_4_Two_point_end>>
+<<elseif $sd4_points > 0>>
+    <<jump date_smoker_4_One_point_end>>
+<<else>>
+    <<jump date_smoker_4_Zero_point_end>>
+<<endif>>
 ===
 
 title: date_smoker_4_Two_point_end

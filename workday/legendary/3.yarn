@@ -1,5 +1,5 @@
 title: workday_legendary_3_main
-location: ship deck
+location: day(ship)
 ---
 <<declare $lwd3S_points = 0>>
 <<declare $lwd3T_points = 0>>
@@ -124,7 +124,7 @@ Sengoku: ...Good. Now, then—you have five minutes to split yourselves into tea
 ===
 
 title: workday_legendary_3_Garp_Tsuru_Route
-location: ship deck
+location: day(ship)
 ---
 
 {$name}: (OK! It's planning time. It looks like there's quite a few people here, so hopefully we get some good ideas down...)
@@ -233,7 +233,7 @@ or
 ===
 
 title: workday_legendary_3_tsuru_garp_good_end
-location: ship deck
+location: day(ship)
 ---
 
 The days of training go by...
@@ -260,7 +260,7 @@ You can feel proud of yourself!
 ===
 
 title: workday_legendary_3_tsuru_garp_bad_end
-location: ship deck
+location: day(ship)
 ---
 
 The days of training go by...
@@ -281,7 +281,7 @@ Oh well... At least they don't hold it against you...
 ===
 
 title: workday_legendary_3_Sengoku_Rosi_Route
-location: ship deck
+location: day(ship)
 ---
 
 {$name}: (Neat, time to get down to the nitty gritty of planning!)
@@ -390,7 +390,7 @@ Sengoku: Alright, that's enough planning. Let's get to implementing.
 ===
 
 title: workday_legendary_3_good_sen_rosi_end
-location: ship deck
+location: day(ship)
 ---
 
 // {If PC made 3 correct choices} //HOW DO??
@@ -420,7 +420,7 @@ Rosinante: What do you think, {$name}? Should we share with the other team?
 ===
 
 title: workday_legendary_3_bad_sen_rosi_end
-location: ship deck
+location: day(ship)
 ---
 
 The week passes in what feels like no time at all! You suppose that's how it goes when you are busy getting to it. Now all that's left is this wrap up meeting, and then you can head home to your nice warm bed!

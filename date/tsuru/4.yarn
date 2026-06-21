@@ -363,7 +363,7 @@ Tsuru: Come, {$name}. There is no time to lose.
 ===
 
 title: date_tsuru_4_on_ship
-location: ship deck
+location: day(ship)
 ---
 
 Tsuru has coordinated two teams of officers to set sail on her pink-sailed warship.
@@ -439,7 +439,7 @@ Tsuru: Should we barge into the battle, or circle it and make more captures?
 ===
 
 title: date_tsuru_4_ship_end_neutral
-location: ship deck
+location: day(ship)
 ---
 
 Tsuru's ship thumps forward with a roar of its Dial system, and the ships — enemy and Navy — grow in the distance! Officers scramble to the cannons, landing a few shots around the enemy vessel that is attempting to flee. It's all very confusing in this cloud of smoke.
@@ -460,7 +460,7 @@ Tsuru: Thank you for your help.
 ===
 
 title: date_tsuru_4_ship_end_good
-location: ship deck
+location: day(ship)
 ---
 
 With a roar of the Dial system and a mighty creak, Tsuru's warship turns forward, making a long ‘U' around the battlezone.

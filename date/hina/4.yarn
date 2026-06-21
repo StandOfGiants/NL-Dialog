@@ -74,12 +74,12 @@ Hina: Here. Choose wisely, {$name}.
 title: date_hina_4_Pick_Horse
 location: park
 ---
-
+<<declare $hd4_horse = "">>
 There are three horses in the box stalls. Which one do you check out?
 -> The large, black horse with a wavy mane.
   You approach the majestic, black horse. It is like something straight out of a romance novel, with its glossy coat and foot feathering. It looks like it might be the fastest horse here.
     -> **Choose this horse.**
-      do get("Dark_Horse") //HOW DO??
+      <<set $hd4_horse = "Dark">>
       Hina: Hmph, Hina sees that you have chosen a challenge for yourself. That takes guts. Odaiko is known among recruits to be particularly malicious, but perhaps you will be the one to make him obedient. Hina will be watching your performance closely, {$name}.
       Was that a compliment or an insult? You can't quite tell, but you're fine with either. Anything that gets Hina's eyes on you is a clear win.
         -> I can handle anything this horse throws at me.
@@ -98,7 +98,7 @@ There are three horses in the box stalls. Which one do you check out?
 -> The short, stocky horse with a dappled, white and black pattern.
   Its legs might be short, but it lets you pet it as you approach. The fur is short, but well-kept, and a bunch of flowers have been weaved into its mane and tail. It looks like it might have good endurance.
     -> **Choose this horse.**
-      do get("Round_Horse") //HOW DO??
+      <<set $hd4_horse = "Round">>
       Hina: Hina understands. {$name} likes playing it safe, and Small Dad is *very* safe. Safety and protection are both admirable goals.
       -> Keeping myself safe means protecting more people.
         Hina: Hmph, a fair conclusion. Hina also appreciates keeping her Marines safe. Being provided safety, shelter and food allows for Hina and her Marines to chase down and restrain the scum and rabble that dare hurting others.
@@ -118,7 +118,7 @@ There are three horses in the box stalls. Which one do you check out?
 -> The tall, brown horse with flecks of grey in its fur.
   The horse pays you no mind as you approach. It is a good deal bigger than all the other horses, but it is clear that it is the oldest among the bunch. It gently bumps its snout against your hand. It looks to be the most powerful horse.
     -> **Choose this horse.**
-      do get("Tall_Horse") //HOW DO??
+      <<set $hd4_horse = "Tall">>
       Hina: Hmph, good choice, {$name}. You appear to be adequately competent in judging equestrian specimens – Rusty is a retired competitive eventing horse. She will aid you well, if you treat her with the respect she deserves.
       -> I'll do my best!
         <<jump date_hina_4_Giddy_Up>>
@@ -217,85 +217,93 @@ Hina squeezes her thighs and her horse begins to move. Slowly at first, but then
   You nudge your horse forward, slowly, then at a trot, and finally at full speed. Your horse slows as it approaches the jump, but you saw Hina clear it with ease, and your firm hold on the reins instil confidence in your horse. Together you clear the log jump.
 Approaching a second jump, this one is broad and flat, with a greater width than the last one. Hina's horse isn't happy, but she successfully steers it towards the jump and clears it on her first try. Okay, you can make that jump, too... right?
 -> **Attempt the jump.**
-  if has_item("Dark_Horse") //HOW DO??
+  <<if $hd4_horse == "Dark">>
     Your horse is as fast as a lightning bolt beneath you, and before you can even tighten your core, you have cleared the broad jump. Thank goodness!
-  if has_item("Round_Horse") //HOW DO??
+  <<elseif $hd4_horse == "Round">>
     Your horse may be small and round, but it's got spirit! Time to show Hina what you and Small Dad are made of!
     <<jump date_hina_4_Failed_Jump>>
-  if has_item("Tall_Horse") //HOW DO??
+  <<else>>
     Thankfully, you chose a tall horse, and in one quick stride, your horse soars over the obstacles, clearing it with space to spare. Nice!
+  <<endif>>
 -> **Steer clear of it.**
-  if has_item("Dark_Horse") OR if has_item("Tall_Horse")
-    <<set $hd4_points -=1>> //HOW DO??
+  <<if $hd4_horse == "Dark" || $hd4_horse == "Tall">>
+    <<set $hd4_points -=1>>
     You tug on the reins at the last second, and your horse runs around the obstacle instead. Oh man, that sure was a close call! There was no way you could clear that jump as a newbie!
     As you glance up, you spot Hina frowning at you. Oh no.
-  if has_item("Round_Horse")
-    <<set $hd4_points +=1>> //HOW DO??
+  <<else>>
+    <<set $hd4_points +=1>>
     Your horse continues in a steady gallop, and as you pass the obstacle, it's clear that your small horse wouldn't have been able to clear it. As you look at Hina, she gives you a small, approving nod. Seems like you made the right choice!
+  <<endif>>
 Hina: Don't fall behind, {$name}, we're only halfway!
 Her horse does another wild buck, and Hina clenches her buttocks tightly. Even from this distance, you see it happening as though in slow-motion. A loud ~splash~ draws your attention. Hina has steered her horse into a rather large, water filled ditch and as you stare, she jumps over a very narrow fence with brush sticking out of it.
 -> **Speed up.**
-  if has_item("Dark_Horse") //HOW DO??
+  <<if $hd4_horse == "Dark">>
     You lean forward in the saddle, urging your horse forward, but as you do so, you can feel it struggle. Uh oh, your horse was built for speed, but it doesn't have very good endurance.
     <<jump date_hina_4_Failed_Jump>>
-  if has_item("Round_Horse") //HOW DO??
+  <<elseif $hd4_horse == "Round">>
     It's a surprisingly skinny jump, but as you come up on it, your small horse is easy to steer. Barely lifting off the ground, you make it with only inches to spare as the brush of the fence tickles your leg.
-  if has_item("Tall_Horse") //HOW DO??
+  <<else>>
     You barely have to nudge your horse forward before it is plunging through the water. You feel powerful muscles rippling beneath you as the horse jumps. Your butt aches as you land on the other side.
+  <<endif>>
 -> **Slow down.**
-  if has_item("Dark_Horse") //HOW DO??
+  <<if $hd4_horse == "Dark">>
     Your horse huffs and puffs, and as you slow down, you feel your horse regain its strength. The jump isn't as long as the others, and even at a slower pace, your horse easily clears it.
-  if has_item("Round_Horse")
+  <<elseif $hd4_horse == "Round">>
     <<set $hd4_points -=1>> //HOW DO??
     As you pull on the reins to slow your horse, it goes from an easy gallop to a slow trot, until it comes to a complete stop. As you nudge it with your legs, it barely takes a few steps, and wanders around the obstacle.
     Hina: Tch. Are you unable to make even the most obedient horse your subordinate? Hina is disappointed in you, {$name}.
-  if has_item("Tall_Horse") //HOW DO??
+  <<else>>
     As you slow down, you give your horse a soft pat on its neck. It tosses its head, snorting, and at a slow, comfortable pace, approaches the jump. With a powerful jump, it clears the hurdle.
+  <<endif>>
 Hina is already at the next obstacle. It's another log jump, but they're lined on a riser and stacked increasingly taller. Hina's horse throws a fit as she closes in. It gives its biggest buck yet, but Hina stays firmly seated, and with heaving flanks, it finally submits to her.
 She tugs on the reins and it obeys, just like her subordinates do. Hina clears the jump with very little build up of speed, a spray of water sparkles like stray pearls around her in the late sun.
 Three down, one to go. You and your horse have done some good work so far, what's one more jump? This is your last chance to impress Hina!
 -> **Gallop at it, full throttle.**
-  if has_item("Dark_Horse") //HOW DO??
+  <<if $hd4_horse == "Dark">>
     The break that you allowed your horse earlier is coming in clutch now! Your horse jumps and you soar through the air. You're both weightless and in complete harmony.
     You land on the other side, pulling on the reins. Your horse rears back, and with the sun at your back, drenched in water, your horse's mane flows in the breeze. You're majestic. You're beautiful. You're the cover of a suggestive novel.
-  -> **Hold your pose.**
-    You shoot Hina a smile, and as she looks at you with stars in her eyes, you feel your balance slip. Uh oh. In the next second, you tumble out of the saddle and hit your butt against the hard ground.
-    Hina: Hina sees that she expected too much from you. Go to the infirmary and ensure that you're not injured. Hina will take your horse back to the stable. Dismissed.
+  <<endif>>
+-> **Hold your pose.**
+  You shoot Hina a smile, and as she looks at you with stars in her eyes, you feel your balance slip. Uh oh. In the next second, you tumble out of the saddle and hit your butt against the hard ground.
+  Hina: Hina sees that she expected too much from you. Go to the infirmary and ensure that you're not injured. Hina will take your horse back to the stable. Dismissed.
+  <<jump date_hina_4_DATE_ENDS>>
+-> **Calm your horse.**
+    <<set $hd4_points +=1>>
+  You quickly give your horse a pat on the neck and it settles without much fuss. Looking up, you spot Hina, her mouth agape and stars in her eyes. She catches you staring and clears her throat.
+  Hina: That was... quite a performance, {$name}.
+  <<if $hd4_horse =="Round">>
+    Your horse was built for endurance, and now is the time to prove it! With a proper runup, you just barely clears the jump, knocking a hoof against the tallest log. You land on the other side, chest heaving.
+  <<elseif $hd4_horse =="Tall">>
+    With a long runup, you clear the hurdle easy-peasy! Except... oh no, too much power! You land close to Hina, spooking her horse! It bucks her off, and she rolls out of the way of stomping hooves.
+    Hina: Are you incompetent, {$name}?! Leave, before you make the situation worse!
     <<jump date_hina_4_DATE_ENDS>>
-  -> **Calm your horse.**
-      <<set $hd4_points +=1>>
-    You quickly give your horse a pat on the neck and it settles without much fuss. Looking up, you spot Hina, her mouth agape and stars in her eyes. She catches you staring and clears her throat.
-    Hina: That was... quite a performance, {$name}.
-    if has_item("Round_Horse") //HOW DO??
-      Your horse was built for endurance, and now is the time to prove it! With a proper runup, you just barely clears the jump, knocking a hoof against the tallest log. You land on the other side, chest heaving.
-    if has_item("Tall_Horse") //HOW DO??
-      With a long runup, you clear the hurdle easy-peasy! Except... oh no, too much power! You land close to Hina, spooking her horse! It bucks her off, and she rolls out of the way of stomping hooves.
-      Hina: Are you incompetent, {$name}?! Leave, before you make the situation worse!
-      <<jump date_hina_4_DATE_ENDS>>
+  <<endif>>
 -> **Do it like Hina.**
-  if has_item("Dark_Horse") //HOW DO??
+  <<if $hd4_horse =="Dark">>
     You slow, and as your horse trudges through the water, the jump gets closer.
     <<jump date_hina_4_Failed_Jump>>
-  if has_item("Round_Horse")
+  <<elseif $hd4_horse =="Round">>
     Coming up on the hurdle, you're not sure if you can make it without the runup. Hina's favor is on the line!
     Hina: {$name}!
     You pull on the reins and your horse stops inches from the log fence. Huh, when did you even close your eyes? Hina rides closer to you, absolutely seething.
     Hina: You would willingly risk the wellbeing of yourself and your horse? Hina has misjudged you. Take your horse back to the stable. You're dismissed.
     <<jump date_hina_4_DATE_ENDS>>
-  if has_item("Tall_Horse") //HOW DO??
+  <<else>>
     You follow Hina's footsteps expertly. Your horse is powerful enough that even without a runup, the jump is a cakewalk! You land on the other side like it's the easiest thing in the world.
+  <<endif>>
 Hina veers off from the path, all four obstacles complete, and with a quick glance back at you, takes on a fifth. A triple jump! She soars over all of them, her horse clearing each of them with quick, powerful strides, no longer fighting her. Hina's hair flutters in the wind, and the grin she sends you is a pleased one. She has never looked more beautiful.
 -> **Attempt the triple jump.**
-  if has_item("Dark_Horse") //HOW DO??
+  <<if $hd4_horse =="Dark">>
     You shoot Hina a cocky grin and guide your horse forward. You got this! Your horse takes a few strides forward, but you feel its speed faltering. You clear the first jump, but on the second, you know you've made a mistake.
     <<jump date_hina_4_Failed_Jump>>
-  if has_item("Round_Horse")
+  <<elseif $hd4_horse =="Round">>
    No reward without risk! You motion Small Dad forward, but as you gain speed and get a closer look, all three jumps are taller than the others! There's no time to abort the mission!
     <<jump date_hina_4_Failed_Jump>>
-  if has_item("Tall_Horse")
+  <<else>>
     <<set $hd4_points +=1>> //HOW DO??
     This is it, just you and your horse. You are one. Beneath you, your horse snorts and in your inexperienced hands, you let your horse take the lead. In quick succession, you clear the triple jumps, and come to a stop close to Hina.
     Hina: Most impressive, {$name}! Hina did not think you had it in you, but Hina sees it now, the trust and care you place in your companions. It is a valuable trait.
+  <<endif>>
 -> **Play it safe.**
   You trot closer to Hina, one hand off the reins as you clap at her amazing performance. She gives a brief bow, running a hand through her hair and pushing it out of her face.
 Her chest rises in short, shallow motions as she breathes and Hina's cheeks are flushed a deep, glowing pink. You have never seen her so flustered and spent, and you squirm in the saddle as words escape you.
