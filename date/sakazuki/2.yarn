@@ -29,9 +29,13 @@ You approach him, but he appears to be distracted, staring at something on the w
 {$sakazuki}: What do you want?
 You look toward the plaque he was looking at before you interrupted.
 {$name}: I was surprised to see you leave work so early...
-[Good ending last time] {$sakazuki}: I suppose it's a rare occasion. Pirates tend to occupy the majority of my time. //HOW DO??
-[Neutral ending 1/ Neutral ending 2/ Neutral Ending 3 last time] {$sakazuki}: <pause>...Yes...? //HOW DO??
-[Bad ending 1/ Bad ending 2 last time] {$sakazuki}: Hm. And yet somehow, I am not surprised to see you doing the same. //HOW DO??
+// TODO: Romance Points
+// IF [Good ending last time]
+{$sakazuki}: I suppose it's a rare occasion. Pirates tend to occupy the majority of my time.
+// IF [Neutral ending 1/ Neutral ending 2/ Neutral Ending 3 last time]
+{$sakazuki}: <pause>...Yes...?
+// IF [Bad ending 1/ Bad ending 2 last time]
+{$sakazuki}: Hm. And yet somehow, I am not surprised to see you doing the same.
 {$name}: ...So I couldn't help myself. I noticed you were reading something...? May I ask what it is?
 {$sakazuki}: ...
 {$sakazuki}: Names of all the current and past Heroes of the Navy. Most are dead, but not all. Vice Admiral Garp's name is on it.
@@ -64,7 +68,7 @@ location: office
 {$sakazuki}: Yes.
 {$sakazuki}: It's less than a fraction of all those who have perished for the sake of Justice. Many go unnamed. But as long as your name is here, on this plaque, you'll be remembered by history.
 {$name}: Well... I think you don't have to be remembered by ‘history' to matter! You can be remembered by your family and friends, too!
-{$sakazuki}: [sad] You're right. There are many ways to be remembered. //HOW DO??
+{$sakazuki}: You're right. There are many ways to be remembered. #expression:disappointed
 The Fleet Admiral traces his finger over a name you can't quite see from where you're standing. Suddenly, you're struck by curiosity.
 {$name}: Do you have a family, Fleet Admiral Sakazuki?
 {$sakazuki}: ...
@@ -143,7 +147,7 @@ You are kinda jealous. Being the Fleet Admiral must be *so* well paid. Maybe he'
 {$sakazuki}: Come, {$name}. The supermarket isn't far from the residential district. I don't want to spend all night walking there.
 Of course, that makes sense. It does take a while to walk to the supermarket...
 Wait a minute... the [shake]SUPERMARKET?![/shake]
-Date Location: Town //HOW DO??
+<<set_background day(town)>>
 You look at the supermarket. It's... it's a supermarket. It's *the* Supermarket, in fact – the one everyone goes to get their groceries. You have visited it yourself many times before.
 You aren't impressed. You thought he'd at least go to one of those fancy exotic places the higher ups go to. Apparently not?
 ...Maybe there's a hidden fancy area in this supermarket you have never explored before where Fleet Admiral Sakazuki goes to get his good stuff?
@@ -156,21 +160,29 @@ Should you be here? Should you be seeing this? He feels scarily human.
 {$name}: Y-Yes, sir?!
 {$sakazuki}: You're spacing out. I thought you said something about helping me?
 {$name}: I-I did, Sir! What do you need my help with?
-{$sakazuki}: [Judging] Hmph. Since you have clearly missed half of it being in a daze, I have three zones left to go. The rice aisle, the produce area, and the garden section. Pick one. //HOW DO??
+{$sakazuki}: Hmph. Since you have clearly missed half of it being in a daze, I have three zones left to go. The rice aisle, the produce area, and the garden section. Pick one. #expression:grumpy
 <<jump date_sakazuki_2_Grocery_shopping>>
 ===
 
 title: date_sakazuki_2_Grocery_shopping
 location: town
 ---
+<<declare $ds2_shopping_aisles = 0>>
 
--> Rice aisle
+// After 2 aisles, we jump straight to lost pet
+<<if $ds2_shopping_aisles >= 2>>
+    <<jump date_sakazuki_2_Lost_pet>>
+<<endif>>
+
+-> Rice aisle <<if !visited("date_sakazuki_2_rice")>>
+    <<set $ds2_shopping_aisles += 1>>
     <<jump date_sakazuki_2_rice>>
--> Produce area
+-> Produce area <<if !visited("date_sakazuki_2_peppers")>>
+    <<set $ds2_shopping_aisles += 1>>
     <<jump date_sakazuki_2_peppers>>
--> Garden section
+-> Garden section <<if !visited("date_sakazuki_2_plants")>>
+    <<set $ds2_shopping_aisles += 1>>
     <<jump date_sakazuki_2_plants>>
-[To Zip: Can we make it so that players can only pick 2 options (and maybe they disappear once they have been picked so there can be no repeats?) out of 3? And then after 2 options, it leads to Lost_pet? Thank you very much!] //HOW DO??
 ===
 
 title: date_sakazuki_2_rice
@@ -192,7 +204,9 @@ Well... you *are* curious. And maybe he won't scold you for being distracted if 
 {$sakazuki}: Yes.
 {$name}: Oh... well...
 -> Do you want to trade recipes?
-    {$sakazuki}: <pause>[surprised] Trade recipes? //HOW DO??
+    {$sakazuki}:
+    <<wait 1>>
+    {$sakazuki}: Trade recipes? #expression:angry // TODO: Desired expression was 'surprised' which we don't have.
     {$name}: Yeah, my Mom bakes! She taught me a few of her favorite recipes. I'm not as good a cook as I am a baker but I'm willing to learn!
     {$sakazuki}: ...
     {$sakazuki}: I don't make gourmet food. I cook everyday meals, with a lot of heat. Are you sure that's what you want?
@@ -244,15 +258,14 @@ Well... you *are* curious. And maybe he won't scold you for being distracted if 
     {$sakazuki}:... And why should I do that?
     {$name}: I mean, you're filthy rich, right? Why should you have to do something so mundane?
     {$name}: If I were the Fleet Admiral, I would have people do everything for me. I wouldn't even lift a finger.
-    {$sakazuki}: [frown] ... //HOW DO??
+    {$sakazuki}: ... #expression:angry
     {$sakazuki}: Then it is a good thing the line of choices for Fleet Admiral is long, and you are at the back end of it.
     {$name}: ... Wait... what does that mean?!
-    {$sakazuki}: What do you think I *meant*, soldier?! Get a grip and examine why you are a Marine in the first place!
+    {$sakazuki}: What do you think I *meant*, soldier?! Get a grip and examine why you are a Marine in the first place! #expression:angry-teeth
 You stay silent, mulling over his words.
 Fleet Admiral Sakazuki finally makes his decision. Placing a few bags of rice in the cart, he glances at you.
 Oh, he's letting you make a choice for the next destination. The next one should be...
 <<jump date_sakazuki_2_Grocery_shopping>>
-<<jump date_sakazuki_2_Lost_pet>>) //HOW DO??
 ===
 
 title: date_sakazuki_2_peppers
@@ -315,7 +328,6 @@ Fleet Admiral Sakazuki pauses, looks at his cart and then at the peppers still o
 {$sakazuki}: We are done. Let's go to the next location.
 {$name}: Yes, Sir! So that'd be...
 <<jump date_sakazuki_2_Grocery_shopping>>
-<<jump date_sakazuki_2_Lost_pet>>) //HOW DO??
 ===
 
 title: date_sakazuki_2_plants
@@ -425,7 +437,6 @@ With that debacle over, Fleet Admiral Sakazuki has to grab a few extra bags of s
 Fleet Admiral Sakazuki gestures for you to pick the next location.
 {$name}: Let's head to the next destination, Sir.
 <<jump date_sakazuki_2_Grocery_shopping>>
-<<jump date_sakazuki_2_Lost_pet>>) //HOW DO??
 ===
 
 title: date_sakazuki_2_Lost_pet
@@ -460,7 +471,7 @@ Fleet Admiral Sakazuki pats the dog once. He adjusts his grip so the wiggling fu
     {$name}: Respectfully, Sir, I'll help get whatever you need later, but right now, the owner must be worried. It won't sit well with my conscience to do nothing about it.
     {$sakazuki}: Is that your final answer?
     {$name}: Yes, Sir! And if you don't agree with me then... well... well I'll just have to return the dog myself!
-    {$sakazuki}: ... [smile] Very well. It is the more urgent situation of the two. I'll accompany you. //HOW DO??
+    {$sakazuki}: ... Very well. It is the more urgent situation of the two. I'll accompany you. #expression:smile-talk
     {$name}: Um... you're not... mad?
     {$sakazuki}: No.
     {$sakazuki}: Your words aren't without value. I have... friends... *a friend*... who would approve of such sentiments.
@@ -491,7 +502,7 @@ Fleet Admiral Sakazuki pats the dog once. He adjusts his grip so the wiggling fu
     You, like many others, have heard horror stories about the kind of things Fleet Admiral Sakazuki can do. Yet surprisingly, he's gentle with the animal in his hand. The dog appears content once it stops trying to run off, begging him for extra pets which he begrudgingly gives.
     He walks to the security guard to explain the situation and hands over the furball along with the leash.
 Fleet Admiral Sakazuki wraps up the rest of the trip quickly while you follow after, mulling over what you have seen.
-=> [Lead to different endings depending on the scores] //HOW DO??
+<<jump date_sakazuki_2_ending>>
 ===
 
 title: date_sakazuki_2_Route_2
@@ -505,7 +516,7 @@ location: office
 {$name}: Unofficial? Where are we going?
 {$sakazuki}: You'll see. Come, {$name}. We don't have all day.
 {$name}: Y-Yes, Sir!
-<,jump date_sakazuki_2_cadet>>
+<<jump date_sakazuki_2_cadet>>
 ===
 
 title: date_sakazuki_2_cadet
@@ -650,7 +661,7 @@ You follow Fleet Admiral Sakazuki's lead, looking at Headquarters from above. It
     {$sakazuki}:...
     {$sakazuki}: It's not just the buildings. It's the people. We are the very best the Navy has to offer. The last bastion.
     {$name}: I... don't get what you're talking about at all.
-    {$sakazuki}: [annoyed/judging] Never mind that then. Come. One last errand before it's done. //HOW DO??
+    {$sakazuki}: Never mind that then. Come. One last errand before it's done. #expression:grumpy
     <<jump date_sakazuki_2_Post_Office>>
 -> I heard it's quite different from the old Marineford. Do you find it strange?
     {$sakazuki}: It was difficult to adjust at first. I do not like change. Change signifies uncertainty. And in battle, uncertainty means death.
@@ -693,7 +704,7 @@ You struggle to catch up with the Fleet Admiral's long legs. Fleet Admiral Sakaz
 {$name}: I send letters home often. Mom and Dad worry, so I want to reassure them I'm in good hands. And I like receiving letters from them, too.
 {$sakazuki}: Hm.
 {$sakazuki}: Yes. We are delivering something.
-Arriving at the glassdoor of the post office, you hesitate. You aren't too sure if you should accompany the Fleet Admiral inside or not. You are curious, but it's probably private, right?
+Arriving at the glass door of the post office, you hesitate. You aren't too sure if you should accompany the Fleet Admiral inside or not. You are curious, but it's probably private, right?
 {$sakazuki}: Are you coming inside?
 -> No, Sir. I prefer staying outside.
     {$sakazuki}: It's your choice. I will be back.
@@ -702,7 +713,6 @@ Arriving at the glassdoor of the post office, you hesitate. You aren't too sure 
     {$sakazuki}: Some paperwork.
     {$name}: Oh.
     {$sakazuki}: It's done now. Thank you for your company.
-    => Go to the corresponding Ending depends on the total points //HOW DO??
 -> If you don't mind my presence, sir.
     <<set $sd2_points +=1>>
     {$sakazuki}: ... No. Come.
@@ -717,14 +727,23 @@ Arriving at the glassdoor of the post office, you hesitate. You aren't too sure 
     {$name}: ...
     You aren't sure what you should say to that so you keep silent, waiting for Fleet Admiral Sakazuki to finish his business.
     {$sakazuki}: It's done now. Thank you for your company.
-    => Go to the corresponding Ending depends on the total points //HOW DO??
+<<jump date_sakazuki_2_ending>>
+===
+
+title: date_sakazuki_2_ending
+---
+<<if $sd2_points >= 3>>
+    <<jump date_sakazuki_2_best_end>>
+<<elseif $sd2_points >= 1>>
+    <<jump date_sakazuki_2_neutral_end>>
+<<else>>
+    <<jump date_sakazuki_2_bad_end>>
+<<endif>>
 ===
 
 title: date_sakazuki_2_best_end
 location: town
 ---
-
-(Total points: 3-5pts) //HOW DO??
 That has been one heck of an evening. And here you thought today was just going to end up with you going home to take a relaxing shower to prepare for a very uneventful tomorrow.
 Your stomach rumbles. Awww, you haven't gotten dinner yet. You are starving.
 Fleet Admiral Sakazuki glances at you when he notices the sound. He's still walking side by side with you, but you know there's a junction coming up next and he'll have to take a different turn to go home. You remember the earlier events, the time you two spent together...
@@ -742,8 +761,6 @@ You mentally cheer. You didn't expect him to say yes. Hurrying after him, you tw
 title: date_sakazuki_2_neutral_end
 location: town
 ---
-
-(Total: 1-2 pts) //HOW DO??
 Fleet Admiral Sakazuki and you walk together. You have the feeling you have accidentally put your foot in your mouth a few times. Unfortunately, you can't exactly take back what you've said.
 Thinking about it makes your stomach rumble. You haven't had a bite all evening. Maybe inviting Fleet Admiral Sakazuki along would be good...? Maybe you can correct some of the things you've done wrong?
 {$name}: Sir?
@@ -758,8 +775,6 @@ With that said, Fleet Admiral Sakazuki nods curtly and leaves. Maybe he will go 
 title: date_sakazuki_2_bad_end
 location: town
 ---
-
-(Total points: 0 pts or less) //HOW DO??
 The walk home with Fleet Admiral Sakazuki was awkward. He's not really slowing down for you. You are struggling to keep up. You have a feeling that it wasn't your best night... and you might have accidentally offended him a few times. Well, maybe a meal would change the atmosphere between you two?
 {$name}: Fleet Admiral Sakazuki, Sir.
 The Fleet Admiral slows down.
