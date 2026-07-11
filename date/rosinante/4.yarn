@@ -128,12 +128,13 @@ location: quarters
 Rosinante: I...
 Rosinante: When we were in town—at the library, I mean...
 Rosinante: Do you remember me mentioning my hometown?
--> if date 3 ended during KIDS_BAD2 or VISITS_BAD2 //HOW DO????
+<<if visited("date_rosinante_3_Kids_Bad2") || visited("date_rosinante_3_Visits_Bad2")>>
     <<jump date_rosinante_4_DATE3_FAIL_KIDS>>
--> if date 3 ended during HOME_TOWN2 =>
+<<elseif visited("date_rosinante_3_Home_Town2")>>
     <<jump date_rosinante_4_DATE3_FAIL_MAPS>>
--> if date 3 finished successfully
+<<else>>
     <<jump date_rosinante_4_DATE3_SUCCESS>>
+<<endif>>
 ===
 
 title: date_rosinante_4_DATE3_FAIL_KIDS

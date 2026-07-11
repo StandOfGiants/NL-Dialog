@@ -101,10 +101,11 @@ title: date_garp_2_route_d
 location: mess hall
 ---
 
-If the player went on a Garp route during the previous work day:) //HOW DO??
-Garp: Oh, that reminds me! Thanks for doing what you did earlier. You really helped us all out!
-If the player did not go on a Garp route during the previous work day:) //HOW DO??
-Garp: Oh, that reminds me! The others told me about how you helped them out. Nice work.
+<<if visited("workday_legendary_2_sengarp_path")>>
+    Garp: Oh, that reminds me! Thanks for doing what you did earlier. You really helped us all out!
+<<else>>
+    Garp: Oh, that reminds me! The others told me about how you helped them out. Nice work.
+<<endif>>
 
 
 {$name}: Oh, it was no big deal! I'm glad I could help!

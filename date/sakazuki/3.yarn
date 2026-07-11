@@ -1,15 +1,21 @@
 title: date_sakazuki_3_main
 location: training grounds
 ---
+<<declare $sd3_points = 0>>
+
 It's a bright, beautiful morning. You wake up early, feeling energetic. The sun is still at the horizon, everything is cool and calm. Deciding that it's good to train once a while, you put on your running shoes and decide to go for a jog.
 Passing by the training field, you stop in surprise when you see a familiar figure there. Isn't that...
 {$name}: ... Fleet Admiral Sakazuki, Sir?!
 The Fleet Admiral stops moving and turns.
 {$sakazuki}: Good morning, {$name}. I didn't expect to see you here.
 {$name}: Ah, well, I woke up early and training is always a good idea.
-[If the last date ends on the best ending] {$sakazuki}: You are a credit to the Navy. I'm glad to see Marines taking their duty seriously. //HOW DO??
-[If the last date ends on the neutral ending] {$sakazuki}: It is. It's good to see that you haven't adopted too many bad habits. //HOW DO??
-[If the last date ends on the bad ending] {$sakazuki}: I didn't think you had such a drive in you. I suppose one must start somewhere. //HOW DO??
+<<if visited("date_sakazuki_2_best_end")>>
+    {$sakazuki}: You are a credit to the Navy. I'm glad to see Marines taking their duty seriously.
+<<elseif visited("date_sakazuki_2_neutral_end")>>
+    {$sakazuki}: It is. It's good to see that you haven't adopted too many bad habits.
+<<else>>
+    {$sakazuki}: I didn't think you had such a drive in you. I suppose one must start somewhere.
+<<endif>>
 {$name}: ... T-thank you, Sir?
 {$sakazuki}: Come. I'm finishing up my last run around the island. You can join me.
 You feel your face pale. A run around the entire island?! But it's massive! You might feel suddenly inspired today, but you aren't sure you are *that* inspired! After a moment of thinking, you decide...
@@ -118,7 +124,8 @@ You take a deep breath. Well, since the Fleet Admiral has invited you...
         Whoops... you didn't mean to be so sappy. Quick, you need to say something to ease the tension.
         {$name}: *Staying* friends with you through one of your stubborn fits though... now *that* takes patience. But hey, nothing would get done if you weren't so adamant.
         {$sakazuki}: The others are indeed like herding cats.
-        IF FLASHY {$name}: *Staying* friends with you through one of your stubborn fits though... now *that* takes patience. I can't believe you think so low of flashy moves. *I* think they are superior. //HOW DO??
+        // TODO: I don't know what this means
+        IF FLASHY {$name}: *Staying* friends with you through one of your stubborn fits though... now *that* takes patience. I can't believe you think so low of flashy moves. *I* think they are superior.
         {$sakazuki}: [laugh/smile] We'll see about that. I suppose you can always distract your opponents if you are flashy enough. Borsalino seems to think so, at least.
     -> ...No matter what you say, it's admirable that you consider the other Admirals your friends while being so different.
         {$sakazuki}: I suppose so.
@@ -365,7 +372,7 @@ You decide that...
 -> It's none of your business. Nobody asked Fleet Admiral Sakazuki to do it either.
     Hoping that Fleet Admiral Sakazuki won't just order you to work, you slink off to a corner out of sight, sitting down on a bench to relax. After all that training, everything aches!
     Fleet Admiral Sakazuki glances your direction, but doesn't force you to help, content to be doing all the work himself. Weird! Who wants to voluntarily do chores anyway!
-    => Go to the appropriate ending depending on the total scores //HOW DO??
+    <<jump date_sakazuki_3_ending>>
 -> Of course you should help! It's the right thing to do.
     <<set $sd3_points +=1>>
     {$name}: Sir, please let me help you! Tell me what I can do.
@@ -373,7 +380,19 @@ You decide that...
     {$sakazuki}: Pick up the trash while I return the training weights back to their proper place.
     {$name}: Yes, Sir, I'm on it!
     You start with your task. The silence between the two of you stretches out, but it's not uncomfortable. You wonder if Fleet Admiral Sakazuki does this every day. That takes some true dedication!
-    => Go to the appropriate ending depending on the total scores //HOW DO??
+    <<jump date_sakazuki_3_ending>>
+===
+
+title: date_sakazuki_3_ending
+---
+// TODO: Figure out points breakdown.
+<<if $sd3_points >= 3>>
+    <<jump date_sakazuki_3_best_end>>
+<<elseif $sd3_points >= 1>>
+    <<jump date_sakazuki_3_neutral_end>>
+<<else>>
+    <<jump date_sakazuki_3_bad_end>>
+<<endif>>
 ===
 
 title: date_sakazuki_3_best_end

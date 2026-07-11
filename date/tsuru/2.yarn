@@ -23,8 +23,7 @@ It may be a good opportunity to get to know her outside of work...
         Tsuru: Hmm.
     -> {$name}:: Yes! You scare me.
         <<set $td2_points +=1>>
-        Tsuru: Oh.
-        --Tsuru scoffs-- //HOW DO??
+        Tsuru: Oh. #expression:offended
 -> Wave at her.
     Tsuru: Hello, {$name}.
 Tsuru: Are you enjoying your day off?
@@ -32,9 +31,10 @@ Tsuru: Are you enjoying your day off?
     <<set $td2_points -=1>>
     Tsuru: I know you work hard.
     Tsuru: But it's healthy to distract oneself if the time is there.
-(If you had a bad run in the last date:) //HOW DO??
-    Tsuru: I wouldn't have known!
-    Tsuru: Well... At least you're applying yourself.
+    <<if visited("date_tsuru_1_DateEndsEarly")>>
+        Tsuru: I wouldn't have known!
+        Tsuru: Well... At least you're applying yourself.
+    <<endif>>
 - It's nice to have a break from the chaos at work!
     Tsuru: ... After yesterday, I must agree.
     Tsuru: I'm sorry that the old geezers are behaving like they're children...*Again.*
@@ -398,18 +398,36 @@ Tsuru: I suppose it would be a good thing if you come along.
 title: date_tsuru_2_route2_main
 location: town
 ---
-
+<<declare $td2_route2_visits = 0>>
 You are now on the main shopping avenue of New Marineford. The air is fresh, thick with conversation from the crowd ambling up and down...
-Tsuru: Where should we head next?
--> Pet Shop
+<<jump date_tsuru_2_route2_choices>>
+===
+
+title: date_tsuru_2_route2_choices
+---
+<<set $td2_route2_visits += 1>>
+
+<<if $td2_route2_visits >= 3>>
+    // Check results. Go to good or bad end.
+    <<if $td2_points >= 2>>
+        <<jump date_tsuru_2_route2_end1>>
+    <<else>>
+        <<jump date_tsuru_2_route2_end2>>
+    <<endif>>
+<<elseif $td2_route2_visits >= 2>>
+    Tsuru: OK, dear {$name}! Where are we heading next?
+<<else>>
+    Tsuru: Where should we head next?
+<<endif>>
+
+-> Pet Shop <<if !visited("date_tsuru_2_route2_pet")>>
     <<jump date_tsuru_2_route2_pet>>
--> Grocery Store
+-> Grocery Store <<if !visited("date_tsuru_2_route2_food")>>
     <<jump date_tsuru_2_route2_food>>
--> Teahouse
+-> Teahouse <<if !visited("date_tsuru_2_route2_tea")>>
     <<jump date_tsuru_2_route2_tea>>
--> Liquor Store
+-> Liquor Store <<if !visited("date_tsuru_2_route2_smokers")>>
     <<jump date_tsuru_2_route2_smokers>>
-**Note: The idea is that the player can pick 2 of these interactions before the option “We are done” shows up. I didn't know how to type that in without cluttering the doc! //HOW DO??
 ===
 
 title: date_tsuru_2_route2_pet
@@ -451,13 +469,7 @@ Tsuru: *sigh*... That goat is a menace...
     Tsuru: Although, of course, no Fleet Admiral will ever do that.
     Tsuru: One thing is true— I haven't seen him smiling like that in so long!
 Shop Assistant: Here we go~ Thank you for your visit!
-Tsuru: Where to now? Your choice.
-    - Grocery Store
-        <<jump date_tsuru_2_route2_food>>
-    - Teahouse
-        <<jump date_tsuru_2_route2_tea>>
-- Liquor Store
-    <<jump date_tsuru_2_route2_smokers>>
+<<jump date_tsuru_2_route2_choices>>
 ===
 
 title: date_tsuru_2_route2_food
@@ -488,13 +500,7 @@ Tsuru: It would be unfair to buy something for everyone *but* Garp...
     Tsuru: He's much more than what meets the eye.
     Tsuru: Heroism has nothing to do with presentation... But with deeds.
 It takes a while, but you end up with a nice heap of fruit for the offices and enough rice cakes to survive the week!
-Tsuru: So, where are we heading now?
-- Pet Shop
-    <<jump date_tsuru_2_route2_pet>>
-- Teahouse
-    <<jump date_tsuru_2_route2_tea>>
-- Liquor Store
-    <<jump date_tsuru_2_route2_smokers>>
+<<jump date_tsuru_2_route2_choices>>
 ===
 
 title: date_tsuru_2_route2_tea
@@ -523,13 +529,7 @@ Tsuru: Oh? You want to go to the teahouse?
     Tsuru: ...
     Tsuru: I suppose it's the idea that counts...
 The two of you make your way to the teahouse. Who knew tea was such an art? It takes you over an hour, but finally you finish shopping at the teahouse.
-Tsuru: OK, dear {$name}! Where are we heading next?
--> Pet Shop
-    <<jump date_tsuru_2_route2_pet>>
--> Grocery Store
-    <<jump date_tsuru_2_route2_food>>
--> Liquor Store
-    <<jump date_tsuru_2_route2_smokers>>
+<<jump date_tsuru_2_route2_choices>>
 ===
 
 title: date_tsuru_2_route2_smokers
@@ -568,19 +568,12 @@ Tsuru: Do you know what brand Rosinante would prefer?
     Tsuru: It's a good thing that you are trying to get to know all of us, {$name}.
 Tsuru: Let's try this one!
 She holds up a packet triumphantly. There is a black flamingo on it.
-Tsuru: Where should we head?
--> Pet Shop
-    <<jump date_tsuru_2_route2_pet>>
--> Grocery Store
-    <<jump date_tsuru_2_route2_food>>
--> Teahouse
-    <<jump date_tsuru_2_route2_tea>>
+<<jump date_tsuru_2_route2_choices>>
 ===
 
 title: date_tsuru_2_route2_end1
 location: town
 ---
-(This should appear after the player has gone through two of the shopping scenarios and has a positive enough outcome:) //HOW DO??
 Tsuru: Well, {$name}... That was fun!
 Tsuru:  I'll take the things with me back to the office.
 Tsuru: Thank you for your help.
@@ -590,7 +583,6 @@ Tsuru: Thank you for your help.
 title: date_tsuru_2_route2_end2
 location: town
 ---
-(This should appear after the player has gone through two of the shopping scenarios with bad answers:) //HOW DO??
 Tsuru: Finally done.
 Tsuru:  I'll take these things with me back to the office.
 Tsuru: Thank you for your help, I suppose.

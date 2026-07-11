@@ -27,7 +27,7 @@ You call out to the group.
 Grunt: A little earlier, yeah, but not recently. About ten minutes ago, I passed by the marina and heard him having a fit, flipping over crates and stuff.
 -> Did he say what was wrong?
 -> Maybe someone misfiled a shipping manifesto?
--> (if had Sora conversation in date 2) Did someone try to convince him Winch Green was the best Sora character? //HOW DO??
+-> Did someone try to convince him Winch Green was the best Sora character? <<if visited("drake_date_2_Sora_checkout_Drake") || visited("drake_date_2_Sora_checkout_PC")>>
 Grunt: Do I look dumb enough to get in the way of a guy who can bite me in half?
 Grunt: Anyway, I think I heard him yelling for a woman. I don't remember her name, but he was really whipped up about it. I wasn't going to stick around to see what he planned to do when he found her.
 Unsure what to make of the information, you return to your post. Drake is way serious about his work and he's a little stuffy, but he's not cruel. Something in the grunt's story feels off.
@@ -53,7 +53,7 @@ Well...that's certainly shaped like a reason to be late. You think.
     Drake: Absolutely not. That's beyond offensive—!
 -> BIG.
     Drake: They generally are–?
--> I thought you said you didn't want an office lizard! [if 3BPart2 was chosen in date1] //HOW DO??
+-> I thought you said you didn't want an office lizard! <<if visited("drake_date_1_Part_3BPart2")>>
     Drake: She's not an office lizard!
 Surprised by his own volume, he reins himself into a whisper.
 Drake: Her name is Jessica. She's a monitor lizard and for the most part, lives on my ship. Or she has these past two years. Gods, this is a disaster... Any other time of the year would have been fine but—
@@ -229,7 +229,7 @@ Drake: To be entirely too frank...through lots of preemptive research and even m
     Drake: Not exactly, but one learns the tells of an animal the longer they know them and unfortunately she's a lot sharper than she looks.
 As you watch him on the floor, he still looks miserable. You wonder if you can help him take his mind off things.
 {$name}: So long as we're here...
--> Tell me more about your comics? (if had Sora conversation in date 2) //HOW DO??
+-> Tell me more about your comics? <<if visited("drake_date_2_Sora_checkout_Drake") || visited("drake_date_2_Sora_checkout_PC")>>
     Drake: ...Even if it means half an hour of ranting about mischaracterization in the lattermost half of the recent reboots, and the about the awful movie they put out over a decade ago?
     {$name}: Did I stutter?
 -> There's gotta be more cool stuff to tell about being a dinosaur.
@@ -364,27 +364,26 @@ Drake: I really shouldn't trouble you anymore. The sooner I get her back into he
 -> I wouldn't mind seeing her again in better weather.
     <<set $dd4_points +=1>>
     Drake: If I'm still here come spring... I think that could be arranged.
--> I could walk you back. Could be less headache with your eyes like this.
-    <<set $dd4_points +=1>> [if you chose :: body] //HOW DO??
+-> I could walk you back. Could be less headache with your eyes like this. <<if visited("date_drake_4_body")>>
+    <<set $dd4_points +=1>>
     Drake: I've a much clearer head now, so the rest of my senses will do just fine. Thank you, though.
 On principle, Drake helps you tidy up. Afterward, once he's swaddled her for the trip back, he heads off.
-<<jump date_drake_4_End>> //HOW DO?? Endings dependent on points
+<<jump date_drake_4_End>>
 ===
 
 title: date_drake_4_End
 location: quarters
 ---
 
--> (Date end early)
-    <<jump date_drake_4_no_drake_end>>
--> (If PC had <1 points)
-    <<jump date_drake_4_Zero_point_end>>
--> (If PC had 2-3 points)
-    <<jump date_drake_4_One_point_end>>
--> (If PC had 4+ points)
+<<if $dd4_points >= 4>>
     <<jump date_drake_4_Two_point_end>>
-
-//HOW DO?? ^^
+<<elseif $dd4_points >= 2>>
+    <<jump date_drake_4_One_point_end>>
+<<elseif $dd4_points >= 0>>
+    <<jump date_drake_4_Zero_point_end>>
+<<else>>
+    <<jump date_drake_4_no_drake_end>>
+<<endif>>
 ===
 
 title: date_drake_4_no_drake_end

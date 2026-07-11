@@ -288,19 +288,23 @@ location: day(ship)
     Garp: ...At one point, I would have tried. But now, or rather, even back then, there was no point. Sengoku was firm. Tsuru was apathetic. And I... I was already on the edge of a cliff. There's nobody I could have told that would have made anything better.
     Garp: At least... not until you came along.
     {$name}: (...Oh, Garp...)
-    IF + IS ABOVE [THRESHOLD]:
-        <<jump date_garp_4_route_g>> //HOW DO??
-    Else:
-        <<jump date_garp_4_route_h>> //HOW DO??
+    // TODO: Define garp date threshold
+    <<if $gd4_points > 4>>
+        <<jump date_garp_4_route_g>>
+    <<else>>
+        <<jump date_garp_4_route_h>>
+    <<endif>>
 -> ...Considered retiring from the Marines?
     Garp: ...Heh. I did, but... there's still things that I need to do here. Still, once things settle down a bit, maybe it would be nice to put it all behind me. Spend time with other people. Maybe even...
     {$name}: ...Even what?
     Garp: ...Never mind.
     {$name}: (Was it just me, or... was he blushing a bit?)
-    IF + IS ABOVE [THRESHOLD]:
-        <<jump date_garp_4_route_g>> //HOW DO??
-    Else:
-        <<jump date_garp_4_route_h>> //HOW DO??
+    // TODO: Define garp date threshold
+    <<if $gd4_points > 4>>
+        <<jump date_garp_4_route_g>>
+    <<else>>
+        <<jump date_garp_4_route_h>>
+    <<endif>>
 ===
 
 title: date_garp_4_route_g
@@ -347,7 +351,8 @@ Garp: Don't. Don't say anything. It's just the silly wish of an old man. I don't
     Garp: Alright, we should get back to work. Thanks for listening, {$name}!
     {$name}: Anytime. And... thank you, Garp.
     <<set $gd4_points +=1>>
-    <<jump date_garp_4_end>> PC locked out of romantic Garp ending //HOW DO??
+    <<lock_out garp>>
+    <<jump date_garp_4_end>>
 ===
 
 title: date_garp_4_route_h

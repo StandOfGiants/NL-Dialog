@@ -270,7 +270,6 @@ You gather your Marine coats in a rush and make your way toward the docks...
 title: date_tsuru_4_with_snail_queue
 location: town
 ---
-
 You make your way to the theater.
 A very nice, old building, with patterns sculpted on its facade. A sharply dressed public is already gathering outside.
 A few minutes later, Tsuru waves to you. She is so nicely dressed!
@@ -286,7 +285,12 @@ Tsuru: Ah! Hello, {$name}. I hope I didn't keep you waiting.
     Tsuru clearly wasn't expecting this response.
     Tsuru: Sorry for the inconvenience, I suppose.
 The two of you could enter the theater... But there's still some time left until the show begins and it's nice outside.
-// {It's possible to pick 2 of the following options:} //HOW DO??
+<<jump date_tsuru_4_with_snail_queue_2>>
+===
+
+title: date_tsuru_4_with_snail_queue_2
+---
+// TODO: Allow picking 2 instead of only 1
 -> Make small talk about work
     <<set $td4_points +=1>>
     Tsuru: I see that you have brought your transponder with you.
@@ -325,6 +329,10 @@ The two of you could enter the theater... But there's still some time left until
     {$name}: The crowd around here is a bit stuck-up, isn't it?
     Tsuru: Excuse me?!
     Tsuru: Aren't we part of the ‘crowd' around here, {$name}?!
+===
+
+title: date_tsuru_4_with_snail_queue_3
+---
 A sudden ring cuts through her words!
 Snail: *Bere-bere-bere-bere!*
 You and Tsuru exchange glances.
@@ -660,7 +668,8 @@ location: town
 
 You make your way to Tsuru's place, but it seems like no one is home...
 {$name}: ...
-A day later, you are back in the office and run into Tsuru. //HOW DO?? Location change
+<<set_background day(office)>>
+A day later, you are back in the office and run into Tsuru.
 Tsuru: {$name}! I wanted to see you.
 Tsuru: I am very sorry. I couldn't reach you.
 Tsuru: Something took place that required my attention.
@@ -674,7 +683,8 @@ location: quarters
 
 The more you wait, the angrier you get.
 You storm your way back home and hope she has a really good excuse for this!
-A day later, you are back in the office and run into Tsuru. //HOW DO?? Location change
+<<set_background day(office)>>
+A day later, you are back in the office and run into Tsuru.
 Tsuru: {$name}! I wanted to see you.
 Tsuru: I am very sorry. I couldn't reach you.
 Tsuru: Something took place that required my attention.

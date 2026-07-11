@@ -249,7 +249,7 @@ Her horse does another wild buck, and Hina clenches her buttocks tightly. Even f
   <<if $hd4_horse == "Dark">>
     Your horse huffs and puffs, and as you slow down, you feel your horse regain its strength. The jump isn't as long as the others, and even at a slower pace, your horse easily clears it.
   <<elseif $hd4_horse == "Round">>
-    <<set $hd4_points -=1>> //HOW DO??
+    <<set $hd4_points -=1>>
     As you pull on the reins to slow your horse, it goes from an easy gallop to a slow trot, until it comes to a complete stop. As you nudge it with your legs, it barely takes a few steps, and wanders around the obstacle.
     Hina: Tch. Are you unable to make even the most obedient horse your subordinate? Hina is disappointed in you, {$name}.
   <<else>>
@@ -300,7 +300,7 @@ Hina veers off from the path, all four obstacles complete, and with a quick glan
    No reward without risk! You motion Small Dad forward, but as you gain speed and get a closer look, all three jumps are taller than the others! There's no time to abort the mission!
     <<jump date_hina_4_Failed_Jump>>
   <<else>>
-    <<set $hd4_points +=1>> //HOW DO??
+    <<set $hd4_points +=1>>
     This is it, just you and your horse. You are one. Beneath you, your horse snorts and in your inexperienced hands, you let your horse take the lead. In quick succession, you clear the triple jumps, and come to a stop close to Hina.
     Hina: Most impressive, {$name}! Hina did not think you had it in you, but Hina sees it now, the trust and care you place in your companions. It is a valuable trait.
   <<endif>>

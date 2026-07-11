@@ -1,13 +1,20 @@
 title: date_tashigi_3_main
 location: quarters
 ---
+<<declare $td3_points = 0>>
+<<if visited("date_tashigi_2_bonus_ending")>>
+    <<jump date_tashigi_3_bonus_start>>
+<<else>>
+    <<jump date_tashigi_3_standard_start>>
+<<endif>>
+===
 
-:: TSD3 Bonus First Scene (If PC has a perfect score from Date 2) // HOW DO??
-
+title: date_tashigi_3_bonus_start
+---
 You can't help but remember the taste of chocolate-topped ice cream every time you see Tashigi. It's been months, but the sweetness of the treat she'd bought you still lingers on your tongue. You've tried to get her attention and ask to spend time together ever since your—can you call it a date? Your shopping date—but you've found that it's been almost impossible.
 Tashigi has been busy. Every time you've gathered the courage to ask her, she's either had a ton of paperwork to do (you help her where you can, but don't want to be a distraction), or is out on a mission.
 You can't help but notice that she's been frowning a lot lately. She's allowed to frown; work has been tough and awful lately, the villainy of the seas never-ending. But you'd like to lighten her load somehow. You've thought about trying to make her laugh, but you're not particularly witty or funny, so maybe being a friend and offering a listening ear is a more achievable goal.
-(Background change: Office) // HOW DO??
+<<set_background day(office)>>
 
 It's late morning. You're sweaty from morning drills, but decide to head over to Tashigi's office. She hadn't been at morning training, so if you had to guess, she's been pouring over files on the recent pillaging of a nearby village she had promised to protect. Compassion and tunnel vision are her biggest strength and biggest weakness.
 She's probably forgotten breakfast, but you don't want to assume anything and possibly embarrass her. Instead, you have another idea.
@@ -31,17 +38,15 @@ You nod to yourself as you pull up a chair to keep her company. As you chat, tho
 <<jump date_tashigi_3_route_join>>
 ===
 
-// title: date_tashigi_3_main
-// location: office
-// ---
-// ::TSD3 Regular Start // HOW DO??
-
-// It's lunchtime at last. Despite the chilly weather, you'd worked up a great sweat this morning from early morning drills and weapons practice, and your body is aching pleasantly. You've almost nailed one particular move with your sword that you're hoping will impress Tashigi, considering your lack of specialization in the area. You've really been taking all of her sword and footwork pointers to heart, gleaning what you can from your casual conversations.
-// Tashigi has been absent from the training grounds lately, working hard on paperwork and cases, but you've caught glimpses of her training at odd hours. You're pretty sure, based on what you've heard, that she's been pouring over files on the recent pillaging of a nearby village she had promised to protect.
-// For your part, you've been struggling to sleep. You miss the Blues, and you miss your family. You've found friends among the Marines, some even feeling more like family, but you only get that nostalgic sense of warmth, care, and compassion from a few people.
-// One of those people is Tashigi, and you're currently on your way to her desk. You briefly knock on the door before stepping inside and walking over. Even if you didn't already know which desk was hers, it's easy to tell thanks to the towering pile of paperwork sitting atop it. She doesn't see you at first, but as you approach, she looks up, her glasses sliding down her nose a little bit. Come to think of it...
-// <<jump date_tashigi_3_route_join>>
-// ===
+title: date_tashigi_3_standard_start
+location: office
+---
+It's lunchtime at last. Despite the chilly weather, you'd worked up a great sweat this morning from early morning drills and weapons practice, and your body is aching pleasantly. You've almost nailed one particular move with your sword that you're hoping will impress Tashigi, considering your lack of specialization in the area. You've really been taking all of her sword and footwork pointers to heart, gleaning what you can from your casual conversations.
+Tashigi has been absent from the training grounds lately, working hard on paperwork and cases, but you've caught glimpses of her training at odd hours. You're pretty sure, based on what you've heard, that she's been pouring over files on the recent pillaging of a nearby village she had promised to protect.
+For your part, you've been struggling to sleep. You miss the Blues, and you miss your family. You've found friends among the Marines, some even feeling more like family, but you only get that nostalgic sense of warmth, care, and compassion from a few people.
+One of those people is Tashigi, and you're currently on your way to her desk. You briefly knock on the door before stepping inside and walking over. Even if you didn't already know which desk was hers, it's easy to tell thanks to the towering pile of paperwork sitting atop it. She doesn't see you at first, but as you approach, she looks up, her glasses sliding down her nose a little bit. Come to think of it...
+<<jump date_tashigi_3_route_join>>
+===
 
 title: date_tashigi_3_route_join
 location: office
@@ -454,12 +459,13 @@ Tashigi: Still, no rest for the weary. Looks like my evening's been spoken for.
 {$name}: Well... maybe there's a way to get your mind off of it.
 Tashigi: Oh?
 {$name}: Would you like to get dinner with me sometime? Off-base, I mean. There's a great place in town that I've heard about, and I thought it would be nice to spend some time together without worrying about work.
--> (if player got 13+ points)
-    <<jump date_tashigi_3_good_end>> // HOW DO??
--> (if player got 7-12 points)
+<<if $td3_points >= 13>>
+    <<jump date_tashigi_3_good_end>>
+<<elseif $td3_points >= 7>>
     <<jump date_tashigi_3_neutral_end>>
--> (If player got 6 or fewer points)
+<<else>>
     <<jump date_tashigi_3_bad_end>>
+<<endif>>
 ===
 
 title: date_tashigi_3_good_end
