@@ -14,12 +14,12 @@ Tashigi: Hello. I know it's early in the morning, and that it's the weekend and 
 -> Yes, I'd love to spend the day with you, and sports day is so important for morale. I'd love to assist you in your task. Let me know what I can do to help out!
     <<set $ta2_points += 1>>
 -> Ah, so you're ran ragged and looking for a helper, huh. Sure, I'll help.
-[i]Tashigi is flustered by your response, but you're polite enough not to point it out.[/i]
-Tashigi: Would you like to accompany me into town? Be warned, I like to take the long way because I like to watch the ducks by the pond.
+    [i]Tashigi is flustered by your response, but you're polite enough not to point it out.[/i]
+    Tashigi: Would you like to accompany me into town? Be warned, I like to take the long way because I like to watch the ducks by the pond.
 -> Of course! It would be a refreshing way to spend the morning. Fresh air and great company—the ducks, I mean, not that you're not lov—I'd love to accompany you into town. Couldn't imagine a nicer start to the day.
     <<set $ta2_points += 1>>
 -> I actually have some things I need to do first this morning, but I'll meet you in town later.
-<<jump date_tashigi_2_date_start>>
+    <<jump date_tashigi_2_date_start>>
 ===
 
 title: date_tashigi_2_normal_date_start
@@ -32,8 +32,8 @@ You swear she'd get the gold for being a klutz, but it's endearing and those are
     <<jump date_tashigi_2_end_date>>
 -> Captain Tashigi! That's a very decorated and award-winning pavement. You're carrying so many prizes for the sports day: let me help get those back in their bags for you.
     <<set $ta2_points += 1>>
-Tashigi smiles up at you awkwardly as you retrieve all the prizes, finishing with lifting up her glasses and slide them onto her face.
-Tashigi: Oh, you saw that huh. Thank you for helping me, I should be good to go now.  Enjoy your weekend!
+    Tashigi smiles up at you awkwardly as you retrieve all the prizes, finishing with lifting up her glasses and slide them onto her face.
+    Tashigi: Oh, you saw that huh. Thank you for helping me, I should be good to go now.  Enjoy your weekend!
 -> Please, let me carry your bags for you. What can I do to help out?
 <<jump date_tashigi_2_date_start>>
 ===
@@ -41,8 +41,8 @@ Tashigi: Oh, you saw that huh. Thank you for helping me, I should be good to go 
 title: date_tashigi_2_date_start
 ---
 You carry some of the bags for Tashigi as you both walk down the street. She still carries half of them. They're heavy. It's a testament to her strength that she was carrying double the load. You look to her occasionally in awe as she walks alongside you, smile never wavering despite the growing unpleasant warmth of the day. She waves and greets any civilian who approaches. She seems to know everyone!
--> [i]laughs[/i] This is so much stuff. Do you have much more to get today?
-    Tashigi smiles apologetically and consults the list.
+[i]laughs[/i] This is so much stuff. Do you have much more to get today?
+Tashigi smiles apologetically and consults the list.
 Tashigi: We've almost got everything. We just have to pick up all the medals that were ordered; the replacement rope for the obstacle course because someone got over excited and completely broke—some would say, shredded it; and the custom maid outfits some of the marines volunteered to wear while working in the café. For charity.
 <<jump date_tashigi_2_choose_date_part>>
 ===
@@ -74,13 +74,12 @@ Tashigi: Sorry to rope you into helping me on your weekend off. I really appreci
     Tashigi: The sailor's use the hardiest of rope. Besides, what marine wouldn't want to support a fellow sea dweller?
     She has a point. Walking to the docks is pleasant. The smell of salt air is refreshing to the senses, like coming home. Beside you, Tashigi takes in a deep lungful of air. A contented smile lights up her face as she lets out a happy sigh.
     Tashigi: This is nice.
-Sea spray tickles your skin. You have the sudden impulse to put your hands in the water, so you do. Tashigi looks at you in confusion as you kneel by the edge of the docks, putting your hands in the water.
-
--> [i]splash yourself in the face[/i]
-    <<jump date_tashigi_2_splash_self>>
--> [i]splash tashigi[/i]
-    You splash Tashigi playfully with the water
-    <<jump date_tashigi_2_splash_tash>>
+    Sea spray tickles your skin. You have the sudden impulse to put your hands in the water, so you do. Tashigi looks at you in confusion as you kneel by the edge of the docks, putting your hands in the water.
+        -> [i]splash yourself in the face[/i]
+            <<jump date_tashigi_2_splash_self>>
+        -> [i]splash tashigi[/i]
+            You splash Tashigi playfully with the water
+            <<jump date_tashigi_2_splash_tash>>
 ===
 
 title: date_tashigi_2_splash_self

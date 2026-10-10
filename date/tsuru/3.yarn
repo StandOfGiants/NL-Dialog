@@ -1,0 +1,480 @@
+title: date_tsuru_3_main
+location: training grounds
+---
+
+Overtime at the HQ training grounds!
+During the last week, so much work piled up! But now you're finally finished and working out to blow off some steam and remember what not being stuck at a desk feels like.
+{$name}: Pant... pant...
+You haven't moved like this for a while... but you bet you can push it a bit.
+Movement catches your eye. You squint under the evening light at the gates. Is somebody there?
+{$name}: Oh! Vice Admiral Tsuru.
+Tsuru: Ah, hello, {$name}. I didn't want to interrupt you.
+-> It's good you're here! Do you want to train with me?
+    Tsuru: Well... I have someone visiting.
+    Tsuru: I was only going to pick something up before leaving again.
+    -> Oh, don't worry about it!
+        Tsuru: Hmm...
+    -> {$name}: It's a shame, but I understand.
+        <<set $td3_points +=1>>
+        Tsuru: Aw. I can see you're disappointed.
+    Tsuru looks at the time.
+    Tsuru: Hm... I'm sure she will understand.
+    Tsuru: How long do you need me, {$name}?
+    Tsuru: It's only fair, after how much you've done for me.
+    -> I'm almost done here!
+        <<jump date_tsuru_3_training_route_stretch>>
+    -> I'd like to ask you for advice on my Haki training.
+        <<jump date_tsuru_3_training_route_haki>>
+-> I was almost finished anyway...
+        Tsuru: Well, then.
+        Tsuru: Don't forget to stretch.
+        Tsuru: Do you need to go up to the office again? I can wait for you, but not too long— I have a visitor.
+        -> Could you help me end the workout?
+            <<jump date_tsuru_3_training_route_stretch>>
+        -> Nope! You can go home.
+            Tsuru: Alright.
+            <<jump date_tsuru_3_early_end0>>
+===
+
+title: date_tsuru_3_early_end0
+location: training grounds
+---
+
+Tsuru: Don't tire yourself out too much, {$name}.
+{$name}: (Uh oh... That didn't go too well.)
+You should've known by now that Tsuru expects you to be honest... and you really could have used her guidance. Hopefully you won't be too sore tomorrow...
+===
+
+title: date_tsuru_3_training_route_stretch
+location: training grounds
+---
+
+Tsuru: Hmm! I see that you have been working hard!
+Tsuru: It's important to decompress the whole body after an intense training session.
+What would you like to do next?
+-> Grind a bit more and pack up!
+    <<set $td3_points -=1>>
+    Tsuru: {$name} I hope you know your limits...
+    Tsuru: You need to take care of yourself.
+    Tsuru is poking at you gently to get on the stretching mat.
+-> Just go home. Sprains are for the weak!
+    <<set $td3_points -=1>>
+    Tsuru: {$name}, you're reminding me of Garp...
+    Tsuru: But you're not quite allowed to be as irresponsible as he is yet.
+    Tsuru is poking at you to gently get on the stretching mat.
+-> Stretch before leaving!
+    <<set $td3_points +=1>>
+    Tsuru: Good, good.
+    Tsuru: A good Marine knows how to take care of themselves.
+Tsuru: Here.
+As you stretch your legs and hips, Tsuru places her hands on your back and gives you a slight push.
+-> Do 10 seconds...
+    <<set $td3_points -=1>>
+    Tsuru: What? That was it?
+-> Do 20 seconds...
+    <<set $td3_points -=1>>
+    Tsuru: That was it?
+-> Do 30 seconds...
+    <<set $td3_points +=1>>
+    Tsuru: I think that's enough!
+Tsuru: Here, I'll give you a hand.
+-> Can you help me with massage? My muscles are really tight.
+    <<set $td3_points +=1>>
+    Tsuru: ...
+    Is that a light blush you are noticing?
+    Tsuru: ... Of course.
+    You decompress as Tsuru sets her palms on yours.
+    She massages your arms. Wherever she touches, you feel your skin cool down... Then warming up. Comfort envelops you, as if you were standing under running water.
+    Tsuru: My Devil Fruit doesn't only come in handy in battle.
+    <<jump date_tsuru_3_talking_route2>>
+-> I'll take care of it from now on!
+    Tsuru: As you wish, {$name}.
+    <<jump date_tsuru_3_early_end>>
+===
+
+title: date_tsuru_3_training_route_haki
+location: training grounds
+---
+
+{$name}: I was wondering about the next steps to activate my Haki.
+{$name}: ...I hope that's not too overconfident of me.
+Tsuru: Oh. I always have some time to help you.
+Tsuru: It is very nice to see you are ambitious, {$name}!
+You follow Tsuru to a sheltered area within the training grounds, where a few slings and straps are hanging from a rack.
+Tsuru: So... Does this ring a bell from your training, {$name}?
+{$name}: Oh, sure!
+Tsuru: Very good! So you know what you have to do!
+{$name}: ...
+-> I suppose... I have to swing from one of these slings to the other.
+    <<set $td3_points -=1>>
+    You start climbing up the structure.
+    Tsuru: {$name}? What are you doing?
+    Tsuru: I thought you said you know what this is...
+    Tsuru: Sigh... There is no stopping boldness.
+    Tsuru: You should find out what this exercise is, okay? That is your homework for now.
+    {$name}: Wait...
+    She has left by the time you get back on the ground.
+    <<jump date_tsuru_3_early_end>>
+-> I'm not sure...
+    <<set $td3_points +=1>>
+    You think there is a piece missing here.
+    Tsuru: Exactly! You're a good observer, {$name}.
+-> Tsuru... Could you remind me what I am supposed to do?
+    Tsuru: Of course.
+Tsuru fetches a long cloth. After a few loops and tugs, it hangs from the hinges like a hammock.
+Tsuru: I will demonstrate.
+Swiftly, Tsuru twirls around the cloth and hangs upside-down, her gray hair dangling in a ponytail, her smile wide.
+She is perfectly balanced, with a grace you wouldn't expect at her age.
+{$name}: Wow!
+Tsuru tilts one way, then the other. Then she unfurls around the cloth, back to the ground.
+Tsuru: First the right leg, then shifting your balance, kick your left leg up!
+Tsuru: Well, what do you think? Can you do this?
+-> No way. Let's do something easier.
+    <<set $td3_points -=1>>
+    Tsuru: Pushing yourself is important for the development of Haki.
+    Tsuru: Maybe this is the next step you need to take before you can hone it.
+    <<jump date_tsuru_3_early_end1>>
+-> Of course!
+    Tsuru: That's the spirit!
+    Tsuru: Your task is to try to imitate me.
+    She gives you a little wink.
+    Tsuru: Shouldn't be a problem, as confident as you are...
+    {$name}: (What was that, again?)
+    -> Kick your left leg up, then shift your balance.
+        <<set $td3_points -=1>>
+        Tsuru: Careful {$name}—
+        *CRASH*
+        Tsuru: Oh my. Are you alright?
+        Tsuru: That can happen when you aren't paying attention...
+        Tsuru: I'm afraid you were facing the wrong way.
+        -> I'm so sorry! I'll do better!
+            <<set $td3_points +=1>>
+            Tsuru: That's the spirit...
+            Tsuru: But you aren't hurt, are you?
+            Tsuru: Let me see.
+        -> Would it have killed you to tell me before?!
+            <<set $td3_points -=1>>
+            Tsuru: Concentration is a very important part of learning Haki, so I assumed...
+            Tsuru: ...Maybe I should have told you to be more careful.
+            Tsuru: Are you hurt?
+            You sit up and, gently, Tsuru places her hands on your back. Your skin cools down, then warms up. Comfort envelops you as if you were standing under running water.
+            Tsuru: My Devil's Fruit doesn't only come in handy in battle.
+            Tsuru: I hope you're feeling better now.
+            -> (Say nothing.)
+                Tsuru: ...
+            -> I am. Thank you.
+                Tsuru: Very good.
+            -> I could get used to this...
+                <<set $td3_points +=1>>
+                Tsuru stays silent.
+                Is that a bit of a blush that you're seeing?
+                Tsuru: Well...
+            Tsuru: Would you like to try again?
+            -> Yes.
+                Without waiting for her to prompt you, you get on your feet and back to the aerial pose. Kicking first the left leg up, then shifting your balance, and then...
+                <<jump date_tsuru_3_haki_choices_again>>
+            -> No.
+                Tsuru: It's OK. I know this week has been challenging. {$name}, I suppose that's some homework for you. Master your concentration before aiming higher... That's the next step in your journey.
+                <<jump date_tsuru_3_early_end2>>
+    -> Kick your right leg up, then shift your balance.
+        <<set $td3_points +=1>>
+        Tsuru: Very well! I'm impressed.
+        Tsuru: And now...
+        -> Kick your right leg up.
+            You follow Tsuru's instructions. You twist and twirl in the air.
+            You feel your pulse in your throat.
+            Tsuru: Excellent, {$name}!
+            Tsuru: Now close your eyes...
+            (=> training_route_sparring)
+        -> Panic from the pressure.
+            Tsuru: Are we doing OK, here?
+            -> No.
+                <<set $td3_points +=1>>
+                To your surprise, Tsuru laughs.
+                Tsuru: Come back down, then.
+                Tsuru: This has been enough for today.
+                <<jump date_tsuru_3_early_end2>>
+            -> S-sure...
+                Tsuru: Well, then!
+                <<jump date_tsuru_3_haki_choices_again>>
+        -> Shift again.
+            Tsuru: Be caref—
+            *CRASH*
+            Tsuru: Oh my. Are you okay?
+            Tsuru: That can happen when you aren't quite paying attention...
+            Tsuru: I'm afraid you were facing the wrong way.
+            -> I'm so sorry! I'll do better!
+                <<set $td3_points +=1>>
+                Tsuru: That's the spirit...
+                Tsuru: But you aren't hurt, are you?
+                Tsuru: Let me see.
+            -> Would it have killed you to tell me before?!
+                <<set $td3_points -=1>>
+                Tsuru: Concentration is a very important step to activating your Haki, so I assumed...
+                Tsuru: Maybe I should have told you to be more careful.
+                Tsuru: Are you hurt?
+            You sit up and, gently, Tsuru places her hands on your back.
+            Your body stirs as she starts to massage you. She seems to leave a cool, smooth trail wherever she touches you through your clothes.
+            As if you were standing under running water, comfort envelops you.
+            Tsuru: ...You were doing well, {$name}.
+            -> Say nothing.
+                Tsuru: ...
+            -> Thanks...
+                <<set $td3_points +=1>>
+            Tsuru: Would you like to try again?
+            -> Yes.
+                Without waiting for her to prompt you, you get on your feet and back to the aerial pose. Kicking first the left leg up, then shifting your balance, and then...
+                <<jump date_tsuru_3_haki_choices_again>>
+            -> No.
+                Tsuru: Oh. Well... OK.
+                Tsuru: Then... Would you like to come have tea with me?
+                Tsuru: I suppose... I have a few more minutes.
+                <<jump date_tsuru_3_talking_route2>>
+===
+
+title: date_tsuru_3_haki_choices_again
+location: training grounds
+---
+
+{$name}: Oh... D-dammit...
+Right or left?
+-> Right!
+    <<set $td3_points +=1>>
+    You follow Tsuru's instructions. You twist and twirl in the air.
+    You feel your pulse in your throat.
+    But... Somehow it worked?!
+    Tsuru: Excellent, {$name}!
+    Tsuru: Now close your eyes...
+    <<jump date_tsuru_3_training_route_sparring>>
+-> Left!
+    <<set $td3_points -=1>>
+    Tsuru: Be caref—
+    *CRASH*
+    Tsuru: Oh my. Are you OK?
+    Tsuru: That can happen when you aren't quite paying attention...
+    Tsuru: I'm afraid you were facing the wrong way.
+        -> I'm so sorry! I'll do better!
+            <<set $td3_points +=1>>
+            Tsuru: That's the spirit...
+            Tsuru: But you aren't hurt, are you?
+            Tsuru: Let me see.
+        -> Would it have killed you to tell me before?!
+            <<set $td3_points -=1>>
+            Tsuru: Concentration is a very important step to activating your Haki, so I assumed...
+            Tsuru: ...Maybe I should have told you to be more careful.
+            Tsuru: Are you hurt?
+        You sit up and, gently, T places her hands on your back.
+        Your body stirs as she starts to massage you. She seems to leave a cool, smooth trail wherever she touches you through your clothes.
+        As if standing under running water, comfort envelops you.
+        Tsuru: ...you were doing well, {$name}.
+        -> Say nothing.
+            Tsuru: ...
+        -> Thanks...
+            <<set $td3_points +=1>>
+            Tsuru: Well... Take it as an opportunity to learn, {$name}.
+            Tsuru: Next time, we can train you to the next step. OK?
+            <<jump date_tsuru_3_early_end2>>
+===
+
+title: date_tsuru_3_early_end
+location: training grounds
+---
+
+{$name}: Well, that didn't go too well...
+{$name}: By now, it figures that Tsuru prefers it when I'm honest about my abilities...
+===
+
+title: date_tsuru_3_early_end1
+location: training grounds
+---
+
+The Vice Admiral leaves as you finish putting away equipment.
+{$name}: Well, that didn't go too well...
+{$name}: I should have paid more attention.
+===
+
+title: date_tsuru_3_early_end2
+location: training grounds
+---
+
+She leaves as you finish putting equipment away.
+{$name}: That could have gone better...
+{$name}: But did...did she want to spend more time with me?
+You feel a tiny bubble of hope in your chest as you head home.
+===
+
+title: date_tsuru_3_training_route_sparring
+location: training grounds
+---
+
+You are hanging upside-down.
+It's... kind of cool, if you say so yourself.
+Tsuru: Very good!
+Tsuru: Well... I think you are ready to aim a little bit higher, dear {$name}.
+Tsuru: Do you think you can defend yourself... With your eyes shut?
+-> Yes!
+    <<set $td3_points +=1>>
+    Tsuru: Excellent!
+-> Um...
+    Tsuru: Only if you're confident enough... But I think you should be.
+Following her command, you close your eyes.
+You are investing all of your concentration in trying to stay put, in keeping this balance.
+Tsuru: Now. Just so we are on the same page.
+Tsuru: I will pick up a training sword now.
+{$name}: ...
+Tsuru: It's difficult to describe how Haki works, but, based on the experience of my disciples...
+Tsuru: Try to not focus in the body, but in the space outside of it. It might seem empty, but it is not. You will feel my motions in the air around you.
+Tsuru: Regard your own reactions as if they were a part of it...
+Tsuru: And the moment, as a state that you can slip in and out of...
+Tsuru: Did I make myself understood?
+-> Yes. I understood.
+    <<set $td3_points +=1>>
+-> Um... I'm a bit scared now.
+    <<set $td3_points -=1>>
+    Tsuru: Ah, {$name}!
+    Tsuru: You're not trying to sneak out of it now. Are you?
+-> Let's say I did.
+    Tsuru shakes her head and chuckles.
+    Tsuru: Ah, {$name}.
+    Tsuru: Then let us try, at least.
+You close your eyes. Feel every beat of your body, your very core pumping blood into your extremities. Breathing is the key to controlling your body.
+Without moving, you try to grasp... To *perceive* everything that is around you.
+-> Say nothing. Put all of your concentration into this.
+    <<set $td3_points +=1>>
+    Silence. Your heart beats with anticipation.
+    The first cut ripples through the air and you jerk to the side, feeling the air ripple on the skin of your cheek...!
+    But... you dodged it!
+    Tsuru: Excellent, {$name}.
+-> Say something to try and make Tsuru react.
+    {$name}: Vice Admiral Tsuru! When are you attacking?
+    She doesn't answer, of course. But you haven't lost your concentration either.
+    -> Say something again.
+        <<set $td3_points +=1>>
+        {$name}: Tsu—
+        The first cut ripples through the air and you jerk to the side, feeling the air buzz against the skin of your cheek.
+        But... You dodged it!
+        Tsuru: Excellent, {$name}.
+    -> Prepare for an attack.
+        <<set $td3_points -=1>>
+        The anticipation is making your heart race. You fend for her aura in the darkness, but...There is nothing.
+        You begin to sweat. She's making you ner—
+        The training sword stabs into the space between your suspended limbs.
+        You open your eyes, groaning.
+        Tsuru: Did your nerves get the best of you, {$name}?
+A string of attacks follow her words, slicing into the air. Some of them, you dodge. Others you don't.
+-> Stay with your eyes closed. Stick to the training!
+    <<set $td3_points +=1>>
+    Tsuru: Very good!
+    Tsuru's attacks persevere. They get more intense, quicker and stronger, barely letting you rest. You find yourself exhausted, your muscles strained.
+    Is it possible that you're starting to perceive something?!
+    -> It could very well be!
+        <<set $td3_points +=1>>
+        {$name}: I think this is it! It's happening!
+        Tsuru smiles at you.
+        Tsuru: It would truly be great if Haki could be activated after only one training session... But you'd have to do this a few times more, {$name}.
+        Tsuru: But I do believe that you've noticed a pattern in my attacks. You're very bright.
+        Tsuru narrows her eyes fondly.
+        Tsuru: You've done very well.
+    -> No, you're simply feeling on edge and exhausted.
+        Tsuru pauses. When you open your eyes, although you're upside down... She is narrowing her eyes fondly.
+        Tsuru: I'm proud of your effort. You did very well.
+    -> It's too intense. Stop.
+        {$name}: It's -pant- it's too much!
+        Tsuru: Alright, dear {$name}. You did very well.
+Tsuru: Now, come down.
+You obey, chest rising and falling, heart in your throat.
+Tsuru: Be proud of what you achieved today...
+Tsuru: And, if you'd like... We could do this more often.
+{$name}: Yes! Of course!
+<<jump date_tsuru_3_hakiEnd>>
+===
+
+title: date_tsuru_3_talking_route2
+location: office
+---
+
+The offices and corridors of New Marineford change when you're almost alone. The evening light turns them orange.
+You sit in Tsuru's office, nursing a warm cup of herbal tea.
+Tsuru: What is better than tea and wonderful company after training?
+-> Thank you, it's delicious!
+    Tsuru clears her throat.
+    Tsuru: You're welcome.
+-> Did you say wonderful?
+    <<set $td3_points +=1>>
+    You feel your cheeks go aflame... And maybe she is smiling a little bit too?
+Tsuru: I have to admit, {$name}... It has been a long week.
+Tsuru: To see your will to improve is quite inspiring.
+-> It's so nice of you to take the time to help me!
+    <<set $td3_points +=1>>
+    Tsuru:...
+    Tsuru: I know I'm not your mentor, but I like to see potential realized.
+    Tsuru: I see it quite often with my cadets; all that is missing is the right sort of motivation. As you know, I often take women under my wing.
+    Tsuru: It can be difficult to be taken seriously in this institution.
+-> Well, I have to push myself if I'm working alongside the best!
+    <<set $td3_points -=1>>
+    Tsuru: That is all very well. However...
+    Tsuru: I would advise you to not put anybody on a pedestal. Sengoku, Garp, and I... Even a hero such as Rosinante... We are all only human.
+    Tsuru: Many fail to understand that.
+-> (You don't know what to say.)
+    Tsuru: As shy as ever..
+    Tsuru: Some things don't change.
+You realize that time is going by. Doesn't Tsuru have an appointment with somebody?
+Shouldn't that be about *now*?
+-> Weren't you meeting somebody soon?
+    <<set $td3_points +=1>>
+    Tsuru: Ah! Time flies.
+    Tsuru: Yes, {$name}.
+    Tsuru: My granddaughter, Kujaku, is coming to visit.
+    Tsuru: Do you know the Marines from SWORD, in the G-7?
+    -> I have heard about them!
+        <<set $td3_points +=1>>
+        Tsuru: Yes, then you have probably heard about my granddaughter. She is quite wild, but I'm proud of what she has achieved.
+    -> No idea who they are!
+        Tsuru: Oh... I forgot that you haven't been here for very long. I have a granddaughter. She is quite wild, but I'm proud of what she has achieved.
+    -> What? You have a granddaughter?
+        <<set $td3_points -=1>>
+        Tsuru: Yes! What's so strange about that?
+        {$name}: (Ugh, that came out wrong...)
+    Tsuru: Well... Yes, that's who I'm meeting today.
+    Tsuru: Since she spends most of her time in the G-7 base, taking care of her Rear Admiral duties, we don't usually have much time together.
+    -> Wow! Your grandkid is a Rear Admiral? That's awesome!
+        <<set $td3_points +=1>>
+    -> SWORD? Well, I suppose Garp's grandson is quite rebellious too...
+        <<set $td3_points -=1>>
+        Tsuru: What–? I mean...
+        Tsuru: Please do not compare a Rear Admiral with those pirates.
+    Tsuru: Today, we are catching up. But you're invited to meet her the next time, if you'd like.
+    {$name}: (!)
+    {$name}: O-OK...
+    <<jump date_tsuru_3_trueEnd>>
+-> Say nothing... Stay with her longer.
+    Tsuru: Ah. But it is getting late for me now.
+    {$name}: (Aw...)
+    Tsuru: It was nice to see you today, dear {$name}.
+    Tsuru: But I have some obligations... So, see you next time.
+    <<jump date_tsuru_3_trueEnd2>>
+===
+
+title: date_tsuru_3_hakiEnd
+location: quarters
+---
+
+Wow, it was so cool to train with Lady Tsuru... maybe one day you'll even develop your haki under her tutelage...
+You fall asleep imagining her proud smile.
+===
+
+title: date_tsuru_3_trueEnd
+location: quarters
+---
+
+When you finally arrive home, you can't stop thinking about the Vice Admiral's words... would you really get to meet her family one day?
+With a warm sigh, you drift off to sleep.
+===
+
+title: date_tsuru_3_trueEnd2
+location: office
+---
+
+You watch the Vice Admiral leave and as the door shuts behind her, you notice a brand new pile of paperwork on your desk.
+The work nevers ENDS!
+===

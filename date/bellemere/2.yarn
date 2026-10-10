@@ -2,8 +2,8 @@ title: date_bellemere_2_main
 location: day(office)
 characters: [bellemere]
 ---
-<<declare $bd2_date_outfit = 0>>
-<<declare $bd2_date_restaurant = 0>>
+<<declare $bed2_date_outfit = 0>>
+<<declare $bed2_date_restaurant = 0>>
 It isn't often that your free days fall in line with Belle-mére's, but you find that that often doesn't matter much. After you pick up your bi-weekly allowance from the correct office, you pass by the woman's desk, and sure enough find her sitting around looking annoyed. She's the only one in the room just then, smoking and staring at a memo clutched too-tight.
 {$name}: Uh... Belle-mére? Doing alright?
 Belle-mére: Just the other day I had to carry god-knows how many boxes all for the sake of that fucking goat...
@@ -408,27 +408,27 @@ You hope it's a date, but you don't exactly mind treating your superior to dinne
 Well, how do you dress for this maybe-date?
 Outfit choices:
 -> Go flashy. Wear formal clothes.
-    <<set $bd2_date_outfit to 1>>
+    <<set $bed2_date_outfit to 1>>
 -> Be casual. Nice T-shirts are for every situation.
-    <<set $bd2_date_outfit to 2>>
+    <<set $bed2_date_outfit to 2>>
 -> Go in full uniform.
-    <<set $bd2_date_outfit to 3>>
+    <<set $bed2_date_outfit to 3>>
 Good. Now, where will you go?
 -> Fleur de Cafe: a cheap little coffee shop
-    <<set $bd2_date_restaurant to 1>>
+    <<set $bed2_date_restaurant to 1>>
 -> Ristorante Italiano: a pretentious and expensive restaurant
-    <<set $bd2_date_restaurant to 2>>
+    <<set $bed2_date_restaurant to 2>>
 -> Midori Kaitenzushi: a fun and casual sushi conveyor belt place
-    <<set $bd2_date_restaurant to 3>>
+    <<set $bed2_date_restaurant to 3>>
 You leave your apartment and meet up with the redhead, already waiting outside the housing complex.
 Belle-mére: Took you long enough! Why are you so sweaty?
 You decide not to answer, and instead laugh off her comment, pulling out a handkerchief to wipe at your face. Pull it together, {$name}!
 Belle-mére: So, where are we going?
 {$name}: Well, I'll lead the way and you'll see.
 You hope that sounded suave, and offer your arm to the tastefully-dressed woman in civilian clothes. She takes it, and your heart beats faster.
-<<if $bd2_date_outfit is 1 >>
+<<if $bed2_date_outfit is 1 >>
     <<jump date_bellemere_2_reaction_1>>
-<<elseif $bd2_date_outfit is 2>>
+<<elseif $bed2_date_outfit is 2>>
     <<jump date_bellemere_2_reaction_2>>
 <<else>>
     <<jump date_bellemere_2_reaction_3>>
@@ -485,9 +485,9 @@ Ah. Apparently going into detail on this topic was off-limits. Maybe one day she
 She laughs. Good. Point for you!
 Belle-mére: Well, you got me there! In any case... when someone says money isn't important, they've clearly never had to struggle for it. So I appreciate it. Treating me, I mean. And also... training on this island isn't quite [i]that[/i] bad of a torture if I have such a good friend keeping me company.
 The waiter brings your drinks and takes your order. You can't help but feel like Belle-mére is taking care to do a lot of math in her head as she takes in the prices on the menu.
-<<if $bd2_date_outfit is 1>>
+<<if $bed2_date_outfit is 1>>
     <<jump date_bellemere_2_money_1>>
-<<elseif $bd2_date_outfit is 2>>
+<<elseif $bed2_date_outfit is 2>>
     <<jump date_bellemere_2_money_2>>
 <<else>>
     <<jump date_bellemere_2_money_3>>
@@ -505,9 +505,9 @@ You're not sure if that last bit was a compliment or not.
 You say it as a joke, referencing her earlier words, and she grins in amusement.
 Belle-mére: Spoken like a real “mark.” Lend me 10,000 berries, then?
 You both laugh after you realize she wasn't [i]completely[/i] serious.
-<<if $bd2_date_restaurant is 1>>
+<<if $bed2_date_restaurant is 1>>
     <<jump date_bellemere_2_fav_1>>
-<<elseif $bd2_date_restaurant is 2>>
+<<elseif $bed2_date_restaurant is 2>>
     <<jump date_bellemere_2_fav_2>>
 <<else>>
     <<jump date_bellemere_2_fav_3>>
@@ -517,9 +517,9 @@ You both laugh after you realize she wasn't [i]completely[/i] serious.
 title: date_bellemere_2_money_2
 ---
 Belle-mére: Glad you didn't try to impress me with your clothes. I might have tried to rob ya, which would be awkward because I like hanging out with you.
-<<if $bd2_date_restaurant is 1>>
+<<if $bed2_date_restaurant is 1>>
     <<jump date_bellemere_2_fav_4>>
-<<elseif $bd2_date_restaurant is 2>>
+<<elseif $bed2_date_restaurant is 2>>
     <<jump date_bellemere_2_fav_5>>
 <<else>>
     <<jump date_bellemere_2_fav_6>>
@@ -529,9 +529,9 @@ Belle-mére: Glad you didn't try to impress me with your clothes. I might have t
 title: date_bellemere_2_money_3
 ---
 Belle-mére: You... wore your uniform on a dinner date? What did you think this was, a work meeting? Want to share some thoughts on payroll?
-<<if $bd2_date_restaurant is 1>>
+<<if $bed2_date_restaurant is 1>>
     <<jump date_bellemere_2_fav_7>>
-<<elseif $bd2_date_restaurant is 2>>
+<<elseif $bed2_date_restaurant is 2>>
     <<jump date_bellemere_2_fav_8>>
 <<else>>
     <<jump date_bellemere_2_fav_9>>

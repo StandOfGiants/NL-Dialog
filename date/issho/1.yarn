@@ -217,14 +217,13 @@ title: date_issho_1_Part_2A3
 Before you have the chance to say anything else, you hear loud shouting from a different corner of the park.
 A one-sided scuffle has broken out between a civilian and a group of Marines.
 Your training kicks in and you run toward the sounds.
-<<show_character placeholder("Marine">>, a, show)
-<<show_character placeholder("Civilian">>, d, show)
+<<show_characters issho Marine Civilian>>
 There's a civilian on the ground, holding his aching cheek. A group of five other Marines tower over him, laughing. He throws a flailing, uncoordinated fist but is immediately kicked in the face.
 Marine: Hahaha, shouldn't have put up a resistance. Who do you think you are? You're only living so well thanks to our protection.
 {$name}: What's going on here?
 Marine: Petty Officer?! This person right there is trying to pick a fight with us! It's self defense!
 Civilian: N-No! They're lying! They were demanding protection money from me! I swear I'm telling the truth!
-You look at the two sides. It's clear to you what the right decision is:
+:You look at the two sides. It's clear to you what the right decision is:
 -> Protect civilian
     <<set $isd1_points += 1>>
     <<set $isd1_points += 1>>
@@ -244,10 +243,10 @@ You boldly step between the two sides, standing with your back facing the hurt c
 Marine: Why won't you trust us? We are on the same side!
 {$issho}: I sense trouble. <smile> Is there anything I should know?
 Marine: Oh crap, {$issho}! Um, no troubles! We're just leaving! Good bye!
-<<hide_character placeholder("Marine">>, hide)
+<<show_characters issho Civilian>>
 {$name}: Cowards.
 You explain to {$issho} about what you saw. He looks stern for a moment, before smiling at the part where you stood up for the right things. {$issho} apologizes to the civilian on the Marines' behalf, promising he'll get to fixing what's broken.
-<<hide_character placeholder("Civilian">>, hide)
+<<show_characters issho>>
 You smile as well. You feel like you have done an amazing job.
 <<jump date_issho_1_DateEnding>>
 ===
@@ -259,8 +258,7 @@ You aren't paid enough to deal with this. You immediately turn tail and run towa
 {$issho}: [comment]frown[/comment] I'm aware of the situation. I'll deal with it accordingly. <pause> Thank you, {$name}.
 Relieved, you hide behind {$issho} the whole time as he deals with the group of Marines, sounding exactly like how an Admiral should sound. He's really cool!
 Once he has finished chastising those Marines, {$issho} bows low to the hurt civilian. You watch the guy leave, hoping that his opinion on the Navy hasn't changed.
-<<hide_character placeholder("Marine">>, hide)
-<<hide_character placeholder("Civilian">>, hide)
+<<show_characters issho>>
 You're glad you didn't have to deal with [i]that[/i] mess.
 <<jump date_issho_1_DateEnding>>
 ===
@@ -275,8 +273,7 @@ Marine: Bawahaha! See? We are the righteous ones and you are just trash.
 But {$issho} doesn't look at you at all. You have the feeling you have disappointed him.
 {$issho}: Leave. You have truly failed your vow. This park is a very nice place, and I don't want it tainted by your presence. Proper punishment will await you tomorrow. Think about what you did.
 {$issho} apologizes to the civilian, still not addressing you. You want to apologize but you feel ashamed of how you acted. Perhaps you have ruined today's outing with your unwise choice.
-<<hide_character placeholder("Marine">>, hide)
-<<hide_character placeholder("Civilian">>, hide)
+<<show_characters issho>>
 <<jump date_issho_1_DateEnding>>
 ===
 

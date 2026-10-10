@@ -6,7 +6,7 @@ You walk over to the training grounds and look around to find a suitable spot to
 
 As you look around the area, you notice a familiar figure sitting alone on the bleachers with a cigarette between his fingers. It's Rosinante, and as you look at him more closely, he seems to be deep in thought.
 
-<<show_character rosinante center show>>
+<<show_characters rosinante>>
 -> Approach him and ask what's on his mind.
     <<jump date_rosinante_1_Part_1A>>
 -> Approach him and make small talk.
@@ -198,7 +198,7 @@ title: date_rosinante_1_Part_4A
 location: day(ship)
 ---
 You and Rosinante climb onto the enemy ship hidden away in an unused area of the port. Before you begin the mission, Rosinante uses his power to envelop you both in a silent bubble.
-<<show_character rosinante center show>>
+<<show_characters rosinante>>
 Rosinante: Alright, {$name}. Now that we're here, I'll tell you the plan.
 Rosinante: Our purpose is to find some stolen Marine information. These mercenaries were hired to find [i]something[/i] in the base, and unfortunately, they were successful. We need to figure out exactly what type of information was stolen, get it back, and more importantly, find out who hired these people.
 {$name}: That seems simple enough.
@@ -361,7 +361,7 @@ title: date_rosinante_1_Part_7B
 Rosinante uses his Devil Fruit powers on you and you two split up.
 Rosinante: Good luck! Don't forget to whistle.
 
-<<hide_characters hide>>
+<<show_characters>>
 
 You walk along the lower decks, keeping your eyes peeled for any movement around you.
 {$name}: Okay, {$name}, you can't mess this up.
@@ -403,7 +403,7 @@ You rummage through the drawers, keeping your focus on the door to make sure no 
 {$name}: Oh no. The commander is done. I have to hurry.
 After a couple more minutes of searching, you find a notebook. Looking through it, you realise it's information on new Marine recruits. You snatch it and whistle while running past the door.
 
-<<show_character rosinante center show>>
+<<show_characters rosinante>>
 
 {$name}: I'm here, Commander!
 Rosinante: Good. You were late, but you did good.
@@ -425,7 +425,7 @@ After a couple more minutes of searching, you find a notebook. Looking through i
 Above you, another whistle mirrors your own.
 {$name}: Heh, right on time.
 
-<<show_character rosinante center show>>
+<<show_characters rosinante>>
 
 {$name}: I'm here, Commander!
 Rosinante: You are! Good job.

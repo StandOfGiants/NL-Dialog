@@ -1,7 +1,7 @@
 title: date_sakazuki_1_main
 location: day(bedroom)
+characters: []
 ---
-<<hide_characters hide>>
 // I'd just like to note before I start that the writing is supposed to be in second person, not first person. I'll point out as many things that need changing due to this as I can, but you might want to look it over again yourself to double check
 // There also doesn't seem to be any point modifiers here. I do like how varied the endings are and the myriad of paths to reach them, but there still needs to be points along the way. I feel absolute justice responses are big pluses, moral are average pluses, and no justice is negatives
 It's been a long day at work. You sit in your room, looking out the window at a beautiful sky. After a moment's pause, you search your bag for your favorite pen in order to write a few more lines in the letter you're going to send to your family...
@@ -9,8 +9,8 @@ It's been a long day at work. You sit in your room, looking out the window at a 
 But the pen is missing. [shake]My lucky pen![/shake] Your brother gave it to you before you came to New Marineford! Oh no... did you forget it at the office? There was a meeting earlier... you need to go back. The HQ might close at any moment now! You can't lose that pen!
 // I don't think I've seen a direct contradiction yet, but giving the PC a brother is something that could potentially cause an issue with other writers. Make sure to check in with everyone else on how they're handling family!
 You race to the Headquarters in a hurry, heart pounding in your ears. As you fling the door to the meeting room open, you stop short at the threshold, breathing heavily. Fleet Admiral Sakazuki. You didn't expect to find him here at this hour. Shouldn't he already be home by now?
-<<set_background "office" fade>>
-<<show_character sakazuki center show>>
+<<set_background "office" cross_fade>>
+<<show_characters sakazuki>>
 Fleet Admiral Sakazuki looks up from his position at the head of the table, puzzled by your appearance. Next to him sits a pile of paperwork needing to be tended to.
 -> I'm so sorry to intrude! I thought everyone went home!
     {$sakazuki}: It's fine. I decided to stay after the meeting to finish up some paperwork.
