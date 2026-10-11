@@ -1,5 +1,5 @@
 title: main
-position: -741,-399
+position: 96,12
 location: day(mess_hall)
 music: main_theme
 ---
@@ -17,6 +17,7 @@ music: main_theme
 ===
 
 title: playtesting
+position: 96,237
 ---
 Which Route?
 -> Admirals
@@ -33,6 +34,7 @@ FELL OUT THE BOTTOM, RESTARTING>
 ===
 
 title: playtesting_admirals
+position: 52,462
 characters: [borsalino, issho, kuzan, sakazuki]
 ---
 Which Character?
@@ -77,6 +79,7 @@ Which Character?
 ===
 
 title: playtesting_coby_crew
+position: 362,462
 characters: [coby, drake, helmeppo]
 ---
 Which Character?
@@ -119,6 +122,7 @@ Which Character?
 ===
 
 title: playtesting_legendary
+position: 1002,462
 characters: [garp, rosinante, sengoku, tsuru]
 ---
 Which Character?
@@ -171,6 +175,7 @@ Which Character?
 ===
 
 title: playtesting_smokers_and_friend
+position: 682,462
 characters: [bellemere, hina, smoker, tashigi]
 ---
 Which Character?

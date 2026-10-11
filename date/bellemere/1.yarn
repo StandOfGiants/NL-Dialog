@@ -29,18 +29,19 @@ Feeling a bit sheepish, you figure it's a good idea to change the subject. If yo
 
 
 title: questions
-position: -619,-758
+color: green
+position: -617,-785
 ---
 <<declare $bm1_questions = 0>>
 <<set $bm1_questions += 1>>
--> So... what's your favorite color? <<if !visited("BellemereFavoriteColor")>>
+-> So... what's your favorite color? <<once>>
     <<jump BellemereFavoriteColor>>
--> Er, well, what did you do before joining the Marines? <<if !visited("Life_Before_Marines")>>
+-> Er, well, what did you do before joining the Marines? <<once>>
     <<if $bm1_questions == 1>>
         <<set $bm1_points += 1>>
     <<endif>>
     <<jump Life_Before_Marines>>
--> Do you have hobbies... other than shirking the 'grunt work'? <<if !visited("Bellemere_Hobbies")>>
+-> Do you have hobbies... other than shirking the 'grunt work'? <<once>>
     <<if $bm1_questions == 1>>
         <<set $bm1_points += 1>>
     <<endif>>

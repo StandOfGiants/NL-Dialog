@@ -1,0 +1,47 @@
+{
+    "projectFileVersion": 4,
+    "sourceFiles": [
+        "date/**/*.yarn",
+        "*.yarn"
+    ],
+    "excludeFiles": [
+        "**/*~/*",
+        "./Samples/Yarn Spinner*/*"
+    ],
+    "localisation": {},
+    "baseLanguage": "en",
+    "compilerOptions": {
+        "diagnosticsSeverity": {}
+    },
+    "editorOptions": {
+        "yarnScriptEditor": {
+            "projectGraphPositions": {
+                "1.yarn": {
+                    "x": 3145,
+                    "y": 2374
+                },
+                "2.yarn": {
+                    "x": 3243.5,
+                    "y": 2897
+                },
+                "3.yarn": {
+                    "x": 3372,
+                    "y": 3462
+                },
+                "4.yarn": {
+                    "x": 3238.6666666666665,
+                    "y": 4702
+                },
+                "root.yarn": {
+                    "x": 2952,
+                    "y": 3917
+                },
+                "welcome_event.yarn": {
+                    "x": 392,
+                    "y": 337
+                }
+            },
+            "startNode": "main"
+        }
+    }
+}

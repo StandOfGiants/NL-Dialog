@@ -1,4 +1,5 @@
 title: date_tashigi_3_main
+position: 863,12
 location: quarters
 ---
 <<declare $td3_points = 0>>
@@ -10,6 +11,7 @@ location: quarters
 ===
 
 title: date_tashigi_3_bonus_start
+position: 896,237
 ---
 You can't help but remember the taste of chocolate-topped ice cream every time you see Tashigi. It's been months, but the sweetness of the treat she'd bought you still lingers on your tongue. You've tried to get her attention and ask to spend time together ever since your—can you call it a date? Your shopping date—but you've found that it's been almost impossible.
 Tashigi has been busy. Every time you've gathered the courage to ask her, she's either had a ton of paperwork to do (you help her where you can, but don't want to be a distraction), or is out on a mission.
@@ -39,6 +41,7 @@ You nod to yourself as you pull up a chair to keep her company. As you chat, tho
 ===
 
 title: date_tashigi_3_standard_start
+position: 616,237
 location: office
 ---
 It's lunchtime at last. Despite the chilly weather, you'd worked up a great sweat this morning from early morning drills and weapons practice, and your body is aching pleasantly. You've almost nailed one particular move with your sword that you're hoping will impress Tashigi, considering your lack of specialization in the area. You've really been taking all of her sword and footwork pointers to heart, gleaning what you can from your casual conversations.
@@ -49,13 +52,14 @@ One of those people is Tashigi, and you're currently on your way to her desk. Yo
 ===
 
 title: date_tashigi_3_route_join
+position: 863,462
 location: office
 ---
 
 {$name}: Are those new glasses?
 Tashigi: Hm? Oh, yeah! I treated myself with my last paycheck.
 -> They look great on you! The color and shape really bring out your eyes.
-    <<set $td4_points +=1>>
+    <<set $td3_points +=1>>
     Tashigi: You think so? Thanks! I thought they sat quite nicely. And they don't interfere with my peripheral vision, so that's even better!
 -> Did you break the previous ones?
     <<set $td3_points -=1>>
@@ -93,6 +97,7 @@ Tashigi: So, I think it's a good time for a break! Would you like to go somewher
 ===
 
 title: date_tashigi_3_lunch_date
+position: 292,687
 location: mess hall
 ---
 
@@ -174,6 +179,7 @@ Tashigi: Huh, you've kept your clothes remarkably clean. What's your secret? I l
 ===
 
 title: date_tashigi_3_strawberry
+position: 342,912
 location: mess_hall
 ---
 
@@ -207,6 +213,7 @@ Tashigi: I really shouldn't laugh at a superior officer—
 ===
 
 title: date_tashigi_3_noodle_guy
+position: 292,1137
 location: mess hall
 ---
 
@@ -284,6 +291,7 @@ You're beginning to understand each other a little better, and you have to admit
 ===
 
 title: date_tashigi_3_training_date
+position: 913,687
 location: training grounds
 ---
 
@@ -327,6 +335,7 @@ Tashigi: ...Yoru.
 ===
 
 title: date_tashigi_3_black_blades
+position: 803,912
 location: training grounds
 ---
 
@@ -353,6 +362,7 @@ Tashigi: A few weeks ago, I'd thought for a second that I'd managed to spread a 
 ===
 
 title: date_tashigi_3_saving_swords
+position: 913,1137
 location: training grounds
 ---
 
@@ -402,6 +412,7 @@ You see that Tashigi has taken up a particular stance that she's discussed previ
 ===
 
 title: date_tashigi_3_falling_flat
+position: 683,1362
 location: training grounds
 ---
 
@@ -416,6 +427,7 @@ By the end of training, you're a sweating mess and your butt still hurts, but yo
 ===
 
 title: date_tashigi_3_deadlock
+position: 963,1362
 location: training grounds
 ---
 
@@ -433,6 +445,7 @@ You've never had so much fun.
 ===
 
 title: date_tashigi_3_disarming_beauty
+position: 403,1362
 location: training grounds
 ---
 
@@ -448,6 +461,7 @@ You pick up your sword and get ready for the next clash. There's so much that yo
 ===
 
 title: date_tashigi_3_wrap_up
+position: 663,1587
 location: office
 ---
 
@@ -469,6 +483,7 @@ Tashigi: Oh?
 ===
 
 title: date_tashigi_3_good_end
+position: 713,1812
 location: office
 ---
 
@@ -488,6 +503,7 @@ You go get a spare chair, pulling it up to her desk.
 ===
 
 title: date_tashigi_3_neutral_end
+position: 433,1812
 location: office
 ---
 
@@ -504,6 +520,7 @@ Tashigi: Have a good night!
 ===
 
 title: date_tashigi_3_bad_end
+position: 153,1812
 location: office
 ---
 
@@ -513,10 +530,11 @@ Tashigi: It's not just that... I've been so busy lately that truthfully, I'd rat
 {$name}: Oh... um, ok! Well, if you change your mind, just let me know, alright?
 Tashigi: I will. But for now, I need to get this paperwork done. Have a good evening, {$name}.
 {$name}: ...You too, Tashigi.
-<<jump_date_tashigi_3_endtrue>>
+<<jump date_tashigi_3_endtrue>>
 ===
 
 title: date_tashigi_3_end
+position: 12,687
 location: office
 ---
 
@@ -524,6 +542,7 @@ You head off to get your work done. Always a busy day being a marine!
 ===
 
 title: date_tashigi_3_endtrue
+position: 680,2037
 location: office
 ---
 
