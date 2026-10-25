@@ -238,7 +238,7 @@ Smart move! Almost done!
 -> Wipe it dry
 You wipe the barrel dry and oil the joints, then move on to the next cannon. You're fast, but as you glance over at Bellemere you can see she's way ahead... well, she has more experience with such things, even if she does try to get out of it whenever possible!
 What can you do to catch up?!
--> [italic]Cheat[italic] pour a bunch of oil in the barrel of one of her cannons
+-> [i]Cheat[/i] pour a bunch of oil in the barrel of one of her cannons
     <<jump Shit>>
 -> Keep going! You'll get faster as you get used to the work!
     <<jump Bad>>
