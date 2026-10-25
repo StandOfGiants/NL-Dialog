@@ -414,7 +414,7 @@ All at once, {$borsalino} doesn't seem all that airheaded and distracted anymore
     {$borsalino}: I was born in the North Blue, not in a country of the Government...
 {$borsalino}: Freedom, my dear, can be terrifying.
 <<jump date_borsalino_2_route4_wg_end>>
--> Justice. (+) *[i][b]
+-> Justice. (+) *
 // What's with all the asterisks?
     {$borsalino}: I see...
     {$borsalino}: Well, justice has a price, much like everything...
@@ -426,12 +426,11 @@ All at once, {$borsalino} doesn't seem all that airheaded and distracted anymore
 
 title: date_borsalino_2_route4_wg_best
 ---
-([/b])[/i][i]
 {$borsalino}: If there's one thing my years have taught me, it's that...
 {$borsalino}: To attain what you want... you must sacrifice things...
 {$borsalino}: That is the price...
 (pause)
-{$borsalino}: [/i][wave]Maaaybe[/wave]* I'll tell you more... some other time.
+{$borsalino}: [i][wave]Maaaybe[/wave][/i] I'll tell you more... some other time.
 <<jump date_borsalino_2_route4_wg_end>>
 ===
 
