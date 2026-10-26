@@ -9,7 +9,7 @@ It isn't often that your free days fall in line with Belle-mére's, but you find
 Belle-mére: Just the other day I had to carry god-knows how many boxes all for the sake of that fucking goat...
 Ah. Yes. Your big “mission” from Sengoku had ended up being over a few polaroids of said pet goat. Belle-mére hadn't found it very funny- the tough woman was clearly not a fan of basements.
 Belle-mére: ...and now this?
-She shows you the memo with a set a orders to do exactly the opposite: to store a sealed file-folder, now situated on her desk, in a sub-basement room.
+:She shows you the memo with a set a orders to do exactly the opposite: to store a sealed file-folder, now situated on her desk, in a sub-basement room.
 Room BBB 120.
 Did... did that stand for basement, basement, basement!? How deep did this Headquarter building go!?
 {$name}: Uh....
@@ -51,7 +51,7 @@ Steeling your courage, you reach out and grab her hand, walking side-by-side wit
 title: date_bellemere_2_A2
 ---
 {$name}: Ah, did you see the new bounties going out today?
-You figure a change of subject would be good, and it was true: there were a few criminals out there that had done some crazy stuff in the past month, earning higher rewards for their capture.
+:You figure a change of subject would be good, and it was true: there were a few criminals out there that had done some crazy stuff in the past month, earning higher rewards for their capture.
 Belle-mére: Yes...
 She laughs, shaking a little with mirth instead of fear, now.
 Belle-mére: Have you ever noticed how those numbers are worn like a badge of pride by pirates? Marines cannot collect on bounties, and bounty hunters on the Grand Line are rare.
@@ -120,7 +120,7 @@ title: date_bellemere_2_path_2
 You lead the way to the left, noting that the path does not seem to go far, but you don't reach the dead-end before Belle-mére suddenly grabs the collar of your uniform, jerking you back towards her.
 {$name}: B-Belle-mére?
 Belle-mére: Keep an eye on the ground!
-You shine your light down... you'd been focused on the ceiling, and the way water was dripping down, soaking into and staining the drywall. But at your feet lies something of far greater concern: a hole.
+:You shine your light down... you'd been focused on the ceiling, and the way water was dripping down, soaking into and staining the drywall. But at your feet lies something of far greater concern: a hole.
 A gaping hole, rough-edged and natural, had sunk into the floor just in front of your feet.
 Belle-mére has saved you from a very nasty fall.
 You shine your light down, and note another level below... it isn't too far to jump, though it would be a bitch to fall into.
@@ -247,7 +247,7 @@ Belle-mére: Well, I'm going to just add, “doesn't exist” to the report and 
 Ah, right. The folder you were supposed to store. Belle-mére pulls it from her pocket (crumpled and folded), and waves it around.
 {$name}: Do... do you think it's just more goat pictures?
 Belle-mére: I don't even want to know. I'm just going to turn it in to Smoker and you can back me up if he tries to say I didn't attempt the job.
-The two of you walk together from the facility, and then to your own temporary apartments on this little island. You suppose there's one silver lining to this weird day: You got to spend more time with your superior.
+:The two of you walk together from the facility, and then to your own temporary apartments on this little island. You suppose there's one silver lining to this weird day: You got to spend more time with your superior.
 You [i]think[/i] it was worth it.
 <<romance_points bellemere 1>>
 <<jump date_bellemere_2_END>>
@@ -264,7 +264,7 @@ You're not sure what to make of that, or why her words make your face heat up pl
 Belle-mére: Arlong was defeated, that's how. It takes bravery and sacrifice to make change. My daughter, my youngest... she gave up a lot, for a long time, but in the end it paid off. She's a very brave girl.
 {$name}: Sounds like it. She freed you, right?
 Belle-mére: She did. With help. Sometimes, you know, bravery and sacrifice comes from unlikely places... AH!
-Belle-mére points to a door. It is out of order, wedged between “BBB 32” and “BBB 139,” but there it is: BBB 120.
+:Belle-mére points to a door. It is out of order, wedged between “BBB 32” and “BBB 139,” but there it is: BBB 120.
 Belle-mére: This place was designed by idiots.
 {$name}: Maybe it's like, a strategy? So thieves can't find their way around?
 Belle-mére: Doesn't help if employees can't either! Idiots.
@@ -376,7 +376,7 @@ The day was weird and stressful... but ultimately, you'd probably rank it in you
 title: date_bellemere_2_right
 ---
 You don't want to get Belle-mére hurt, so you hurl yourself in the opposite direction. The animal falls on you and you struggle with it.
-It's hard for Belle-mére to shoot it with you in the way. You manage to go for a small pocket-knife, but it seems as though the odd, feral creature has some kind of reasoning skills behind those red, red eyes. It bites your wrist hard enough that you hear the crack of bone, forcing you to drop your weapon. Just before it's about to go for your throat it's suddenly launched off of you by a well-placed boot to the ribs: Belle-mére has come to your rescue.
+:It's hard for Belle-mére to shoot it with you in the way. You manage to go for a small pocket-knife, but it seems as though the odd, feral creature has some kind of reasoning skills behind those red, red eyes. It bites your wrist hard enough that you hear the crack of bone, forcing you to drop your weapon. Just before it's about to go for your throat it's suddenly launched off of you by a well-placed boot to the ribs: Belle-mére has come to your rescue.
 Once it's away from you she twirls her rifle around by the strap, aims, and shoots it right between the eyes. It dies instantly, the only sound other than the echoing of the shot your labored breathing.
 {$name}: T-thanks-
 Belle-mére: You trying to get yourself killed!? Stay out of my damned shot, {$name}!
@@ -397,7 +397,7 @@ The night ends with a trip to the doctor, a dubious cover-up story, and a cast. 
 
 title: date_bellemere_2_B
 ---
-(Same as the other path: hint a feelings on pirates vs marines. Nature of morality)
+:(Same as the other path: hint a feelings on pirates vs marines. Nature of morality)
 NOTE: I am working on the understanding that this Belle-mére was informed of all that happened while she was “captured.” She knows about how exploitive some marines can be, and how good some pirates can be.
 (This path will focus more on lighter conversation. How people who say money isn't important are the people who never had to worry about it)
 
@@ -452,7 +452,7 @@ Belle-mére looks you up and down as the two of you walk.
 Belle-mére: Hey, we kind of match! Being honest: I was a little worried I'd be underdressed, you know?
 {$name}: Oh? Why? What were you expecting?
 Belle-mére: From you, {$name}? I half expected for you to try too hard and show up in a full suit or ballgown or something! You seem the type to overthink these kinds of situations.
-You have to wonder: what kind of situations?? Dates??
+:You have to wonder: what kind of situations?? Dates??
 You're too scared to asked so bluntly, though, so you swallow the words down.
 <<jump date_bellemere_2_sitting>>
 ===
@@ -468,7 +468,7 @@ Well... it was the easiest thing to wear. Hopefully your restaurant choice goes 
 title: date_bellemere_2_sitting
 ---
 When you get to the restaurant, you can't read Belle-mére's reaction on her face. Is she impressed? Disgusted?
-Maybe she's waiting to judge until after you've both had a chance to taste the food: fair.
+:Maybe she's waiting to judge until after you've both had a chance to taste the food: fair.
 You open the door for her, and she seems pretty pleased with the gesture. Bellemere is an interesting lady- she seems to like being waited on, but only on her own terms. She likes nice things, it seems, on another person's berry... but only if they've acknowledged that she doesn't need it.
 You think you're finally starting to figure her out, and you just become more fascinated the more you talk.
 You're seated at a table near a window, where you can both watch the sun set behind the silhouettes of nearby shops. It's a nice view.
@@ -654,7 +654,7 @@ Belle-mére: Yes, but that's not my problem, now is it?
 She's being awfully snarky. You're guessing that she is, in fact, annoyed with you..
 {$name}: Uh, sorry... I think I messed this all up.
 Belle-mére: You can do better next time. For now- you're buying me twelve kinds of biscottis.
-That just about confirms it: she's not happy with you.
+:That just about confirms it: she's not happy with you.
 The night ends early, as soon as Belle-mére get's her food, and the two of you part ways outside the restaurant. It definitely could have gone better...
 <<romance_points bellemere 0>>
 <<jump date_bellemere_2_END>>
@@ -693,7 +693,7 @@ Belle-mére: You're the one that owes me dinner. You gonna try and shame me for 
 {$name}: N-no!
 It does make your wallet hurt, realizing this would probably add up to more than the Italian place, given Belle-mére unrestrained grabbing of little non-refundable plates of food. But...
 {$name}: You can get whatever you want! I just don't believe anyone can eat as much as... that.
-As you talk, she continues to grab little plates: Seaweed salad. Dango. Tuna sushi.
+:As you talk, she continues to grab little plates: Seaweed salad. Dango. Tuna sushi.
 Belle-mére: Well, if my eyes are bigger than my stomach, I'll just get a take out box. Or two. Or five.
 Your wallet screams.
 The two of you have a pretty good time, eating and drinking sake. After a while, you forget to keep calculating how long it'll take to build your account back up after this blow, and just relax and have fun. The fabric of your uniform is stiff and a bit uncomfortable as the night goes on, but at least you're in good company!

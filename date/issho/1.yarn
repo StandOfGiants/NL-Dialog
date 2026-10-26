@@ -191,7 +191,7 @@ title: date_issho_1_Part_2A2_Dick
 You hide behind a tree, waiting for the unsuspecting children to run past you before jumping out with a shout.
 {$name}: [shake]BOOO!!![/shake]
 The kids shriek in fear, some running into you in their panic.
-You laugh at the harmless fun. Watching them untangle themselves from you, you decide that you should:
+:You laugh at the harmless fun. Watching them untangle themselves from you, you decide that you should:
 -> Apologize and help the kids up
     {$name}: Sorry, kiddos. Hope I didn't scare you too badly. Here, your kites.
     You go back to Issho, grinning widely.

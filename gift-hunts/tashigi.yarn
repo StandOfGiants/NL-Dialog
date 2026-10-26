@@ -3,7 +3,7 @@ location: town
 ---
 
 What a lovely winter day — crisp blue skies, and the cadets have been hard at work clearing snow away from the streets (and the rooftops, too!). It feels great to wander the streets on your day off... until suddenly, you hear a lot of commotion coming from the central plaza.
-Rounding the corner, you see that the main thoroughfare is packed with people and merchant stalls hawking wares. What is all this? A banner overhead answers your question: END OF YEAR SELLOUT
+:Rounding the corner, you see that the main thoroughfare is packed with people and merchant stalls hawking wares. What is all this? A banner overhead answers your question: END OF YEAR SELLOUT
 Oh. That's right, the end of the year holidays are coming up... and New Years. A certain someone crosses your mind... will you perhaps achieve your goal of being kissed at midnight on New Years Eve? A woman rushes by with brightly colored wrapped gifts and something occurs to you. A gift. You should give them a gift! Can't hurt, certainly (hopefully...)!
 And where else to search for a gift but here, at this conveniently timed market?
 First though, who the heck are you shopping for?
@@ -16,7 +16,7 @@ location: town
 ---
 
 You look around the myriad of colorful tents, trying to find something that would appeal to Tashigi. You have a couple of ideas, but none of them are really speaking to you.
-As you wander, however, two interesting stalls in this particular row catch your eye. It's time to make a choice. You decide to visit:
+:As you wander, however, two interesting stalls in this particular row catch your eye. It's time to make a choice. You decide to visit:
 -> A blacksmith's stall.
     <<jump Tashigi_Gift_Hunt_good_gift>>
 -> A joke gift stall.
@@ -57,7 +57,7 @@ location: town
 
 You head for the stall where you saw some joke gifts. Tashigi may be a serious person, but you know that she appreciates a good laugh. Maybe you can find something amusing for her here.
 As you step inside, you see that this stall is even more colorful than the others. There's plenty of coffee mugs with funny sayings like “World's Okayest CO”, but there's also a few other odds and ends.
-As you're looking around, your eyes fall on a particular sign. It's designed to be mounted to a wall, and it says “Days Without Incident:” with a small chalkboard attached, for filling in the number of days.
+:As you're looking around, your eyes fall on a particular sign. It's designed to be mounted to a wall, and it says “Days Without Incident:” with a small chalkboard attached, for filling in the number of days.
 ???: Haha, you've got good taste!
 A voice sounds from behind you, and you spin around to see a shopkeeper who is smiling so widely that you think their face is dangerously close to splitting in half.
 Owner: That board's a big favorite among lower-ranking marines and bigwigs alike! I hand-painted it myself, and it's sure to survive any of the mishaps that you'd be marking on this board! ...Probably.

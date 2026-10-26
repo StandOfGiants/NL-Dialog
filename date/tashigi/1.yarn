@@ -22,7 +22,7 @@ Tashigi: How is it going? Are you done for the day?
 -> Yeah, finally done.
     <<set $td1_points += 0>>
 Captain Tashigi opens her mouth, but before she can say a word, you hear a low, menacing growl that gives you goosebumps.
-You look around, trying to ascertain the source of such a sound. Then, it hits you: it was Captain Tashigi's stomach. She blushes violently as she tries to hide her face behind a pile of papers.
+:You look around, trying to ascertain the source of such a sound. Then, it hits you: it was Captain Tashigi's stomach. She blushes violently as she tries to hide her face behind a pile of papers.
 -> It's getting late. Why don't you take a little break?
     <<set $td1_points += 2>>
     <<jump date_tashigi_1_TSD1P1_1>>

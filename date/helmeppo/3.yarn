@@ -394,7 +394,7 @@ Helmeppo: So, what sort of weapons were you considering?
 
 title: date_helmeppo_3_OrderFood
 ---
-The waiter walks up with a pitcher in hand to top off the water glasses and asks if you've decided what you'd like to eat. Helmeppo orders a steak, medium rare, and potatoes. You order:
+:The waiter walks up with a pitcher in hand to top off the water glasses and asks if you've decided what you'd like to eat. Helmeppo orders a steak, medium rare, and potatoes. You order:
 -> The same thing as him
     <<set $hd3_points += 1>>
     The waiter gets a knowing smile that seems inappropriate for the situation as he notes your order.

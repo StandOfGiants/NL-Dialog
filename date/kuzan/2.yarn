@@ -295,7 +295,7 @@ title: date_kuzan_2_Skate
     {$kuzan}: Here, skates. He waves his hand and, much to your dismay, ice as sharp as metal sprouts under your shoes. Unfortunately, it reveals the real issue. You wobble and fall backward on your butt. Yep, that's right. You, a Marine who attends and caters to some of the strongest men in the world, cannot skate.
     {$kuzan}: ...Can't skate?
     {$name}: ...I don't know how. Your face feels so hot it could melt the ice rink.
-    YK: I'll teach you. He holds out his hand. Your heart suddenly beats a little faster. From the nerves. Obviously. His hand is surprisingly warm, and he gives you a little grin as he pulls you off the ground.
+    {$kuzan}: I'll teach you. He holds out his hand. Your heart suddenly beats a little faster. From the nerves. Obviously. His hand is surprisingly warm, and he gives you a little grin as he pulls you off the ground.
     {$name}: Slow! Oh jeez! Sand is so much harder to walk ooooOOOooon! Your sense of balance is totally off, oh god you're gonna fall again! But then—! You don't. Because the Admiral holds you steady.
     He chuckles as he finally gets you onto the ice. Your breath fogs in the air.
     {$kuzan}: Okay, hold on. He grasps your hands tighter, leading you around the edge of the rink very slowly.

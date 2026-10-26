@@ -117,7 +117,7 @@ title: workday_admirals_2_garden_lecture
 As the other Admirals find their preferred seats, you find one as well. Once seated, you study the tree carefully. It really doesn't look remarkable in any discernible way to you.
 {$sakazuki}: It's a fig tree. It might not look like much now, but it grows fast. It enjoys sunlight, and likes to spread its roots far and wide. If you plant it too closely to fences or walls, it might feel crowded...
 The Fleet Admiral doesn't seem to notice or care whether everyone is listening to him or not. He's passionate about his subject, speaking with the confidence of someone who has done their research.
-From the corner of your eye, you notice that Admiral Kizaru is up to something. You want to:
+:From the corner of your eye, you notice that Admiral Kizaru is up to something. You want to:
 -> Ignore the ongoing mischief and pay attention to Fleet Admiral Sakazuki (S+1; I+1)
     <<jump workday_admirals_2_listen>>
 -> Tune out the Fleet Admiral's words and check out something more fun! (B+1; K+1)
@@ -702,7 +702,7 @@ title: workday_admirals_2_bystander_route
     {$issho}: ...I enjoy a nice rock garden myself.
     {$sakazuki}: ...Do you take me for a fool?
     At this point, the venus fly trap decides to try to take advantage of your distraction to make a go at Admiral Aokiji again! And FAILED, because the Fleet Admiral sent it the most withering glare you had ever seen ever. Wow, you are surprised the plant isn't dead from that look.
-    Issho: We are all fools in our own way.
+    {$issho}: We are all fools in our own way.
     {$borsalino}: Oh yes, the folly of man.
     -> Well now that you're here... want to join this competition and punish the losers?
         {$borsalino}: You do enjoy a good punishment, [/wave]Sakazuki[wave]...
@@ -898,7 +898,7 @@ You are back at the office after another intense workday.
 
 //  [comment]ZIP[/comment] I DON"T KNOW WHAT THE RIGHT/WRONG CHOICES ARE HERE???
 
-If you made all the right choices:
+:If you made all the right choices:
 (*I: Well, that was surprisingly fun.
 {$borsalino}: Ah, yes... I know you think the same, gentlemen...
 Sakazuki and Kuzan grunt their reluctant approval.)

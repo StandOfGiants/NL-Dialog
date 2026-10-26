@@ -465,9 +465,9 @@ You take a look around the messy office but decide not to investigate anything. 
         <<jump date_coby_2_Regroup>>
     -> Maybe they should've. It would be better than letting a criminal get away.
         <<set $cd2_points-= 1>>
-        (If previous date went poorly) Coby: Somehow I'm really not surprised you'd say something like that.
+        :(If previous date went poorly) Coby: Somehow I'm really not surprised you'd say something like that.
         <<jump date_coby_2_Regroup>>
-        (If previous date went well) Coby: I... I can't believe you'd say something like that.
+        :(If previous date went well) Coby: I... I can't believe you'd say something like that.
         <<jump date_coby_2_Regroup>>
 ===
 

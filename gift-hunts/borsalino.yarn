@@ -103,7 +103,7 @@ Vendor: Welcome, stranger! Are you interested in buying any of these?
             (=> loop back to question) //HOW DO??
     -> ...something more decorative.
         Vendor: At this moment, I'm sold out of almost any decorations... except for these figurines.
-        The vendor gestures to some Rococo porcelain animals: bunnies with chubby bellies and rosy cheeks.
+        :The vendor gestures to some Rococo porcelain animals: bunnies with chubby bellies and rosy cheeks.
         It doesn't quite scream Borsalino to you, but... he's quite unpredictable, so maybe?
         -> Why not? I'll take these.
             <<jump borsalino_gift_hunt_bad_gift>>

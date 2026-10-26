@@ -147,7 +147,7 @@ But before {$issho} can elaborate on his answers, you hear loud stomping.
     <<jump date_issho_2_Next_Route>>
 
     //  If PC has completed Town and Dock paths, then go to Ending_Route1
--> We hide somewhere and be really quiet until he goes away? (Points: +2)
+-> :We hide somewhere and be really quiet until he goes away? (Points: +2)
     {$issho}: Good idea! Hurry!
     {$issho} takes your hand and tugs you behind a large tree before he hides as well.
     Your heart pounds. You feel like you can't breathe. [shake]You can hear the Fleet Admiral's angry footsteps.[/shake]
@@ -231,7 +231,7 @@ title: date_issho_2_Town
     {$issho}: We probably shouldn't spend any more time here though.
     {$name}: You're right, sir. Maybe we should go to...
     <<jump date_issho_2_Next_Route>>
--> The clothes store! There's no way Fleet Admiral Sakazuki is going to be able to check it thoroughly. (Points: +2)
+-> :The clothes store! There's no way Fleet Admiral Sakazuki is going to be able to check it thoroughly. (Points: +2)
     {$issho}: Good idea. Lead the way, {$name}.
     You are very proud of yourself for coming up with a good idea. Leading {$issho} to a clothes store, you go as far away from the window as possible, near the scarf section.
     {$name}: Wow, look at some of these selections! They are so warm and comfortable!

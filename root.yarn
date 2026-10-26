@@ -37,7 +37,7 @@ title: playtesting_admirals
 position: 52,462
 characters: [borsalino, issho, kuzan, sakazuki]
 ---
-Which Character?
+[shake]Which[/shake] <?emote=borsalino,expression=smile> [rainb]Character?[/rainb]
 -> Borsalino
     {$borsalino}: Which date?
     -> Date 1

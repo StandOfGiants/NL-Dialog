@@ -310,13 +310,13 @@ Helmeppo: There's not?
         <<jump workday_coby_crew_2_KitchenDone>>
     -> Yeah, it'll go faster with two.
         <<set $ccwd2H_points +=1>>
-        You read out the ingredients for each item on the menu: coffee, tea, juice, chocolate and strawberry cakes and vanilla cupcakes with seagulls drawn on in icing. He writes them down, then reads them back to you. The whole thing takes a couple minutes.
+        :You read out the ingredients for each item on the menu: coffee, tea, juice, chocolate and strawberry cakes and vanilla cupcakes with seagulls drawn on in icing. He writes them down, then reads them back to you. The whole thing takes a couple minutes.
         <<jump workday_coby_crew_2_KitchenDone>>
 -> Let's try making everything and see what we need.
     At first you're sure he's going to argue, but then crosses his arms.
     Helmeppo: I can't believe I'm saying this, but fine. It'll help us make sure the instructions are right.
     The items are easy enough. The coffee and tea are simple and the two of you split the cakes and collaborate on the cupcakes. There are enough ovens to bake everything at once.
-    You don't bother with the decorations, except the cupcakes. It takes a lot of different frostings to make the seagull so you decide to each try your hand at it. Do you:
+    :You don't bother with the decorations, except the cupcakes. It takes a lot of different frostings to make the seagull so you decide to each try your hand at it. Do you:
     -> Follow the directions.
         It's not nearly as difficult as you expect and you manage to make a cutesy seagull. Once you're done, you hand it to Helmeppo.
         Helmeppo: Not bad! You have an artistic flair.

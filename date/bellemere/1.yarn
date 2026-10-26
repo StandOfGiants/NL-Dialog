@@ -289,7 +289,7 @@ title: Time
 position: 527,459
 ---
 Bellemere: Look at the time! I better get started pretending to be busy. Unless you want Tashigi on your case, you'd best go finish your mopping.
-You realize with a little jump that she's right: you had been holding a mop, before finding the Captain! Now where did that go...?
+:You realize with a little jump that she's right: you had been holding a mop, before finding the Captain! Now where did that go...?
 <<if $bm1_points >= 2>>
     <<romance_points bellemere, 2>>
     Bellemere: Hey newbie, this was fun. If you wanna grill me again, you'll have to pay for it. Literally. Buy me dinner some time- I also accept bribes as payment for my presence: books, guns, gems, gold. You know, the usual.

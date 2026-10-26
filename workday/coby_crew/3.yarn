@@ -452,7 +452,7 @@ The two of you charge forward, fists high; Drake and Coby look unfazed. You veer
 -> Ahhh! Help!
     (If your relationship score with Helmeppo >= 2) =>
         <<jump workday_coby_crew_3_All_In_Defend>> //HOW DO??
-    (otherwise) Helmeppo: Uh, I'm busy here myself. =>
+    :(otherwise) Helmeppo: Uh, I'm busy here myself. =>
         <<jump workday_coby_crew_3_All_In_2>> //HOW DO??
 -> Take that!
     You swing your fists forward, trying to knock Coby aside, but your punches are ineffective against his armament haki.

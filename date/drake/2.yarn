@@ -18,7 +18,7 @@ Drake: This is just a couple of ideas I had. I know I want to get something to s
   <<set $dd2_points += 1>>
   Drake: Yes, I agree.
 
-Near the edge of the town is your destination: an outdoor bazaar full of good things. Food, merchandise, art, clothing... There are so many choices.
+:Near the edge of the town is your destination: an outdoor bazaar full of good things. Food, merchandise, art, clothing... There are so many choices.
 Drake: Where should we head first?
 -> The comic stall. I'm looking to beef up my collection.
     <<jump date_drake_2_Comic_stall>>
@@ -32,7 +32,7 @@ The comic stall is full of shelves packed into tight aisles. Drake squeezes into
 [b]Adventure Gnomes \#232[/b], [b]Pirate Rangers Special Edition[/b]... The next book is stuck in place. You tug at it, but it won't come loose. Then, with a great sound like a suction cup, the laminate unsticks and you pull the comic out.
 Drake: What's that you have?
 
-The cover reads [b]Sora: Strange Universe \#1[/b] with a picture of a man in a strange Marine outfit, flanked by a man dressed in green and a seagull.
+:The cover reads [b]Sora: Strange Universe \#1[/b] with a picture of a man in a strange Marine outfit, flanked by a man dressed in green and a seagull.
 -> Whoa... Now this is a collector's item.
     <<jump date_drake_2_Comic_stall_a>>
 -> Ugh, all this trouble for a boring superhero comic?
@@ -81,13 +81,13 @@ Drake: [b]Sora: Strange Universe[/b]? I never thought I'd actually get to see it
 
 title: date_drake_2_Sora_checkout_Drake
 ---
-Drake leads the way to the cashier. At the register, a sign points you to the price: [b]All wrapped copies 1000 beri.[/b] That's a steal! After he pays, you head back out into the open market.
+:Drake leads the way to the cashier. At the register, a sign points you to the price: [b]All wrapped copies 1000 beri.[/b] That's a steal! After he pays, you head back out into the open market.
 <<jump date_drake_2_Sora_talk>>
 ===
 
 title: date_drake_2_Sora_checkout_PC
 ---
-You head to the cashier with your purchase. At the register, a sign points you to the price: [b]All wrapped copies 1000 beri.[/b] Whoa, a bargain. You pay, and then join Drake at the stall's exit.
+:You head to the cashier with your purchase. At the register, a sign points you to the price: [b]All wrapped copies 1000 beri.[/b] Whoa, a bargain. You pay, and then join Drake at the stall's exit.
 <<jump date_drake_2_Sora_talk>>
 ===
 
@@ -146,7 +146,7 @@ You peer around the market, looking for places to go that both of you might enjo
 
 title: date_drake_2_Clothing_stall
 ---
-The clothing stall is huge, less a stall than three or four merged together. They have everything: tops, bottoms, shoes, swimsuits, socks, coats, underwear, accessories... But where to start?
+:The clothing stall is huge, less a stall than three or four merged together. They have everything: tops, bottoms, shoes, swimsuits, socks, coats, underwear, accessories... But where to start?
 -> So, this person you're buying a gift for... They have to wear clothes. What kind do they like?
   Drake: I'm not sure.
   -> Well, what do they usually wear?

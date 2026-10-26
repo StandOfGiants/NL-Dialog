@@ -349,7 +349,7 @@ Coby: Oh. I might be wrong, but it looked like you had something you wanted to a
 
 title: date_coby_4_CobyQuestions
 ---
-A chance to ask Coby anything? You decide to go with:
+:A chance to ask Coby anything? You decide to go with:
 -> So what's your type? For dating, I mean. <<if !visited("date_coby_4_CobyType")>>
     <<jump date_coby_4_CobyType>>
 -> What do you want to do after the Marines? <<if !visited("date_coby_4_CobyRetire")>>

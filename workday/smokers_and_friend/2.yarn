@@ -309,7 +309,7 @@ Hina: Justice is a harsh mistress, but that does not mean she should not be serv
 Hina: Ah, lobsters. Well, not this box. Alright, if we divide and conquer we'll be more successful. If you find something of interest, report to Hina. {$name}, you take the boxes in that corner, Tashigi, you take the other side. Hina will keep a running inventory.
 Tashigi: I hope we can find some swords to document ... Imagine if there's a graded or legendary sword in these forgotten boxes!? I feel like an archaeologist, documenting a new site, coming up with forgotten treasures. Gosh, I'm tearing up just thinking about it–and it's not just the dust! This is so exciting!
 
-[i]The piles of boxes seem endless. There are boxes in every shape and size: small, medium, large, oblong, tiny. Some of them look recent, while others are so dank and grimy they look like they've been down here for decades. You gingerly approach a stack of boxes. Do you decide to open...[/i]
+:[i]The piles of boxes seem endless. There are boxes in every shape and size: small, medium, large, oblong, tiny. Some of them look recent, while others are so dank and grimy they look like they've been down here for decades. You gingerly approach a stack of boxes. Do you decide to open...[/i]
 //  These boxes will be randomized in groups of 3, and will continue until the correct box is selecetd
 //  TODO(zipcodecrone): Implement randomization system
 -> The medium box covered in suspicious red stains
@@ -352,7 +352,7 @@ Tashigi: Hey now this isn't mindless! Don't listen to her, you magnificent sword
         Hina: Indeed, pirates and evildoers do not simply stop their villainy because those in support of justice are on vacation. It is a calling that Hina relishes. Now then, enough nostalgia, continue with your search.
     -> Are you ever off-duty, Rear-Admiral? (-1 Hina)
         Hina: How Hina chooses to spend her vacation is none of your concern, {$name}. Continue with the search.
-[i]You return to the seemingly endless boxes before you. This time you choose:[/i]
+:[i]You return to the seemingly endless boxes before you. This time you choose:[/i]
 -> The medium sized box that is shaking slightly.
     You gingerly open the shaking box to find several oblong, cucumber shaped items and what appear to be a strand of shaking beads. Is it jewelry? Oh wait...no...
     Tashigi: Wow what are these? Vibrating pearls?
@@ -394,7 +394,7 @@ Tashigi: Hey now this isn't mindless! Don't listen to her, you magnificent sword
 
 [i]You cautiously approach another set of boxes, hoping one of these will yield you the item Sengoku is looking for. Do you open...[/i]
 -> The medium sized box with “caution” tape wrapped around it
-    You carefully unwrap the ‘caution' tape with shaking hands, expecting to find dangerous weapons or deadly fumes. Instead you find several thick volumes of what appear to be old books. You lift one up to the light, dusting off the cover. On it is an image of a pirate with long flowing hair, standing on the deck of a ship. He cradles a woman in Marine uniform to his sculpted, bare chest. The Marine woman is meanwhile draped against him, loosening the blue sash from her neck; her bosom spilling out of her very tightly-fitting uniform. The title in scripted gold reads “Stolen Valor: Book 3 of Corrupted Justice.”
+    :You carefully unwrap the ‘caution' tape with shaking hands, expecting to find dangerous weapons or deadly fumes. Instead you find several thick volumes of what appear to be old books. You lift one up to the light, dusting off the cover. On it is an image of a pirate with long flowing hair, standing on the deck of a ship. He cradles a woman in Marine uniform to his sculpted, bare chest. The Marine woman is meanwhile draped against him, loosening the blue sash from her neck; her bosom spilling out of her very tightly-fitting uniform. The title in scripted gold reads “Stolen Valor: Book 3 of Corrupted Justice.”
     Hina: {$name}!! That is immoral material that has been confiscated from Marine recruits! It's not fit for young Marines to see! Put it back!
     Tashigi: It's a book.
     Hina: Close your eyes Tashigi! It's corrupting material that is unfit for your young impressionable mind!

@@ -21,7 +21,7 @@ The Fleet Admiral stops moving and turns.
 You feel your face pale. A run around the entire island?! But it's massive! You might feel suddenly inspired today, but you aren't sure you are *that* inspired! After a moment of thinking, you decide...
 -> Let's do it! You feel like you can take on the world!
     {$name}: Yes, Sir! I want to be a strong Marine, too!
-    {$sakazuki}: [smile] With enough tenacity, you will become one.
+    {$sakazuki}: With enough tenacity, you will become one. #expression:smile
 -> Maybe another day...
     {$name}: Um, I am not quite sure I'm ready to run a lap around the entire island...
     {$sakazuki}: Then let's test it out.
@@ -31,7 +31,7 @@ You feel your face pale. A run around the entire island?! But it's massive! You 
     {$name}: Yes, Sir...
 Without another word, Fleet Admiral Sakazuki begins running. He at least seems mindful of you and lets you keep pace with him. His strength is still insane, and his drive scares you just a bit.
 Slowly, you two manage to cross the entire island together. There were a few times you thought you'd pass out, but miraculously, you pulled through. By the time you return to your starting point, you are green in the face and panting heavily.
-{$sakazuki}: You did well.
+{$sakazuki}: You did well. #expression:neutral
 {$name}: Thank... thank you... Sir...
 Fleet Admiral Sakazuki eyes you thoughtfully while he runs through a series of stretches. He seems like he has something in mind.
 {$sakazuki}: Now that the warm-up is over, we can continue training if you'd like. Going through the katas you know, or we can spar.
@@ -76,10 +76,10 @@ Oh! This is your chance to impress! Taking a deep breath, you decide...
     Your moves are a bit clumsy, but you feel like you've definitely done a good job... if it weren't for Fleet Admiral Sakazuki's increasingly deepening frown.
     Alas, one enthusiastic kick sends you tumbling over. You sit up, coughing.
     {$name}: How about that, Sir? Are you *impressed* by my flashy moves? I know I could have executed that last move a bit better but overall, it's great, right?
-    {$sakazuki}: [frown] Not in the slightest.
+    {$sakazuki}: Not in the slightest. #expression:grumpy
     {$sakazuki}: Your center of gravity was completely wrong, your moves were, for the lack of better word, *gaudy*. Any enemy combatants with the exception of the least experienced ones can take you down in a minute.
     {$name}: Eep, I'm sorry, Sir!
-    {$sakazuki}: Focus more on training and less on impressing spectators.
+    {$sakazuki}: Focus more on training and less on impressing spectators. #expression:neutral
     {$name}: Yes, Sir, sorry, Sir...
 -> You should definitely make something up to surprise the Fleet Admiral.
     <<set $sd3_points +=1>>
@@ -108,25 +108,25 @@ You take a deep breath. Well, since the Fleet Admiral has invited you...
     {$sakazuki}: <pause> Hmm... I suppose... we are friends.
     {$sakazuki}: It's very easy to see the differences between us, differences in ideologies, in personalities, in temperament...
     {$sakazuki}: But at the end of the day, we all agree that we have a problem with piracy and that needs to be dealt with. When you see it in that light, our methods might be different, but the end goals align well enough.
-    {$sakazuki}: [smile] We do have our fair share of fights though, as you are well aware.
+    {$sakazuki}: We do have our fair share of fights though, as you are well aware. #expression:smile
     {$name}: ... I'm surprised people don't spend all day just breaking up fights between you guys — whoops! I'm sorry, I didn't mean to say that aloud!
-    {$sakazuki}: [smile] You do mean it. Don't worry. It's nothing I haven't heard before.
-    {$sakazuki}: Is that all you want to know?
+    {$sakazuki}: You do mean it. Don't worry. It's nothing I haven't heard before.
+    {$sakazuki}: Is that all you want to know? #expression:neutral
     Actually yes, but now you feel compelled to say something back...
     {$name}: I think...
     -> ...You've picked a tough path to follow, picking Absolute Justice above all else.
         <<set $sd3_points +=2>>
         {$sakazuki}: That might be so.
         {$sakazuki}: I decided a long time ago that I'll always serve and protect Justice, and that takes... sacrifices.
-        {$sakazuki}: [smile] Being friends with me must be difficult.
+        {$sakazuki}: Being friends with me must be difficult. #expression:smile
         {$name}: I don't think so, Sir. You are not hard to befriend. Sometimes you can be difficult, but that doesn't mean befriending you ever is.
-        {$sakazuki}: ...
+        {$sakazuki}: ... #expression:neutral
         Whoops... you didn't mean to be so sappy. Quick, you need to say something to ease the tension.
         {$name}: *Staying* friends with you through one of your stubborn fits though... now *that* takes patience. But hey, nothing would get done if you weren't so adamant.
         {$sakazuki}: The others are indeed like herding cats.
         // TODO: I don't know what this means
         IF FLASHY {$name}: *Staying* friends with you through one of your stubborn fits though... now *that* takes patience. I can't believe you think so low of flashy moves. *I* think they are superior.
-        {$sakazuki}: [laugh/smile] We'll see about that. I suppose you can always distract your opponents if you are flashy enough. Borsalino seems to think so, at least.
+        {$sakazuki}: We'll see about that. I suppose you can always distract your opponents if you are flashy enough. Borsalino seems to think so, at least. #expression:smile-talk
     -> ...No matter what you say, it's admirable that you consider the other Admirals your friends while being so different.
         {$sakazuki}: I suppose so.
         {$sakazuki}: Don't focus so much on how different we are. Focus on the pirates we all want gone.
@@ -136,7 +136,7 @@ You take a deep breath. Well, since the Fleet Admiral has invited you...
         {$sakazuki}: Take some time to think about that, what's important to you, what do you put first... you will need to answer those questions for yourself eventually.
         {$name}: Um... okay, Sir. Thanks, I'll think about it.
 -> Since you are friends... so, um, do you guys hang out and do stuff together?
-    {$sakazuki}: ... Yes. I suppose... we do.
+    {$sakazuki}: ... Yes. I suppose... we do. #expression:neutral
     {$sakazuki}: Due to the unstable situation lately, though, that hasn't happened in some time. The New Pirate Age has proven to be... chaotic.
     {$name}: Really? I mean, not about the busy work, but I mean, what do you guys do together?
     {$sakazuki}: Hmm... things.
@@ -145,9 +145,9 @@ You take a deep breath. Well, since the Fleet Admiral has invited you...
     Oh, wow! You didn't expect Fleet Admiral Sakazuki to actually answer you! But he kept his promise! He seems fairly embarrassed, though. Maybe you should tease him... wouldn't that be mean, though? Hmm...
     -> I feel like I prefer something quieter, like a night at the pub. Karaoke is pretty loud.
         <<set $sd3_points +=2>>
-        {$sakazuki}: [smile] I'm glad you think so, too. Karaoke had its charm... when I was younger. But as the Fleet Admiral, I have an image to uphold.
+        {$sakazuki}: I'm glad you think so, too. Karaoke had its charm... when I was younger. But as the Fleet Admiral, I have an image to uphold. #expression:smile
         {$name}: That must be really tough. Still, I fully believe that it'd be good to hang out with your colleagues. Would you like to go to the pub with me sometime?
-        {$sakazuki}: ...
+        {$sakazuki}: ... #expression:neutral
         {$name}: N-Not like a date! Like, a hangout. Between friends!
         {$sakazuki}: A ‘hangout' between friends, hmm? Hmm.
         {$sakazuki}: Perhaps. Maybe the others would want to wind down, too. It's been a difficult, stressful transition.
@@ -161,11 +161,11 @@ You take a deep breath. Well, since the Fleet Admiral has invited you...
         <<set $sd3_points -=1>>
         {$sakazuki}: <pause> ... I feel like I'm not quite an impartial judge on that matter...
         {$name}: So you aren't a good singer at all?
-        {$sakazuki}: [embarrassed] ... As I said, I'm not an impartial judge.
-        {$sakazuki}: Let's drop this matter. I answered your question.
+        {$sakazuki}: ... As I said, I'm not an impartial judge. #expression:blushing
+        {$sakazuki}: Let's drop this matter. I answered your question. #expression:grumpy-blushing
         {$name}: ... Yes, Sir...
 -> Can you tell me a story about you guys? Maybe a mission? Maybe... something epic?
-    {$sakazuki}: Something... epic?
+    {$sakazuki}: Something... epic? #expression:neutral
     {$name}: Yes, like a mission in your cadet days! Or something really funny works, too!
     {$sakazuki}: Hmm, well... there are stories, but nothing I was personally involved in. I suppose there was one time, though...
     {$sakazuki}: You see, there was a dare board back in the day, where people would challenge each other to really foolish feats in hopes of impressing other people. Borsalino was a regular winner of such challenges, though, and I tended to be the unfortunate collateral damage.
@@ -175,17 +175,17 @@ You take a deep breath. Well, since the Fleet Admiral has invited you...
     {$sakazuki}: I changed back all of the candies that he had managed to switch into spicy peppers, as they should have been. It was amusing. I didn't know his face could turn that particular shade of red.
     -> Wow, I wish I could've been there to see it.
         <<set $sd3_points +=2>>
-        {$sakazuki}: [smile] I think you would have been amused. Borsalino couldn't face me for days, of course.
+        {$sakazuki}: I think you would have been amused. Borsalino couldn't face me for days, of course. #expression:smile
         {$name}: And did you tell anyone that he was about to cheat?
-        {$sakazuki}: No. I didn't think it was necessary. He knows better than to challenge me at any spice eating contests now.
+        {$sakazuki}: No. I didn't think it was necessary. He knows better than to challenge me at any spice eating contests now. #expression:neutral
         {$name}: Perhaps I should challenge him sometime.
-        {$sakazuki}: [smile] I would advise against it. But if you ever did, I would be willing to be the referee.
+        {$sakazuki}: I would advise against it. But if you ever did, I would be willing to be the referee. #expression:smile
     ->That was sneaky of you, Sir!
         {$sakazuki}: I suppose it was.
         {$name}: No, no, I'm impressed, Sir! I didn't know you were the type to do something like that.
         {$name}: If you ever feel like pranking the other Admirals at some point, invite me, Sir! I bet they'll never see us coming!
         {$sakazuki}: You shouldn't be plotting about pranking anyone else, that's bad form. But on the off-chance that I might come up with an interesting challenge...
-        {$sakazuki}: [smile] I'll remember your offer.
+        {$sakazuki}: I'll remember your offer. #expression:smile
     -> I would have done way worse.
         <<set $sd3_points -=1>>
         {$sakazuki}: There is no need to go that far. He wanted to challenge me. I just wanted to make sure the challenge was fair.
@@ -198,7 +198,6 @@ You take a deep breath. Well, since the Fleet Admiral has invited you...
 title: date_sakazuki_3_Sparring_route
 location: training grounds
 ---
-
 {$name}: I think I'd like to have a friendly spar with you, Sir! I hope I can learn from you! Please go easy on me!
 {$sakazuki}: I don't make a habit of going easy on anyone.
 You feel like it's a joke, but if it was, it was drier than the desert. In any case, you aren't even sure if Fleet Admiral Sakazuki knows how to tell a joke...
@@ -270,9 +269,9 @@ You take a deep breath. Well, since the Fleet Admiral has invited you...
         {$sakazuki}: ...
         {$sakazuki}: It doesn't matter. We have always been too different.
         {$name}: I'd argue maybe you are too similar.
-        {$sakazuki}: ... [smile] Hm.
-        {$sakazuki}: [smile] Perhaps that, too.
-        {$sakazuki}: Similar or different, what's gone is gone.
+        {$sakazuki}: ... [emote="expression:smile" /] Hm.
+        {$sakazuki}: Perhaps that, too.
+        {$sakazuki}: Similar or different, what's gone is gone. #expression:neutral
     -> I hope someday you can reconcile.
         <<set $sd3_points +=1>>
         {$sakazuki}: I'm skeptical that'll ever happen. Perhaps when the sea is free of conflict.
@@ -327,7 +326,7 @@ You take a deep breath. Well, since the Fleet Admiral has invited you...
     {$sakazuki}: Alright, alright... settle down.
     {$sakazuki}: It was a complicated mission with a lot of moving parts. We were supposed to ambush this big pirate crew that was making a menace out of themselves on an island.
     {$sakazuki}: I was assigned a mission, to deal with any pirates outside of the island and capture as many as possible. I finished my part and...
-    {$sakazuki}: [embarrassed] And I got impatient. I couldn't stand not doing something, so I just had to go and check on the island to help with capturing pirates.
+    {$sakazuki}: And I got impatient. I couldn't stand not doing something, so I just had to go and check on the island to help with capturing pirates. #expression:blushing
     {$sakazuki}: That idiot Kuzan was assigned to infiltrate the pirate camp as a hopeful pirate-to-be and I didn't know. I thought he betrayed the Navy. I was furious and... well, that wasn't pretty.
     {$name}: Wow, so what happened?
     {$sakazuki}: The short version, there was a lot of... collateral damage. Our teacher was furious with me... it wasn't my best moment.
@@ -391,7 +390,7 @@ title: date_sakazuki_3_ending
 <<elseif $sd3_points >= 1>>
     <<jump date_sakazuki_3_neutral_end>>
 <<else>>
-    <<jump date_sakazuki_3_bad_end>>
+    <<jump date_sakazuki_3_worst_ending>>
 <<endif>>
 ===
 
@@ -433,7 +432,7 @@ Time passes quickly. You grow aware of your empty stomach before long. Fighting 
 {$name}: Do you consider us friends?
 {$sakazuki}: ... Hm... As we stand right now? Perhaps not yet. Ask me again in the future.
 {$name}: Yes, Sir! I mean, no, Sir! I mean, sorry for asking, Sir!
-{$sakazuki}: [smile] It's fine. Get breakfast, {$name}. I expect you to be in the office on time.
+{$sakazuki}: It's fine. Get breakfast, {$name}. I expect you to be in the office on time. #expression:smile
 {$name}: I will!
 ===
 

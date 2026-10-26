@@ -1,12 +1,12 @@
 {
     "projectFileVersion": 4,
     "sourceFiles": [
-        "date/**/*.yarn",
-        "*.yarn"
+        "**/*.yarn"
     ],
     "excludeFiles": [
         "**/*~/*",
-        "./Samples/Yarn Spinner*/*"
+        "./Samples/Yarn Spinner*/*",
+        "./nye/*"
     ],
     "localisation": {},
     "baseLanguage": "en",
@@ -41,7 +41,49 @@
                     "y": 337
                 }
             },
-            "startNode": "main"
+            "startNode": "main",
+            "characters": [
+                {
+                    "name": "Coby",
+                    "colour": "#d8b74b"
+                },
+                {
+                    "name": "Drake",
+                    "colour": "#d2b94b"
+                },
+                {
+                    "name": "Garp",
+                    "colour": "#5ac4bb"
+                },
+                {
+                    "name": "Goat",
+                    "colour": "#3bd3d8"
+                },
+                {
+                    "name": "Helmeppo",
+                    "colour": "#408bb0"
+                },
+                {
+                    "name": "Hina",
+                    "colour": "#962cba"
+                },
+                {
+                    "name": "{$sakazuki}",
+                    "colour": "#ff0000"
+                },
+                {
+                    "name": "{$kuzan}",
+                    "colour": "#9ec7f5"
+                },
+                {
+                    "name": "{$issho}",
+                    "colour": "#89099f"
+                },
+                {
+                    "name": "{$borsalino}",
+                    "colour": "#ffda24"
+                }
+            ]
         }
     }
 }

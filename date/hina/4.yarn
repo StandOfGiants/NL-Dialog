@@ -16,7 +16,7 @@ You slide to a stop as you come up to the address that Hina specified with exact
   <<jump date_hina_4_DATE_ENDS>>
 -> **Call for Hina**
     <<set $hd4_points -=1>>
-  There appear to be no other people this early in the morning, the air cold and crisp, so you cup your hands around your mouth and suck in a deep breath, calling out:
+  :There appear to be no other people this early in the morning, the air cold and crisp, so you cup your hands around your mouth and suck in a deep breath, calling out:
     {$name}: “Rear-Admiral Hina, Ma'am?!”
     Hina emerges from the stable, hands on her hips and a scowl on her face.
     Hina: Do you find it appropriate to display such reprehensible behaviour? Are you not a Marine? Are you unable to conduct yourself in an appropriate manner?

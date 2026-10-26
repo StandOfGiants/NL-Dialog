@@ -425,7 +425,7 @@ Helmeppo: Skin, hair, it helps them all.
 Helmeppo: And that can go double in the field.
 Helmeppo: Anything can be on these islands. Keeping your skin and hair clean can help avoid some bugs and germs.
 Helmeppo: It looks like you take really good care of your hair.
-He reaches out like he's going to touch your hair. You:
+:He reaches out like he's going to touch your hair. You:
 -> Knock his hand away.
     <<set $hd4_points -= 1>>
     <<jump date_helmeppo_4_EndingTwo>>
