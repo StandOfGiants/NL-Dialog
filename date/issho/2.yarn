@@ -209,7 +209,7 @@ title: date_issho_2_Town
     {$sakazuki}: I will not hear about this matter anymore! This whole thing ends here. You are getting back to work!
     Ouch... Noted: Trash cans make bad hiding places...
     <<jump date_issho_2_DATE_ENDS_EARLY>>
--> Oh, there's a dinnerware store up ahead with all the prettiest plates. We can pretend to be looking for something. (Points: +1)
+-> :Oh, there's a dinnerware store up ahead with all the prettiest plates. We can pretend to be looking for something. (Points: +1)
     {$issho}: Hmm, not the worst option, although I'm not sure if we will blend in too well among it.
     {$name}: I spotted a nice tea set earlier... I really want to check it out. Can we please?
     {$issho}: [comment]doubtful[/comment] Alright, I suppose it's not the worst place to be.

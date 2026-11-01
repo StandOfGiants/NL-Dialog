@@ -394,17 +394,17 @@ location: town
 
 You spent the rest of the day looking at Smoker's abs. You run your hands along the ridges of the clay, and imagine that one day you might get to run your hands over the real thing.
 Smoker: It's coming together nicely. It's a... lapin?
-- {$name}: Yeah, I guess I had a little bit of divine intervention.
+- Yeah, I guess I had a little bit of divine intervention.
     <<set $sd4_points +=1>>
     Smoker: Admit it, you like my figure.
-- {$name}: Yes! Or, at least it's supposed to be.
+- Yes! Or, at least it's supposed to be.
     Smoker: Keep at it, you're doing good so far.
 You keep working, unable to wipe the smile from your face. Smoker, too, is having a hard time keeping his lips from twitching into something bordering on content.
 Smoker: You're a lot better at this than I thought. A lapin is never anyone's first choice.
-- {$name}: Well, I *have* taken some artistic liberties.
+- Well, I *have* taken some artistic liberties.
     More than a few, actually. Most of the clay has gone to the abs, and what should have been long ears are more rounded. Actually, it might be more like a Hiking Bear, but oh well. Smoker seems impressed, and you made a &&lapin&&!
     <<set $sd4_figure_repaired = true>>
-- {$name}: You're absolutely right, would you mind posing?
+- You're absolutely right, would you mind posing?
     <<set $sd4_points +=1>>
     Maybe because you've been openly ogling him for the past hour and have clearly liked what you've seen, Smoker shrugs off his coat and puts a foot on his chair. He poses there like a half-naked statue while you put the finishing touches on your sculpture. You made a very jacked &&lapin&&!
     <<set $sd4_figure_repaired = true>>

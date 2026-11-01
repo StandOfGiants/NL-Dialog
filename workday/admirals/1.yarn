@@ -352,7 +352,7 @@ Sakazuki eyes Kuzan with deep contempt. A look that could kill.
 {$sakazuki}: I suppose this degree of maturity is to be expected from someone who considers *drinking* their pastime.
 {$sakazuki}: I'll see you at work.
 Before he heads for the exit, Sakazuki turns to you.
-S: ...I appreciate that.
+{$sakazuki}: ...I appreciate that.
 (Workday ends. After this, the Kuzan date is perma locked?)
 <<jump workday_admirals_1_Outro>>
 ===

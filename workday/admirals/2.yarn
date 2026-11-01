@@ -467,7 +467,7 @@ title: workday_admirals_2_meditation_successful
 ---
 You stay in this state for some time. A few minutes go by.
 You can almost start to feel the grounded auras around you...
-S:...
+{$sakazuki}:...
 {$sakazuki}: Are you done?
 {$issho}: Do you want to stop now?
 -> Yes, that was enough. (I+)
@@ -899,7 +899,7 @@ You are back at the office after another intense workday.
 //  [comment]ZIP[/comment] I DON"T KNOW WHAT THE RIGHT/WRONG CHOICES ARE HERE???
 
 :If you made all the right choices:
-(*I: Well, that was surprisingly fun.
+{$issho}: Well, that was surprisingly fun.
 {$borsalino}: Ah, yes... I know you think the same, gentlemen...
 Sakazuki and Kuzan grunt their reluctant approval.)
 If not:

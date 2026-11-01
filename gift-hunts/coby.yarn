@@ -43,7 +43,7 @@ Second, a red rhinestone crab pin. You can't help but laugh, thinking back to Co
 And finally, a glasses case with seashells printed on it. Coby is always wearing his on his head, so maybe this would be better?
 You select one and take your purchase over to the counter, where the young man who runs the store greets you.
 Storekeeper: That all for today?
-You: Think so.
+{$name}: I Think so.
 You purchased...
 -> The blue headband with pink dolphins on it.
     <<jump CobyGiftHunt_perfectgift>>
@@ -59,7 +59,7 @@ location: town
 
 You really don't know what to buy Coby, so you dart over to the little stall, which looks questionable at best. The items make you cringe, but you don't know what to buy someone who doesn't seem to want anything.
 You grit your teeth, grab a gift off the stall and slam some berries down onto the counter. All of this seems tasteless, but it's better to have something then to come empty-handed, right?
-You buy:
+:You buy:
 -> A Marine keychain
     <<jump CobyGiftHunt_Okaygift>>
 -> An “I fought at Marineford and all I got was this lousy t-shirt” shirt

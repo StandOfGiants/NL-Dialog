@@ -94,9 +94,10 @@ Ohhhh, you see what's going on now. You understand why he is here looking over t
     {$sakazuki}: <pause>...
     For a moment, you thought you said something wrong but then...
     Fleet Admiral Sakazuki actually lets out a small laugh.
-    {$sakazuki}: [smile] Yes, I suppose so. They *are* cool. They all did impossible feats.
+    {$sakazuki}: Yes, I suppose so. They *are* cool. They all did impossible feats. #expression:smile
     {$name}: Oh! Can you... when you have time, can you tell me about some of them?
-    {$sakazuki}: [judging] <pause> Haven't you learned Naval history during your training? There's also a library within Marineford.
+    // TODO: Figure out pausing mid-line
+    {$sakazuki}: [pause=0.5 /] Haven't you learned Naval history during your training? There's also a library within Marineford. #expression:frown
     {$name}: Yes, but it's better to hear from someone than to read from a book, right? It's more immersive, sir!
     {$sakazuki}: ... Perhaps.
     {$sakazuki}: It'd be good for Marines to know their names and what they've done, not just the glory, but the heartbreaks. The sacrifices for the greater good. Even their tragic ends.

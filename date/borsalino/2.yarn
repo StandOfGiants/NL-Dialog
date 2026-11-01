@@ -284,7 +284,7 @@ You're taken away by the pictures on the posters. You think of battle and advent
 -> Depends on the person...   (+)
            {$borsalino}: You remind me of a friend... he would say that, too...
 {$borsalino}: Hmm... well, even among Marines, you need to stay flexible... no one will see things exactly as you do, will they...?
-'borsalino' looks thoughtful as he goes back to work...
+{$borsalino} looks thoughtful as he goes back to work...
 <<jump date_borsalino_2_route2_end_work>>
 ===
 
@@ -319,7 +319,7 @@ title: date_borsalino_2_route2_vega
 
 title: date_borsalino_2_route2_vega1
 ---
-'borsalino': Anyway, let's not talk politics... we don't want to argue, do we...?
+{$borsalino}: Anyway, let's not talk politics... we don't want to argue, do we...?
 {$name}: ...
 What a strange conversation.
 The rest of the work takes place in silence. You have the feeling this could have gone better...
@@ -371,10 +371,10 @@ title: date_borsalino_2_route3
 -> Last chance to drop work!
     {$borsalino}: Oh... [wave]sooo[/wave] tempting...
     {$borsalino}: We need to get through Sentomaru first...
-    -{$name}: I'll call him! (+)
+    - I'll call him! (+)
         {$borsalino}: Oh... marvelous...
         <<jump date_borsalino_2_route3_den_den>>
-    -{$name}: Good luck with that!
+    - Good luck with that!
         {$borsalino}: Oh, you only want to see me suffer...
         {$borsalino}: It will have to be another time...
         He picks you up, drops you outside the office, and shuts the door.
@@ -385,16 +385,16 @@ title: date_borsalino_2_route3_den_den
 ---
 You take your transponder snail and call Sentomaru...
 [i]Bele-bele-bele-bele...[/i]
-S: Huh?! Who is this?!
+Sentomaru: Huh?! Who is this?!
 -> Can {$borsalino} come out to play?
-    S: WHAT? Of course not!!!
-    S: Uncle, is that you I hear snickering over there?!
+    Sentomaru: WHAT? Of course not!!!
+    Sentomaru: Uncle, is that you I hear snickering over there?!
     <<jump date_borsalino_2_End>>
 -> Hey, you big bully, let your uncle out. (-)
     {$borsalino}: (Aww, be nice, {$name}... it might not seem like it, but Sentomaru is very sensitive...)
-    S: HEY! I heard that!
-    S: It's bad enough that the Fleet Admiral had to appoint me as your babysitter, uncle!
-    S: There's gotta be at least one responsible adult here... so NO!
+    Sentomaru: HEY! I heard that!
+    Sentomaru: It's bad enough that the Fleet Admiral had to appoint me as your babysitter, uncle!
+    Sentomaru: There's gotta be at least one responsible adult here... so NO!
     [i]click[/i]
     {$borsalino}: Well, that was mortifying...
     {$borsalino}: Oh well, we [i][wave]triiied[/wave]...[/i]

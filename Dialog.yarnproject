@@ -6,7 +6,9 @@
     "excludeFiles": [
         "**/*~/*",
         "./Samples/Yarn Spinner*/*",
-        "./nye/*"
+        "./nye/*",
+        "./gift-hunts/*",
+        "./workday/*"
     ],
     "localisation": {},
     "baseLanguage": "en",
@@ -60,10 +62,6 @@
                     "colour": "#3bd3d8"
                 },
                 {
-                    "name": "Helmeppo",
-                    "colour": "#408bb0"
-                },
-                {
                     "name": "Hina",
                     "colour": "#962cba"
                 },
@@ -82,8 +80,31 @@
                 {
                     "name": "{$borsalino}",
                     "colour": "#ffda24"
+                },
+                {
+                    "name": "Tashigi",
+                    "colour": "#5fa5c8"
+                },
+                {
+                    "name": "Tsuru",
+                    "colour": "#d52a3b"
+                },
+                {
+                    "name": "Sengoku",
+                    "colour": "#85d33c"
+                },
+                {
+                    "name": "Rosinante",
+                    "colour": "#39a5b1"
+                },
+                {
+                    "name": "Helmeppo",
+                    "colour": "#3eb14e"
                 }
             ]
         }
-    }
+    },
+    "definitions": [
+        "..\\..\\ProjectSettings\\Packages\\dev.yarnspinner\\Assembly-CSharp-generated.ysls.json"
+    ]
 }

@@ -1,11 +1,12 @@
 title: date_tashigi_4_main
 location: Bar
 ---
+<<declare $td4_points = 0>>
 
 {$name}: I don't see her yet... I'm a little early, though. I'm sure she'll show up soon.
 Tashigi: Oh, {$name}! There you are!
 {$name}: Ah! Hello Tash—
-[Tash on screen] // How do???
+<<show_characters tashigi>>
 (You're struck dumb for a moment. Tashigi looks absolutely breathtaking in her outfit; it looks wonderful on her.)
 Tashigi: Haha, I guess you like it.
 {$name}: Oh my goodness!

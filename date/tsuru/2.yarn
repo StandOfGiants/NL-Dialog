@@ -129,13 +129,13 @@ Tsuru: Go first, {$name}, please.
                 <<jump date_tsuru_2_route1_promotion>>
 -> I just want something to eat!
     Shop Assistant: You mean as in... Um... A sample?
-    - {$name}: Is it food?
+    - Is it food?
         <<set $td2_points -=1>>
         Tsuru: {$name}... Behave!
         Tsuru: If you're only here to irritate me, get yourself on your way!
         Tsuru doesn't look too happy...
         <<jump date_tsuru_2_earlyEnd>>
-    - {$name}: Oh, I misunderstood.
+    - Oh, I misunderstood.
         <<set $td2_points +=1>>
         {$name}: I thought I could just order something to eat here.
         Shop Assistant: Oh, I see!

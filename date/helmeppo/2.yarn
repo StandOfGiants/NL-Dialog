@@ -144,7 +144,7 @@ You follow him down a few halls to a solitary, heavy wooden door. There is no na
     -> Yeah. It's cozy. Whoever has this office is in for a surprise when they get back.
     Helmeppo: Hm.
     Helmeppo: No point in waiting around, let's get started.
-    -> ‘Name': Right!
+    -> Right!
 -> Is this an unused office? It seems pretty sparse.
     Helmeppo: It's definitely someone's office. What do you think a working Marine's office should look like?
     -> More full of paperwork.
@@ -160,7 +160,7 @@ You follow him down a few halls to a solitary, heavy wooden door. There is no na
             Helmeppo: So, where do you want to start?
     -> More pictures of people.
         Helmeppo: Yeah, I can see that. But no one really spends too much time in these if they can help it.
-        ‘Name': Oh, yeah. I guess that's true.
+        {$name}: Oh, yeah. I guess that's true.
         Helmeppo: So, let's liven things up for when they return. Where do you want to start?
     -> Actually, nevermind. I like the clean look.
         Helmeppo: Me too. Now, where do you want to start?

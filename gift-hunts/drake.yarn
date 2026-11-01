@@ -9,7 +9,7 @@ And where else to search for a gift but here, at this conveniently timed market?
 First though, who the heck are you shopping for?
 -character selection- //HOW DO??
 Wait...
-[SHAKE TEXT] What on earth do you get a man like Diez Drake??? //HOW DO??
+[shake]What on earth do you get a man like Diez Drake???[/shake]
 You're not sure you've ever even heard him speak of something he needed, let alone something he wanted.
 Still, you feel compelled to try. After all, what good Marine just rolls over and gives up?
 Eventually, you settle on two to sort through. You decide to start at the–
@@ -109,8 +109,7 @@ location: town
         <<jump Drake_Gift_Hunt_badgift>>
     -> Check the rest of the toys.
         <<jump Drake_Gift_Hunt_toystore_choices>>
-[If you made it to date 3] //HOW DO??
--> Investigate the small set of turtle figures.
+-> Investigate the small set of turtle figures. <<if visited("date_drake_3_main")>>
     Helping look after island animals is a good memory for Drake. With each tiny enough to fit in your palm, they're small enough not to be ostentatious wherever he puts them. They're not practical, but they're definitely nostalgic.
     -> Buy the cute little turtle family.
         <<jump Drake_Gift_Hunt_goodgift>>
@@ -123,14 +122,12 @@ location: town
 title: Drake_Gift_Hunt_perfectgift
 location: town
 ---
-
 Once you checkout, your heart positively pounds as you carry off your gift for him. You can't remember the last time you felt so sure of something. He's going to love it.
 ===
 
 title: Drake_Gift_Hunt_goodgift
 location: town
 ---
-
 It's a nice warm feeling that takes you as you head to the checkout. You don't have to hope he'll like it— you know he will...
 ===
 

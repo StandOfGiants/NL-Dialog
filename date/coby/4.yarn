@@ -192,7 +192,7 @@ He steps aside to make space for you.
 
 title: date_coby_4_WaterChoice
 ---
-You decide to:
+:You decide to:
 -> grab a drink. <<if !visited("date_coby_4_DrinkWater")>>
     <<jump date_coby_4_DrinkWater>>
 -> wet your hair. <<if !visited("date_coby_4_WetHair")>>

@@ -16,7 +16,7 @@ Rosinante: Ah! I shouldn't have said that, ignore all that.
     <<jump date_rosinante_3_main_Walking>>
 -> Now you've got to tell me more!
     <<jump date_rosinante_3_Fire_Incidents>>
--> Fine! I'll ignore it, but I've noticed you did your make-up again. =>
+-> Fine! I'll ignore it, but I've noticed you did your make-up again.
     <<jump date_rosinante_3_Face_Paint>>
 ===
 
@@ -31,10 +31,10 @@ Rosinante: Doing it with you made me realize how much I missed it.
 He laughs heartily at your joke.
 Rosinante: Thank you. I really enjoyed the time I have spent with you lately.
 {$name}: I feel the same way. I'm happy you've started doing something you used to enjoy again.
-Rosinante: Like I said! It's all thanks to you. I was even thinking about getting some new colours soon.
+Rosinante: Like I said! It's all thanks to you. I was even thinking about getting some new colors soon.
 {$name}: Oh! Can I help pick some of them out?
 Rosinante: Definitely!
-Rosinante: What else were you thinking about doing today? =>
+Rosinante: What else were you thinking about doing today?
 <<jump date_rosinante_3_Activities>>
 ===
 
@@ -54,7 +54,7 @@ Rosinante: But it's his own way of showing he cares. I never minded much.
 {$name}: I'm sure that's true. He doesn't sound so bad.
 Rosinante: I'm glad you think so! Maybe you can meet him one day.
 You'd rather not, but you can't bring yourself to say that. Instead you smile and nod hoping it's enough.
-{$name}: Why don't we talk while walking? We wouldn't want to catch the noon sun. =>
+{$name}: Why don't we talk while walking? We wouldn't want to catch the noon sun.
 <<jump date_rosinante_3_main_Walking>>
 ===
 
@@ -226,8 +226,8 @@ Rosinante: Still, there is so much work to be done.
 Rosinante: I've noticed that about you.
 You pause for a moment.
 {$name}: About those who joined as children, is there anything you can do for them now? If you feel like you haven't done enough.
-Rosinante: I don't know. I haven't thought about it. =>
-    <<jump date_rosinante_3_Kids_Good1>>
+Rosinante: I don't know. I haven't thought about it.
+<<jump date_rosinante_3_Kids_Good1>>
 ===
 
 title: date_rosinante_3_Kids_Bad2

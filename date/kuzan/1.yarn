@@ -2,6 +2,8 @@ title: date_kuzan_1_main
 location: day(park)
 characters: []
 ---
+<<declare $TookNapWithKuzan = false>>
+
 You decide to go for a walk in the park on your day off. It's too lovely out to stay cooped up. To your surprise, though, you not only stumble across an admiral there... but they're also outright napping in the open.
 // Feels like a rather jarring and telly introduction. Alternative suggestion provided.
 {$name}: "Is that Admiral Aokiji?”
@@ -65,7 +67,7 @@ WHAM! Something whacks you in the back of the head! Ow! You turn, seeing a group
 
 title: date_kuzan_1_TakeNap
 ---
-<<get "TookNapWithKuzan">>
+<<set $TookNapWithKuzan = true>>
 {$kuzan} scoots over to give you space.
 You and {$kuzan} settle back down on the grass and nap. The breeze ruffles some leaves and grass. The sun moves across the sky. It's calm and quiet and warm. A perfect activity after a busy week. (4 pts)
 // I've never seen anything give such a huge score change before. Might need to be toned down?

@@ -2,6 +2,8 @@ title: date_issho_1_main
 location: day(bedroom)
 ---
 <<declare $isd1_points = 0>>
+<<declare $WantsToLearnBraille = false>>
+
 Laying in your room, you stare at the transponder snail in complete boredom. You should feel grateful for the break you get, but after such exciting days, you just feel restless. Maybe grabbing a bite of food will alleviate some of that restlessness.
 <<jump date_issho_1_in_town>>
 ===
@@ -459,7 +461,7 @@ title: date_issho_1_Part_2B3b
 -> Really?! You'd teach me? I'd love to!
     <<set $isd1_points += 1>>
     <<set $isd1_points += 1>>
-    <<get "WantsToLearnBraille">>
+    <<set $WantsToLearnBraille = true>>
     {$issho}: [comment]smile[/comment] I'm glad to hear you are so enthusiastic. I'll teach it to you later.
 -> Maybe another time, sir. I'm still a bit overwhelmed by everything right now.
     {$issho}: Fair enough. In that case, focusing on yourself first is good.

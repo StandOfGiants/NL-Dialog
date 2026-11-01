@@ -52,7 +52,8 @@ Garp: Heh, this is one of my favorite places on the island. It's nice to come he
     Garp: If you can't appreciate the beauty of nature, then you need to get out more!
 -> Yeah, I know what you mean. The base is nice, but it's good to get out once in a while.
     Garp: Everyone should do themselves a favor and get off base every so often. If you don't give yourself a break, then you'll be the one to break!
--> So even you need some peace and quiet sometimes? <set $gd3_points +=1>>
+-> So even you need some peace and quiet sometimes?
+    <<set $gd3_points +=1>>
     Garp: Bwahaha! Doesn't everyone? Breaks are good for you, and there's no better place to be than out here!
 {$name}: (...)
 {$name}: It really is nice out, but... you kinda wanna ask him about something.
@@ -138,7 +139,8 @@ Garp: You're fidgeting, {$name}. I bet I know what you wanna ask.
 Garp: “How did you become the Hero of the Marines, Mr. Garp?”
 Garp: Something like that. Am I right?
 {$name}: Huh?
--> How'd you guess? <set $gd3_points +=1>>
+-> How'd you guess?
+    <<set $gd3_points +=1>>
     Garp: Bwahaha! You're not the first person I've seen with that expression! Listen up and I'll tell you about it.
     Garp: Have you ever heard of God Valley?
     Garp: What am I saying. Of course you haven't. But back then, I fought off one of the greatest pirate crews on the seas with the help of a pretty influential figure.

@@ -41,7 +41,7 @@ Vendor: Welcome! Have any of these pieces caught your attention?
         Quite a standard gift, but... can you go wrong with that?
         Not really!
         -> Yes, I think this is what I'm looking for.
-            <<JUMP borsalino_gift_hunt_good_gift>>
+            <<jump borsalino_gift_hunt_good_gift>>
         -> Thank you, but I don't think that's what I'm looking for.
             (=> loop back to question) //HOW DO??
     -> ...tacky.
@@ -52,7 +52,7 @@ Vendor: Welcome! Have any of these pieces caught your attention?
         Difficult to forget.
         The ones Borsalino usually wears do look a bit different...
         -> Yes, I think he will like this!
-            <<JUMP borsalino_gift_hunt_bad_gift>>
+            <<jump borsalino_gift_hunt_bad_gift>>
         -> Oh, I'm not really sure about this...
             (=> loop back to question) //HOW DO??
 -> ...ah. Forget about it.

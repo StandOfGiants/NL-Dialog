@@ -1,6 +1,7 @@
 title: date_rosinante_4_main
 location: quarters
 ---
+<<declare $rd4_points = 0>>
 
 Today was such a long day, you think as you fall face-first into your bed. Not only did you have your regular workload to deal with, complete with Vice Admiral Tsuru's demands for perfection and high performance rate, but then Instructor Garp managed to rope you into helping him with his own paperwork—paperwork he had been avoiding for weeks, apparently.
 The only bright part of the day was running into Rosinante during lunch. Of course, it meant more stress, as he had *somehow* managed to set his curry on fire... But that was the kind of stress you actually didn't mind dealing with for some reason. Instead, it charged you with energy to tackle the rest of the day—at least until Inspector General Sengoku's goat ate one of your reports and you had to redo the whole thing.
@@ -217,7 +218,7 @@ He winces at the name, but nods.
     <<set $rd4_points -= 2>>
     <<jump date_rosinante_4_KNEEL>>
 -> You're one of those assholes?
-    <<set $bd4_points -= 1>>
+    <<set $rd4_points -= 1>>
     <<jump date_rosinante_4_ATTACK>>
 -> I could never tell...
     <<jump date_rosinante_4_CONFUSION>>
@@ -250,7 +251,7 @@ He winces at the name, but nods.
     <<set $rd4_points -= 2>>
     <<jump date_rosinante_4_KNEEL>>
 -> You're one of those assholes?
-    <<set $bd4_points -= 1>>
+    <<set $rd4_points -= 1>>
     <<jump date_rosinante_4_ATTACK>>
 -> I could never tell...
     <<jump date_rosinante_4_CONFUSION>>

@@ -202,7 +202,7 @@ Garp: Bwahaha! Sure I do! Humans are quick to point fingers, but the fishmen are
 -> As far as I'm concerned, the only people I really need to worry about are humans.
     <<set $gd2_points -=1>>
     Garp: You think so, huh?
-    <,jump date_garp_2_route_f>>
+    <<jump date_garp_2_route_f>>
 -> You say that, but I'm not sure that the rest of the Navy agrees with you.
     Garp: ...You might be right. But I have to believe that times are changing, and that humans' tyranny over others will come to an end.
     {$name}: (...If it were anyone else, they'd probably be arrested for treason. I'm amazed that he can say all that.)

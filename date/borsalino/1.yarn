@@ -388,7 +388,8 @@ title: date_borsalino_1_route5_choice
 {$borsalino}: I forgot something in the office.
 {$borsalino}: I am [wave][i]sooo[/i][/wave] forgetful.
 -> Oh, let me come get it with you! (+)
-    {$borsalino}: <pause>
+    {$borsalino}: ...
+    <<wait 1>>
     {$borsalino}: Don't worry, I'll get there at the speed of light...
     {$borsalino}: ...See you tomorrow, {$name}.
 -> Okay, then go! (-)

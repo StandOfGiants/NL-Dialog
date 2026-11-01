@@ -219,7 +219,7 @@ title: date_tsuru_1_route2_meditation
 Tsuru: Very well!!
 Tsuru: Close your eyes, {$name}.
 Tsuru: Relax every muscle and control your breath...
-<pause>
+<<wait 0.5>>
 {$name}: . . .
 -> Follow instructions. (+)
 -> Just pretend to follow her lead.

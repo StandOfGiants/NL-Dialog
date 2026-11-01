@@ -255,7 +255,7 @@ Bellemere: WOOO! In your FACE, {$name}!
 She is not a very gracious winner.
 Bellemere: Good show though, overall. I'm impressed!
 Okay, so... maybe you didn't win, but with the redhead's kind words, it still feels like it.
-<jump date_bellemere_3_dance>>
+<<jump date_bellemere_3_dance>>
 ===
 
 title: date_bellemere_3_report
